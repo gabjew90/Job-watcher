@@ -97,7 +97,7 @@ def fetch_google(term: str) -> list[Job]:
         m = re.search(r"data:(\[.*\]), sideChannel", blob, re.S)
         if not m:
             continue
-        for entry in json.loads(m.group(1))[0]:
+        for entry in json.loads(m.group(1))[0] or []:
             try:
                 locations = ", ".join(loc[0] for loc in (entry[9] or [])[:3])
                 desc = strip_html(str((entry[3] or [None, ""])[1]) + " " + str((entry[4] or [None, ""])[1]))
