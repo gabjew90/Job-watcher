@@ -10,14 +10,24 @@
   "location": "United States",
   "results_per_term": 25,
   "hours_old": 72,
-  "keyword_filter": [
-    "energy", "power", "BESS", "battery", "storage", "grid",
-    "interconnection", "flexibility", "utility", "substation",
-    "electrical infrastructure"
+  "title_keywords": [
+    "energy", "power", "grid", "battery", "storage", "BESS",
+    "interconnection", "utility", "utilities", "electrical", "substation",
+    "transmission", "renewable", "solar", "data center", "datacenter",
+    "infrastructure"
+  ],
+  "description_keywords": [
+    "BESS", "battery energy storage", "energy storage", "grid interconnection",
+    "interconnection queue", "utility-scale", "grid-scale", "substation",
+    "behind-the-meter", "bridge power", "data center energy",
+    "data center power", "datacenter power", "power purchase agreement",
+    "megawatt"
   ],
   "title_exclusions": ["intern", "software engineer"],
   "priority_topics": [
-    "flexibility", "bridge power", "behind-the-meter", "BESS", "interconnection"
+    "data center flexibility", "grid flexibility", "demand flexibility",
+    "bridge power", "behind-the-meter", "BESS", "battery energy storage",
+    "interconnection"
   ],
   "state_retention_days": 180,
   "triage": {

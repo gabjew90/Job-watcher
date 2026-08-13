@@ -1,14 +1,20 @@
-"""Relevance filter, title exclusions, and priority-topic flagging."""
+"""Relevance filter, title exclusions, and priority-topic flagging.
+
+Two-tier relevance: generic keywords (energy, power, grid, ...) only count
+when they appear in the TITLE — job descriptions are full of boilerplate
+("high-energy team", "workplace flexibility") that made description-wide
+matching keep nearly everything. Description matches require specific
+domain phrases ("battery energy storage", "grid interconnection", ...).
+"""
 from .models import Job
 
 
-def _text(job: Job) -> str:
-    return f"{job.title} {job.description}".lower()
-
-
-def is_relevant(job: Job, keywords: list[str]) -> bool:
-    text = _text(job)
-    return any(k.lower() in text for k in keywords)
+def is_relevant(job: Job, config: dict) -> bool:
+    title = job.title.lower()
+    if any(k.lower() in title for k in config["title_keywords"]):
+        return True
+    description = job.description.lower()
+    return any(k.lower() in description for k in config["description_keywords"])
 
 
 def is_excluded(job: Job, exclusions: list[str]) -> bool:
@@ -17,7 +23,7 @@ def is_excluded(job: Job, exclusions: list[str]) -> bool:
 
 
 def is_priority(job: Job, topics: list[str]) -> bool:
-    text = _text(job)
+    text = f"{job.title} {job.description}".lower()
     return any(t.lower() in text for t in topics)
 
 
@@ -26,7 +32,7 @@ def apply_filters(jobs: list[Job], config: dict) -> list[Job]:
     for job in jobs:
         if is_excluded(job, config["title_exclusions"]):
             continue
-        if not is_relevant(job, config["keyword_filter"]):
+        if not is_relevant(job, config):
             continue
         job.priority = is_priority(job, config["priority_topics"])
         kept.append(job)
