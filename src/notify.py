@@ -15,7 +15,8 @@ from .models import Job
 log = logging.getLogger(__name__)
 
 
-def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path]) -> str:
+def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path],
+                 health_summary: list[dict] | None = None) -> str:
     def sort_key(j: Job):
         return -(scores.get(j.job_id, {}).get("score", -1))
 
@@ -35,6 +36,13 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
         lines += [_line(j, scores) for j in rest]
     if not scores and new_jobs:
         lines.append("\n_Unscored run (triage unavailable)._")
+    unhealthy = [s for s in health_summary or [] if s["status"] != "ok"]
+    if unhealthy:
+        lines.append("\n## ⚠️ Source issues\n")
+        for s in unhealthy:
+            detail = s["error"] or "returned 0 results"
+            lines.append(f"- `{s['source']}`: {s['status']} ({detail[:120]}) — "
+                         f"last results {s['last_results'] or 'never'}")
     lines.append("\n---\n_Dashboard: see the GitHub Pages site for full history._")
     return "\n".join(lines)
 
@@ -49,7 +57,8 @@ def _line(job: Job, scores: dict[str, dict]) -> str:
 
 
 def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
-               drafts: list[Path] | None = None) -> None:
+               drafts: list[Path] | None = None,
+               health_summary: list[dict] | None = None) -> None:
     scores = scores or {}
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
@@ -59,7 +68,7 @@ def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
     if scores:
         top = max(scores.values(), key=lambda s: s["score"])
         title += f" (top score {top['score']})"
-    body = build_digest(new_jobs, scores, drafts)
+    body = build_digest(new_jobs, scores, drafts, health_summary)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)

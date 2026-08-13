@@ -14,6 +14,7 @@ import time
 
 import requests
 
+from .. import health
 from ..models import Job
 from ..util import HEADERS, strip_html
 
@@ -94,7 +95,9 @@ def fetch(config: dict) -> list[Job]:
             got = PROVIDERS[provider](board, company)
             jobs.extend(got)
             log.info("%s / %s: %d postings", provider, board, len(got))
+            health.record(f"{provider}:{board}", ok=True, count=len(got))
         except Exception as e:  # noqa: BLE001 - per-source isolation by design
             log.warning("SOURCE FAILURE %s / %s: %s", provider, board, e)
+            health.record(f"{provider}:{board}", ok=False, error=e)
         time.sleep(1)
     return jobs

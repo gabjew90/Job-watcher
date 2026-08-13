@@ -40,6 +40,15 @@ _PAGE = """<!DOCTYPE html>
 </tbody>
 </table>
 </div>
+<h2 style="font-size:1.1rem;margin-top:2rem">Source health</h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Source</th><th>Status</th><th>Results</th><th>Last results</th><th>Error</th></tr></thead>
+<tbody>
+{health_rows}
+</tbody>
+</table>
+</div>
 <script>
 let dir = -1, col = 4;
 function sortBy(c, numeric) {{
@@ -75,11 +84,25 @@ def _row(rec: dict) -> str:
     )
 
 
-def generate(state: dict) -> None:
+_STATUS_ICON = {"ok": "✅", "empty": "⚠️", "failed": "❌"}
+
+
+def _health_row(s: dict) -> str:
+    e = lambda v: html.escape(str(v or ""))
+    return (
+        f'<tr><td>{e(s["source"])}</td>'
+        f'<td>{_STATUS_ICON.get(s["status"], "?")} {e(s["status"])}</td>'
+        f'<td>{s["count"]}</td><td>{e(s["last_results"] or "never")}</td>'
+        f'<td>{e(s["error"])}</td></tr>'
+    )
+
+
+def generate(state: dict, health_summary: list[dict] | None = None) -> None:
     records = sorted(state.values(), key=lambda r: r.get("first_seen", ""), reverse=True)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(_PAGE.format(
         count=len(records),
         generated=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
         rows="\n".join(_row(r) for r in records),
+        health_rows="\n".join(_health_row(s) for s in health_summary or []),
     ))

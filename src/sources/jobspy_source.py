@@ -9,6 +9,7 @@ import time
 import pandas as pd
 from jobspy import scrape_jobs
 
+from .. import health
 from ..models import Job
 
 log = logging.getLogger(__name__)
@@ -46,7 +47,9 @@ def fetch(config: dict) -> list[Job]:
                         date_posted=_s(row.get("date_posted")),
                     ))
                 log.info("jobspy %s / %r: %d results", site, term, len(df))
+                health.record(f"jobspy:{site}", ok=True, count=len(df))
             except Exception as e:  # noqa: BLE001 - per-source isolation by design
                 log.warning("SOURCE FAILURE jobspy %s / %r: %s", site, term, e)
+                health.record(f"jobspy:{site}", ok=False, error=e)
             time.sleep(1)
     return jobs

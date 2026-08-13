@@ -3,7 +3,7 @@ import json
 import logging
 from pathlib import Path
 
-from . import dashboard, filters, notify, state as state_mod, triage
+from . import dashboard, filters, health, notify, state as state_mod, triage
 from .sources import ats_boards, hyperscalers, jobspy_source
 
 log = logging.getLogger(__name__)
@@ -18,6 +18,11 @@ def main() -> None:
 
     raw = jobspy_source.fetch(config) + hyperscalers.fetch(config) + ats_boards.fetch(config)
     log.info("Fetched %d raw postings", len(raw))
+    health.save_run()
+    for s in health.summary():
+        if s["status"] != "ok":
+            log.warning("SOURCE HEALTH %s: %s (last results: %s)",
+                        s["source"], s["status"], s["last_results"] or "never")
 
     kept = filters.apply_filters(raw, config)
     log.info("%d postings after relevance filter/exclusions", len(kept))
@@ -43,10 +48,10 @@ def main() -> None:
     drafts = triage.draft_resumes(
         new_jobs, scores, config.get("triage", {}).get("resume_threshold", 75))
 
-    dashboard.generate(seen)
+    dashboard.generate(seen, health.summary())
 
     if new_jobs:
-        notify.post_issue(new_jobs, scores, drafts)
+        notify.post_issue(new_jobs, scores, drafts, health.summary())
     else:
         log.info("No new postings; skipping notification.")
 
