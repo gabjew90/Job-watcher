@@ -1,0 +1,26 @@
+{
+  "search_terms": [
+    "data center energy",
+    "energy infrastructure",
+    "data center flexibility",
+    "battery energy storage",
+    "grid interconnection"
+  ],
+  "sites": ["indeed", "glassdoor", "zip_recruiter", "google"],
+  "location": "United States",
+  "results_per_term": 25,
+  "hours_old": 72,
+  "keyword_filter": [
+    "energy", "power", "BESS", "battery", "storage", "grid",
+    "interconnection", "flexibility", "utility", "substation",
+    "electrical infrastructure"
+  ],
+  "title_exclusions": ["intern", "software engineer"],
+  "priority_topics": [
+    "flexibility", "bridge power", "behind-the-meter", "BESS", "interconnection"
+  ],
+  "state_retention_days": 180,
+  "triage": {
+    "resume_threshold": 75
+  }
+}
