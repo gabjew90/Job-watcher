@@ -33,7 +33,7 @@ _PAGE = """<!DOCTYPE html>
 <thead><tr>
   <th onclick="sortBy(0)">Title</th><th onclick="sortBy(1)">Company</th>
   <th onclick="sortBy(2)">Location</th><th onclick="sortBy(3)">Source</th>
-  <th onclick="sortBy(4)">First seen</th>
+  <th onclick="sortBy(4)">First seen</th><th onclick="sortBy(5, true)">Score</th>
 </tr></thead>
 <tbody>
 {rows}
@@ -42,11 +42,14 @@ _PAGE = """<!DOCTYPE html>
 </div>
 <script>
 let dir = -1, col = 4;
-function sortBy(c) {{
-  dir = (c === col) ? -dir : 1; col = c;
+function sortBy(c, numeric) {{
+  dir = (c === col) ? -dir : (numeric ? -1 : 1); col = c;
   const tb = document.querySelector("#t tbody");
-  [...tb.rows].sort((a, b) => dir * a.cells[c].innerText.localeCompare(b.cells[c].innerText))
-    .forEach(r => tb.appendChild(r));
+  [...tb.rows].sort((a, b) => {{
+    const x = a.cells[c].innerText, y = b.cells[c].innerText;
+    return numeric ? dir * ((parseFloat(x) || -1) - (parseFloat(y) || -1))
+                   : dir * x.localeCompare(y);
+  }}).forEach(r => tb.appendChild(r));
 }}
 function filt() {{
   const q = document.getElementById("q").value.toLowerCase();
@@ -63,10 +66,12 @@ sortBy(4); dir = -1; sortBy(4);
 def _row(rec: dict) -> str:
     cls = ' class="priority"' if rec.get("priority") else ""
     e = lambda s: html.escape(str(s or ""))
+    score = rec.get("score")
+    score_cell = f'<td title="{e(rec.get("rationale"))}">{score}</td>' if score is not None else "<td></td>"
     return (
         f'<tr{cls}><td><a href="{e(rec.get("url"))}" target="_blank">{e(rec.get("title"))}</a></td>'
         f'<td>{e(rec.get("company"))}</td><td>{e(rec.get("location"))}</td>'
-        f'<td>{e(rec.get("source"))}</td><td>{e(rec.get("first_seen"))}</td></tr>'
+        f'<td>{e(rec.get("source"))}</td><td>{e(rec.get("first_seen"))}</td>{score_cell}</tr>'
     )
 
 

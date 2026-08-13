@@ -45,8 +45,11 @@ sources (jobspy | hyperscaler APIs | ATS boards)
   pcsx API, Amazon search.json, Google careers embedded JSON; Meta written
   but disabled — blocks datacenter IPs) + ATS board fetchers
   (Greenhouse/Lever/Ashby) for the curated company list in config.
-- **Phase 3**: Claude triage + `experience_library.md` + resume drafting to
-  `drafts/`, wired into the same daily workflow.
+- **Phase 3 — DONE**: Claude triage (`src/triage.py`, headless `claude -p`,
+  Haiku scoring / Sonnet drafting) + `profile.md` + `experience_library.md`
+  template + resume drafting to `drafts/`, wired into the daily workflow.
+  Live-validated: 162/166 postings scored in 5 batched calls; drafting
+  correctly held off while the library is a template.
 
 ## Hard rules
 

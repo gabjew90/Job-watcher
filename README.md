@@ -4,9 +4,9 @@ Daily monitor for director/senior-PM roles in **data center energy, energy
 infrastructure, data center flexibility, and grid interconnection** —
 hyperscalers and the surrounding BESS / datacenter-power ecosystem.
 
-Scrapes job boards daily via GitHub Actions, filters and dedupes, posts new
-postings as a GitHub Issue digest, and renders a dashboard on GitHub Pages.
-Claude triage + tailored resume drafting arrive in Phase 3 (see `PLAN.md`).
+Scrapes job boards daily via GitHub Actions, filters and dedupes, scores
+each new posting for fit with Claude, drafts tailored resumes for top hits,
+posts a GitHub Issue digest, and renders a dashboard on GitHub Pages.
 
 ## How it works
 
@@ -16,7 +16,9 @@ hyperscaler APIs (Microsoft/Amazon/Google careers; Meta off by default)
 ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
   → keyword filter + title exclusions + priority-topic ⭐
   → dedupe vs state/seen_jobs.json  (committed each run)
-  → GitHub Issue digest + docs/index.html dashboard
+  → Claude triage: 0-100 fit score vs profile.md (Haiku, batched)
+  → resume drafts for scores ≥ 75, from experience_library.md only (Sonnet)
+  → GitHub Issue digest (sorted by score) + docs/index.html dashboard
 ```
 
 - **Schedule**: daily at 14:13 UTC (`.github/workflows/daily.yml`), plus
@@ -32,16 +34,19 @@ ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
 1. **Enable GitHub Pages**: repo Settings → Pages → deploy from branch,
    folder `/docs`. The dashboard then lives at
    `https://<user>.github.io/Job-watcher/`.
-2. **Tune `config.json`**: search terms, keyword filter, title exclusions,
-   priority topics, sites, retention.
-3. That's it for Phase 1 — the issue digest uses the workflow's own
-   `GITHUB_TOKEN`.
-
-### Phase 3 (upcoming) will additionally need
-
-- `CLAUDE_CODE_OAUTH_TOKEN` repo secret — mint locally with
-  `claude setup-token` (uses your Claude subscription; no API key billing).
-- `experience_library.md` filled in (template will be provided).
+2. **Add the triage secret**: run `claude setup-token` on your own machine
+   (requires a Claude subscription), then save the token as a repo secret
+   named `CLAUDE_CODE_OAUTH_TOKEN` (Settings → Secrets and variables →
+   Actions). No API key billing — triage runs on your subscription. Without
+   the secret, runs still work; digests are just unscored.
+3. **Fill in `experience_library.md`** — resume drafting stays disabled
+   until its `STATUS: TEMPLATE` line is deleted. Drafts land in `drafts/`,
+   committed by the workflow, and draw ONLY from the library (hard rule in
+   the prompt: no invented metrics, skills, employers, or accomplishments —
+   gaps become TODO notes).
+4. **Tune `config.json`**: search terms, keyword filter, title exclusions,
+   priority topics, ATS boards, resume threshold, retention. `profile.md`
+   is what postings are scored against — keep it current.
 
 ## Running locally
 

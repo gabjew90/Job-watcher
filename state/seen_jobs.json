@@ -4,6 +4,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Virginia, Ashburn (+2 more)",
   "priority": false,
+  "rationale": "Program manager at hyperscaler; datacenter domain fits but seniority is middle-management, not director/senior-PM.",
+  "score": 55,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Program Manager",
   "url": "/careers/job/1970393556918737"
@@ -13,6 +16,9 @@
   "first_seen": "2026-08-13",
   "location": "Herndon, Virginia, USA",
   "priority": true,
+  "rationale": "Power generation engineer; technical IC role not PM despite relevant power infrastructure domain.",
+  "score": 24,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Power Generation Engineer, AWS Global Energy",
   "url": "https://www.amazon.jobs/en/jobs/10483860/power-generation-engineer-aws-global-energy"
@@ -31,6 +37,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / Bellevue, WA/Dallas, TX",
   "priority": false,
+  "rationale": "Manager in data center logistics operations, not strategic energy infrastructure or director level.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Manager, Data Center Logistics & Inventory",
   "url": "https://coreweave.com/careers/job?4652717006&board=coreweave&gh_jid=4652717006"
@@ -49,6 +58,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX",
   "priority": false,
+  "rationale": "Operations accounting manager; financial/compliance focus disconnected from energy/grid strategy.",
+  "score": 15,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Manager, Data Center Operations Accounting",
   "url": "https://coreweave.com/careers/job?4666800006&board=coreweave&gh_jid=4666800006"
@@ -58,6 +70,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Texas, Abilene",
   "priority": false,
+  "rationale": "Electrical engineering role; not a PM position despite datacenter domain.",
+  "score": 20,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Critical Environment Electrical Engineer",
   "url": "/careers/job/1970393556928892"
@@ -67,6 +82,9 @@
   "first_seen": "2026-08-13",
   "location": "Ellendale, ND",
   "priority": false,
+  "rationale": "Technician-level role; hands-on operations support far below strategic PM seniority.",
+  "score": 5,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Technician - Ellendale, ND",
   "url": "https://coreweave.com/careers/job?4579319006&board=coreweave&gh_jid=4579319006"
@@ -76,6 +94,9 @@
   "first_seen": "2026-08-13",
   "location": "Bellevue, WA / Livingston, NJ / New York, NY / San Francisco, CA / Sunnyvale, CA",
   "priority": false,
+  "rationale": "Senior site selection manager evaluating power availability and utility requirements; strategic datacenter site PM with energy assessment scope.",
+  "score": 75,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Senior Data Center Site Selection Manager",
   "url": "https://coreweave.com/careers/job?4650927006&board=coreweave&gh_jid=4650927006"
@@ -94,6 +115,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": true,
+  "rationale": "Senior manager owning utility contract lifecycle and infrastructure agreements; perfect domain fit (PG&E background) and director-adjacent seniority.",
+  "score": 85,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Senior Manager, Utility Contracts",
   "url": "https://jobs.ashbyhq.com/crusoe/7360f5f7-1ca0-4ff6-a504-d45792376725"
@@ -103,6 +127,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": false,
+  "rationale": "Senior energy operations manager managing power agreements and contracts; strong domain fit but operations-focused rather than strategy/product PM.",
+  "score": 72,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Energy Operations Manager - AMER, Energy Portfolio Operations",
   "url": "https://www.amazon.jobs/en/jobs/10396779/energy-operations-manager-amer-energy-portfolio-operations"
@@ -112,6 +139,9 @@
   "first_seen": "2026-08-13",
   "location": "Houston, Texas, USA",
   "priority": false,
+  "rationale": "Senior manager BD for power/utilities; relevant energy domain but business development focus rather than product/infrastructure PM.",
+  "score": 74,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Sr. Mgr Business Development, Power and Utilities",
   "url": "https://www.amazon.jobs/en/jobs/10465708/sr-mgr-business-development-power-and-utilities"
@@ -121,6 +151,9 @@
   "first_seen": "2026-08-13",
   "location": "Cambridge, MA, USA, Raleigh, NC, USA, Durham, NC, USA",
   "priority": false,
+  "rationale": "Cloud storage infrastructure; entirely different domain from energy/power.",
+  "score": 5,
+  "seniority_match": false,
   "source": "google-careers",
   "title": "Staff Engineer/Technical Lead, Google Distributed Cloud Storage",
   "url": "https://www.google.com/about/careers/applications/jobs/results/92581485084582598"
@@ -130,6 +163,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, Texas, USA",
   "priority": false,
+  "rationale": "Energy projects manager at hyperscaler; strong domain fit (utilities, infrastructure, energy) but manager-level not director/senior-PM.",
+  "score": 70,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Energy Projects Manager, AWS Energy Team",
   "url": "https://www.amazon.jobs/en/jobs/10475449/energy-projects-manager-aws-energy-team"
@@ -139,6 +175,9 @@
   "first_seen": "2026-08-13",
   "location": "Sunnyvale, CA, USA",
   "priority": false,
+  "rationale": "Product engineer for server manufacturing; hardware/supply chain focus misaligned with energy/grid strategy.",
+  "score": 15,
+  "seniority_match": false,
   "source": "google-careers",
   "title": "Product Engineer, ARM Servers, Storage and ML Systems",
   "url": "https://www.google.com/about/careers/applications/jobs/results/91527450718020294"
@@ -148,6 +187,9 @@
   "first_seen": "2026-08-13",
   "location": "Tulsa, OK - US (2)",
   "priority": false,
+  "rationale": "Senior electrical engineer in power system design; strong domain but individual-contributor engineering level.",
+  "score": 52,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Electrical Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/3d970d19-0954-47ec-9d95-64670886c37a"
@@ -166,6 +208,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX - US",
   "priority": false,
+  "rationale": "Staff commissioning engineer with strong electrical/power domain fit; remains individual-contributor IC level.",
+  "score": 50,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Staff Commissioning Engineer, Electrical",
   "url": "https://jobs.ashbyhq.com/crusoe/0171ae80-ad38-4dd5-9d8e-32d720578535"
@@ -184,6 +229,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Senior IC engineer in storage, not director/PM level.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Sr. Engineer, Storage",
   "url": "https://coreweave.com/careers/job?4664429006&board=coreweave&gh_jid=4664429006"
@@ -202,6 +250,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX - US",
   "priority": false,
+  "rationale": "Senior Director in datacenter infrastructure acquisitions; excellent seniority but M&A function, not product/operations strategy.",
+  "score": 50,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Senior Director, Acquisitions",
   "url": "https://jobs.ashbyhq.com/crusoe/b114511a-4f40-4c5e-9b0a-a557448476d8"
@@ -220,6 +271,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX, USA, Midlothian, TX, USA, Thornton, CO, USA",
   "priority": true,
+  "rationale": "Acquisitions lead at hyperscaler with senior-level seniority; datacentre site selection relevant but not energy-specific strategy.",
+  "score": 60,
+  "seniority_match": true,
   "source": "google-careers",
   "title": "Acquisitions and Development Lead",
   "url": "https://www.google.com/about/careers/applications/jobs/results/109449337779430086"
@@ -229,6 +283,9 @@
   "first_seen": "2026-08-13",
   "location": "Remote",
   "priority": false,
+  "rationale": "Senior IC field engineer at EV charging company; electrical/energy domain but EV not datacenter/BESS.",
+  "score": 20,
+  "seniority_match": false,
   "source": "lever",
   "title": "Senior Field Electrical Engineer",
   "url": "https://jobs.lever.co/terawattinfrastructure/b8ef86bc-e56d-491a-9058-04d95ab7fe88"
@@ -238,6 +295,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Wyoming, Cheyenne",
   "priority": false,
+  "rationale": "Project Manager is middle-management; datacenter domain fits but seniority below director/senior-PM target.",
+  "score": 48,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Project Manager (DCPM) - CTJ - Top Secret",
   "url": "/careers/job/1970393556959740"
@@ -265,6 +325,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Georgia, Lithia Springs (+3 more)",
   "priority": false,
+  "rationale": "Senior technician role; far below director/senior-PM seniority despite datacenter domain.",
+  "score": 16,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Senior Data Center Technician",
   "url": "/careers/job/1970393556943808"
@@ -274,6 +337,9 @@
   "first_seen": "2026-08-13",
   "location": "Ellendale, ND / Dalton, GA",
   "priority": false,
+  "rationale": "Apprentice/technician-level program; entry-level data center operations misaligned with senior PM profile.",
+  "score": 5,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Apprentice Program",
   "url": "https://coreweave.com/careers/job?4694103006&board=coreweave&gh_jid=4694103006"
@@ -283,6 +349,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Senior capacity planner with hardware forecasting and strategic planning; director-adjacent seniority but supply-chain focused vs. product/strategy.",
+  "score": 62,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Senior Hardware Infrastructure Capacity Planner",
   "url": "https://jobs.ashbyhq.com/crusoe/b4ab52e6-39d0-496c-a23f-1778ebfb9e5f"
@@ -301,6 +370,9 @@
   "first_seen": "2026-08-13",
   "location": "Remote",
   "priority": false,
+  "rationale": "Manager at BESS company in AI solutions/analytics; excellent domain but manager level, not director/senior-PM.",
+  "score": 55,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Manager, AI Solutions & Analytics - Battery Storage",
   "url": "https://job-boards.greenhouse.io/pluspower/jobs/4702383006"
@@ -310,6 +382,9 @@
   "first_seen": "2026-08-13",
   "location": "Warsaw, Poland",
   "priority": false,
+  "rationale": "Senior IC engineer in cloud storage, not PM/director level and wrong domain (storage, not energy).",
+  "score": 15,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Engineer, AI Object Storage",
   "url": "https://coreweave.com/careers/job?4677479006&board=coreweave&gh_jid=4677479006"
@@ -319,6 +394,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Multiple Locations, Multiple Locations",
   "priority": false,
+  "rationale": "Title lacks descriptor depth; insufficient information to assess PM/strategy level.",
+  "score": 45,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Capacity & Efficiency Infrastructure",
   "url": "/careers/job/1970393556851470"
@@ -328,6 +406,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA, USA, Boulder, CO, USA, Mountain View, CA, USA",
   "priority": false,
+  "rationale": "Portfolio lead on clean energy instruments with 8+ years management required; strong energy market fit but less specific to datacenter/BESS.",
+  "score": 75,
+  "seniority_match": true,
   "source": "google-careers",
   "title": "Clean Energy Instruments Portfolio Lead, Sustainability",
   "url": "https://www.google.com/about/careers/applications/jobs/results/88789321019990726"
@@ -337,6 +418,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": true,
+  "rationale": "Grid/power systems domain expertise valuable but Solutions Architect role emphasizes technical subject matter expertise over product strategy.",
+  "score": 50,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Senior Solutions Architect, Electric Grid, AWS Energy & Utilities AI Products",
   "url": "https://www.amazon.jobs/en/jobs/10413013/senior-solutions-architect-electric-grid-aws-energy-utilities-ai-products"
@@ -346,6 +430,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, Texas, USA",
   "priority": false,
+  "rationale": "Energy policy manager; relevant regulatory/interconnection domain but policy-focused, not product/infrastructure PM leadership.",
+  "score": 42,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Manager, Energy Public Policy, Texas and US Central , AWS Public Policy",
   "url": "https://www.amazon.jobs/en/jobs/10440999/manager-energy-public-policy-texas-and-us-central-aws-public-policy"
@@ -355,6 +442,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Georgia, Fayetteville",
   "priority": false,
+  "rationale": "Program manager at hyperscaler; datacenter domain fits but seniority is middle-management, not director/senior-PM.",
+  "score": 55,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Program Manager",
   "url": "/careers/job/1970393556912990"
@@ -364,6 +454,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Growth lead/commercial operator for energy retail business; director-adjacent strategic business role with energy domain fit.",
+  "score": 68,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Growth Lead, Base Energy",
   "url": "https://jobs.ashbyhq.com/base-power/0f682103-d220-407f-bbf1-c9ae6cde6231"
@@ -373,6 +466,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": true,
+  "rationale": "Associate developing energy/infrastructure projects for AI datacenters; excellent domain match but associate-level, far below target.",
+  "score": 35,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Commercial Energy Development Associate",
   "url": "https://jobs.ashbyhq.com/crusoe/dce60a25-2528-487e-8edf-8c46603d1d19"
@@ -391,6 +487,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA / Sunnyvale, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Senior IC field engineer in storage, not director/PM level.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Specialist Field Engineer - Storage",
   "url": "https://coreweave.com/careers/job?4568531006&board=coreweave&gh_jid=4568531006"
@@ -400,6 +499,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Arizona, El Mirage",
   "priority": false,
+  "rationale": "Technician role; far below director/senior-PM seniority despite datacenter domain.",
+  "score": 10,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Technician",
   "url": "/careers/job/1970393556960415"
@@ -409,6 +511,9 @@
   "first_seen": "2026-08-13",
   "location": "Denver, CO - US",
   "priority": false,
+  "rationale": "Junior R&D engineering role; relevant datacenter domain but well below director/senior-PM level.",
+  "score": 35,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Data Center Systems Engineer, R&D",
   "url": "https://jobs.ashbyhq.com/crusoe/a02d7665-254c-439b-8771-b8eaa30addd0"
@@ -418,6 +523,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": false,
+  "rationale": "Energy projects manager at hyperscaler; strong domain fit (utilities, infrastructure, energy) but manager-level not director/senior-PM.",
+  "score": 70,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Energy Projects Manager, AWS Energy Team",
   "url": "https://www.amazon.jobs/en/jobs/10461784/energy-projects-manager-aws-energy-team"
@@ -436,6 +544,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Senior Staff IC role in GPU hardware operations; strong infrastructure domain but individual-contributor level misses target.",
+  "score": 40,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Staff Data Center Operations Engineer, GPU Hardware Architecture",
   "url": "https://jobs.ashbyhq.com/crusoe/0a5354b7-a128-43a3-8f87-63a3109918b4"
@@ -445,6 +556,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Analyst-level lease administration; financial/compliance operations rather than strategic PM.",
+  "score": 15,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Lease Analyst",
   "url": "https://coreweave.com/careers/job?4698065006&board=coreweave&gh_jid=4698065006"
@@ -454,6 +568,9 @@
   "first_seen": "2026-08-13",
   "location": "Arvada, CO - US",
   "priority": false,
+  "rationale": "Principal-level role in power systems design for AI datacenters aligns with seniority, but engineering-focused rather than product/strategy.",
+  "score": 72,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Principal Electrical Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/d72502c5-20ff-4c6a-bf83-b8a2d694b73f"
@@ -463,6 +580,9 @@
   "first_seen": "2026-08-13",
   "location": "Reykjanesbaer - IS",
   "priority": false,
+  "rationale": "Data center hardware technician; entry-level role far below director/PM level.",
+  "score": 8,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Hardware Data Center Technician",
   "url": "https://jobs.ashbyhq.com/crusoe/45537e7f-9cdf-4ac7-bf8b-58269226b9d7"
@@ -472,6 +592,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, California, Mountain View (+2 more)",
   "priority": false,
+  "rationale": "Senior storage engineer at hyperscaler; technical IC role not PM; storage domain relevant but wrong function.",
+  "score": 28,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Senior Storage Engineer",
   "url": "/careers/job/1970393556928712"
@@ -490,6 +613,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX",
   "priority": false,
+  "rationale": "Field technician role with good BESS domain fit but far below director/senior-PM seniority.",
+  "score": 22,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Traveling Electrician",
   "url": "https://jobs.ashbyhq.com/base-power/b78c16d8-9bbc-4986-91ec-91530249f5e2"
@@ -499,6 +625,9 @@
   "first_seen": "2026-08-13",
   "location": "Arlington, Virginia, USA",
   "priority": true,
+  "rationale": "Senior energy strategy manager driving datacenter power strategy and utility partnerships; exceptional match on seniority, domain, and grid interconnection.",
+  "score": 92,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Sr. Energy Strategy Manager, AWS Energy Team",
   "url": "https://www.amazon.jobs/en/jobs/10375485/sr-energy-strategy-manager-aws-energy-team"
@@ -517,6 +646,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Security engineer role; physical security infrastructure disconnected from energy/grid strategy.",
+  "score": 10,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Security Engineer - Resiliency",
   "url": "https://coreweave.com/careers/job?4701742006&board=coreweave&gh_jid=4701742006"
@@ -526,6 +658,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Staff IC engineer in data center networking, not director/PM level.",
+  "score": 18,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Staff Network Production Engineer, Deployment",
   "url": "https://jobs.ashbyhq.com/crusoe/7892f702-1af8-483e-9d00-3b1a1bd51803"
@@ -535,6 +670,9 @@
   "first_seen": "2026-08-13",
   "location": "Dalton, GA",
   "priority": false,
+  "rationale": "Technician-level role; hands-on operations support far below strategic PM seniority.",
+  "score": 5,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Technician - Dalton, GA ",
   "url": "https://coreweave.com/careers/job?4699663006&board=coreweave&gh_jid=4699663006"
@@ -544,6 +682,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Supply manager focused on electrical component sourcing; manager-level seniority but low domain relevance (component sourcing vs. energy systems/operations).",
+  "score": 35,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Global Supply Manager - Board Electricals",
   "url": "https://jobs.ashbyhq.com/base-power/2c71bcf4-59a5-4d6d-9c75-6ad3e5aad2f0"
@@ -553,6 +694,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": true,
+  "rationale": "Deployment operations specialist supporting utility interconnection; relevant domain but junior operations-specialist level.",
+  "score": 38,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Deployment Operations Specialist (Utility Partnerships)",
   "url": "https://jobs.ashbyhq.com/base-power/862daba1-c0ec-48f2-8f39-5aafc3932f32"
@@ -562,6 +706,9 @@
   "first_seen": "2026-08-13",
   "location": "Houston, Texas, USA",
   "priority": false,
+  "rationale": "Business development specialist for HPC/Oil & Gas computing workflows; energy domain mismatch (subsurface/O&G not datacenter power infrastructure).",
+  "score": 28,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Sr. WW GTM Specialist, HPC Energy Workloads, Advanced Computing, WWSO HPC Team",
   "url": "https://www.amazon.jobs/en/jobs/10468832/sr-ww-gtm-specialist-hpc-energy-workloads-advanced-computing-wwso-hpc-team"
@@ -571,6 +718,9 @@
   "first_seen": "2026-08-13",
   "location": "Denver, CO - US",
   "priority": false,
+  "rationale": "Senior manager in environmental compliance; director-adjacent seniority but environmental focus not core to energy/power operations strategy.",
+  "score": 40,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Senior Manager, Environmental Planning",
   "url": "https://jobs.ashbyhq.com/crusoe/cfb7a446-f184-4c96-a473-9d120df0cb7e"
@@ -580,6 +730,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA / United States - Data Centers",
   "priority": false,
+  "rationale": "Analyst-level operations enablement; process documentation and runbooks rather than strategic PM.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Operations Enablement Analyst, Data Center Operations",
   "url": "https://coreweave.com/careers/job?4698084006&board=coreweave&gh_jid=4698084006"
@@ -589,6 +742,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Strategic operator leading utility partnerships, deployment, and grid value delivery; excellent domain match (utility/grid interconnection) and director-adjacent seniority.",
+  "score": 80,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Utility Partnerships",
   "url": "https://jobs.ashbyhq.com/base-power/143f6f19-dddc-44e4-a6a7-41b7dc4d2115"
@@ -607,6 +763,9 @@
   "first_seen": "2026-08-13",
   "location": " Sunnyvale, CA /Bellevue, WA",
   "priority": false,
+  "rationale": "Product marketing manager; communications and positioning rather than product/operations strategy PM.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Product Marketing Manager, AI Infrastructure/Compute/Networking",
   "url": "https://coreweave.com/careers/job?4684887006&board=coreweave&gh_jid=4684887006"
@@ -616,6 +775,9 @@
   "first_seen": "2026-08-13",
   "location": "Sunnyvale, CA, USA",
   "priority": false,
+  "rationale": "Thermal test engineer; hardware testing focus disconnected from energy strategy or PM responsibilities.",
+  "score": 10,
+  "seniority_match": false,
   "source": "google-careers",
   "title": "Senior Thermal Test Engineer, Platforms Infrastructure",
   "url": "https://www.google.com/about/careers/applications/jobs/results/93915327980544710"
@@ -625,6 +787,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Arizona, Phoenix (+1 more)",
   "priority": false,
+  "rationale": "Program manager at hyperscaler; datacenter domain fits but seniority is middle-management, not director/senior-PM.",
+  "score": 55,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Program Manager",
   "url": "/careers/job/1970393556928874"
@@ -634,6 +799,9 @@
   "first_seen": "2026-08-13",
   "location": "Miami, Florida",
   "priority": true,
+  "rationale": "Energy storage trader at BESS company; domain fit but trading/optimization operations, not development strategy.",
+  "score": 30,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Power Energy Storage Trader ",
   "url": "https://job-boards.greenhouse.io/spearmintenergy/jobs/4315201009"
@@ -643,6 +811,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Senior PM in data center technology operations but not energy/BESS infrastructure focused.",
+  "score": 55,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Senior Product Manager, Data Center",
   "url": "https://coreweave.com/careers/job?4673538006&board=coreweave&gh_jid=4673538006"
@@ -652,6 +823,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Texas, Abilene",
   "priority": false,
+  "rationale": "Senior director-level hyperscaler datacenter operations; excellent seniority match with relevant infrastructure focus.",
+  "score": 82,
+  "seniority_match": true,
   "source": "microsoft",
   "title": "Senior Data Center Metro Director",
   "url": "/careers/job/1970393556953780"
@@ -661,6 +835,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Technical sourcing manager in procurement, not energy/infrastructure strategy.",
+  "score": 18,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Technical Sourcing Manager, Storage and Components",
   "url": "https://coreweave.com/careers/job?4696658006&board=coreweave&gh_jid=4696658006"
@@ -670,6 +847,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Director of HR/people operations; director level but wrong function entirely (HR, not infrastructure).",
+  "score": 18,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Director, Employee Success - Digital Infrastructure Group",
   "url": "https://jobs.ashbyhq.com/crusoe/2875f7e1-7cfc-41d4-ba4d-1ed6be4939c8"
@@ -679,6 +859,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Wisconsin, Mount Pleasant",
   "priority": false,
+  "rationale": "Electrical engineering role; not a PM position despite datacenter domain.",
+  "score": 20,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Critical Environment Electrical Engineer",
   "url": "/careers/job/1970393556873865"
@@ -697,6 +880,9 @@
   "first_seen": "2026-08-13",
   "location": "Tel Aviv - IL",
   "priority": false,
+  "rationale": "Project manager leading datacenter deployment operations; PM-level seniority with infrastructure operations domain match.",
+  "score": 65,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Data Center Operations Project Manager",
   "url": "https://jobs.ashbyhq.com/crusoe/d997f139-93a7-452b-8b45-676026afeb82"
@@ -715,6 +901,9 @@
   "first_seen": "2026-08-13",
   "location": "Washington",
   "priority": false,
+  "rationale": "Staff IC engineer in storage, not director/PM level.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Staff Storage Engineer, File & Block",
   "url": "https://coreweave.com/careers/job?4669836006&board=coreweave&gh_jid=4669836006"
@@ -724,6 +913,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Individual contributor hardware engineer, not director or PM; BESS domain fit insufficient to overcome seniority gap.",
+  "score": 28,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Systems Integration Engineer",
   "url": "https://jobs.ashbyhq.com/base-power/7ec26a2c-f2b7-47fc-9881-51bdcd4915eb"
@@ -733,6 +925,9 @@
   "first_seen": "2026-08-13",
   "location": "Arvada, CO - US",
   "priority": false,
+  "rationale": "Senior Project Manager in manufacturing infrastructure; project execution focus, not strategic product/energy infrastructure development.",
+  "score": 38,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Project Manager, Manufacturing Infrastructure",
   "url": "https://jobs.ashbyhq.com/crusoe/c14aab38-5269-494b-8293-96868bce6795"
@@ -742,6 +937,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / Bellevue, WA / Philadelphia, PA / New York City, NY / San Francisco, CA / Sunnyvale, CA / Washington, D.C.",
   "priority": false,
+  "rationale": "Strategic sourcing leader in procurement, not energy infrastructure strategy or director level.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Strategic Sourcing - Data Center Infrastructure Equipment and Integration",
   "url": "https://coreweave.com/careers/job?4628998006&board=coreweave&gh_jid=4628998006"
@@ -751,6 +949,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Senior Staff IC engineer in network deployment; networking domain mismatch and individual-contributor level.",
+  "score": 28,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Staff Network Engineer, Deployment",
   "url": "https://jobs.ashbyhq.com/crusoe/9b41f10a-54e8-4c4c-a59b-df93447b356f"
@@ -760,6 +961,9 @@
   "first_seen": "2026-08-13",
   "location": "Columbus, Ohio, USA",
   "priority": true,
+  "rationale": "Field engineering role; individual contributor electrical engineering position below strategic PM level.",
+  "score": 25,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Power Generation Infrastructure Engineer, Field Engineering",
   "url": "https://www.amazon.jobs/en/jobs/10443895/power-generation-infrastructure-engineer-field-engineering"
@@ -769,6 +973,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Engineering lead owning electrical architecture for BESS systems; excellent domain fit in battery storage but engineering leadership vs. product/operations PM.",
+  "score": 70,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Electrical Engineering Lead",
   "url": "https://jobs.ashbyhq.com/base-power/3104ebdb-809e-44bb-8626-8c802363d8e3"
@@ -778,6 +985,9 @@
   "first_seen": "2026-08-13",
   "location": "California",
   "priority": false,
+  "rationale": "Staff IC engineer in storage, not director/PM level.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Staff Storage Engineer, File & Block",
   "url": "https://coreweave.com/careers/job?4702521006&board=coreweave&gh_jid=4702521006"
@@ -787,6 +997,9 @@
   "first_seen": "2026-08-13",
   "location": "Bloomingdale, IL",
   "priority": false,
+  "rationale": "Apprentice electrician for field installation; technician-level entry role, far below director/senior-PM target.",
+  "score": 12,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Apprentice Electrician (Chicagoland)",
   "url": "https://jobs.ashbyhq.com/base-power/0a158b33-7b19-41a8-b574-06ed6d3e666c"
@@ -805,6 +1018,9 @@
   "first_seen": "2026-08-13",
   "location": "Sunnyvale, CA - US",
   "priority": false,
+  "rationale": "Senior IC engineer/SRE focused on storage infrastructure; relevant domain but individual-contributor level.",
+  "score": 42,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Production Engineer, Storage",
   "url": "https://jobs.ashbyhq.com/crusoe/fb0c1911-c752-49df-84ef-4ff5309e8590"
@@ -823,6 +1039,9 @@
   "first_seen": "2026-08-13",
   "location": "Miami, Florida",
   "priority": true,
+  "rationale": "Corporate IT administrator, unrelated to energy or infrastructure strategy.",
+  "score": 8,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Corporate IT Administrator",
   "url": "https://job-boards.greenhouse.io/spearmintenergy/jobs/4315158009"
@@ -832,6 +1051,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Staff PM role owning datacenter networking infrastructure product; senior-PM level with strong cloud infrastructure/energy domain fit.",
+  "score": 78,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Staff Product Manager, Cloud Infrastructure (Networking)",
   "url": "https://jobs.ashbyhq.com/crusoe/32f99c76-f747-433b-87f0-07c96c48d5a7"
@@ -850,6 +1072,9 @@
   "first_seen": "2026-08-13",
   "location": "Houston, Texas, USA",
   "priority": false,
+  "rationale": "Director-level business development for energy and utilities; director seniority and energy infrastructure domain match candidate targets.",
+  "score": 86,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Director, Business Development, Energy and Utilities",
   "url": "https://www.amazon.jobs/en/jobs/10465709/director-business-development-energy-and-utilities"
@@ -859,6 +1084,9 @@
   "first_seen": "2026-08-13",
   "location": "Remote",
   "priority": true,
+  "rationale": "Senior engineer in battery storage commissioning; excellent BESS domain but IC engineering role not PM/director.",
+  "score": 40,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Project Commissioning Engineer - Battery Storage",
   "url": "https://job-boards.greenhouse.io/pluspower/jobs/4702330006"
@@ -868,6 +1096,9 @@
   "first_seen": "2026-08-13",
   "location": "Remote - US",
   "priority": true,
+  "rationale": "Field engineer role in datacenter electrical construction; junior/mid-level despite relevant domain.",
+  "score": 35,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Electrical Field Engineer - Data Center",
   "url": "https://jobs.ashbyhq.com/crusoe/95347434-cb96-426e-b1d7-b15bb327c4fd"
@@ -877,6 +1108,9 @@
   "first_seen": "2026-08-13",
   "location": "Dublin - IE",
   "priority": false,
+  "rationale": "Junior IC engineering role in fleet operations; entry-level despite infrastructure domain relevance.",
+  "score": 32,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Infrastructure Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/cc3c98fe-9c9f-4874-9462-2b85101312c1"
@@ -886,6 +1120,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": true,
+  "rationale": "Senior procurement manager for energy infrastructure and datacenter power; excellent match on energy/BESS domain and senior-manager seniority.",
+  "score": 80,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Sr DC Capex Procurement Manager - Energy infrastructure, Data Center Sourcing and Procurement",
   "url": "https://www.amazon.jobs/en/jobs/10472905/sr-dc-capex-procurement-manager-energy-infrastructure-data-center-sourcing-and-procurement"
@@ -895,6 +1132,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Production engineer for battery assembly manufacturing; relevant BESS domain but individual-contributor IC engineering level.",
+  "score": 42,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Production Engineer",
   "url": "https://jobs.ashbyhq.com/base-power/59ee140c-cd57-423a-81cd-14f71b11e2dd"
@@ -931,6 +1171,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Texas, Abilene",
   "priority": false,
+  "rationale": "Program manager at hyperscaler; datacenter domain fits but seniority is middle-management, not director/senior-PM.",
+  "score": 55,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Program Manager",
   "url": "/careers/job/1970393556928778"
@@ -940,6 +1183,9 @@
   "first_seen": "2026-08-13",
   "location": "Redwood City",
   "priority": false,
+  "rationale": "Explicitly early-career junior engineer role; domain fit irrelevant when seniority is fundamentally misaligned.",
+  "score": 12,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Optimization Engineer, Grid Systems",
   "url": "https://jobs.ashbyhq.com/gridcare/ed076579-3cdf-445e-a70c-fb9470adfbfd"
@@ -949,6 +1195,9 @@
   "first_seen": "2026-08-13",
   "location": "New York ",
   "priority": false,
+  "rationale": "Staff IC engineer in storage, not director/PM level.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Staff Storage Engineer, File & Block",
   "url": "https://coreweave.com/careers/job?4704233006&board=coreweave&gh_jid=4704233006"
@@ -958,6 +1207,9 @@
   "first_seen": "2026-08-13",
   "location": "Denver, CO - US",
   "priority": false,
+  "rationale": "Systems engineer in modular data center design; IC role not director/PM level.",
+  "score": 20,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Modular Data Center Systems Engineer \u2013 Spark",
   "url": "https://jobs.ashbyhq.com/crusoe/9aa892be-71db-455e-9980-ffff4badfee3"
@@ -967,6 +1219,9 @@
   "first_seen": "2026-08-13",
   "location": "Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Senior IC field engineer in compute infrastructure, not director/PM level.",
+  "score": 15,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Specialist Field Engineer - Compute Infrastructure",
   "url": "https://coreweave.com/careers/job?4688589006&board=coreweave&gh_jid=4688589006"
@@ -985,6 +1240,9 @@
   "first_seen": "2026-08-13",
   "location": "Arlington, Virginia, USA",
   "priority": true,
+  "rationale": "Principal-level grid integration strategy role focused on PJM policy and datacenter interconnection; excellent seniority and perfect domain alignment.",
+  "score": 90,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Principal, PJM Grid Integration Strategy, AWS East Energy and Water Team",
   "url": "https://www.amazon.jobs/en/jobs/10379531/principal-pjm-grid-integration-strategy-aws-east-energy-and-water-team"
@@ -994,6 +1252,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Analyst-level cost planning; datacenter construction focus but not energy-specific and below strategic PM level.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Operations Cost Analyst",
   "url": "https://coreweave.com/careers/job?4702795006&board=coreweave&gh_jid=4702795006"
@@ -1003,6 +1264,9 @@
   "first_seen": "2026-08-13",
   "location": "Sunnyvale, CA",
   "priority": false,
+  "rationale": "Staff IC engineer in data center IT systems, not director/PM level.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Staff Business Systems Engineer, Data Center Systems",
   "url": "https://coreweave.com/careers/job?4676674006&board=coreweave&gh_jid=4676674006"
@@ -1012,6 +1276,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Staff IC planner focused on compute/storage; strategic planning domain but individual-contributor level.",
+  "score": 38,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Staff Compute & Storage Capacity Planner",
   "url": "https://jobs.ashbyhq.com/crusoe/eac062c7-1d4b-4597-b967-349d69a42820"
@@ -1021,6 +1288,9 @@
   "first_seen": "2026-08-13",
   "location": "Bellevue, WA / Livingston, NJ / New York, NY / Sunnyvale, CA",
   "priority": false,
+  "rationale": "Senior PM in cloud storage products, not energy infrastructure or BESS domain.",
+  "score": 25,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Senior Product Manager, Storage",
   "url": "https://coreweave.com/careers/job?4703535006&board=coreweave&gh_jid=4703535006"
@@ -1030,6 +1300,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Senior manager leading infrastructure platform engineering; director-adjacent seniority with infrastructure focus but software-platform-focused vs. energy operations.",
+  "score": 58,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Senior Manager, Infrastructure Platform Engineering",
   "url": "https://jobs.ashbyhq.com/crusoe/9c863331-fba2-4242-bde4-6b17941da0cc"
@@ -1039,6 +1312,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Business systems manager for datacenter operations; infrastructure tooling/process rather than energy PM.",
+  "score": 35,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Operations Business Systems Manager",
   "url": "https://coreweave.com/careers/job?4696023006&board=coreweave&gh_jid=4696023006"
@@ -1048,6 +1324,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX - US",
   "priority": false,
+  "rationale": "Manager-level role focused on HSE compliance; director-adjacent seniority but misaligned domain (safety vs. energy/operations).",
+  "score": 45,
+  "seniority_match": true,
   "source": "ashby",
   "title": "HSE Manager, Data Center Construction",
   "url": "https://jobs.ashbyhq.com/crusoe/4dc0d3ec-ab8b-402e-b90d-9c6707a2aeba"
@@ -1066,6 +1345,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": false,
+  "rationale": "Manager III developing utility connection strategy for datacenter energy; relevant but middle-management seniority below director/senior-PM target.",
+  "score": 58,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Mgr III, Infra Tech Bus Dev - AMZ14148.9",
   "url": "https://www.amazon.jobs/en/jobs/10476830/mgr-iii-infra-tech-bus-dev-amz14148-9"
@@ -1075,6 +1357,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Individual contributor hardware integration engineer, same seniority mismatch as systems integration role despite relevant BESS domain.",
+  "score": 28,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Hardware Integration Engineer",
   "url": "https://jobs.ashbyhq.com/base-power/5d6afa58-09be-40ce-b89c-c8baea08a38c"
@@ -1084,6 +1369,9 @@
   "first_seen": "2026-08-13",
   "location": "Arvada, CO - US",
   "priority": false,
+  "rationale": "Senior IC engineer in electrical systems for data center power products; power domain but IC role.",
+  "score": 28,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Electrical Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/b1819583-e095-4717-b6dd-5630ee698163"
@@ -1093,6 +1381,9 @@
   "first_seen": "2026-08-13",
   "location": "New York, NY",
   "priority": true,
+  "rationale": "Manager-level power procurement with energy transaction strategy; strong energy domain fit and appropriate seniority for procurement/risk management PM.",
+  "score": 80,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Power Procurement Manager",
   "url": "https://coreweave.com/careers/job?4688247006&board=coreweave&gh_jid=4688247006"
@@ -1102,6 +1393,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": true,
+  "rationale": "Electrical design engineer for datacenters; good power/infrastructure domain but IC engineering role, not PM/director.",
+  "score": 48,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Electrical Design Engineer - Data Center",
   "url": "https://jobs.ashbyhq.com/crusoe/81cec6a2-4bb9-41d0-a5fd-08e4017945fd"
@@ -1120,6 +1414,9 @@
   "first_seen": "2026-08-13",
   "location": "Redwood City",
   "priority": true,
+  "rationale": "Excellent domain (grid interconnection, AI datacenters) with directly relevant PG&E background, but IC power systems engineer role below director level.",
+  "score": 37,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Power System Engineer - Interconnection Studies",
   "url": "https://jobs.ashbyhq.com/gridcare/925e111a-18d6-4d6f-b17b-b4435199f6ba"
@@ -1129,6 +1426,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Wisconsin, Mount Pleasant",
   "priority": false,
+  "rationale": "Operations-focused manager role; datacenter domain fits but lacks strategic PM/director seniority.",
+  "score": 38,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center IT Operations Manager",
   "url": "/careers/job/1970393556958674"
@@ -1138,6 +1438,9 @@
   "first_seen": "2026-08-13",
   "location": "Denver, CO - US",
   "priority": false,
+  "rationale": "Staff IC engineer focused on network deployment; wrong domain (networking vs. power/energy) and IC-level.",
+  "score": 30,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Staff Network Production Engineer, Deployment",
   "url": "https://jobs.ashbyhq.com/crusoe/0cdb9094-35d6-4213-bf75-77220450e097"
@@ -1147,6 +1450,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Wisconsin, Mount Pleasant",
   "priority": false,
+  "rationale": "Mechanical engineering role; not a PM position despite datacenter domain.",
+  "score": 22,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Data Center Critical Environment Mechanical Engineer",
   "url": "/careers/job/1970393556873514"
@@ -1156,6 +1462,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Senior physical security operations manager; security governance rather than energy/grid strategy.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Data Center Security Business Operations Program Manager",
   "url": "https://coreweave.com/careers/job?4700858006&board=coreweave&gh_jid=4700858006"
@@ -1165,6 +1474,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Director-level operational role owning energy development strategy, financial frameworks, and land/power evaluation\u2014exact seniority and domain fit.",
+  "score": 85,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Director, Commercial Operations",
   "url": "https://jobs.ashbyhq.com/crusoe/1877a89a-6948-43d4-b23b-5561a72fc2e3"
@@ -1183,6 +1495,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Washington, Redmond",
   "priority": false,
+  "rationale": "Senior-level energy strategy PM focused on energy markets and power systems; strong match but title is \"program manager\" not director.",
+  "score": 76,
+  "seniority_match": true,
   "source": "microsoft",
   "title": "Senior Energy Markets Program Manager, Strategic Projects",
   "url": "/careers/job/1970393556942066"
@@ -1201,6 +1516,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Program manager at appropriate seniority but datacenter ops execution-focused without explicit energy/BESS portfolio scope.",
+  "score": 50,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Data Center Operations Program Manager",
   "url": "https://coreweave.com/careers/job?4689627006&board=coreweave&gh_jid=4689627006"
@@ -1210,6 +1528,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Head of firmware for BESS systems; director-level seniority but firmware/embedded software focus vs. product/operations/energy strategy.",
+  "score": 48,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Head of Firmware",
   "url": "https://jobs.ashbyhq.com/base-power/396ea381-f4ef-4dc7-b79a-9c6ce8783897"
@@ -1219,6 +1540,9 @@
   "first_seen": "2026-08-13",
   "location": "Herndon, Virginia, USA",
   "priority": true,
+  "rationale": "Senior procurement manager for energy infrastructure and datacenter power; excellent match on energy/BESS domain and senior-manager seniority.",
+  "score": 80,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Sr DC Capex Procurement Manager - Energy infrastructure, Data Center Sourcing and Procurement",
   "url": "https://www.amazon.jobs/en/jobs/10438891/sr-dc-capex-procurement-manager-energy-infrastructure-data-center-sourcing-and-procurement"
@@ -1228,6 +1552,9 @@
   "first_seen": "2026-08-13",
   "location": "Eden Prairie, Minnesota",
   "priority": true,
+  "rationale": "Manager at BESS company in development operations; good domain fit but manager level, operations-focused.",
+  "score": 50,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Manager, Development Operations ",
   "url": "https://job-boards.greenhouse.io/spearmintenergy/jobs/4330186009"
@@ -1237,6 +1564,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Multiple Locations, Multiple Locations",
   "priority": false,
+  "rationale": "AI/ML pre-training infrastructure; irrelevant to grid-scale BESS and datacenter power domain.",
+  "score": 18,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Pre-Training Infrastructure",
   "url": "/careers/job/1970393556629280"
@@ -1246,6 +1576,9 @@
   "first_seen": "2026-08-13",
   "location": "Sunnyvale, CA - US",
   "priority": false,
+  "rationale": "Design engineer in data center whitespace infrastructure; IC role not director/PM level.",
+  "score": 22,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Infrastructure Design Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/3dffdca3-5f70-4857-aa5f-225c89fae144"
@@ -1255,6 +1588,9 @@
   "first_seen": "2026-08-13",
   "location": "Remote - Toronto, Ontario, Canada",
   "priority": false,
+  "rationale": "Senior IC engineer at EV charging company; energy domain but EV infrastructure, not datacenter BESS.",
+  "score": 18,
+  "seniority_match": false,
   "source": "lever",
   "title": "Senior DevOps Engineer",
   "url": "https://jobs.lever.co/terawattinfrastructure/af0122e8-a0c8-44d8-83ac-aa9f123760b0"
@@ -1264,6 +1600,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, WA, USA, Atlanta, GA, USA, Austin, TX, USA",
   "priority": false,
+  "rationale": "Legal counsel position entirely outside product/operations management scope despite infrastructure domain.",
+  "score": 5,
+  "seniority_match": false,
   "source": "google-careers",
   "title": "Senior Counsel, Technical Infrastructure",
   "url": "https://www.google.com/about/careers/applications/jobs/results/91929242761077446"
@@ -1273,6 +1612,9 @@
   "first_seen": "2026-08-13",
   "location": "Houston, Texas, USA",
   "priority": true,
+  "rationale": "Senior category manager for power infrastructure and grid services; director-adjacent seniority with excellent datacenter energy and grid interconnection fit.",
+  "score": 88,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Senior Category Manager - Power Infrastructure & Grid Services, Power and Utilities, Global Procurement Organization (GPO) ",
   "url": "https://www.amazon.jobs/en/jobs/10475374/senior-category-manager-power-infrastructure-grid-services-power-and-utilities-global-procurement-organization-gpo"
@@ -1282,6 +1624,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Quality manager for datacenter operations; quality/compliance focus rather than energy strategy.",
+  "score": 30,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center OFCI Quality Manager",
   "url": "https://coreweave.com/careers/job?4658270006&board=coreweave&gh_jid=4658270006"
@@ -1300,6 +1645,9 @@
   "first_seen": "2026-08-13",
   "location": "SF, TX, OH, IL, PNW",
   "priority": true,
+  "rationale": "Director-level role in grid interconnection and AI datacenter infrastructure with strong alignment to utility stakeholder management; PG&E background directly relevant.",
+  "score": 82,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Director, Utility Partnerships",
   "url": "https://jobs.ashbyhq.com/gridcare/fc301acc-3977-40fd-97b0-59442ae49e7b"
@@ -1309,6 +1657,9 @@
   "first_seen": "2026-08-13",
   "location": "Denver, CO - US",
   "priority": false,
+  "rationale": "Staff IC engineer in data center operations, not director/PM level.",
+  "score": 25,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Staff Data Center Operations Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/687f20ac-6010-4b3a-b861-d40f632dc6b8"
@@ -1318,6 +1669,9 @@
   "first_seen": "2026-08-13",
   "location": "Denver, CO - US",
   "priority": true,
+  "rationale": "Director developing GW-scale energy/infrastructure projects for AI datacenters; excellent seniority and domain fit.",
+  "score": 75,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Director, EDG Commercial Development (Thermal)",
   "url": "https://jobs.ashbyhq.com/crusoe/29d1d2ef-9a42-4962-a0b5-e1114bcb9327"
@@ -1327,6 +1681,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX ",
   "priority": false,
+  "rationale": "Manager in accounting/finance, not product or energy infrastructure strategy.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Manager, Operations Accounting Data Center Infrastructure",
   "url": "https://coreweave.com/careers/job?4661606006&board=coreweave&gh_jid=4661606006"
@@ -1336,6 +1693,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Commissioning manager with MEP/generator oversight; operations execution focus rather than strategic energy/BESS PM.",
+  "score": 45,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Commissioning/Quality Manager",
   "url": "https://coreweave.com/careers/job?4700651006&board=coreweave&gh_jid=4700651006"
@@ -1345,6 +1705,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX - US",
   "priority": false,
+  "rationale": "Very senior IC commissioning engineer with multi-campus authority; strong electrical domain but remains individual-contributor level.",
+  "score": 55,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Staff Commissioning Engineer, Electrical",
   "url": "https://jobs.ashbyhq.com/crusoe/a0b9f5c4-10b1-447f-961d-63ebd22f0da8"
@@ -1354,6 +1717,9 @@
   "first_seen": "2026-08-13",
   "location": "Bellevue, Washington, USA",
   "priority": false,
+  "rationale": "Senior manager focused on energy utility strategy and power procurement for hyperscaler with strong grid/utility alignment.",
+  "score": 85,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Senior Manager, Energy Procurement & Utility Strategy",
   "url": "https://www.amazon.jobs/en/jobs/10428897/senior-manager-energy-procurement-utility-strategy"
@@ -1363,6 +1729,9 @@
   "first_seen": "2026-08-13",
   "location": "Reston, VA, USA, Austin, TX, USA, Papillion, NE, USA",
   "priority": true,
+  "rationale": "TPM on power infrastructure with explicit BESS integration and HV/MV utility coordination; exceptional alignment with HVAC/interconnection background and datacentre energy focus.",
+  "score": 92,
+  "seniority_match": true,
   "source": "google-careers",
   "title": "Technical Program Manager, Power Infrastructure Delivery",
   "url": "https://www.google.com/about/careers/applications/jobs/results/86813721963176646"
@@ -1372,6 +1741,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": true,
+  "rationale": "Market operations engineer focused on BESS fleet optimization and markets; relevant domain but individual-contributor IC level.",
+  "score": 50,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Market Operations Engineer",
   "url": "https://jobs.ashbyhq.com/base-power/c66ad226-2196-48bc-aeb3-43d4170be345"
@@ -1381,6 +1753,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Engineer-level compliance role for BESS products; relevant domain but individual-contributor engineering level.",
+  "score": 45,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Compliance Engineer",
   "url": "https://jobs.ashbyhq.com/base-power/2bd109c9-5043-4dd4-9e87-5b8f12172ff8"
@@ -1390,6 +1765,9 @@
   "first_seen": "2026-08-13",
   "location": "Dallas, TX",
   "priority": false,
+  "rationale": "Fleet logistics/RMA project manager; operations execution without energy/BESS strategic focus.",
+  "score": 35,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Fleet Engineering Project Manager, Data Center",
   "url": "https://coreweave.com/careers/job?4696057006&board=coreweave&gh_jid=4696057006"
@@ -1399,6 +1777,9 @@
   "first_seen": "2026-08-13",
   "location": "Phoenix, AZ",
   "priority": false,
+  "rationale": "Technician-level role; hands-on operations support far below strategic PM seniority.",
+  "score": 5,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Technician - Phoenix, AZ",
   "url": "https://coreweave.com/careers/job?4701744006&board=coreweave&gh_jid=4701744006"
@@ -1408,6 +1789,9 @@
   "first_seen": "2026-08-13",
   "location": "New York, NY / Bellevue, WA / Sunnyvale, CA / Livingston, NJ / Dallas, TX",
   "priority": true,
+  "rationale": "Manager-level utility and energy coordination with transactional power access focus; solid domain fit at appropriate seniority but operational rather than strategic.",
+  "score": 78,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Manager, Utility & Energy",
   "url": "https://coreweave.com/careers/job?4653329006&board=coreweave&gh_jid=4653329006"
@@ -1417,6 +1801,9 @@
   "first_seen": "2026-08-13",
   "location": "Afton, TX",
   "priority": false,
+  "rationale": "Technician-level role; hands-on operations support far below strategic PM seniority.",
+  "score": 5,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Technician - Afton, TX",
   "url": "https://coreweave.com/careers/job?4687824006&board=coreweave&gh_jid=4687824006"
@@ -1426,6 +1813,9 @@
   "first_seen": "2026-08-13",
   "location": "New York, NY / Sunnyvale, CA",
   "priority": false,
+  "rationale": "Engineering manager leading reliability team; people leadership over infrastructure engineers rather than strategic product/energy PM.",
+  "score": 40,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Engineering Manager, Infrastructure Engineering",
   "url": "https://coreweave.com/careers/job?4699712006&board=coreweave&gh_jid=4699712006"
@@ -1435,6 +1825,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / Orangeburg, NY / Richmond, VA / Allentown, PA / Columbus, OH / Dalton, GA",
   "priority": false,
+  "rationale": "Regional director of datacenter operations; senior seniority but operations execution focus without energy/BESS strategic portfolio.",
+  "score": 55,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Regional Director - U.S. East Data Center Operations",
   "url": "https://coreweave.com/careers/job?4685542006&board=coreweave&gh_jid=4685542006"
@@ -1444,6 +1837,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": true,
+  "rationale": "Mechanical design engineer for battery systems; relevant BESS domain but individual-contributor IC engineering level.",
+  "score": 40,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Mechanical Design Engineer",
   "url": "https://jobs.ashbyhq.com/base-power/4bd4662b-8706-4e79-91df-886c32aec49a"
@@ -1453,6 +1849,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": false,
+  "rationale": "Senior infrastructure TPM for power generation and energy at hyperscaler; excellent seniority match and direct alignment with datacenter power infrastructure.",
+  "score": 87,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Sr. Infrastructure TPM, AWS Global Energy ",
   "url": "https://www.amazon.jobs/en/jobs/10486948/sr-infrastructure-tpm-aws-global-energy"
@@ -1462,6 +1861,9 @@
   "first_seen": "2026-08-13",
   "location": "Tel Aviv - IL",
   "priority": true,
+  "rationale": "Business development technical role bridging infrastructure finance and datacenter operations; director-adjacent strategic focus.",
+  "score": 75,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Business Development, Technical Initiatives",
   "url": "https://jobs.ashbyhq.com/crusoe/5e25e8ff-bf6c-4d46-b0c7-cbbe40cf0460"
@@ -1471,6 +1873,9 @@
   "first_seen": "2026-08-13",
   "location": "New York, NY, USA, San Francisco, CA, USA",
   "priority": false,
+  "rationale": "Technical PM on datacenter energy risk management; excellent seniority fit and direct energy/power portfolio domain.",
+  "score": 88,
+  "seniority_match": true,
   "source": "google-careers",
   "title": "Technical Program Manager, Data Center Energy Risk Management",
   "url": "https://www.google.com/about/careers/applications/jobs/results/115190413584671430"
@@ -1480,6 +1885,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": false,
+  "rationale": "Supply chain manager for battery backup units (energy storage); strong BESS domain match but procurement-focused not strategy PM.",
+  "score": 68,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Global Supply Chain & Procurement Manager, AWS Infrastructure and Supply Chain - Energy Storage, AWS Infrastructure Supply Chain & Procurement",
   "url": "https://www.amazon.jobs/en/jobs/10489812/global-supply-chain-procurement-manager-aws-infrastructure-and-supply-chain-energy-storage-aws-infrastructure-supply-chain-procurement"
@@ -1489,6 +1897,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "VP-level Finance role supporting digital infrastructure; very senior seniority but finance function vs. operations/product leadership.",
+  "score": 42,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Vice President, Finance - Digital Infrastructure Group",
   "url": "https://jobs.ashbyhq.com/crusoe/2f7f22f9-900e-411c-aa7f-65b359eb747b"
@@ -1507,6 +1918,9 @@
   "first_seen": "2026-08-13",
   "location": "Herndon, Virginia, USA",
   "priority": true,
+  "rationale": "Senior power generation engineer; technical IC role not PM despite relevant power infrastructure domain.",
+  "score": 32,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Sr. Power Generation Engineer, AWS Global Energy",
   "url": "https://www.amazon.jobs/en/jobs/10414569/sr-power-generation-engineer-aws-global-energy"
@@ -1516,6 +1930,9 @@
   "first_seen": "2026-08-13",
   "location": "Hayward, CA, US",
   "priority": false,
+  "rationale": "Entry-level sales appointment role; wrong domain (residential solar) and far below target seniority.",
+  "score": 12,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Solar Appointment Setter",
   "url": "https://www.indeed.com/viewjob?jk=bf716c6ed1ec74e7"
@@ -1525,6 +1942,9 @@
   "first_seen": "2026-08-13",
   "location": "New York, NY",
   "priority": true,
+  "rationale": "Director-level energy market development leading utility strategy and power access; exceptional seniority and domain fit with grid interconnection focus.",
+  "score": 90,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Director, Energy Market Development",
   "url": "https://coreweave.com/careers/job?4652799006&board=coreweave&gh_jid=4652799006"
@@ -1534,6 +1954,9 @@
   "first_seen": "2026-08-13",
   "location": "Herndon, Virginia, USA",
   "priority": true,
+  "rationale": "Senior technical PM for power generation infrastructure and energy solutions at hyperscaler; excellent seniority and domain match.",
+  "score": 85,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Sr. Technical Program Manager, Power Generation Solutions, Global Energy, Power Generation Solutions",
   "url": "https://www.amazon.jobs/en/jobs/10473318/sr-technical-program-manager-power-generation-solutions-global-energy-power-generation-solutions"
@@ -1543,6 +1966,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Market analyst modeling wholesale energy markets and BESS fleet value; relevant domain but individual-contributor analyst level.",
+  "score": 45,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Market Analyst",
   "url": "https://jobs.ashbyhq.com/base-power/d8f62c73-d754-411e-b30f-99f856659906"
@@ -1552,6 +1978,9 @@
   "first_seen": "2026-08-13",
   "location": "Dublin - IE",
   "priority": false,
+  "rationale": "Senior IC engineer in infrastructure security; wrong domain (security vs. energy) and individual-contributor level.",
+  "score": 28,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Infrastructure Security Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/1418c40c-17e6-46f7-8044-66eaac54ac23"
@@ -1561,6 +1990,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Wisconsin, Mount Pleasant",
   "priority": false,
+  "rationale": "Director-level hyperscaler datacenter role; strong seniority match but vague description limits confidence.",
+  "score": 78,
+  "seniority_match": true,
   "source": "microsoft",
   "title": "Regional Managing Director, Data Center Community",
   "url": "/careers/job/1970393556952527"
@@ -1570,6 +2002,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Georgia, Atlanta (+2 more)",
   "priority": false,
+  "rationale": "Energy resource manager at hyperscaler; relevant domain but manager-level seniority below director/senior-PM target.",
+  "score": 52,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Energy Resource Manager",
   "url": "/careers/job/1970393556952880"
@@ -1588,6 +2023,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Sales development representative; junior sales role misaligned with PM/director target and wrong function.",
+  "score": 18,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Sales Development Representative",
   "url": "https://jobs.ashbyhq.com/base-power/2d187af3-8c98-453f-a97c-a5410c42fee2"
@@ -1597,6 +2035,9 @@
   "first_seen": "2026-08-13",
   "location": "Remote - United States",
   "priority": false,
+  "rationale": "Contract marketing writer in energy sector, not strategic product or infrastructure role.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Contract Opportunity: Marketing Writer, Energy Sector",
   "url": "https://job-boards.greenhouse.io/energyhub/jobs/8237859002"
@@ -1615,6 +2056,9 @@
   "first_seen": "2026-08-13",
   "location": "Sandusky, OH",
   "priority": false,
+  "rationale": "Technician-level role; hands-on operations support far below strategic PM seniority.",
+  "score": 5,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Technician - Sandusky, OH",
   "url": "https://coreweave.com/careers/job?4696011006&board=coreweave&gh_jid=4696011006"
@@ -1624,6 +2068,9 @@
   "first_seen": "2026-08-13",
   "location": "Multiple U.S. Data Center Locations",
   "priority": false,
+  "rationale": "Technician-level role; hands-on operations support far below strategic PM seniority.",
+  "score": 5,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Data Center Technician \u2013 Express Your Interest",
   "url": "https://coreweave.com/careers/job?4652977006&board=coreweave&gh_jid=4652977006"
@@ -1633,6 +2080,9 @@
   "first_seen": "2026-08-13",
   "location": "Addison, TX, USA, Houston, TX, USA",
   "priority": false,
+  "rationale": "Energy sector partnership role but primarily sales/customer-facing specialist rather than strategic PM.",
+  "score": 40,
+  "seniority_match": false,
   "source": "google-careers",
   "title": "Global Strategic Initiatives Energy Specialist, Strategic Missions and Partnerships, Google Cloud",
   "url": "https://www.google.com/about/careers/applications/jobs/results/74844349799506630"
@@ -1642,6 +2092,9 @@
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": true,
+  "rationale": "Sr. engineer role focused on power infrastructure design but emphasizes technical engineering over strategic PM responsibilities.",
+  "score": 30,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Sr. Power Generation Engineer - Availability, Global Energy",
   "url": "https://www.amazon.jobs/en/jobs/3196322/sr-power-generation-engineer-availability-global-energy"
@@ -1651,6 +2104,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Georgia, Fayetteville (+1 more)",
   "priority": false,
+  "rationale": "Technician role even with \"Senior\" prefix; far below director/senior-PM seniority despite datacenter domain.",
+  "score": 18,
+  "seniority_match": false,
   "source": "microsoft",
   "title": "Sr Data Center IT Support Technician",
   "url": "/careers/job/1970393556956465"
@@ -1660,6 +2116,9 @@
   "first_seen": "2026-08-13",
   "location": " Livingston, NJ / New York, NY / Sunnyvale, CA / Bellevue, WA",
   "priority": false,
+  "rationale": "Staff IC engineer in storage systems, not director/PM level.",
+  "score": 12,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Staff Engineer, Storage Engine",
   "url": "https://coreweave.com/careers/job?4612047006&board=coreweave&gh_jid=4612047006"
@@ -1669,6 +2128,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
+  "rationale": "Global supply manager for contract manufacturing; manager-level seniority but supply chain function vs. energy/power operations strategy.",
+  "score": 52,
+  "seniority_match": true,
   "source": "ashby",
   "title": "Global Supply Manager - Electromechanical TLA",
   "url": "https://jobs.ashbyhq.com/base-power/f7a41b40-1f59-4a33-b5d4-4cfb512c81f4"
@@ -1687,6 +2149,9 @@
   "first_seen": "2026-08-13",
   "location": "United States, Wyoming, Cheyenne",
   "priority": false,
+  "rationale": "Director-level hyperscaler datacenter role; strong seniority match but vague description limits confidence.",
+  "score": 78,
+  "seniority_match": true,
   "source": "microsoft",
   "title": "Regional Managing Director, Data Center Community",
   "url": "/careers/job/1970393556956109"
@@ -1696,6 +2161,9 @@
   "first_seen": "2026-08-13",
   "location": "Tel Aviv - IL",
   "priority": false,
+  "rationale": "Design engineer in data center architecture; IC role not director/PM level.",
+  "score": 20,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Data Center Design Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/2b4a11df-090a-4427-b87a-09614d5b7b16"
@@ -1705,6 +2173,9 @@
   "first_seen": "2026-08-13",
   "location": "Houston, Texas, USA",
   "priority": false,
+  "rationale": "Solutions architect (technical/sales IC) for energy/utilities; domain fits but wrong function and seniority track for PM role.",
+  "score": 44,
+  "seniority_match": false,
   "source": "amazon",
   "title": "Sr. Energy & Utilities Partner Solutions Architect, AMER Partner Industry & Solutions",
   "url": "https://www.amazon.jobs/en/jobs/10479895/sr-energy-utilities-partner-solutions-architect-amer-partner-industry-solutions"
@@ -1723,6 +2194,9 @@
   "first_seen": "2026-08-13",
   "location": "San Francisco, CA - US",
   "priority": false,
+  "rationale": "Senior IC engineer in Microsoft cloud infrastructure; wrong domain (corporate IT vs. energy) and individual-contributor level.",
+  "score": 25,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Senior Microsoft Cloud Infrastructure Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/c4fefe80-a789-4829-a839-81ebc21247a7"
@@ -1732,6 +2206,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA / Dallas, TX",
   "priority": false,
+  "rationale": "Solution specialist in sales, not director/PM level or energy infrastructure domain.",
+  "score": 20,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Solution Specialist, Infrastructure",
   "url": "https://coreweave.com/careers/job?4687147006&board=coreweave&gh_jid=4687147006"
@@ -1741,6 +2218,9 @@
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": true,
+  "rationale": "Deployment engineer for utility partnership operations and interconnection; relevant domain but individual-contributor IC engineering level.",
+  "score": 48,
+  "seniority_match": false,
   "source": "ashby",
   "title": "Deployment Engineer (Utility Partnerships)",
   "url": "https://jobs.ashbyhq.com/base-power/90bcb98b-990d-467e-8b36-ee08e1eb1542"
@@ -1750,6 +2230,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "priority": true,
+  "rationale": "Electrical engineering manager; technical leadership of design teams rather than strategic energy/BESS PM.",
+  "score": 40,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Manager, Electrical Engineering",
   "url": "https://coreweave.com/careers/job?4689596006&board=coreweave&gh_jid=4689596006"
@@ -1759,6 +2242,9 @@
   "first_seen": "2026-08-13",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA / Richmond, VA",
   "priority": false,
+  "rationale": "Principal-level datacenter development bridging power/design/finance; senior seniority with multi-domain execution but less energy-strategy-specific than pure energy PM.",
+  "score": 68,
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Principal, Data Center Development",
   "url": "https://coreweave.com/careers/job?4660956006&board=coreweave&gh_jid=4660956006"
