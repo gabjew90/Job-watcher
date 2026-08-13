@@ -11,7 +11,9 @@ Claude triage + tailored resume drafting arrive in Phase 3 (see `PLAN.md`).
 ## How it works
 
 ```
-jobspy (Indeed/Glassdoor/ZipRecruiter/Google)   ← Phase 2 adds hyperscaler + ATS-board fetchers
+jobspy (Indeed/Glassdoor/ZipRecruiter/Google Jobs)
+hyperscaler APIs (Microsoft/Amazon/Google careers; Meta off by default)
+ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
   → keyword filter + title exclusions + priority-topic ⭐
   → dedupe vs state/seen_jobs.json  (committed each run)
   → GitHub Issue digest + docs/index.html dashboard
@@ -53,11 +55,35 @@ Without `GITHUB_TOKEN` set, the digest is printed to stdout instead of
 posted. `data/latest_run.json` holds the current run's new postings with
 descriptions (input for the triage step).
 
+## Adding / fixing sources
+
+**ATS boards** (most reliable source — stable public JSON): add an entry to
+`ats_boards` in `config.json`. Find a company's board slug from its careers
+page URL, or probe:
+
+```
+https://boards-api.greenhouse.io/v1/boards/<slug>/jobs
+https://api.lever.co/v0/postings/<slug>?mode=json
+https://api.ashbyhq.com/posting-api/job-board/<slug>
+```
+
+**Fixing a broken hyperscaler fetcher** (they use undocumented endpoints
+that move when sites redesign): open the career site's search page in a
+browser, DevTools → Network tab → filter XHR/Fetch, run a search, and find
+the request returning job JSON. Copy its URL and params into the matching
+fetcher at the top of `src/sources/hyperscalers.py`. Verified endpoints as
+of 2026-08 are noted there — e.g. Microsoft moved from
+`gcsservices.careers.microsoft.com` to the Eightfold-powered
+`apply.careers.microsoft.com/api/pcsx/search` in 2026.
+
 ## Notes
 
-- Glassdoor/ZipRecruiter sometimes block GitHub Actions IPs; each
-  (site, search-term) pair is isolated, so partial failures only shrink
-  coverage for a day. Failures show as `SOURCE FAILURE` warnings in the
-  Actions log.
+- Glassdoor/ZipRecruiter block datacenter IPs (Cloudflare) — expect
+  `SOURCE FAILURE` warnings for them on most runs; each (site, search-term)
+  pair is isolated so the rest of the run is unaffected. Meta similarly
+  rejects non-residential traffic, so its fetcher ships disabled
+  (`hyperscalers.meta` in config).
+- Microsoft search results carry no descriptions, so Microsoft jobs are
+  filtered on title keywords only.
 - No LinkedIn scraping. No auto-applying. Discovery, scoring, and drafting
   only.

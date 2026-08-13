@@ -37,11 +37,14 @@ sources (jobspy | hyperscaler APIs | ATS boards)
 
 ## Phases
 
-- **Phase 1 (this)**: config, jobspy source, filter/dedupe/state, GitHub Issue
-  digest, Pages dashboard, daily Actions workflow. Pause for review of a local
-  sample run.
-- **Phase 2**: hyperscaler direct fetchers (Microsoft, Amazon, Google, Meta)
-  + ATS board fetchers for a curated company list in config.
+- **Phase 1 — DONE**: config, jobspy source, filter/dedupe/state, GitHub Issue
+  digest, Pages dashboard, daily Actions workflow. Live-validated; filters
+  tightened to two-tier (title keywords vs. description phrases) after the
+  first real run showed description-boilerplate noise.
+- **Phase 2 — DONE**: hyperscaler direct fetchers (Microsoft via Eightfold
+  pcsx API, Amazon search.json, Google careers embedded JSON; Meta written
+  but disabled — blocks datacenter IPs) + ATS board fetchers
+  (Greenhouse/Lever/Ashby) for the curated company list in config.
 - **Phase 3**: Claude triage + `experience_library.md` + resume drafting to
   `drafts/`, wired into the same daily workflow.
 

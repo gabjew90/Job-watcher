@@ -7,6 +7,22 @@
     "grid interconnection"
   ],
   "sites": ["indeed", "glassdoor", "zip_recruiter", "google"],
+  "hyperscalers": {
+    "microsoft": true,
+    "amazon": true,
+    "google": true,
+    "meta": false
+  },
+  "ats_boards": [
+    {"provider": "greenhouse", "board": "coreweave", "company": "CoreWeave"},
+    {"provider": "greenhouse", "board": "pluspower", "company": "Plus Power"},
+    {"provider": "greenhouse", "board": "spearmintenergy", "company": "Spearmint Energy"},
+    {"provider": "greenhouse", "board": "energyhub", "company": "EnergyHub"},
+    {"provider": "lever", "board": "terawattinfrastructure", "company": "Terawatt Infrastructure"},
+    {"provider": "ashby", "board": "crusoe", "company": "Crusoe"},
+    {"provider": "ashby", "board": "base-power", "company": "Base Power"},
+    {"provider": "ashby", "board": "gridcare", "company": "GridCare"}
+  ],
   "location": "United States",
   "results_per_term": 25,
   "hours_old": 72,
