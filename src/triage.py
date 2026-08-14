@@ -11,6 +11,7 @@ experience_library.md stops being a template.
 """
 import json
 import logging
+import os
 import re
 import shutil
 import subprocess
@@ -71,7 +72,12 @@ def _run_claude(prompt: str, model: str) -> str:
         input=prompt, capture_output=True, text=True, timeout=900,
     )
     if result.returncode != 0:
-        raise RuntimeError(f"claude exited {result.returncode}: {result.stderr[-500:]}")
+        hint = ("" if os.environ.get("CLAUDE_CODE_OAUTH_TOKEN")
+                else " (CLAUDE_CODE_OAUTH_TOKEN is not set — add it as a repo "
+                     "secret, see README)")
+        raise RuntimeError(
+            f"claude exited {result.returncode}{hint}: "
+            f"{(result.stderr or result.stdout)[-500:]}")
     payload = json.loads(result.stdout)
     if payload.get("is_error"):
         raise RuntimeError(f"claude error result: {str(payload.get('result'))[:500]}")
