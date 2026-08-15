@@ -17,12 +17,13 @@ import json
 import logging
 import re
 import time
+from datetime import datetime, timezone
 
 import requests
 
 from .. import health
 from ..models import Job
-from ..util import HEADERS, strip_html
+from ..util import HEADERS, extract_pay, infer_work_mode, strip_html
 
 log = logging.getLogger(__name__)
 
@@ -48,12 +49,15 @@ def fetch_microsoft(term: str) -> list[Job]:
         url = pos.get("positionUrl") or f"/careers/job/{pos['id']}"
         if url.startswith("/"):
             url = "https://apply.careers.microsoft.com" + url
+        posted = pos.get("postedTs")
         jobs.append(Job(
             title=pos.get("name", ""),
             company="Microsoft",
             location=locations[0] + (f" (+{len(locations) - 1} more)" if len(locations) > 1 else ""),
             url=url,
             source="microsoft",
+            date_posted=datetime.fromtimestamp(posted, tz=timezone.utc).strftime("%Y-%m-%d") if posted else "",
+            work_mode=pos.get("workLocationOption") or "",
         ))
     return jobs
 
@@ -68,17 +72,22 @@ def fetch_amazon(term: str) -> list[Job]:
     resp.raise_for_status()
     jobs = []
     for j in resp.json().get("jobs") or []:
+        desc = strip_html(
+            (j.get("description") or j.get("description_short") or "")
+            + " " + (j.get("basic_qualifications") or "")
+        )
+        title = j.get("title", "")
+        location = j.get("normalized_location") or j.get("location", "")
         jobs.append(Job(
-            title=j.get("title", ""),
+            title=title,
             company="Amazon",
-            location=j.get("normalized_location") or j.get("location", ""),
+            location=location,
             url="https://www.amazon.jobs" + j.get("job_path", ""),
             source="amazon",
-            description=strip_html(
-                (j.get("description") or j.get("description_short") or "")
-                + " " + (j.get("basic_qualifications") or "")
-            ),
+            description=desc,
             date_posted=j.get("posted_date", ""),
+            pay=extract_pay(desc),
+            work_mode=infer_work_mode(title, location, desc),
         ))
     return jobs
 
@@ -103,13 +112,16 @@ def fetch_google(term: str) -> list[Job]:
             try:
                 locations = ", ".join(loc[0] for loc in (entry[9] or [])[:3])
                 desc = strip_html(str((entry[3] or [None, ""])[1]) + " " + str((entry[4] or [None, ""])[1]))
+                title = str(entry[1])
                 jobs.append(Job(
-                    title=str(entry[1]),
+                    title=title,
                     company=str(entry[7] or "Google"),
                     location=locations,
                     url=f"https://www.google.com/about/careers/applications/jobs/results/{entry[0]}",
                     source="google-careers",
                     description=desc,
+                    pay=extract_pay(desc),
+                    work_mode=infer_work_mode(title, locations, desc),
                 ))
             except (IndexError, TypeError) as e:
                 log.debug("google entry parse skip: %s", e)

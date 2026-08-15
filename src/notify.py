@@ -50,7 +50,11 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
 def _line(job: Job, scores: dict[str, dict]) -> str:
     s = scores.get(job.job_id)
     prefix = f"**{s['score']}** · " if s else ""
-    line = f"- {prefix}[{job.title}]({job.url}) — **{job.company}** · {job.location} · _{job.source}_"
+    extras = "".join(
+        f" · {x}" for x in (job.work_mode, job.pay and f"💰 {job.pay}",
+                            job.date_posted and f"posted {job.date_posted}") if x)
+    line = (f"- {prefix}[{job.title}]({job.url}) — **{job.company}** · "
+            f"{job.location} · _{job.source}_{extras}")
     if s and s.get("rationale"):
         line += f"\n  - {s['rationale']}"
     return line

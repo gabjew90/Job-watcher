@@ -11,6 +11,7 @@ from jobspy import scrape_jobs
 
 from .. import health
 from ..models import Job
+from ..util import extract_pay, infer_work_mode
 
 log = logging.getLogger(__name__)
 
@@ -19,6 +20,22 @@ def _s(value) -> str:
     if value is None or (not isinstance(value, str) and pd.isna(value)):
         return ""
     return str(value)
+
+
+def _pay(row) -> str:
+    lo, hi = row.get("min_amount"), row.get("max_amount")
+    if lo and hi and not pd.isna(lo) and not pd.isna(hi):
+        unit = {"yearly": "yr", "hourly": "hr", "monthly": "mo"}.get(
+            _s(row.get("interval")), _s(row.get("interval")))
+        return f"${lo:,.0f}–${hi:,.0f}" + (f"/{unit}" if unit else "")
+    return extract_pay(_s(row.get("description")))
+
+
+def _mode(row) -> str:
+    if row.get("is_remote") is True:
+        return "remote"
+    return infer_work_mode(_s(row.get("title")), _s(row.get("location")),
+                           _s(row.get("description")))
 
 
 def fetch(config: dict) -> list[Job]:
@@ -45,6 +62,8 @@ def fetch(config: dict) -> list[Job]:
                         source=_s(row.get("site")) or site,
                         description=_s(row.get("description")),
                         date_posted=_s(row.get("date_posted")),
+                        pay=_pay(row),
+                        work_mode=_mode(row),
                     ))
                 log.info("jobspy %s / %r: %d results", site, term, len(df))
                 health.record(f"jobspy:{site}", ok=True, count=len(df))

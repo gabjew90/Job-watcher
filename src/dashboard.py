@@ -35,8 +35,9 @@ _PAGE = """<!DOCTYPE html>
 <table id="t">
 <thead><tr>
   <th onclick="sortBy(0)">Title</th><th onclick="sortBy(1)">Company</th>
-  <th onclick="sortBy(2)">Location</th><th onclick="sortBy(3)">Source</th>
-  <th onclick="sortBy(4)">First seen</th><th onclick="sortBy(5, true)">Score</th>
+  <th onclick="sortBy(2)">Location</th><th onclick="sortBy(3)">Mode</th>
+  <th onclick="sortBy(4)">Pay</th><th onclick="sortBy(5)">Posted</th>
+  <th onclick="sortBy(6)">First seen</th><th onclick="sortBy(7, true)">Score</th>
 </tr></thead>
 <tbody>
 {rows}
@@ -53,7 +54,7 @@ _PAGE = """<!DOCTYPE html>
 </table>
 </div>
 <script>
-let dir = -1, col = 4;
+let dir = -1, col = 6;
 function sortBy(c, numeric) {{
   dir = (c === col) ? -dir : (numeric ? -1 : 1); col = c;
   const tb = document.querySelector("#t tbody");
@@ -71,7 +72,7 @@ function applyVis() {{
     r.style.display = !hideClosed && r.innerText.toLowerCase().includes(q) ? "" : "none";
   }}
 }}
-sortBy(4); dir = -1; sortBy(4); applyVis();
+sortBy(6); dir = -1; sortBy(6); applyVis();
 function ago() {{
   const el = document.getElementById("upd");
   const ts = new Date(el.dataset.ts);
@@ -95,10 +96,17 @@ def _row(rec: dict) -> str:
     e = lambda s: html.escape(str(s or ""))
     score = rec.get("score")
     score_cell = f'<td title="{e(rec.get("rationale"))}">{score}</td>' if score is not None else "<td></td>"
+    mode = {"onsite": "🏢 onsite", "hybrid": "🔀 hybrid", "remote": "🏠 remote"}.get(
+        rec.get("work_mode", ""), "")
+    first_seen = rec.get("first_seen", "")
+    if not rec.get("active", True):
+        first_seen += f' <small>(closed {rec.get("closed", "")})</small>'
     return (
-        f'<tr{cls}><td><a href="{e(rec.get("url"))}" target="_blank">{e(rec.get("title"))}</a></td>'
+        f'<tr{cls}><td><a href="{e(rec.get("url"))}" target="_blank">{e(rec.get("title"))}</a>'
+        f'<br><small>{e(rec.get("source"))}</small></td>'
         f'<td>{e(rec.get("company"))}</td><td>{e(rec.get("location"))}</td>'
-        f'<td>{e(rec.get("source"))}</td><td>{e(rec.get("first_seen"))}</td>{score_cell}</tr>'
+        f'<td>{mode}</td><td>{e(rec.get("pay"))}</td>'
+        f'<td>{e(rec.get("date_posted"))}</td><td>{first_seen}</td>{score_cell}</tr>'
     )
 
 

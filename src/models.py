@@ -17,6 +17,8 @@ class Job:
     source: str
     description: str = ""
     date_posted: str = ""
+    pay: str = ""
+    work_mode: str = ""  # onsite | hybrid | remote | ""
     priority: bool = False
 
     @property

@@ -37,6 +37,12 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
     new = []
     for job in jobs:
         if job.job_id in state:
+            # Backfill fields added after this record was first stored.
+            rec = state[job.job_id]
+            for field, value in (("date_posted", job.date_posted),
+                                 ("pay", job.pay), ("work_mode", job.work_mode)):
+                if value and not rec.get(field):
+                    rec[field] = value
             continue
         state[job.job_id] = {
             "title": job.title,
@@ -46,6 +52,9 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
             "source": job.source,
             "priority": job.priority,
             "first_seen": _today(),
+            "date_posted": job.date_posted,
+            "pay": job.pay,
+            "work_mode": job.work_mode,
         }
         new.append(job)
     return new

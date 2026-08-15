@@ -11,12 +11,13 @@ Finding a company's slug: check their careers page URL or probe
 """
 import logging
 import time
+from datetime import datetime, timezone
 
 import requests
 
 from .. import health
 from ..models import Job
-from ..util import HEADERS, strip_html
+from ..util import HEADERS, extract_pay, infer_work_mode, strip_html
 
 log = logging.getLogger(__name__)
 
@@ -27,18 +28,23 @@ def fetch_greenhouse(board: str, company: str) -> list[Job]:
         params={"content": "true"}, headers=HEADERS, timeout=30,
     )
     resp.raise_for_status()
-    return [
-        Job(
-            title=j.get("title", ""),
+    jobs = []
+    for j in resp.json().get("jobs") or []:
+        desc = strip_html(j.get("content", ""))
+        title = j.get("title", "")
+        location = (j.get("location") or {}).get("name", "")
+        jobs.append(Job(
+            title=title,
             company=company,
-            location=(j.get("location") or {}).get("name", ""),
+            location=location,
             url=j.get("absolute_url", ""),
             source="greenhouse",
-            description=strip_html(j.get("content", "")),
+            description=desc,
             date_posted=(j.get("updated_at") or "")[:10],
-        )
-        for j in resp.json().get("jobs") or []
-    ]
+            pay=extract_pay(desc),
+            work_mode=infer_work_mode(title, location, desc),
+        ))
+    return jobs
 
 
 def fetch_lever(board: str, company: str) -> list[Job]:
@@ -47,37 +53,56 @@ def fetch_lever(board: str, company: str) -> list[Job]:
         params={"mode": "json"}, headers=HEADERS, timeout=30,
     )
     resp.raise_for_status()
-    return [
-        Job(
-            title=j.get("text", ""),
+    jobs = []
+    for j in resp.json() or []:
+        desc = strip_html(j.get("descriptionPlain") or j.get("description", ""))
+        title = j.get("text", "")
+        location = (j.get("categories") or {}).get("location", "")
+        rng = j.get("salaryRange") or {}
+        if rng.get("min") and rng.get("max"):
+            unit = "yr" if "year" in str(rng.get("interval", "")) else "hr"
+            pay = f"${rng['min']:,.0f}–${rng['max']:,.0f}/{unit}"
+        else:
+            pay = extract_pay(desc)
+        created = j.get("createdAt")
+        jobs.append(Job(
+            title=title,
             company=company,
-            location=(j.get("categories") or {}).get("location", ""),
+            location=location,
             url=j.get("hostedUrl", ""),
             source="lever",
-            description=strip_html(j.get("descriptionPlain") or j.get("description", "")),
-        )
-        for j in resp.json() or []
-    ]
+            description=desc,
+            date_posted=datetime.fromtimestamp(created / 1000, tz=timezone.utc).strftime("%Y-%m-%d") if created else "",
+            pay=pay,
+            work_mode=j.get("workplaceType") or infer_work_mode(title, location, desc),
+        ))
+    return jobs
 
 
 def fetch_ashby(board: str, company: str) -> list[Job]:
     resp = requests.get(
         f"https://api.ashbyhq.com/posting-api/job-board/{board}",
-        headers=HEADERS, timeout=30,
+        params={"includeCompensation": "true"}, headers=HEADERS, timeout=30,
     )
     resp.raise_for_status()
-    return [
-        Job(
-            title=j.get("title", ""),
+    jobs = []
+    for j in resp.json().get("jobs") or []:
+        desc = strip_html(j.get("descriptionPlain") or j.get("descriptionHtml", ""))
+        title = j.get("title", "")
+        location = j.get("location", "")
+        comp = (j.get("compensation") or {}).get("compensationTierSummary") or ""
+        jobs.append(Job(
+            title=title,
             company=company,
-            location=j.get("location", ""),
+            location=location,
             url=j.get("jobUrl", ""),
             source="ashby",
-            description=strip_html(j.get("descriptionPlain") or j.get("descriptionHtml", "")),
+            description=desc,
             date_posted=(j.get("publishedAt") or "")[:10],
-        )
-        for j in resp.json().get("jobs") or []
-    ]
+            pay=comp.replace("•", "·") or extract_pay(desc),
+            work_mode="remote" if j.get("isRemote") else infer_work_mode(title, location, desc),
+        ))
+    return jobs
 
 
 PROVIDERS = {
