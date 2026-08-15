@@ -19,7 +19,7 @@
 </head>
 <body>
 <h1>Job Watcher</h1>
-<p class="meta">288 postings tracked · generated 2026-08-15 02:58 UTC</p>
+<p class="meta">288 postings tracked · last refresh: <span id="upd" data-ts="2026-08-15T03:02:39Z">2026-08-15 03:02 UTC</span></p>
 <input id="q" type="search" placeholder="Filter…" oninput="filt()">
 <div class="tablewrap">
 <table id="t">
@@ -360,6 +360,16 @@ function filt() {
     r.style.display = r.innerText.toLowerCase().includes(q) ? "" : "none";
 }
 sortBy(4); dir = -1; sortBy(4);
+function ago() {
+  const el = document.getElementById("upd");
+  const ts = new Date(el.dataset.ts);
+  const mins = Math.max(0, Math.round((Date.now() - ts) / 60000));
+  const rel = mins < 1 ? "just now" : mins < 60 ? `${mins} min ago`
+    : mins < 2880 ? `${Math.round(mins / 60)} h ago` : `${Math.round(mins / 1440)} days ago`;
+  el.textContent = ts.toLocaleString(undefined, {dateStyle: "medium", timeStyle: "short"}) + ` (${rel})`;
+  el.style.color = mins > 2160 ? "#d33" : "";  // red if stale >36h — a daily run was missed
+}
+ago(); setInterval(ago, 30000);
 </script>
 </body>
 </html>

@@ -26,7 +26,7 @@ _PAGE = """<!DOCTYPE html>
 </head>
 <body>
 <h1>Job Watcher</h1>
-<p class="meta">{count} postings tracked · generated {generated} UTC</p>
+<p class="meta">{count} postings tracked · last refresh: <span id="upd" data-ts="{generated_iso}">{generated} UTC</span></p>
 <input id="q" type="search" placeholder="Filter…" oninput="filt()">
 <div class="tablewrap">
 <table id="t">
@@ -66,6 +66,16 @@ function filt() {{
     r.style.display = r.innerText.toLowerCase().includes(q) ? "" : "none";
 }}
 sortBy(4); dir = -1; sortBy(4);
+function ago() {{
+  const el = document.getElementById("upd");
+  const ts = new Date(el.dataset.ts);
+  const mins = Math.max(0, Math.round((Date.now() - ts) / 60000));
+  const rel = mins < 1 ? "just now" : mins < 60 ? `${{mins}} min ago`
+    : mins < 2880 ? `${{Math.round(mins / 60)}} h ago` : `${{Math.round(mins / 1440)}} days ago`;
+  el.textContent = ts.toLocaleString(undefined, {{dateStyle: "medium", timeStyle: "short"}}) + ` (${{rel}})`;
+  el.style.color = mins > 2160 ? "#d33" : "";  // red if stale >36h — a daily run was missed
+}}
+ago(); setInterval(ago, 30000);
 </script>
 </body>
 </html>
@@ -100,9 +110,11 @@ def _health_row(s: dict) -> str:
 def generate(state: dict, health_summary: list[dict] | None = None) -> None:
     records = sorted(state.values(), key=lambda r: r.get("first_seen", ""), reverse=True)
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    now = datetime.now(timezone.utc)
     OUT.write_text(_PAGE.format(
         count=len(records),
-        generated=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
+        generated=now.strftime("%Y-%m-%d %H:%M"),
+        generated_iso=now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         rows="\n".join(_row(r) for r in records),
         health_rows="\n".join(_health_row(s) for s in health_summary or []),
     ))
