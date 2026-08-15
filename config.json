@@ -46,6 +46,7 @@
     "interconnection"
   ],
   "state_retention_days": 180,
+  "assume_expired_days": 30,
   "triage": {
     "resume_threshold": 75
   }

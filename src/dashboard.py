@@ -21,13 +21,16 @@ _PAGE = """<!DOCTYPE html>
   th, td {{ text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--border); }}
   th {{ cursor: pointer; white-space: nowrap; user-select: none; }}
   tr.priority td:first-child::before {{ content: "⭐ "; }}
+  tr.closed {{ opacity: .45; }}
+  tr.closed td:first-child a {{ text-decoration: line-through; }}
+  label {{ font-size: .85rem; margin-left: .8rem; user-select: none; }}
   a {{ color: inherit; }}
 </style>
 </head>
 <body>
 <h1>Job Watcher</h1>
-<p class="meta">{count} postings tracked · last refresh: <span id="upd" data-ts="{generated_iso}">{generated} UTC</span></p>
-<input id="q" type="search" placeholder="Filter…" oninput="filt()">
+<p class="meta">{active_count} active · {closed_count} closed · last refresh: <span id="upd" data-ts="{generated_iso}">{generated} UTC</span></p>
+<input id="q" type="search" placeholder="Filter…" oninput="applyVis()"><label><input id="sc" type="checkbox" onchange="applyVis()"> show closed</label>
 <div class="tablewrap">
 <table id="t">
 <thead><tr>
@@ -60,12 +63,15 @@ function sortBy(c, numeric) {{
                    : dir * x.localeCompare(y);
   }}).forEach(r => tb.appendChild(r));
 }}
-function filt() {{
+function applyVis() {{
   const q = document.getElementById("q").value.toLowerCase();
-  for (const r of document.querySelectorAll("#t tbody tr"))
-    r.style.display = r.innerText.toLowerCase().includes(q) ? "" : "none";
+  const showClosed = document.getElementById("sc").checked;
+  for (const r of document.querySelectorAll("#t tbody tr")) {{
+    const hideClosed = r.classList.contains("closed") && !showClosed;
+    r.style.display = !hideClosed && r.innerText.toLowerCase().includes(q) ? "" : "none";
+  }}
 }}
-sortBy(4); dir = -1; sortBy(4);
+sortBy(4); dir = -1; sortBy(4); applyVis();
 function ago() {{
   const el = document.getElementById("upd");
   const ts = new Date(el.dataset.ts);
@@ -83,7 +89,9 @@ ago(); setInterval(ago, 30000);
 
 
 def _row(rec: dict) -> str:
-    cls = ' class="priority"' if rec.get("priority") else ""
+    classes = (["priority"] if rec.get("priority") else []) + (
+        [] if rec.get("active", True) else ["closed"])
+    cls = f' class="{" ".join(classes)}"' if classes else ""
     e = lambda s: html.escape(str(s or ""))
     score = rec.get("score")
     score_cell = f'<td title="{e(rec.get("rationale"))}">{score}</td>' if score is not None else "<td></td>"
@@ -110,9 +118,11 @@ def _health_row(s: dict) -> str:
 def generate(state: dict, health_summary: list[dict] | None = None) -> None:
     records = sorted(state.values(), key=lambda r: r.get("first_seen", ""), reverse=True)
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    active = sum(1 for r in records if r.get("active", True))
     now = datetime.now(timezone.utc)
     OUT.write_text(_PAGE.format(
-        count=len(records),
+        active_count=active,
+        closed_count=len(records) - active,
         generated=now.strftime("%Y-%m-%d %H:%M"),
         generated_iso=now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         rows="\n".join(_row(r) for r in records),
