@@ -44,9 +44,10 @@ def fetch_microsoft(term: str) -> list[Job]:
     jobs = []
     for pos in resp.json()["data"]["positions"]:
         locations = pos.get("locations") or [""]
-        url = pos.get("positionUrl") or (
-            f"https://apply.careers.microsoft.com/careers/job/{pos['id']}"
-        )
+        # positionUrl comes back as a relative path (/careers/job/<id>)
+        url = pos.get("positionUrl") or f"/careers/job/{pos['id']}"
+        if url.startswith("/"):
+            url = "https://apply.careers.microsoft.com" + url
         jobs.append(Job(
             title=pos.get("name", ""),
             company="Microsoft",
