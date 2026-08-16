@@ -36,11 +36,16 @@ against this candidate profile:
 
 Return ONLY a JSON array, no prose, one object per posting:
 {{"job_id": "...", "score": 0-100, "rationale": "one sentence",
-  "seniority_match": true/false}}
+  "seniority_match": true/false, "pay": "...", "work_mode": "..."}}
 
 score = overall fit (domain AND seniority). seniority_match = false when the
 role is below (or far above) director/senior-PM level, e.g. technician,
 junior, or pure IC engineering roles — those must also score below 40.
+
+pay = the salary/compensation range exactly as stated in the posting text,
+compact (e.g. "$153,000–$180,000/yr"); "" if the posting doesn't state pay.
+work_mode = "onsite", "hybrid", or "remote" ONLY if the posting says so or
+it is unambiguous; "" otherwise. Never guess either field.
 
 Postings:
 {postings}"""
@@ -113,10 +118,13 @@ def score(new_jobs: list[Job]) -> dict[str, dict]:
             raw = _run_claude(
                 SCORE_PROMPT.format(profile=profile, postings=postings), SCORE_MODEL)
             for item in _parse_json(raw):
+                mode = str(item.get("work_mode", "")).lower()
                 results[str(item["job_id"])] = {
                     "score": int(item["score"]),
                     "rationale": str(item.get("rationale", "")),
                     "seniority_match": bool(item.get("seniority_match", False)),
+                    "pay": str(item.get("pay", "") or ""),
+                    "work_mode": mode if mode in ("onsite", "hybrid", "remote") else "",
                 }
             log.info("Triage chunk %d-%d scored (%d results)",
                      i + 1, i + len(chunk), len(results))

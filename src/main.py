@@ -41,9 +41,19 @@ def main() -> None:
     ) + "\n")
 
     scores = triage.score(new_jobs)
-    for job_id, s in scores.items():
-        if job_id in seen:
-            seen[job_id].update(s)
+    for job in new_jobs:
+        s = scores.get(job.job_id)
+        if not s:
+            continue
+        rec = seen.get(job.job_id)
+        if rec is not None:
+            rec.update({k: s[k] for k in ("score", "rationale", "seniority_match")})
+        # LLM-extracted pay/mode fill gaps only — structured API fields win.
+        for field in ("pay", "work_mode"):
+            if s.get(field) and not getattr(job, field):
+                setattr(job, field, s[field])
+                if rec is not None and not rec.get(field):
+                    rec[field] = s[field]
     state_mod.save(seen)
 
     drafts = triage.draft_resumes(
