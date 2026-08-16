@@ -399,6 +399,86 @@
      "error": null
     }
    }
+  },
+  {
+   "date": "2026-08-16 14:36",
+   "sources": {
+    "jobspy:indeed": {
+     "ok": true,
+     "count": 125,
+     "error": null
+    },
+    "jobspy:glassdoor": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "jobspy:zip_recruiter": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "jobspy:google": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "microsoft": {
+     "ok": true,
+     "count": 36,
+     "error": null
+    },
+    "amazon": {
+     "ok": true,
+     "count": 42,
+     "error": null
+    },
+    "google": {
+     "ok": true,
+     "count": 41,
+     "error": null
+    },
+    "greenhouse:coreweave": {
+     "ok": true,
+     "count": 268,
+     "error": null
+    },
+    "greenhouse:pluspower": {
+     "ok": true,
+     "count": 3,
+     "error": null
+    },
+    "greenhouse:spearmintenergy": {
+     "ok": true,
+     "count": 3,
+     "error": null
+    },
+    "greenhouse:energyhub": {
+     "ok": true,
+     "count": 17,
+     "error": null
+    },
+    "lever:terawattinfrastructure": {
+     "ok": true,
+     "count": 6,
+     "error": null
+    },
+    "ashby:crusoe": {
+     "ok": true,
+     "count": 361,
+     "error": null
+    },
+    "ashby:base-power": {
+     "ok": true,
+     "count": 172,
+     "error": null
+    },
+    "ashby:gridcare": {
+     "ok": true,
+     "count": 5,
+     "error": null
+    }
+   }
   }
  ]
 }
