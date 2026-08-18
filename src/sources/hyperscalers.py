@@ -62,6 +62,17 @@ def fetch_microsoft(term: str) -> list[Job]:
     return jobs
 
 
+def _iso_date(text: str) -> str:
+    """Amazon dates arrive as 'July  3, 2026' — normalize to ISO."""
+    if not text:
+        return ""
+    try:
+        return datetime.strptime(re.sub(r"\s+", " ", text.strip()),
+                                 "%B %d, %Y").strftime("%Y-%m-%d")
+    except ValueError:
+        return text
+
+
 def fetch_amazon(term: str) -> list[Job]:
     resp = requests.get(AMAZON_URL, headers=HEADERS, timeout=30, params={
         "base_query": term,
@@ -85,7 +96,7 @@ def fetch_amazon(term: str) -> list[Job]:
             url="https://www.amazon.jobs" + j.get("job_path", ""),
             source="amazon",
             description=desc,
-            date_posted=j.get("posted_date", ""),
+            date_posted=_iso_date(j.get("posted_date", "")),
             pay=extract_pay(desc),
             work_mode=infer_work_mode(title, location, desc),
         ))
