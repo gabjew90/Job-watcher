@@ -559,6 +559,86 @@
      "error": null
     }
    }
+  },
+  {
+   "date": "2026-08-18 06:50",
+   "sources": {
+    "jobspy:indeed": {
+     "ok": true,
+     "count": 120,
+     "error": null
+    },
+    "jobspy:glassdoor": {
+     "ok": false,
+     "count": 0,
+     "error": "failed to do request: Get \"https://www.glassdoor.com//findPopularLocationAjax.htm?maxLocationsToReturn=10&term=United States\": unexpected EOF"
+    },
+    "jobspy:zip_recruiter": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "jobspy:google": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "microsoft": {
+     "ok": true,
+     "count": 26,
+     "error": "429 Client Error: TOO MANY REQUESTS for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=data+center+energy&location=United+States&num=20"
+    },
+    "amazon": {
+     "ok": true,
+     "count": 42,
+     "error": null
+    },
+    "google": {
+     "ok": true,
+     "count": 42,
+     "error": null
+    },
+    "greenhouse:coreweave": {
+     "ok": true,
+     "count": 265,
+     "error": null
+    },
+    "greenhouse:pluspower": {
+     "ok": true,
+     "count": 3,
+     "error": null
+    },
+    "greenhouse:spearmintenergy": {
+     "ok": true,
+     "count": 3,
+     "error": null
+    },
+    "greenhouse:energyhub": {
+     "ok": true,
+     "count": 18,
+     "error": null
+    },
+    "lever:terawattinfrastructure": {
+     "ok": true,
+     "count": 6,
+     "error": null
+    },
+    "ashby:crusoe": {
+     "ok": true,
+     "count": 358,
+     "error": null
+    },
+    "ashby:base-power": {
+     "ok": true,
+     "count": 173,
+     "error": null
+    },
+    "ashby:gridcare": {
+     "ok": true,
+     "count": 6,
+     "error": null
+    }
+   }
   }
  ]
 }
