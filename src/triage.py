@@ -33,6 +33,7 @@ SCORE_PROMPT = """You are a job-fit triage assistant. Score each posting below f
 against this candidate profile:
 
 {profile}
+{feedback}
 
 Return ONLY a JSON array, no prose, one object per posting:
 {{"job_id": "...", "score": 0-100, "rationale": "one sentence",
@@ -98,14 +99,17 @@ def _parse_json(text: str):
     return json.loads(text[start:end + 1])
 
 
-def score(new_jobs: list[Job]) -> dict[str, dict]:
-    """Return {job_id: {score, rationale, seniority_match}}."""
+def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
+    """Return {job_id: {score, rationale, seniority_match, pay, work_mode}}."""
     if not new_jobs:
         return {}
     if not available():
         log.warning("claude CLI not found; skipping triage.")
         return {}
     profile = PROFILE.read_text()
+    feedback = (f"\nThe candidate has given feedback on past results — honor it "
+                f"and generalize from the reasons given:\n{feedback_text}\n"
+                if feedback_text.strip() else "")
     results: dict[str, dict] = {}
     for i in range(0, len(new_jobs), CHUNK):
         chunk = new_jobs[i:i + CHUNK]
@@ -116,7 +120,8 @@ def score(new_jobs: list[Job]) -> dict[str, dict]:
         )
         try:
             raw = _run_claude(
-                SCORE_PROMPT.format(profile=profile, postings=postings), SCORE_MODEL)
+                SCORE_PROMPT.format(profile=profile, feedback=feedback,
+                                    postings=postings), SCORE_MODEL)
             for item in _parse_json(raw):
                 mode = str(item.get("work_mode", "")).lower()
                 results[str(item["job_id"])] = {

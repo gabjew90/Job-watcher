@@ -2,6 +2,13 @@
 import html
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
+
+REPO = "gabjew90/Job-watcher"
+FEEDBACK_BODY = ("Action: hide | more-like | less-like\n"
+                 "Why: \n\n"
+                 "(pick one action, say why — the reason steers future scoring; "
+                 "'hide' also removes it from the dashboard on the next run)")
 
 OUT = Path("docs/index.html")
 
@@ -72,7 +79,18 @@ function applyVis() {{
     r.style.display = !hideClosed && r.innerText.toLowerCase().includes(q) ? "" : "none";
   }}
 }}
-sortBy(6); dir = -1; sortBy(6); applyVis();
+function defaultSort() {{
+  // Newest first by posted date (falling back to first-seen), score breaks ties.
+  const tb = document.querySelector("#t tbody");
+  [...tb.rows].sort((a, b) => {{
+    const d = r => r.cells[5].innerText.trim() || r.cells[6].innerText.trim().slice(0, 10);
+    const cmp = d(b).localeCompare(d(a));
+    if (cmp) return cmp;
+    return (parseFloat(b.cells[7].innerText) || -1) - (parseFloat(a.cells[7].innerText) || -1);
+  }}).forEach(r => tb.appendChild(r));
+  col = 5; dir = -1;
+}}
+defaultSort(); applyVis();
 function ago() {{
   const el = document.getElementById("upd");
   const ts = new Date(el.dataset.ts);
@@ -101,9 +119,12 @@ def _row(rec: dict) -> str:
     first_seen = rec.get("first_seen", "")
     if not rec.get("active", True):
         first_seen += f' <small>(closed {rec.get("closed", "")})</small>'
+    fb_url = (f"https://github.com/{REPO}/issues/new?labels=feedback"
+              f"&title={quote('feedback: ' + rec.get('title', '')[:80] + ' @ ' + rec.get('company', ''))}"
+              f"&body={quote(FEEDBACK_BODY)}")
     return (
         f'<tr{cls}><td><a href="{e(rec.get("url"))}" target="_blank">{e(rec.get("title"))}</a>'
-        f'<br><small>{e(rec.get("source"))}</small></td>'
+        f'<br><small>{e(rec.get("source"))} · <a href="{fb_url}" target="_blank">feedback</a></small></td>'
         f'<td>{e(rec.get("company"))}</td><td>{e(rec.get("location"))}</td>'
         f'<td>{mode}</td><td>{e(rec.get("pay"))}</td>'
         f'<td>{e(rec.get("date_posted"))}</td><td>{first_seen}</td>{score_cell}</tr>'

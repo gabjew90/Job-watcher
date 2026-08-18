@@ -3,7 +3,7 @@ import json
 import logging
 from pathlib import Path
 
-from . import dashboard, expiry, filters, health, notify, state as state_mod, triage
+from . import dashboard, expiry, feedback, filters, health, notify, state as state_mod, triage
 from .sources import ats_boards, hyperscalers, jobspy_source
 
 log = logging.getLogger(__name__)
@@ -27,7 +27,11 @@ def main() -> None:
     kept = filters.apply_filters(raw, config)
     log.info("%d postings after relevance filter/exclusions", len(kept))
 
+    fb = feedback.load()
+    kept = [j for j in kept if not feedback.matches(j, fb["hide"])]
+
     seen = state_mod.load()
+    feedback.sweep_state(seen, fb["hide"])
     expiry.sweep(seen, raw, config)
     new_jobs = state_mod.split_new(kept, seen)
     seen = state_mod.prune(seen, config.get("state_retention_days", 180))
@@ -40,7 +44,7 @@ def main() -> None:
         indent=1,
     ) + "\n")
 
-    scores = triage.score(new_jobs)
+    scores = triage.score(new_jobs, fb["text"])
     for job in new_jobs:
         s = scores.get(job.job_id)
         if not s:
