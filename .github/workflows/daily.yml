@@ -43,5 +43,11 @@ jobs:
           git add -A -- state docs data drafts
           if ! git diff --cached --quiet; then
             git commit -m "chore: daily run $(date -u +%F)"
-            git push
+            # A concurrent run may have pushed since checkout; rebase our
+            # snapshot on top (preferring our fresher scrape on conflicts).
+            n=0
+            until git push; do
+              n=$((n+1)); [ "$n" -ge 3 ] && exit 1
+              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
+            done
           fi
