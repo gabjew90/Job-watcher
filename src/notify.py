@@ -15,25 +15,34 @@ from .models import Job
 log = logging.getLogger(__name__)
 
 
+def _esc(text: str, limit: int = 0) -> str:
+    text = (text or "").replace("|", "\\|").replace("\n", " ").strip()
+    return text[:limit] + "…" if limit and len(text) > limit else text
+
+
 def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path],
                  health_summary: list[dict] | None = None) -> str:
     def sort_key(j: Job):
-        return -(scores.get(j.job_id, {}).get("score", -1))
+        return (-(scores.get(j.job_id, {}).get("score", -1)), not j.priority)
 
-    starred = sorted([j for j in new_jobs if j.priority], key=sort_key)
-    rest = sorted([j for j in new_jobs if not j.priority], key=sort_key)
     lines = []
     if drafts:
         lines.append("## 📄 Resume drafts ready\n")
         lines += [f"- `{p}`" for p in drafts]
         lines.append("")
-    if starred:
-        lines.append("## ⭐ Priority topics\n")
-        lines += [_line(j, scores) for j in starred]
-        lines.append("")
-    if rest:
-        lines.append("## New postings\n")
-        lines += [_line(j, scores) for j in rest]
+    if new_jobs:
+        lines.append("| Score | Role | Company | Location | Mode | Pay | Posted |")
+        lines.append("|--:|---|---|---|---|---|---|")
+        for j in sorted(new_jobs, key=sort_key):
+            s = scores.get(j.job_id)
+            score = f"**{s['score']}**" if s else "–"
+            star = " ⭐" if j.priority else ""
+            rationale = (f"<br><sub>{_esc(s['rationale'], 160)}</sub>"
+                         if s and s.get("rationale") else "")
+            lines.append(
+                f"| {score}{star} | [{_esc(j.title, 70)}]({j.url}){rationale} "
+                f"| {_esc(j.company)} | {_esc(j.location, 40)} "
+                f"| {j.work_mode} | {_esc(j.pay, 45)} | {j.date_posted} |")
     if not scores and new_jobs:
         lines.append("\n_Unscored run (triage unavailable)._")
     unhealthy = [s for s in health_summary or [] if s["status"] != "ok"]
@@ -47,17 +56,6 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
     return "\n".join(lines)
 
 
-def _line(job: Job, scores: dict[str, dict]) -> str:
-    s = scores.get(job.job_id)
-    prefix = f"**{s['score']}** · " if s else ""
-    extras = "".join(
-        f" · {x}" for x in (job.work_mode, job.pay and f"💰 {job.pay}",
-                            job.date_posted and f"posted {job.date_posted}") if x)
-    line = (f"- {prefix}[{job.title}]({job.url}) — **{job.company}** · "
-            f"{job.location} · _{job.source}_{extras}")
-    if s and s.get("rationale"):
-        line += f"\n  - {s['rationale']}"
-    return line
 
 
 def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,

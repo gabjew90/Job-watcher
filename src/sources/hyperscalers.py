@@ -34,6 +34,25 @@ META_URL = "https://www.metacareers.com/jobs"
 RESULTS_PER_TERM = 20
 
 
+MICROSOFT_JOB_URL = "https://apply.careers.microsoft.com/api/apply/v2/jobs/{pid}"
+_ms_desc_cache: dict = {}
+
+
+def _microsoft_description(pid) -> str:
+    """Search results carry no description; fetch it per job (cached per run)."""
+    if pid not in _ms_desc_cache:
+        try:
+            time.sleep(0.25)
+            data = requests.get(MICROSOFT_JOB_URL.format(pid=pid),
+                                params={"domain": "microsoft.com"},
+                                headers=HEADERS, timeout=20).json()
+            _ms_desc_cache[pid] = strip_html(data.get("job_description", ""))
+        except Exception as e:  # noqa: BLE001
+            log.debug("microsoft description fetch failed for %s: %s", pid, e)
+            _ms_desc_cache[pid] = ""
+    return _ms_desc_cache[pid]
+
+
 def fetch_microsoft(term: str) -> list[Job]:
     resp = requests.get(MICROSOFT_URL, headers=HEADERS, timeout=30, params={
         "domain": "microsoft.com",
@@ -50,13 +69,16 @@ def fetch_microsoft(term: str) -> list[Job]:
         if url.startswith("/"):
             url = "https://apply.careers.microsoft.com" + url
         posted = pos.get("postedTs")
+        desc = _microsoft_description(pos.get("id"))
         jobs.append(Job(
             title=pos.get("name", ""),
             company="Microsoft",
             location=locations[0] + (f" (+{len(locations) - 1} more)" if len(locations) > 1 else ""),
             url=url,
             source="microsoft",
+            description=desc,
             date_posted=datetime.fromtimestamp(posted, tz=timezone.utc).strftime("%Y-%m-%d") if posted else "",
+            pay=extract_pay(desc),
             work_mode=pos.get("workLocationOption") or "",
         ))
     return jobs
