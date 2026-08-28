@@ -4,7 +4,7 @@ import logging
 from pathlib import Path
 
 from . import dashboard, expiry, feedback, filters, health, notify, state as state_mod, triage
-from .sources import ats_boards, hyperscalers, jobspy_source
+from .sources import ats_boards, hyperscalers, jobspy_source, workday
 
 log = logging.getLogger(__name__)
 
@@ -16,7 +16,8 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     config = json.loads(Path("config.json").read_text())
 
-    raw = jobspy_source.fetch(config) + hyperscalers.fetch(config) + ats_boards.fetch(config)
+    raw = (jobspy_source.fetch(config) + hyperscalers.fetch(config)
+           + ats_boards.fetch(config) + workday.fetch(config))
     log.info("Fetched %d raw postings", len(raw))
     health.save_run()
     for s in health.summary():

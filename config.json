@@ -22,7 +22,15 @@
     {"provider": "lever", "board": "terawattinfrastructure", "company": "Terawatt Infrastructure"},
     {"provider": "ashby", "board": "crusoe", "company": "Crusoe"},
     {"provider": "ashby", "board": "base-power", "company": "Base Power"},
-    {"provider": "ashby", "board": "gridcare", "company": "GridCare"}
+    {"provider": "ashby", "board": "gridcare", "company": "GridCare"},
+    {"provider": "greenhouse", "board": "spacex", "company": "SpaceX"},
+    {"provider": "greenhouse", "board": "anthropic", "company": "Anthropic"},
+    {"provider": "greenhouse", "board": "nebius", "company": "Nebius"},
+    {"provider": "ashby", "board": "openai", "company": "OpenAI"}
+  ],
+  "workday_boards": [
+    {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",
+     "site": "NVIDIAExternalCareerSite", "company": "NVIDIA"}
   ],
   "location": "United States",
   "results_per_term": 25,
