@@ -21,7 +21,8 @@ def _esc(text: str, limit: int = 0) -> str:
 
 
 def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path],
-                 health_summary: list[dict] | None = None) -> str:
+                 health_summary: list[dict] | None = None,
+                 closed_recs: list[dict] | None = None) -> str:
     def sort_key(j: Job):
         return (-(scores.get(j.job_id, {}).get("score", -1)), not j.priority)
 
@@ -48,6 +49,14 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
                 f"| {j.work_mode} | {_esc(j.pay, 45)} | {j.date_posted} |")
     if not scores and new_jobs:
         lines.append("\n_Unscored run (triage unavailable)._")
+    if closed_recs:
+        lines.append("\n## 🚫 Closed since last run\n")
+        by_score = sorted(closed_recs, key=lambda r: -(r.get("score") or -1))
+        for r in by_score[:30]:
+            score = f"{r['score']} · " if r.get("score") is not None else ""
+            lines.append(f"- ~~{_esc(r.get('title', ''), 70)}~~ — {_esc(r.get('company', ''))} ({score}first seen {r.get('first_seen', '?')})")
+        if len(closed_recs) > 30:
+            lines.append(f"- …and {len(closed_recs) - 30} more")
     unhealthy = [s for s in health_summary or [] if s["status"] != "ok"]
     if unhealthy:
         lines.append("\n## ⚠️ Source issues\n")
@@ -63,7 +72,8 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
 
 def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
                drafts: list[Path] | None = None,
-               health_summary: list[dict] | None = None) -> None:
+               health_summary: list[dict] | None = None,
+               closed_recs: list[dict] | None = None) -> None:
     scores = scores or {}
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
@@ -73,7 +83,9 @@ def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
     if scores:
         top = max(scores.values(), key=lambda s: s["score"])
         title += f" (top score {top['score']})"
-    body = build_digest(new_jobs, scores, drafts, health_summary)
+    if closed_recs:
+        title += f", {len(closed_recs)} closed"
+    body = build_digest(new_jobs, scores, drafts, health_summary, closed_recs)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)

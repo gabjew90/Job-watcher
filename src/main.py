@@ -32,7 +32,7 @@ def main() -> None:
 
     seen = state_mod.load()
     feedback.sweep_state(seen, fb["hide"])
-    expiry.sweep(seen, raw, config)
+    closed_recs = expiry.sweep(seen, raw, config)
     new_jobs = state_mod.split_new(kept, seen)
     seen = state_mod.prune(seen, config.get("state_retention_days", 180))
     log.info("%d NEW postings (%d tracked total)", len(new_jobs), len(seen))
@@ -65,10 +65,10 @@ def main() -> None:
 
     dashboard.generate(seen, health.summary())
 
-    if new_jobs:
-        notify.post_issue(new_jobs, scores, drafts, health.summary())
+    if new_jobs or closed_recs:
+        notify.post_issue(new_jobs, scores, drafts, health.summary(), closed_recs)
     else:
-        log.info("No new postings; skipping notification.")
+        log.info("No new or closed postings; skipping notification.")
 
 
 if __name__ == "__main__":

@@ -90,9 +90,9 @@ def _microsoft_alive(url: str) -> bool | None:
         return None
 
 
-def sweep(seen: dict, raw_jobs: list[Job], config: dict) -> int:
-    """Mark closed postings inactive in-place. Returns how many were closed."""
-    closed = 0
+def sweep(seen: dict, raw_jobs: list[Job], config: dict) -> list[dict]:
+    """Mark closed postings inactive in-place. Returns the records closed."""
+    closed: list[dict] = []
     present = {j.job_id for j in raw_jobs}
     healthy = _healthy_ats_providers()
     cutoff = (datetime.now(timezone.utc)
@@ -107,24 +107,24 @@ def sweep(seen: dict, raw_jobs: list[Job], config: dict) -> int:
         if source in ATS_PROVIDERS:
             if source in healthy and job_id not in present:
                 _close(rec)
-                closed += 1
+                closed.append(rec)
         elif source == "microsoft":
             time.sleep(0.3)
             alive = _microsoft_alive(rec.get("url", ""))
             ms_checked += 1
             if alive is False:
                 _close(rec)
-                closed += 1
+                closed.append(rec)
         elif source == "google-careers":
             time.sleep(0.3)
             if _google_alive(rec.get("url", ""), rec.get("title", "")) is False:
                 _close(rec)
-                closed += 1
+                closed.append(rec)
         elif rec.get("first_seen", "9999") < cutoff:
             _close(rec)
-            closed += 1
+            closed.append(rec)
 
     if closed:
         log.info("Expiry sweep: closed %d postings (%d Microsoft probed)",
-                 closed, ms_checked)
+                 len(closed), ms_checked)
     return closed
