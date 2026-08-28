@@ -65,7 +65,8 @@ def main() -> None:
     drafts = triage.draft_resumes(
         new_jobs, scores, config.get("triage", {}).get("resume_threshold", 75))
 
-    dashboard.generate(seen, health.summary())
+    dashboard.generate(seen, health.summary(),
+                       config.get("dashboard_max_rows", 500))
 
     if new_jobs or closed_recs:
         notify.post_issue(new_jobs, scores, drafts, health.summary(), closed_recs)

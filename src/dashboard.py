@@ -1,6 +1,6 @@
 """Generate the static dashboard (docs/index.html) from state, for GitHub Pages."""
 import html
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote
 
@@ -144,14 +144,31 @@ def _health_row(s: dict) -> str:
     )
 
 
-def generate(state: dict, health_summary: list[dict] | None = None) -> None:
-    records = sorted(state.values(), key=lambda r: r.get("first_seen", ""), reverse=True)
+def _select_rows(state: dict, max_rows: int) -> tuple[list[dict], int, int]:
+    """Top-N active by score, but everything from the last 7 days always
+    shows; closed rows capped to the 100 most recent. State keeps the rest."""
+    active = [r for r in state.values() if r.get("active", True)]
+    closed = [r for r in state.values() if not r.get("active", True)]
+    fresh_cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
+    fresh = [r for r in active if r.get("first_seen", "") >= fresh_cutoff]
+    backlog = sorted((r for r in active if r.get("first_seen", "") < fresh_cutoff),
+                     key=lambda r: -(r.get("score") or -1))
+    shown = fresh + backlog[:max(0, max_rows - len(fresh))]
+    closed_shown = sorted(closed, key=lambda r: str(r.get("closed", "")), reverse=True)[:100]
+    return shown + closed_shown, len(active), len(closed)
+
+
+def generate(state: dict, health_summary: list[dict] | None = None,
+             max_rows: int = 500) -> None:
+    selected, active, closed = _select_rows(state, max_rows)
+    records = sorted(selected, key=lambda r: r.get("first_seen", ""), reverse=True)
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    active = sum(1 for r in records if r.get("active", True))
+    shown_active = sum(1 for r in records if r.get("active", True))
     now = datetime.now(timezone.utc)
     OUT.write_text(_PAGE.format(
-        active_count=active,
-        closed_count=len(records) - active,
+        active_count=(f"top {shown_active} of {active}"
+                      if shown_active < active else str(active)),
+        closed_count=closed,
         generated=now.strftime("%Y-%m-%d %H:%M"),
         generated_iso=now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         rows="\n".join(_row(r) for r in records),
