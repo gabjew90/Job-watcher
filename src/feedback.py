@@ -66,7 +66,13 @@ def load() -> dict:
                 hide.append(m.group(1).strip())
 
     for issue in _issue_entries():
-        parts.append(f"[issue] {issue['title']}\n{issue['body']}".strip())
+        body = issue["body"]
+        # Strip the pre-filled how-this-was-scored template so only the
+        # owner's own notes are injected into scoring prompts.
+        if "feed directly into future scoring:" in body:
+            body = body.split("feed directly into future scoring:", 1)[1]
+        body = re.sub(r"^---\s*$.*", "", body, flags=re.S | re.M).strip()
+        parts.append(f"[issue] {issue['title']}\n{body}".strip())
         if re.search(r"^\s*Action:\s*hide\b", issue["body"], re.I | re.M):
             target = re.sub(r"^feedback:\s*", "", issue["title"], flags=re.I).strip()
             if target:
