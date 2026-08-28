@@ -29,14 +29,20 @@ scope for one than this file states.
 
 ## Professional summary
 
-Senior Product Manager for grid-scale battery energy storage systems (BESS)
-at LG Energy Solution, focused on AI datacenter power customers (Meta,
-Google, NVIDIA, Microsoft). Licensed Professional Engineer with 12+ years
-across the energy industry: utility interconnection/hosting-capacity
-platforms and energy programs at PG&E, commercial HVAC design-build, and
-lithium-ion storage from systems engineering to product. MBA (STEM,
-Product Management/Strategy). Ships production AI/multi-agent systems as a
-builder on nights and weekends.
+Energy product leader at the intersection of power engineering, energy
+finance, and applied AI — the translator between grid physics, project
+economics, and data. Senior Product Manager for grid-scale battery energy
+storage systems (BESS) at LG Energy Solution, focused on AI datacenter
+power customers (Meta, Google, NVIDIA, Microsoft); concurrently Senior
+Grid Innovation Engineer at PG&E (interconnection/hosting-capacity
+platform). Licensed Professional Engineer, MBA (STEM, Product Management/
+Strategy) with energy-markets finance. 12+ years across the energy
+industry — utility programs, HVAC design-build, lithium-ion storage from
+systems engineering to product. Ships production AI/multi-agent systems
+with real users.
+
+(Drafting note: this intersection framing is the preferred lead for
+summaries and cover letters — adapt which leg gets emphasis to the role.)
 
 ## Roles (reverse chronological)
 

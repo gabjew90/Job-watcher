@@ -1,14 +1,24 @@
 # Candidate profile (used by the triage scorer)
 
+CORE THESIS: Gabriel sits at the intersection of power engineering, energy
+finance, and applied AI/data — the translator between grid physics, project
+economics, and data-driven decisions. The best-fitting roles REQUIRE
+integrating those perspectives (technical + financial + data), not deep
+specialization in any single one. When scoring, ask: "does this role need
+someone who bridges domains?" — integration roles outrank specialist roles
+at equal seniority.
+
 Gabriel Jew — Senior Product Manager for grid-scale battery energy storage
 (BESS) targeting AI datacenter power customers at LG Energy Solution;
 concurrently Senior Grid Innovation Engineer at PG&E managing the
 Integration Capacity Analysis (ICA) interconnection/hosting-capacity
 platform. Licensed Professional Engineer, MBA (Product Management/
-Strategy). 12+ years across the energy industry: utility efficiency and
+Strategy) with energy-markets finance (tolling, forwards, techno-economic
+modeling). 12+ years across the energy industry: utility efficiency and
 interconnection programs, commercial HVAC design-build, and lithium-ion
 storage from systems engineering to product leadership (led LG's first
-pre-integrated 2.86 MWh battery container). Separately ships production
+pre-integrated 2.86 MWh battery container). Statistics/data fluency
+(forecasting, optimization, degradation modeling) and ships production
 AI/multi-agent systems (Anthropic/Gemini APIs, MCP, FastAPI, multi-agent
 orchestration) — real engineering, not just prompt use.
 
