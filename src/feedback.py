@@ -100,7 +100,8 @@ def sweep_state(seen: dict, hide: list[str]) -> int:
                for h in hide):
             rec["hidden"] = True
             rec["active"] = False
-            rec.setdefault("closed", "hidden")
+            from datetime import datetime, timezone
+            rec.setdefault("closed", datetime.now(timezone.utc).strftime("%Y-%m-%d"))
             n += 1
     if n:
         log.info("Feedback: hid %d tracked postings", n)

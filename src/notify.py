@@ -22,7 +22,8 @@ def _esc(text: str, limit: int = 0) -> str:
 
 def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path],
                  health_summary: list[dict] | None = None,
-                 closed_recs: list[dict] | None = None) -> str:
+                 closed_recs: list[dict] | None = None,
+                 digest_floor: int = 40) -> str:
     def sort_key(j: Job):
         return (-(scores.get(j.job_id, {}).get("score", -1)), not j.priority)
 
@@ -34,10 +35,15 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
         lines += [f"- [{p.name}](https://github.com/{repo}/blob/{branch}/{p})"
                   for p in drafts]
         lines.append("")
-    if new_jobs:
+    # Digest floor: don't itemize clear misfits, just count them.
+    visible = [j for j in new_jobs
+               if scores.get(j.job_id) is None
+               or scores[j.job_id]["score"] >= digest_floor]
+    omitted = len(new_jobs) - len(visible)
+    if visible:
         lines.append("| Score | Role | Company | Location | Mode | Pay | Posted |")
         lines.append("|--:|---|---|---|---|---|---|")
-        for j in sorted(new_jobs, key=sort_key):
+        for j in sorted(visible, key=sort_key):
             s = scores.get(j.job_id)
             score = f"**{s['score']}**" if s else "–"
             star = " ⭐" if j.priority else ""
@@ -47,6 +53,10 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
                 f"| {score}{star} | [{_esc(j.title, 70)}]({j.url}){rationale} "
                 f"| {_esc(j.company)} | {_esc(j.location, 40)} "
                 f"| {j.work_mode} | {_esc(j.pay, 45)} | {j.date_posted} |")
+    if omitted:
+        lines.append(f"\n_{omitted} low-fit posting{'s' if omitted != 1 else ''} "
+                     f"(score < {digest_floor}) omitted; clear misfits are "
+                     f"auto-archived._")
     if not scores and new_jobs:
         lines.append("\n_Unscored run (triage unavailable)._")
     if closed_recs:
@@ -73,7 +83,8 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
 def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
                drafts: list[Path] | None = None,
                health_summary: list[dict] | None = None,
-               closed_recs: list[dict] | None = None) -> None:
+               closed_recs: list[dict] | None = None,
+               digest_floor: int = 40) -> None:
     scores = scores or {}
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
@@ -85,7 +96,8 @@ def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
         title += f" (top score {top['score']})"
     if closed_recs:
         title += f", {len(closed_recs)} closed"
-    body = build_digest(new_jobs, scores, drafts, health_summary, closed_recs)
+    body = build_digest(new_jobs, scores, drafts, health_summary, closed_recs,
+                        digest_floor)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)

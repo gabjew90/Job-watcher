@@ -1,6 +1,7 @@
 """Daily pipeline: scrape → filter → dedupe → persist → dashboard → notify."""
 import json
 import logging
+from datetime import datetime, timezone
 from pathlib import Path
 
 from . import dashboard, draft_requests, expiry, feedback, filters, health, notify, state as state_mod, triage
@@ -47,6 +48,9 @@ def main() -> None:
     ) + "\n")
 
     scores = triage.score(new_jobs, fb["text"])
+    # Clear misfits (score < 25) are auto-archived: they stay in state for
+    # dedupe but never occupy the dashboard or future attention.
+    archive_floor = config.get("auto_archive_below", 25)
     for job in new_jobs:
         s = scores.get(job.job_id)
         if not s:
@@ -54,6 +58,10 @@ def main() -> None:
         rec = seen.get(job.job_id)
         if rec is not None:
             rec.update({k: s[k] for k in ("score", "rationale", "seniority_match")})
+            if s["score"] < archive_floor:
+                rec["active"] = False
+                rec["closed"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+                rec["lowscore"] = True
         # LLM-extracted pay/mode fill gaps only — structured API fields win.
         for field in ("pay", "work_mode"):
             if s.get(field) and not getattr(job, field):
@@ -70,7 +78,10 @@ def main() -> None:
                        config.get("dashboard_max_rows", 500))
 
     if new_jobs or closed_recs:
-        notify.post_issue(new_jobs, scores, drafts, health.summary(), closed_recs)
+        # Digest floor never sits below the archive floor.
+        digest_floor = max(config.get("digest_min_score", 40), archive_floor)
+        notify.post_issue(new_jobs, scores, drafts, health.summary(), closed_recs,
+                          digest_floor)
     else:
         log.info("No new or closed postings; skipping notification.")
 

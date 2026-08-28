@@ -149,14 +149,23 @@ def _health_row(s: dict) -> str:
 
 
 def _select_rows(state: dict, max_rows: int) -> tuple[list[dict], int, int]:
-    """Top-N active by score, but everything from the last 7 days always
-    shows; closed rows capped to the 100 most recent. State keeps the rest."""
+    """Top-N active by score. Fresh rows (last 7 days) always show unless
+    they alone exceed the cap — then even fresh rows rank by score. The
+    closed toggle shows only genuine market closures (100 most recent):
+    auto-archived misfits, feedback-hidden, and duplicate records stay in
+    state for dedupe but are not listed."""
     active = [r for r in state.values() if r.get("active", True)]
-    closed = [r for r in state.values() if not r.get("active", True)]
+    closed = [r for r in state.values() if not r.get("active", True)
+              and not (r.get("lowscore") or r.get("hidden")
+                       or r.get("excluded") or r.get("closed") == "duplicate")]
     fresh_cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
+    def score_key(r):
+        return -(r["score"] if r.get("score") is not None else -1)
     fresh = [r for r in active if r.get("first_seen", "") >= fresh_cutoff]
     backlog = sorted((r for r in active if r.get("first_seen", "") < fresh_cutoff),
-                     key=lambda r: -(r.get("score") or -1))
+                     key=score_key)
+    if len(fresh) > max_rows:  # a flood week: even fresh rows rank by score
+        fresh = sorted(fresh, key=score_key)[:max_rows]
     shown = fresh + backlog[:max(0, max_rows - len(fresh))]
     closed_shown = sorted(closed, key=lambda r: str(r.get("closed", "")), reverse=True)[:100]
     return shown + closed_shown, len(active), len(closed)
