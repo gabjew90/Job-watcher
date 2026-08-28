@@ -46,7 +46,9 @@ def fetch(config: dict) -> list[Job]:
                 df = scrape_jobs(
                     site_name=[site],
                     search_term=term,
-                    google_search_term=f"{term} jobs",
+                    # Google Jobs needs a natural-language query with locale
+                    # and freshness to return results.
+                    google_search_term=f"{term} jobs in the United States since last week",
                     location=config.get("location", "United States"),
                     results_wanted=config.get("results_per_term", 25),
                     hours_old=config.get("hours_old", 72),
