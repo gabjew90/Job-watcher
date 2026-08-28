@@ -38,7 +38,13 @@
   ],
   "workday_boards": [
     {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",
-     "site": "NVIDIAExternalCareerSite", "company": "NVIDIA"}
+     "site": "NVIDIAExternalCareerSite", "company": "NVIDIA"},
+    {"host": "gevernova.wd5.myworkdayjobs.com", "tenant": "gevernova",
+     "site": "Vernova_ExternalSite", "company": "GE Vernova"}
+  ],
+  "successfactors_boards": [
+    {"base": "https://careers.pge.com", "company": "PG&E"},
+    {"base": "https://jobs.nexteraenergy.com", "company": "NextEra Energy"}
   ],
   "location": "United States",
   "results_per_term": 25,
