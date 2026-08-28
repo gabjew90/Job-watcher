@@ -113,7 +113,11 @@ def _row(rec: dict) -> str:
     cls = f' class="{" ".join(classes)}"' if classes else ""
     e = lambda s: html.escape(str(s or ""))
     score = rec.get("score")
-    score_cell = f'<td title="{e(rec.get("rationale"))}">{score}</td>' if score is not None else "<td></td>"
+    fp = rec.get("scoring_fingerprint") or {}
+    tooltip = e(rec.get("rationale"))
+    if fp:
+        tooltip += f' [{e(fp.get("model", ""))} · rubric {e(fp.get("rubric", ""))} · {e(fp.get("at", ""))}]'
+    score_cell = f'<td title="{tooltip}">{score}</td>' if score is not None else "<td></td>"
     mode = {"onsite": "🏢 onsite", "hybrid": "🔀 hybrid", "remote": "🏠 remote"}.get(
         rec.get("work_mode", ""), "")
     first_seen = rec.get("first_seen", "")

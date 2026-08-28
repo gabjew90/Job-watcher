@@ -64,6 +64,7 @@ def main() -> None:
 
     to_score = new_jobs + rescue_jobs
     scores = triage.score(to_score, fb["text"])
+    fingerprint = triage.scoring_fingerprint(fb["text"])
     # Clear misfits (score < 25) are auto-archived: they stay in state for
     # dedupe but never occupy the dashboard or future attention.
     archive_floor = config.get("auto_archive_below", 25)
@@ -74,6 +75,7 @@ def main() -> None:
         rec = seen.get(job.job_id)
         if rec is not None:
             rec.update({k: s[k] for k in ("score", "rationale", "seniority_match")})
+            rec["scoring_fingerprint"] = fingerprint
             if s["score"] < archive_floor:
                 rec["active"] = False
                 rec["closed"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")

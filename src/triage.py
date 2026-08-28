@@ -26,8 +26,10 @@ PROFILE = Path("profile.md")
 LIBRARY = Path("experience_library.md")
 DRAFTS_DIR = Path("drafts")
 CHUNK = 40
-SCORE_MODEL = "haiku"
-DRAFT_MODEL = "sonnet"
+# Pinned model versions (CLI aliases like "haiku" drift across releases);
+# override via env for experiments.
+SCORE_MODEL = os.environ.get("JOBWATCH_SCORE_MODEL", "claude-haiku-4-5-20251001")
+DRAFT_MODEL = os.environ.get("JOBWATCH_DRAFT_MODEL", "claude-sonnet-5")
 
 SCORE_PROMPT = """You are a job-fit triage assistant. Score each posting below for fit
 against this candidate profile:
@@ -106,6 +108,7 @@ def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
     if not available():
         log.warning("claude CLI not found; skipping triage.")
         return {}
+    log.info("Scoring with model %s", SCORE_MODEL)
     profile = PROFILE.read_text()
     feedback = (f"\nThe candidate has given feedback on past results — honor it "
                 f"and generalize from the reasons given:\n{feedback_text}\n"
@@ -136,6 +139,21 @@ def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
         except Exception as e:  # noqa: BLE001 - a failed chunk shouldn't kill the run
             log.warning("TRIAGE FAILURE on chunk %d-%d: %s", i + 1, i + len(chunk), e)
     return results
+
+
+def scoring_fingerprint(feedback_text: str) -> dict:
+    """Provenance stamped on every scored record: which model, when, and a
+    hash of the fully resolved rubric (profile.md + feedback file + open
+    feedback issues). Two records with different fingerprints were scored
+    under different regimes and are not directly comparable."""
+    import hashlib
+    from datetime import datetime, timezone
+    rubric = PROFILE.read_text() + "\n" + feedback_text
+    return {
+        "model": SCORE_MODEL,
+        "at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "rubric": hashlib.sha1(rubric.encode()).hexdigest()[:10],
+    }
 
 
 def library_ready() -> bool:
