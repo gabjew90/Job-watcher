@@ -80,8 +80,9 @@ def main() -> None:
     if new_jobs or closed_recs:
         # Digest floor never sits below the archive floor.
         digest_floor = max(config.get("digest_min_score", 40), archive_floor)
+        suggestions = notify.coverage_suggestions(seen, config)
         notify.post_issue(new_jobs, scores, drafts, health.summary(), closed_recs,
-                          digest_floor)
+                          digest_floor, suggestions)
     else:
         log.info("No new or closed postings; skipping notification.")
 

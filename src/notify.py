@@ -15,6 +15,36 @@ from .models import Job
 log = logging.getLogger(__name__)
 
 
+AGGREGATOR_SOURCES = {"indeed", "glassdoor", "zip_recruiter", "google"}
+
+
+def coverage_suggestions(seen: dict, config: dict) -> list[str]:
+    """Companies whose postings score >=70 but reach us only via aggregators
+    — candidates for a direct board. Suggested once, the day the company
+    first crosses the bar."""
+    from datetime import datetime, timezone
+    from .util import company_key
+    direct = {company_key(e.get("company", ""))
+              for key in ("ats_boards", "workday_boards", "successfactors_boards")
+              for e in config.get(key, [])}
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    by_company: dict[str, list[dict]] = {}
+    for r in seen.values():
+        if r.get("active", True) and r.get("company"):
+            by_company.setdefault(r["company"], []).append(r)
+    out = []
+    for company, recs in by_company.items():
+        if company_key(company) in direct:
+            continue
+        if not all(r.get("source") in AGGREGATOR_SOURCES for r in recs):
+            continue
+        best = max(recs, key=lambda r: r.get("score") or 0)
+        if (best.get("score") or 0) >= 70 and best.get("first_seen") == today:
+            out.append(f"**{company}** (top {best['score']}: "
+                       f"{_esc(best.get('title', ''), 55)})")
+    return out[:6]
+
+
 def _esc(text: str, limit: int = 0) -> str:
     text = (text or "").replace("|", "\\|").replace("\n", " ").strip()
     return text[:limit] + "…" if limit and len(text) > limit else text
@@ -23,7 +53,8 @@ def _esc(text: str, limit: int = 0) -> str:
 def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path],
                  health_summary: list[dict] | None = None,
                  closed_recs: list[dict] | None = None,
-                 digest_floor: int = 40) -> str:
+                 digest_floor: int = 40,
+                 suggestions: list[str] | None = None) -> str:
     def sort_key(j: Job):
         return (-(scores.get(j.job_id, {}).get("score", -1)), not j.priority)
 
@@ -67,6 +98,11 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
             lines.append(f"- ~~{_esc(r.get('title', ''), 70)}~~ — {_esc(r.get('company', ''))} ({score}first seen {r.get('first_seen', '?')})")
         if len(closed_recs) > 30:
             lines.append(f"- …and {len(closed_recs) - 30} more")
+    if suggestions:
+        lines.append("\n## 🔭 Coverage suggestions\n")
+        lines.append("High scorers from companies we only see via aggregators "
+                     "— name one in chat to get its direct board probed:")
+        lines += [f"- {s}" for s in suggestions]
     unhealthy = [s for s in health_summary or [] if s["status"] != "ok"]
     if unhealthy:
         lines.append("\n## ⚠️ Source issues\n")
@@ -84,7 +120,8 @@ def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
                drafts: list[Path] | None = None,
                health_summary: list[dict] | None = None,
                closed_recs: list[dict] | None = None,
-               digest_floor: int = 40) -> None:
+               digest_floor: int = 40,
+               suggestions: list[str] | None = None) -> None:
     scores = scores or {}
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
@@ -97,7 +134,7 @@ def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
     if closed_recs:
         title += f", {len(closed_recs)} closed"
     body = build_digest(new_jobs, scores, drafts, health_summary, closed_recs,
-                        digest_floor)
+                        digest_floor, suggestions)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)
