@@ -54,7 +54,8 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
                  health_summary: list[dict] | None = None,
                  closed_recs: list[dict] | None = None,
                  digest_floor: int = 40,
-                 suggestions: list[str] | None = None) -> str:
+                 suggestions: list[str] | None = None,
+                 audit_recs: list[dict] | None = None) -> str:
     def sort_key(j: Job):
         # Band desc, priority flag, posted date desc — deterministic
         # within-band ordering, no sub-band precision implied.
@@ -104,6 +105,15 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
             lines.append(f"- ~~{_esc(r.get('title', ''), 70)}~~ — {_esc(r.get('company', ''))} ({score}first seen {r.get('first_seen', '?')})")
         if len(closed_recs) > 30:
             lines.append(f"- …and {len(closed_recs) - 30} more")
+    if audit_recs:
+        lines.append("\n## 🧪 Weekly archive audit\n")
+        lines.append("Random sample of auto-archived postings — check any the "
+                     "filter got WRONG and file feedback on them:")
+        for r in audit_recs:
+            lines.append(f"- [ ] {r.get('band', r.get('score', '?'))}: "
+                         f"[{_esc(r.get('title', ''), 60)}]({r.get('url', '')}) — "
+                         f"{_esc(r.get('company', ''))}"
+                         f"<br><sub>{_esc(r.get('rationale', ''), 140)}</sub>")
     if suggestions:
         lines.append("\n## 🔭 Coverage suggestions\n")
         lines.append("High scorers from companies we only see via aggregators "
@@ -127,7 +137,8 @@ def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
                health_summary: list[dict] | None = None,
                closed_recs: list[dict] | None = None,
                digest_floor: int = 40,
-               suggestions: list[str] | None = None) -> None:
+               suggestions: list[str] | None = None,
+               audit_recs: list[dict] | None = None) -> None:
     scores = scores or {}
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
@@ -140,7 +151,7 @@ def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
     if closed_recs:
         title += f", {len(closed_recs)} closed"
     body = build_digest(new_jobs, scores, drafts, health_summary, closed_recs,
-                        digest_floor, suggestions)
+                        digest_floor, suggestions, audit_recs)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)

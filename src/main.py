@@ -93,6 +93,17 @@ def main() -> None:
                 setattr(job, field, s[field])
                 if rec is not None and not rec.get(field):
                     rec[field] = s[field]
+    # Band distribution per run — a static distribution while the input mix
+    # moves means the model is regressing to the band center.
+    from collections import Counter
+    dist = Counter(s["band"] for s in scores.values())
+    log.info("Band distribution this run: %s", dict(dist))
+    dist_file = Path("state/band_distribution.json")
+    hist = json.loads(dist_file.read_text()) if dist_file.exists() else []
+    hist.append({"date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                 "scored": len(scores), "bands": dict(dist)})
+    dist_file.write_text(json.dumps(hist[-120:], indent=1) + "\n")
+
     state_mod.save(seen)
 
     # Drafting is on-demand only: the dashboard's ✍️ link files a
@@ -106,8 +117,17 @@ def main() -> None:
         # Digest floor never sits below the archive floor.
         digest_floor = max(config.get("digest_min_score", 40), archive_floor)
         suggestions = notify.coverage_suggestions(seen, config)
+        # Weekly (Mondays): sample archived records for hand-grading — the
+        # archive filter's false-negative rate is invisible otherwise.
+        audit_recs = []
+        if datetime.now(timezone.utc).weekday() == 0:
+            import random
+            archived = [r for r in seen.values()
+                        if r.get("lowscore") or (not r.get("active", True)
+                                                 and (r.get("score") or 99) < 25)]
+            audit_recs = random.sample(archived, min(10, len(archived)))
         notify.post_issue(new_jobs, scores, drafts, health.summary(), closed_recs,
-                          digest_floor, suggestions)
+                          digest_floor, suggestions, audit_recs)
     else:
         log.info("No new or closed postings; skipping notification.")
 
