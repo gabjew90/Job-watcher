@@ -25,8 +25,17 @@ def is_relevant(job: Job, config: dict) -> bool:
                     for k in config.get("rescue_description_keywords", [])))
 
 
+# Leadership titles are never excluded — "Director, Field Services" must
+# survive the "field service" trade-role exclusion.
+EXCLUSION_OVERRIDES = ("director", "head of", "vice president", "principal",
+                       "chief", "product manager", "program manager",
+                       "senior manager")
+
+
 def is_excluded(job: Job, exclusions: list[str]) -> bool:
     title = job.title.lower()
+    if any(o in title for o in EXCLUSION_OVERRIDES):
+        return False
     return any(e.lower() in title for e in exclusions)
 
 
