@@ -8,6 +8,27 @@ BROWSER_UA = (
 HEADERS = {"User-Agent": BROWSER_UA, "Accept-Language": "en-US,en;q=0.9"}
 
 
+def company_key(company: str) -> str:
+    """Normalize company for cross-source twin matching (Amazon.com Services
+    LLC == Amazon Web Services == Amazon)."""
+    c = re.sub(r"[^a-z0-9 ]", "", (company or "").lower().replace(".com", ""))
+    c = re.sub(r"\b(inc|llc|corp|corporation|company|services|ltd|co)\b", "", c).strip()
+    return c.split()[0] if c.split() else ""
+
+
+def title_key(title: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", (title or "").lower())[:40]
+
+
+def city_key(location: str) -> str:
+    """First locality token: 'Herndon, Virginia, USA' == 'Herndon, VA'."""
+    return re.sub(r"[^a-z]", "", (location or "").split(",")[0].lower())
+
+
+def twin_key(company: str, title: str, location: str) -> tuple:
+    return (company_key(company), title_key(title), city_key(location))
+
+
 def strip_html(text: str) -> str:
     text = html.unescape(text or "")
     text = re.sub(r"<[^>]+>", " ", text)

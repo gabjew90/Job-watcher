@@ -4,6 +4,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .models import Job
+from .util import twin_key
 
 STATE_FILE = Path("state/seen_jobs.json")
 
@@ -34,8 +35,21 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
     State stores metadata (not descriptions) so the dashboard can render
     history without bloating the file.
     """
+    # Cross-source twins: same company+title+city under a different location
+    # string (Indeed "Herndon, VA" vs Amazon "Herndon, Virginia, USA") is the
+    # same posting — never re-alert it, but do borrow missing fields.
+    twins = {twin_key(r.get("company", ""), r.get("title", ""), r.get("location", "")): r
+             for r in state.values()}
     new = []
     for job in jobs:
+        if job.job_id not in state:
+            twin = twins.get(twin_key(job.company, job.title, job.location))
+            if twin is not None:
+                for field, value in (("date_posted", job.date_posted),
+                                     ("pay", job.pay), ("work_mode", job.work_mode)):
+                    if value and not twin.get(field):
+                        twin[field] = value
+                continue
         if job.job_id in state:
             # Backfill fields added after this record was first stored.
             rec = state[job.job_id]
@@ -56,5 +70,6 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
             "pay": job.pay,
             "work_mode": job.work_mode,
         }
+        twins[twin_key(job.company, job.title, job.location)] = state[job.job_id]
         new.append(job)
     return new
