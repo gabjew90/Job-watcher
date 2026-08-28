@@ -27,8 +27,11 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
 
     lines = []
     if drafts:
+        repo = os.environ.get("GITHUB_REPOSITORY", "gabjew90/Job-watcher")
+        branch = os.environ.get("GITHUB_REF_NAME", "claude/brainstorm-approach-8qukjx")
         lines.append("## 📄 Resume drafts ready\n")
-        lines += [f"- `{p}`" for p in drafts]
+        lines += [f"- [{p.name}](https://github.com/{repo}/blob/{branch}/{p})"
+                  for p in drafts]
         lines.append("")
     if new_jobs:
         lines.append("| Score | Role | Company | Location | Mode | Pay | Posted |")

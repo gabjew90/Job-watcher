@@ -23,7 +23,7 @@ scope for one than this file states.
 - Name: Gabriel Jew, P.E.
 - Location: San Diego, CA
 - Phone: (510) 388-0629
-- Email: gabjew90@gmail.com (alt on 2025 resume: gkerryjew@gmail.com — pick one per application)
+- Email: gabjew90@gmail.com (always use this on drafts; gkerryjew@gmail.com exists but is not the default)
 - LinkedIn: linkedin.com/in/gabjew90
 - GitHub: github.com/gabjew90
 
