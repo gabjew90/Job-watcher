@@ -162,6 +162,7 @@ def draft_resumes(new_jobs: list[Job], scores: dict[str, dict], threshold: int) 
         try:
             resume = _run_claude(
                 DRAFT_PROMPT.format(job=job_text, library=library), DRAFT_MODEL)
+            resume = re.sub(r"^```(?:markdown)?\s*|\s*```$", "", resume.strip(), flags=re.S)
             slug = re.sub(r"[^a-z0-9]+", "-", f"{job.company}-{job.title}".lower()).strip("-")[:80]
             path = DRAFTS_DIR / f"{date}-{slug}.md"
             path.write_text(f"<!-- {job.title} @ {job.company} — {job.url} -->\n\n{resume}\n")
