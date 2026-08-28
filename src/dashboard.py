@@ -44,7 +44,7 @@ _PAGE = """<!DOCTYPE html>
   <th onclick="sortBy(0)">Title</th><th onclick="sortBy(1)">Company</th>
   <th onclick="sortBy(2)">Location</th><th onclick="sortBy(3)">Mode</th>
   <th onclick="sortBy(4)">Pay</th><th onclick="sortBy(5)">Posted</th>
-  <th onclick="sortBy(6)">First seen</th><th onclick="sortBy(7, true)">Score</th>
+  <th onclick="sortBy(6)">First seen</th><th onclick="sortBy(7, true)">Fit</th>
 </tr></thead>
 <tbody>
 {rows}
@@ -66,9 +66,9 @@ function sortBy(c, numeric) {{
   dir = (c === col) ? -dir : (numeric ? -1 : 1); col = c;
   const tb = document.querySelector("#t tbody");
   [...tb.rows].sort((a, b) => {{
-    const x = a.cells[c].innerText, y = b.cells[c].innerText;
-    return numeric ? dir * ((parseFloat(x) || -1) - (parseFloat(y) || -1))
-                   : dir * x.localeCompare(y);
+    const val = (r) => numeric ? parseFloat(r.cells[c].dataset.s ?? r.cells[c].innerText) || -1
+                               : r.cells[c].innerText;
+    return numeric ? dir * (val(a) - val(b)) : dir * val(a).localeCompare(val(b));
   }}).forEach(r => tb.appendChild(r));
 }}
 function applyVis() {{
@@ -90,7 +90,22 @@ function defaultSort() {{
   }}).forEach(r => tb.appendChild(r));
   col = 5; dir = -1;
 }}
-defaultSort(); applyVis();
+// Documented default sort: fit band desc, then priority flag, then posted
+// date desc (first-seen fallback), then pay presence. Within-band order is
+// deterministic — no reliance on sub-band score precision.
+function bandSort() {{
+  const tb = document.querySelector("#t tbody");
+  const s = r => parseFloat(r.cells[7].dataset.s ?? "-1");
+  const d = r => r.cells[5].innerText.trim() || r.cells[6].innerText.trim().slice(0, 10);
+  [...tb.rows].sort((a, b) =>
+    (s(b) - s(a))
+    || (b.classList.contains("priority") - a.classList.contains("priority"))
+    || d(b).localeCompare(d(a))
+    || ((b.cells[4].innerText.trim() ? 1 : 0) - (a.cells[4].innerText.trim() ? 1 : 0))
+  ).forEach(r => tb.appendChild(r));
+  col = 7; dir = -1;
+}}
+bandSort(); applyVis();
 function ago() {{
   const el = document.getElementById("upd");
   const ts = new Date(el.dataset.ts);
@@ -113,11 +128,14 @@ def _row(rec: dict) -> str:
     cls = f' class="{" ".join(classes)}"' if classes else ""
     e = lambda s: html.escape(str(s or ""))
     score = rec.get("score")
+    band = rec.get("band", "")
     fp = rec.get("scoring_fingerprint") or {}
     tooltip = e(rec.get("rationale"))
     if fp:
         tooltip += f' [{e(fp.get("model", ""))} · rubric {e(fp.get("rubric", ""))} · {e(fp.get("at", ""))}]'
-    score_cell = f'<td title="{tooltip}">{score}</td>' if score is not None else "<td></td>"
+    label = e(band or (str(score) if score is not None else ""))
+    score_cell = (f'<td data-s="{score if score is not None else -1}" '
+                  f'title="{tooltip}">{label}</td>')
     mode = {"onsite": "🏢 onsite", "hybrid": "🔀 hybrid", "remote": "🏠 remote"}.get(
         rec.get("work_mode", ""), "")
     first_seen = rec.get("first_seen", "")

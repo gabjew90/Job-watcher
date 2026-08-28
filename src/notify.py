@@ -56,7 +56,13 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
                  digest_floor: int = 40,
                  suggestions: list[str] | None = None) -> str:
     def sort_key(j: Job):
-        return (-(scores.get(j.job_id, {}).get("score", -1)), not j.priority)
+        # Band desc, priority flag, posted date desc — deterministic
+        # within-band ordering, no sub-band precision implied.
+        return (-(scores.get(j.job_id, {}).get("score", -1)), not j.priority,
+                _rev_date(j.date_posted))
+
+    def _rev_date(d: str) -> str:
+        return "".join(chr(255 - ord(c)) for c in (d or "0000-00-00"))
 
     lines = []
     if drafts:
@@ -72,11 +78,11 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
                or scores[j.job_id]["score"] >= digest_floor]
     omitted = len(new_jobs) - len(visible)
     if visible:
-        lines.append("| Score | Role | Company | Location | Mode | Pay | Posted |")
+        lines.append("| Fit | Role | Company | Location | Mode | Pay | Posted |")
         lines.append("|--:|---|---|---|---|---|---|")
         for j in sorted(visible, key=sort_key):
             s = scores.get(j.job_id)
-            score = f"**{s['score']}**" if s else "–"
+            score = f"**{s.get('band') or s['score']}**" if s else "–"
             star = " ⭐" if j.priority else ""
             rationale = (f"<br><sub>{_esc(s['rationale'], 160)}</sub>"
                          if s and s.get("rationale") else "")

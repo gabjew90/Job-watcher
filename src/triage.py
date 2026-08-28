@@ -31,19 +31,35 @@ CHUNK = 40
 SCORE_MODEL = os.environ.get("JOBWATCH_SCORE_MODEL", "claude-haiku-4-5-20251001")
 DRAFT_MODEL = os.environ.get("JOBWATCH_DRAFT_MODEL", "claude-sonnet-5")
 
-SCORE_PROMPT = """You are a job-fit triage assistant. Score each posting below for fit
-against this candidate profile:
+# Bands make the four real decisions (archive / hide / show / rank)
+# explicit instead of manufacturing 0-100 precision nobody uses. The
+# mapped scores keep config thresholds (archive <25, digest floor 40,
+# coverage >=70) working unchanged.
+BAND_SCORE = {"top": 90, "strong": 75, "possible": 55, "weak": 35, "misfit": 15}
+BAND_ORDER = ["misfit", "weak", "possible", "strong", "top"]
+
+SCORE_PROMPT = """You are a job-fit triage assistant. Classify each posting below into ONE
+fit band for this candidate:
 
 {profile}
 {feedback}
 
-Return ONLY a JSON array, no prose, one object per posting:
-{{"job_id": "...", "score": 0-100, "rationale": "one sentence",
-  "seniority_match": true/false, "pay": "...", "work_mode": "..."}}
+Bands (apply the profile's guidance; where it gives numeric ranges they map
+as: 85+ = top, 70-84 = strong, 55-69 = possible, 40-54 = weak, <40 = misfit):
+- top: unambiguous target role — a "Score HIGH" category at the right seniority
+- strong: solid fit — HIGH category with minor gaps, or a stated secondary sweet spot
+- possible: plausible fit with real gaps (adjacent domain, uncertain seniority or scope)
+- weak: marginal relevance to the candidate's targets
+- misfit: out of scope
 
-score = overall fit (domain AND seniority). seniority_match = false when the
-role is below (or far above) director/senior-PM level, e.g. technician,
-junior, or pure IC engineering roles — those must also score below 40.
+Return ONLY a JSON array, no prose, one object per posting:
+{{"job_id": "...", "band": "top|strong|possible|weak|misfit",
+  "rationale": "one sentence", "seniority_match": true/false,
+  "pay": "...", "work_mode": "..."}}
+
+seniority_match = false when the role is below (or far above) the
+candidate's director/senior-PM level, e.g. technician, junior, or pure IC
+engineering roles.
 
 pay = the salary/compensation range exactly as stated in the posting text,
 compact (e.g. "$153,000–$180,000/yr"); "" if the posting doesn't state pay.
@@ -126,9 +142,15 @@ def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
                 SCORE_PROMPT.format(profile=profile, feedback=feedback,
                                     postings=postings), SCORE_MODEL)
             for item in _parse_json(raw):
+                band = str(item.get("band", "")).lower().strip()
+                if band not in BAND_SCORE:
+                    log.warning("Invalid band %r for %s — left unscored",
+                                band, item.get("job_id"))
+                    continue  # unscored records get rescued next run
                 mode = str(item.get("work_mode", "")).lower()
                 results[str(item["job_id"])] = {
-                    "score": int(item["score"]),
+                    "band": band,
+                    "score": BAND_SCORE[band],
                     "rationale": str(item.get("rationale", "")),
                     "seniority_match": bool(item.get("seniority_match", False)),
                     "pay": str(item.get("pay", "") or ""),

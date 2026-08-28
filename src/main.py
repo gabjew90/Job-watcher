@@ -72,9 +72,16 @@ def main() -> None:
         s = scores.get(job.job_id)
         if not s:
             continue
+        # Seniority coupling is enforced here, not in the prompt: a
+        # seniority mismatch caps the band at weak whatever the model said.
+        if not s["seniority_match"] and triage.BAND_ORDER.index(s["band"]) > 1:
+            log.info("Seniority cap: %r %s -> weak", job.title[:45], s["band"])
+            s["band"] = "weak"
+            s["score"] = triage.BAND_SCORE["weak"]
         rec = seen.get(job.job_id)
         if rec is not None:
-            rec.update({k: s[k] for k in ("score", "rationale", "seniority_match")})
+            rec.update({k: s[k] for k in ("band", "score", "rationale",
+                                          "seniority_match")})
             rec["scoring_fingerprint"] = fingerprint
             if s["score"] < archive_floor:
                 rec["active"] = False
