@@ -22,6 +22,16 @@ hide: Underground Transmission Designer @ Westwood
 - less-like: deep technical design IC roles (transmission line designers,
   CAD/design engineers, protection & controls designers) — too far from
   product/strategy/commercial scope; score below 45. (from issue #21)
+- calibration: commercial negotiation-LEAD roles (strategic negotiator,
+  deal lead, PPA origination negotiator) should score 55-70, not 85+ —
+  my negotiation experience is supporting/technical, not deal-lead.
+  (from issue #22, re: Google Data Center Energy Strategic Negotiator)
+- calibration: technical interconnection STUDY/consulting roles at
+  engineering firms (performing power-system studies, load flow, short
+  circuit) should score 50-60 — too deep-technical. Interconnection
+  strategy / program / product / hosting-capacity-platform roles remain
+  high fits. (from issue #23, re: Sargent & Lundy Senior Grid
+  Interconnection Consultant)
 
 ## Examples (delete these, they're inert until you write real ones)
 
