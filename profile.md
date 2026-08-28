@@ -41,6 +41,13 @@ utilities, or energy developers.
   (75-88) — the candidate pairs deep BESS/grid expertise with an MBA in
   finance. Pure deal-execution investment roles (analyst/associate/VP
   investments) score 50-65: finance-first career track, not his.
+- HVAC / THERMAL adjacency: the candidate has an HVAC design-build
+  engineering background. Product, strategy, or AI roles at HVAC, cooling,
+  datacenter-thermal, or trades-software companies (ServiceTitan, Vertiv,
+  LiquidStack, Johnson Controls...) score 70-85 when the role is
+  product-oriented and benefits from understanding thermal systems.
+  HVAC design/field ENGINEERING roles themselves stay low — he's not
+  going back to HVAC engineering.
 
 ## Score LOW
 

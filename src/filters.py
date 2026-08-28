@@ -51,8 +51,10 @@ def is_priority(job: Job, topics: list[str]) -> bool:
 def apply_filters(jobs: list[Job], config: dict) -> list[Job]:
     # Mission-pure companies (keep_all boards): every posting is on-topic by
     # virtue of the employer; triage sorts fit instead of the keyword filter.
-    keep_all_companies = {e["company"] for e in config.get("ats_boards", [])
-                          if e.get("keep_all")}
+    keep_all_companies = {
+        e["company"]
+        for key in ("ats_boards", "workday_boards", "successfactors_boards")
+        for e in config.get(key, []) if e.get("keep_all")}
     kept = []
     for job in jobs:
         if is_excluded(job, config["title_exclusions"]):

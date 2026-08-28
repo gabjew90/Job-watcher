@@ -5,7 +5,8 @@
     "data center flexibility",
     "battery energy storage",
     "grid interconnection",
-    "AI energy"
+    "AI energy",
+    "data center cooling"
   ],
   "sites": ["indeed", "glassdoor", "zip_recruiter", "google"],
   "hyperscalers": {
@@ -36,7 +37,9 @@
     {"provider": "ashby", "board": "texture", "company": "Texture", "keep_all": true},
     {"provider": "greenhouse", "board": "amperon", "company": "Amperon", "keep_all": true},
     {"provider": "ashby", "board": "generate", "company": "Generate Capital", "keep_all": true},
-    {"provider": "greenhouse", "board": "digitalbridge", "company": "DigitalBridge", "keep_all": true}
+    {"provider": "greenhouse", "board": "digitalbridge", "company": "DigitalBridge", "keep_all": true},
+    {"provider": "greenhouse", "board": "sbenergy", "company": "SB Energy", "keep_all": true},
+    {"provider": "greenhouse", "board": "liquidstack", "company": "LiquidStack", "keep_all": true}
   ],
   "workday_boards": [
     {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",
@@ -48,7 +51,10 @@
     {"host": "brookfield.wd5.myworkdayjobs.com", "tenant": "brookfield",
      "site": "brookfield", "company": "Brookfield"},
     {"host": "blackstone.wd1.myworkdayjobs.com", "tenant": "blackstone",
-     "site": "Blackstone_Careers", "company": "Blackstone"}
+     "site": "Blackstone_Careers", "company": "Blackstone"},
+    {"host": "servicetitan.wd1.myworkdayjobs.com", "tenant": "servicetitan",
+     "site": "ServiceTitan", "company": "ServiceTitan", "keep_all": true,
+     "terms": ["AI product manager", "product manager", "data center"]}
   ],
   "successfactors_boards": [
     {"base": "https://careers.pge.com", "company": "PG&E"},

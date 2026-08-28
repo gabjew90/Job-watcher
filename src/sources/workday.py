@@ -50,7 +50,7 @@ def fetch(config: dict) -> list[Job]:
     for board in config.get("workday_boards", []):
         label = f"workday:{board['tenant']}"
         try:
-            got = fetch_board(board, config["search_terms"])
+            got = fetch_board(board, board.get("terms") or config["search_terms"])
             out.extend(got)
             log.info("%s: %d postings", label, len(got))
             health.record(label, ok=True, count=len(got))
