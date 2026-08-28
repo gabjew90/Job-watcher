@@ -53,6 +53,21 @@ def _healthy_ats_providers() -> set[str]:
     return {p for p, oks in by_provider.items() if oks and all(oks)}
 
 
+def _google_alive(url: str, title: str) -> bool | None:
+    """Dead Google postings still return 200 with a generic page; a live one
+    embeds the job title in the server-rendered HTML."""
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        if resp.status_code == 404:
+            return False
+        if resp.status_code != 200 or len(title) < 8:
+            return None
+        return title[:25].lower() in resp.text.lower()
+    except Exception as e:  # noqa: BLE001
+        log.debug("google liveness check failed for %s: %s", url, e)
+        return None
+
+
 def _microsoft_alive(url: str) -> bool | None:
     """True/False when determinable, None on any doubt."""
     try:
@@ -98,6 +113,11 @@ def sweep(seen: dict, raw_jobs: list[Job], config: dict) -> int:
             alive = _microsoft_alive(rec.get("url", ""))
             ms_checked += 1
             if alive is False:
+                _close(rec)
+                closed += 1
+        elif source == "google-careers":
+            time.sleep(0.3)
+            if _google_alive(rec.get("url", ""), rec.get("title", "")) is False:
                 _close(rec)
                 closed += 1
         elif rec.get("first_seen", "9999") < cutoff:

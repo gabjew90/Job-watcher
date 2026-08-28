@@ -88,7 +88,14 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   pair is isolated so the rest of the run is unaffected. Meta similarly
   rejects non-residential traffic, so its fetcher ships disabled
   (`hyperscalers.meta` in config).
-- Microsoft search results carry no descriptions, so Microsoft jobs are
-  filtered on title keywords only.
+- Microsoft search results carry no descriptions, so each Microsoft job's
+  full description is fetched from the per-job API (cached per run).
+- Amazon pay ranges are NOT capturable: amazon.jobs renders them via a
+  JavaScript widget from an internal API — they appear in no fetchable
+  text (search API, page HTML, or per-job JSON). Amazon rows show blank
+  pay by design; check the posting page.
+- Posting liveness: ATS boards are snapshot-diffed exactly; Microsoft and
+  Google postings are probed individually each run; other sources
+  auto-close after `assume_expired_days`.
 - No LinkedIn scraping. No auto-applying. Discovery, scoring, and drafting
   only.
