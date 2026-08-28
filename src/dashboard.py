@@ -5,10 +5,31 @@ from pathlib import Path
 from urllib.parse import quote
 
 REPO = "gabjew90/Job-watcher"
-FEEDBACK_BODY = ("Action: hide | more-like | less-like\n"
-                 "Why: \n\n"
-                 "(pick one action, say why — the reason steers future scoring; "
-                 "'hide' also removes it from the dashboard on the next run)")
+
+
+def _feedback_body(rec: dict) -> str:
+    """Pre-fill the feedback issue with how this posting was scored, so the
+    owner reacts to the model's actual reasoning."""
+    fp = rec.get("scoring_fingerprint") or {}
+    lines = [
+        "How this was scored:",
+        f"- Band: {rec.get('band', rec.get('score', '?'))}"
+        f" (seniority_match: {rec.get('seniority_match', '?')})",
+        f"- Rationale: {rec.get('rationale') or '(none recorded)'}",
+    ]
+    if fp:
+        lines.append(f"- By: {fp.get('model', '?')} · rubric {fp.get('rubric', '?')}"
+                     f" · {fp.get('at', '?')}")
+    lines += [
+        "",
+        "What's right or wrong with this reasoning? Write below — your notes",
+        "feed directly into future scoring:",
+        "",
+        "",
+        "---",
+        "To hide this posting entirely, include a line: Action: hide",
+    ]
+    return "\n".join(lines)
 
 OUT = Path("docs/index.html")
 
@@ -143,7 +164,7 @@ def _row(rec: dict) -> str:
         first_seen += f' <small>(closed {rec.get("closed", "")})</small>'
     ref = quote(rec.get("title", "")[:80] + " @ " + rec.get("company", ""))
     fb_url = (f"https://github.com/{REPO}/issues/new?labels=feedback"
-              f"&title={quote('feedback: ')}{ref}&body={quote(FEEDBACK_BODY)}")
+              f"&title={quote('feedback: ')}{ref}&body={quote(_feedback_body(rec))}")
     draft_url = (f"https://github.com/{REPO}/issues/new?labels=draft-request"
                  f"&title={quote('draft: ')}{ref}"
                  f"&body={quote('Requested from dashboard. Optional: add emphasis notes here.')}")
