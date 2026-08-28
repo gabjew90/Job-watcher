@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import dashboard, draft_requests, expiry, feedback, filters, health, notify, state as state_mod, triage
+from .models import Job
 from .sources import ats_boards, hyperscalers, jobspy_source, successfactors, workday
 
 log = logging.getLogger(__name__)
@@ -47,11 +48,26 @@ def main() -> None:
         indent=1,
     ) + "\n")
 
-    scores = triage.score(new_jobs, fb["text"])
+    # Rescue records left unscored by previously failed triage chunks:
+    # they'd otherwise never be scored again (score() only sees new jobs).
+    new_ids = {j.job_id for j in new_jobs}
+    desc_by_id = {j.job_id: j.description for j in raw if j.description}
+    rescue_jobs = [
+        Job(title=seen[jid]["title"], company=seen[jid]["company"],
+            location=seen[jid]["location"], url=seen[jid]["url"],
+            source=seen[jid]["source"], description=desc_by_id.get(jid, ""))
+        for jid in state_mod.unscored_active(seen, new_ids)
+    ]
+    if rescue_jobs:
+        log.warning("Rescuing %d previously unscored records (failed chunks)",
+                    len(rescue_jobs))
+
+    to_score = new_jobs + rescue_jobs
+    scores = triage.score(to_score, fb["text"])
     # Clear misfits (score < 25) are auto-archived: they stay in state for
     # dedupe but never occupy the dashboard or future attention.
     archive_floor = config.get("auto_archive_below", 25)
-    for job in new_jobs:
+    for job in to_score:
         s = scores.get(job.job_id)
         if not s:
             continue

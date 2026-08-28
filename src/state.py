@@ -29,6 +29,14 @@ def prune(state: dict, retention_days: int) -> dict:
     return {k: v for k, v in state.items() if v.get("first_seen", "9999") >= cutoff}
 
 
+def unscored_active(state: dict, exclude_ids: set[str]) -> list[str]:
+    """Job_ids of active records that never received a score — the residue
+    of failed triage chunks. Rescored alongside new jobs each run."""
+    return [job_id for job_id, rec in state.items()
+            if rec.get("active", True) and "score" not in rec
+            and job_id not in exclude_ids]
+
+
 def split_new(jobs: list[Job], state: dict) -> list[Job]:
     """Return only jobs not already in state, and record them in state.
 
