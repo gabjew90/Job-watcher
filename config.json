@@ -34,7 +34,9 @@
     {"provider": "lever", "board": "exowatt", "company": "Exowatt", "keep_all": true},
     {"provider": "ashby", "board": "tyba", "company": "Tyba", "keep_all": true},
     {"provider": "ashby", "board": "texture", "company": "Texture", "keep_all": true},
-    {"provider": "greenhouse", "board": "amperon", "company": "Amperon", "keep_all": true}
+    {"provider": "greenhouse", "board": "amperon", "company": "Amperon", "keep_all": true},
+    {"provider": "ashby", "board": "generate", "company": "Generate Capital", "keep_all": true},
+    {"provider": "greenhouse", "board": "digitalbridge", "company": "DigitalBridge", "keep_all": true}
   ],
   "workday_boards": [
     {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",
@@ -42,7 +44,11 @@
     {"host": "gevernova.wd5.myworkdayjobs.com", "tenant": "gevernova",
      "site": "Vernova_ExternalSite", "company": "GE Vernova"},
     {"host": "nextracker.wd5.myworkdayjobs.com", "tenant": "nextracker",
-     "site": "nextpower_careers", "company": "Nextracker"}
+     "site": "nextpower_careers", "company": "Nextracker"},
+    {"host": "brookfield.wd5.myworkdayjobs.com", "tenant": "brookfield",
+     "site": "brookfield", "company": "Brookfield"},
+    {"host": "blackstone.wd1.myworkdayjobs.com", "tenant": "blackstone",
+     "site": "Blackstone_Careers", "company": "Blackstone"}
   ],
   "successfactors_boards": [
     {"base": "https://careers.pge.com", "company": "PG&E"},

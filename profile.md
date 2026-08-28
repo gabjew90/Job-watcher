@@ -35,6 +35,12 @@ utilities, or energy developers.
 - Senior/principal individual-contributor STRATEGY roles in energy
   (interconnection strategy lead, energy market principal, techno-economic
   analysis lead) — strong fits even without a PM title.
+- Energy/infrastructure INVESTORS (Brookfield, Blackstone, Generate,
+  DigitalBridge...): technical diligence, asset management, operating/
+  portfolio roles for power/storage/datacenter assets are strong fits
+  (75-88) — the candidate pairs deep BESS/grid expertise with an MBA in
+  finance. Pure deal-execution investment roles (analyst/associate/VP
+  investments) score 50-65: finance-first career track, not his.
 
 ## Score LOW
 
