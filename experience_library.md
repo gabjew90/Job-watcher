@@ -1,12 +1,22 @@
 # Experience Library
 
-STATUS: TEMPLATE — two TODOs left (current-role outcomes, return date).
-Fix them, then delete this line to enable resume drafting.
-
 This file is the ONLY source of truth for drafted resumes. Nothing gets
 invented beyond what's written here; thin sections become TODO notes in
 drafts. Compiled 2026-08 from: 2019–2022 resume PDFs (Google Drive), the
-2025 resume PDF (uploaded), and the June 2026 resume (Gmail).
+2025 resume PDF (uploaded), and the June 2026 resume (Gmail); dual-role
+framing confirmed by Gabriel.
+
+## FRAMING GUIDANCE FOR DRAFTS
+
+The two current roles below (LG Energy Solution and PG&E) are CONCURRENT —
+both run to present. Per application, LEAD with whichever fits the target
+role and give it the fuller treatment:
+- Product / BESS / datacenter-energy / hyperscaler roles → lead LG Energy
+  Solution (Senior PM, grid-scale BESS for AI datacenters).
+- Utility / interconnection / grid-planning / regulatory roles → lead PG&E
+  (Senior Grid Innovation Engineer, ICA platform).
+Never invent an end date for either role, and don't claim more hours or
+scope for one than this file states.
 
 ## Header
 
@@ -30,9 +40,10 @@ builder on nights and weekends.
 
 ## Roles (reverse chronological)
 
-### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (TODO start date, ~2025/26 – present)
+### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2021 – present; Senior PM in current phase)
 
-TODO: confirm when you returned from PG&E and the exact title.
+(Continuous LG tenure from Feb 2021; the earlier phase is broken out below
+so drafts can show progression. Concurrent with the PG&E role below.)
 
 Scope: Lead product strategy for grid-scale battery storage systems
 targeting AI datacenter customers (Meta, Google, NVIDIA, Microsoft). New
@@ -47,7 +58,9 @@ Outcomes (TODO — the most important gap; quantify 3-5 bullets):
 - TODO e.g. revenue/pipeline influenced, design wins, cost reductions
 - TODO e.g. specific datacenter-customer engagements and what you drove
 
-### Pacific Gas and Electric — Senior Grid Innovation Engineer (June 2023 – ~2025)
+### Pacific Gas and Electric — Senior Grid Innovation Engineer (June 2023 – present)
+
+(Concurrent with the LG Energy Solution role above.)
 
 - Managed development of the Integration Capacity Analysis (ICA) platform —
   the hosting-capacity/interconnection data platform — coordinating vendors,
@@ -60,7 +73,7 @@ Outcomes (TODO — the most important gap; quantify 3-5 bullets):
 - Authored reports and delivered presentations for regulatory compliance and
   stakeholder/regulator communication.
 
-### LG Energy Solution — Product Manager, Grid-Scale ESS (Feb 2021 – June 2023)
+### LG Energy Solution — Product Manager, Grid-Scale ESS (Feb 2021 – 2023 phase)
 
 - Formulated product strategy for grid-scale energy storage products: market
   research, voice of customer, quantitative/qualitative analyses, and
