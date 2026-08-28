@@ -26,7 +26,15 @@
     {"provider": "greenhouse", "board": "spacex", "company": "SpaceX"},
     {"provider": "greenhouse", "board": "anthropic", "company": "Anthropic"},
     {"provider": "greenhouse", "board": "nebius", "company": "Nebius"},
-    {"provider": "ashby", "board": "openai", "company": "OpenAI"}
+    {"provider": "ashby", "board": "openai", "company": "OpenAI"},
+    {"provider": "ashby", "board": "emerald-ai", "company": "Emerald AI", "keep_all": true},
+    {"provider": "greenhouse", "board": "niraenergy", "company": "Nira Energy", "keep_all": true},
+    {"provider": "ashby", "board": "neara", "company": "Neara", "keep_all": true},
+    {"provider": "lever", "board": "gridware", "company": "Gridware", "keep_all": true},
+    {"provider": "lever", "board": "exowatt", "company": "Exowatt", "keep_all": true},
+    {"provider": "ashby", "board": "tyba", "company": "Tyba", "keep_all": true},
+    {"provider": "ashby", "board": "texture", "company": "Texture", "keep_all": true},
+    {"provider": "greenhouse", "board": "amperon", "company": "Amperon", "keep_all": true}
   ],
   "workday_boards": [
     {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",
