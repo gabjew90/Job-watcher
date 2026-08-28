@@ -14,7 +14,15 @@ def is_relevant(job: Job, config: dict) -> bool:
     if any(k.lower() in title for k in config["title_keywords"]):
         return True
     description = job.description.lower()
-    return any(k.lower() in description for k in config["description_keywords"])
+    if any(k.lower() in description for k in config["description_keywords"]):
+        return True
+    # Rescue rule: curated-company postings whose titles lack energy words
+    # (e.g. "Senior Director, Development" at a datacenter developer) — needs
+    # BOTH a senior/role-type title signal AND an energy phrase in the
+    # description, so company boilerplate alone can't drag in recruiters.
+    return (any(k.lower() in title for k in config.get("rescue_title_keywords", []))
+            and any(k.lower() in description
+                    for k in config.get("rescue_description_keywords", [])))
 
 
 def is_excluded(job: Job, exclusions: list[str]) -> bool:
