@@ -54,10 +54,13 @@ utilities, or energy developers.
 - HVAC / THERMAL adjacency: the candidate has an HVAC design-build
   engineering background. Product, strategy, or AI roles at HVAC, cooling,
   datacenter-thermal, or trades-software companies (ServiceTitan, Vertiv,
-  LiquidStack, Johnson Controls...) score 70-85 when the role is
-  product-oriented and benefits from understanding thermal systems.
-  HVAC design/field ENGINEERING roles themselves stay low — he's not
-  going back to HVAC engineering.
+  LiquidStack, Johnson Controls...) score 70-85 ONLY when the role's
+  subject matter is the domain itself or AI tooling for it (e.g. AI
+  product manager at an HVAC SaaS). Specialist-craft roles at these
+  companies — UX/product design, visual design, brand, back-office
+  tooling — score weak: he likes AI tools at an HVAC SaaS but does not
+  specialize in design. HVAC design/field ENGINEERING roles themselves
+  stay low — he's not going back to HVAC engineering.
 
 ## Score LOW
 

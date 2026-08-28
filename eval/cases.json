@@ -1,17 +1,137 @@
 {
-  "_readme": "Frozen scoring eval set. Each case is a real posting as it was scored (many were title-only backfills — descriptions reflect that), the correct band per owner feedback, and the reason. Every feedback.md rule that changes scoring must ship a case here (enforced by eval_runner's count check). Pass = exact band; adjacent band = warn; >=2 bands off, or any top/misfit confusion = fail.",
-  "cases": [
-    {"id": "negotiator-google", "title": "Data Center Energy Strategic Negotiator", "company": "Google", "location": "Reston, VA, USA", "description": "", "expected_band": "possible", "reason": "Deal-lead negotiation roles cap at 55-70: supporting negotiation experience only (issue #22)", "source": "feedback"},
-    {"id": "interconnection-consultant-sl", "title": "Senior Grid Interconnection Consultant", "company": "Sargent & Lundy", "location": "Chicago, IL", "description": "", "expected_band": "possible", "reason": "Interconnection STUDY consulting is 50-60; strategy/product interconnection stays high (issue #23)", "source": "feedback"},
-    {"id": "equipment-lead-anthropic", "title": "Global Power Delivery Equipment Lead", "company": "Anthropic", "location": "San Francisco, CA", "description": "", "expected_band": "possible", "reason": "Hardware/equipment-development leads are 55-65: no direct equipment-development experience (issue #24)", "source": "feedback"},
-    {"id": "battery-pm-gsr", "title": "Product Manager – Battery Customer Strategy Lead", "company": "Global Software Resources", "location": "Pleasanton, CA", "description": "", "expected_band": "strong", "reason": "Battery customer/product strategy PM is a top skillset match even via staffing firms (issue #26)", "source": "feedback"},
-    {"id": "firmware-exowatt", "title": "Lead Controls & Firmware Engineer (Austin, TX)", "company": "Exowatt", "location": "Austin, TX", "description": "", "expected_band": "misfit", "reason": "Controls/firmware/embedded is out of skillset even at mission-pure energy companies (issue #25)", "source": "feedback"},
-    {"id": "transmission-designer-westwood", "title": "Underground Transmission Designer", "company": "Westwood Professional Services", "location": "US", "description": "", "expected_band": "misfit", "reason": "Deep technical design IC roles are below 45 (issues #21, #27)", "source": "feedback"},
-    {"id": "network-engineer-crusoe", "title": "Staff Network Production Engineer, Deployment", "company": "Crusoe", "location": "US", "description": "", "expected_band": "misfit", "reason": "Hands-on network/IT infrastructure engineering is wrong field even at energy companies (issue #19)", "source": "feedback"},
-    {"id": "energy-director-vantage", "title": "Senior Director, Energy Systems, Global", "company": "Vantage Data Centers", "location": "Denver, CO (remote)", "description": "Lead global energy systems strategy for a hyperscale datacenter operator: power procurement, utility engagement, onsite generation and storage roadmaps.", "expected_band": "top", "reason": "Director-scope datacenter-operator energy leadership: the core target", "source": "organic"},
-    {"id": "market-dev-coreweave", "title": "Director, Energy Market Development", "company": "CoreWeave", "location": "New York, NY", "description": "Own energy market development for AI datacenter capacity: utility partnerships, interconnection execution, market entry strategy for new regions.", "expected_band": "top", "reason": "Director-scope energy market development at an AI datacenter operator", "source": "organic"},
-    {"id": "tire-battery-sams", "title": "(USA) Tire and Battery Service Advisor", "company": "Sam's Club", "location": "Saint Clairsville, OH", "description": "", "expected_band": "misfit", "reason": "Keyword-only match; retail service role", "source": "organic"},
-    {"id": "gpu-newgrad-nvidia", "title": "GPU Power Architect - New College Grad 2026", "company": "NVIDIA", "location": "Santa Clara, CA", "description": "", "expected_band": "misfit", "reason": "Junior/new-grad IC role: seniority mismatch must cap it", "source": "organic"},
-    {"id": "backoffice-design-servicetitan", "title": "Group Manager, Product Design - Back Office", "company": "ServiceTitan", "location": "US Remote", "description": "Lead product design for back-office workflows: design systems, IC design management.", "expected_band": "weak", "reason": "Thermal-adjacency applies only to product roles needing thermal understanding; back-office design does not qualify", "source": "organic"}
-  ]
+ "_readme": "Frozen scoring eval set. Each case is a real posting as it was scored (many were title-only backfills \u2014 descriptions reflect that), the correct band per owner feedback, and the reason. Every feedback.md rule that changes scoring must ship a case here (enforced by eval_runner's count check). Pass = exact band; adjacent band = warn; >=2 bands off, or any top/misfit confusion = fail. owner_verified=false means the label was derived (from prior model output or rubric intent), not confirmed by the owner \u2014 treat failures on those as questions, not regressions.",
+ "cases": [
+  {
+   "id": "negotiator-google",
+   "title": "Data Center Energy Strategic Negotiator",
+   "company": "Google",
+   "location": "Reston, VA, USA",
+   "description": "",
+   "expected_band": "possible",
+   "reason": "Deal-lead negotiation roles cap at 55-70: supporting negotiation experience only (issue #22)",
+   "source": "feedback",
+   "owner_verified": true
+  },
+  {
+   "id": "interconnection-consultant-sl",
+   "title": "Senior Grid Interconnection Consultant",
+   "company": "Sargent & Lundy",
+   "location": "Chicago, IL",
+   "description": "",
+   "expected_band": "possible",
+   "reason": "Interconnection STUDY consulting is 50-60; strategy/product interconnection stays high (issue #23)",
+   "source": "feedback",
+   "owner_verified": true
+  },
+  {
+   "id": "equipment-lead-anthropic",
+   "title": "Global Power Delivery Equipment Lead",
+   "company": "Anthropic",
+   "location": "San Francisco, CA",
+   "description": "",
+   "expected_band": "possible",
+   "reason": "Hardware/equipment-development leads are 55-65: no direct equipment-development experience (issue #24)",
+   "source": "feedback",
+   "owner_verified": true
+  },
+  {
+   "id": "battery-pm-gsr",
+   "title": "Product Manager \u2013 Battery Customer Strategy Lead",
+   "company": "Global Software Resources",
+   "location": "Pleasanton, CA",
+   "description": "",
+   "expected_band": "strong",
+   "reason": "Battery customer/product strategy PM is a top skillset match even via staffing firms (issue #26)",
+   "source": "feedback",
+   "owner_verified": true
+  },
+  {
+   "id": "firmware-exowatt",
+   "title": "Lead Controls & Firmware Engineer (Austin, TX)",
+   "company": "Exowatt",
+   "location": "Austin, TX",
+   "description": "",
+   "expected_band": "misfit",
+   "reason": "Controls/firmware/embedded is out of skillset even at mission-pure energy companies (issue #25)",
+   "source": "feedback",
+   "owner_verified": true
+  },
+  {
+   "id": "transmission-designer-westwood",
+   "title": "Underground Transmission Designer",
+   "company": "Westwood Professional Services",
+   "location": "US",
+   "description": "",
+   "expected_band": "misfit",
+   "reason": "Deep technical design IC roles are below 45 (issues #21, #27)",
+   "source": "feedback",
+   "owner_verified": true
+  },
+  {
+   "id": "network-engineer-crusoe",
+   "title": "Staff Network Production Engineer, Deployment",
+   "company": "Crusoe",
+   "location": "US",
+   "description": "",
+   "expected_band": "misfit",
+   "reason": "Hands-on network/IT infrastructure engineering is wrong field even at energy companies (issue #19)",
+   "source": "feedback",
+   "owner_verified": true
+  },
+  {
+   "id": "energy-director-vantage",
+   "title": "Senior Director, Energy Systems, Global",
+   "company": "Vantage Data Centers",
+   "location": "Denver, CO (remote)",
+   "description": "Lead global energy systems strategy for a hyperscale datacenter operator: power procurement, utility engagement, onsite generation and storage roadmaps.",
+   "expected_band": "top",
+   "reason": "Director-scope datacenter-operator energy leadership: the core target",
+   "source": "organic",
+   "owner_verified": false
+  },
+  {
+   "id": "market-dev-coreweave",
+   "title": "Director, Energy Market Development",
+   "company": "CoreWeave",
+   "location": "New York, NY",
+   "description": "Own energy market development for AI datacenter capacity: utility partnerships, interconnection execution, market entry strategy for new regions.",
+   "expected_band": "top",
+   "reason": "Director-scope energy market development at an AI datacenter operator",
+   "source": "organic",
+   "owner_verified": false
+  },
+  {
+   "id": "tire-battery-sams",
+   "title": "(USA) Tire and Battery Service Advisor",
+   "company": "Sam's Club",
+   "location": "Saint Clairsville, OH",
+   "description": "",
+   "expected_band": "misfit",
+   "reason": "Keyword-only match; retail service role",
+   "source": "organic",
+   "owner_verified": false
+  },
+  {
+   "id": "gpu-newgrad-nvidia",
+   "title": "GPU Power Architect - New College Grad 2026",
+   "company": "NVIDIA",
+   "location": "Santa Clara, CA",
+   "description": "",
+   "expected_band": "misfit",
+   "reason": "Junior/new-grad IC role: seniority mismatch must cap it",
+   "source": "organic",
+   "owner_verified": false
+  },
+  {
+   "id": "backoffice-design-servicetitan",
+   "title": "Group Manager, Product Design - Back Office",
+   "company": "ServiceTitan",
+   "location": "US Remote",
+   "description": "Lead product design for back-office workflows: design systems, IC design management.",
+   "expected_band": "weak",
+   "reason": "Owner-adjudicated 2026-08-28: 'I like AI tools at an HVAC SaaS but I don't specialize in UX design' \u2014 design-craft roles are weak even at thermal-adjacent companies",
+   "source": "organic",
+   "owner_verified": true
+  }
+ ]
 }
