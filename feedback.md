@@ -15,6 +15,8 @@ preference should apply; close it to retire it.
 hide: Staff Network Production Engineer @ Crusoe
 hide: BESS Solutions Engineer @ EnerSys
 hide: Underground Transmission Designer @ Westwood
+hide: Lead Controls & Firmware Engineer @ Exowatt
+hide: Solution Engineer - Structural Design @ Neara
 
 - less-like: hands-on network/IT infrastructure engineering roles (network
   production engineer, site reliability, deployment engineering) — wrong
@@ -26,6 +28,18 @@ hide: Underground Transmission Designer @ Westwood
   deal lead, PPA origination negotiator) should score 55-70, not 85+ —
   my negotiation experience is supporting/technical, not deal-lead.
   (from issue #22, re: Google Data Center Energy Strategic Negotiator)
+- calibration: hardware/equipment development or equipment-procurement
+  LEAD roles (e.g. power delivery equipment lead) score 55-65 — no direct
+  equipment-development experience; product/strategy framing required for
+  higher. (from issue #24, re: Anthropic Global Power Delivery Equipment
+  Lead)
+- more-like: product manager roles centered on BATTERY customer/product
+  strategy are top fits (80+) — direct skillset match, even via staffing
+  firms. (from issue #26, re: Product Manager – Battery Customer Strategy
+  Lead)
+- calibration: controls/firmware/embedded engineering and structural
+  design engineering roles are out of skillset — below 35 even at
+  mission-pure energy companies. (from issues #25, #28)
 - calibration: technical interconnection STUDY/consulting roles at
   engineering firms (performing power-system studies, load flow, short
   circuit) should score 50-60 — too deep-technical. Interconnection
