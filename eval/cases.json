@@ -1,5 +1,5 @@
 {
- "_readme": "Frozen scoring eval set. Each case is a real posting as it was scored (many were title-only backfills \u2014 descriptions reflect that), the correct band per owner feedback, and the reason. Every feedback.md rule that changes scoring must ship a case here (enforced by eval_runner's count check). Pass = exact band; adjacent band = warn; >=2 bands off, or any top/misfit confusion = fail. owner_verified=false means the label was derived (from prior model output or rubric intent), not confirmed by the owner \u2014 treat failures on those as questions, not regressions.",
+ "_readme": "Frozen scoring eval set. Each case is a real posting as it was scored (many were title-only backfills \u2014 descriptions reflect that), the correct band per owner feedback, and the reason. Every issue cited by a feedback.md rule must be covered by a case citing that issue (enforced per-issue by eval_runner, no grandfathering). Pass = exact band; adjacent band = warn; >=2 bands off, or any top/misfit confusion = fail. owner_verified=false means the label was derived (from prior model output or rubric intent), not confirmed by the owner \u2014 treat failures on those as questions, not regressions.",
  "cases": [
   {
    "id": "negotiator-google",
@@ -131,6 +131,17 @@
    "expected_band": "weak",
    "reason": "Owner-adjudicated 2026-08-28: 'I like AI tools at an HVAC SaaS but I don't specialize in UX design' \u2014 design-craft roles are weak even at thermal-adjacent companies",
    "source": "organic",
+   "owner_verified": true
+  },
+  {
+   "id": "structural-design-neara",
+   "title": "Solution Engineer - Structural Design",
+   "company": "Neara",
+   "location": "US",
+   "description": "",
+   "expected_band": "misfit",
+   "reason": "Owner: 'Too technical' \u2014 structural design engineering is out of skillset even at mission-pure grid-software companies (issue #28)",
+   "source": "feedback",
    "owner_verified": true
   }
  ]

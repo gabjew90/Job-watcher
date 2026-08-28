@@ -24,13 +24,18 @@ CASES = Path("eval/cases.json")
 
 def main() -> int:
     data = json.loads(CASES.read_text())["cases"]
+    # Per-issue invariant: every issue a feedback.md rule cites must be
+    # covered by an eval case citing the same issue. No aggregate counting,
+    # no grandfathering.
     fb_text = re.sub(r"<!--.*?-->", "", Path("feedback.md").read_text(), flags=re.S)
-    rules = len(re.findall(r"^\s*-\s*(?:calibration|more-like|less-like):",
-                           fb_text, re.M))
-    fb_cases = sum(1 for c in data if c["source"] == "feedback")
-    if rules > fb_cases:
-        print(f"FAIL invariant: {rules} scoring rules in feedback.md but only "
-              f"{fb_cases} feedback-sourced eval cases — add cases for new rules.")
+    rule_issues = set(re.findall(r"#(\d+)", fb_text))
+    case_issues = set()
+    for c in data:
+        case_issues.update(re.findall(r"#(\d+)", c["reason"]))
+    uncovered = sorted(rule_issues - case_issues, key=int)
+    if uncovered:
+        print("FAIL invariant: feedback.md rules cite issues with no eval case: "
+              + ", ".join(f"#{n}" for n in uncovered))
         return 1
 
     jobs, expect = [], {}
