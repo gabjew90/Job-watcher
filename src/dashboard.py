@@ -119,12 +119,16 @@ def _row(rec: dict) -> str:
     first_seen = rec.get("first_seen", "")
     if not rec.get("active", True):
         first_seen += f' <small>(closed {rec.get("closed", "")})</small>'
+    ref = quote(rec.get("title", "")[:80] + " @ " + rec.get("company", ""))
     fb_url = (f"https://github.com/{REPO}/issues/new?labels=feedback"
-              f"&title={quote('feedback: ' + rec.get('title', '')[:80] + ' @ ' + rec.get('company', ''))}"
-              f"&body={quote(FEEDBACK_BODY)}")
+              f"&title={quote('feedback: ')}{ref}&body={quote(FEEDBACK_BODY)}")
+    draft_url = (f"https://github.com/{REPO}/issues/new?labels=draft-request"
+                 f"&title={quote('draft: ')}{ref}"
+                 f"&body={quote('Requested from dashboard. Optional: add emphasis notes here.')}")
     return (
         f'<tr{cls}><td><a href="{e(rec.get("url"))}" target="_blank">{e(rec.get("title"))}</a>'
-        f'<br><small>{e(rec.get("source"))} · <a href="{fb_url}" target="_blank">feedback</a></small></td>'
+        f'<br><small>{e(rec.get("source"))} · <a href="{fb_url}" target="_blank">feedback</a>'
+        f' · <a href="{draft_url}" target="_blank">✍️ draft</a></small></td>'
         f'<td>{e(rec.get("company"))}</td><td>{e(rec.get("location"))}</td>'
         f'<td>{mode}</td><td>{e(rec.get("pay"))}</td>'
         f'<td>{e(rec.get("date_posted"))}</td><td>{first_seen}</td>{score_cell}</tr>'

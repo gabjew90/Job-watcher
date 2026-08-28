@@ -3,7 +3,7 @@ import json
 import logging
 from pathlib import Path
 
-from . import dashboard, expiry, feedback, filters, health, notify, state as state_mod, triage
+from . import dashboard, draft_requests, expiry, feedback, filters, health, notify, state as state_mod, triage
 from .sources import ats_boards, hyperscalers, jobspy_source, successfactors, workday
 
 log = logging.getLogger(__name__)
@@ -62,8 +62,9 @@ def main() -> None:
                     rec[field] = s[field]
     state_mod.save(seen)
 
-    drafts = triage.draft_resumes(
-        new_jobs, scores, config.get("triage", {}).get("resume_threshold", 75))
+    # Drafting is on-demand only: the dashboard's ✍️ link files a
+    # draft-request issue; no auto-drafting by score.
+    drafts = draft_requests.process(raw, seen, config)
 
     dashboard.generate(seen, health.summary(),
                        config.get("dashboard_max_rows", 500))
