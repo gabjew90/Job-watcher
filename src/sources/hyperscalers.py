@@ -146,11 +146,15 @@ def fetch_google(term: str) -> list[Job]:
                 locations = ", ".join(loc[0] for loc in (entry[9] or [])[:3])
                 desc = strip_html(str((entry[3] or [None, ""])[1]) + " " + str((entry[4] or [None, ""])[1]))
                 title = str(entry[1])
+                # Canonical URLs are /{id}-{title-slug}; Google's client-side
+                # router can break on slugless forms even though the server
+                # returns content for them.
+                slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
                 jobs.append(Job(
                     title=title,
                     company=str(entry[7] or "Google"),
                     location=locations,
-                    url=f"https://www.google.com/about/careers/applications/jobs/results/{entry[0]}",
+                    url=f"https://www.google.com/about/careers/applications/jobs/results/{entry[0]}-{slug}",
                     source="google-careers",
                     description=desc,
                     pay=extract_pay(desc),
