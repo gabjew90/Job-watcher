@@ -68,7 +68,16 @@
     "transmission line", "electrical distribution", "generation capacity",
     "power delivery", "onsite power", "on-site power", "load integration"
   ],
-  "title_exclusions": ["intern", "software engineer"],
+  "title_exclusions": [
+    "intern", "software engineer",
+    "technician", "electrician", "journeyman", "apprentice", "mechanic",
+    "machinist", "welder", "installer", "assembler", "fabricator",
+    "lineman", "lineworker", "laborer", "foreman", "maintenance",
+    "field service", "plant operator", "equipment operator", "warehouse",
+    "driver", "custodian", "groundskeeper", "janitor", "dispatcher",
+    "parts clerk", "customer service representative", "security guard",
+    "surgical", "phlebotom", "nurse", "recruiter", "recruiting coordinator"
+  ],
   "priority_topics": [
     "data center flexibility", "grid flexibility", "demand flexibility",
     "bridge power", "behind-the-meter", "BESS", "battery energy storage",
