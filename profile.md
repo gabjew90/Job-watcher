@@ -1,5 +1,10 @@
 # Candidate profile (used by the triage scorer)
 
+<!-- PLACEMENT RULE: this file holds the DURABLE fit thesis and band
+definitions — what "fit" means for this candidate. Corrections arising
+from individual mis-scored postings belong in feedback.md, each citing
+its issue, with an eval case per issue. -->
+
 CORE THESIS: Gabriel sits at the intersection of power engineering, energy
 finance, and applied AI/data — the translator between grid physics, project
 economics, and data-driven decisions. The best-fitting roles REQUIRE
