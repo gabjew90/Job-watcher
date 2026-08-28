@@ -6,6 +6,8 @@ when they appear in the TITLE — job descriptions are full of boilerplate
 matching keep nearly everything. Description matches require specific
 domain phrases ("battery energy storage", "grid interconnection", ...).
 """
+import re
+
 from .models import Job
 
 
@@ -36,7 +38,9 @@ def is_excluded(job: Job, exclusions: list[str]) -> bool:
     title = job.title.lower()
     if any(o in title for o in EXCLUSION_OVERRIDES):
         return False
-    return any(e.lower() in title for e in exclusions)
+    # Word boundaries so "mechanic" can't match "Mechanical", etc.
+    return any(re.search(rf"\b{re.escape(e.lower())}\b", title)
+               for e in exclusions)
 
 
 def is_priority(job: Job, topics: list[str]) -> bool:
