@@ -41,7 +41,8 @@
     {"provider": "greenhouse", "board": "hut8", "company": "Hut 8"},
     {"provider": "lever", "board": "cleanspark", "company": "CleanSpark"},
     {"provider": "greenhouse", "board": "sbenergy", "company": "SB Energy", "keep_all": true},
-    {"provider": "greenhouse", "board": "liquidstack", "company": "LiquidStack", "keep_all": true}
+    {"provider": "greenhouse", "board": "liquidstack", "company": "LiquidStack", "keep_all": true},
+    {"provider": "edged", "board": "jobs-central", "company": "Edged"}
   ],
   "workday_boards": [
     {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",

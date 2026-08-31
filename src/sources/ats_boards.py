@@ -105,10 +105,49 @@ def fetch_ashby(board: str, company: str) -> list[Job]:
     return jobs
 
 
+def fetch_edged(board: str, company: str) -> list[Job]:
+    """Edged/Endeavour/ThermalWorks aggregate API (jobs-central). Origin-
+    gated: send the careers page's Origin/Referer. Company comes from each
+    job, not the config entry. Rich fields incl. salary and full text."""
+    resp = requests.get(
+        "https://jobs-central.laravel.cloud/api/v1/jobs",
+        params={"per_page": 100},
+        headers={**HEADERS, "Accept": "application/json",
+                 "Referer": "https://edged.us/careers",
+                 "Origin": "https://edged.us"},
+        timeout=30,
+    )
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json().get("data", []):
+        if j.get("isActive") is False:
+            continue
+        desc = strip_html(" ".join(str(j.get(k) or "") for k in
+                                   ("summary", "description", "requirements")))
+        title = j.get("title", "")
+        location = j.get("location", "")
+        lo, hi = j.get("salaryMin"), j.get("salaryMax")
+        pay = (f"${float(lo):,.0f}–${float(hi):,.0f}" if lo and hi
+               else extract_pay(desc))
+        jobs.append(Job(
+            title=title,
+            company=j.get("company") or company,
+            location=location,
+            url=j.get("externalUrl") or "https://edged.us/careers",
+            source="edged",
+            description=desc,
+            date_posted=(j.get("postedDate") or "")[:10],
+            pay=pay,
+            work_mode=infer_work_mode(title, location, desc),
+        ))
+    return jobs
+
+
 PROVIDERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
     "ashby": fetch_ashby,
+    "edged": fetch_edged,
 }
 
 
