@@ -62,6 +62,14 @@ descriptions (input for the triage step).
 
 ## Adding / fixing sources
 
+**Coverage doctrine**: every company worth watching either has a direct
+board entry (`ats_boards` / `workday_boards` / `successfactors_boards`)
+OR belongs in `indeed_company_watch`, which runs a targeted
+`company:"X" (energy OR power OR "data center")` Indeed query per company
+each run — topic searches cap at 25 ranked results and routinely bury
+individual employers' postings. The digest's 🔭 coverage-suggestions
+section surfaces new candidates automatically.
+
 **ATS boards** (most reliable source — stable public JSON): add an entry to
 `ats_boards` in `config.json`. Find a company's board slug from its careers
 page URL, or probe:
