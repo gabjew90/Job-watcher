@@ -2,7 +2,11 @@ name: Daily job watch
 
 on:
   schedule:
-    - cron: "13 14 * * *"
+    # Two firings/day: GitHub's shared cron drifts hours or skips entirely,
+    # so the second is insurance — dedupe makes it cheap (only-new scoring),
+    # and a digest only posts when there's something new or closed.
+    - cron: "47 13 * * *"
+    - cron: "47 20 * * *"
   workflow_dispatch:
 
 permissions:
