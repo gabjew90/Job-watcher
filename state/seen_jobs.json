@@ -7186,21 +7186,21 @@
   "work_mode": "remote"
  },
  "30fa81ac4857c483": {
-  "band": "weak",
+  "band": "strong",
   "company": "Meta",
   "date_posted": "2026-07-13",
   "first_seen": "2026-08-31",
   "location": "Remote, US",
   "pay": "$202,000\u2013$273,000/yr",
   "priority": true,
-  "rationale": "Excellent domain fit (data center energy infrastructure, interconnection & energy supply agreements) but manager-level seniority is below director/senior PM target.",
-  "score": 35,
+  "rationale": "Excellent domain fit (data center energy infrastructure at hyperscaler); described scope\u2014strategy development, negotiations leadership, stakeholder management, executive-facing work\u2014signals senior level despite flat title, aligning with candidate's feedback that this exact role type was previously underscored.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:34Z",
+   "at": "2026-08-31T21:39Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "cabf58d958"
+   "rubric": "6c072e45dd"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "indeed",
   "title": "Energy Manager, Power Delivery",
   "url": "https://www.indeed.com/viewjob?jk=db26e666b157853f",

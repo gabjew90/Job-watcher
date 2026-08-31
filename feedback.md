@@ -18,6 +18,17 @@ open while the preference should apply; close it to retire it.
 
 ## Active rules
 
+- calibration: judge seniority from the DESCRIBED SCOPE, not the title
+  alone. Read the description: owning strategy/programs/regions,
+  cross-functional leadership, or executive-facing accountability reads
+  senior even under a flat title ("Energy Manager" at Meta/Google/Amazon);
+  stated pay ~$180k+ is a corroborating senior signal. Reserve
+  seniority_match=false for roles whose described duties are genuinely
+  junior, early-career, or trade-level. A flat-titled senior role with
+  strong domain fit bands strong or top on its merits.
+  (from Meta "Energy Manager, Power Delivery" — $202-273k, excellent
+  domain fit, wrongly capped weak by title-based seniority)
+
 hide: Staff Network Production Engineer @ Crusoe
 hide: BESS Solutions Engineer @ EnerSys
 hide: Underground Transmission Designer @ Westwood
