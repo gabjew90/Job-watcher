@@ -9,6 +9,10 @@
     "data center cooling"
   ],
   "sites": ["indeed"],
+  "indeed_company_watch": [
+    "Meta", "Tesla", "AMD", "Vertiv", "IREN", "Applied Digital",
+    "Oracle", "LS Power", "GridStor", "Bitfarms", "Core Scientific"
+  ],
   "hyperscalers": {
     "microsoft": true,
     "amazon": true,

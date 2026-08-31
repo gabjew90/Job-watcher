@@ -40,6 +40,35 @@ def _mode(row) -> str:
 
 def fetch(config: dict) -> list[Job]:
     jobs: list[Job] = []
+    # Company watch: employers without direct boards (Meta, Tesla...) get
+    # burial-proof targeted queries — topic searches cap at 25 results per
+    # term and Indeed's ranking routinely buries watched companies' roles.
+    for company in config.get("indeed_company_watch", []):
+        query = f'company:"{company}" (energy OR power OR "data center")'
+        try:
+            df = scrape_jobs(site_name=["indeed"], search_term=query,
+                             location=config.get("location", "United States"),
+                             results_wanted=25, hours_old=720,
+                             country_indeed="USA", verbose=0)
+            for _, row in df.iterrows():
+                jobs.append(Job(
+                    title=_s(row.get("title")),
+                    company=_s(row.get("company")),
+                    location=_s(row.get("location")),
+                    url=_s(row.get("job_url")),
+                    source="indeed",
+                    description=_s(row.get("description")),
+                    date_posted=_s(row.get("date_posted")),
+                    pay=_pay(row),
+                    work_mode=_mode(row),
+                ))
+            log.info("jobspy company-watch %r: %d results", company, len(df))
+            health.record("jobspy:indeed-watch", ok=True, count=len(df))
+        except Exception as e:  # noqa: BLE001 - per-source isolation by design
+            log.warning("SOURCE FAILURE company-watch %r: %s", company, e)
+            health.record("jobspy:indeed-watch", ok=False, error=e)
+        time.sleep(1)
+
     for term in config["search_terms"]:
         for site in config["sites"]:
             try:
