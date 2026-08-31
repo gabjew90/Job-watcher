@@ -120,7 +120,11 @@ def sweep(seen: dict, raw_jobs: list[Job], config: dict) -> list[dict]:
             if _google_alive(rec.get("url", ""), rec.get("title", "")) is False:
                 _close(rec)
                 closed.append(rec)
-        elif rec.get("first_seen", "9999") < cutoff:
+        # Age from date_posted when known: a posting found late (company
+        # watch uses a wider window) shouldn't get a full retention period
+        # counted from discovery.
+        elif min(rec.get("date_posted") or "9999",
+                 rec.get("first_seen", "9999")) < cutoff:
             _close(rec)
             closed.append(rec)
 

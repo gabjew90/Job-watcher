@@ -15,6 +15,8 @@ from ..util import extract_pay, infer_work_mode
 
 log = logging.getLogger(__name__)
 
+DEFAULT_RESULTS = 50
+
 
 def _s(value) -> str:
     if value is None or (not isinstance(value, str) and pd.isna(value)):
@@ -41,15 +43,20 @@ def _mode(row) -> str:
 def fetch(config: dict) -> list[Job]:
     jobs: list[Job] = []
     # Company watch: employers without direct boards (Meta, Tesla...) get
-    # burial-proof targeted queries — topic searches cap at 25 results per
+    # burial-proof targeted queries — topic searches take a ranked slice per
     # term and Indeed's ranking routinely buries watched companies' roles.
+    depth = config.get("results_per_term", DEFAULT_RESULTS)
     for company in config.get("indeed_company_watch", []):
         query = f'company:"{company}" (energy OR power OR "data center")'
+        # Per-company health keys: jobspy returns an EMPTY FRAME (not an
+        # exception) when Indeed blocks a request, so a shared key would
+        # hide a mid-roster block behind the roster's total.
+        label = f"indeed-watch:{company}"
         try:
             df = scrape_jobs(site_name=["indeed"], search_term=query,
                              location=config.get("location", "United States"),
-                             results_wanted=config.get("results_per_term", 50),
-                             hours_old=720,
+                             results_wanted=depth,
+                             hours_old=config.get("watch_hours_old", 168),
                              country_indeed="USA", verbose=0)
             for _, row in df.iterrows():
                 jobs.append(Job(
@@ -64,10 +71,10 @@ def fetch(config: dict) -> list[Job]:
                     work_mode=_mode(row),
                 ))
             log.info("jobspy company-watch %r: %d results", company, len(df))
-            health.record("jobspy:indeed-watch", ok=True, count=len(df))
+            health.record(label, ok=True, count=len(df))
         except Exception as e:  # noqa: BLE001 - per-source isolation by design
             log.warning("SOURCE FAILURE company-watch %r: %s", company, e)
-            health.record("jobspy:indeed-watch", ok=False, error=e)
+            health.record(label, ok=False, error=e)
         time.sleep(1)
 
     for term in config["search_terms"]:
@@ -80,7 +87,7 @@ def fetch(config: dict) -> list[Job]:
                     # and freshness to return results.
                     google_search_term=f"{term} jobs in the United States since last week",
                     location=config.get("location", "United States"),
-                    results_wanted=config.get("results_per_term", 25),
+                    results_wanted=depth,
                     hours_old=config.get("hours_old", 72),
                     country_indeed="USA",
                     verbose=0,

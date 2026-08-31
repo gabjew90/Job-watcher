@@ -27,6 +27,9 @@ def coverage_suggestions(seen: dict, config: dict) -> list[str]:
     direct = {company_key(e.get("company", ""))
               for key in ("ats_boards", "workday_boards", "successfactors_boards")
               for e in config.get(key, [])}
+    # Watched employers are deliberately boardless (no reachable ATS) —
+    # per the coverage doctrine they are covered, not candidates.
+    direct |= {company_key(c) for c in config.get("indeed_company_watch", [])}
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     by_company: dict[str, list[dict]] = {}
     for r in seen.values():

@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .models import Job
+from .util import role_excerpt
 
 log = logging.getLogger(__name__)
 
@@ -134,7 +135,7 @@ def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
         chunk = new_jobs[i:i + CHUNK]
         postings = "\n\n".join(
             f"job_id: {j.job_id}\ntitle: {j.title}\ncompany: {j.company}\n"
-            f"location: {j.location}\ndescription: {j.description[:1500]}"
+            f"location: {j.location}\ndescription: {role_excerpt(j.description, 1500)}"
             for j in chunk
         )
         try:

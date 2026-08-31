@@ -4164,19 +4164,19 @@
   "work_mode": ""
  },
  "1c89e14458b16a2d": {
-  "band": "weak",
+  "band": "misfit",
   "company": "Edged U.S.",
   "date_posted": "2026-07-10",
   "first_seen": "2026-08-31",
   "location": "United States",
-  "pay": "$180,000\u2013$205,000",
+  "pay": "$180,000\u2013$205,000/yr",
   "priority": false,
-  "rationale": "Edged (ideal domain) but risk-management corporate function is outside product/strategy scope.",
-  "score": 35,
+  "rationale": "Construction insurance and risk management role unrelated to energy infrastructure or datacenters",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -8023,12 +8023,12 @@
   "location": "Raleigh, NC",
   "pay": "",
   "priority": false,
-  "rationale": "Perfect domain (Edged energy infrastructure) but electrical-engineering technical leadership role not product/strategy.",
+  "rationale": "Lead electrical engineer is technical IC role; datacenter domain provides alignment but deep engineering design is not product/strategy focus",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -10652,14 +10652,14 @@
   "date_posted": "2026-07-13",
   "first_seen": "2026-08-31",
   "location": "United States",
-  "pay": "$200,000\u2013$215,000",
+  "pay": "$200,000\u2013$215,000/yr",
   "priority": true,
-  "rationale": "Ideal domain match (Edged: datacenters+energy+microgrids) with energy infrastructure program-management focus bridging product and operations strategy.",
+  "rationale": "Energy infrastructure program management (substations, generation, interconnection) for datacenters integrates utilities, energy systems, and operations\u2014core domain match with senior delivery scope",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": true,
   "source": "edged",
@@ -10878,12 +10878,12 @@
   "location": "Atlanta, GA, USA",
   "pay": "",
   "priority": false,
-  "rationale": "Perfect domain (Edged datacenters) but technical chief-engineer role focus rather than product/strategy leadership.",
+  "rationale": "Site-level data center facility operations and shift management; not energy infrastructure strategy or product leadership",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -12578,21 +12578,21 @@
   "work_mode": "remote"
  },
  "5b6a7f0156a89bfa": {
-  "band": "weak",
+  "band": "possible",
   "company": "Edged Infrastructure",
   "date_posted": "2026-06-18",
   "first_seen": "2026-08-31",
   "location": "United States (Remote) Raleigh, NC",
   "pay": "",
   "priority": false,
-  "rationale": "Edged domain (energy+microgrids ideal) at director level but legal/deal-execution function is outside product/strategy scope.",
-  "score": 35,
+  "rationale": "Director-level energy & microgrids role matches energy domain but deal execution/legal focus aligns to commercial deal-lead, not technical/supporting negotiation background",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "edged",
   "title": "Director, Deal Execution & Legal \u2013 Energy & Microgrids",
   "url": "https://job-boards.greenhouse.io/edged_infrastructure/jobs/4289965009",
@@ -13329,19 +13329,19 @@
   "url": "https://jobs.ashbyhq.com/base-power/7ec26a2c-f2b7-47fc-9881-51bdcd4915eb"
  },
  "61120b1029205461": {
-  "band": "top",
+  "band": "strong",
   "company": "Edged U.S.",
   "date_posted": "2026-05-15",
   "first_seen": "2026-08-31",
   "location": "United States",
-  "pay": "$200,000\u2013$280,000",
+  "pay": "$200,000\u2013$280,000/yr",
   "priority": false,
-  "rationale": "Senior director-level strategy role at datacenter energy company with renewable microgrid focus\u2014unambiguous fit for energy infrastructure leadership.",
-  "score": 90,
+  "rationale": "Senior energy strategy manager for datacenter portfolio: utility partnerships, power due diligence, infrastructure coordination\u2014direct match to energy procurement and utility partnership HIGH categories",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": true,
   "source": "edged",
@@ -18722,12 +18722,12 @@
   "location": "Aurora, IL, USA",
   "pay": "",
   "priority": false,
-  "rationale": "Perfect domain (Edged datacenters) but technical chief-engineer role focus rather than product/strategy leadership.",
+  "rationale": "Site-level facility operations and shift management; not energy infrastructure strategy or product leadership",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -19109,14 +19109,14 @@
   "location": "United States (Remote) New York metro area or Atlanta, GA",
   "pay": "",
   "priority": false,
-  "rationale": "Edged domain (ideal) at director level but legal/deal-execution function is outside product/strategy scope.",
+  "rationale": "Director deal execution & legal in data centers + real estate is commercial/legal function; lacks energy-specific focus and product/strategy alignment",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "edged",
   "title": "Director, Deal Execution & Legal \u2013 Data Centers & Real Estate",
   "url": "https://job-boards.greenhouse.io/edged_global/jobs/4289972009",
@@ -19249,14 +19249,14 @@
   "date_posted": "2026-06-22",
   "first_seen": "2026-08-31",
   "location": "New Albany, OH, USA",
-  "pay": "$115,000\u2013$130,000",
+  "pay": "$115,000\u2013$130,000/yr",
   "priority": false,
-  "rationale": "Perfect domain (Edged datacenters) but technical chief-engineer role focus rather than product/strategy leadership.",
+  "rationale": "Site-level facility operations and shift management; not energy infrastructure strategy or product leadership",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -19566,14 +19566,14 @@
   "date_posted": "2026-04-14",
   "first_seen": "2026-08-31",
   "location": "United States",
-  "pay": "$115,000\u2013$145,000",
+  "pay": "$115,000\u2013$145,000/yr",
   "priority": false,
-  "rationale": "Operational project controls analyst role below director/PM target level.",
+  "rationale": "Project controls analyst supporting construction scheduling and cost tracking; not energy infrastructure or product strategy",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -20628,21 +20628,21 @@
   "work_mode": ""
  },
  "9627b59a423fba93": {
-  "band": "strong",
+  "band": "weak",
   "company": "Edged U.S.",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-31",
   "location": "United States",
   "pay": "",
   "priority": false,
-  "rationale": "Ideal domain match (Edged: datacenters+microgrids+energy infrastructure) with portfolio-planning focus bridging strategy and controls; program-management seniority level.",
-  "score": 75,
+  "rationale": "Project controls manager for construction portfolio scheduling and milestones; not energy strategy or product leadership",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "edged",
   "title": "Project Controls Manager - Portfolio Planning",
   "url": "https://jobs.dayforcehcm.com/en-US/edc/CandidatePortalEDC/jobs/906",
@@ -23120,19 +23120,19 @@
   "work_mode": "remote"
  },
  "a8bf2a1d058acd8c": {
-  "band": "weak",
+  "band": "misfit",
   "company": "Edged U.S.",
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-31",
   "location": "United States",
-  "pay": "$115,000\u2013$135,000",
+  "pay": "$115,000\u2013$135,000/yr",
   "priority": false,
-  "rationale": "Datacenter+energy company (Edged) but HR/learning/training function is outside product/strategy scope.",
-  "score": 35,
+  "rationale": "Learning program manager for operations training is HR/L&D function unrelated to energy, product, or strategy",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -28828,12 +28828,12 @@
   "location": "Atlanta, GA",
   "pay": "",
   "priority": false,
-  "rationale": "Title and description incomplete; inferred as power-electronics testing\u2014technical IC role outside product/strategy.",
+  "rationale": "Power electronics test engineer is technical IC role; energy domain provides alignment but hands-on testing engineering is not product/strategy focus",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",
@@ -29902,16 +29902,16 @@
   "date_posted": "2026-07-08",
   "first_seen": "2026-08-31",
   "location": "United States",
-  "pay": "$185,000\u2013$212,180",
+  "pay": "$185,000\u2013$212,180/yr",
   "priority": false,
-  "rationale": "Edged (ideal domain) but security/compliance corporate function is outside product/strategy scope.",
+  "rationale": "Director security/risk/compliance operations is enterprise security function; not energy infrastructure or product strategy",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "edged",
   "title": "Director, Security, Risk & Compliance Operations",
   "url": "https://jobs.dayforcehcm.com/en-US/edc/CandidatePortalEDC/jobs/848",
@@ -30407,19 +30407,19 @@
   "work_mode": "remote"
  },
  "e0087a21228e0730": {
-  "band": "strong",
+  "band": "possible",
   "company": "Edged U.S.",
   "date_posted": "2026-06-01",
   "first_seen": "2026-08-31",
   "location": "United States",
-  "pay": "$170,000\u2013$200,000",
+  "pay": "$170,000\u2013$200,000/yr",
   "priority": false,
-  "rationale": "Ideal domain match (Edged: datacenters+energy) at director level; central operations leadership could bridge infrastructure operations and strategic planning.",
-  "score": 75,
+  "rationale": "Director-level centralized operations for datacenter portfolio leadership; director scope and datacenter domain provide alignment but operations/procedures focus differs from energy infrastructure and product strategy emphasis",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": true,
   "source": "edged",
@@ -34250,19 +34250,19 @@
   "work_mode": ""
  },
  "fe42a11515a03289": {
-  "band": "weak",
+  "band": "misfit",
   "company": "Endeavour",
   "date_posted": "2026-06-29",
   "first_seen": "2026-08-31",
   "location": "Remote - US",
   "pay": "",
   "priority": false,
-  "rationale": "Description incomplete; title suggests IT operations function outside energy/power domain.",
-  "score": 35,
+  "rationale": "IT infrastructure & operations manager is IT systems function unrelated to energy, power, or product strategy",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-08-31T21:16Z",
+   "at": "2026-08-31T23:46Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "edged",

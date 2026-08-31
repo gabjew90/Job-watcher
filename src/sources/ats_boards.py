@@ -105,41 +105,70 @@ def fetch_ashby(board: str, company: str) -> list[Job]:
     return jobs
 
 
+def _flatten(value) -> str:
+    """API text fields arrive as str OR list of bullets; str() on a list
+    would inject Python repr (brackets, quotes) into descriptions."""
+    if isinstance(value, (list, tuple)):
+        return " ".join(_flatten(v) for v in value)
+    return str(value or "")
+
+
 def fetch_edged(board: str, company: str) -> list[Job]:
     """Edged/Endeavour/ThermalWorks aggregate API (jobs-central). Origin-
     gated: send the careers page's Origin/Referer. Company comes from each
-    job, not the config entry. Rich fields incl. salary and full text."""
-    resp = requests.get(
-        "https://jobs-central.laravel.cloud/api/v1/jobs",
-        params={"per_page": 100},
-        headers={**HEADERS, "Accept": "application/json",
-                 "Referer": "https://edged.us/careers",
-                 "Origin": "https://edged.us"},
-        timeout=30,
-    )
-    resp.raise_for_status()
+    job, not the config entry. Rich fields incl. salary and full text.
+
+    `board` selects the company filter the API supports (use "all" for the
+    whole feed) so multiple entries can't silently refetch the same rows.
+    """
     jobs = []
-    for j in resp.json().get("data", []):
-        if j.get("isActive") is False:
-            continue
-        desc = strip_html(" ".join(str(j.get(k) or "") for k in
-                                   ("summary", "description", "requirements")))
-        title = j.get("title", "")
-        location = j.get("location", "")
-        lo, hi = j.get("salaryMin"), j.get("salaryMax")
-        pay = (f"${float(lo):,.0f}–${float(hi):,.0f}" if lo and hi
-               else extract_pay(desc))
-        jobs.append(Job(
-            title=title,
-            company=j.get("company") or company,
-            location=location,
-            url=j.get("externalUrl") or "https://edged.us/careers",
-            source="edged",
-            description=desc,
-            date_posted=(j.get("postedDate") or "")[:10],
-            pay=pay,
-            work_mode=infer_work_mode(title, location, desc),
-        ))
+    page = 1
+    while True:
+        params = {"per_page": 100, "page": page}
+        if board and board not in ("all", "jobs-central"):
+            params["company"] = board
+        resp = requests.get(
+            "https://jobs-central.laravel.cloud/api/v1/jobs",
+            params=params,
+            headers={**HEADERS, "Accept": "application/json",
+                     "Referer": "https://edged.us/careers",
+                     "Origin": "https://edged.us"},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        payload = resp.json()
+        for j in payload.get("data", []):
+            if j.get("isActive") is False:
+                continue
+            # `requirements`/`benefits` on this feed carry EEO and benefits
+            # boilerplate, not role content; `description` is comprehensive.
+            desc = strip_html(_flatten(j.get("description"))
+                              or _flatten(j.get("summary")))
+            title = j.get("title", "")
+            location = j.get("location", "")
+            lo, hi = j.get("salaryMin"), j.get("salaryMax")
+            if lo and hi:
+                unit = "hr" if float(hi) < 2000 else "yr"
+                cur = "" if (j.get("currency") or "USD") == "USD" else f" {j['currency']}"
+                pay = f"${float(lo):,.0f}–${float(hi):,.0f}/{unit}{cur}"
+            else:
+                pay = extract_pay(desc)
+            jobs.append(Job(
+                title=title,
+                company=j.get("company") or company,
+                location=location,
+                url=j.get("externalUrl") or "https://edged.us/careers",
+                source="edged",
+                description=desc,
+                date_posted=(j.get("postedDate") or "")[:10],
+                pay=pay,
+                work_mode=infer_work_mode(title, location, desc),
+            ))
+        pages = (payload.get("pagination") or {}).get("last_page", 1)
+        if page >= pages:
+            break
+        page += 1
+        time.sleep(0.5)
     return jobs
 
 

@@ -40,14 +40,48 @@ def save_run() -> None:
     FILE.write_text(json.dumps({"runs": runs[-MAX_RUNS:]}, indent=1) + "\n")
 
 
+WATCH_PREFIX = "indeed-watch:"
+
+
 def summary() -> list[dict]:
-    """Latest status per source, plus the last date it produced results."""
+    """Latest status per source, plus the last date it produced results.
+
+    Company-watch entries are rolled up: most watched employers legitimately
+    have no matching openings on a given day, so per-company "empty" would
+    drown the digest. The roster reports unhealthy only when EVERY watched
+    company came back empty or failed — the signature of a block, not of a
+    quiet hiring week. Per-company detail stays in the raw history file.
+    """
     runs = _load_runs()
     if not runs:
         return []
     latest = runs[-1]
     out = []
+    watch = {k: v for k, v in latest["sources"].items() if k.startswith(WATCH_PREFIX)}
+    if watch:
+        total = sum(e["count"] for e in watch.values())
+        failed = [k for k, e in watch.items() if not e["ok"]]
+        producing = sum(1 for e in watch.values() if e["count"] > 0)
+        last_results = next(
+            (r["date"][:10] for r in reversed(runs)
+             if any(k.startswith(WATCH_PREFIX) and e["count"] > 0
+                    for k, e in r["sources"].items())),
+            None,
+        )
+        out.append({
+            "source": f"indeed-watch ({producing}/{len(watch)} producing)",
+            # An exception is never routine — surface it even when other
+            # companies produced. Emptiness is only alarming roster-wide.
+            "status": "failed" if failed else ("ok" if total > 0 else "empty"),
+            "count": total,
+            "error": (f"{len(failed)} companies errored: "
+                      f"{', '.join(k.split(':', 1)[1] for k in failed[:5])}"
+                      if failed else None),
+            "last_results": last_results,
+        })
     for source, entry in sorted(latest["sources"].items()):
+        if source.startswith(WATCH_PREFIX):
+            continue
         last_results = next(
             (r["date"][:10] for r in reversed(runs)
              if r["sources"].get(source, {}).get("count", 0) > 0),

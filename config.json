@@ -55,7 +55,7 @@
     {"provider": "lever", "board": "cleanspark", "company": "CleanSpark"},
     {"provider": "greenhouse", "board": "sbenergy", "company": "SB Energy", "keep_all": true},
     {"provider": "greenhouse", "board": "liquidstack", "company": "LiquidStack", "keep_all": true},
-    {"provider": "edged", "board": "jobs-central", "company": "Edged"}
+    {"provider": "edged", "board": "all", "company": "Edged"}
   ],
   "workday_boards": [
     {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",
@@ -78,6 +78,7 @@
   ],
   "location": "United States",
   "results_per_term": 50,
+  "watch_hours_old": 168,
   "hours_old": 72,
   "title_keywords": [
     "energy", "power", "grid", "battery", "storage", "BESS",

@@ -62,3 +62,30 @@ def infer_work_mode(title: str, location: str, description: str) -> str:
     if re.search(r"\bon-?\s?site\b", desc):
         return "onsite"
     return ""
+
+
+ROLE_MARKERS = (
+    "what you'll do", "what you will do", "responsibilities", "the role",
+    "in this role", "about the role", "about this role", "your impact",
+    "position summary", "job summary", "key duties", "what you'll bring",
+    "qualifications", "requirements", "you will",
+)
+
+
+def role_excerpt(description: str, limit: int) -> str:
+    """Excerpt the part of a posting that describes the ROLE.
+
+    Many postings open with company boilerplate ("About X…") long enough to
+    consume the whole prompt budget, starving the scorer of actual scope —
+    which then reads as "scope unclear" and depresses the band. When a
+    role-content marker appears after leading boilerplate, start there.
+    """
+    if not description or len(description) <= limit:
+        return description or ""
+    low = description.lower()
+    starts = [low.find(m) for m in ROLE_MARKERS]
+    hits = [i for i in starts if i > 150]
+    if hits:
+        start = max(0, min(hits) - 100)
+        return description[start:start + limit]
+    return description[:limit]
