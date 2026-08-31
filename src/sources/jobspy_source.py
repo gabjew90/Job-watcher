@@ -48,7 +48,8 @@ def fetch(config: dict) -> list[Job]:
         try:
             df = scrape_jobs(site_name=["indeed"], search_term=query,
                              location=config.get("location", "United States"),
-                             results_wanted=25, hours_old=720,
+                             results_wanted=config.get("results_per_term", 50),
+                             hours_old=720,
                              country_indeed="USA", verbose=0)
             for _, row in df.iterrows():
                 jobs.append(Job(
