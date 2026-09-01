@@ -5537,7 +5537,7 @@
   "work_mode": "remote"
  },
  "2078e6fdef5d6173": {
-  "band": "weak",
+  "band": "misfit",
   "company": "PG&E",
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-30",
@@ -5548,18 +5548,18 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "PG&E utility worker for gas transmission and distribution; field operations and technician role below target seniority.",
-  "score": 35,
+  "rationale": "Entry-level field/technician role in utility gas operations, outside product/strategy scope and below target seniority.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-08-30T18:07Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Utility Worker - Gas Transmission &amp; Distribution",
   "url": "https://careers.pge.com/job/American-Canyon-Utility-Worker-Gas-Transmission-&amp;-Distribution-CA-94503/1424589500/",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "207c53169252efe4": {
   "active": false,
@@ -5668,15 +5668,20 @@
   "date_posted": "2026-08-16",
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
-  "pay": "",
+  "pay": "$122,000",
   "priority": false,
-  "rationale": "Senior grid innovation engineer; matches candidate's current PG&E role type with high domain/strategy fit.",
-  "score": 78,
+  "rationale": "Senior grid innovation engineer leading reliability strategy and standards development, matching candidate's current PG&E role scope and domain expertise.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
   "seniority_match": true,
   "source": "successfactors",
   "title": "Senior, Grid Innovation Engineer - Resiliency, Strategy, and Partnerships",
   "url": "https://careers.pge.com/job/Oakland-Senior%2C-Grid-Innovation-Engineer-Resiliency%2C-Strategy%2C-and-Partnerships-CA-94612/1394098400/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "20c8af17f7dfa501": {
   "band": "possible",
@@ -7873,20 +7878,20 @@
    "Oakland, CA, US, 94612",
    "Huron, CA, US, 93234"
   ],
-  "pay": "",
+  "pay": "$50.00 to $84.13.",
   "priority": false,
-  "rationale": "Electrical inspector at PG&E (duplicate location); field inspection compliance role.",
+  "rationale": "Senior construction inspector IC role, too far from product/strategy/commercial focus despite senior title.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T16:09Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "ec980ff9e1"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Electrical Inspector, Senior",
   "url": "https://careers.pge.com/job/Vacaville-Electrical-Inspector%2C-Senior-CA-95688/1425210200/",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "2dd656fbbe4ebb3a": {
   "band": "weak",
@@ -10865,18 +10870,18 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Technical project engineer in power generation; field/project engineering work below target seniority and scope.",
+  "rationale": "Journey-level engineering project management for BESS, lacks product/strategy/commercial framing required for target roles.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-29T17:50Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Power Generation Project Engineer (Electrical)",
   "url": "https://careers.pge.com/job/Auberry-Power-Generation-Project-Engineer-%28Electrical%29-CA-93602/1379856200/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "429f2d296eced6dc": {
   "active": false,
@@ -12540,13 +12545,18 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Power generation project management analyst; operations/analyst level project support, not strategic PM.",
-  "score": 45,
+  "rationale": "Journey-level project analyst role supporting senior PMs, below target seniority and lacks strategic decision-making scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Power Generation Project Management Analyst",
   "url": "https://careers.pge.com/job/Auberry-Power-Generation-Project-Management-Analyst-CA-93602/1424223700/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "4cc1fc799a905755": {
   "active": false,
@@ -16031,13 +16041,18 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Expert engineer for grid technology; senior IC expert in grid domain but pure technical expert IC, not PM/product/strategy leadership.",
-  "score": 60,
-  "seniority_match": false,
+  "rationale": "Expert-level energy modeling and grid/BESS testing engineer, relevant domain and seniority but deep technical focus limits commercial/product integration.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
+  "seniority_match": true,
   "source": "successfactors",
   "title": "Expert Engineer, ATS Grid Technology",
   "url": "https://careers.pge.com/job/Danville-Expert-Engineer%2C-ATS-Grid-Technology-CA-94583/1420769500/",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "6291b4dc6a15ba37": {
   "active": false,
@@ -22181,7 +22196,7 @@
   "work_mode": "onsite"
  },
  "895bc9d4bd18db8f": {
-  "band": "misfit",
+  "band": "weak",
   "company": "PG&E",
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
@@ -22192,15 +22207,20 @@
    "Oakland, CA, US, 94612",
    "Danville, CA, US, 94583"
   ],
-  "pay": "",
+  "pay": "$115,128",
   "priority": false,
-  "rationale": "Entry-level substation engineer; lacks product/strategy orientation.",
-  "score": 38,
+  "rationale": "Journey-level civil project engineer for substations, technical design focus lacks product/strategy/commercial relevance.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Civil Project Engineer, Substation",
   "url": "https://careers.pge.com/job/Fresno-Civil-Project-Engineer%2C-Substation-CA-93720/1404650400/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "89683572f0c97c47": {
   "band": "weak",
@@ -23604,18 +23624,18 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Technical civil engineering role for power generation; too deep-technical design focus outside strategic wheelhouse.",
+  "rationale": "Journey-level civil engineering for power generation/BESS, technical project management role lacks product/strategy scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-28T23:42Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Power Generation Project Engineer (Civil)",
   "url": "https://careers.pge.com/job/Auberry-Power-Generation-Project-Engineer-%28Civil%29-CA-93602/1424487800/",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "9096efff2ccb225e": {
   "band": "misfit",
@@ -24093,15 +24113,20 @@
    "Hayward, CA, US, 94545",
    "Fresno, CA, US, 93702"
   ],
-  "pay": "",
+  "pay": "$150,108",
   "priority": false,
-  "rationale": "Electrical project engineer for power generation; deep technical design IC role too far from product/strategy scope.",
-  "score": 38,
+  "rationale": "Associate-level (junior) electrical engineering position, below target seniority for director/senior-PM scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Power Generation Electrical Project Engineer",
   "url": "https://careers.pge.com/job/Redding-Power-Generation-Electrical-Project-Engineer-CA-96003/1405015600/",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "93dc172e52e5b8dc": {
   "band": "misfit",
@@ -26496,7 +26521,7 @@
   "work_mode": "remote"
  },
  "a5623c6f52a8a24e": {
-  "band": "misfit",
+  "band": "weak",
   "company": "PG&E",
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
@@ -26507,15 +26532,20 @@
    "Danville, CA, US, 94583",
    "Rocklin, CA, US, 95765"
   ],
-  "pay": "",
+  "pay": "$44.70 to $74.42,",
   "priority": false,
-  "rationale": "Mid-level design engineer IC; focused on technical execution not strategy.",
-  "score": 36,
+  "rationale": "Design engineer IC role for substation interconnection, technical design focus too far from product/strategy/commercial despite grid interconnection relevance.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
   "seniority_match": false,
   "source": "successfactors",
   "title": "Design Engineer, Substation",
   "url": "https://careers.pge.com/job/Oakland-Design-Engineer%2C-Substation-CA-94612/1423256700/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "a56fde53737e0cd3": {
   "band": "weak",
@@ -26555,7 +26585,7 @@
   "work_mode": ""
  },
  "a5a85a5d48fe2959": {
-  "band": "strong",
+  "band": "weak",
   "company": "PG&E",
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-30",
@@ -26572,14 +26602,14 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "PG&E quantitative analyst for energy policy and procurement (duplicate); energy markets and procurement analytics align with finance and grid strategy background.",
-  "score": 75,
+  "rationale": "Quantitative analyst in energy policy/procurement with strong data forecasting and portfolio modeling fit (secondary sweet spot), but analyst-level title falls below target seniority.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-30T18:07Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "successfactors",
   "title": "Quantitative Analyst - Energy Policy &amp; Procurement",
   "url": "https://careers.pge.com/job/Oakland-Quantitative-Analyst-Energy-Policy-&amp;-Procurement-CA-94612/1424272700/",
@@ -27388,15 +27418,20 @@
   "date_posted": "2026-08-16",
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
-  "pay": "",
+  "pay": "$140,000",
   "priority": false,
-  "rationale": "Expert grid innovation engineer with strategy and partnerships scope; secondary sweet spot for senior IC strategy role.",
-  "score": 76,
+  "rationale": "Expert-level grid innovation engineer leading enterprise strategy and standards development, strong domain and seniority alignment with candidate's proven expertise.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
   "seniority_match": true,
   "source": "successfactors",
   "title": "Expert, Grid Innovation Engineer - Reliability, Strategy, and Partnerships",
   "url": "https://careers.pge.com/job/Oakland-Expert%2C-Grid-Innovation-Engineer-Reliability%2C-Strategy%2C-and-Partnerships-CA-94612/1394097100/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "aaa26721e9856296": {
   "band": "weak",
@@ -32082,7 +32117,7 @@
   "work_mode": ""
  },
  "c898ee3ad3e61e0e": {
-  "band": "strong",
+  "band": "top",
   "company": "PG&E",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
@@ -32091,20 +32126,20 @@
    "Oakland, CA, US, 94612",
    "Huron, CA, US, 93234"
   ],
-  "pay": "",
+  "pay": "$151,000.00",
   "priority": false,
-  "rationale": "Principal Product Owner for Speed to Power and Emerging Business at PG&E; senior PM title for strategic clean-energy infrastructure business line aligns with HIGH score category (grid modernization, utility innovation product).",
-  "score": 75,
+  "rationale": "Principal product owner bridging strategy and commercialization for emerging flexible load businesses; integrates technical, commercial, and customer perspectives (core thesis match) at target seniority.",
+  "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-09-01T16:09Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "ec980ff9e1"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": true,
   "source": "successfactors",
   "title": "Principal Product Owner - Speed to Power, Emerging Business",
   "url": "https://careers.pge.com/job/Oakland-Principal-Product-Owner-Speed-to-Power%2C-Emerging-Business-CA-94612/1425220700/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "c8a4d232813493c0": {
   "band": "strong",
@@ -33637,7 +33672,7 @@
   "work_mode": ""
  },
  "d07296a684071de4": {
-  "band": "possible",
+  "band": "weak",
   "company": "PG&E",
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-30",
@@ -33653,18 +33688,18 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "PG&E senior power generation mechanical project engineer; description unavailable, but title suggests technical PM/engineering leadership in generation\u2014likely strong energy fit but role specifics unclear.",
-  "score": 55,
+  "rationale": "Journey-level mechanical project engineer for power generation/BESS, technical engineering role lacks product/strategy/commercial scope.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-30T18:07Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "rubric": "6c072e45dd"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "successfactors",
   "title": "Power Generation Mechanical Project Engineer, Senior",
   "url": "https://careers.pge.com/job/Chico-Power-Generation-Mechanical-Project-Engineer%2C-Senior-CA-95928/1405016200/",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "d0c63e65db9bd53e": {
   "active": false,
@@ -34424,25 +34459,25 @@
   "url": "https://jobs.ashbyhq.com/crusoe/5e25e8ff-bf6c-4d46-b0c7-cbbe40cf0460"
  },
  "d5f9be51a071c140": {
-  "band": "strong",
+  "band": "weak",
   "company": "PG&E",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Oakland, CA, US, 94612",
-  "pay": "",
+  "pay": "$132,000 - $179,000.",
   "priority": false,
-  "rationale": "Storage Product Owner (Expert level) at PG&E; direct BESS domain fit and strategic product ownership at utility \u2014 feedback rule states battery customer/product strategy roles are top fits (80+), score as strong.",
-  "score": 75,
+  "rationale": "Expert product owner for IT/data storage infrastructure, product management skills align but storage infrastructure (not energy storage) is wrong domain.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T16:09Z",
+   "at": "2026-09-01T16:52Z",
    "model": "claude-haiku-4-5-20251001",
-   "rubric": "ec980ff9e1"
+   "rubric": "6c072e45dd"
   },
   "seniority_match": true,
   "source": "successfactors",
   "title": "Storage Product Owner, Expert",
   "url": "https://careers.pge.com/job/Oakland-Storage-Product-Owner%2C-Expert-CA-94612/1425213200/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "d616aefdc8cda746": {
   "active": false,
@@ -38418,7 +38453,7 @@
   "work_mode": ""
  },
  "efaf671fdb6c1141": {
-  "band": "strong",
+  "band": "possible",
   "company": "PG&E",
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
@@ -38429,15 +38464,20 @@
    "Oakland, CA, US, 94612",
    "Lodi, CA, US, 95240"
   ],
-  "pay": "",
+  "pay": "$173,856",
   "priority": false,
-  "rationale": "Senior advising transmission planning engineer; senior IC strategy role aligned with interconnection/hosting-capacity expertise, strong grid domain fit.",
-  "score": 75,
+  "rationale": "Senior transmission planning engineer developing complex load forecasting models, grid domain relevance and senior IC seniority, but deep technical engineering focus without product/commercial framing.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:52Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "6c072e45dd"
+  },
   "seniority_match": true,
   "source": "successfactors",
   "title": "Senior Advising Transmission Planning Engineer",
   "url": "https://careers.pge.com/job/Oakland-Senior-Advising-Transmission-Planning-Engineer-CA-94612/1360236600/",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "efcf0f4fdfb84968": {
   "band": "weak",
