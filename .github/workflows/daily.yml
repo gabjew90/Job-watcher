@@ -2,11 +2,15 @@ name: Daily job watch
 
 on:
   schedule:
-    # Two firings/day: GitHub's shared cron drifts hours or skips entirely,
-    # so the second is insurance — dedupe makes it cheap (only-new scoring),
-    # and a digest only posts when there's something new or closed.
-    - cron: "47 13 * * *"
-    - cron: "47 20 * * *"
+    # Four firings/day: GitHub's shared cron is unreliable — observed
+    # drifting 3+ hours AND skipping firings entirely. Redundancy is the
+    # only in-platform mitigation; dedupe makes extra runs nearly free
+    # (they score only what is new) and a digest posts only when a run
+    # actually finds something. Off-the-hour minutes queue better.
+    - cron: "37 13 * * *"
+    - cron: "37 17 * * *"
+    - cron: "37 21 * * *"
+    - cron: "37 01 * * *"
   workflow_dispatch:
 
 permissions:
