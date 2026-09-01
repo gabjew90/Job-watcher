@@ -12,6 +12,13 @@ on:
     - cron: "37 21 * * *"
     - cron: "37 01 * * *"
   workflow_dispatch:
+  # Reliable external kick: GitHub's cron drifts hours and drops days, so a
+  # Claude Routine pushes a timestamp to .kick each morning. Pushes made with
+  # a user credential (not GITHUB_TOKEN) do fire workflows, and the run's own
+  # commits never touch .kick, so there is no self-trigger loop.
+  push:
+    paths:
+      - ".kick"
 
 permissions:
   contents: write
