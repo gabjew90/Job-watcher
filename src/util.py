@@ -8,10 +8,35 @@ BROWSER_UA = (
 HEADERS = {"User-Agent": BROWSER_UA, "Accept-Language": "en-US,en;q=0.9"}
 
 
+# Employers whose sources disagree on their own name. Without these, an
+# acronym and a spelled-out name key differently and the same posting shows
+# up twice (Indeed "Pacific Gas and Electric" vs careers site "PG&E").
+# Extend as new variants appear; only ever merge names of the SAME company.
+COMPANY_ALIASES = {
+    "pge": ("pacific gas", "pg&e", "pge corporation"),
+    "sce": ("southern california edison", "edison international"),
+    "sdge": ("san diego gas", "sdg&e"),
+    "sempra": ("sempra",),
+    "google": ("alphabet", "google"),
+    "meta": ("meta platforms", "facebook"),
+    "amazon": ("amazon", "amazon web services", "aws"),
+    "nextera": ("nextera", "florida power & light"),
+    "gevernova": ("ge vernova", "general electric vernova"),
+    "lges": ("lg energy solution", "lg chem"),
+    "servicetitan": ("servicetitan", "service titan"),
+    "corescientific": ("core scientific",),
+    "appliednova": ("applied digital",),
+}
+
+
 def company_key(company: str) -> str:
     """Normalize company for cross-source twin matching (Amazon.com Services
-    LLC == Amazon Web Services == Amazon)."""
-    c = re.sub(r"[^a-z0-9 ]", "", (company or "").lower().replace(".com", ""))
+    LLC == Amazon Web Services == Amazon; PG&E == Pacific Gas and Electric)."""
+    raw = (company or "").lower()
+    for canonical, variants in COMPANY_ALIASES.items():
+        if any(v in raw for v in variants):
+            return canonical
+    c = re.sub(r"[^a-z0-9 ]", "", raw.replace(".com", ""))
     c = re.sub(r"\b(inc|llc|corp|corporation|company|services|ltd|co)\b", "", c).strip()
     return c.split()[0] if c.split() else ""
 
