@@ -73,10 +73,10 @@
   "location": "Columbus, OH, US",
   "pay": "$87,633\u2013$151,132/yr",
   "priority": true,
-  "rationale": "Senior/Principal Project Engineer at AEP managing capital projects (renewable repower, fuel conversion)\u2014senior/principal level at major utility, but engineering execution-focused not product/strategy.",
+  "rationale": "Senior/Principal project engineer leading generation capital project engineering; senior-level energy infrastructure role but project delivery/execution-focused rather than strategy/product/commercial.",
   "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -529,17 +529,20 @@
   "work_mode": "remote"
  },
  "03bf8692d4fe40f1": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "archer",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "San Jose, CA, US",
+  "lowscore": true,
   "pay": "$172,800\u2013$237,600/yr",
   "priority": true,
-  "rationale": "Powertrain Architect for eVTOL aircraft hybrid-electric propulsion\u2014aerospace/aviation domain, not grid/utility/power infrastructure/BESS.",
-  "score": 35,
+  "rationale": "Powertrain architect for eVTOL hybrid-electric aircraft; aerospace/aviation propulsion domain unrelated to energy infrastructure, BESS, or datacenter power focus.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -1378,6 +1381,30 @@
   "title": "Energy Operations Manager - AMER, Energy Portfolio Operations",
   "url": "https://www.amazon.jobs/en/jobs/10396779/energy-operations-manager-amer-energy-portfolio-operations"
  },
+ "08ccedc90eca4210": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
+  "company": "GE Vernova",
+  "date_posted": "",
+  "first_seen": "2026-09-01",
+  "location": "Markham",
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Substation digital control systems engineering; guidance explicitly scores controls/firmware/embedded engineering roles at <35 as out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:09Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "ec980ff9e1"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Substation Digital Control System Engineer",
+  "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Markham/Substation-Digital-Control-System-Engineer_R5051394-2",
+  "work_mode": ""
+ },
  "08cd39f9855eb42c": {
   "active": false,
   "band": "possible",
@@ -1671,10 +1698,10 @@
   "location": "Papillion, NE, US",
   "pay": "$138,000\u2013$196,000/yr",
   "priority": false,
-  "rationale": "Supply chain procurement management at hyperscaler; back-office function misaligned with energy/power/product domain.",
+  "rationale": "Supply chain/materials management at datacenter company; no power, energy, or strategy relevance.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -1786,17 +1813,17 @@
   "work_mode": ""
  },
  "0b0598066180528e": {
-  "band": "strong",
+  "band": "possible",
   "company": "Oracle",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "VA, US",
   "pay": "",
   "priority": false,
-  "rationale": "Lead Principal overseeing multi-project data center infrastructure delivery at strategic level; strong domain and seniority but project-execution focused.",
-  "score": 75,
+  "rationale": "Lead Principal TPM for datacenter construction; senior level but construction/delivery rather than energy strategy or power procurement.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -2513,21 +2540,21 @@
   "work_mode": ""
  },
  "0f658f61b6f49d88": {
-  "band": "weak",
+  "band": "possible",
   "company": "Amazon.com",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Hamlet, NC, US",
   "pay": "$96,000\u2013$166,300/yr",
   "priority": false,
-  "rationale": "Data center operations/maintenance engineering (routine systems management, emergency response) rather than development, strategy, or product focus.",
-  "score": 35,
+  "rationale": "Data center facilities and operations leadership (switchgear, generators, UPS, chillers); datacenter context and Chief Engineer seniority, but ops/facilities-focused rather than strategic/product.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "indeed",
   "title": "Data Center Chief Engineer, CLT101",
   "url": "https://www.indeed.com/viewjob?jk=3e008891d01ecb43",
@@ -3108,10 +3135,10 @@
   "location": "Irvine, CA, US",
   "pay": "$95,000\u2013$150,000/yr",
   "priority": false,
-  "rationale": "Project Engineer leading field deployment and construction execution\u2014technical delivery focus, not product/strategy/commercial.",
+  "rationale": "Project engineer leading energy system deployments through commissioning; good domain fit (BESS/power/utilities) but execution/delivery-focused rather than strategy/product/commercial.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -3697,10 +3724,10 @@
   "location": "Hayward, CA, US, 94545",
   "pay": "",
   "priority": false,
-  "rationale": "Senior Advising Transmission Planning Engineer; strategy IC role in transmission planning at utility\u2014feedback confirms 'Senior/principal individual-contributor STRATEGY roles in energy are strong fits.'",
+  "rationale": "Senior Advising Transmission Planning Engineer at PG&E; senior strategic advisory role on transmission planning directly aligns with HIGH score guidance (grid interconnection, transmission planning strategy roles).",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -3851,10 +3878,10 @@
   "location": "Pasadena, CA, US",
   "pay": "$150,000\u2013$200,000/yr",
   "priority": true,
-  "rationale": "Deep technical engineering design (one-line diagrams, equipment specs, protection schemes) rather than product/strategy; feedback rules deep technical design IC roles below 45.",
+  "rationale": "Deep technical design IC (one-line diagrams, equipment specs, control schemes); feedback guidance scores deep technical design roles <45, not product/strategy focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -3992,6 +4019,27 @@
   "url": "https://www.indeed.com/viewjob?jk=1aae6a0e57a4e993",
   "work_mode": "remote"
  },
+ "1907d6872d78b31b": {
+  "band": "weak",
+  "company": "M2X Energy Inc",
+  "date_posted": "2026-09-01",
+  "first_seen": "2026-09-01",
+  "location": "Orlando, FL, US",
+  "pay": "$135,000\u2013$175,000/yr",
+  "priority": true,
+  "rationale": "Power systems engineer for utility interconnections and switchgear design; deep technical power electronics and controls engineering, outside stated skillset per profile guidance.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:09Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "ec980ff9e1"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Power Systems Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=002582f3c7880cd7",
+  "work_mode": "onsite"
+ },
  "1984948087ddd32f": {
   "band": "weak",
   "company": "SpaceX",
@@ -4120,17 +4168,17 @@
   "work_mode": ""
  },
  "1a200a99234c6110": {
-  "band": "possible",
+  "band": "weak",
   "company": "Motive Companies",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "New Kensington, PA, US",
   "pay": "",
   "priority": false,
-  "rationale": "Director of Business Development & Sales for battery manufacturing/storage\u2014director-level in BESS domain, but BD/sales-led and past feedback suggests preference against pure sales roles.",
-  "score": 55,
+  "rationale": "Director of business development & sales for battery systems; sales/BD leadership role, not aligned with product/strategy/technical focus per feedback excluding pure business development and sales roles.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -4244,17 +4292,17 @@
   "work_mode": "onsite"
  },
  "1a9dd31397b76624": {
-  "band": "strong",
+  "band": "possible",
   "company": "Oracle",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "US",
   "pay": "",
   "priority": false,
-  "rationale": "Director of data center infrastructure delivery managing power/cooling systems and vendor contracts; strong domain fit but project execution focus.",
-  "score": 75,
+  "rationale": "Director-level datacenter infrastructure delivery (power, cooling, networking); relevant domain but execution/delivery focused, not strategy.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -4653,10 +4701,10 @@
   "lowscore": true,
   "pay": "$117,300\u2013$160,000/yr",
   "priority": true,
-  "rationale": "Hardware mechanical design engineering (CAD, FEA, battery pack architecture) is outside product/strategy scope and seniority target.",
+  "rationale": "Battery pack mechanical design for drone propulsion; no connection to grid, energy storage strategy, or datacenter power infrastructure.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -4810,10 +4858,10 @@
   "location": "Palo, IA, US, 52324",
   "pay": "",
   "priority": false,
-  "rationale": "Director-level data center development at energy developer; director seniority in data center infrastructure + power integration aligns with HIGH-category datacenter energy roles.",
+  "rationale": "Project Director for Data Center Development at energy company; director-level role integrating datacenter infrastructure and energy/power strategy \u2014 aligns with HIGH score guidance for datacenter-energy integration roles.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -4954,10 +5002,10 @@
   "location": "US Remote",
   "pay": "",
   "priority": false,
-  "rationale": "Product Success Specialist at HVAC SaaS is customer-success support, not product management or AI tooling ownership; does not match secondary sweet spot criteria for HVAC roles.",
+  "rationale": "Product Success Specialist at HVAC SaaS company; guidance notes that specialist roles and customer success/support at HVAC vendors score weak without domain strategy focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -4965,7 +5013,7 @@
   "source": "workday",
   "title": "Product Success Specialist, Virtual Agents",
   "url": "https://servicetitan.wd1.myworkdayjobs.com/en-US/ServiceTitan/job/US-Remote/Product-Success-Specialist--Virtual-Agents_JR115885",
-  "work_mode": ""
+  "work_mode": "remote"
  },
  "1f530af39e03e08e": {
   "band": "possible",
@@ -5692,14 +5740,14 @@
   "location": "Berkeley, CA, US",
   "pay": "$147,959\u2013$184,966/yr",
   "priority": false,
-  "rationale": "Staff-level supply management for metal components at energy storage company; procurement back-office function, not product/strategy domain.",
+  "rationale": "Global supply manager for metal assemblies at energy-storage company; supply chain/sourcing role, not product/strategy/domain focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Staff Global Supply Manager, Metal Assemblies",
   "url": "https://www.indeed.com/viewjob?jk=c5c6c59c3d92b1e6",
@@ -6008,17 +6056,17 @@
   "work_mode": "onsite"
  },
  "24b125f223c708b6": {
-  "band": "strong",
+  "band": "possible",
   "company": "Oracle",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Salt Lake City, UT, US",
   "pay": "",
   "priority": false,
-  "rationale": "Principal-level program manager for data center infrastructure (power/cooling/networking); strong domain alignment but execution/project-delivery focused.",
-  "score": 75,
+  "rationale": "Principal TPM for datacenter construction; technical PM scope but lacks energy strategy or power innovation integration.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -6577,21 +6625,21 @@
   "work_mode": "onsite"
  },
  "2929d1986cc2ff6c": {
-  "band": "weak",
+  "band": "possible",
   "company": "Koch",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Santa Fe, NM, US",
   "pay": "$150,000\u2013$200,000/yr",
   "priority": true,
-  "rationale": "Project Manager (Southwest, Santa Fe) for PV/BESS/repower projects\u2014mid-level project delivery management for renewable energy; execution-focused, not product/strategy.",
-  "score": 35,
+  "rationale": "Project manager for PV and battery energy storage projects from pre-construction through commissioning; good domain fit (BESS/renewable) but project delivery/execution-focused rather than strategy/product.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "indeed",
   "title": "Project Manager - Southwest",
   "url": "https://www.indeed.com/viewjob?jk=6b9831a93167eeeb",
@@ -6640,14 +6688,14 @@
   "location": "Honolulu, HI, US",
   "pay": "$207,000\u2013$258,000/yr",
   "priority": false,
-  "rationale": "Quota-carrying sales/account management for infrastructure; feedback scores all quota-carrying sales roles below 25 regardless of domain.",
+  "rationale": "Federal account manager (sales); role emphasizes quota-carrying sales, which feedback marks as non-target.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Sr. Federal Account Manager, AI & Critical Infrastructure Sales",
   "url": "https://www.indeed.com/viewjob?jk=6ed561ba1db6cead",
@@ -7398,10 +7446,10 @@
   "location": "Oakland, CA, US, 94612",
   "pay": "",
   "priority": false,
-  "rationale": "Electrical inspector field compliance role; technician-level, not product/strategy/commercial.",
+  "rationale": "Electrical inspector at PG&E (duplicate location); field inspection compliance role.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -7687,10 +7735,10 @@
   "location": "Temple, TX, US",
   "pay": "$138,000\u2013$196,000/yr",
   "priority": false,
-  "rationale": "Supply chain procurement management at hyperscaler; back-office function misaligned with energy/power/product domain.",
+  "rationale": "Supply chain/materials management at datacenter company; no power, energy, or strategy relevance.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -7759,10 +7807,10 @@
   "location": "Santa Clara, CA, US",
   "pay": "$185,300\u2013$250,100/yr",
   "priority": true,
-  "rationale": "Director level at BESS vendor with product ownership (commissioning standards), but operations/field-execution focused rather than customer strategy or commercial leadership.",
+  "rationale": "Director-level BESS commissioning, but feedback on similar EMS Director role flagged that hands-on technical (FAT/SAT/field ops) is outside core expertise; director seniority elevates from weak to possible.",
   "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -7780,10 +7828,10 @@
   "location": "Delray Beach, FL, US",
   "pay": "",
   "priority": false,
-  "rationale": "Electrical Engineer, Solar PV Design (4+ years)\u2014mid-senior electrical design engineering for renewable/BESS projects; domain fit but technical design IC, not product/strategy.",
+  "rationale": "Electrical engineer designing solar PV and energy storage electrical systems; technical electrical design IC role with PE license requirement, not aligned with product/strategy/commercial focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -8135,10 +8183,10 @@
   "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Legal counsel role at utility; legal/compliance function unrelated to energy/power/product domain expertise.",
+  "rationale": "Senior Attorney; legal role, feedback classifies legal as non-target corporate function.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -8415,10 +8463,10 @@
   "location": "Daleville, VA, US",
   "pay": "$ 120,000",
   "priority": false,
-  "rationale": "Engineering manager for data center thermal/cooling retrofit operations; HVAC-adjacent but data center thermal domain alignment; operational rather than product/strategy.",
+  "rationale": "Engineering Manager for datacenter thermal/controls at HVAC company; specialist technical operations role, not product/strategy/AI focus required by profile.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -9057,26 +9105,26 @@
   "url": "https://boards.greenhouse.io/spacex/jobs/8583754002?gh_jid=8583754002",
   "work_mode": "onsite"
  },
- "39473ba91c4ea5de": {
+ "3904a91747d03b3c": {
   "band": "weak",
-  "company": "Koch",
-  "date_posted": "2026-09-01",
+  "company": "Amazon.com",
+  "date_posted": "2026-08-28",
   "first_seen": "2026-09-01",
-  "location": "Las Vegas, NV, US",
-  "pay": "$150,000\u2013$200,000/yr",
-  "priority": true,
-  "rationale": "Project Manager (Southwest, Las Vegas) for PV/BESS/repower projects\u2014mid-level project delivery management for renewable energy; execution-focused, not product/strategy.",
+  "location": "Louisa, VA, US",
+  "pay": "$129,200\u2013$193,000/yr",
+  "priority": false,
+  "rationale": "Duplicate of Mineral, VA facility manager posting; same ops/facilities focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
   "seniority_match": false,
   "source": "indeed",
-  "title": "Project Manager - Southwest",
-  "url": "https://www.indeed.com/viewjob?jk=113a0e7f655ed62a",
-  "work_mode": "remote"
+  "title": "Data Center Facility Manager",
+  "url": "https://www.indeed.com/viewjob?jk=2b78b3c1cc840f2a",
+  "work_mode": ""
  },
  "3968477c4681f25d": {
   "active": false,
@@ -9297,10 +9345,10 @@
   "location": "Pittsburgh, PA, US",
   "pay": "",
   "priority": false,
-  "rationale": "Controls engineering at utility; feedback scores controls/embedded engineering out of skillset below 35 even at pure energy companies.",
+  "rationale": "Controls Engineer at utility; feedback explicitly flags controls/embedded engineering as out of skillset (below 35 threshold).",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -9318,10 +9366,10 @@
   "location": "Harwood, ND, US",
   "pay": "",
   "priority": false,
-  "rationale": "Manager-level technical oversight of cabling infrastructure design; operational/technical management below strategic seniority.",
+  "rationale": "Manager overseeing low-voltage cabling design; deep technical design role, feedback flags these as below target.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -9566,10 +9614,10 @@
   "location": "TX, US",
   "pay": "$157,000\u2013$185,000/yr",
   "priority": true,
-  "rationale": "Pure business development/origination focus; candidate feedback explicitly states 'never had pure business development or sales roles'.",
+  "rationale": "Pure business development/origination role; explicit feedback states candidate has never held pure BD or sales roles.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -9593,17 +9641,20 @@
   "url": "https://www.indeed.com/viewjob?jk=e42bcd3fea490407"
  },
  "3d8b87d2d4a281b7": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Joby Aviation",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "San Carlos, CA, US",
+  "lowscore": true,
   "pay": "$104,400\u2013$143,500/yr",
   "priority": false,
-  "rationale": "Test Engineer for eVTOL battery/power distribution systems\u2014aerospace/aviation domain, not grid/utility/power infrastructure/BESS commercialization.",
-  "score": 35,
+  "rationale": "Test engineer for eVTOL aircraft battery and power systems; aerospace/aviation domain unrelated to grid-scale BESS, datacenter power, or energy infrastructure.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -10001,17 +10052,20 @@
   "work_mode": "onsite"
  },
  "40a0f7bcd8434c60": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Tesla",
   "date_posted": "2026-08-29",
   "first_seen": "2026-09-01",
   "location": "Palo Alto, CA, US",
+  "lowscore": true,
   "pay": "$100,000\u2013$168,000/yr",
   "priority": false,
-  "rationale": "HR business partner role at Tesla Energy; HR function unrelated to energy/power domain expertise.",
-  "score": 35,
+  "rationale": "HR Business Partner role; feedback classifies HR as non-target corporate function.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -10156,10 +10210,10 @@
   "location": "Abilene, TX, US",
   "pay": "",
   "priority": true,
-  "rationale": "Lead Principal in data center power delivery including utility interconnection strategy; aligns with PG&E grid background and power systems expertise.",
+  "rationale": "Utility power delivery, HV/MV infrastructure, interconnection strategy\u2014exact alignment with grid innovation, utility coordination, and power infrastructure expertise; senior IC level.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -10866,10 +10920,10 @@
   "location": "Danville, CA, US, 94583",
   "pay": "",
   "priority": false,
-  "rationale": "Substation design engineer technical IC role; feedback rules deep technical design IC roles below 45 even in pure energy context.",
+  "rationale": "Design Engineer for substations; deep technical CAD/design engineering IC role; guidance scores design engineering roles below 45.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -11068,10 +11122,10 @@
   "location": "London, OH, US",
   "pay": "",
   "priority": false,
-  "rationale": "Associate-level investment research for energy/storage/tech topics; candidate has energy-markets finance background but role is junior per feedback.",
+  "rationale": "CAP Associate (entry-level investment analyst); feedback marks pure analyst-level investment roles (analyst/associate) as 50-65 finance-first track.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -11219,6 +11273,27 @@
   "title": "Manager, Data Center Hardware & Infrastructure (TS/SCI)",
   "url": "https://boards.greenhouse.io/spacex/jobs/8738842002?gh_jid=8738842002",
   "work_mode": "remote"
+ },
+ "4759f9e4ab81c32a": {
+  "band": "weak",
+  "company": "M2X Energy Inc",
+  "date_posted": "2026-09-01",
+  "first_seen": "2026-09-01",
+  "location": "Melbourne, FL, US",
+  "pay": "$135,000\u2013$175,000/yr",
+  "priority": true,
+  "rationale": "Power systems engineer for utility interconnections and switchgear design; deep technical power electronics and controls engineering, outside stated skillset per profile guidance.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:09Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "ec980ff9e1"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Power Systems Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=b2245d6ad5797850",
+  "work_mode": "onsite"
  },
  "477eef49c7ab15e7": {
   "band": "possible",
@@ -12171,7 +12246,7 @@
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-28",
   "location": "Houston, Texas, USA",
-  "pay": "",
+  "pay": "$153,600\u2013$207,800/yr",
   "priority": false,
   "rationale": "Senior manager role leading delivery team in AWS energy segment; director-equivalent in relevant domain.",
   "score": 60,
@@ -12221,25 +12296,25 @@
   "work_mode": ""
  },
  "4edefaa12d76051a": {
-  "band": "possible",
+  "band": "weak",
   "company": "Turner & Townsend Pty Limited",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Arlington, VA, US",
   "pay": "",
   "priority": false,
-  "rationale": "Senior cost manager for multi-project data center construction portfolio; data center domain and senior level, but cost/project management execution focus.",
-  "score": 55,
+  "rationale": "Senior cost manager for datacenter construction; construction cost/project controls, not energy/power/finance domain integration.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Senior Cost Manager / Quantity Surveyor - Data Center Construction",
   "url": "https://www.indeed.com/viewjob?jk=55e1cea79c2f4174",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "4ef161cc324223fd": {
   "band": "possible",
@@ -12366,20 +12441,17 @@
   "work_mode": "remote"
  },
  "4f9855615f388c89": {
-  "active": false,
-  "band": "misfit",
-  "closed": "2026-09-01",
+  "band": "weak",
   "company": "Pearce Services",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Paso Robles, CA, US",
-  "lowscore": true,
   "pay": "$26\u2013$33/hr",
   "priority": true,
-  "rationale": "OSP Pole Attachment Specialist for telecommunications\u2014wrong domain (telecom poles, not energy/power/BESS).",
-  "score": 15,
+  "rationale": "OSP pole attachment specialist for utility coordination and permitting; technical specialist role in telecommunications infrastructure, not aligned with BESS/energy/datacenter/strategy domains.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -12794,10 +12866,10 @@
   "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Legal counsel role at utility; legal/compliance function unrelated to energy/power/product domain expertise.",
+  "rationale": "Principal Attorney; legal role, feedback classifies legal as non-target corporate function.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -12951,20 +13023,17 @@
   "work_mode": "onsite"
  },
  "5357ce87527ed08d": {
-  "active": false,
-  "band": "misfit",
-  "closed": "2026-09-01",
+  "band": "weak",
   "company": "NextEra Energy",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Juno Beach, FL, US, 33408",
-  "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Attorney role in power transactions; legal specialty outside candidate's product/strategy/technical expertise domains.",
-  "score": 15,
+  "rationale": "Senior Attorney for electric transmission transactions; legal/transactions role, not technical, product, or strategic energy domain work.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -14001,17 +14070,17 @@
   "work_mode": ""
  },
  "5b04adefe8259cd2": {
-  "band": "strong",
+  "band": "possible",
   "company": "Oracle",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "VA, US",
   "pay": "",
   "priority": false,
-  "rationale": "Principal-level program manager for data center infrastructure (power/cooling/networking); strong domain alignment but execution/project-delivery focused rather than product/strategy.",
-  "score": 75,
+  "rationale": "Datacenter construction/project management role with power, cooling oversight; technical PM scope but lacks energy strategy/commercial integration.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -14283,6 +14352,27 @@
   "title": "Nlyte DCIM Consultant",
   "url": "https://www.indeed.com/viewjob?jk=ce79c6414859a7d5",
   "work_mode": "remote"
+ },
+ "5ce5598bff5e7e01": {
+  "band": "weak",
+  "company": "M2X Energy Inc",
+  "date_posted": "2026-09-01",
+  "first_seen": "2026-09-01",
+  "location": "Cape Canaveral, FL, US",
+  "pay": "$135,000\u2013$175,000/yr",
+  "priority": true,
+  "rationale": "Power systems engineer for utility interconnections and switchgear design; deep technical power electronics and controls engineering, outside stated skillset per profile guidance.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:09Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "ec980ff9e1"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Power Systems Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=008389eab193a90d",
+  "work_mode": "onsite"
  },
  "5d05bed358880b62": {
   "active": false,
@@ -15395,14 +15485,14 @@
   "location": "Weirton, WV, US",
   "pay": "",
   "priority": false,
-  "rationale": "Staff-level supply management for capital equipment at energy storage company; procurement/vendor management, not aligned with product/strategy.",
+  "rationale": "Global supply manager for capital equipment at energy-storage company; supply chain/sourcing role, not product/strategy/domain focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Staff Global Supply Manager, Capex",
   "url": "https://www.indeed.com/viewjob?jk=65072a62eeebae5e",
@@ -15867,10 +15957,10 @@
   "location": "Hayward, CA, US, 94545",
   "pay": "",
   "priority": false,
-  "rationale": "Quantitative analyst in energy policy & procurement; candidate has energy-finance background and production AI/analytics skills, but role is analyst-level (not senior/director) and procurement-focused rather than strategy leadership.",
+  "rationale": "Quantitative Analyst in energy policy and procurement at utility; right domain (procurement, policy) but analyst IC level, not strategic PM/director.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -17253,10 +17343,10 @@
   "location": "Boulder, CO, US",
   "pay": "$160,000\u2013$200,000/yr",
   "priority": true,
-  "rationale": "Senior Director of Asset Management for renewable/solar/battery portfolio\u2014senior director-level, BESS/renewable domain, strategy+economics; but asset management/O&M operations focus rather than product/commercial.",
+  "rationale": "Senior Director of asset management for renewable/solar/battery portfolio; director-level renewable energy infrastructure role with strong experience requirements, but O&M/operations-focused vs. strategy/product.",
   "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -17382,21 +17472,24 @@
   "work_mode": "remote"
  },
  "70960a29920dbf4d": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Ampd Energy",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Austin, TX, US",
+  "lowscore": true,
   "pay": "",
   "priority": true,
-  "rationale": "Senior Marketing Manager at Ampd Energy emphasizing AI agents for marketing\u2014energy domain fit and AI credible, but marketing/demand-gen function, not product/strategy.",
-  "score": 35,
+  "rationale": "Senior marketing manager building ABM programs and AI marketing automation; specialist marketing function unrelated to product/strategy/technical or commercial domains.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Senior Marketing Manager",
   "url": "https://www.indeed.com/viewjob?jk=44af10f3b723ce3a",
@@ -17663,20 +17756,17 @@
   "work_mode": "remote"
  },
  "72737b77d8c9319f": {
-  "active": false,
-  "band": "misfit",
-  "closed": "2026-09-01",
+  "band": "weak",
   "company": "Meta",
   "date_posted": "2026-04-13",
   "first_seen": "2026-09-01",
   "location": "DeKalb, IL, US",
-  "lowscore": true,
   "pay": "$135,000\u2013$191,000/yr",
   "priority": false,
-  "rationale": "Network deployment and operations engineering; feedback explicitly scores hands-on network infrastructure roles as wrong field even at datacenter companies.",
-  "score": 15,
+  "rationale": "Hands-on network infrastructure deployment and operations; feedback explicitly flags this domain as less-like.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -17722,20 +17812,17 @@
   "work_mode": ""
  },
  "72cdca18f58c8b55": {
-  "active": false,
-  "band": "misfit",
-  "closed": "2026-09-01",
+  "band": "weak",
   "company": "Nuclear",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Columbia, SC, US",
-  "lowscore": true,
   "pay": "$150,000\u2013$173,000/yr",
   "priority": false,
-  "rationale": "Nuclear power domain (outside scope) with technical electrical design IC focus; feedback rules technical design roles below 35.",
-  "score": 15,
+  "rationale": "Nuclear power plant electrical systems design and analysis; deep technical IC despite Staff title; outside primary domains (grid-scale BESS, datacenter energy, energy markets).",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -17856,17 +17943,20 @@
   "url": "https://jobs.ashbyhq.com/crusoe/32f99c76-f747-433b-87f0-07c96c48d5a7"
  },
  "7392a09333b9d4c7": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Chicago, IL, US",
+  "lowscore": true,
   "pay": "$235,000\u2013$390,000/yr",
   "priority": false,
-  "rationale": "Energy & Project Finance Associate Attorney (3\u20136 years)\u2014energy/finance transactional legal role; domain fit but law firm practice, not product/strategy/commercial leadership.",
-  "score": 35,
+  "rationale": "Energy & project finance associate attorney for transactional work; legal/attorney role requiring bar license and legal expertise, unrelated to PM/strategy/technical/commercial backgrounds.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -18861,10 +18951,10 @@
   "location": "Houston, TX, US",
   "pay": "",
   "priority": true,
-  "rationale": "Director/VP-level data center strategy integrating power, renewable generation, BESS, interconnection, and hyperscaler partnerships\u2014core fit for domain-bridging role.",
+  "rationale": "Director/VP data center strategy and development leveraging renewable energy and BESS capabilities; integrates power procurement, utility interconnection, and commercial strategy \u2014 textbook HIGH score category.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -18920,10 +19010,10 @@
   "lowscore": true,
   "pay": "$125,000\u2013$155,000/yr",
   "priority": false,
-  "rationale": "Safety Manager for transportation/construction projects\u2014safety compliance function unrelated to energy product/strategy expertise.",
+  "rationale": "Safety manager for construction projects; specialist compliance/operations function unrelated to energy infrastructure, product, strategy, or commercial domains.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -19113,10 +19203,10 @@
   "location": "Phoenix, AZ, US",
   "pay": "",
   "priority": false,
-  "rationale": "Principal-level individual contributor on cabling systems; feedback scores deep technical design IC roles below 45 even at principal level.",
+  "rationale": "Principal low-voltage cabling engineer; despite title, feedback marks deep technical design roles (CAD, cabling infrastructure) below scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -19434,10 +19524,10 @@
   "location": "Harwood, ND, US",
   "pay": "",
   "priority": false,
-  "rationale": "Senior individual contributor on cabling infrastructure; feedback scores deep technical design IC roles too far from product/strategy scope.",
+  "rationale": "Senior low-voltage cabling engineer; feedback flags technical design engineering (cabling, infrastructure) as below target scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -20013,10 +20103,10 @@
   "location": "West Jordan, UT, US",
   "pay": "",
   "priority": false,
-  "rationale": "Senior individual contributor on cabling infrastructure; feedback scores deep technical design IC roles too far from product/strategy scope.",
+  "rationale": "Senior low-voltage cabling engineer; feedback flags technical design engineering (cabling, infrastructure) as below target scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -20263,20 +20353,17 @@
   "work_mode": "remote"
  },
  "847aedbc33dd9eaf": {
-  "active": false,
-  "band": "misfit",
-  "closed": "2026-09-01",
+  "band": "weak",
   "company": "Meta",
   "date_posted": "2026-08-12",
   "first_seen": "2026-09-01",
   "location": "OR, US",
-  "lowscore": true,
   "pay": "$70,990\u2013$103,002/yr",
   "priority": false,
-  "rationale": "Hands-on data center operations and hardware troubleshooting; explicitly flagged feedback as wrong field for hands-on IT infrastructure roles.",
-  "score": 15,
+  "rationale": "Hands-on datacenter production operations support; operationally focused, not strategy/product-level.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -20385,10 +20472,10 @@
   "lowscore": true,
   "pay": "$40\u2013$58/hr",
   "priority": false,
-  "rationale": "Entry-level internship for software/infrastructure engineering; far below seniority and domain alignment.",
+  "rationale": "Internship role; below target seniority for director/senior PM level.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -20479,10 +20566,10 @@
   "location": "Huntsville, AL, US",
   "pay": "$138,000\u2013$196,000/yr",
   "priority": false,
-  "rationale": "Supply chain procurement management at hyperscaler; back-office function misaligned with energy/power/product domain.",
+  "rationale": "Supply chain/materials management at datacenter company; no power, energy, or strategy relevance.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -20590,17 +20677,17 @@
   "url": "https://www.indeed.com/viewjob?jk=e4845377821d607f"
  },
  "8609bd7f99ab48af": {
-  "band": "top",
+  "band": "strong",
   "company": "",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "New York, NY, US",
   "pay": "$250,000\u2013$300,000/yr",
   "priority": true,
-  "rationale": "Head-of role owning modular data center product and commercialization end-to-end, co-located with distributed power assets; direct match for product + commercial strategy integration.",
-  "score": 90,
+  "rationale": "Head of Compute with modular datacenter and distributed power assets; owns product and commercialization end-to-end; strong datacenter-energy integration fit, though infrastructure-focused rather than grid-BESS-focused.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -20841,21 +20928,21 @@
   "work_mode": ""
  },
  "87d13532a4e4a00a": {
-  "band": "weak",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-08-05",
   "first_seen": "2026-09-01",
   "location": "Arlington, Virginia, USA",
   "pay": "",
   "priority": false,
-  "rationale": "Water infrastructure engineering for data center cooling; adjacent to datacenter domain but wrong subject-matter focus (water systems, not power/energy).",
-  "score": 35,
+  "rationale": "Water infrastructure engineering and utility contract negotiation for datacenters; datacenter context and utility coordination, but water infrastructure is adjacent domain, not core power/energy focus.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "amazon",
   "title": "Water Infrastructure Engineer, AWS Water Team (ADC)",
   "url": "https://www.amazon.jobs/en/jobs/10492887/water-infrastructure-engineer-aws-water-team-adc",
@@ -21031,10 +21118,10 @@
   "location": "Boydton, VA, US",
   "pay": "$150,000\u2013$185,000/yr",
   "priority": false,
-  "rationale": "Field construction/execution operations superintendent role; lacks product, strategy, or commercial development focus.",
+  "rationale": "Data center construction field superintendent; guidance scores field/construction roles below 40 regardless of domain.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -21042,7 +21129,7 @@
   "source": "indeed",
   "title": "Data Center Traveling Sr Superintendent",
   "url": "https://www.indeed.com/viewjob?jk=ac0140ca67899dcd",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "895bc9d4bd18db8f": {
   "band": "misfit",
@@ -22020,10 +22107,10 @@
   "location": "Hanover, MD, US",
   "pay": "",
   "priority": false,
-  "rationale": "Deep battery R&D engineering\u2014grid-scale BESS domain relevant, but pure technical research/design specialist role, not product/strategy.",
+  "rationale": "Battery storage engineer researching advanced battery chemistries (solid-state, sodium-ion, flow); deep technical R&D battery chemistry IC role, not aligned with product/strategy/commercial focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -22351,10 +22438,10 @@
   "location": "Chicago, IL, US",
   "pay": "",
   "priority": false,
-  "rationale": "Manager-level technical oversight of cabling infrastructure design; operational/technical management, below strategic seniority threshold.",
+  "rationale": "Manager overseeing low-voltage cabling design; deep technical design role, feedback flags these as below target.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -23255,6 +23342,27 @@
   "url": "https://www.indeed.com/viewjob?jk=8434b1ee82a3178e",
   "work_mode": "remote"
  },
+ "97387cc32442d3d7": {
+  "band": "weak",
+  "company": "Amazon Web Services",
+  "date_posted": "2026-08-26",
+  "first_seen": "2026-09-01",
+  "location": "Houston, TX, US",
+  "pay": "$153,600\u2013$207,800/yr",
+  "priority": false,
+  "rationale": "Senior delivery consultant for enterprise data platforms and RAG systems; hands-on technical IC role in AWS ProServe, not aligned with product/strategy/commercial focus or energy domain.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:09Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "ec980ff9e1"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Senior Delivery Consultant - Data , Professional Services, AWSI Energy",
+  "url": "https://www.indeed.com/viewjob?jk=594181104e220ff9",
+  "work_mode": "onsite"
+ },
  "975c4e5f05ec913d": {
   "band": "strong",
   "company": "Google",
@@ -23391,17 +23499,20 @@
   "work_mode": ""
  },
  "97e5408ee681000b": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SAIC",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Crane, IN, US",
+  "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Lithium Battery Safety Program Specialist (Navy/SAIC)\u2014specialized battery safety program role; military domain and technical specialist focus, not commercial product/strategy.",
-  "score": 35,
+  "rationale": "Navy lithium battery safety program specialist for military applications; defense/military domain and specialized battery safety compliance role, not aligned with commercial energy infrastructure.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -24065,10 +24176,10 @@
   "lowscore": true,
   "pay": "$80,000\u2013$160,000/yr",
   "priority": false,
-  "rationale": "Quota-carrying outside sales representative (Atlanta)\u2014outside his commercial/product leadership scope and past feedback indicates no pure sales roles.",
+  "rationale": "Outside sales representative with 60% quota-carrying sales duties; profile explicitly excludes quota-carrying sales roles.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -24576,10 +24687,10 @@
   "location": "Garland, TX, US",
   "pay": "$138,000\u2013$196,000/yr",
   "priority": false,
-  "rationale": "Supply chain procurement management at hyperscaler; back-office function misaligned with energy/power/product domain.",
+  "rationale": "Supply chain/materials management at datacenter company; no power, energy, or strategy relevance.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -24997,10 +25108,10 @@
   "lowscore": true,
   "pay": "$80,000\u2013$160,000/yr",
   "priority": false,
-  "rationale": "Quota-carrying outside sales representative\u2014outside his commercial/product leadership scope and past feedback indicates no pure sales roles.",
+  "rationale": "Outside sales representative with 60% quota-carrying sales duties; profile explicitly excludes quota-carrying sales roles.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -25382,10 +25493,10 @@
   "location": "Austin, TX",
   "pay": "$180\u2013$215/yr",
   "priority": false,
-  "rationale": "Deep technical design engineering (thermal/optical/materials science) for solar thermal receivers; feedback rules technical design IC roles below 45 even at mission-pure energy companies.",
+  "rationale": "Lead thermal design engineer at energy company; still deep technical design IC role despite Lead title; outside core BESS/grid/markets expertise.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -25888,10 +25999,10 @@
   "location": "Jacksonville, FL, US",
   "pay": "",
   "priority": false,
-  "rationale": "Systems Engineer for BESS (2-3 years minimum)\u2014mid-level technical systems engineering for energy storage; domain fit but IC technical focus, not product/strategy/senior level.",
+  "rationale": "Systems engineer for BESS projects defining architecture and system specifications; good domain fit (BESS/energy) but mid-level technical systems engineering IC vs. strategy/product/commercial scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -26210,21 +26321,21 @@
   "work_mode": ""
  },
  "abd22a3f22d51f1d": {
-  "band": "weak",
+  "band": "possible",
   "company": "Koch",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Salt Lake City, UT, US",
   "pay": "$150,000\u2013$200,000/yr",
   "priority": true,
-  "rationale": "Project Manager (Southwest, Salt Lake City) for PV/BESS/repower projects\u2014mid-level project delivery management for renewable energy; execution-focused, not product/strategy.",
-  "score": 35,
+  "rationale": "Project manager for PV and battery energy storage projects from pre-construction through commissioning; good domain fit (BESS/renewable) but project delivery/execution-focused rather than strategy/product.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "indeed",
   "title": "Project Manager - Southwest",
   "url": "https://www.indeed.com/viewjob?jk=ac56eb7ad56809f7",
@@ -26254,10 +26365,10 @@
   "location": "CA, US",
   "pay": "$6,488\u2013$12,152/mo",
   "priority": true,
-  "rationale": "Utility engineering role on climate/advocacy with unclear strategic scope; pay range appears corrupted or monthly denominated and work is not in candidate's core domains.",
+  "rationale": "Government utility role focused on climate advocacy; unclear strategic scope and no product/BESS/energy-markets focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -26344,6 +26455,27 @@
   "source": "indeed",
   "title": "Distribution Planning Engineer (Entry, Staff, Senior, or Principal)",
   "url": "https://www.indeed.com/viewjob?jk=82e88b77fb09a230",
+  "work_mode": ""
+ },
+ "acdc9b96413fce82": {
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-08-28",
+  "first_seen": "2026-09-01",
+  "location": "Mineral, VA, US",
+  "pay": "$129,200\u2013$193,000/yr",
+  "priority": false,
+  "rationale": "Data center facility operations and maintenance management; facilities-focused, not strategic or product-oriented.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:09Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "ec980ff9e1"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Facility Manager",
+  "url": "https://www.indeed.com/viewjob?jk=c316b1981a99935f",
   "work_mode": ""
  },
  "acf4840e6740abd6": {
@@ -26571,10 +26703,10 @@
   "location": "Aurora, IL, US",
   "pay": "$138,000\u2013$196,000/yr",
   "priority": false,
-  "rationale": "Supply chain procurement management at hyperscaler; back-office function misaligned with energy/power/product domain.",
+  "rationale": "Supply chain/materials management at datacenter company; no power, energy, or strategy relevance.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -26624,10 +26756,10 @@
   "location": "Huron, CA, US, 93234",
   "pay": "",
   "priority": false,
-  "rationale": "Electrical inspector field compliance role; technician-level, not product/strategy/commercial.",
+  "rationale": "Electrical inspector field compliance role at utility; field inspection work, not strategic or technical leadership.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -28649,10 +28781,10 @@
   "location": "Buffalo, NY, US",
   "pay": "",
   "priority": false,
-  "rationale": "First-level production operations supervisor at battery manufacturer; operational/floor management below strategic seniority threshold.",
+  "rationale": "Manufacturing operations supervisor at battery facility; operational focus, not product/strategy/commercial scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -28846,10 +28978,10 @@
   "location": "Oakland, CA, US",
   "pay": "$151,000\u2013$257,000/yr",
   "priority": true,
-  "rationale": "Principal Product Owner role at PG&E for flexible load innovation\u2014directly his core thesis integrating grid strategy, commercialization, and utility modernization.",
+  "rationale": "Principal product owner at PG&E developing flexible-load businesses; sits between strategy and commercialization with cross-functional leadership\u2014exact match for HIGH score: grid innovation, utility partnerships, energy markets.",
   "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -28969,10 +29101,10 @@
   "location": "Palo, IA, US, 52324",
   "pay": "",
   "priority": true,
-  "rationale": "BESS project manager at NextEra; BESS domain fit, but 'Project Manager' role implies operations/delivery execution rather than customer strategy or commercial leadership feedback indicated as top fit.",
+  "rationale": "Project Manager \u2013 BESS SME at energy developer; BESS domain match but unclear strategic scope or seniority level from title alone.",
   "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -29102,17 +29234,17 @@
   "work_mode": "hybrid"
  },
  "be514ab4f803b6eb": {
-  "band": "possible",
+  "band": "strong",
   "company": "Motive Companies",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "New Kensington, PA, US",
   "pay": "$130,000\u2013$260,000/yr",
   "priority": false,
-  "rationale": "Director of Engineering for battery pack systems\u2014director-level in BESS domain, but hardware/equipment-development engineering leadership rather than product/strategy.",
-  "score": 55,
+  "rationale": "Director leading multidisciplinary battery pack systems engineering teams; director-level BESS role with strategy and roadmap responsibilities, though primarily engineering-focused vs. product/commercial.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -29284,10 +29416,10 @@
   "location": "West Sacramento, CA, US",
   "pay": "$99,936\u2013$150,108/yr",
   "priority": true,
-  "rationale": "Entry-level position explicitly stated; junior engineering role regardless of DG interconnection domain.",
+  "rationale": "Entry-level DG interconnection studies role; guidance explicitly scores junior engineering roles below 40 regardless of domain.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -29984,10 +30116,10 @@
   "location": "WI, US",
   "pay": "",
   "priority": true,
-  "rationale": "Installation & Commissioning Engineer for BESS projects\u2014field operations/commissioning leadership for battery systems; domain fit but O&M/field focus, not product/strategy.",
+  "rationale": "Installation & commissioning manager leading field teams for BESS projects; field operations and I&C management role, explicitly noted in profile as out of scope despite energy domain.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -30172,10 +30304,10 @@
   "location": "Noida",
   "pay": "",
   "priority": false,
-  "rationale": "GE Vernova power equipment role with no description; 'Lead Engineer\u2014Electrical Component' suggests technical IC design rather than product/strategy leadership.",
+  "rationale": "Lead electrical component engineering at GE Vernova; deep technical design engineering IC role, outside strategic/product focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -30383,14 +30515,14 @@
   "location": "Philadelphia, PA, US",
   "pay": "$165,000\u2013$175,000/yr",
   "priority": false,
-  "rationale": "Senior advisor for fiber/telecom infrastructure design and delivery; telecom/network infrastructure scored as wrong field per feedback.",
+  "rationale": "Senior advisor for fiber/digital infrastructure at hyperscaler; relevant datacenter industry but fiber networks not core power/energy/strategy domain.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "indeed",
   "title": "Senior Technology Advisor, Digital Infrastructure & Fiber Networks",
   "url": "https://www.indeed.com/viewjob?jk=e334062d25dc2fc6",
@@ -30404,10 +30536,10 @@
   "location": "San Francisco, CA, US",
   "pay": "$170,000\u2013$255,000/yr",
   "priority": false,
-  "rationale": "Battery Mechanical Engineer leading pack design and CAD\u2014deep technical design IC role; BESS domain relevant but not product/strategy focus.",
+  "rationale": "Mechanical battery engineer designing and developing lithium-ion battery packs; deep technical mechanical engineering IC role, not aligned with product/strategy/commercial focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -30500,10 +30632,10 @@
   "location": "Oakland, CA, US, 94612",
   "pay": "",
   "priority": false,
-  "rationale": "Principal Product Owner in utility emerging business ('Speed to Power'); principal-level strategy role in energy domain with likely grid modernization/flexibility focus.",
+  "rationale": "Principal Product Owner for Speed to Power and Emerging Business at PG&E; senior PM title for strategic clean-energy infrastructure business line aligns with HIGH score category (grid modernization, utility innovation product).",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -30530,21 +30662,24 @@
   "work_mode": ""
  },
  "c8b1382295ebaefe": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Ampd Energy",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Nashville, TN, US",
+  "lowscore": true,
   "pay": "",
   "priority": true,
-  "rationale": "Senior Marketing Manager at Ampd Energy (Nashville)\u2014energy domain fit and AI emphasis, but marketing/demand-gen focus, not product/strategy.",
-  "score": 35,
+  "rationale": "Senior marketing manager building ABM programs and AI marketing automation; specialist marketing function unrelated to product/strategy/technical or commercial domains.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Senior Marketing Manager",
   "url": "https://www.indeed.com/viewjob?jk=20839899889317a5",
@@ -31873,10 +32008,10 @@
   "location": "Raleigh, NC, US",
   "pay": "",
   "priority": false,
-  "rationale": "Distribution Designer performing pole loading and routing analyses\u2014deep technical CAD/design engineering, too specialized; not product/strategy.",
+  "rationale": "Distribution designer for overhead power lines using CAD/AutoCAD; deep technical design IC role explicitly noted in feedback as out of scope (below 45).",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -32182,21 +32317,21 @@
   "work_mode": ""
  },
  "d1cb6537226933bd": {
-  "band": "weak",
+  "band": "possible",
   "company": "Koch",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Oklahoma City, OK, US",
   "pay": "$150,000\u2013$200,000/yr",
   "priority": true,
-  "rationale": "Project Manager (Southwest) for PV/BESS/repower projects\u2014mid-level project delivery management for renewable energy; execution-focused, not product/strategy.",
-  "score": 35,
+  "rationale": "Project manager for PV and battery energy storage projects from pre-construction through commissioning; good domain fit (BESS/renewable) but project delivery/execution-focused rather than strategy/product.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
-  "seniority_match": false,
+  "seniority_match": true,
   "source": "indeed",
   "title": "Project Manager - Southwest",
   "url": "https://www.indeed.com/viewjob?jk=4c5b01453d3f162a",
@@ -32630,10 +32765,10 @@
   "location": "Los Angeles, CA, US",
   "pay": "$90,440\u2013$144,704/yr",
   "priority": false,
-  "rationale": "Associate-level investment research exploring energy/storage/tech topics; candidate has energy-markets finance background but role is junior per feedback on analyst/associate investment roles.",
+  "rationale": "CAP Associate (entry-level investment analyst); feedback marks pure analyst-level investment roles (analyst/associate) as 50-65 finance-first track.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -32667,10 +32802,10 @@
   "location": "Harwood, ND, US",
   "pay": "",
   "priority": false,
-  "rationale": "Principal-level individual contributor on cabling systems; feedback scores deep technical design IC roles below 45 even at principal level.",
+  "rationale": "Principal-level low-voltage cabling engineer; despite title, feedback marks deep technical design roles (CAD, cabling infrastructure) below scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -32704,10 +32839,10 @@
   "location": "Hayward, CA, US, 94545",
   "pay": "",
   "priority": false,
-  "rationale": "Power generation project engineer (civil) is technical IC engineering role, not product/strategy/commercial; feedback rules design engineering roles below 45.",
+  "rationale": "Power generation project engineer (civil); technical project engineering, unclear seniority and outside core competencies.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -32732,17 +32867,17 @@
   "url": "https://jobs.ashbyhq.com/crusoe/5e25e8ff-bf6c-4d46-b0c7-cbbe40cf0460"
  },
  "d5f9be51a071c140": {
-  "band": "top",
+  "band": "strong",
   "company": "PG&E",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
   "priority": false,
-  "rationale": "Storage Product Owner at PG&E; direct battery/storage product strategy ownership matches candidate feedback: 'product manager roles centered on BATTERY customer/product strategy are top fits (80+)'.",
-  "score": 90,
+  "rationale": "Storage Product Owner (Expert level) at PG&E; direct BESS domain fit and strategic product ownership at utility \u2014 feedback rule states battery customer/product strategy roles are top fits (80+), score as strong.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -32797,10 +32932,10 @@
   "location": "New Kensington, PA, US",
   "pay": "$105,000\u2013$158,000/yr",
   "priority": false,
-  "rationale": "Battery Electrical Engineer designing electrical architectures\u2014technical IC role for BESS; domain relevant but pure engineering design, not product/strategy.",
+  "rationale": "Battery electrical engineer for lithium-ion system architecture and design; deep technical electrical engineering IC role requiring specialized BMS/power electronics expertise.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -32997,10 +33132,10 @@
   "location": "Chennai, Tamil Nadu, India; India",
   "pay": "",
   "priority": false,
-  "rationale": "Field technical lead for on-site GPU cluster deployments; execution-focused operations role without product, strategy, or commercial scope.",
+  "rationale": "Field technical lead for on-site datacenter deployment execution; guidance flags hands-on network/IT infrastructure engineering roles as wrong field even in datacenter context.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -33021,10 +33156,10 @@
   "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Document Control Manager at Panasonic battery division\u2014administrative document management role, outside product/strategy/technical expertise.",
+  "rationale": "Document control manager for manufacturing operations; specialist operations/quality management function unrelated to product, strategy, commercial, or energy domain expertise.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -33281,20 +33416,17 @@
   "work_mode": "remote"
  },
  "da260b6ab0ec1bdc": {
-  "active": false,
-  "band": "misfit",
-  "closed": "2026-09-01",
+  "band": "weak",
   "company": "Meta",
   "date_posted": "2026-04-13",
   "first_seen": "2026-09-01",
   "location": "Eagle Mountain, UT, US",
-  "lowscore": true,
   "pay": "$135,000\u2013$191,000/yr",
   "priority": false,
-  "rationale": "Network deployment and operations engineering; feedback explicitly scores hands-on network infrastructure roles as wrong field even at datacenter companies.",
-  "score": 15,
+  "rationale": "Hands-on network infrastructure deployment and operations; feedback explicitly flags this domain as less-like.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -33613,10 +33745,10 @@
   "location": "Irvine, CA, US",
   "pay": "$125,543\u2013$165,213/yr",
   "priority": true,
-  "rationale": "Fire Protection Engineer (PE) for BESS fire safety and compliance\u2014specialized technical safety engineering for BESS; domain adjacent but deep technical specialist, not product/strategy.",
+  "rationale": "Fire protection engineer specializing in BESS fire/explosion safety and NFPA 855 compliance; specialized technical engineering role requiring deep fire protection expertise outside stated skillset.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -33696,17 +33828,17 @@
   "work_mode": ""
  },
  "dd7e671857ea12d4": {
-  "band": "strong",
+  "band": "possible",
   "company": "Oracle",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Salt Lake City, UT, US",
   "pay": "",
   "priority": false,
-  "rationale": "Lead Principal overseeing multi-project data center infrastructure delivery at strategic level; strong domain (power/cooling) and seniority but execution-focused.",
-  "score": 75,
+  "rationale": "Lead Principal TPM for datacenter construction; senior level but construction/delivery rather than energy strategy or power procurement.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -34076,10 +34208,10 @@
   "location": "Los Angeles, CA, US",
   "pay": "$180,000\u2013$220,000/yr",
   "priority": false,
-  "rationale": "Senior Battery Engineer designing commercialized battery systems\u2014senior technical IC role; BESS domain relevant but engineering-focused, not product/strategy.",
+  "rationale": "Senior battery engineer leading design and commercialization; excellent BESS domain fit but role emphasizes technical engineering leadership (design, manufacturing, testing) rather than product/strategy.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -34308,10 +34440,10 @@
   "lowscore": true,
   "pay": "$64,000\u2013$120,000/yr",
   "priority": false,
-  "rationale": "Global videographer for residential energy marketing; creative/production role unrelated to product, strategy, or engineering background.",
+  "rationale": "Videography/content creation role; unrelated to energy, power, product, or strategy domains.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -35666,17 +35798,20 @@
   "work_mode": ""
  },
  "e9650963b12775f1": {
-  "band": "weak",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Motive Companies",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Healdsburg, CA, US",
+  "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Project Coordinator supporting energy project execution\u2014mid-level coordinator/administrative role, not director/PM/principal strategy level.",
-  "score": 35,
+  "rationale": "Project coordinator with 2+ years minimum experience; junior administrative role well below director/senior-PM target scope.",
+  "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -36039,20 +36174,17 @@
   "work_mode": "onsite"
  },
  "ec1ca8916ed9215a": {
-  "active": false,
-  "band": "misfit",
-  "closed": "2026-09-01",
+  "band": "weak",
   "company": "Meta",
   "date_posted": "2026-04-13",
   "first_seen": "2026-09-01",
   "location": "Altoona, IA, US",
-  "lowscore": true,
   "pay": "$135,000\u2013$191,000/yr",
   "priority": false,
-  "rationale": "Network deployment and operations engineering; feedback explicitly scores hands-on network infrastructure roles as wrong field even at datacenter companies.",
-  "score": 15,
+  "rationale": "Hands-on network infrastructure deployment and operations; feedback explicitly flags this domain as less-like.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -36294,10 +36426,10 @@
   "location": "Houston, TX, US",
   "pay": "$110,000\u2013$160,000/yr",
   "priority": true,
-  "rationale": "Power systems protection and controls engineering design; feedback scores controls/firmware engineering out of skillset even at mission-critical energy companies.",
+  "rationale": "Protection & Controls Engineer; feedback explicitly flags controls/protection design engineering as out of skillset (below 35 threshold).",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -36419,10 +36551,10 @@
   "lowscore": true,
   "pay": "$22\u2013$44/hr",
   "priority": false,
-  "rationale": "Utilities title agent performing real estate title searches\u2014unrelated legal/real-estate function outside domain expertise.",
+  "rationale": "Right-of-way title agent conducting real estate searches and property documents; unrelated to energy, power, datacenter, or product/strategy roles.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -36472,10 +36604,10 @@
   "location": "Oakland, CA, US",
   "pay": "$73,000\u2013$109,000/yr",
   "priority": false,
-  "rationale": "Junior analyst role forecasting customer energy demand\u2014below his director/senior-PM level; specialist technical role, not product/strategy.",
+  "rationale": "Associate quantitative analyst forecasting customer demand and emerging technologies; excellent domain fit (energy, data, statistics) but Associate level falls below target director/senior-PM scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -36699,6 +36831,27 @@
   "title": "Lead I & C Engineer",
   "url": "https://www.indeed.com/viewjob?jk=96bddb78b6be24ce",
   "work_mode": "remote"
+ },
+ "f0c92f0aac0aa6e6": {
+  "band": "weak",
+  "company": "M2X Energy Inc",
+  "date_posted": "2026-09-01",
+  "first_seen": "2026-09-01",
+  "location": "Rockledge, FL, US",
+  "pay": "$135,000\u2013$175,000/yr",
+  "priority": true,
+  "rationale": "Power systems engineer for utility interconnections and switchgear design; deep technical power electronics and controls engineering, outside stated skillset per profile guidance.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-01T16:09Z",
+   "model": "claude-haiku-4-5-20251001",
+   "rubric": "ec980ff9e1"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Power Systems Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=6b7031e6641fd569",
+  "work_mode": "onsite"
  },
  "f1409da5a51519d0": {
   "band": "misfit",
@@ -37107,10 +37260,10 @@
   "location": "Birmingham, AL, US",
   "pay": "",
   "priority": true,
-  "rationale": "Structural Engineer IV leading structural design for power/BESS/transmission infrastructure\u2014senior IC technical design specialist; domain fit but deep structural engineering, not product/strategy.",
+  "rationale": "Structural engineer IV designing structural systems for BESS/transmission; deep technical structural design IC leadership role explicitly noted in feedback as out of scope (below 45).",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -37298,10 +37451,10 @@
   "location": "Longmont, CO, US",
   "pay": "$120,000\u2013$145,000/yr",
   "priority": false,
-  "rationale": "Electrical Engineer III for BESS sustaining engineering\u2014senior IC technical role for battery products; domain fit but sustaining/maintenance engineering, not product/strategy.",
+  "rationale": "Electrical engineer III for sustaining engineering of released BESS products; mid-level technical sustaining engineering IC role focused on troubleshooting and component reliability, not strategy/product.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -37667,10 +37820,10 @@
   "location": "Alpharetta, GA, US",
   "pay": "",
   "priority": false,
-  "rationale": "Site Construction Manager for energy projects (10+ years)\u2014construction/field execution leadership; outside product/strategy/commercial scope.",
+  "rationale": "Site construction manager for power/BESS/transmission projects; field operations and construction leadership role explicitly noted in profile as out of scope.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -37688,10 +37841,10 @@
   "location": "Huron, CA, US, 93234",
   "pay": "",
   "priority": false,
-  "rationale": "Principal Product Owner in utility emerging business ('Speed to Power'); principal-level strategy role in energy domain with likely grid modernization/flexibility focus.",
+  "rationale": "Duplicate of c898ee3ad3e61e0e at different location; Principal PO for Speed to Power at PG&E.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -37888,10 +38041,10 @@
   "location": "Houston, TX, US",
   "pay": "$138,000\u2013$196,000/yr",
   "priority": false,
-  "rationale": "Supply chain procurement management at hyperscaler; back-office function misaligned with energy/power/product domain.",
+  "rationale": "Supply chain/materials management at datacenter company; no power, energy, or strategy relevance.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -38159,10 +38312,10 @@
   "location": "Tri-Cities, WA, US",
   "pay": "$81,000\u2013$106,000/yr",
   "priority": false,
-  "rationale": "Assistant project manager for solar/battery/substation projects; junior project management role below seniority threshold.",
+  "rationale": "Assistant Project Manager in energy construction; junior-level role, feedback flags junior/construction roles as below 40.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },
@@ -38351,10 +38504,10 @@
   "location": "Monroe, LA, US",
   "pay": "",
   "priority": false,
-  "rationale": "Director of scheduling for data center construction; director-level but schedule/project management execution focus, not product/strategy/energy domain.",
+  "rationale": "Director of Scheduling for datacenter construction; operational project scheduling, no energy/power/strategy integration required.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-01T15:58Z",
+   "at": "2026-09-01T16:09Z",
    "model": "claude-haiku-4-5-20251001",
    "rubric": "ec980ff9e1"
   },

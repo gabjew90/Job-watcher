@@ -3286,7 +3286,7 @@
    }
   },
   {
-   "date": "2026-09-01 15:51",
+   "date": "2026-09-01 16:03",
    "sources": {
     "indeed-watch:Meta": {
      "ok": true,
@@ -3505,13 +3505,13 @@
     },
     "jobspy:indeed": {
      "ok": true,
-     "count": 336,
+     "count": 340,
      "error": null
     },
     "microsoft": {
-     "ok": true,
-     "count": 55,
-     "error": null
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: TOO MANY REQUESTS for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=data+center+energy&location=United+States&num=20"
     },
     "amazon": {
      "ok": true,
@@ -3580,7 +3580,7 @@
     },
     "ashby:openai": {
      "ok": true,
-     "count": 768,
+     "count": 767,
      "error": null
     },
     "ashby:emerald-ai": {
@@ -3695,7 +3695,7 @@
     },
     "successfactors:NextEra Energy": {
      "ok": true,
-     "count": 72,
+     "count": 70,
      "error": null
     }
    }
