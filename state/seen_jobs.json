@@ -20,6 +20,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "Seattle, WA, US",
+  "locations": [
+   "Seattle, WA, US",
+   "Austin, TX, US"
+  ],
   "pay": "$130,000\u2013$160,000/yr",
   "priority": false,
   "rationale": "Sales/business development role despite engineer title; Gabriel has no sales background and feedback indicates quota-carrying sales roles are out of scope",
@@ -53,8 +57,11 @@
   "work_mode": "onsite"
  },
  "00538365ac219de0": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Shades of Grey HR",
+  "duplicate": true,
   "first_seen": "2026-08-13",
   "location": "Los Angeles, CA, US",
   "priority": true,
@@ -227,6 +234,10 @@
   "company": "Shades of Grey HR",
   "first_seen": "2026-08-13",
   "location": "Los Angeles, CA, US",
+  "locations": [
+   "Los Angeles, CA, US",
+   "Remote, US"
+  ],
   "priority": true,
   "rationale": "Principal-level seniority in grid integration domain is excellent fit; IC engineering track aligns with technical credibility.",
   "score": 75,
@@ -379,9 +390,12 @@
   "work_mode": ""
  },
  "0236a650a51b4ae6": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Reston, VA, US",
   "pay": "$176,000\u2013$256,000/yr",
@@ -427,9 +441,12 @@
   "work_mode": "remote"
  },
  "0289afe92442e91c": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "London, United Kingdom",
   "pay": "",
@@ -448,6 +465,17 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "Jacksonville, FL, US",
+  "locations": [
+   "Jacksonville, FL, US",
+   "Knoxville, TN, US",
+   "Nashville, TN, US",
+   "Phoenix, AZ, US",
+   "Salt Lake City, UT, US",
+   "Las Vegas, NV, US",
+   "Pensacola, FL, US",
+   "Austin, TX, US",
+   "Pompano Beach, FL, US"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Director of business development for data center power infrastructure; excellent match to AI-datacenter + power domain target.",
@@ -604,9 +632,12 @@
   "work_mode": "remote"
  },
  "0447045f98c8bbc5": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Anduril",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Orange, CA, US",
   "pay": "$191,000\u2013$253,000/yr",
@@ -654,6 +685,11 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "Newport, United Kingdom",
+  "locations": [
+   "Newport, United Kingdom",
+   "Lappeenranta, Finland",
+   "Tallinn, Estonia"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Hardware RMA and diagnostics troubleshooting; technical support role.",
@@ -665,9 +701,12 @@
   "work_mode": ""
  },
  "048d68b86d1a5f18": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-21",
   "location": "Orlando, FL, US",
   "pay": "",
@@ -705,6 +744,14 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "Chicago, IL, US",
+  "locations": [
+   "Chicago, IL, US",
+   "Austin, TX, US",
+   "Washington, DC, US",
+   "Boston, MA, US",
+   "New York, NY, US",
+   "Arlington, VA, US"
+  ],
   "pay": "$89,000\u2013$148,000/yr",
   "priority": false,
   "rationale": "Senior consultant in energy markets/systems modeling; secondary sweet spot (IC strategy role), but technical analysis and consulting, not product/commercial leadership.",
@@ -953,6 +1000,12 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-31",
   "location": "Salt Lake City, UT, US",
+  "locations": [
+   "Salt Lake City, UT, US",
+   "Arlington, VA, US",
+   "Louisville, CO, US",
+   "New York, NY, US"
+  ],
   "pay": "$145,000\u2013$181,050/yr",
   "priority": true,
   "rationale": "Principal structural design engineering; deep technical specialization explicitly flagged as out of scope despite principal-level seniority.",
@@ -969,9 +1022,12 @@
   "work_mode": "remote"
  },
  "05f7ae79d02db0f8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Green Bay, WI, US",
   "pay": "$500K to $10",
@@ -1020,9 +1076,12 @@
   "work_mode": "onsite"
  },
  "06685fcaa6378d92": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "San Diego, CA, US",
   "pay": "$125,000\u2013$350,000/yr",
@@ -1036,8 +1095,11 @@
   "work_mode": ""
  },
  "067c7bbee9ca0cbf": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
+  "duplicate": true,
   "first_seen": "2026-08-13",
   "location": "Houston, TX, US",
   "priority": true,
@@ -1081,9 +1143,12 @@
   "work_mode": "onsite"
  },
  "06ab870d3b41645d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Knoxville, TN, US",
   "pay": "",
@@ -1267,6 +1332,27 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "Denver, CO, US",
+  "locations": [
+   "Denver, CO, US",
+   "Dover, DE, US",
+   "Lansing, MI, US",
+   "Providence, RI, US",
+   "Frankfort, KY, US",
+   "Oklahoma City, OK, US",
+   "Helena, MT, US",
+   "Montgomery, AL, US",
+   "Salt Lake City, UT, US",
+   "Austin, TX, US",
+   "Olympia, WA, US",
+   "Salem, OR, US",
+   "Carson City, NV, US",
+   "Boise, ID, US",
+   "Columbus, OH, US",
+   "Lincoln, NE, US",
+   "Baton Rouge, LA, US",
+   "Atlanta, GA, US",
+   "Harrisburg, PA, US"
+  ],
   "pay": "$99,552\u2013$124,440/yr",
   "priority": true,
   "rationale": "SOLV BESS Engineer III (Denver); perfect domain fit but senior technical IC engineering role, not product/strategy/director target",
@@ -1424,9 +1510,12 @@
   "work_mode": "hybrid"
  },
  "08de7029700f158f": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Crusoe",
   "date_posted": "2026-08-24",
+  "duplicate": true,
   "first_seen": "2026-08-25",
   "location": "San Francisco, CA - US",
   "pay": "$285,000 - $335,000",
@@ -1619,6 +1708,15 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Santa Clara, CA, US",
+  "locations": [
+   "Santa Clara, CA, US",
+   "Denver, CO, US",
+   "CA, US",
+   "IL, US",
+   "VA, US",
+   "Sterling, VA, US",
+   "CO, US"
+  ],
   "pay": "$165,000\u2013$180,000/yr",
   "priority": true,
   "rationale": "Vantage Principal Electrical Engineer with explicit BESS integration, on-site generation, and power generation strategy ownership; principal-level technical leadership in datacenter energy infrastructure.",
@@ -1696,6 +1794,14 @@
   "date_posted": "2026-08-30",
   "first_seen": "2026-09-01",
   "location": "Papillion, NE, US",
+  "locations": [
+   "Papillion, NE, US",
+   "Temple, TX, US",
+   "Huntsville, AL, US",
+   "Garland, TX, US",
+   "Aurora, IL, US",
+   "Houston, TX, US"
+  ],
   "pay": "$138,000\u2013$196,000/yr",
   "priority": false,
   "rationale": "Supply chain/materials management at datacenter company; no power, energy, or strategy relevance.",
@@ -1757,9 +1863,12 @@
   "work_mode": "onsite"
  },
  "0aafbe15bbdd3baf": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Anthropic",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "London, UK",
   "pay": "",
@@ -1818,6 +1927,10 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "VA, US",
+  "locations": [
+   "VA, US",
+   "Salt Lake City, UT, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Lead Principal TPM for datacenter construction; senior level but construction/delivery rather than energy strategy or power procurement.",
@@ -1839,6 +1952,13 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
   "location": "Harrisburg, PA, US",
+  "locations": [
+   "Harrisburg, PA, US",
+   "Madison, WI, US",
+   "Green Bay, WI, US",
+   "Milwaukee, WI, US",
+   "Neenah, WI, US"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Preconstruction management for substation projects; energy infrastructure domain strong but emphasizes construction execution over product strategy.",
@@ -1876,6 +1996,10 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
   "location": "Burlington, Texas",
+  "locations": [
+   "Burlington, Texas",
+   "Austin, Texas"
+  ],
   "pay": "$160,000-$190,000",
   "priority": false,
   "rationale": "Building Engineering Lead at SB Energy (Burlington); operational infrastructure leadership\u2014operations engineering focus, not energy strategy.",
@@ -1887,9 +2011,12 @@
   "work_mode": "hybrid"
  },
  "0b6af40a1f909d29": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Vantage Data Centers",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Denver, CO, US",
   "pay": "$165,000\u2013$180,000/yr",
@@ -2043,9 +2170,12 @@
   "url": "https://www.amazon.jobs/en/jobs/10475449/energy-projects-manager-aws-energy-team"
  },
  "0ca6988bcbe8ae5d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Chico, CA, US, 95928",
   "pay": "",
@@ -2147,9 +2277,12 @@
   "work_mode": ""
  },
  "0d26fdf05459a172": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "Arlington, VA, US",
   "pay": "$94,000\u2013$112,625/yr",
@@ -2346,9 +2479,12 @@
   "work_mode": "onsite"
  },
  "0e0792abdf8a1f9a": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Neara",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Denver",
   "pay": "$180K \u2013 $250K \u00b7 Offers Equity",
@@ -2441,6 +2577,13 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
   "location": "Salt Lake City, UT, US",
+  "locations": [
+   "Salt Lake City, UT, US",
+   "Houston, TX, US",
+   "Remote, US",
+   "Edgerton, WI, US",
+   "San Francisco Bay Area, CA, US"
+  ],
   "pay": "$100,000\u2013$140,000/yr",
   "priority": false,
   "rationale": "Data center product role with relevant infrastructure domain, but lacks senior PM title and full scope visibility.",
@@ -2497,6 +2640,10 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "Amsterdam, Netherlands; Remote - Europe",
+  "locations": [
+   "Amsterdam, Netherlands; Remote - Europe",
+   "Tel Aviv, Israel"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Senior TPM for datacenter launches in EMEA; senior cross-functional coordination but delivery-focused vs. energy/infrastructure product strategy.",
@@ -2561,9 +2708,12 @@
   "work_mode": "onsite"
  },
  "0f729ab412dfa00d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Madison, WI, US",
   "pay": "",
@@ -2630,9 +2780,12 @@
   "work_mode": ""
  },
  "0fd9f524339ba4fa": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-11",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Starbase, TX",
   "pay": "",
@@ -2686,6 +2839,10 @@
   "date_posted": "",
   "first_seen": "2026-08-28",
   "location": "New York, New York",
+  "locations": [
+   "New York, New York",
+   "Toronto, Ontario"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "VP capital partnerships (energy, NYC, Brookfield); VP-level energy role at major investor, seniority above target but strategy/partnerships scope less clear than asset-focused roles",
@@ -2779,6 +2936,12 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "Stockton, CA, US, 95215",
+  "locations": [
+   "Stockton, CA, US, 95215",
+   "West Sacramento, CA, US, 95605",
+   "Redding, CA, US, 96002",
+   "San Ramon, CA, US, 94583"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Senior-level substation engineering consultant role in relevant domain; too focused on technical design, not product or strategy.",
@@ -2795,9 +2958,12 @@
   "work_mode": ""
  },
  "10f15120ecac7944": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Hayward, CA, US, 94545",
   "pay": "",
@@ -2869,6 +3035,10 @@
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
   "location": "IL, US",
+  "locations": [
+   "IL, US",
+   "2 Locations"
+  ],
   "pay": "$113,200\u2013$188,800/yr",
   "priority": true,
   "rationale": "Senior Manager, Electrical Substation Projects at GE Vernova aligns well with grid infrastructure and manager seniority level.",
@@ -2893,9 +3063,12 @@
   "url": "https://www.indeed.com/viewjob?jk=0b8c1feebd4184b4"
  },
  "113701fa00808824": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Dover, DE, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -2937,6 +3110,10 @@
   "company": "Quanta Infrastructure Solutions Group",
   "first_seen": "2026-08-13",
   "location": "Wink, TX, US",
+  "locations": [
+   "Wink, TX, US",
+   "Columbus, OH, US"
+  ],
   "priority": false,
   "rationale": "Assistant Project Manager I at Quanta Infrastructure is junior PM in energy, too junior for target seniority.",
   "score": 35,
@@ -2979,9 +3156,12 @@
   "work_mode": ""
  },
  "1208190f8177b10a": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "",
   "pay": "",
@@ -2999,6 +3179,11 @@
   "company": "AES Corporation",
   "first_seen": "2026-08-13",
   "location": "New York, NY, US",
+  "locations": [
+   "New York, NY, US",
+   "Houston, TX, US",
+   "Arlington, VA, US"
+  ],
   "priority": true,
   "rationale": "Senior Manager, Data Center Infrastructure Origination at AES perfectly combines datacenter + energy + business development strategy.",
   "score": 82,
@@ -3008,9 +3193,12 @@
   "url": "https://www.indeed.com/viewjob?jk=8b9053d7fce89ae4"
  },
  "123c41a3022de6f0": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -3043,9 +3231,12 @@
   "url": "https://jobs.ashbyhq.com/base-power/1f8c559e-cf28-44a0-83be-f7845a13cf94"
  },
  "1269acbb57998e83": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "Minneapolis, MN, US",
   "pay": "$78,000\u2013$178,000/yr",
@@ -3064,6 +3255,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-29",
   "location": "Honolulu, HI, US",
+  "locations": [
+   "Honolulu, HI, US",
+   "HI, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Solar project engineer IC role supporting project manager at EPC firm; technical implementation, not strategy/product.",
@@ -3085,6 +3280,10 @@
   "date_posted": "2026-08-22",
   "first_seen": "2026-08-28",
   "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408",
+   "LOGANSPORT, IN, US, 46947"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Manager WECC interconnection services; high fit with relevant regional scope and management-level seniority.",
@@ -3149,9 +3348,12 @@
   "work_mode": "onsite"
  },
  "12ac77fbd72465b0": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-07-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Bastrop, TX",
   "pay": "",
@@ -3165,9 +3367,12 @@
   "work_mode": "remote"
  },
  "12cdd45c1cdb288d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-24",
+  "duplicate": true,
   "first_seen": "2026-08-24",
   "location": "Indianapolis, IN, US",
   "pay": "",
@@ -3283,9 +3488,12 @@
   "work_mode": ""
  },
  "1371c3244b7be4eb": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Westwood Professional Services",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Middleton, WI, US",
   "pay": "",
@@ -3439,6 +3647,11 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-08-26",
   "location": "IN, US",
+  "locations": [
+   "IN, US",
+   "AR, US",
+   "MN, US"
+  ],
   "pay": "$150,000\u2013$217,000/yr",
   "priority": true,
   "rationale": "Strategic negotiator in MISO energy markets; commercial negotiation-lead roles calibrate to 55\u201370 (his expertise is supporting/technical, not deal-lead).",
@@ -3455,6 +3668,10 @@
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-26",
   "location": "United States, Iowa, West Des Moines (+1 more)",
+  "locations": [
+   "United States, Iowa, West Des Moines (+1 more)",
+   "West Des Moines, IA, US"
+  ],
   "pay": "USD $116,900 - $203,600 per year",
   "priority": false,
   "rationale": "Sr. Procurement role at Microsoft in data center retrofits; strong domain but procurement is not target function.",
@@ -3502,6 +3719,10 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
   "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+  "locations": [
+   "San Francisco, CA | New York City, NY | Seattle, WA",
+   "London, UK"
+  ],
   "pay": "$320,000",
   "priority": false,
   "rationale": "Staff+ infrastructure engineer for cluster lifecycle; senior IC engineering role, no energy/power focus.",
@@ -3550,6 +3771,12 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "San Diego, CA, US",
+  "locations": [
+   "San Diego, CA, US",
+   "Salt Lake City, UT, US",
+   "Louisville, CO, US",
+   "San Francisco, CA, US"
+  ],
   "pay": "$94,000\u2013$112,625/yr",
   "priority": true,
   "rationale": "IC-level development engineer for BESS projects (San Diego location); junior level despite domain relevance.",
@@ -3566,9 +3793,12 @@
   "work_mode": "remote"
  },
  "165ac31bd33e5b44": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "Salt Lake City, UT, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -3648,6 +3878,10 @@
   "date_posted": "2026-08-30",
   "first_seen": "2026-08-30",
   "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408",
+   "Muenster, TX, US, 76252"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "NextEra Energy PV solar field tech principal with travel; description unavailable\u2014title suggests field-level technical or supervisory operations role, not strategic.",
@@ -3717,9 +3951,12 @@
   "work_mode": "hybrid"
  },
  "177012712d57de3d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Hayward, CA, US, 94545",
   "pay": "",
@@ -3778,6 +4015,13 @@
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
   "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US",
+   "San Francisco, CA, US",
+   "Denver, CO, US",
+   "Scottsdale, AZ, US",
+   "San Diego, CA, US"
+  ],
   "pay": "$140,000\u2013$195,000/yr",
   "priority": true,
   "rationale": "Principal BESS Engineer at Clearway; principal-level IC in core BESS domain, secondary sweet spot for senior strategy IC.",
@@ -3839,9 +4083,12 @@
   "work_mode": ""
  },
  "180f21c6c48c6c24": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "GE Vernova",
   "date_posted": "",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "2 Locations",
   "pay": "",
@@ -3855,9 +4102,12 @@
   "work_mode": ""
  },
  "181bb8a585c1cd77": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Westwood Professional Services",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Westminster, CO, US",
   "pay": "",
@@ -3921,9 +4171,12 @@
   "url": "https://www.indeed.com/viewjob?jk=2256d3ed33b7e340"
  },
  "187abcfe0037016f": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Neenah, WI, US",
   "pay": "",
@@ -3942,8 +4195,11 @@
   "work_mode": "onsite"
  },
  "18805b7f931b9cbe": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Clearway Energy",
+  "duplicate": true,
   "first_seen": "2026-08-14",
   "location": "Scottsdale, AZ, US",
   "priority": true,
@@ -4025,6 +4281,12 @@
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Orlando, FL, US",
+  "locations": [
+   "Orlando, FL, US",
+   "Melbourne, FL, US",
+   "Cape Canaveral, FL, US",
+   "Rockledge, FL, US"
+  ],
   "pay": "$135,000\u2013$175,000/yr",
   "priority": true,
   "rationale": "Power systems engineer for utility interconnections and switchgear design; deep technical power electronics and controls engineering, outside stated skillset per profile guidance.",
@@ -4073,9 +4335,12 @@
   "work_mode": "remote"
  },
  "19a1188144f18c4d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Clearway Energy",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "San Francisco, CA, US",
   "pay": "$140,000\u2013$195,000/yr",
@@ -4125,6 +4390,11 @@
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
   "location": "Dallas, TX, US",
+  "locations": [
+   "Dallas, TX, US",
+   "Austin, TX, US",
+   "Houston, TX, US"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Project Manager in Distribution Planning at Burns & McDonnell; grid infrastructure domain but PM-level execution role.",
@@ -4313,9 +4583,12 @@
   "work_mode": ""
  },
  "1aa641142096e857": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-29",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -4437,9 +4710,12 @@
   "work_mode": ""
  },
  "1b9f579c3a6e5a94": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Louisville, CO, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -4568,9 +4844,12 @@
   "work_mode": ""
  },
  "1c834145039c509c": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Madison, WI, US",
   "pay": "",
@@ -4670,9 +4949,12 @@
   "work_mode": "hybrid"
  },
  "1d5a4e2221a5f5fb": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "West Sacramento, CA, US, 95605",
   "pay": "",
@@ -4771,9 +5053,12 @@
   "work_mode": ""
  },
  "1e1a1665bf47bffe": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SB Energy",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, Texas",
   "pay": "$140,000-$165,000",
@@ -4792,6 +5077,10 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
   "location": "Burlington, Texas",
+  "locations": [
+   "Burlington, Texas",
+   "Austin, Texas"
+  ],
   "pay": "$160,000-$190,000",
   "priority": false,
   "rationale": "Site operations leadership; operations execution-focused, not strategy/product.",
@@ -4851,9 +5140,12 @@
   "work_mode": "onsite"
  },
  "1e86b0a92bc84abe": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Palo, IA, US, 52324",
   "pay": "",
@@ -4877,6 +5169,17 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-27",
   "location": "Saint Cloud, MN, US",
+  "locations": [
+   "Saint Cloud, MN, US",
+   "Minneapolis, MN, US",
+   "Otsego, MN, US",
+   "Green Bay, WI, US",
+   "Neenah, WI, US",
+   "Milwaukee, WI, US",
+   "La Crosse, WI, US",
+   "Eau Claire, WI, US",
+   "Appleton, WI, US"
+  ],
   "pay": "$78,000\u2013$178,000/yr",
   "priority": true,
   "rationale": "Project Manager\u2014T&D at Michels Power; grid infrastructure domain but PM-level execution, not senior strategy.",
@@ -5156,9 +5459,12 @@
   "work_mode": "remote"
  },
  "200f4cfcaa4373c0": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Westwood Professional Services",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Raleigh, NC, US",
   "pay": "",
@@ -5177,6 +5483,12 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-29",
   "location": "Piqua, OH, US",
+  "locations": [
+   "Piqua, OH, US",
+   "Dayton, OH, US",
+   "Sidney, OH, US",
+   "Lima, OH, US"
+  ],
   "pay": "$100,000\u2013$130,000/yr",
   "priority": true,
   "rationale": "Electrical engineer for power generation containerization; technical design IC outside product/strategy scope.",
@@ -5230,6 +5542,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-30",
   "location": "Auberry, CA, US, 93602",
+  "locations": [
+   "Auberry, CA, US, 93602",
+   "San Ramon, CA, US, 94583"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "PG&E utility worker for gas transmission and distribution; field operations and technician role below target seniority.",
@@ -5279,9 +5595,12 @@
   "work_mode": "hybrid"
  },
  "209c6e5059368a8b": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -5305,6 +5624,13 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
   "location": "Chicago, IL, US",
+  "locations": [
+   "Chicago, IL, US",
+   "McLean, VA, US",
+   "Milwaukee, WI, US",
+   "Madison, WI, US",
+   "Austin, TX, US"
+  ],
   "pay": "$59,400\u2013$236,800/yr",
   "priority": false,
   "rationale": "Energy & infrastructure strategy advisory; domain fit strong but consulting-structure and manager-level title below director target.",
@@ -5358,6 +5684,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "Remote-Friendly, United States",
+  "locations": [
+   "Remote-Friendly, United States",
+   "Remote, US"
+  ],
   "pay": "$320,000",
   "priority": true,
   "rationale": "Manager role at tier-1 AI company in highly relevant BESS/power domain but NPI sourcing/supply-chain function, not product/strategy/commercial.",
@@ -5455,6 +5785,14 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-22",
   "location": "Warrenville, IL, US",
+  "locations": [
+   "Warrenville, IL, US",
+   "Plymouth Meeting, PA, US",
+   "Greenwood Village, CO, US",
+   "Overland Park, KS, US",
+   "Dallas, TX, US",
+   "Charlotte, NC, US"
+  ],
   "pay": "$100,000\u2013$160,000/yr",
   "priority": true,
   "rationale": "Electrical Engineer\u2014Power Generation at Kimley-Horn; power generation IC role without seniority signals.",
@@ -5466,9 +5804,12 @@
   "work_mode": ""
  },
  "21723038461e80da": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "CUPERTINO ELECTRIC",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Houston, TX, US",
   "pay": "$100,000\u2013$140,000/yr",
@@ -5600,6 +5941,10 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "Westwood, MA, US",
+  "locations": [
+   "Westwood, MA, US",
+   "NV, US"
+  ],
   "pay": "$149,760\u2013$170,560/yr",
   "priority": false,
   "rationale": "Senior PM managing power delivery projects; strong match for energy infrastructure seniority and scope.",
@@ -5701,6 +6046,13 @@
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-29",
   "location": "Houston, TX, US, 77002",
+  "locations": [
+   "Houston, TX, US, 77002",
+   "Jupiter, FL, US, 33478",
+   "Juno Beach, FL, US, 33408",
+   "WEBSTER, KY, US, 42450",
+   "Palo, IA, US, 52324"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Director of data center development at NextEra; explicit HIGH-fit category (data center energy/power infrastructure) at appropriate seniority and major company.",
@@ -5791,9 +6143,12 @@
   "work_mode": "onsite"
  },
  "230864cd6b4aebb6": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Guidehouse",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX, US",
   "pay": "$89,000\u2013$148,000/yr",
@@ -5807,9 +6162,12 @@
   "work_mode": ""
  },
  "236a6211c263b186": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Lansing, MI, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -5966,9 +6324,12 @@
   "work_mode": ""
  },
  "240d5cde6b5805c4": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Kimley-Horn",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "Dallas, TX, US",
   "pay": "",
@@ -5998,9 +6359,12 @@
   "work_mode": "remote"
  },
  "245c7219d2a0749f": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Kimley-Horn",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Frisco, TX, US",
   "pay": "",
@@ -6014,9 +6378,12 @@
   "work_mode": "remote"
  },
  "246162b354a1ce36": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Tracy, CA, US, 95377",
   "pay": "",
@@ -6061,6 +6428,10 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Salt Lake City, UT, US",
+  "locations": [
+   "Salt Lake City, UT, US",
+   "VA, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Principal TPM for datacenter construction; technical PM scope but lacks energy strategy or power innovation integration.",
@@ -6135,6 +6506,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-01",
   "location": "Somerville, MA, US",
+  "locations": [
+   "Somerville, MA, US",
+   "Berkeley, CA, US"
+  ],
   "pay": "$111,826\u2013$139,777/yr",
   "priority": false,
   "rationale": "Form Energy (storage) AI applications manager; energy company with AI security/governance role, secondary fit given AI credentials but governance-focused.",
@@ -6196,6 +6571,10 @@
   "date_posted": "2026-08-16",
   "first_seen": "2026-08-28",
   "location": "Cape Canaveral, FL",
+  "locations": [
+   "Cape Canaveral, FL",
+   "Starbase, TX"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Specialist-level natural gas sourcing; fuel procurement specialist role, below target seniority and not energy strategy or infrastructure PM.",
@@ -6223,9 +6602,12 @@
   "work_mode": "onsite"
  },
  "2691654a1e283e0d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Providence, RI, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -6548,9 +6930,12 @@
   "work_mode": "onsite"
  },
  "28702bf65644bcd6": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -6630,6 +7015,11 @@
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Santa Fe, NM, US",
+  "locations": [
+   "Santa Fe, NM, US",
+   "Salt Lake City, UT, US",
+   "Oklahoma City, OK, US"
+  ],
   "pay": "$150,000\u2013$200,000/yr",
   "priority": true,
   "rationale": "Project manager for PV and battery energy storage projects from pre-construction through commissioning; good domain fit (BESS/renewable) but project delivery/execution-focused rather than strategy/product.",
@@ -6735,9 +7125,12 @@
   "work_mode": ""
  },
  "29df059e2942ac48": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Westwood Professional Services",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Houston, TX, US",
   "pay": "",
@@ -6751,9 +7144,12 @@
   "work_mode": "remote"
  },
  "29f1e2c9ecdb8b09": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Tracy, CA, US, 95377",
   "pay": "",
@@ -6908,9 +7304,12 @@
   "work_mode": "remote"
  },
  "2b0e1e18bffb1b70": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX",
   "pay": "",
@@ -7033,6 +7432,12 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583",
+   "Fresno, CA, US, 93720",
+   "Lodi, CA, US, 95240"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Senior regulatory IC in grid space; strategy-adjacent but not core product/BESS/datacenter fit.",
@@ -7044,9 +7449,12 @@
   "work_mode": ""
  },
  "2c1f1e2bf0275f56": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Kimley-Horn",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "Charlotte, NC, US",
   "pay": "",
@@ -7065,6 +7473,10 @@
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-18",
   "location": "Salt Lake City, UT, US",
+  "locations": [
+   "Salt Lake City, UT, US",
+   "Portland, OR, US"
+  ],
   "pay": "$140,000\u2013$150,000/yr",
   "priority": false,
   "rationale": "Manufacturing operations engineer; no energy or PM focus.",
@@ -7113,6 +7525,10 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-09-01",
   "location": "San Francisco, CA, US",
+  "locations": [
+   "San Francisco, CA, US",
+   "Menlo Park, CA, US"
+  ],
   "pay": "$146,000\u2013$206,000/yr",
   "priority": false,
   "rationale": "Staff-level infrastructure operations/business planning; no energy/power or product strategy domain.",
@@ -7225,9 +7641,12 @@
   "work_mode": "onsite"
  },
  "2ce521eb1f7f97c6": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Eau Claire, WI, US",
   "pay": "",
@@ -7246,9 +7665,12 @@
   "work_mode": "onsite"
  },
  "2ceb79093a44a373": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -7267,9 +7689,12 @@
   "work_mode": ""
  },
  "2cf43f71370ad819": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -7444,6 +7869,10 @@
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612",
+   "Huron, CA, US, 93234"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Electrical inspector at PG&E (duplicate location); field inspection compliance role.",
@@ -7526,6 +7955,22 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
   "location": "Long Beach, CA, US",
+  "locations": [
+   "Long Beach, CA, US",
+   "Houston, TX, US",
+   "Los Angeles, CA, US",
+   "Arlington, VA, US",
+   "New York, NY, US",
+   "Indianapolis, IN, US",
+   "Charlotte, NC, US",
+   "Salt Lake City, UT, US",
+   "Dayton, OH, US",
+   "Louisville, CO, US",
+   "Richmond, VA, US",
+   "Conshohocken, PA, US",
+   "Raleigh, NC, US",
+   "Kapolei, HI, US"
+  ],
   "pay": "$113,000\u2013$141,525/yr",
   "priority": true,
   "rationale": "Senior BESS systems integration engineer at major power company; direct technical-commercial bridge on battery storage systems with customer/product scope.",
@@ -7728,9 +8173,12 @@
   "work_mode": "remote"
  },
  "2f542bfb3a553716": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-30",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Temple, TX, US",
   "pay": "$138,000\u2013$196,000/yr",
@@ -7800,9 +8248,12 @@
   "work_mode": "onsite"
  },
  "2fa4aa4534f1930f": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Qcells",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Santa Clara, CA, US",
   "pay": "$185,300\u2013$250,100/yr",
@@ -7842,9 +8293,12 @@
   "work_mode": "remote"
  },
  "2ffb5b72491f11f1": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Charlotte, NC, US",
   "pay": "",
@@ -7946,6 +8400,10 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
   "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+  "locations": [
+   "San Francisco, CA | New York City, NY | Seattle, WA",
+   "Sydney, Australia"
+  ],
   "pay": "$320,000",
   "priority": false,
   "rationale": "Staff engineer for datacenter server lifecycle; IC-level engineering in datacenter domain but no energy/power focus.",
@@ -7989,9 +8447,12 @@
   "work_mode": "hybrid"
  },
  "30eceba23aec2e6a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "CUPERTINO ELECTRIC",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Remote, US",
   "pay": "$100,000\u2013$140,000/yr",
@@ -8120,6 +8581,19 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-31",
   "location": "Papillion, NE, US",
+  "locations": [
+   "Papillion, NE, US",
+   "Mesa, AZ, US",
+   "Altoona, IA, US",
+   "Lebanon, IN, US",
+   "Cedar Rapids, IA, US",
+   "Rosemount, MN, US",
+   "Beaver Dam, WI, US",
+   "Goodyear, AZ, US",
+   "Los Lunas, NM, US",
+   "Ashburn, VA, US",
+   "El Paso, TX, US"
+  ],
   "pay": "$162,000\u2013$227,000/yr",
   "priority": false,
   "rationale": "Network infrastructure deployment management at hyperscaler; lacks energy, power, or storage focus; hands-on technical direction misaligned with strategy/commercial scope.",
@@ -8152,9 +8626,12 @@
   "work_mode": "hybrid"
  },
  "32018c137bb1bb81": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Form Energy",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Berkeley, CA, US",
   "pay": "$111,826\u2013$139,777/yr",
@@ -8232,9 +8709,12 @@
   "work_mode": ""
  },
  "324e85fb1cc5e535": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Mesa, AZ, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -8691,9 +9171,12 @@
   "work_mode": ""
  },
  "35ac5cf5567b4b6d": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Anthropic",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Tokyo, Japan",
   "pay": "",
@@ -8744,6 +9227,10 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-30",
   "location": "Menlo Park, CA, US",
+  "locations": [
+   "Menlo Park, CA, US",
+   "San Francisco, CA, US"
+  ],
   "pay": "$154,000\u2013$200,000/yr",
   "priority": true,
   "rationale": "Data center location strategy analyst for hyperscaler capacity planning; strong datacenter and power domain with quantitative analysis, but analyst level rather than PM/director.",
@@ -8806,9 +9293,12 @@
   "url": "https://www.indeed.com/viewjob?jk=00c1dc1fb3338fab"
  },
  "36834f8f84a081a7": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Nashville, TN, US",
   "pay": "",
@@ -8822,9 +9312,12 @@
   "work_mode": ""
  },
  "3684cad758caa152": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Frankfort, KY, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -8910,9 +9403,12 @@
   "work_mode": ""
  },
  "3748db514e45dffa": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Ingersoll-Rand",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Dayton, OH, US",
   "pay": "$100,000\u2013$130,000/yr",
@@ -8981,9 +9477,12 @@
   "work_mode": "remote"
  },
  "37ed41c60970c778": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX",
   "pay": "",
@@ -9053,9 +9552,12 @@
   "work_mode": "remote"
  },
  "38bc3dceeeac7492": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oklahoma City, OK, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -9111,6 +9613,11 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-09-01",
   "location": "Louisa, VA, US",
+  "locations": [
+   "Louisa, VA, US",
+   "Mineral, VA, US",
+   "Johnstown, OH, US"
+  ],
   "pay": "$129,200\u2013$193,000/yr",
   "priority": false,
   "rationale": "Duplicate of Mineral, VA facility manager posting; same ops/facilities focus.",
@@ -9144,9 +9651,12 @@
   "url": "https://www.amazon.jobs/en/jobs/10375485/sr-energy-strategy-manager-aws-energy-team"
  },
  "39841b0c9b97b2ff": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Rocklin, CA, US, 95765",
   "pay": "",
@@ -9364,6 +9874,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-01",
   "location": "Harwood, ND, US",
+  "locations": [
+   "Harwood, ND, US",
+   "Chicago, IL, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Manager overseeing low-voltage cabling design; deep technical design role, feedback flags these as below target.",
@@ -9474,9 +9988,12 @@
   "work_mode": "onsite"
  },
  "3c564fc208851bf8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Baker Tilly Canada",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "McLean, VA, US",
   "pay": "$59,400\u2013$236,800/yr",
@@ -9741,9 +10258,12 @@
   "work_mode": ""
  },
  "3eb68cc1bd62a45a": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Nashville, TN, US",
   "pay": "",
@@ -9757,9 +10277,12 @@
   "work_mode": ""
  },
  "3edd68e8768a7994": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "LOGANSPORT, IN, US, 46947",
   "pay": "",
@@ -9890,9 +10413,12 @@
   "work_mode": "onsite"
  },
  "3fd0b728ba6848a8": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Guidehouse",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Washington, DC, US",
   "pay": "$89,000\u2013$148,000/yr",
@@ -9906,9 +10432,12 @@
   "work_mode": ""
  },
  "3ffd046e37d572f5": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Salt Lake City, UT, US",
   "pay": "$94,000\u2013$112,625/yr",
@@ -9996,6 +10525,13 @@
   "date_posted": "2026-08-11",
   "first_seen": "2026-08-28",
   "location": "Redmond, WA",
+  "locations": [
+   "Redmond, WA",
+   "Hawthorne, CA",
+   "Starbase, TX",
+   "Cape Canaveral, FL",
+   "Bastrop, TX"
+  ],
   "pay": "$135,000.00 - $175,000.00",
   "priority": false,
   "rationale": "IT storage engineering; no energy or power infrastructure connection.",
@@ -10020,9 +10556,12 @@
   "url": "https://www.indeed.com/viewjob?jk=cb5a0c88d875cfbe"
  },
  "408a00152f62e8c8": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-21",
   "location": "Newton, MA, US",
   "pay": "",
@@ -10282,6 +10821,10 @@
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-19",
   "location": "Oak Brook, IL, US",
+  "locations": [
+   "Oak Brook, IL, US",
+   "3 Locations"
+  ],
   "pay": "$120,000\u2013$207,700/yr",
   "priority": true,
   "rationale": "Senior manager-level substation design/project engineering at GE Vernova; PM-adjacent role in grid infrastructure.",
@@ -10314,6 +10857,12 @@
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-29",
   "location": "Tracy, CA, US, 95377",
+  "locations": [
+   "Tracy, CA, US, 95377",
+   "West Sacramento, CA, US, 95605",
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Technical project engineer in power generation; field/project engineering work below target seniority and scope.",
@@ -10419,9 +10968,12 @@
   "work_mode": ""
  },
  "4342c1174b3e421b": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -10454,9 +11006,12 @@
   "work_mode": ""
  },
  "437d92744cb7d610": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Helena, MT, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -10536,9 +11091,12 @@
   "work_mode": "remote"
  },
  "43f8d53df5a61f07": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "West Sacramento, CA, US, 95605",
   "pay": "",
@@ -10671,6 +11229,14 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Plano, TX, US",
+  "locations": [
+   "Plano, TX, US",
+   "Middleton, WI, US",
+   "Austin, TX, US",
+   "Houston, TX, US",
+   "Westminster, CO, US",
+   "Raleigh, NC, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Lead substation engineer in grid infrastructure; senior IC fit but engineering IC not PM-track.",
@@ -10706,6 +11272,10 @@
   "date_posted": "2026-07-24",
   "first_seen": "2026-08-28",
   "location": "Hawthorne, CA",
+  "locations": [
+   "Hawthorne, CA",
+   "Starbase, TX"
+  ],
   "pay": "$105,000.00 - $122,500.00/per",
   "priority": false,
   "rationale": "Satellite avionics power system engineering; aerospace-specific design, unrelated to grid, energy storage, or datacenter infrastructure.",
@@ -10732,9 +11302,12 @@
   "url": "https://jobs.ashbyhq.com/crusoe/cfb7a446-f184-4c96-a473-9d120df0cb7e"
  },
  "457e78df88e83634": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Neenah, WI, US",
   "pay": "$500K to $10",
@@ -10852,9 +11425,12 @@
   "work_mode": ""
  },
  "45fa416b59b51d5f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Richmond, VA, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -10913,9 +11489,12 @@
   "work_mode": "remote"
  },
  "462a7ba468b887e9": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -11275,9 +11854,12 @@
   "work_mode": "remote"
  },
  "4759f9e4ab81c32a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "M2X Energy Inc",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Melbourne, FL, US",
   "pay": "$135,000\u2013$175,000/yr",
@@ -11301,6 +11883,11 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-01",
   "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US",
+   "Denver, CO, US",
+   "Atlanta, GA, US"
+  ],
   "pay": "$127,100\u2013$171,900/yr",
   "priority": false,
   "rationale": "TIPM II for data center material development at Amazon (Austin); same as Denver\u2014AWS infrastructure program management with tactical coordination focus.",
@@ -11393,6 +11980,16 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-08-26",
   "location": "Cambridge, MA, US",
+  "locations": [
+   "Cambridge, MA, US",
+   "Washington, DC, US",
+   "New York, NY, US",
+   "Durham, NC, US",
+   "Raleigh, NC, US",
+   "Reston, VA, US",
+   "Atlanta, GA, US",
+   "San Francisco, CA, US"
+  ],
   "pay": "$176,000\u2013$256,000/yr",
   "priority": true,
   "rationale": "Manager energy market development PJM/FERC at Google; manager-level strategy role directly relevant to grid markets/interconnection.",
@@ -11472,9 +12069,12 @@
   "url": "https://www.indeed.com/viewjob?jk=ecae549d80978a0f"
  },
  "48f57145862dc073": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Phoenix, AZ, US",
   "pay": "",
@@ -11687,6 +12287,10 @@
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-28",
   "location": "Starbase, TX",
+  "locations": [
+   "Starbase, TX",
+   "Cape Canaveral, FL"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Natural gas trading and supply optimization; has energy market element but commodity-trading focus rather than strategic product, BESS, or datacenter energy procurement.",
@@ -11698,9 +12302,12 @@
   "work_mode": "remote"
  },
  "4b09727578985f54": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Guidehouse",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Boston, MA, US",
   "pay": "$89,000\u2013$148,000/yr",
@@ -11765,9 +12372,12 @@
   "work_mode": "onsite"
  },
  "4b8a72369315dc09": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "ONENERGY",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Houston, TX, US",
   "pay": "",
@@ -11813,9 +12423,12 @@
   "work_mode": ""
  },
  "4bf39765ef5d3d7d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Houston, TX, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -11876,9 +12489,12 @@
   "work_mode": ""
  },
  "4c609aac9e56c9a3": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Salt Lake City, UT, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -11913,6 +12529,15 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "Redding, CA, US, 96002",
+  "locations": [
+   "Redding, CA, US, 96002",
+   "Rocklin, CA, US, 95765",
+   "Oakland, CA, US, 94612",
+   "Stockton, CA, US, 95215",
+   "San Ramon, CA, US, 94583",
+   "Danville, CA, US, 94583",
+   "Lodi, CA, US, 95240"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Power generation project management analyst; operations/analyst level project support, not strategic PM.",
@@ -11924,9 +12549,12 @@
   "work_mode": ""
  },
  "4cc1fc799a905755": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Milwaukee, WI, US",
   "pay": "$500K to $10",
@@ -11940,9 +12568,12 @@
   "work_mode": "onsite"
  },
  "4ccaeb1d93e9a1d5": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "WEBSTER, KY, US, 42450",
   "pay": "",
@@ -12377,6 +13008,10 @@
   "date_posted": "",
   "first_seen": "2026-08-28",
   "location": "Singapore, Singapore-Suntec Tower",
+  "locations": [
+   "Singapore, Singapore-Suntec Tower",
+   "India, Bengaluru"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Solutions architect for datacenter MEP (Singapore); technical consulting/presales architecture, not product/strategy",
@@ -12388,9 +13023,12 @@
   "work_mode": ""
  },
  "4f717b4f2dd6e8ea": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "San Ramon, CA, US, 94583",
   "pay": "",
@@ -12500,9 +13138,12 @@
   "work_mode": "remote"
  },
  "50324d368f764292": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Auberry, CA, US, 93602",
   "pay": "",
@@ -12526,6 +13167,13 @@
   "date_posted": "",
   "first_seen": "2026-08-28",
   "location": "",
+  "locations": [
+   "",
+   "Palo, IA, US, 52324",
+   "Houston, TX, US, 77002",
+   "Juno Beach, FL, US, 33408",
+   "WEBSTER, KY, US, 42450"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Manager of interconnection services; high fit for interconnection expertise, seniority-matched.",
@@ -12606,9 +13254,12 @@
   "work_mode": "hybrid"
  },
  "50961d96261b64fc": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Salt Lake City, UT, US",
   "pay": "",
@@ -12680,6 +13331,10 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Palm Beach Gardens, FL, US",
+  "locations": [
+   "Palm Beach Gardens, FL, US",
+   "Chattanooga, TN, US"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Lead engineer for protection and control systems; senior IC in grid domain but IC track, not product/strategy.",
@@ -12696,6 +13351,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-29",
   "location": "Weirton, WV, US",
+  "locations": [
+   "Weirton, WV, US",
+   "Berkeley, CA, US"
+  ],
   "pay": "$111,880\u2013$160,807/yr",
   "priority": false,
   "rationale": "Staff supply chain systems analyst at energy storage company; operations/supply chain function, not product/strategy.",
@@ -12717,6 +13376,10 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
   "location": "Remote-Friendly, United States",
+  "locations": [
+   "Remote-Friendly, United States",
+   "Tokyo, Japan"
+  ],
   "pay": "$320,000",
   "priority": true,
   "rationale": "Senior data center electrical engineer (US); technical leadership in DC electrical design including power architecture; relevant to datacenter power but not energy markets or BESS strategy.",
@@ -12808,6 +13471,10 @@
   "date_posted": "",
   "first_seen": "2026-08-28",
   "location": "3 Locations",
+  "locations": [
+   "3 Locations",
+   "Noida"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Lead engineer for electrical components (3 locations); electrical design IC, not product/strategy",
@@ -12819,9 +13486,12 @@
   "work_mode": ""
  },
  "5275512fa08eb0d8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "San Ramon, CA, US, 94583",
   "pay": "",
@@ -12840,9 +13510,12 @@
   "work_mode": ""
  },
  "527b92a8519260bb": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Hyderabad, India; India",
   "pay": "",
@@ -12931,9 +13604,12 @@
   "work_mode": ""
  },
  "52e2b87fee2d1c44": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Lappeenranta, Finland",
   "pay": "",
@@ -12965,9 +13641,12 @@
   "url": "https://www.indeed.com/viewjob?jk=b1ff55737c9437de"
  },
  "533689f6457a7e83": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Milwaukee, WI, US",
   "pay": "",
@@ -13023,9 +13702,12 @@
   "work_mode": "onsite"
  },
  "5357ce87527ed08d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Juno Beach, FL, US, 33408",
   "pay": "",
@@ -13095,9 +13777,12 @@
   "work_mode": "remote"
  },
  "53e761a45327ef1d": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "Brea, CA, US",
   "pay": "$125,000\u2013$350,000/yr",
@@ -13132,6 +13817,10 @@
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-14",
   "location": "Teaneck, NJ, US",
+  "locations": [
+   "Teaneck, NJ, US",
+   "Santa Clara, CA, US"
+  ],
   "pay": "$185,300\u2013$250,100/yr",
   "priority": true,
   "rationale": "Director of commissioning and field services for ESS solutions at Qcells; director-level role in BESS operations/deployment at major renewable company.",
@@ -13159,9 +13848,12 @@
   "work_mode": "remote"
  },
  "545c07361e5e6d00": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Starbase, TX",
   "pay": "",
@@ -13228,9 +13920,12 @@
   "url": "https://coreweave.com/careers/job?4696658006&board=coreweave&gh_jid=4696658006"
  },
  "55151b4cdeb8cc6f": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Washington, DC, US",
   "pay": "$176,000\u2013$256,000/yr",
@@ -13244,9 +13939,12 @@
   "work_mode": ""
  },
  "55236d28363f7069": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-07-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Memphis, TN",
   "pay": "",
@@ -13416,9 +14114,12 @@
   "work_mode": "remote"
  },
  "564784bee3efbba5": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Guidehouse",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "New York, NY, US",
   "pay": "$89,000\u2013$148,000/yr",
@@ -13472,6 +14173,10 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US",
+   "Seattle, WA, US"
+  ],
   "pay": "$116,800\u2013$160,000/yr",
   "priority": false,
   "rationale": "AWS technical design engineer in data center electrical systems but deep technical IC design role, not product/strategy/commercial leadership.",
@@ -13530,6 +14235,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "Edison, NJ, US",
+  "locations": [
+   "Edison, NJ, US",
+   "San Diego, CA, US"
+  ],
   "pay": "$173,225\u2013$216,530/yr",
   "priority": false,
   "rationale": "Director-level at SOLV (solar/BESS company), strong domain fit; but finance/accounting transformation role rather than product/strategy/commercial",
@@ -13730,6 +14439,22 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-26",
   "location": "Walnut Creek, CA, US",
+  "locations": [
+   "Walnut Creek, CA, US",
+   "Conshohocken, PA, US",
+   "Los Angeles, CA, US",
+   "San Diego, CA, US",
+   "Atlanta, GA, US",
+   "Orlando, FL, US",
+   "Charlotte, NC, US",
+   "Newton, MA, US",
+   "Morristown, NJ, US",
+   "Nashville, TN, US",
+   "Chicago, IL, US",
+   "Brea, CA, US",
+   "Denver, CO, US",
+   "Portland, ME, US"
+  ],
   "pay": "$125,000\u2013$350,000/yr",
   "priority": true,
   "rationale": "Transmission planning consultant role at Burns & McDonnell directly matches interconnection strategy expertise; senior individual-contributor strategy fit.",
@@ -13762,6 +14487,10 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
   "location": "Remote-Friendly, United States",
+  "locations": [
+   "Remote-Friendly, United States",
+   "Remote, US"
+  ],
   "pay": "$320,000",
   "priority": true,
   "rationale": "Strategic energy scheduling and portfolio lead for non-cloud datacenters; directly relevant\u2014energy markets, utility coordination, electricity/gas scheduling, behind-the-meter plants align with candidate's grid and energy expertise.",
@@ -13842,9 +14571,12 @@
   "work_mode": ""
  },
  "5959350823a7e79e": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Anthropic",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "Remote, US",
   "pay": "$320,000\u2013$405,000/yr",
@@ -13920,6 +14652,10 @@
   "date_posted": "2026-07-24",
   "first_seen": "2026-08-28",
   "location": "Cape Canaveral, FL",
+  "locations": [
+   "Cape Canaveral, FL",
+   "Starbase, TX"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Electrical engineering for launch pad (duplicate location)\u2014power distribution and controls infrastructure but aerospace launch site, not datacenter/energy strategy.",
@@ -13936,6 +14672,14 @@
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-29",
   "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408",
+   "Houston, TX, US, 77002",
+   "Palm Beach Gardens, FL, US, 33410",
+   "WEBSTER, KY, US, 42450",
+   "Jupiter, FL, US, 33478",
+   "Palo, IA, US, 52324"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "PM for BESS at NextEra; PM role in core BESS domain at strong company, though SME framing suggests technical project management over product strategy.",
@@ -14070,9 +14814,12 @@
   "work_mode": ""
  },
  "5b04adefe8259cd2": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Oracle",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "VA, US",
   "pay": "",
@@ -14186,9 +14933,12 @@
   "work_mode": ""
  },
  "5b942844a004f0fe": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-21",
   "location": "Conshohocken, PA, US",
   "pay": "",
@@ -14242,9 +14992,12 @@
   "work_mode": "remote"
  },
  "5be285e8372d9f55": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Baker Tilly Canada",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Milwaukee, WI, US",
   "pay": "$59,400\u2013$236,800/yr",
@@ -14263,9 +15016,12 @@
   "work_mode": ""
  },
  "5bf5af39ff417f2c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Montgomery, AL, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -14303,9 +15059,12 @@
   "work_mode": ""
  },
  "5c753099c8c6cc7e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -14338,9 +15097,12 @@
   "url": "https://jobs.ashbyhq.com/crusoe/d997f139-93a7-452b-8b45-676026afeb82"
  },
  "5ca1173fe71de5f9": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Arganteal, Corp.",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-19",
   "location": "Frisco, TX, US",
   "pay": "Negotiated based on scope and experience",
@@ -14354,9 +15116,12 @@
   "work_mode": "remote"
  },
  "5ce5598bff5e7e01": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "M2X Energy Inc",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Cape Canaveral, FL, US",
   "pay": "$135,000\u2013$175,000/yr",
@@ -14523,9 +15288,12 @@
   "url": "https://www.indeed.com/viewjob?jk=c654174c9acc1108"
  },
  "5dbc22e1517851c0": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -14649,9 +15417,12 @@
   "work_mode": ""
  },
  "5e7d4d67fce6cae5": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "GE Vernova",
   "date_posted": "",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "3 Locations",
   "pay": "",
@@ -14697,9 +15468,12 @@
   "work_mode": "remote"
  },
  "5ecf8de348e2e4fc": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-29",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "Florida City, FL, US, 33035",
   "pay": "",
@@ -14758,6 +15532,10 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-27",
   "location": "North Haven, CT",
+  "locations": [
+   "North Haven, CT",
+   "Bloomingdale, IL"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Electrical supervisor at distributed battery company (Base) is field operations leadership, not product/strategy; wrong functional scope despite correct domain.",
@@ -14825,9 +15603,12 @@
   "url": "https://www.indeed.com/viewjob?jk=22d30a2cc7c59d52"
  },
  "5f291bc937e7aac5": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Redding, CA, US, 96003",
   "pay": "",
@@ -14953,6 +15734,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "Palo Alto, CA, US",
+  "locations": [
+   "Palo Alto, CA, US",
+   "Austin, TX, US"
+  ],
   "pay": "$100,000\u2013$228,000/yr",
   "priority": true,
   "rationale": "Tesla Sr. Professional Electrical Engineer for Supercharger/charging infrastructure; deep technical electrical engineering IC specialist role, not product/strategy focus",
@@ -15061,9 +15846,12 @@
   "work_mode": "remote"
  },
  "6169c8a1750385d2": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Vantage Data Centers",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "CA, US",
   "pay": "$165,000\u2013$180,000/yr",
@@ -15082,9 +15870,12 @@
   "work_mode": "remote"
  },
  "6183d0bf8e437e54": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Tallinn, Estonia",
   "pay": "",
@@ -15130,9 +15921,12 @@
   "work_mode": "hybrid"
  },
  "61dfd6c0a128011d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Conshohocken, PA, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -15202,9 +15996,12 @@
   "work_mode": "remote"
  },
  "627ebfca20b06f15": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Form Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Berkeley, CA, US",
   "pay": "$111,880\u2013$160,807/yr",
@@ -15228,6 +16025,10 @@
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612",
+   "Rocklin, CA, US, 95765"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Expert engineer for grid technology; senior IC expert in grid domain but pure technical expert IC, not PM/product/strategy leadership.",
@@ -15273,9 +16074,12 @@
   "work_mode": ""
  },
  "6303753a6149c915": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Amazon.com",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Seattle, WA, US",
   "pay": "$116,800\u2013$160,000/yr",
@@ -15353,9 +16157,12 @@
   "work_mode": ""
  },
  "63703bd232afc0fd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Anthropic",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Sydney, Australia",
   "pay": "",
@@ -15515,9 +16322,12 @@
   "work_mode": "onsite"
  },
  "6475a6f1e75a6fb1": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Altoona, IA, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -15536,9 +16346,12 @@
   "work_mode": ""
  },
  "647c723745997f0b": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -15573,9 +16386,12 @@
   "work_mode": ""
  },
  "64b7293f201b5a4e": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Anduril",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Santa Ana, CA, US",
   "pay": "$191,000\u2013$253,000/yr",
@@ -15624,9 +16440,12 @@
   "work_mode": ""
  },
  "64d5cfc40f6bf7d4": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Lebanon, IN, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -15722,6 +16541,10 @@
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-25",
   "location": "Henderson, NV, US",
+  "locations": [
+   "Henderson, NV, US",
+   "Reno, NV, US"
+  ],
   "pay": "$141,590\u2013$176,987/yr",
   "priority": false,
   "rationale": "Senior PM for utility-scale solar EPC; energy PM title but project execution focus, not product/strategy.",
@@ -15794,6 +16617,10 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-26",
   "location": "Remote, US",
+  "locations": [
+   "Remote, US",
+   "Remote-Friendly, United States"
+  ],
   "pay": "$320,000\u2013$405,000/yr",
   "priority": true,
   "rationale": "Equipment development lead outside core skill set; domain adjacency (power delivery at hyperscaler) offset by no equipment-development experience; explicit feedback calibrates to 55-65.",
@@ -15950,9 +16777,12 @@
   "work_mode": "remote"
  },
  "674167cb3de08011": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Hayward, CA, US, 94545",
   "pay": "",
@@ -16048,6 +16878,11 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "Kansas City, Missouri, United States",
+  "locations": [
+   "Kansas City, Missouri, United States",
+   "Oklahoma, United States",
+   "Minnesota, United States"
+  ],
   "pay": "$112,700.00 - $140,800.00",
   "priority": false,
   "rationale": "Hardware RMA and diagnostics; technical troubleshooting escalation without strategy scope.",
@@ -16091,9 +16926,12 @@
   "work_mode": ""
  },
  "6841c6d7d1d9d04e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Salt Lake City, UT, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -16116,6 +16954,10 @@
   "company": "National Louis University",
   "first_seen": "2026-08-14",
   "location": "Fremont, CA, US",
+  "locations": [
+   "Fremont, CA, US",
+   "Plano, TX, US"
+  ],
   "priority": false,
   "rationale": "Data center mechanical architect at university (data quality concern); infrastructure design but unclear scope.",
   "score": 55,
@@ -16130,6 +16972,11 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "Fort Mill, SC, US",
+  "locations": [
+   "Fort Mill, SC, US",
+   "Charlotte, NC, US",
+   "Frisco, TX, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Analyst-level position for recent graduates; entry-level electrical engineering, too junior.",
@@ -16157,9 +17004,12 @@
   "work_mode": ""
  },
  "6889b6c37098b3bd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "CUPERTINO ELECTRIC",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Edgerton, WI, US",
   "pay": "$100,000\u2013$140,000/yr",
@@ -16197,9 +17047,12 @@
   "work_mode": ""
  },
  "68dc47f3677dcacd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Cedar Rapids, IA, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -16462,9 +17315,12 @@
   "url": "https://coreweave.com/careers/job?4702521006&board=coreweave&gh_jid=4702521006"
  },
  "6a22890145464684": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "West Sacramento, CA, US, 95605",
   "pay": "",
@@ -16497,6 +17353,10 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
   "location": "Houston, TX, US, 77002",
+  "locations": [
+   "Houston, TX, US, 77002",
+   "Juno Beach, FL, US, 33408"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "NextEra is energy-domain, but Senior Attorney in transmission transactions is legal/corporate function, not product/strategy/technical.",
@@ -16513,9 +17373,12 @@
   "work_mode": ""
  },
  "6a71e96a03ad872d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Rosemount, MN, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -16681,9 +17544,12 @@
   "work_mode": "remote"
  },
  "6bf9c7c943ec3ea4": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Anduril",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "San Diego, CA, US",
   "pay": "$191,000\u2013$253,000/yr",
@@ -16702,6 +17568,14 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-22",
   "location": "Arlington, VA, US",
+  "locations": [
+   "Arlington, VA, US",
+   "Salt Lake City, UT, US",
+   "Seattle, WA, US",
+   "Los Angeles, CA, US",
+   "Portland, OR, US",
+   "Louisville, CO, US"
+  ],
   "pay": "$113,000\u2013$141,525/yr",
   "priority": true,
   "rationale": "Senior controls engineer at major global power utility (AES); secondary fit\u2014senior IC in energy domain.",
@@ -16865,9 +17739,12 @@
   "work_mode": "hybrid"
  },
  "6d375582cc6a62b6": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Rocklin, CA, US, 95765",
   "pay": "",
@@ -16881,9 +17758,12 @@
   "work_mode": ""
  },
  "6d4752a5d093974c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -16907,6 +17787,12 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "Missouri, United States",
+  "locations": [
+   "Missouri, United States",
+   "Oklahoma, United States",
+   "Paris, France",
+   "Lappeenranta, Finland"
+  ],
   "pay": "$147,200",
   "priority": false,
   "rationale": "Technical project manager for data center IT infrastructure; engineering-focused IC role with datacenter relevance.",
@@ -16952,9 +17838,12 @@
   "url": "https://www.indeed.com/viewjob?jk=8c4696ba286cb38c"
  },
  "6d7ef477d53875af": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Los Angeles, CA, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -17133,9 +18022,12 @@
   "work_mode": ""
  },
  "6f23d9fe033a55e6": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Lodi, CA, US, 95240",
   "pay": "",
@@ -17210,6 +18102,10 @@
   "date_posted": "2025-10-02",
   "first_seen": "2026-08-22",
   "location": "Arvada, CO - US",
+  "locations": [
+   "Arvada, CO - US",
+   "Tulsa, OK - US (2)"
+  ],
   "pay": "$160,000-$180,000",
   "priority": false,
   "rationale": "Staff-level electrical engineer at energy+AI company (Crusoe); strong domain but IC engineering track, not PM.",
@@ -17288,9 +18184,12 @@
   "work_mode": ""
  },
  "6ff8be940b6c0ac5": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Houston, TX, US",
   "pay": "",
@@ -17416,9 +18315,12 @@
   "work_mode": ""
  },
  "707680cdfff69c46": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Hayward, CA, US, 94545",
   "pay": "",
@@ -17496,9 +18398,12 @@
   "work_mode": "remote"
  },
  "70b7530bde626361": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Vantage Data Centers",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "IL, US",
   "pay": "$165,000\u2013$180,000/yr",
@@ -17517,9 +18422,12 @@
   "work_mode": "remote"
  },
  "70c0aac3bec4ef80": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Seattle, WA, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -17552,9 +18460,12 @@
   "work_mode": ""
  },
  "70e76448f17a116d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-07-24",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX",
   "pay": "",
@@ -17568,9 +18479,12 @@
   "work_mode": "onsite"
  },
  "71019a970ff9e3c5": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Fresno, CA, US, 93702",
   "pay": "",
@@ -17719,9 +18633,12 @@
   "work_mode": "onsite"
  },
  "723d412e2850b6c8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "CUPERTINO ELECTRIC",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "San Francisco Bay Area, CA, US",
   "pay": "$100,000\u2013$140,000/yr",
@@ -17761,6 +18678,11 @@
   "date_posted": "2026-04-13",
   "first_seen": "2026-09-01",
   "location": "DeKalb, IL, US",
+  "locations": [
+   "DeKalb, IL, US",
+   "Eagle Mountain, UT, US",
+   "Altoona, IA, US"
+  ],
   "pay": "$135,000\u2013$191,000/yr",
   "priority": false,
   "rationale": "Hands-on network infrastructure deployment and operations; feedback explicitly flags this domain as less-like.",
@@ -17972,6 +18894,10 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Chatsworth, CA, US",
+  "locations": [
+   "Chatsworth, CA, US",
+   "Houston, TX, US"
+  ],
   "pay": "$70,000\u2013$80,000/yr",
   "priority": false,
   "rationale": "Project Engineer in Chatsworth; no company/description, unclear function.",
@@ -17983,9 +18909,12 @@
   "work_mode": "remote"
  },
  "73d5d92361ca1786": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Houston, TX, US, 77002",
   "pay": "",
@@ -17999,9 +18928,12 @@
   "work_mode": ""
  },
  "73f5ecf8d7510d12": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Juno Beach, FL, US, 33408",
   "pay": "",
@@ -18076,9 +19008,12 @@
   "work_mode": "onsite"
  },
  "74bfb79e0237465b": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Kimley-Horn",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Charlotte, NC, US",
   "pay": "",
@@ -18106,9 +19041,12 @@
   "url": "https://jobs.ashbyhq.com/base-power/01d90134-1fc2-4a24-89b9-e79fe5b001ad"
  },
  "74e656d28801e10a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Olympia, WA, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -18415,9 +19353,12 @@
   "work_mode": "remote"
  },
  "7756db77f394d3c0": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Anthropic",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Remote-Friendly, United States",
   "pay": "$320,000",
@@ -18469,9 +19410,12 @@
   "work_mode": "hybrid"
  },
  "7792ff29ee3db572": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oklahoma, United States",
   "pay": "$147,200",
@@ -18543,8 +19487,11 @@
   "work_mode": ""
  },
  "77d77bf472a3816b": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "IES ELECTRICAL",
+  "duplicate": true,
   "first_seen": "2026-08-14",
   "location": "Pecos, TX, US",
   "priority": false,
@@ -18644,9 +19591,12 @@
   "work_mode": ""
  },
  "789f349a6073a0c8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Kimley-Horn",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Greenwood Village, CO, US",
   "pay": "$110,000\u2013$165,000/yr",
@@ -18681,6 +19631,10 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
   "location": "Piketon, OH",
+  "locations": [
+   "Piketon, OH",
+   "Lubbock, TX"
+  ],
   "pay": "$115,000-$170,000",
   "priority": false,
   "rationale": "Technical electrical design leadership; seniority below target, outside strategy scope.",
@@ -18724,9 +19678,12 @@
   "work_mode": "hybrid"
  },
  "7929da45364e7fd7": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Salem, OR, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -18764,9 +19721,12 @@
   "work_mode": ""
  },
  "7953e5c0b34b0474": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Stockton, CA, US, 95215",
   "pay": "",
@@ -18822,9 +19782,12 @@
   "work_mode": ""
  },
  "79a27a9c7299399c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "La Crosse, WI, US",
   "pay": "$500K to $10",
@@ -19201,6 +20164,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-01",
   "location": "Phoenix, AZ, US",
+  "locations": [
+   "Phoenix, AZ, US",
+   "Harwood, ND, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Principal low-voltage cabling engineer; despite title, feedback marks deep technical design roles (CAD, cabling infrastructure) below scope.",
@@ -19233,9 +20200,12 @@
   "work_mode": ""
  },
  "7bbc1b49b2d5be67": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Lodi, CA, US, 95240",
   "pay": "",
@@ -19302,8 +20272,11 @@
   "work_mode": "remote"
  },
  "7c9b9b0f7d02fad3": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Shades of Grey HR",
+  "duplicate": true,
   "first_seen": "2026-08-14",
   "location": "Remote, US",
   "priority": true,
@@ -19379,9 +20352,12 @@
   "url": "https://www.indeed.com/viewjob?jk=91635df9bc23cbfc"
  },
  "7dd1a2404007fd97": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "WEBSTER, KY, US, 42450",
   "pay": "",
@@ -19437,6 +20413,11 @@
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
   "location": "Dallas, TX, US",
+  "locations": [
+   "Dallas, TX, US",
+   "Austin, TX, US",
+   "Houston, TX, US"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Transmission planning PM aligns with ICA/interconnection background but is engineering project management, not product leadership.",
@@ -19464,9 +20445,12 @@
   "work_mode": ""
  },
  "7eb092f59a793999": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Deloitte",
   "date_posted": "2026-08-22",
+  "duplicate": true,
   "first_seen": "2026-08-23",
   "location": "Morristown, NJ, US",
   "pay": "$171,600\u2013$338,300/yr",
@@ -19496,9 +20480,12 @@
   "work_mode": ""
  },
  "7f0e8bd1d7dc3681": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Appleton, WI, US",
   "pay": "",
@@ -19522,6 +20509,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-01",
   "location": "Harwood, ND, US",
+  "locations": [
+   "Harwood, ND, US",
+   "West Jordan, UT, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Senior low-voltage cabling engineer; feedback flags technical design engineering (cabling, infrastructure) as below target scope.",
@@ -19755,9 +20746,12 @@
   "url": "https://jobs.ashbyhq.com/base-power/59ee140c-cd57-423a-81cd-14f71b11e2dd"
  },
  "808209b4aff26d1f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Louisville, CO, US",
   "pay": "$94,000\u2013$112,625/yr",
@@ -19888,9 +20882,12 @@
   "work_mode": ""
  },
  "812955b66d076e61": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Remote - Europe",
   "pay": "",
@@ -19979,8 +20976,11 @@
   "work_mode": "remote"
  },
  "81661d74892ee55d": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Quanta Infrastructure Solutions Group",
+  "duplicate": true,
   "first_seen": "2026-08-13",
   "location": "Columbus, OH, US",
   "priority": false,
@@ -20080,6 +21080,17 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
   "location": "Saint Cloud, MN, US",
+  "locations": [
+   "Saint Cloud, MN, US",
+   "Minneapolis, MN, US",
+   "Otsego, MN, US",
+   "Brainerd, MN, US",
+   "Neenah, WI, US",
+   "Madison, WI, US",
+   "Eau Claire, WI, US",
+   "Milwaukee, WI, US",
+   "Appleton, WI, US"
+  ],
   "pay": "$157,000\u2013$216,000/yr",
   "priority": true,
   "rationale": "Energy/grid domain and senior PM seniority but T&D construction project management focus rather than BESS/datacenter power strategy.",
@@ -20096,9 +21107,12 @@
   "work_mode": "onsite"
  },
  "826a8ce5b58bebea": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Oracle",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "West Jordan, UT, US",
   "pay": "",
@@ -20290,9 +21304,12 @@
   "work_mode": "remote"
  },
  "840653c96870a693": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Clearway Energy",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "Denver, CO, US",
   "pay": "$140,000\u2013$195,000/yr",
@@ -20486,9 +21503,12 @@
   "work_mode": ""
  },
  "851ab747ff739827": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Arlington, VA, US",
   "pay": "$145,000\u2013$181,050/yr",
@@ -20559,9 +21579,12 @@
   "work_mode": ""
  },
  "8555873e842ae55c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-30",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Huntsville, AL, US",
   "pay": "$138,000\u2013$196,000/yr",
@@ -20653,6 +21676,10 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Englewood, CO, US",
+  "locations": [
+   "Englewood, CO, US",
+   "Palm Beach Gardens, FL, US"
+  ],
   "pay": "$85,679\u2013$130,899/yr",
   "priority": true,
   "rationale": "Senior wiring designer for grid is grid-relevant but CAD/design technician role; below PM/strategy level.",
@@ -20717,9 +21744,12 @@
   "work_mode": "onsite"
  },
  "86286385cc620d73": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Carson City, NV, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -20781,6 +21811,10 @@
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-19",
   "location": "Chattanooga, TN, US",
+  "locations": [
+   "Chattanooga, TN, US",
+   "Fort Worth, TX, US"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Lead engineer in substation protection & control at grid firm; relevant domain and lead level but IC engineering role, not product or strategy.",
@@ -20792,9 +21826,12 @@
   "work_mode": ""
  },
  "86ab1170404df502": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Minneapolis, MN, US",
   "pay": "$157,000\u2013$216,000/yr",
@@ -20818,6 +21855,12 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "Kansas City, Missouri, United States",
+  "locations": [
+   "Kansas City, Missouri, United States",
+   "London, United Kingdom",
+   "Tallinn, Estonia",
+   "Newport, United Kingdom"
+  ],
   "pay": "$146,880 \u2013 $220,320",
   "priority": false,
   "rationale": "Data center IT manager (Kansas City); IT operations manager for AI infrastructure, not strategy.",
@@ -20829,9 +21872,12 @@
   "work_mode": "onsite"
  },
  "86c00e3c81dd0a79": {
+  "active": false,
   "band": "top",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-15",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Jupiter, FL, US, 33478",
   "pay": "",
@@ -21001,9 +22047,12 @@
   "work_mode": "onsite"
  },
  "88a62b05821ff9cf": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Rocklin, CA, US, 95765",
   "pay": "",
@@ -21137,6 +22186,12 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "West Sacramento, CA, US, 95605",
+  "locations": [
+   "West Sacramento, CA, US, 95605",
+   "Redding, CA, US, 96002",
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Entry-level substation engineer; lacks product/strategy orientation.",
@@ -21202,9 +22257,12 @@
   "work_mode": ""
  },
  "89a4d57f829b5991": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Boise, ID, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -21257,9 +22315,12 @@
   "work_mode": "hybrid"
  },
  "8a005aee32937e2d": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Tallinn, Estonia",
   "pay": "",
@@ -21326,9 +22387,12 @@
   "url": "https://www.indeed.com/viewjob?jk=a1573f0a73dc2d9a"
  },
  "8a34c79049e88525": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "Louisville, CO, US",
   "pay": "$94,000\u2013$112,625/yr",
@@ -21424,8 +22488,11 @@
   "work_mode": "remote"
  },
  "8b9c627c637c2d7c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "National Louis University",
+  "duplicate": true,
   "first_seen": "2026-08-14",
   "location": "Plano, TX, US",
   "priority": false,
@@ -21543,9 +22610,12 @@
   "work_mode": "hybrid"
  },
  "8c013f724823c632": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Neara",
   "date_posted": "2026-05-22",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "New York City",
   "pay": "$180K \u2013 $250K \u00b7 Offers Equity",
@@ -21559,9 +22629,12 @@
   "work_mode": "remote"
  },
  "8c38020c701d50ed": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Clearway Energy",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "San Diego, CA, US",
   "pay": "$140,000\u2013$195,000/yr",
@@ -21591,9 +22664,12 @@
   "work_mode": ""
  },
  "8c60003812e9ca76": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "San Ramon, CA, US, 94583",
   "pay": "",
@@ -21667,9 +22743,12 @@
   "work_mode": ""
  },
  "8cb84313677dfe41": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Ingersoll-Rand",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Sidney, OH, US",
   "pay": "$100,000\u2013$130,000/yr",
@@ -21709,9 +22788,12 @@
   "work_mode": ""
  },
  "8cec43ba3760ad44": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Arganteal, Corp.",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-19",
   "location": "San Antonio, TX, US",
   "pay": "Negotiated based on scope and experience",
@@ -21816,9 +22898,12 @@
   "work_mode": ""
  },
  "8d6c2f0e61672a79": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Louisville, CO, US",
   "pay": "$145,000\u2013$181,050/yr",
@@ -21837,9 +22922,12 @@
   "work_mode": "remote"
  },
  "8d8e847e4e31683c": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-29",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "Palm Beach Gardens, FL, US, 33410",
   "pay": "",
@@ -22044,9 +23132,12 @@
   "url": "https://coreweave.com/careers/job?4703535006&board=coreweave&gh_jid=4703535006"
  },
  "8eaa9a139348ddbd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Columbus, OH, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -22145,6 +23236,14 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-20",
   "location": "Santa Ana, CA, US",
+  "locations": [
+   "Santa Ana, CA, US",
+   "Los Angeles, CA, US",
+   "Orange, CA, US",
+   "San Diego, CA, US",
+   "Costa Mesa, CA, US",
+   "Irvine, CA, US"
+  ],
   "pay": "$191,000\u2013$253,000/yr",
   "priority": false,
   "rationale": "Energy systems lead at defense-aerospace company (Anduril); vehicle/EV battery systems focus, not grid/utility/BESS strategy, and IC lead vs. director.",
@@ -22331,9 +23430,12 @@
   "work_mode": ""
  },
  "901ee0612b622714": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Austin, TX, US",
   "pay": "",
@@ -22347,9 +23449,12 @@
   "work_mode": ""
  },
  "903a6efdc9567c53": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Anduril",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Los Angeles, CA, US",
   "pay": "$191,000\u2013$253,000/yr",
@@ -22399,6 +23504,10 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-29",
   "location": "Somerville, MA, US",
+  "locations": [
+   "Somerville, MA, US",
+   "Berkeley, CA, US"
+  ],
   "pay": "$147,959\u2013$184,966/yr",
   "priority": false,
   "rationale": "Staff data engineer at long-duration energy storage company; energy storage domain but technical data platform IC, not strategy.",
@@ -22415,9 +23524,12 @@
   "work_mode": "onsite"
  },
  "905acc9d2cc6e7c2": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Sargent & Lundy",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-21",
   "location": "Palm Beach Gardens, FL, US",
   "pay": "$85,679\u2013$130,899/yr",
@@ -22431,9 +23543,12 @@
   "work_mode": "remote"
  },
  "905f02d560d34908": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Oracle",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Chicago, IL, US",
   "pay": "",
@@ -22478,6 +23593,15 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612",
+   "Redding, CA, US, 96002",
+   "San Ramon, CA, US, 94583",
+   "Danville, CA, US, 94583",
+   "Auberry, CA, US, 93602",
+   "West Sacramento, CA, US, 95605",
+   "Hayward, CA, US, 94545"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Technical civil engineering role for power generation; too deep-technical design focus outside strategic wheelhouse.",
@@ -22621,9 +23745,12 @@
   "work_mode": "remote"
  },
  "915e336f04e3adee": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SB Energy",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Lubbock, TX",
   "pay": "$115,000-$170,000",
@@ -22730,6 +23857,13 @@
   "date_posted": "2026-07-10",
   "first_seen": "2026-08-28",
   "location": "Houston",
+  "locations": [
+   "Houston",
+   "Los Angeles",
+   "San Francisco",
+   "Denver",
+   "New York City"
+  ],
   "pay": "$180K \u2013 $250K \u00b7 Offers Equity",
   "priority": false,
   "rationale": "Director, Customer Implementation (Houston); same role profile and domain as San Francisco posting.",
@@ -22778,6 +23912,10 @@
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-25",
   "location": "Sunnyvale, CA, US",
+  "locations": [
+   "Sunnyvale, CA, US",
+   "San Francisco, CA - US"
+  ],
   "pay": "$285,000\u2013$335,000/yr",
   "priority": true,
   "rationale": "Director of engineering for compute infrastructure at Crusoe (energy-first AI company); director-level technical leadership in AI/datacenter infrastructure within energy context.",
@@ -22789,9 +23927,12 @@
   "work_mode": ""
  },
  "92d79c0e0c149331": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "AR, US",
   "pay": "$150,000\u2013$217,000/yr",
@@ -22853,6 +23994,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-01",
   "location": "Menlo Park, CA, US",
+  "locations": [
+   "Menlo Park, CA, US",
+   "Remote, US"
+  ],
   "pay": "$220,000\u2013$265,000/yr",
   "priority": false,
   "rationale": "Datacenter site operations leadership lacks energy/power strategy focus; no domain connection.",
@@ -22937,6 +24082,17 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "",
+  "locations": [
+   "",
+   "Chico, CA, US, 95928",
+   "Oakland, CA, US, 94612",
+   "West Sacramento, CA, US, 95605",
+   "Auberry, CA, US, 93602",
+   "Danville, CA, US, 94583",
+   "Tracy, CA, US, 95377",
+   "Hayward, CA, US, 94545",
+   "Fresno, CA, US, 93702"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Electrical project engineer for power generation; deep technical design IC role too far from product/strategy scope.",
@@ -23215,9 +24371,12 @@
   "work_mode": ""
  },
  "965b77dc0f106af9": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Denver, CO, US",
   "pay": "$120,000\u2013$350,000/yr",
@@ -23364,9 +24523,12 @@
   "work_mode": "onsite"
  },
  "975c4e5f05ec913d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "New York, NY, US",
   "pay": "$176,000\u2013$256,000/yr",
@@ -23380,9 +24542,12 @@
   "work_mode": ""
  },
  "977eed4a3d6afc1a": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Arlington, VA, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -23454,6 +24619,10 @@
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
   "location": "Oak Ridge, TN, US",
+  "locations": [
+   "Oak Ridge, TN, US",
+   "Remote, US"
+  ],
   "pay": "$120,000\u2013$190,000/yr",
   "priority": true,
   "rationale": "Fire protection engineering, outside energy/power/datacenter domain.",
@@ -23478,9 +24647,12 @@
   "url": "https://www.indeed.com/viewjob?jk=a656784d6825f0de"
  },
  "97d9d4bfda1d3ed5": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "West Sacramento, CA, US, 95605",
   "pay": "",
@@ -23523,9 +24695,12 @@
   "work_mode": "remote"
  },
  "98138f6ac332cda2": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Beaver Dam, WI, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -23571,9 +24746,12 @@
   "url": "https://www.indeed.com/viewjob?jk=5827891c08ce9d76"
  },
  "99033e0974eb3d3f": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Las Vegas, NV, US",
   "pay": "",
@@ -23674,9 +24852,12 @@
   "work_mode": "remote"
  },
  "9a8af867e2ec1e84": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Clarios",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "Holland, OH, US",
   "pay": "",
@@ -23690,9 +24871,12 @@
   "work_mode": "onsite"
  },
  "9ac6257ef6cdb138": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "Durham, NC, US",
   "pay": "$176,000\u2013$256,000/yr",
@@ -23706,9 +24890,12 @@
   "work_mode": ""
  },
  "9ad32e9d82fce059": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "Los Angeles, CA, US",
   "pay": "$125,000\u2013$350,000/yr",
@@ -23727,6 +24914,10 @@
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-29",
   "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408",
+   "Florida City, FL, US, 33035"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Principal engineer in BESS at NextEra; strong BESS domain and company fit at senior IC level, though engineer title suggests technical depth over product strategy.",
@@ -23748,6 +24939,10 @@
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-15",
   "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US",
+   "Seattle, Washington, USA"
+  ],
   "pay": "$155,400\u2013$210,200/yr",
   "priority": true,
   "rationale": "Senior energy strategy manager for AWS datacenters; excellent fit combining energy procurement, utility partnerships, and AI datacenter power.",
@@ -23851,9 +25046,12 @@
   "work_mode": "onsite"
  },
  "9b9a94dc8aedfbd3": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Pensacola, FL, US",
   "pay": "",
@@ -23967,9 +25165,12 @@
   "work_mode": "onsite"
  },
  "9cd1bb1affacda14": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Auberry, CA, US, 93602",
   "pay": "",
@@ -23988,9 +25189,12 @@
   "work_mode": ""
  },
  "9cefbaed2fad704e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SB Energy",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, Texas",
   "pay": "$140,000-165,000",
@@ -24089,9 +25293,12 @@
   "work_mode": "remote"
  },
  "9da004d1c58219de": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Lincoln, NE, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -24227,6 +25434,10 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Denver, CO, US",
+  "locations": [
+   "Denver, CO, US",
+   "Houston, TX, US"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Senior power systems engineer in R&D at ONENERGY (energy storage focus); strong domain fit with secondary criteria for senior IC strategy role.",
@@ -24275,6 +25486,10 @@
   "date_posted": "2026-08-12",
   "first_seen": "2026-08-15",
   "location": "Redmond, WA, US",
+  "locations": [
+   "Redmond, WA, US",
+   "United States, Multiple Locations, Multiple Locations (+5 more)"
+  ],
   "pay": "$142,800\u2013$304,200/yr",
   "priority": true,
   "rationale": "Principal substation electrical engineer for datacenters at Microsoft; principal-level grid infrastructure role perfect for energy+AI datacenter fit.",
@@ -24363,6 +25578,10 @@
   "date_posted": "2026-06-02",
   "first_seen": "2026-08-28",
   "location": "Dallas, TX - US",
+  "locations": [
+   "Dallas, TX - US",
+   "San Francisco, CA - US"
+  ],
   "pay": "$250,000 -$305,000",
   "priority": false,
   "rationale": "Director-level AI datacenter infrastructure role at energy-first vertical integrator\u2014perfect alignment with Gabriel's BESS/datacenter power expertise and leadership level.",
@@ -24419,9 +25638,12 @@
   "work_mode": "remote"
  },
  "9f420f1ef99898d4": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Arganteal, Corp.",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-19",
   "location": "Fort Worth, TX, US",
   "pay": "Negotiated based on scope and experience",
@@ -24573,9 +25795,12 @@
   "work_mode": "remote"
  },
  "a00c7ec4ead647ae": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "New York, NY, US",
   "pay": "$145,000\u2013$181,050/yr",
@@ -24627,9 +25852,12 @@
   "work_mode": "remote"
  },
  "a026ad1c3a805389": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Arganteal, Corp.",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-19",
   "location": "Houston, TX, US",
   "pay": "Negotiated based on scope and experience",
@@ -24680,9 +25908,12 @@
   "work_mode": ""
  },
  "a0a638b8a98b9c9c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-30",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Garland, TX, US",
   "pay": "$138,000\u2013$196,000/yr",
@@ -24766,6 +25997,11 @@
   "company": "IES ELECTRICAL",
   "first_seen": "2026-08-14",
   "location": "Lithia Springs, GA, US",
+  "locations": [
+   "Lithia Springs, GA, US",
+   "Pecos, TX, US",
+   "Chester, VA, US"
+  ],
   "priority": false,
   "rationale": "Electrical superintendent for datacenter; supervisory level in datacenter electrical infrastructure, secondary domain fit.",
   "score": 72,
@@ -24859,9 +26095,12 @@
   "work_mode": ""
  },
  "a1e54e6dfd3331f5": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Redding, CA, US, 96002",
   "pay": "",
@@ -25018,9 +26257,12 @@
   "work_mode": "remote"
  },
  "a31d28a4bca2f948": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Los Angeles, CA, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -25034,9 +26276,12 @@
   "work_mode": "remote"
  },
  "a39068bfd9c15d12": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-21",
   "location": "Morristown, NJ, US",
   "pay": "",
@@ -25071,6 +26316,10 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Brownsville, TX, US",
+  "locations": [
+   "Brownsville, TX, US",
+   "Starbase, TX"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Senior manager of on-site power generation for SpaceX datacenter operations is senior-level but facilities-focused rather than strategic energy.",
@@ -25175,9 +26424,12 @@
   "work_mode": "remote"
  },
  "a51b607b0522f55a": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Anduril",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Irvine, CA, US",
   "pay": "$191,000\u2013$253,000/yr",
@@ -25249,6 +26501,12 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
   "location": "Pismo Beach, CA, US, 93449",
+  "locations": [
+   "Pismo Beach, CA, US, 93449",
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583",
+   "Rocklin, CA, US, 95765"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Mid-level design engineer IC; focused on technical execution not strategy.",
@@ -25302,6 +26560,16 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-30",
   "location": "San Ramon, CA, US, 94583",
+  "locations": [
+   "San Ramon, CA, US, 94583",
+   "Redding, CA, US, 96003",
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583",
+   "West Sacramento, CA, US, 95605",
+   "Auberry, CA, US, 93602",
+   "Tracy, CA, US, 95377",
+   "Hayward, CA, US, 94545"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "PG&E quantitative analyst for energy policy and procurement (duplicate); energy markets and procurement analytics align with finance and grid strategy background.",
@@ -25739,6 +27007,11 @@
   "date_posted": "2026-07-28",
   "first_seen": "2026-08-28",
   "location": "Palo Alto, CA",
+  "locations": [
+   "Palo Alto, CA",
+   "Memphis, TN",
+   "Bastrop, TX"
+  ],
   "pay": "$145,000.00 - $230,000.00",
   "priority": false,
   "rationale": "Datacenter supplier development engineering role, but tactical/operational supply chain focus rather than strategic energy or product leadership.",
@@ -25835,6 +27108,10 @@
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-28",
   "location": "Palo Alto, CA",
+  "locations": [
+   "Palo Alto, CA",
+   "Austin, TX"
+  ],
   "pay": "$175,000.00 - $255,000.00",
   "priority": false,
   "rationale": "Datacenter memory/storage sourcing; supply chain role with AI datacenter context but no power/energy",
@@ -25917,9 +27194,12 @@
   "work_mode": "remote"
  },
  "a8f52a0b6f9d499f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Goodyear, AZ, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -26294,6 +27574,10 @@
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-19",
   "location": "Bedford, MA, US",
+  "locations": [
+   "Bedford, MA, US",
+   "McLean, VA, US"
+  ],
   "pay": "$118,000",
   "priority": false,
   "rationale": "Energy technologies engineer/scientist at MITRE fits domain but lacks description; likely research/technical IC not strategy.",
@@ -26321,9 +27605,12 @@
   "work_mode": ""
  },
  "abd22a3f22d51f1d": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Koch",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Salt Lake City, UT, US",
   "pay": "$150,000\u2013$200,000/yr",
@@ -26411,9 +27698,12 @@
   "work_mode": ""
  },
  "ac7f1605c0e4fe96": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oklahoma, United States",
   "pay": "$112,700.00 - $140,800.00",
@@ -26458,9 +27748,12 @@
   "work_mode": ""
  },
  "acdc9b96413fce82": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Amazon.com",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Mineral, VA, US",
   "pay": "$129,200\u2013$193,000/yr",
@@ -26495,9 +27788,12 @@
   "work_mode": ""
  },
  "ad504910b4bdc3c3": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "PeopleConnect Staffing",
   "date_posted": "2026-08-18",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Portland, OR, US",
   "pay": "$140,000\u2013$150,000/yr",
@@ -26511,9 +27807,12 @@
   "work_mode": "onsite"
  },
  "ad541874e7464aef": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "Raleigh, NC, US",
   "pay": "$176,000\u2013$256,000/yr",
@@ -26556,9 +27855,12 @@
   "work_mode": "hybrid"
  },
  "ada0434dbd4969c8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Kimley-Horn",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Overland Park, KS, US",
   "pay": "",
@@ -26572,9 +27874,12 @@
   "work_mode": ""
  },
  "adaf8b50750c5f64": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Los Lunas, NM, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -26628,9 +27933,12 @@
   "work_mode": "remote"
  },
  "adbce688d0fb73da": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Starbase, TX",
   "pay": "",
@@ -26675,9 +27983,12 @@
   "url": "https://coreweave.com/careers/job?4689627006&board=coreweave&gh_jid=4689627006"
  },
  "addc58cb15dc2fae": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Baton Rouge, LA, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -26696,9 +28007,12 @@
   "work_mode": "remote"
  },
  "adde32a8004f3760": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-30",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Aurora, IL, US",
   "pay": "$138,000\u2013$196,000/yr",
@@ -26749,9 +28063,12 @@
   "work_mode": "hybrid"
  },
  "ae0c860be0b34635": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Huron, CA, US, 93234",
   "pay": "",
@@ -26849,9 +28166,12 @@
   "work_mode": "onsite"
  },
  "aeb1b348976c9840": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Cape Canaveral, FL",
   "pay": "",
@@ -26902,6 +28222,11 @@
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
   "location": "Boston, MA, US",
+  "locations": [
+   "Boston, MA, US",
+   "Houston, TX, US",
+   "San Francisco, CA, US"
+  ],
   "pay": "$170,000\u2013$200,000/yr",
   "priority": false,
   "rationale": "Identical Principal Technical Program Manager role at VEIR, Boston location; same scoring as Houston position.",
@@ -26918,9 +28243,12 @@
   "work_mode": ""
  },
  "af211201c2d765bc": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-16",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Starbase, TX",
   "pay": "",
@@ -26934,9 +28262,12 @@
   "work_mode": "remote"
  },
  "af29668bfd09bd2a": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Lodi, CA, US, 95240",
   "pay": "",
@@ -26955,9 +28286,12 @@
   "work_mode": ""
  },
  "af34cfa820431e96": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Otsego, MN, US",
   "pay": "$157,000\u2013$216,000/yr",
@@ -26976,9 +28310,12 @@
   "work_mode": "onsite"
  },
  "af3ed4cfaefa32cf": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Green Bay, WI, US",
   "pay": "",
@@ -26997,9 +28334,12 @@
   "work_mode": "hybrid"
  },
  "af430c3b0660a85a": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-11",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Hawthorne, CA",
   "pay": "$135,000.00 - $175,000.00",
@@ -27250,9 +28590,12 @@
   "work_mode": "remote"
  },
  "b0bdfc3e3a955e39": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "San Ramon, CA, US, 94583",
   "pay": "",
@@ -27306,9 +28649,12 @@
   "work_mode": ""
  },
  "b10a05a478f0fbd9": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Redding, CA, US, 96002",
   "pay": "",
@@ -27327,9 +28673,12 @@
   "work_mode": ""
  },
  "b10af77544772129": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "MITRE",
   "date_posted": "2026-08-18",
+  "duplicate": true,
   "first_seen": "2026-08-19",
   "location": "McLean, VA, US",
   "pay": "$118,000",
@@ -27359,9 +28708,12 @@
   "work_mode": "remote"
  },
  "b1401950ea0c28e6": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Houston, TX, US",
   "pay": "",
@@ -27447,9 +28799,12 @@
   "url": "https://www.amazon.jobs/en/jobs/10438891/sr-dc-capex-procurement-manager-energy-infrastructure-data-center-sourcing-and-procurement"
  },
  "b1c02f4e5a49922a": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "San Diego, CA, US",
   "pay": "$173,225\u2013$216,530/yr",
@@ -27956,9 +29311,12 @@
   "work_mode": "hybrid"
  },
  "b543ef4f5eea19ac": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Base Power",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "Bloomingdale, IL",
   "pay": "",
@@ -28086,6 +29444,10 @@
   "date_posted": "2026-08-16",
   "first_seen": "2026-08-28",
   "location": "Cape Canaveral, FL",
+  "locations": [
+   "Cape Canaveral, FL",
+   "Starbase, TX"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Specialist-level LNG capital equipment sourcing; power generation commodity procurement but specialist role, not manager/strategy level.",
@@ -28230,9 +29592,12 @@
   "work_mode": "onsite"
  },
  "b73ddf950f228439": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-30",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "Muenster, TX, US, 76252",
   "pay": "",
@@ -28288,9 +29653,12 @@
   "url": "https://www.amazon.jobs/en/jobs/10475374/senior-category-manager-power-infrastructure-grid-services-power-and-utilities-global-procurement-organization-gpo"
  },
  "b7956a1737252618": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Moss",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "HI, US",
   "pay": "",
@@ -28309,9 +29677,12 @@
   "work_mode": ""
  },
  "b7b2f53848cd278a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "",
   "date_posted": "2026-08-18",
+  "duplicate": true,
   "first_seen": "2026-08-19",
   "location": "Houston, TX, US",
   "pay": "",
@@ -28373,9 +29744,12 @@
   "work_mode": "remote"
  },
  "b7e71c264e391213": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Ashburn, VA, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -28413,9 +29787,12 @@
   "work_mode": "onsite"
  },
  "b8044a85cf82951a": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "Otsego, MN, US",
   "pay": "$78,000\u2013$178,000/yr",
@@ -28466,9 +29843,12 @@
   "work_mode": "hybrid"
  },
  "b83f6bb5d42bea4b": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Eau Claire, WI, US",
   "pay": "$500K to $10",
@@ -28487,6 +29867,10 @@
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612",
+   "Rocklin, CA, US, 95765"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Principal-level architect in critical infrastructure; seniority-matched but domain scope unclear without full description.",
@@ -28598,9 +29982,12 @@
   "work_mode": "hybrid"
  },
  "b931fd94d66d597e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -28654,6 +30041,10 @@
   "date_posted": "",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
+  "locations": [
+   "US, CA, Santa Clara",
+   "2 Locations"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Senior chip power modeling engineer; energy is silicon-focused, not grid/BESS.",
@@ -28763,6 +30154,13 @@
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-19",
   "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US",
+   "Fort Worth, TX, US",
+   "Houston, TX, US",
+   "San Antonio, TX, US",
+   "Frisco, TX, US"
+  ],
   "pay": "Negotiated based on scope and experience",
   "priority": false,
   "rationale": "Data center operations consulting role; tangential to energy infrastructure but not strategic product or energy domain focus.",
@@ -28843,9 +30241,12 @@
   "work_mode": ""
  },
  "bc289d0441f3232d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Menlo Park, CA, US",
   "pay": "$146,000\u2013$206,000/yr",
@@ -29078,9 +30479,12 @@
   "url": "https://jobs.ashbyhq.com/crusoe/29d1d2ef-9a42-4962-a0b5-e1114bcb9327"
  },
  "bd771680fb86b656": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Qualus",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "NV, US",
   "pay": "",
@@ -29094,9 +30498,12 @@
   "work_mode": "remote"
  },
  "bd99bdabda0bb56e": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Palo, IA, US, 52324",
   "pay": "",
@@ -29149,8 +30556,11 @@
   "work_mode": "remote"
  },
  "be18875732eaafba": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "IES ELECTRICAL",
+  "duplicate": true,
   "first_seen": "2026-08-14",
   "location": "Chester, VA, US",
   "priority": false,
@@ -29275,6 +30685,12 @@
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
   "location": "New York, NY, US",
+  "locations": [
+   "New York, NY, US",
+   "Arlington, VA, US",
+   "Louisville, CO, US",
+   "Salt Lake City, UT, US"
+  ],
   "pay": "$94,000\u2013$112,625/yr",
   "priority": true,
   "rationale": "Civil engineer at major utility; right industry but construction/infrastructure engineering, not PM/strategy or interconnection planning.",
@@ -29302,9 +30718,12 @@
   "work_mode": "onsite"
  },
  "bea4086ccd4fb539": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-15",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Jupiter, FL, US, 33478",
   "pay": "",
@@ -29537,9 +30956,12 @@
   "work_mode": "remote"
  },
  "bf88aa89d505d9cd": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Guidehouse",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Arlington, VA, US",
   "pay": "$89,000\u2013$148,000/yr",
@@ -29636,9 +31058,12 @@
   "work_mode": "onsite"
  },
  "c034c7adbc64fd28": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Tesla",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX, US",
   "pay": "",
@@ -29657,9 +31082,12 @@
   "work_mode": ""
  },
  "c03deb4637efc285": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-26",
   "location": "MN, US",
   "pay": "$150,000\u2013$217,000/yr",
@@ -29737,9 +31165,12 @@
   "work_mode": "hybrid"
  },
  "c0fc992d990bd764": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Atlanta, GA, US",
   "pay": "$176,000\u2013$256,000/yr",
@@ -29944,9 +31375,12 @@
   "work_mode": "hybrid"
  },
  "c248b833b9f4a372": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Google",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "San Francisco, CA, US",
   "pay": "$176,000\u2013$256,000/yr",
@@ -29976,9 +31410,12 @@
   "work_mode": "hybrid"
  },
  "c2bfc458cf410a1f": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -30030,9 +31467,12 @@
   "work_mode": "hybrid"
  },
  "c33cb83447bd7235": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Baker Tilly Canada",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Madison, WI, US",
   "pay": "$59,400\u2013$236,800/yr",
@@ -30163,9 +31603,12 @@
   "work_mode": "remote"
  },
  "c45a5b854f506ece": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Amazon.com",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Johnstown, OH, US",
   "pay": "$129,200\u2013$193,000/yr",
@@ -30297,9 +31740,12 @@
   "work_mode": ""
  },
  "c5c7da18c922976e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "GE Vernova",
   "date_posted": "",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Noida",
   "pay": "",
@@ -30371,9 +31817,12 @@
   "work_mode": ""
  },
  "c69b002aaf37cf04": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Paris, France",
   "pay": "",
@@ -30403,9 +31852,12 @@
   "work_mode": ""
  },
  "c6cc574ade3482d3": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "New York, NY, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -30429,6 +31881,11 @@
   "date_posted": "2026-08-22",
   "first_seen": "2026-08-23",
   "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US",
+   "Morristown, NJ, US",
+   "McLean, VA, US"
+  ],
   "pay": "$171,600\u2013$338,300/yr",
   "priority": false,
   "rationale": "M&A financial due diligence senior manager at Deloitte; finance/consulting role, not energy product/strategy/operations leadership.",
@@ -30630,6 +32087,10 @@
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612",
+   "Huron, CA, US, 93234"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Principal Product Owner for Speed to Power and Emerging Business at PG&E; senior PM title for strategic clean-energy infrastructure business line aligns with HIGH score category (grid modernization, utility innovation product).",
@@ -30721,8 +32182,11 @@
   "work_mode": ""
  },
  "c971851cbaac6d2b": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Qualus",
+  "duplicate": true,
   "first_seen": "2026-08-13",
   "location": "Fort Worth, TX, US",
   "priority": true,
@@ -30817,9 +32281,12 @@
   "work_mode": ""
  },
  "c9f86f476caf940a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-24",
+  "duplicate": true,
   "first_seen": "2026-08-25",
   "location": "Reno, NV, US",
   "pay": "$141,590\u2013$176,987/yr",
@@ -30896,6 +32363,10 @@
   "date_posted": "2026-07-24",
   "first_seen": "2026-08-28",
   "location": "Washington, DC",
+  "locations": [
+   "Washington, DC",
+   "Palo Alto, CA"
+  ],
   "pay": "$220,000.00 - $350,000.00/per",
   "priority": false,
   "rationale": "Senior platform infrastructure AI engineer; candidate has production AI credentials but this is classified/special programs infrastructure, not energy or datacenter power domain.",
@@ -31147,9 +32618,12 @@
   "work_mode": ""
  },
  "cb88ad40f5020692": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Anduril",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Costa Mesa, CA, US",
   "pay": "$191,000\u2013$253,000/yr",
@@ -31203,9 +32677,12 @@
   "work_mode": "onsite"
  },
  "cba2b17cfd260f17": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "San Francisco, CA, US",
   "pay": "$94,000\u2013$112,625/yr",
@@ -31244,6 +32721,10 @@
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-24",
   "location": "Dayton, OH, US",
+  "locations": [
+   "Dayton, OH, US",
+   "Indianapolis, IN, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Transmission planning operations engineer is IC-level engineering role, not strategic or product leadership.",
@@ -31255,9 +32736,12 @@
   "work_mode": ""
  },
  "cbd919de50de7742": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-21",
   "location": "Portland, ME, US",
   "pay": "",
@@ -31287,9 +32771,12 @@
   "work_mode": ""
  },
  "cc009d91c0bbdd99": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Indianapolis, IN, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -31404,9 +32891,12 @@
   "work_mode": ""
  },
  "cc3d40178f552928": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Baker Tilly Canada",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Austin, TX, US",
   "pay": "$59,400\u2013$236,800/yr",
@@ -31465,9 +32955,12 @@
   "work_mode": ""
  },
  "cc6afb883f7da766": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Austin, TX, US",
   "pay": "",
@@ -31485,6 +32978,10 @@
   "company": "Shades of Grey HR",
   "first_seen": "2026-08-14",
   "location": "Remote, US",
+  "locations": [
+   "Remote, US",
+   "Los Angeles, CA, US"
+  ],
   "priority": true,
   "rationale": "Project manager in T&D consulting; energy domain fit but plain PM, not senior or director level.",
   "score": 60,
@@ -31626,6 +33123,13 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-27",
   "location": "Louisville, CO, US",
+  "locations": [
+   "Louisville, CO, US",
+   "Salt Lake City, UT, US",
+   "Honolulu, HI, US",
+   "Houston, TX, US",
+   "San Francisco, CA, US"
+  ],
   "pay": "$113,000\u2013$141,525/yr",
   "priority": true,
   "rationale": "Senior engineer in renewable O&M; energy domain relevant but IC engineer role, not PM/product leadership.",
@@ -32027,6 +33531,10 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-20",
   "location": "Los Angeles, CA, US",
+  "locations": [
+   "Los Angeles, CA, US",
+   "Santa Ana, CA, US"
+  ],
   "pay": "$191,000\u2013$253,000/yr",
   "priority": false,
   "rationale": "Systems lead at defense contractor; vehicle/endurance systems not aligned with grid/datacenter energy focus.",
@@ -32110,9 +33618,12 @@
   "work_mode": "onsite"
  },
  "d05bdac4cd4372a1": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX, US",
   "pay": "",
@@ -32131,6 +33642,15 @@
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-30",
   "location": "West Sacramento, CA, US, 95605",
+  "locations": [
+   "West Sacramento, CA, US, 95605",
+   "Redding, CA, US, 96003",
+   "Auberry, CA, US, 93602",
+   "Oakland, CA, US, 94612",
+   "Tracy, CA, US, 95377",
+   "Hayward, CA, US, 94545",
+   "Fresno, CA, US, 93702"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "PG&E senior power generation mechanical project engineer; description unavailable, but title suggests technical PM/engineering leadership in generation\u2014likely strong energy fit but role specifics unclear.",
@@ -32147,9 +33667,12 @@
   "work_mode": ""
  },
  "d0c63e65db9bd53e": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-11",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Cape Canaveral, FL",
   "pay": "",
@@ -32179,9 +33702,12 @@
   "work_mode": "remote"
  },
  "d0fa4db34ea34243": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "",
   "pay": "",
@@ -32195,9 +33721,12 @@
   "work_mode": ""
  },
  "d1348e1eb2df850a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Kimley-Horn",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Plymouth Meeting, PA, US",
   "pay": "",
@@ -32211,9 +33740,12 @@
   "work_mode": ""
  },
  "d145b924ab3d783f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Amphenol",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX, US",
   "pay": "$130,000\u2013$160,000/yr",
@@ -32248,9 +33780,12 @@
   "work_mode": "remote"
  },
  "d18cdc4b4c90fc89": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Milwaukee, WI, US",
   "pay": "",
@@ -32269,9 +33804,12 @@
   "work_mode": "hybrid"
  },
  "d18ed9f31db1b4f0": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Palo, IA, US, 52324",
   "pay": "",
@@ -32301,9 +33839,12 @@
   "work_mode": "hybrid"
  },
  "d1adce41a8cd7218": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-07-24",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Starbase, TX",
   "pay": "",
@@ -32317,9 +33858,12 @@
   "work_mode": ""
  },
  "d1cb6537226933bd": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Koch",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Oklahoma City, OK, US",
   "pay": "$150,000\u2013$200,000/yr",
@@ -32433,6 +33977,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-08-28",
   "location": "Palo Alto, CA",
+  "locations": [
+   "Palo Alto, CA",
+   "Austin, TX"
+  ],
   "pay": "$185,000.00 - $260,000.00",
   "priority": false,
   "rationale": "Manager of datacenter compute supply chain (duplicate); supply chain function, no power/energy focus",
@@ -32563,9 +34111,12 @@
   "work_mode": "hybrid"
  },
  "d32e426fd8150b82": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "VEIR",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Houston, TX, US",
   "pay": "$170,000\u2013$200,000/yr",
@@ -32795,9 +34346,12 @@
   "work_mode": "remote"
  },
  "d53f686294d29031": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Oracle",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Harwood, ND, US",
   "pay": "",
@@ -32832,9 +34386,12 @@
   "work_mode": "remote"
  },
  "d5d1881400b620a6": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Hayward, CA, US, 94545",
   "pay": "",
@@ -32888,9 +34445,12 @@
   "work_mode": ""
  },
  "d616aefdc8cda746": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Anthropic",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Remote, US",
   "pay": "$320,000\u2013$405,000/yr",
@@ -33093,9 +34653,12 @@
   "url": "https://www.google.com/about/careers/applications/jobs/results/115190413584671430-technical-program-manager-data-center-energy-risk-management"
  },
  "d7ec5de40c8627c0": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-20",
   "location": "Atlanta, GA, US",
   "pay": "",
@@ -33130,6 +34693,11 @@
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-01",
   "location": "Chennai, Tamil Nadu, India; India",
+  "locations": [
+   "Chennai, Tamil Nadu, India; India",
+   "Hyderabad, India; India",
+   "Remote - Europe"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Field technical lead for on-site datacenter deployment execution; guidance flags hands-on network/IT infrastructure engineering roles as wrong field even in datacenter context.",
@@ -33186,9 +34754,12 @@
   "work_mode": ""
  },
  "d8d8dcce3a8e2296": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Tracy, CA, US, 95377",
   "pay": "",
@@ -33281,9 +34852,12 @@
   "work_mode": "remote"
  },
  "d937222a5a592a8d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Fresno, CA, US, 93702",
   "pay": "",
@@ -33307,6 +34881,10 @@
   "date_posted": "2026-07-28",
   "first_seen": "2026-08-28",
   "location": "Bastrop, TX",
+  "locations": [
+   "Bastrop, TX",
+   "Memphis, TN"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Quality specialist in datacenter supply chain; operational tactical role without energy or strategic product focus.",
@@ -33336,8 +34914,11 @@
   "work_mode": "onsite"
  },
  "d958a38aa3ee7143": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
+  "duplicate": true,
   "first_seen": "2026-08-13",
   "location": "Arlington, VA, US",
   "priority": true,
@@ -33416,9 +34997,12 @@
   "work_mode": "remote"
  },
  "da260b6ab0ec1bdc": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-04-13",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Eagle Mountain, UT, US",
   "pay": "$135,000\u2013$191,000/yr",
@@ -33437,9 +35021,12 @@
   "work_mode": ""
  },
  "da39e535a015afa0": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Qualus",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Chattanooga, TN, US",
   "pay": "",
@@ -33453,9 +35040,12 @@
   "work_mode": "remote"
  },
  "da3d000824b4329a": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Juno Beach, FL, US, 33408",
   "pay": "",
@@ -33544,9 +35134,12 @@
   "work_mode": "remote"
  },
  "db7c795c2bc9e3ec": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEdge Networks Holdings LLC",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Pompano Beach, FL, US",
   "pay": "",
@@ -33611,9 +35204,12 @@
   "url": "https://www.indeed.com/viewjob?jk=5765b0e0c1827731"
  },
  "dc896500dcadc2de": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "Redding, CA, US, 96003",
   "pay": "",
@@ -33648,9 +35244,12 @@
   "url": "https://www.indeed.com/viewjob?jk=bf716c6ed1ec74e7"
  },
  "dcb776d5e16305ec": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "NVIDIA",
   "date_posted": "",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "2 Locations",
   "pay": "",
@@ -33703,9 +35302,12 @@
   "work_mode": "remote"
  },
  "dcdba245bbfb656a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-07-24",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Palo Alto, CA",
   "pay": "$220,000.00 - $350,000.00/per",
@@ -33807,9 +35409,12 @@
   "work_mode": "hybrid"
  },
  "dd7c45788334929d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Charlotte, NC, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -33828,9 +35433,12 @@
   "work_mode": ""
  },
  "dd7e671857ea12d4": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Oracle",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Salt Lake City, UT, US",
   "pay": "",
@@ -33873,9 +35481,12 @@
   "work_mode": "onsite"
  },
  "ddaeac94bda33399": {
+  "active": false,
   "band": "top",
+  "closed": "2026-09-01",
   "company": "Crusoe",
   "date_posted": "2026-07-29",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "San Francisco, CA - US",
   "pay": "$270,000 -$325,000",
@@ -34022,9 +35633,12 @@
   "work_mode": "onsite"
  },
  "de69a7ba787a5125": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Microsoft",
   "date_posted": "2026-08-19",
+  "duplicate": true,
   "first_seen": "2026-08-25",
   "location": "West Des Moines, IA, US",
   "pay": "$116,900\u2013$222,600/yr",
@@ -34054,9 +35668,12 @@
   "url": "https://www.amazon.jobs/en/jobs/10473318/sr-technical-program-manager-power-generation-solutions-global-energy-power-generation-solutions"
  },
  "de87ea60b4e9f298": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Atlanta, GA, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -34150,9 +35767,12 @@
   "work_mode": "onsite"
  },
  "dfd31a1515d674b3": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "NVIDIA",
   "date_posted": "",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "India, Bengaluru",
   "pay": "",
@@ -34475,9 +36095,12 @@
   "work_mode": ""
  },
  "e12672eb3867e76d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Fresno, CA, US, 93720",
   "pay": "",
@@ -34510,9 +36133,12 @@
   "work_mode": "remote"
  },
  "e1498698d7267849": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Portland, OR, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -34638,9 +36264,12 @@
   "work_mode": "onsite"
  },
  "e2096c650f6a4cac": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Deloitte",
   "date_posted": "2026-08-22",
+  "duplicate": true,
   "first_seen": "2026-08-23",
   "location": "McLean, VA, US",
   "pay": "$171,600\u2013$338,300/yr",
@@ -34710,6 +36339,10 @@
   "company": "Clarios",
   "first_seen": "2026-08-13",
   "location": "Kernersville, NC, US",
+  "locations": [
+   "Kernersville, NC, US",
+   "Holland, OH, US"
+  ],
   "priority": false,
   "rationale": "Quality Engineer is technical IC work without domain specificity; no description provided.",
   "score": 35,
@@ -34775,9 +36408,12 @@
   "work_mode": "remote"
  },
  "e2f077026fafc750": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Burns & McDonnell",
   "date_posted": "2026-08-24",
+  "duplicate": true,
   "first_seen": "2026-08-25",
   "location": "Chicago, IL, US",
   "pay": "$120,000\u2013$350,000/yr",
@@ -34828,9 +36464,12 @@
   "work_mode": "remote"
  },
  "e3c96fc8a41d70f1": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Lappeenranta, Finland",
   "pay": "",
@@ -34844,9 +36483,12 @@
   "work_mode": ""
  },
  "e3dc5a04525fe58d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Raleigh, NC, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -34881,9 +36523,12 @@
   "work_mode": "hybrid"
  },
  "e40987d7000c8461": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-21",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Louisville, CO, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -34947,9 +36592,12 @@
   "work_mode": "remote"
  },
  "e4a76066304150ad": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Kapolei, HI, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -35019,9 +36667,12 @@
   "work_mode": "hybrid"
  },
  "e4e55122437d1902": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "San Francisco, CA, US",
   "pay": "$154,000\u2013$200,000/yr",
@@ -35091,9 +36742,12 @@
   "work_mode": ""
  },
  "e54795c2997f0658": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-29",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Houston, TX, US, 77002",
   "pay": "",
@@ -35128,9 +36782,12 @@
   "work_mode": "remote"
  },
  "e5613780a5763930": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Tel Aviv, Israel",
   "pay": "",
@@ -35144,9 +36801,12 @@
   "work_mode": "hybrid"
  },
  "e5660927d9411192": {
+  "active": false,
   "band": "top",
+  "closed": "2026-09-01",
   "company": "Amazon",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "Seattle, Washington, USA",
   "pay": "$155,400\u2013$210,200/yr",
@@ -35238,9 +36898,12 @@
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-11",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Bastrop, TX",
   "pay": "",
@@ -35254,9 +36917,12 @@
   "work_mode": ""
  },
  "e636f5013b021a80": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Neara",
   "date_posted": "2026-07-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Los Angeles",
   "pay": "$180K \u2013 $250K \u00b7 Offers Equity",
@@ -35428,9 +37094,12 @@
   "work_mode": "onsite"
  },
  "e74791db2d81132d": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Amazon.com",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Denver, CO, US",
   "pay": "$127,100\u2013$171,900/yr",
@@ -35499,9 +37168,12 @@
   "work_mode": "onsite"
  },
  "e7946df21af3802d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "Honolulu, HI, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -35536,9 +37208,12 @@
   "work_mode": ""
  },
  "e83954260287f910": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-18",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Rocklin, CA, US, 95765",
   "pay": "",
@@ -35777,9 +37452,12 @@
   "work_mode": ""
  },
  "e95394a0117656fd": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Salt Lake City, UT, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -35876,9 +37554,12 @@
   "work_mode": ""
  },
  "ea0568925c4e407b": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Microsoft",
   "date_posted": "2026-08-13",
+  "duplicate": true,
   "first_seen": "2026-08-14",
   "location": "United States, Multiple Locations, Multiple Locations (+5 more)",
   "pay": "USD $142,800 - $274,800 per year",
@@ -36031,9 +37712,12 @@
   "work_mode": "hybrid"
  },
  "eb01746062bb5bfd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Harrisburg, PA, US",
   "pay": "$99,552\u2013$124,440/yr",
@@ -36100,9 +37784,12 @@
   "work_mode": "remote"
  },
  "eb4f631c75bc3daf": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Vantage Data Centers",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "VA, US",
   "pay": "$165,000\u2013$180,000/yr",
@@ -36121,9 +37808,12 @@
   "work_mode": "remote"
  },
  "ebc2a3880f49c1dd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Westwood Professional Services",
   "date_posted": "2026-08-17",
+  "duplicate": true,
   "first_seen": "2026-08-18",
   "location": "Austin, TX, US",
   "pay": "",
@@ -36153,9 +37843,12 @@
   "work_mode": ""
  },
  "ec049d4e3f907063": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Brainerd, MN, US",
   "pay": "$157,000\u2013$216,000/yr",
@@ -36174,9 +37867,12 @@
   "work_mode": "onsite"
  },
  "ec1ca8916ed9215a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-04-13",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Altoona, IA, US",
   "pay": "$135,000\u2013$191,000/yr",
@@ -36195,9 +37891,12 @@
   "work_mode": ""
  },
  "ec607857b71c1ea8": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "Salt Lake City, UT, US",
   "pay": "$94,000\u2013$112,625/yr",
@@ -36240,9 +37939,12 @@
   "work_mode": "remote"
  },
  "ed10108ea7d95bd4": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "Houston, TX, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -36256,9 +37958,12 @@
   "work_mode": "remote"
  },
  "ed13afd17e688bd1": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Form Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Berkeley, CA, US",
   "pay": "$147,959\u2013$184,966/yr",
@@ -36308,9 +38013,12 @@
   "url": "https://www.google.com/about/careers/applications/jobs/results/74844349799506630-global-strategic-initiatives-energy-specialist-strategic-missions-and-partnerships-google-cloud"
  },
  "ed554887dfd11909": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Ingersoll-Rand",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Lima, OH, US",
   "pay": "$100,000\u2013$130,000/yr",
@@ -36440,9 +38148,12 @@
   "work_mode": "remote"
  },
  "eed275c7422421f3": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Crusoe",
   "date_posted": "2026-06-11",
+  "duplicate": true,
   "first_seen": "2026-08-22",
   "location": "Tulsa, OK - US (2)",
   "pay": "$140,000-$160,000",
@@ -36525,9 +38236,12 @@
   "work_mode": ""
  },
  "ef1d4b100e7ca430": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Koch",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "London, OH, US",
   "pay": "$80,000\u2013$110,000/yr",
@@ -36565,9 +38279,12 @@
   "work_mode": "remote"
  },
  "ef4042bd669f98e3": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Amentum",
   "date_posted": "2026-08-14",
+  "duplicate": true,
   "first_seen": "2026-08-15",
   "location": "Remote, US",
   "pay": "$120,000\u2013$190,000/yr",
@@ -36586,6 +38303,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-08-28",
   "location": "Palo Alto, CA",
+  "locations": [
+   "Palo Alto, CA",
+   "Austin, TX"
+  ],
   "pay": "$155,000.00 - $215,000.00",
   "priority": false,
   "rationale": "Supply chain manager for datacenter compute hardware; appropriate seniority but supply chain sourcing is outside product/strategy target domain.",
@@ -36618,9 +38339,12 @@
   "work_mode": "remote"
  },
  "ef62ec8b093edda1": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
   "pay": "",
@@ -36634,9 +38358,12 @@
   "work_mode": ""
  },
  "ef6d59a1948bb8d9": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Redding, CA, US, 96002",
   "pay": "",
@@ -36660,6 +38387,10 @@
   "date_posted": "2026-07-28",
   "first_seen": "2026-08-28",
   "location": "Palo Alto, CA",
+  "locations": [
+   "Palo Alto, CA",
+   "Austin, TX"
+  ],
   "pay": "$145,000.00 - $215,000.00",
   "priority": false,
   "rationale": "Global supply manager for datacenter switches/optics\u2014datacenter networking infrastructure, manager-level sourcing; procurement role not product.",
@@ -36692,6 +38423,12 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
   "location": "Danville, CA, US, 94583",
+  "locations": [
+   "Danville, CA, US, 94583",
+   "Hayward, CA, US, 94545",
+   "Oakland, CA, US, 94612",
+   "Lodi, CA, US, 95240"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Senior advising transmission planning engineer; senior IC strategy role aligned with interconnection/hosting-capacity expertise, strong grid domain fit.",
@@ -36775,9 +38512,12 @@
   "work_mode": "onsite"
  },
  "f0689c33751a4fcc": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "Amazon.com",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Atlanta, GA, US",
   "pay": "$127,100\u2013$171,900/yr",
@@ -36796,9 +38536,12 @@
   "work_mode": ""
  },
  "f08912cec7841ca9": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-26",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Remote, US",
   "pay": "$220,000\u2013$265,000/yr",
@@ -36833,9 +38576,12 @@
   "work_mode": "remote"
  },
  "f0c92f0aac0aa6e6": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "M2X Energy Inc",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Rockledge, FL, US",
   "pay": "$135,000\u2013$175,000/yr",
@@ -36854,9 +38600,12 @@
   "work_mode": "onsite"
  },
  "f1409da5a51519d0": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-07-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Memphis, TN",
   "pay": "",
@@ -36870,9 +38619,12 @@
   "work_mode": "remote"
  },
  "f143ebe1cf4f18bc": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-27",
   "location": "San Francisco, CA, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -36907,9 +38659,12 @@
   "work_mode": "remote"
  },
  "f16f042b5eb6e594": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-08-16",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Starbase, TX",
   "pay": "",
@@ -37072,9 +38827,12 @@
   "work_mode": ""
  },
  "f2906359310dbb7d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "NextEra Energy",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "WEBSTER, KY, US, 42450",
   "pay": "",
@@ -37176,9 +38934,12 @@
   "work_mode": "onsite"
  },
  "f3269c6559e7ca32": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "Auberry, CA, US, 93602",
   "pay": "",
@@ -37393,9 +39154,12 @@
   "url": "https://jobs.ashbyhq.com/base-power/f7a41b40-1f59-4a33-b5d4-4cfb512c81f4"
  },
  "f47d39d05cfc2731": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Appleton, WI, US",
   "pay": "$500K to $10",
@@ -37409,9 +39173,12 @@
   "work_mode": "onsite"
  },
  "f562bdcb547f759d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Neara",
   "date_posted": "2026-07-21",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "San Francisco",
   "pay": "$180K \u2013 $250K \u00b7 Offers Equity",
@@ -37607,9 +39374,12 @@
   "work_mode": ""
  },
  "f70ba209d685eebc": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Michels",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Neenah, WI, US",
   "pay": "",
@@ -37668,9 +39438,12 @@
   "work_mode": ""
  },
  "f7762103221ab7e7": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "AES Corporation",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Dayton, OH, US",
   "pay": "$113,000\u2013$141,525/yr",
@@ -37739,9 +39512,12 @@
   "url": "https://www.indeed.com/viewjob?jk=d27b23700befa3f4"
  },
  "f7b066a6ceee50ae": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-29",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -37760,9 +39536,12 @@
   "work_mode": ""
  },
  "f7d691551808e2d2": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-29",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "West Sacramento, CA, US, 95605",
   "pay": "",
@@ -37781,9 +39560,12 @@
   "work_mode": ""
  },
  "f7efe5d6458fadb8": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Minnesota, United States",
   "pay": "$112,700.00 - $140,800.00",
@@ -37797,9 +39579,12 @@
   "work_mode": "remote"
  },
  "f7fcbaca23591fa3": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "SpaceX",
   "date_posted": "2026-07-24",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Austin, TX",
   "pay": "",
@@ -37834,9 +39619,12 @@
   "work_mode": "onsite"
  },
  "f84ce4def9100076": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-09-01",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Huron, CA, US, 93234",
   "pay": "",
@@ -37855,9 +39643,12 @@
   "work_mode": ""
  },
  "f85507749c79c320": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-25",
+  "duplicate": true,
   "first_seen": "2026-08-31",
   "location": "El Paso, TX, US",
   "pay": "$162,000\u2013$227,000/yr",
@@ -38002,9 +39793,12 @@
   "work_mode": ""
  },
  "f967b1bf53c99085": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-01",
   "company": "Nebius",
   "date_posted": "2026-08-20",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Newport, United Kingdom",
   "pay": "",
@@ -38034,9 +39828,12 @@
   "work_mode": "onsite"
  },
  "f9756b036cab1805": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "Meta",
   "date_posted": "2026-08-30",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Houston, TX, US",
   "pay": "$138,000\u2013$196,000/yr",
@@ -38079,9 +39876,12 @@
   "work_mode": ""
  },
  "f97b3a9e1ffda0d8": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Vantage Data Centers",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Sterling, VA, US",
   "pay": "$165,000\u2013$180,000/yr",
@@ -38100,9 +39900,12 @@
   "work_mode": "remote"
  },
  "f97e1aed5057612e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-27",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Danville, CA, US, 94583",
   "pay": "",
@@ -38523,6 +40326,10 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-27",
   "location": "Sycamore, OH, US",
+  "locations": [
+   "Sycamore, OH, US",
+   "London, OH, US"
+  ],
   "pay": "$80,000\u2013$110,000/yr",
   "priority": true,
   "rationale": "Electrical Field Engineer on utility-scale solar is relevant domain but IC engineer level, not senior PM/principal.",
@@ -38550,9 +40357,12 @@
   "work_mode": ""
  },
  "fd425395b501a7a5": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-01",
   "company": "VEIR",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "San Francisco, CA, US",
   "pay": "$170,000\u2013$200,000/yr",
@@ -38677,9 +40487,12 @@
   "work_mode": "hybrid"
  },
  "fe1e31835a1c6b94": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-28",
+  "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "Auberry, CA, US, 93602",
   "pay": "",
@@ -38863,9 +40676,12 @@
   "work_mode": "onsite"
  },
  "ff3fb3793adcec39": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-01",
   "company": "PG&E",
   "date_posted": "2026-08-29",
+  "duplicate": true,
   "first_seen": "2026-08-29",
   "location": "",
   "pay": "",
@@ -38903,9 +40719,12 @@
   "work_mode": ""
  },
  "ff538ef51685e948": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Brookfield",
   "date_posted": "",
+  "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Toronto, Ontario",
   "pay": "",
@@ -38919,9 +40738,12 @@
   "work_mode": ""
  },
  "ff8ca45758724295": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-01",
   "company": "Vantage Data Centers",
   "date_posted": "2026-08-31",
+  "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "CO, US",
   "pay": "$165,000\u2013$180,000/yr",

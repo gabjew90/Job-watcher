@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .models import Job
-from .util import twin_key
+from .util import group_key, twin_key
 
 STATE_FILE = Path("state/seen_jobs.json")
 
@@ -48,11 +48,19 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
     # same posting — never re-alert it, but do borrow missing fields.
     twins = {twin_key(r.get("company", ""), r.get("title", ""), r.get("location", "")): r
              for r in state.values()}
+    groups = {group_key(r.get("company", ""), r.get("title", "")): r
+              for r in state.values()}
     new = []
     for job in jobs:
         if job.job_id not in state:
-            twin = twins.get(twin_key(job.company, job.title, job.location))
+            twin = (twins.get(twin_key(job.company, job.title, job.location))
+                    or groups.get(group_key(job.company, job.title)))
             if twin is not None:
+                # Record the extra metro on the surviving row instead of
+                # alerting the same opening again.
+                locs = twin.setdefault("locations", [twin.get("location", "")])
+                if job.location and job.location not in locs:
+                    locs.append(job.location)
                 for field, value in (("date_posted", job.date_posted),
                                      ("pay", job.pay), ("work_mode", job.work_mode)):
                     if value and not twin.get(field):
@@ -77,7 +85,9 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
             "date_posted": job.date_posted,
             "pay": job.pay,
             "work_mode": job.work_mode,
+            "locations": [job.location],
         }
         twins[twin_key(job.company, job.title, job.location)] = state[job.job_id]
+        groups[group_key(job.company, job.title)] = state[job.job_id]
         new.append(job)
     return new

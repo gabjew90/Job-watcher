@@ -143,6 +143,11 @@ ago(); setInterval(ago, 30000);
 """
 
 
+def _extra_locs(rec: dict) -> str:
+    n = len(rec.get("locations") or []) - 1
+    return f' <small>+{n} more</small>' if n > 0 else ""
+
+
 def _row(rec: dict) -> str:
     classes = (["priority"] if rec.get("priority") else []) + (
         [] if rec.get("active", True) else ["closed"])
@@ -172,7 +177,7 @@ def _row(rec: dict) -> str:
         f'<tr{cls}><td><a href="{e(rec.get("url"))}" target="_blank">{e(rec.get("title"))}</a>'
         f'<br><small>{e(rec.get("source"))} · <a href="{fb_url}" target="_blank">feedback</a>'
         f' · <a href="{draft_url}" target="_blank">✍️ draft</a></small></td>'
-        f'<td>{e(rec.get("company"))}</td><td>{e(rec.get("location"))}</td>'
+        f'<td>{e(rec.get("company"))}</td><td>{e(rec.get("location"))}{_extra_locs(rec)}</td>'
         f'<td>{mode}</td><td>{e(rec.get("pay"))}</td>'
         f'<td>{e(rec.get("date_posted"))}</td><td>{first_seen}</td>{score_cell}</tr>'
     )
@@ -200,7 +205,7 @@ def _select_rows(state: dict, max_rows: int) -> tuple[list[dict], int, int]:
     active = [r for r in state.values() if r.get("active", True)]
     closed = [r for r in state.values() if not r.get("active", True)
               and not (r.get("lowscore") or r.get("hidden")
-                       or r.get("excluded") or r.get("closed") == "duplicate")]
+                       or r.get("excluded") or r.get("duplicate"))]
     fresh_cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
     def score_key(r):
         return -(r["score"] if r.get("score") is not None else -1)

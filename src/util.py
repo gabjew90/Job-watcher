@@ -29,6 +29,14 @@ def twin_key(company: str, title: str, location: str) -> tuple:
     return (company_key(company), title_key(title), city_key(location))
 
 
+def group_key(company: str, title: str) -> tuple:
+    """Same company + title = ONE opening, however many metros it is posted
+    to. Employers and aggregators syndicate a single req city-by-city (a
+    remote role appeared in 19 cities), which is the main source of visible
+    duplicates. Extra locations are kept on the surviving record."""
+    return (company_key(company), title_key(title))
+
+
 def strip_html(text: str) -> str:
     text = html.unescape(text or "")
     text = re.sub(r"<[^>]+>", " ", text)

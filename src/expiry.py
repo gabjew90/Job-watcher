@@ -25,7 +25,7 @@ import requests
 
 from . import health
 from .models import Job
-from .util import HEADERS
+from .util import HEADERS, group_key
 
 log = logging.getLogger(__name__)
 
@@ -94,6 +94,7 @@ def sweep(seen: dict, raw_jobs: list[Job], config: dict) -> list[dict]:
     """Mark closed postings inactive in-place. Returns the records closed."""
     closed: list[dict] = []
     present = {j.job_id for j in raw_jobs}
+    present_groups = {group_key(j.company, j.title) for j in raw_jobs}
     healthy = _healthy_ats_providers()
     cutoff = (datetime.now(timezone.utc)
               - timedelta(days=config.get("assume_expired_days", 30))
@@ -105,7 +106,9 @@ def sweep(seen: dict, raw_jobs: list[Job], config: dict) -> list[dict]:
             continue
         source = rec.get("source", "")
         if source in ATS_PROVIDERS:
-            if source in healthy and job_id not in present:
+            if (source in healthy and job_id not in present
+                    and group_key(rec.get("company", ""),
+                                  rec.get("title", "")) not in present_groups):
                 _close(rec)
                 closed.append(rec)
         elif source == "microsoft":
