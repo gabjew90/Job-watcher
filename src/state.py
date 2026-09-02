@@ -82,6 +82,7 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
             "source": job.source,
             "priority": job.priority,
             "first_seen": _today(),
+            "first_seen_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "date_posted": job.date_posted,
             "pay": job.pay,
             "work_mode": job.work_mode,

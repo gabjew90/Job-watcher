@@ -53,17 +53,21 @@ def _esc(text: str, limit: int = 0) -> str:
     return text[:limit] + "…" if limit and len(text) > limit else text
 
 
-def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path],
+def build_digest(records: list[dict], drafts: list[Path],
                  health_summary: list[dict] | None = None,
                  closed_recs: list[dict] | None = None,
                  digest_floor: int = 40,
                  suggestions: list[str] | None = None,
                  audit_recs: list[dict] | None = None) -> str:
-    def sort_key(j: Job):
+    """Render the digest from STATE RECORDS covering a rolling window, so a
+    posting appears in every digest for 24h. Runs fire several times a day
+    (GitHub's cron is erratic); a run-scoped digest meant anything found
+    between two digests could be missed entirely."""
+    def sort_key(r: dict):
         # Band desc, priority flag, posted date desc — deterministic
         # within-band ordering, no sub-band precision implied.
-        return (-(scores.get(j.job_id, {}).get("score", -1)), not j.priority,
-                _rev_date(j.date_posted))
+        return (-(r.get("score") or -1), not r.get("priority"),
+                _rev_date(r.get("date_posted", "")))
 
     def _rev_date(d: str) -> str:
         return "".join(chr(255 - ord(c)) for c in (d or "0000-00-00"))
@@ -77,28 +81,29 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
                   for p in drafts]
         lines.append("")
     # Digest floor: don't itemize clear misfits, just count them.
-    visible = [j for j in new_jobs
-               if scores.get(j.job_id) is None
-               or scores[j.job_id]["score"] >= digest_floor]
-    omitted = len(new_jobs) - len(visible)
+    visible = [r for r in records
+               if r.get("score") is None or r["score"] >= digest_floor]
+    omitted = len(records) - len(visible)
     if visible:
         lines.append("| Fit | Role | Company | Location | Mode | Pay | Posted |")
         lines.append("|--:|---|---|---|---|---|---|")
-        for j in sorted(visible, key=sort_key):
-            s = scores.get(j.job_id)
-            score = f"**{s.get('band') or s['score']}**" if s else "–"
-            star = " ⭐" if j.priority else ""
-            rationale = (f"<br><sub>{_esc(s['rationale'], 160)}</sub>"
-                         if s and s.get("rationale") else "")
+        for r in sorted(visible, key=sort_key):
+            band = r.get("band") or r.get("score")
+            score = f"**{band}**" if band is not None else "–"
+            star = " ⭐" if r.get("priority") else ""
+            rationale = (f"<br><sub>{_esc(r['rationale'], 160)}</sub>"
+                         if r.get("rationale") else "")
+            locs = len(r.get("locations") or [])
+            extra = f" +{locs - 1}" if locs > 1 else ""
             lines.append(
-                f"| {score}{star} | [{_esc(j.title, 70)}]({j.url}){rationale} "
-                f"| {_esc(j.company)} | {_esc(j.location, 40)} "
-                f"| {j.work_mode} | {_esc(j.pay, 45)} | {j.date_posted} |")
+                f"| {score}{star} | [{_esc(r.get('title'), 70)}]({r.get('url')}){rationale} "
+                f"| {_esc(r.get('company'))} | {_esc(r.get('location'), 34)}{extra} "
+                f"| {r.get('work_mode', '')} | {_esc(r.get('pay'), 45)} | {r.get('date_posted', '')} |")
     if omitted:
         lines.append(f"\n_{omitted} low-fit posting{'s' if omitted != 1 else ''} "
                      f"(score < {digest_floor}) omitted; clear misfits are "
                      f"auto-archived._")
-    if not scores and new_jobs:
+    if records and all(r.get("score") is None for r in records):
         lines.append("\n_Unscored run (triage unavailable)._")
     if closed_recs:
         lines.append("\n## 🚫 Closed since last run\n")
@@ -135,25 +140,25 @@ def build_digest(new_jobs: list[Job], scores: dict[str, dict], drafts: list[Path
 
 
 
-def post_issue(new_jobs: list[Job], scores: dict[str, dict] | None = None,
+def post_issue(records: list[dict],
                drafts: list[Path] | None = None,
                health_summary: list[dict] | None = None,
                closed_recs: list[dict] | None = None,
                digest_floor: int = 40,
                suggestions: list[str] | None = None,
                audit_recs: list[dict] | None = None) -> None:
-    scores = scores or {}
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    title = f"Job watch {date}: {len(new_jobs)} new posting{'s' if len(new_jobs) != 1 else ''}"
-    if scores:
-        top = max(scores.values(), key=lambda s: s["score"])
-        title += f" (top score {top['score']})"
+    title = f"Job watch {date}: {len(records)} posting{'s' if len(records) != 1 else ''} in 24h"
+    banded = [r for r in records if r.get("band")]
+    if banded:
+        best = max(banded, key=lambda r: r.get("score") or 0)
+        title += f" (top: {best['band']})"
     if closed_recs:
         title += f", {len(closed_recs)} closed"
-    body = build_digest(new_jobs, scores, drafts, health_summary, closed_recs,
+    body = build_digest(records, drafts, health_summary, closed_recs,
                         digest_floor, suggestions, audit_recs)
 
     if not token or not repo:

@@ -1,7 +1,7 @@
 """Daily pipeline: scrape → filter → dedupe → persist → dashboard → notify."""
 import json
 import logging
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import dashboard, draft_requests, expiry, feedback, filters, health, notify, state as state_mod, triage
@@ -113,6 +113,18 @@ def main() -> None:
     dashboard.generate(seen, health.summary(),
                        config.get("dashboard_max_rows", 500))
 
+    # Digest covers a rolling window rather than only this run's finds:
+    # several runs fire per day, so a run-scoped digest could strand
+    # postings between two notifications. Overlap is intentional.
+    window_h = config.get("digest_window_hours", 24)
+    cutoff = (datetime.now(timezone.utc)
+              - timedelta(hours=window_h)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    window = [r for r in seen.values()
+              if r.get("active", True)
+              and (r["first_seen_at"] >= cutoff if r.get("first_seen_at")
+                   else r.get("first_seen") == today)]
+
     if new_jobs or closed_recs:
         # Digest floor never sits below the archive floor.
         digest_floor = max(config.get("digest_min_score", 40), archive_floor)
@@ -126,7 +138,9 @@ def main() -> None:
                         if r.get("lowscore") or (not r.get("active", True)
                                                  and (r.get("score") or 99) < 25)]
             audit_recs = random.sample(archived, min(10, len(archived)))
-        notify.post_issue(new_jobs, scores, drafts, health.summary(), closed_recs,
+        log.info("Digest: %d postings in the last %dh (%d new this run)",
+                 len(window), window_h, len(new_jobs))
+        notify.post_issue(window, drafts, health.summary(), closed_recs,
                           digest_floor, suggestions, audit_recs)
     else:
         log.info("No new or closed postings; skipping notification.")

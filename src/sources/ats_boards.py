@@ -33,11 +33,17 @@ def fetch_greenhouse(board: str, company: str) -> list[Job]:
         desc = strip_html(j.get("content", ""))
         title = j.get("title", "")
         location = (j.get("location") or {}).get("name", "")
+        # Companies that EMBED the board publish an absolute_url like
+        # "https://acme.com/careers/?gh_jid=123", which lands on the careers
+        # index rather than the posting. The canonical board URL deep links.
+        url = j.get("absolute_url", "")
+        if "gh_jid=" in url or not url:
+            url = f"https://job-boards.greenhouse.io/{board}/jobs/{j.get('id')}"
         jobs.append(Job(
             title=title,
             company=company,
             location=location,
-            url=j.get("absolute_url", ""),
+            url=url,
             source="greenhouse",
             description=desc,
             date_posted=(j.get("updated_at") or "")[:10],
