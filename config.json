@@ -29,7 +29,6 @@
     "San Diego Gas & Electric",
     "Sempra",
     "Fluence",
-    "Form Energy",
     "Jupiter Power",
     "esVolta",
     "Key Capture Energy",
@@ -231,6 +230,21 @@
       "board": "submer",
       "company": "Submer",
       "keep_all": true
+    },
+    {
+      "provider": "ashby",
+      "board": "formenergy",
+      "company": "Form Energy"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "veir",
+      "company": "VEIR"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "teneo",
+      "company": "Teneo"
     }
   ],
   "workday_boards": [
