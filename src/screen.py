@@ -30,6 +30,10 @@ log = logging.getLogger(__name__)
 FILE = Path("state/screened_out.json")
 RETENTION_DAYS = 60
 CHUNK = 120
+# Each `claude -p` call costs ~2 minutes of wall clock whatever its size,
+# so a backlog (a newly added 2,000-posting board; the first run judged
+# 4,641 titles in 89 minutes) is worked off across runs, not in one.
+MAX_JUDGED_PER_RUN = 600
 SCREEN_MODEL = os.environ.get("JOBWATCH_SCREEN_MODEL", "claude-haiku-4-5-20251001")
 
 PROMPT = """You are screening job postings for a candidate, using ONLY each posting's
@@ -45,12 +49,17 @@ Decide keep or drop for each posting:
 - KEEP when the title is ambiguous but the company operates in those
   industries: a flat "Program Manager" or "Development Manager" at a
   datacenter, storage, utility or energy company may be senior in scope.
-- DROP only clear misfits: trades, field, technician, construction crew and
-  O&M roles; junior, entry-level, intern; hands-on individual-contributor
-  engineering (design, firmware, software, network, RTL, validation);
-  quota-carrying sales; HR, recruiting, legal, accounting, admin; and roles
-  in unrelated industries.
-When in doubt, keep — a later pass reads the full description.
+- DROP clear misfits: trades, field, technician, construction crew,
+  commissioning, facilities-operations and O&M roles; supervisors and
+  superintendents; junior, entry-level, intern, associate, coordinator,
+  analyst; hands-on individual-contributor engineering of any discipline
+  (electrical, mechanical, controls, reliability, project, design,
+  firmware, software, network, RTL, validation, "subject matter expert");
+  quota-carrying sales; HR, recruiting, legal, finance, accounting,
+  marketing, admin; and roles in unrelated industries.
+When a title that fits the domain is ambiguous about level, keep — a later
+pass reads the full description. When the title says nothing about the
+domain AND nothing about leadership scope, drop.
 
 Return ONLY a JSON array, no prose, one object per posting:
 [{{"job_id": "...", "keep": true}}, ...]
@@ -114,6 +123,10 @@ def apply(raw: list[Job], kept: list[Job], seen: dict, config: dict
                   and not filters.is_excluded(j, config["title_exclusions"])]
     # Dedupe by identity: the same req arrives from several sources.
     unseen = list({j.job_id: j for j in candidates}.values())
+    if len(unseen) > MAX_JUDGED_PER_RUN:
+        log.info("Title screen: %d unseen titles, judging %d this run",
+                 len(unseen), MAX_JUDGED_PER_RUN)
+        unseen = unseen[:MAX_JUDGED_PER_RUN]
     verdicts = judge(unseen)
     stats = {"screened": len(verdicts), "rescued": 0, "dropped": 0,
              "available": bool(verdicts) or not unseen}
@@ -121,15 +134,24 @@ def apply(raw: list[Job], kept: list[Job], seen: dict, config: dict
         rejected = [j for j in unseen if j.job_id not in kept_ids]
         return kept, rejected, stats
 
+    # A rescue (keyword-rejected, screen says keep) also needs a leadership
+    # or role-type signal in the title. The first live run rescued 467
+    # postings on the model's benefit of the doubt and the full scorer
+    # banded most of them misfit; a title with neither a domain word nor
+    # a scope word is almost always an individual-contributor role.
+    signals = [k.lower() for k in config.get("rescue_title_keywords", [])]
     drop_ids, rescued = set(), []
     for j in unseen:
         keep = verdicts.get(j.job_id)
         if keep is None:
             continue  # chunk failed: keyword decision stands
         if keep and j.job_id not in kept_ids:
-            j.priority = filters.is_priority(j, config["priority_topics"])
-            rescued.append(j)
-            kept_ids.add(j.job_id)
+            if any(s in j.title.lower() for s in signals):
+                j.priority = filters.is_priority(j, config["priority_topics"])
+                rescued.append(j)
+                kept_ids.add(j.job_id)
+            else:
+                screened[j.job_id] = _today()  # remembered, not re-judged
         elif not keep:
             drop_ids.add(j.job_id)
             screened[j.job_id] = _today()
