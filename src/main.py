@@ -4,7 +4,8 @@ import logging
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import dashboard, discovery, draft_requests, expiry, feedback, filters, health, notify, state as state_mod, triage
+from . import (dashboard, discovery, draft_requests, expiry, feedback, filters,
+               health, notify, screen, state as state_mod, triage)
 from .models import Job
 from .sources import (ats_boards, career_sites, hyperscalers, jobspy_source,
                       successfactors, workday)
@@ -32,10 +33,15 @@ def main() -> None:
     kept = filters.apply_filters(raw, config)
     log.info("%d postings after relevance filter/exclusions", len(kept))
 
+    seen = state_mod.load()
+    # Title screen: model judgment on postings not yet tracked — rescues
+    # flat titles at target employers past the keyword gate and drops the
+    # obvious misfits it let through. Rejects feed the weekly filter audit.
+    kept, rejected, screen_stats = screen.apply(raw, kept, seen, config)
+
     fb = feedback.load()
     kept = [j for j in kept if not feedback.matches(j, fb["hide"])]
 
-    seen = state_mod.load()
     feedback.sweep_state(seen, fb["hide"])
     closed_recs = expiry.sweep(seen, raw, config)
     new_jobs = state_mod.split_new(kept, seen)
@@ -149,17 +155,22 @@ def main() -> None:
         suggestions = notify.coverage_suggestions(seen, config)
         # Weekly (Mondays): sample archived records for hand-grading — the
         # archive filter's false-negative rate is invisible otherwise.
-        audit_recs = []
+        audit_recs, reject_audit = [], []
         if datetime.now(timezone.utc).weekday() == 0:
             import random
             archived = [r for r in seen.values()
                         if r.get("lowscore") or (not r.get("active", True)
                                                  and (r.get("score") or 99) < 25)]
             audit_recs = random.sample(archived, min(10, len(archived)))
+            # The filter's false negatives are otherwise invisible: nothing
+            # it rejects reaches state. Sample this run's rejects too.
+            reject_audit = [j.to_dict() for j in
+                            random.sample(rejected, min(10, len(rejected)))]
         log.info("Digest: %d postings in the last %dh (%d new this run)",
                  len(window), window_h, len(new_jobs))
         notify.post_issue(window, drafts, health.summary(), closed_recs,
-                          digest_floor, suggestions, audit_recs, discovered)
+                          digest_floor, suggestions, audit_recs, discovered,
+                          reject_audit, screen_stats)
     else:
         log.info("No new or closed postings; skipping notification.")
 

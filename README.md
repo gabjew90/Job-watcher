@@ -17,8 +17,10 @@ ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
 Workday / SuccessFactors boards (NVIDIA, GE Vernova, PG&E, NextEra, ...)
 careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD)
   → keyword filter + title exclusions + priority-topic ⭐
+  → title screen: Haiku judges new postings' title+company, rescuing flat
+    titles at target employers and dropping obvious misfits (screen.py)
   → dedupe vs state/seen_jobs.json  (committed each run)
-  → Claude triage: 0-100 fit score vs profile.md (Haiku, batched)
+  → Claude triage: fit band vs profile.md + feedback (Sonnet, batched)
   → resume drafts for scores ≥ 75, from experience_library.md only (Sonnet)
   → GitHub Issue digest (sorted by score) + docs/index.html dashboard
 ```
@@ -134,5 +136,11 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   careers sites) are snapshot-diffed exactly; Microsoft and Google postings
   are probed individually each run; other sources (including keyword-search
   ones like Workday and Jibe) auto-close after `assume_expired_days`.
+- Filter recall is audited, not assumed: every Monday the digest samples
+  ten postings the title screen (or, without the CLI, the keyword filter)
+  turned away before scoring, alongside ten auto-archived ones. Rejects
+  never reach state, so that sample is the only view of what the filter
+  loses. Screen drops are remembered in `state/screened_out.json` (60
+  days) so a title is judged once.
 - No LinkedIn scraping. No auto-applying. Discovery, scoring, and drafting
   only.

@@ -2,8 +2,11 @@
 
 Runs headless Claude Code (`claude -p`), authenticated in CI via the
 CLAUDE_CODE_OAUTH_TOKEN repo secret (minted with `claude setup-token`) —
-subscription usage, no API key. Scoring uses Haiku; resume drafts use
-Sonnet (rare, and writing quality matters there).
+subscription usage, no API key. Scoring uses Sonnet — the calibration
+rules in feedback.md (seniority from described scope, not title) are
+judgment calls a stronger model gets right more often, and the volume
+(~50 postings a run, batched) keeps it cheap. The title screen
+(screen.py) uses Haiku; resume drafts use Sonnet.
 
 Cost hygiene: the whole step is skipped when there are no new postings,
 scoring is batched (CHUNK jobs per call), and drafting is disabled until
@@ -29,7 +32,7 @@ DRAFTS_DIR = Path("drafts")
 CHUNK = 40
 # Pinned model versions (CLI aliases like "haiku" drift across releases);
 # override via env for experiments.
-SCORE_MODEL = os.environ.get("JOBWATCH_SCORE_MODEL", "claude-haiku-4-5-20251001")
+SCORE_MODEL = os.environ.get("JOBWATCH_SCORE_MODEL", "claude-sonnet-5")
 DRAFT_MODEL = os.environ.get("JOBWATCH_DRAFT_MODEL", "claude-sonnet-5")
 
 # Bands make the four real decisions (archive / hide / show / rank)
