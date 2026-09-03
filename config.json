@@ -29,7 +29,6 @@
     "San Diego Gas & Electric",
     "Sempra",
     "Fluence",
-    "Form Energy",
     "Jupiter Power",
     "esVolta",
     "Key Capture Energy",
@@ -209,6 +208,11 @@
       "provider": "lever",
       "board": "mainspringenergy",
       "company": "Mainspring Energy"
+    },
+    {
+      "provider": "ashby",
+      "board": "formenergy",
+      "company": "Form Energy"
     }
   ],
   "workday_boards": [
