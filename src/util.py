@@ -26,6 +26,8 @@ COMPANY_ALIASES = {
     "servicetitan": ("servicetitan", "service titan"),
     "corescientific": ("core scientific",),
     "appliednova": ("applied digital",),
+    # "amd" alone would also match Amdocs; only the spelled-out form maps.
+    "amd": ("advanced micro devices",),
 }
 
 
@@ -64,6 +66,10 @@ def source_id(url: str) -> str:
     if not url:
         return ""
     m = re.search(r"[?&](?:gh_jid|jk|jobId|id)=([A-Za-z0-9-]+)", url)
+    if m:
+        return m.group(1)
+    # Radancy-style paths put the id BEFORE the slug: /job/<id>/<title-slug>/
+    m = re.search(r"/job/(\d{4,})/", url)
     if m:
         return m.group(1)
     tail = url.rstrip("/").split("/")[-1].split("?")[0]

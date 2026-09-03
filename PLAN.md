@@ -34,6 +34,9 @@ sources (jobspy | hyperscaler APIs | ATS boards)
 | LLM | **Headless Claude Code on Max subscription OAuth token** (`CLAUDE_CODE_OAUTH_TOKEN` secret), not the pay-per-token API | Zero incremental cost; mint with `claude setup-token` |
 | Workflows | One daily workflow (scrape → triage → draft → commit → notify) | Two workflows adds coordination for no benefit at this scale |
 | Cost control | Skip LLM step entirely when zero new postings; batch all new postings in one prompt | |
+| Scoring model (2026-09) | **Sonnet** for banding (was Haiku); Haiku for the new title screen | 71% of keyword-filter passes were banded weak/misfit and 70% failed seniority — the calibration rules are judgment calls; volume is ~50 postings/run so the stronger model is cheap. Eval gates the switch |
+| Title screen (2026-09) | Haiku pass over NEW postings' title+company before the keyword gate is final: rescues flat titles at target employers, drops obvious misfits; drops remembered 60 days; Monday digest samples the rejects | Keyword filter was recall-first with unmeasured false negatives; a judged pre-pass both raises recall and cuts the junk the full scorer paid for |
+| JS-rendered careers sites (2026-09) | Fetch the vendor JSON endpoint behind the page (Radancy/HiBob/ADP/Jibe in `career_sites.py`); a headless browser is a **discovery tool only** (`scripts/probe_careers_site.js`), never part of the daily run | Every such site is fed by a plain JSON call; capturing it once is cheaper and more robust than rendering in CI, and full-list feeds get exact expiry like ATS boards |
 
 ## Phases
 

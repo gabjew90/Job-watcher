@@ -2,8 +2,11 @@
 
 Runs headless Claude Code (`claude -p`), authenticated in CI via the
 CLAUDE_CODE_OAUTH_TOKEN repo secret (minted with `claude setup-token`) —
-subscription usage, no API key. Scoring uses Haiku; resume drafts use
-Sonnet (rare, and writing quality matters there).
+subscription usage, no API key. Scoring uses Sonnet — the calibration
+rules in feedback.md (seniority from described scope, not title) are
+judgment calls a stronger model gets right more often, and the volume
+(~50 postings a run, batched) keeps it cheap. The title screen
+(screen.py) uses Haiku; resume drafts use Sonnet.
 
 Cost hygiene: the whole step is skipped when there are no new postings,
 scoring is batched (CHUNK jobs per call), and drafting is disabled until
@@ -29,7 +32,7 @@ DRAFTS_DIR = Path("drafts")
 CHUNK = 40
 # Pinned model versions (CLI aliases like "haiku" drift across releases);
 # override via env for experiments.
-SCORE_MODEL = os.environ.get("JOBWATCH_SCORE_MODEL", "claude-haiku-4-5-20251001")
+SCORE_MODEL = os.environ.get("JOBWATCH_SCORE_MODEL", "claude-sonnet-5")
 DRAFT_MODEL = os.environ.get("JOBWATCH_DRAFT_MODEL", "claude-sonnet-5")
 
 # Bands make the four real decisions (archive / hide / show / rank)
@@ -133,35 +136,47 @@ def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
     results: dict[str, dict] = {}
     for i in range(0, len(new_jobs), CHUNK):
         chunk = new_jobs[i:i + CHUNK]
-        postings = "\n\n".join(
-            f"job_id: {j.job_id}\ntitle: {j.title}\ncompany: {j.company}\n"
-            f"location: {j.location}\ndescription: {role_excerpt(j.description, 1500)}"
-            for j in chunk
-        )
         try:
-            raw = _run_claude(
-                SCORE_PROMPT.format(profile=profile, feedback=feedback,
-                                    postings=postings), SCORE_MODEL)
-            for item in _parse_json(raw):
-                band = str(item.get("band", "")).lower().strip()
-                if band not in BAND_SCORE:
-                    log.warning("Invalid band %r for %s — left unscored",
-                                band, item.get("job_id"))
-                    continue  # unscored records get rescued next run
-                mode = str(item.get("work_mode", "")).lower()
-                results[str(item["job_id"])] = {
-                    "band": band,
-                    "score": BAND_SCORE[band],
-                    "rationale": str(item.get("rationale", "")),
-                    "seniority_match": bool(item.get("seniority_match", False)),
-                    "pay": str(item.get("pay", "") or ""),
-                    "work_mode": mode if mode in ("onsite", "hybrid", "remote") else "",
-                }
+            results.update(_score_chunk(chunk, profile, feedback))
+            # A model occasionally omits an item from the array. One retry
+            # on just the omissions, instead of leaving them for next run's
+            # rescue pass (and failing the eval outright).
+            missing = [j for j in chunk if j.job_id not in results]
+            if missing and len(missing) < len(chunk):
+                log.info("Retrying %d posting(s) omitted from the response", len(missing))
+                results.update(_score_chunk(missing, profile, feedback))
             log.info("Triage chunk %d-%d scored (%d results)",
                      i + 1, i + len(chunk), len(results))
         except Exception as e:  # noqa: BLE001 - a failed chunk shouldn't kill the run
             log.warning("TRIAGE FAILURE on chunk %d-%d: %s", i + 1, i + len(chunk), e)
     return results
+
+
+def _score_chunk(chunk: list[Job], profile: str, feedback: str) -> dict[str, dict]:
+    postings = "\n\n".join(
+        f"job_id: {j.job_id}\ntitle: {j.title}\ncompany: {j.company}\n"
+        f"location: {j.location}\ndescription: {role_excerpt(j.description, 1500)}"
+        for j in chunk
+    )
+    raw = _run_claude(SCORE_PROMPT.format(profile=profile, feedback=feedback,
+                                          postings=postings), SCORE_MODEL)
+    out: dict[str, dict] = {}
+    for item in _parse_json(raw):
+        band = str(item.get("band", "")).lower().strip()
+        if band not in BAND_SCORE:
+            log.warning("Invalid band %r for %s — left unscored",
+                        band, item.get("job_id"))
+            continue  # unscored records get rescued next run
+        mode = str(item.get("work_mode", "")).lower()
+        out[str(item["job_id"])] = {
+            "band": band,
+            "score": BAND_SCORE[band],
+            "rationale": str(item.get("rationale", "")),
+            "seniority_match": bool(item.get("seniority_match", False)),
+            "pay": str(item.get("pay", "") or ""),
+            "work_mode": mode if mode in ("onsite", "hybrid", "remote") else "",
+        }
+    return out
 
 
 def scoring_fingerprint(feedback_text: str) -> dict:

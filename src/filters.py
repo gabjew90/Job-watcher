@@ -53,7 +53,8 @@ def apply_filters(jobs: list[Job], config: dict) -> list[Job]:
     # virtue of the employer; triage sorts fit instead of the keyword filter.
     keep_all_companies = {
         e["company"]
-        for key in ("ats_boards", "workday_boards", "successfactors_boards")
+        for key in ("ats_boards", "workday_boards", "successfactors_boards",
+                    "career_sites")
         for e in config.get(key, []) if e.get("keep_all")}
     kept = []
     for job in jobs:

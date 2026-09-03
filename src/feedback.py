@@ -59,11 +59,17 @@ def load() -> dict:
     if FILE.exists():
         # HTML comments hold inert examples — never parse or forward them.
         md = re.sub(r"<!--.*?-->", "", FILE.read_text(), flags=re.S).strip()
-        parts.append(md)
+        # hide: lines are applied deterministically below and kept OUT of
+        # the scoring prompt — shown the directive, the scorer skipped the
+        # hidden posting instead of banding it (eval: no result returned).
+        prompt_lines = []
         for line in md.splitlines():
             m = re.match(r"\s*[-*]?\s*hide:\s*(.+)", line, re.I)
             if m:
                 hide.append(m.group(1).strip())
+            else:
+                prompt_lines.append(line)
+        parts.append("\n".join(prompt_lines).strip())
 
     for issue in _issue_entries():
         body = issue["body"]
@@ -71,7 +77,8 @@ def load() -> dict:
         # owner's own notes are injected into scoring prompts.
         if "feed directly into future scoring:" in body:
             body = body.split("feed directly into future scoring:", 1)[1]
-        body = re.sub(r"^---\s*$.*", "", body, flags=re.S | re.M).strip()
+        body = re.sub(r"^---\s*$.*", "", body, flags=re.S | re.M)
+        body = re.sub(r"^\s*Action:\s*hide\b.*$", "", body, flags=re.I | re.M).strip()
         parts.append(f"[issue] {issue['title']}\n{body}".strip())
         if re.search(r"^\s*Action:\s*hide\b", issue["body"], re.I | re.M):
             target = re.sub(r"^feedback:\s*", "", issue["title"], flags=re.I).strip()

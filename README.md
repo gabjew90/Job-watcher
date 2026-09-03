@@ -14,9 +14,13 @@ posts a GitHub Issue digest, and renders a dashboard on GitHub Pages.
 jobspy (Indeed/Glassdoor/ZipRecruiter/Google Jobs)
 hyperscaler APIs (Microsoft/Amazon/Google careers; Meta off by default)
 ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
+Workday / SuccessFactors boards (NVIDIA, GE Vernova, PG&E, NextEra, ...)
+careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD)
   → keyword filter + title exclusions + priority-topic ⭐
+  → title screen: Haiku judges new postings' title+company, rescuing flat
+    titles at target employers and dropping obvious misfits (screen.py)
   → dedupe vs state/seen_jobs.json  (committed each run)
-  → Claude triage: 0-100 fit score vs profile.md (Haiku, batched)
+  → Claude triage: fit band vs profile.md + feedback (Sonnet, batched)
   → resume drafts for scores ≥ 75, from experience_library.md only (Sonnet)
   → GitHub Issue digest (sorted by score) + docs/index.html dashboard
 ```
@@ -63,8 +67,8 @@ descriptions (input for the triage step).
 ## Adding / fixing sources
 
 **Coverage doctrine**: every company worth watching either has a direct
-board entry (`ats_boards` / `workday_boards` / `successfactors_boards`)
-OR belongs in `indeed_company_watch`, which runs a targeted
+board entry (`ats_boards` / `workday_boards` / `successfactors_boards` /
+`career_sites`) OR belongs in `indeed_company_watch`, which runs a targeted
 `company:"X" (energy OR power OR "data center")` Indeed query per company
 each run — topic searches cap at 25 ranked results and routinely bury
 individual employers' postings. The digest's 🔭 coverage-suggestions
@@ -79,6 +83,32 @@ https://boards-api.greenhouse.io/v1/boards/<slug>/jobs
 https://api.lever.co/v0/postings/<slug>?mode=json
 https://api.ashbyhq.com/posting-api/job-board/<slug>
 ```
+
+**JavaScript-rendered careers sites** (`career_sites` in `config.json`):
+employers whose careers pages carry no postings in their HTML — plain
+`requests` sees an empty shell, and they used to reach the digest only via
+Indeed. Every such page is fed by a JSON endpoint; `src/sources/career_sites.py`
+fetches four vendor platforms directly (Radancy, HiBob, ADP WorkforceNow,
+Jibe/iCIMS). No browser runs in the pipeline. To wire a new employer, find
+its endpoint with a headless browser's network capture:
+
+```bash
+npm i -g playwright && npx playwright install chromium
+NODE_PATH="$(npm root -g)" node scripts/probe_careers_site.js https://careers.example.com/jobs
+```
+
+(`NODE_PATH` because Node never resolves `require()` from the global
+`node_modules` on its own; a local `npm i playwright` works without it.)
+
+It prints the page's job links and every API-shaped response (URL, status,
+first bytes). The call carrying the postings names the platform: a
+`jobsapi-google.m-cloud.io` search is Radancy (config `tenant` = the uuid in
+its `companyName` parameter), `*.careers.hibob.com/api/job-ad` is HiBob
+(`slug` = subdomain), `workforcenow.adp.com/.../job-requisitions` is ADP
+(`cid`/`ccId` from the page URL), `/api/jobs?keywords=` is Jibe (`base` =
+the careers host). A platform not in the module needs a new fetcher there,
+same shape as the others. Not every site yields: Tesla sits behind Akamai
+and denies datacenter IPs even to a real browser.
 
 **Fixing a broken hyperscaler fetcher** (they use undocumented endpoints
 that move when sites redesign): open the career site's search page in a
@@ -102,8 +132,15 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   JavaScript widget from an internal API — they appear in no fetchable
   text (search API, page HTML, or per-job JSON). Amazon rows show blank
   pay by design; check the posting page.
-- Posting liveness: ATS boards are snapshot-diffed exactly; Microsoft and
-  Google postings are probed individually each run; other sources
-  auto-close after `assume_expired_days`.
+- Posting liveness: full-list sources (ATS boards; Radancy/HiBob/ADP
+  careers sites) are snapshot-diffed exactly; Microsoft and Google postings
+  are probed individually each run; other sources (including keyword-search
+  ones like Workday and Jibe) auto-close after `assume_expired_days`.
+- Filter recall is audited, not assumed: every Monday the digest samples
+  ten postings the title screen (or, without the CLI, the keyword filter)
+  turned away before scoring, alongside ten auto-archived ones. Rejects
+  never reach state, so that sample is the only view of what the filter
+  loses. Screen drops are remembered in `state/screened_out.json` (60
+  days) so a title is judged once.
 - No LinkedIn scraping. No auto-applying. Discovery, scoring, and drafting
   only.

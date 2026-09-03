@@ -25,7 +25,8 @@ def coverage_suggestions(seen: dict, config: dict) -> list[str]:
     from datetime import datetime, timezone
     from .util import company_key
     direct = {company_key(e.get("company", ""))
-              for key in ("ats_boards", "workday_boards", "successfactors_boards")
+              for key in ("ats_boards", "workday_boards", "successfactors_boards",
+                          "career_sites")
               for e in config.get(key, [])}
     # Watched employers are deliberately boardless (no reachable ATS) —
     # per the coverage doctrine they are covered, not candidates.
@@ -59,7 +60,9 @@ def build_digest(records: list[dict], drafts: list[Path],
                  digest_floor: int = 40,
                  suggestions: list[str] | None = None,
                  audit_recs: list[dict] | None = None,
-                 discovered: list[dict] | None = None) -> str:
+                 discovered: list[dict] | None = None,
+                 reject_audit: list[dict] | None = None,
+                 screen_stats: dict | None = None) -> str:
     """Render the digest from STATE RECORDS covering a rolling window, so a
     posting appears in every digest for 24h. Runs fire several times a day
     (GitHub's cron is erratic); a run-scoped digest meant anything found
@@ -123,6 +126,24 @@ def build_digest(records: list[dict], drafts: list[Path],
                          f"[{_esc(r.get('title', ''), 60)}]({r.get('url', '')}) — "
                          f"{_esc(r.get('company', ''))}"
                          f"<br><sub>{_esc(r.get('rationale', ''), 140)}</sub>")
+    if reject_audit:
+        lines.append("\n## 🧪 Weekly filter audit\n")
+        how = ("the title screen" if (screen_stats or {}).get("available")
+               else "the keyword filter")
+        stats = ""
+        if (screen_stats or {}).get("screened"):
+            stats = (f" This run the screen judged {screen_stats['screened']} "
+                     f"titles, rescued {screen_stats['rescued']} past the "
+                     f"keyword filter and dropped {screen_stats['dropped']} it "
+                     f"had passed.")
+        lines.append(f"Random sample of postings {how} turned away BEFORE "
+                     f"scoring this run — these never reach state, so this is "
+                     f"the only view of what the filter loses. Check any that "
+                     f"should have been scored and file feedback:{stats}")
+        for r in reject_audit:
+            lines.append(f"- [ ] [{_esc(r.get('title', ''), 60)}]({r.get('url', '')}) — "
+                         f"{_esc(r.get('company', ''))} · {_esc(r.get('location', ''), 30)}"
+                         f" <sub>{_esc(r.get('source', ''))}</sub>")
     if discovered:
         lines.append("\n## 🔗 Direct boards wired up\n")
         lines.append("These companies kept surfacing strong roles through "
@@ -155,7 +176,9 @@ def post_issue(records: list[dict],
                digest_floor: int = 40,
                suggestions: list[str] | None = None,
                audit_recs: list[dict] | None = None,
-               discovered: list[dict] | None = None) -> None:
+               discovered: list[dict] | None = None,
+               reject_audit: list[dict] | None = None,
+               screen_stats: dict | None = None) -> None:
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
@@ -168,7 +191,8 @@ def post_issue(records: list[dict],
     if closed_recs:
         title += f", {len(closed_recs)} closed"
     body = build_digest(records, drafts, health_summary, closed_recs,
-                        digest_floor, suggestions, audit_recs, discovered)
+                        digest_floor, suggestions, audit_recs, discovered,
+                        reject_audit, screen_stats)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)

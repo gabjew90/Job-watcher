@@ -63,4 +63,35 @@ hide: Solution Engineer - Structural Design @ Neara
   strategy / program / product / hosting-capacity-platform roles remain
   high fits. (from issue #23, re: Sargent & Lundy Senior Grid
   Interconnection Consultant)
+- calibration: real-estate / site DEVELOPMENT execution leadership — owning
+  the land-to-commissioning lifecycle (site selection, entitlements,
+  municipal negotiations, construction delivery) at datacenter developers
+  or utilities — bands possible, not strong/top. No direct development
+  experience (I work alongside developers as a BESS PM). Employer or
+  industry fit alone does not lift it; energy/power-strategy roles at the
+  same employers remain high fits. (from issues #30, #50, re: Crusoe
+  Senior Director, Development; NextEra Project Director - Data Center
+  Development)
+- calibration: preconstruction / construction-delivery leadership (VP or
+  director of preconstruction, construction scheduling, delivery) bands
+  weak even at hyperscale datacenter operators — too construction
+  focused, whatever the power-feasibility framing. (from issue #51, re:
+  Vantage Vice President, Preconstruction)
+- calibration: battery/BESS ENGINEERING leadership whose deliverables are
+  EMS, controls, or systems engineering bands possible — battery company
+  and product-ownership framing are pluses, but the scope is engineering
+  I am not expert in. Battery product / commercial strategy leadership
+  stays top. (from issue #31, re: SK Battery America ESS - EMS
+  Engineering, Director)
+- calibration: pure business-development / sales-origination roles
+  ("Director of Business Development") band possible at most, even in
+  datacenter power — I have never held a BD or sales role. Roles where BD
+  is one facet of a product or strategy job are unaffected. (from issue
+  #32, re: NextEdge Networks Director of Business Development)
+- calibration: "storage" in this profile means ENERGY storage. Data /
+  compute storage product roles (block, file, object storage; storage for
+  GPU clusters) band weak, even at energy-first AI infrastructure
+  companies — an energy-first employer does not make a platform PM role
+  energy work; score the role's actual scope. (from issue #52, re: Crusoe
+  Staff Product Manager, AI Infrastructure (Storage))
 

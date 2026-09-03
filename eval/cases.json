@@ -154,6 +154,72 @@
    "reason": "Scope-based seniority: flat big-tech title but senior described scope and $202-273k pay; excellent domain fit must not be capped by title-only seniority (owner-directed rule, 2026-08-31)",
    "source": "feedback",
    "owner_verified": false
+  },
+  {
+   "id": "development-director-crusoe",
+   "title": "Senior Director, Development",
+   "company": "Crusoe",
+   "location": "Dallas, TX - US",
+   "description": "s, and be part of a high-performing team that believes in each other, come build with us at Crusoe. ABOUT THIS ROLE Crusoe is seeking a Senior Director, Development to serve as the strategic architect and executive lead for our flagship AI data center campuses. These are not just buildings; they are multi-billion dollar infrastructure assets that represent the frontier of AI compute. In this high-impact leadership role, you will own the end-to-end development lifecycle for our largest capital investments. You are responsible for transforming raw land and power into operational excellence, navigating the complexities of large-scale industrial development, and mitigating executive-level risk. You will lead a multidisciplinary ecosystem of internal experts and external partners to deliver the physical engine of Crusoe\u2019s growth. Location: This role is required to be in-office 5 days per week in our Dallas, TX office. WHAT YOU\u2019LL BE WORKING ON - Executive Project Ownership: Lead the strategic execution of multi-billion dollar AI campuses, serving as the ultimate point of accountability for delivery, budget, and quality. - Strategic Lifecycle Management: Drive the full development stack\u2014from site selection and entitlement strategy to complex municipal negotiations and final commissioning. - High-Stakes Stakeholder Diplomacy: Act as the primary face of Crusoe to government officials, utility executives, and community leaders to secure critical entitlements and infrastructure. - Advanced Risk Orchestration: Anticipate macroeconomic, regulatory, and technical bottlenecks before they",
+   "expected_band": "possible",
+   "reason": "Site-development execution leadership (land-to-commissioning lifecycle): owner has no direct development experience; company/industry fit does not lift it (from issue #30: 'great company and industry fit in AI infrastructure; cons: no direct development experience'; was top)",
+   "source": "feedback",
+   "owner_verified": false
+  },
+  {
+   "id": "datacenter-development-nextera",
+   "title": "Project Director - Data Center Development",
+   "company": "NextEra Energy",
+   "location": "Juno Beach, FL",
+   "description": "ence working with hyperscalers or data center operators is highly preferred. Job Overview Employees in this role develop and execute plans for new or enhanced generation projects. This job is responsible for resource allocation, schedules, cost and technical adequacy, ensuring the project or transaction is completed in the most cost effective and competitive manner. This position manages all aspects of the business deal and ensures the project is completed on time and within budgetary constraints. Job Duties & Responsibilities Manages all aspects of the day to day transaction process to ensure timely completion as well as a cost effective and competitive results Leads and coordinates key functions such as financial feasibility analyses, engineering/design, project legal review, permitting activities and financial negotiations Coordinates due diligence activities with other internal groups to ensure proper analysis and structuring of assigned projects Acts as liaison between internal and external specialists regarding procurement, contracting, permitting and interconnection Constructs contractual arrangements for project development Negotiates agreements with consultants and subcontractors Ensures compliance with applicable technical and regulatory requirements Fosters external relationships with customers, third parties and members of the community Identifies opportunities and negotiates power sales contracts Performs other job-related duties as assigned Required Qualifications High School Grad /GED Bachelor's or Equivalent Experience Experience: 7+ years Preferred Qualific",
+   "expected_band": "possible",
+   "reason": "Same development-execution rule at a utility (from issue #50: 'I lack direct development experience (but I work with developers as a BESS PM)'; was top)",
+   "source": "feedback",
+   "owner_verified": false
+  },
+  {
+   "id": "ems-engineering-director-skba",
+   "title": "ESS - EMS Engineering, Director",
+   "company": "SK Battery America",
+   "location": "Troy, MI, US",
+   "description": "",
+   "expected_band": "possible",
+   "reason": "Battery company and product-ownership framing are pluses, but the scope is EMS engineering the owner is not expert in (from issue #31: 'Pros: battery company, product ownership and strategy; Cons: technical role on EMS'; was top). Title-only: Indeed copy not fetchable",
+   "source": "feedback",
+   "owner_verified": false
+  },
+  {
+   "id": "bizdev-director-nextedge",
+   "title": "Director of Business Development",
+   "company": "NextEdge Networks Holdings LLC",
+   "location": "Jacksonville, FL, US",
+   "description": "",
+   "expected_band": "possible",
+   "reason": "Pure business-development role in datacenter power: owner has never held a BD or sales role (from issue #32; was strong). Title-only: Indeed copy not fetchable",
+   "source": "feedback",
+   "owner_verified": false
+  },
+  {
+   "id": "preconstruction-vp-vantage",
+   "title": "Vice President, Preconstruction, NA",
+   "company": "Vantage Data Centers",
+   "location": "Denver, Colorado",
+   "description": "he front-end of the process of ensuring we have the critical capacity required to meet the evolving requirements of our wholesale and hyperscale customer base. We evaluate supply, demand, pricing, network, power, and a myriad of other factors when developing our market and site plans. We then acquire sites that align with those plans. The team collaborates with Commercial Management, Sales, Solution Engineering, Design Engineering, Construction, Operations, Finance, and Senior Management along the way. We also help ensure optimal revenue realization post-construction through development of commercial constructs and pricing that aligns to the objectives of both Vantage and our customers. Position Overview This role can be based in any of our US locations: Denver, CO; Phoenix, AZ; Santa Clara, CA; or Ashburn, VA. The Vice President, Preconstruction is responsible for leading the strategic planning, design integration, and execution readiness of Vantage\u2019s hyperscale and AI-driven data center developments. This role drives the full preconstruction lifecycle\u2014from site validation and power feasibility through design development and transition to construction\u2014ensuring projects are optimized for large-scale deployment, accelerated delivery, and high-density performance. Grounded in Vantage\u2019s core values of trust, integrity, accountability, teamwork, responsibility, and agility, the VP, Preconstruction serves as a critical connector across development, design, and construction. This leader ensures projects are fully de-risked, power-aligned, and scalable to support multi-phase campu",
+   "expected_band": "weak",
+   "reason": "Preconstruction/construction-delivery leadership at a hyperscale operator: owner says 'too construction focused' despite the power-feasibility framing (from issue #51; was top)",
+   "source": "feedback",
+   "owner_verified": false
+  },
+  {
+   "id": "storage-pm-crusoe",
+   "title": "Staff Product Manager, AI Infrastructure (Storage)",
+   "company": "Crusoe",
+   "location": "San Francisco, CA - US",
+   "description": "s, and be part of a high-performing team that believes in each other, come build with us at Crusoe. About This Role Crusoe is building the infrastructure layer that powers the most demanding AI workloads on the planet. Our storage stack is what keeps tens of thousands of GPUs fed with data, whether that means block volumes for fast bootups, a shared file system for a training cluster, or the object storage tier a physical AI customer depends on. As a Staff Product Manager on our Cloud Infrastructure team, you will own the storage product roadmap and shape how customers experience capacity, durability, and ease of use. This is a customer-obsessed role. You will spend real time with the engineers and infrastructure teams building on Crusoe Cloud, understand what is slowing them down or holding them back, and translate that into a product strategy that wins more of our business. You will work closely with Infrastructure Engineering, Cloud Software Engineering, SRE, Finance, and our executive team to turn customer insight into a storage platform that is easier to build on and better matched to how our customers actually use it. What You'll Be Working On - Customer discovery and advocacy: Build deep relationships with customers to understand their storage needs, pain points, and growth plans, and act as their voice inside Crusoe. - Roadmap ownership: Own and prioritize the storage product roadmap across block, file, and object, balancing customer requests, technical feasibility, and business impact. - Product strategy: Define the roadmap for customer-facing storage capabilities,",
+   "expected_band": "weak",
+   "reason": "'storage' here is block/file/object compute storage, not energy storage; an energy-first employer does not make a platform PM role energy work (from issue #52: 'wrong type of storage'; was top)",
+   "source": "feedback",
+   "owner_verified": false
   }
  ]
 }

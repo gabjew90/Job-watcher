@@ -104,7 +104,8 @@ def run(seen: dict, config: dict) -> list[dict]:
     Returns config entries to add (caller persists them)."""
     from .state import AGGREGATOR_SOURCES
     direct = {company_key(e.get("company", ""))
-              for key in ("ats_boards", "workday_boards", "successfactors_boards")
+              for key in ("ats_boards", "workday_boards", "successfactors_boards",
+                          "career_sites")
               for e in config.get(key, [])}
     attempts = _load_attempts()
     cutoff = (datetime.now(timezone.utc) - timedelta(days=RETRY_DAYS)).strftime("%Y-%m-%d")
