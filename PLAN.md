@@ -34,6 +34,7 @@ sources (jobspy | hyperscaler APIs | ATS boards)
 | LLM | **Headless Claude Code on Max subscription OAuth token** (`CLAUDE_CODE_OAUTH_TOKEN` secret), not the pay-per-token API | Zero incremental cost; mint with `claude setup-token` |
 | Workflows | One daily workflow (scrape → triage → draft → commit → notify) | Two workflows adds coordination for no benefit at this scale |
 | Cost control | Skip LLM step entirely when zero new postings; batch all new postings in one prompt | |
+| JS-rendered careers sites (2026-09) | Fetch the vendor JSON endpoint behind the page (Radancy/HiBob/ADP/Jibe in `career_sites.py`); a headless browser is a **discovery tool only** (`scripts/probe_careers_site.js`), never part of the daily run | Every such site is fed by a plain JSON call; capturing it once is cheaper and more robust than rendering in CI, and full-list feeds get exact expiry like ATS boards |
 
 ## Phases
 

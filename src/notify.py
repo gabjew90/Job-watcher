@@ -25,7 +25,8 @@ def coverage_suggestions(seen: dict, config: dict) -> list[str]:
     from datetime import datetime, timezone
     from .util import company_key
     direct = {company_key(e.get("company", ""))
-              for key in ("ats_boards", "workday_boards", "successfactors_boards")
+              for key in ("ats_boards", "workday_boards", "successfactors_boards",
+                          "career_sites")
               for e in config.get(key, [])}
     # Watched employers are deliberately boardless (no reachable ATS) —
     # per the coverage doctrine they are covered, not candidates.

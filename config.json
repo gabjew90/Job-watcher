@@ -14,10 +14,7 @@
   "indeed_company_watch": [
     "Meta",
     "Tesla",
-    "AMD",
     "Vertiv",
-    "IREN",
-    "Applied Digital",
     "Oracle",
     "LS Power",
     "GridStor",
@@ -29,7 +26,6 @@
     "Marathon Digital",
     "Soluna",
     "Hive Digital",
-    "Southern California Edison",
     "San Diego Gas & Electric",
     "Sempra",
     "Fluence",
@@ -275,6 +271,30 @@
       "company": "NextEra Energy"
     }
   ],
+  "career_sites": [
+    {
+      "provider": "radancy",
+      "company": "Southern California Edison",
+      "tenant": "3f187166-f813-42e8-b28c-afdaec98d345",
+      "site": "https://www.edisoncareers.com"
+    },
+    {
+      "provider": "hibob",
+      "company": "IREN",
+      "slug": "iren"
+    },
+    {
+      "provider": "adp",
+      "company": "Applied Digital",
+      "cid": "4e1f673a-e23b-4f79-98bf-9967bc802aac",
+      "ccId": "19000101_000001"
+    },
+    {
+      "provider": "jibe",
+      "company": "AMD",
+      "base": "https://careers.amd.com"
+    }
+  ],
   "location": "United States",
   "results_per_term": 50,
   "watch_hours_old": 168,
@@ -351,6 +371,7 @@
   ],
   "title_exclusions": [
     "intern",
+    "internship",
     "software engineer",
     "technician",
     "electrician",

@@ -26,6 +26,8 @@ COMPANY_ALIASES = {
     "servicetitan": ("servicetitan", "service titan"),
     "corescientific": ("core scientific",),
     "appliednova": ("applied digital",),
+    # "amd" alone would also match Amdocs; only the spelled-out form maps.
+    "amd": ("advanced micro devices",),
 }
 
 

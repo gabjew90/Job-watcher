@@ -2,10 +2,11 @@
 
 Three tiers, by how reliably each source can be checked:
 
-1. ATS boards (greenhouse/lever/ashby): every run fetches each board's FULL
-   posting list, so a tracked posting missing from today's snapshot is
-   closed. Exact and free. Skipped for a provider if any of its boards
-   failed to fetch this run (otherwise an outage would mass-expire jobs).
+1. Full-list sources (greenhouse/lever/ashby boards; radancy/hibob/adp
+   careers sites): every run fetches the employer's FULL posting list, so a
+   tracked posting missing from today's snapshot is closed. Exact and free.
+   Skipped for a provider if any of its boards failed to fetch this run
+   (otherwise an outage would mass-expire jobs).
 2. Microsoft: the careers SPA serves expired jobs with HTTP 200 and no
    status field anywhere, but the pcsx search API indexes only open
    positions — searching for a job's display ID is an exact liveness test.
@@ -29,7 +30,8 @@ from .util import HEADERS, group_key
 
 log = logging.getLogger(__name__)
 
-ATS_PROVIDERS = ("greenhouse", "lever", "ashby")
+# Sources whose fetchers return the complete posting list every run.
+ATS_PROVIDERS = ("greenhouse", "lever", "ashby", "radancy", "hibob", "adp")
 MS_JOB_API = "https://apply.careers.microsoft.com/api/apply/v2/jobs/{pid}"
 MS_SEARCH_API = "https://apply.careers.microsoft.com/api/pcsx/search"
 
