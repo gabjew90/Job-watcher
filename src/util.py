@@ -68,6 +68,10 @@ def source_id(url: str) -> str:
     m = re.search(r"[?&](?:gh_jid|jk|jobId|id)=([A-Za-z0-9-]+)", url)
     if m:
         return m.group(1)
+    # Radancy-style paths put the id BEFORE the slug: /job/<id>/<title-slug>/
+    m = re.search(r"/job/(\d{4,})/", url)
+    if m:
+        return m.group(1)
     tail = url.rstrip("/").split("/")[-1].split("?")[0]
     # numeric id, uuid, or a requisition code like R24478-1
     if re.fullmatch(r"\d{4,}|[0-9a-f]{8}-[0-9a-f-]{20,}|[A-Z]{1,3}\d{3,}[-\w]*", tail):

@@ -92,8 +92,11 @@ its endpoint with a headless browser's network capture:
 
 ```bash
 npm i -g playwright && npx playwright install chromium
-node scripts/probe_careers_site.js https://careers.example.com/jobs
+NODE_PATH="$(npm root -g)" node scripts/probe_careers_site.js https://careers.example.com/jobs
 ```
+
+(`NODE_PATH` because Node never resolves `require()` from the global
+`node_modules` on its own; a local `npm i playwright` works without it.)
 
 It prints the page's job links and every API-shaped response (URL, status,
 first bytes). The call carrying the postings names the platform: a

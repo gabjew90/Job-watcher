@@ -7,8 +7,10 @@
 // the postings is the endpoint a plain-`requests` fetcher can use — see
 // src/sources/career_sites.py for the four vendor platforms found this way.
 //
-// Usage:  node scripts/probe_careers_site.js <careers-url> [more urls...]
+// Usage:  NODE_PATH="$(npm root -g)" node scripts/probe_careers_site.js <url> [url...]
 // Needs:  npm i -g playwright && npx playwright install chromium
+//         (NODE_PATH lets require() see the global install; a local
+//         `npm i playwright` needs no NODE_PATH)
 //
 // Requests are served through Playwright's Node fetch stack (route.fetch)
 // rather than Chromium's own network stack, so the probe also works behind

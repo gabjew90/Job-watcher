@@ -88,7 +88,12 @@ def fetch_radancy(entry: dict, terms: list[str]) -> list[Job]:
         })
         resp.raise_for_status()
         payload = resp.json()
-        total = payload.get("totalHits", 0)
+        # Judge completeness against the FIRST page's total: a posting
+        # published mid-crawl shifts later pages by one row (a duplicate,
+        # harmless) and bumps the reported total, which must not read as a
+        # failed snapshot. A posting removed mid-crawl still trips the check.
+        if total is None:
+            total = payload.get("totalHits", 0)
         results = payload.get("searchResults") or []
         for r in results:
             j = r.get("job") or {}
@@ -136,7 +141,9 @@ def fetch_hibob(entry: dict, terms: list[str]) -> list[Job]:
         location = j.get("site", "")
         lo, hi = j.get("payTransparencyMinSalary"), j.get("payTransparencyMaxSalary")
         period = (j.get("payTransparencySalaryPayPeriod") or "").lower()
-        pay = _range(lo, hi, "hr" if "hour" in period else "yr") if lo and hi else extract_pay(desc)
+        pay = (_range(lo, hi, "hr" if "hour" in period else "yr",
+                      j.get("payTransparencySalaryCurrency") or "")
+               if lo and hi else extract_pay(desc))
         jobs.append(Job(
             title=title,
             company=entry["company"],
@@ -171,14 +178,14 @@ def fetch_adp(entry: dict, terms: list[str]) -> list[Job]:
     jobs = []
     for r in reqs:
         item = r.get("itemID", "")
+        desc = ""
         try:
             time.sleep(0.3)
             detail = requests.get(f"{ADP_API}/{item}", params=common, timeout=25,
                                   headers={**HEADERS, "Accept": "application/json"}).json()
+            desc = strip_html((detail or {}).get("requisitionDescription", ""))
         except Exception as e:  # noqa: BLE001 - a missing description is not fatal
             log.debug("adp detail fetch failed for %s: %s", item, e)
-            detail = {}
-        desc = strip_html(detail.get("requisitionDescription", ""))
         title = r.get("requisitionTitle", "")
         locs = r.get("requisitionLocations") or [{}]
         location = ((locs[0].get("nameCode") or {}).get("shortName") or "").strip()
