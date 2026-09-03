@@ -58,7 +58,8 @@ def build_digest(records: list[dict], drafts: list[Path],
                  closed_recs: list[dict] | None = None,
                  digest_floor: int = 40,
                  suggestions: list[str] | None = None,
-                 audit_recs: list[dict] | None = None) -> str:
+                 audit_recs: list[dict] | None = None,
+                 discovered: list[dict] | None = None) -> str:
     """Render the digest from STATE RECORDS covering a rolling window, so a
     posting appears in every digest for 24h. Runs fire several times a day
     (GitHub's cron is erratic); a run-scoped digest meant anything found
@@ -122,6 +123,13 @@ def build_digest(records: list[dict], drafts: list[Path],
                          f"[{_esc(r.get('title', ''), 60)}]({r.get('url', '')}) — "
                          f"{_esc(r.get('company', ''))}"
                          f"<br><sub>{_esc(r.get('rationale', ''), 140)}</sub>")
+    if discovered:
+        lines.append("\n## 🔗 Direct boards wired up\n")
+        lines.append("These companies kept surfacing strong roles through "
+                     "aggregators, so their own boards are now tracked "
+                     "(canonical links, full descriptions, exact expiry):")
+        lines += [f"- **{d['company']}** — {d['provider']} `{d['board']}`"
+                  for d in discovered]
     if suggestions:
         lines.append("\n## 🔭 Coverage suggestions\n")
         lines.append("High scorers from companies we only see via aggregators "
@@ -146,7 +154,8 @@ def post_issue(records: list[dict],
                closed_recs: list[dict] | None = None,
                digest_floor: int = 40,
                suggestions: list[str] | None = None,
-               audit_recs: list[dict] | None = None) -> None:
+               audit_recs: list[dict] | None = None,
+               discovered: list[dict] | None = None) -> None:
     drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
@@ -159,7 +168,7 @@ def post_issue(records: list[dict],
     if closed_recs:
         title += f", {len(closed_recs)} closed"
     body = build_digest(records, drafts, health_summary, closed_recs,
-                        digest_floor, suggestions, audit_recs)
+                        digest_floor, suggestions, audit_recs, discovered)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)

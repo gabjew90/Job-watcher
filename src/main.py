@@ -4,7 +4,7 @@ import logging
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import dashboard, draft_requests, expiry, feedback, filters, health, notify, state as state_mod, triage
+from . import dashboard, discovery, draft_requests, expiry, feedback, filters, health, notify, state as state_mod, triage
 from .models import Job
 from .sources import ats_boards, hyperscalers, jobspy_source, successfactors, workday
 
@@ -106,6 +106,23 @@ def main() -> None:
 
     state_mod.save(seen)
 
+    # Learn coverage: companies repeatedly surfacing strong/top roles that we
+    # only see via aggregators get their direct board found and wired in, so
+    # future postings arrive with canonical links, descriptions and exact
+    # expiry instead of an aggregator copy that dies on its own schedule.
+    discovered = discovery.run(seen, config)
+    if discovered:
+        cfg_path = Path("config.json")
+        cfg = json.loads(cfg_path.read_text())
+        cfg["ats_boards"].extend(discovered)
+        watch_out = {d["company"].lower() for d in discovered}
+        cfg["indeed_company_watch"] = [c for c in cfg.get("indeed_company_watch", [])
+                                       if c.lower() not in watch_out]
+        cfg_path.write_text(json.dumps(cfg, indent=2) + "\n")
+        for d in discovered:
+            log.info("Wired direct board: %s via %s/%s",
+                     d["company"], d["provider"], d["board"])
+
     # Drafting is on-demand only: the dashboard's ✍️ link files a
     # draft-request issue; no auto-drafting by score.
     drafts = draft_requests.process(raw, seen, config)
@@ -141,7 +158,7 @@ def main() -> None:
         log.info("Digest: %d postings in the last %dh (%d new this run)",
                  len(window), window_h, len(new_jobs))
         notify.post_issue(window, drafts, health.summary(), closed_recs,
-                          digest_floor, suggestions, audit_recs)
+                          digest_floor, suggestions, audit_recs, discovered)
     else:
         log.info("No new or closed postings; skipping notification.")
 
