@@ -17,8 +17,9 @@ ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
 Workday / SuccessFactors boards (NVIDIA, GE Vernova, PG&E, NextEra, ...)
 careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD)
   → keyword filter + title exclusions + priority-topic ⭐
-  → title screen: Haiku judges new postings' title+company, rescuing flat
-    titles at target employers and dropping obvious misfits (screen.py)
+  → title screen: Haiku judges new postings' title+company, dropping obvious
+    misfits and rescuing keyword-rejected titles that carry a leadership or
+    role-type signal (rescue_title_keywords); ≤600 titles/run (screen.py)
   → dedupe vs state/seen_jobs.json  (committed each run)
   → Claude triage: fit band vs profile.md + feedback (Sonnet, batched)
   → resume drafts for scores ≥ 75, from experience_library.md only (Sonnet)
