@@ -28,6 +28,7 @@ COMPANY_ALIASES = {
     "appliednova": ("applied digital",),
     # "amd" alone would also match Amdocs; only the spelled-out form maps.
     "amd": ("advanced micro devices",),
+    "flex": ("flextronics", "flex ltd"),
 }
 
 
