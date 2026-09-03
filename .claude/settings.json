@@ -5,9 +5,16 @@
         "source": "github",
         "repo": "obra/superpowers-marketplace"
       }
+    },
+    "knowledge-work-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/knowledge-work-plugins"
+      }
     }
   },
   "enabledPlugins": {
-    "superpowers@superpowers-marketplace": true
+    "superpowers@superpowers-marketplace": true,
+    "engineering@knowledge-work-plugins": true
   }
 }
