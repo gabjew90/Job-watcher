@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .models import Job
-from .util import group_key, twin_key
+from .util import company_key, group_key, source_id, twin_key
 
 STATE_FILE = Path("state/seen_jobs.json")
 
@@ -54,11 +54,23 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
              for r in state.values()}
     groups = {group_key(r.get("company", ""), r.get("title", "")): r
               for r in state.values()}
+    # Identity by the ATS's own id survives title renames, which otherwise
+    # look like "old posting closed, new posting appeared".
+    by_source_id = {}
+    for r in state.values():
+        sid = source_id(r.get("url", ""))
+        if sid:
+            by_source_id[(company_key(r.get("company", "")), sid)] = r
     new = []
     for job in jobs:
         if job.job_id not in state:
-            twin = (twins.get(twin_key(job.company, job.title, job.location))
-                    or groups.get(group_key(job.company, job.title)))
+            sid = source_id(job.url)
+            twin = (by_source_id.get((company_key(job.company), sid)) if sid else None)
+            if twin is not None and twin.get("title") != job.title:
+                # Same ATS id, new title: the employer renamed the role.
+                twin["title"] = job.title
+            twin = twin or (twins.get(twin_key(job.company, job.title, job.location))
+                            or groups.get(group_key(job.company, job.title)))
             if twin is not None:
                 # Aggregator copies expire independently of the employer's
                 # own posting (an Indeed listing went dead while the role
@@ -68,6 +80,10 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
                         and job.source not in AGGREGATOR_SOURCES):
                     twin["url"] = job.url
                     twin["source"] = job.source
+                elif job.source == twin.get("source") and job.url:
+                    # The fetcher is authoritative for its own postings, so
+                    # link improvements reach records stored earlier.
+                    twin["url"] = job.url
                 # Record the extra metro on the surviving row instead of
                 # alerting the same opening again.
                 locs = twin.setdefault("locations", [twin.get("location", "")])
@@ -102,5 +118,7 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
         }
         twins[twin_key(job.company, job.title, job.location)] = state[job.job_id]
         groups[group_key(job.company, job.title)] = state[job.job_id]
+        if (sid := source_id(job.url)):
+            by_source_id[(company_key(job.company), sid)] = state[job.job_id]
         new.append(job)
     return new

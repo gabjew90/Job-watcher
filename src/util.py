@@ -54,6 +54,26 @@ def twin_key(company: str, title: str, location: str) -> tuple:
     return (company_key(company), title_key(title), city_key(location))
 
 
+def source_id(url: str) -> str:
+    """The ATS's own id for a posting, from its URL.
+
+    Titles change — an employer renamed a role and it looked like the old
+    posting closed and a brand new one appeared. The ATS id is stable
+    across renames, so it is the strongest identity we have.
+    """
+    if not url:
+        return ""
+    m = re.search(r"[?&](?:gh_jid|jk|jobId|id)=([A-Za-z0-9-]+)", url)
+    if m:
+        return m.group(1)
+    tail = url.rstrip("/").split("/")[-1].split("?")[0]
+    # numeric id, uuid, or a requisition code like R24478-1
+    if re.fullmatch(r"\d{4,}|[0-9a-f]{8}-[0-9a-f-]{20,}|[A-Z]{1,3}\d{3,}[-\w]*", tail):
+        return tail
+    m = re.search(r"_([A-Z]{1,3}\d{3,}[-\w]*)$", tail)
+    return m.group(1) if m else ""
+
+
 def group_key(company: str, title: str) -> tuple:
     """Same company + title = ONE opening, however many metros it is posted
     to. Employers and aggregators syndicate a single req city-by-city (a
