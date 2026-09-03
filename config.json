@@ -8,19 +8,52 @@
     "AI energy",
     "data center cooling"
   ],
-  "sites": ["indeed"],
+  "sites": [
+    "indeed"
+  ],
   "indeed_company_watch": [
-    "Meta", "Tesla", "AMD", "Vertiv", "IREN", "Applied Digital",
-    "Oracle", "LS Power", "GridStor", "Bitfarms", "Core Scientific",
-    "Cipher Mining", "TeraWulf", "Riot Platforms", "Marathon Digital",
-    "Soluna", "Hive Digital", "Southern California Edison",
-    "San Diego Gas & Electric", "Sempra", "Fluence", "Form Energy",
-    "Jupiter Power", "esVolta", "Key Capture Energy", "Lancium",
-    "Vantage Data Centers", "Aligned Data Centers", "QTS Data Centers",
-    "Switch", "Stonepeak", "Energy Capital Partners", "ArcLight Capital",
-    "Excelsior Energy Capital", "KKR", "Solaris Energy Infrastructure",
-    "Kevala", "Utilidata", "Camus Energy", "WeaveGrid", "Verrus",
-    "Pearl Street Technologies", "Station A"
+    "Meta",
+    "Tesla",
+    "AMD",
+    "Vertiv",
+    "IREN",
+    "Applied Digital",
+    "Oracle",
+    "LS Power",
+    "GridStor",
+    "Bitfarms",
+    "Core Scientific",
+    "Cipher Mining",
+    "TeraWulf",
+    "Riot Platforms",
+    "Marathon Digital",
+    "Soluna",
+    "Hive Digital",
+    "Southern California Edison",
+    "San Diego Gas & Electric",
+    "Sempra",
+    "Fluence",
+    "Form Energy",
+    "Jupiter Power",
+    "esVolta",
+    "Key Capture Energy",
+    "Lancium",
+    "Aligned Data Centers",
+    "QTS Data Centers",
+    "Switch",
+    "Stonepeak",
+    "Energy Capital Partners",
+    "ArcLight Capital",
+    "Excelsior Energy Capital",
+    "KKR",
+    "Solaris Energy Infrastructure",
+    "Kevala",
+    "Utilidata",
+    "Camus Energy",
+    "WeaveGrid",
+    "Verrus",
+    "Pearl Street Technologies",
+    "Station A"
   ],
   "hyperscalers": {
     "microsoft": true,
@@ -29,95 +62,332 @@
     "meta": false
   },
   "ats_boards": [
-    {"provider": "greenhouse", "board": "coreweave", "company": "CoreWeave"},
-    {"provider": "greenhouse", "board": "pluspower", "company": "Plus Power"},
-    {"provider": "greenhouse", "board": "spearmintenergy", "company": "Spearmint Energy"},
-    {"provider": "greenhouse", "board": "energyhub", "company": "EnergyHub"},
-    {"provider": "lever", "board": "terawattinfrastructure", "company": "Terawatt Infrastructure"},
-    {"provider": "ashby", "board": "crusoe", "company": "Crusoe"},
-    {"provider": "ashby", "board": "base-power", "company": "Base Power"},
-    {"provider": "ashby", "board": "gridcare", "company": "GridCare"},
-    {"provider": "greenhouse", "board": "spacex", "company": "SpaceX"},
-    {"provider": "greenhouse", "board": "anthropic", "company": "Anthropic"},
-    {"provider": "greenhouse", "board": "nebius", "company": "Nebius"},
-    {"provider": "ashby", "board": "openai", "company": "OpenAI"},
-    {"provider": "ashby", "board": "emerald-ai", "company": "Emerald AI", "keep_all": true},
-    {"provider": "greenhouse", "board": "niraenergy", "company": "Nira Energy", "keep_all": true},
-    {"provider": "ashby", "board": "neara", "company": "Neara", "keep_all": true},
-    {"provider": "lever", "board": "gridware", "company": "Gridware", "keep_all": true},
-    {"provider": "lever", "board": "exowatt", "company": "Exowatt", "keep_all": true},
-    {"provider": "ashby", "board": "tyba", "company": "Tyba", "keep_all": true},
-    {"provider": "ashby", "board": "texture", "company": "Texture", "keep_all": true},
-    {"provider": "greenhouse", "board": "amperon", "company": "Amperon", "keep_all": true},
-    {"provider": "ashby", "board": "generate", "company": "Generate Capital", "keep_all": true},
-    {"provider": "greenhouse", "board": "digitalbridge", "company": "DigitalBridge", "keep_all": true},
-    {"provider": "greenhouse", "board": "hut8", "company": "Hut 8"},
-    {"provider": "lever", "board": "cleanspark", "company": "CleanSpark"},
-    {"provider": "greenhouse", "board": "sbenergy", "company": "SB Energy", "keep_all": true},
-    {"provider": "greenhouse", "board": "liquidstack", "company": "LiquidStack", "keep_all": true},
-    {"provider": "edged", "board": "all", "company": "Edged"}
+    {
+      "provider": "greenhouse",
+      "board": "coreweave",
+      "company": "CoreWeave"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "pluspower",
+      "company": "Plus Power"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "spearmintenergy",
+      "company": "Spearmint Energy"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "energyhub",
+      "company": "EnergyHub"
+    },
+    {
+      "provider": "lever",
+      "board": "terawattinfrastructure",
+      "company": "Terawatt Infrastructure"
+    },
+    {
+      "provider": "ashby",
+      "board": "crusoe",
+      "company": "Crusoe"
+    },
+    {
+      "provider": "ashby",
+      "board": "base-power",
+      "company": "Base Power"
+    },
+    {
+      "provider": "ashby",
+      "board": "gridcare",
+      "company": "GridCare"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "spacex",
+      "company": "SpaceX"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "anthropic",
+      "company": "Anthropic"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "nebius",
+      "company": "Nebius"
+    },
+    {
+      "provider": "ashby",
+      "board": "openai",
+      "company": "OpenAI"
+    },
+    {
+      "provider": "ashby",
+      "board": "emerald-ai",
+      "company": "Emerald AI",
+      "keep_all": true
+    },
+    {
+      "provider": "greenhouse",
+      "board": "niraenergy",
+      "company": "Nira Energy",
+      "keep_all": true
+    },
+    {
+      "provider": "ashby",
+      "board": "neara",
+      "company": "Neara",
+      "keep_all": true
+    },
+    {
+      "provider": "lever",
+      "board": "gridware",
+      "company": "Gridware",
+      "keep_all": true
+    },
+    {
+      "provider": "lever",
+      "board": "exowatt",
+      "company": "Exowatt",
+      "keep_all": true
+    },
+    {
+      "provider": "ashby",
+      "board": "tyba",
+      "company": "Tyba",
+      "keep_all": true
+    },
+    {
+      "provider": "ashby",
+      "board": "texture",
+      "company": "Texture",
+      "keep_all": true
+    },
+    {
+      "provider": "greenhouse",
+      "board": "amperon",
+      "company": "Amperon",
+      "keep_all": true
+    },
+    {
+      "provider": "ashby",
+      "board": "generate",
+      "company": "Generate Capital",
+      "keep_all": true
+    },
+    {
+      "provider": "greenhouse",
+      "board": "digitalbridge",
+      "company": "DigitalBridge",
+      "keep_all": true
+    },
+    {
+      "provider": "greenhouse",
+      "board": "hut8",
+      "company": "Hut 8"
+    },
+    {
+      "provider": "lever",
+      "board": "cleanspark",
+      "company": "CleanSpark"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "sbenergy",
+      "company": "SB Energy",
+      "keep_all": true
+    },
+    {
+      "provider": "greenhouse",
+      "board": "liquidstack",
+      "company": "LiquidStack",
+      "keep_all": true
+    },
+    {
+      "provider": "edged",
+      "board": "all",
+      "company": "Edged"
+    }
   ],
   "workday_boards": [
-    {"host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia",
-     "site": "NVIDIAExternalCareerSite", "company": "NVIDIA"},
-    {"host": "gevernova.wd5.myworkdayjobs.com", "tenant": "gevernova",
-     "site": "Vernova_ExternalSite", "company": "GE Vernova"},
-    {"host": "nextracker.wd5.myworkdayjobs.com", "tenant": "nextracker",
-     "site": "nextpower_careers", "company": "Nextracker"},
-    {"host": "brookfield.wd5.myworkdayjobs.com", "tenant": "brookfield",
-     "site": "brookfield", "company": "Brookfield"},
-    {"host": "blackstone.wd1.myworkdayjobs.com", "tenant": "blackstone",
-     "site": "Blackstone_Careers", "company": "Blackstone"},
-    {"host": "servicetitan.wd1.myworkdayjobs.com", "tenant": "servicetitan",
-     "site": "ServiceTitan", "company": "ServiceTitan", "keep_all": true,
-     "terms": ["AI product manager", "product manager", "data center"]}
+    {
+      "host": "nvidia.wd5.myworkdayjobs.com",
+      "tenant": "nvidia",
+      "site": "NVIDIAExternalCareerSite",
+      "company": "NVIDIA"
+    },
+    {
+      "host": "gevernova.wd5.myworkdayjobs.com",
+      "tenant": "gevernova",
+      "site": "Vernova_ExternalSite",
+      "company": "GE Vernova"
+    },
+    {
+      "host": "nextracker.wd5.myworkdayjobs.com",
+      "tenant": "nextracker",
+      "site": "nextpower_careers",
+      "company": "Nextracker"
+    },
+    {
+      "host": "brookfield.wd5.myworkdayjobs.com",
+      "tenant": "brookfield",
+      "site": "brookfield",
+      "company": "Brookfield"
+    },
+    {
+      "host": "blackstone.wd1.myworkdayjobs.com",
+      "tenant": "blackstone",
+      "site": "Blackstone_Careers",
+      "company": "Blackstone"
+    },
+    {
+      "host": "servicetitan.wd1.myworkdayjobs.com",
+      "tenant": "servicetitan",
+      "site": "ServiceTitan",
+      "company": "ServiceTitan",
+      "keep_all": true,
+      "terms": [
+        "AI product manager",
+        "product manager",
+        "data center"
+      ]
+    },
+    {
+      "host": "vantagedc.wd1.myworkdayjobs.com",
+      "tenant": "vantagedc",
+      "site": "Vantage",
+      "company": "Vantage Data Centers"
+    }
   ],
   "successfactors_boards": [
-    {"base": "https://careers.pge.com", "company": "PG&E"},
-    {"base": "https://jobs.nexteraenergy.com", "company": "NextEra Energy"}
+    {
+      "base": "https://careers.pge.com",
+      "company": "PG&E"
+    },
+    {
+      "base": "https://jobs.nexteraenergy.com",
+      "company": "NextEra Energy"
+    }
   ],
   "location": "United States",
   "results_per_term": 50,
   "watch_hours_old": 168,
   "hours_old": 72,
   "title_keywords": [
-    "energy", "power", "grid", "battery", "storage", "BESS",
-    "interconnection", "utility", "utilities", "electrical", "substation",
-    "transmission", "renewable", "solar", "data center", "datacenter",
+    "energy",
+    "power",
+    "grid",
+    "battery",
+    "storage",
+    "BESS",
+    "interconnection",
+    "utility",
+    "utilities",
+    "electrical",
+    "substation",
+    "transmission",
+    "renewable",
+    "solar",
+    "data center",
+    "datacenter",
     "infrastructure"
   ],
   "description_keywords": [
-    "BESS", "battery energy storage", "energy storage", "grid interconnection",
-    "interconnection queue", "utility-scale", "grid-scale", "substation",
-    "behind-the-meter", "bridge power", "data center energy",
-    "data center power", "datacenter power", "power purchase agreement",
+    "BESS",
+    "battery energy storage",
+    "energy storage",
+    "grid interconnection",
+    "interconnection queue",
+    "utility-scale",
+    "grid-scale",
+    "substation",
+    "behind-the-meter",
+    "bridge power",
+    "data center energy",
+    "data center power",
+    "datacenter power",
+    "power purchase agreement",
     "megawatt"
   ],
   "rescue_title_keywords": [
-    "director", "principal", "head of", "vice president", "senior manager",
-    "strategy", "strategic", "business development", "development",
-    "acquisitions", "portfolio", "procurement", "program manager",
-    "product manager", "project controls", "load integration", "site selection"
+    "director",
+    "principal",
+    "head of",
+    "vice president",
+    "senior manager",
+    "strategy",
+    "strategic",
+    "business development",
+    "development",
+    "acquisitions",
+    "portfolio",
+    "procurement",
+    "program manager",
+    "product manager",
+    "project controls",
+    "load integration",
+    "site selection"
   ],
   "rescue_description_keywords": [
-    "power procurement", "energy procurement", "power infrastructure",
-    "energy infrastructure", "site selection", "high voltage",
-    "transmission line", "electrical distribution", "generation capacity",
-    "power delivery", "onsite power", "on-site power", "load integration"
+    "power procurement",
+    "energy procurement",
+    "power infrastructure",
+    "energy infrastructure",
+    "site selection",
+    "high voltage",
+    "transmission line",
+    "electrical distribution",
+    "generation capacity",
+    "power delivery",
+    "onsite power",
+    "on-site power",
+    "load integration"
   ],
   "title_exclusions": [
-    "intern", "software engineer",
-    "technician", "electrician", "journeyman", "apprentice", "mechanic",
-    "machinist", "welder", "installer", "assembler", "fabricator",
-    "lineman", "lineworker", "laborer", "foreman", "maintenance",
-    "field service", "plant operator", "equipment operator", "warehouse",
-    "driver", "custodian", "groundskeeper", "janitor", "dispatcher",
-    "parts clerk", "customer service representative", "security guard",
-    "surgical", "phlebotom", "nurse", "recruiter", "recruiting coordinator"
+    "intern",
+    "software engineer",
+    "technician",
+    "electrician",
+    "journeyman",
+    "apprentice",
+    "mechanic",
+    "machinist",
+    "welder",
+    "installer",
+    "assembler",
+    "fabricator",
+    "lineman",
+    "lineworker",
+    "laborer",
+    "foreman",
+    "maintenance",
+    "field service",
+    "plant operator",
+    "equipment operator",
+    "warehouse",
+    "driver",
+    "custodian",
+    "groundskeeper",
+    "janitor",
+    "dispatcher",
+    "parts clerk",
+    "customer service representative",
+    "security guard",
+    "surgical",
+    "phlebotom",
+    "nurse",
+    "recruiter",
+    "recruiting coordinator"
   ],
   "priority_topics": [
-    "data center flexibility", "grid flexibility", "demand flexibility",
-    "bridge power", "behind-the-meter", "BESS", "battery energy storage",
+    "data center flexibility",
+    "grid flexibility",
+    "demand flexibility",
+    "bridge power",
+    "behind-the-meter",
+    "BESS",
+    "battery energy storage",
     "interconnection"
   ],
   "state_retention_days": 180,

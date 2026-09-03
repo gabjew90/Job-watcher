@@ -8,6 +8,10 @@ from .util import group_key, twin_key
 
 STATE_FILE = Path("state/seen_jobs.json")
 
+# Sources whose links die on their own schedule, independent of the
+# employer's posting.
+AGGREGATOR_SOURCES = {"indeed", "glassdoor", "zip_recruiter", "google"}
+
 
 def _today() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -56,6 +60,14 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
             twin = (twins.get(twin_key(job.company, job.title, job.location))
                     or groups.get(group_key(job.company, job.title)))
             if twin is not None:
+                # Aggregator copies expire independently of the employer's
+                # own posting (an Indeed listing went dead while the role
+                # was still open on the company board), so when a direct
+                # source matches an aggregator record, adopt its link.
+                if (twin.get("source") in AGGREGATOR_SOURCES
+                        and job.source not in AGGREGATOR_SOURCES):
+                    twin["url"] = job.url
+                    twin["source"] = job.source
                 # Record the extra metro on the surviving row instead of
                 # alerting the same opening again.
                 locs = twin.setdefault("locations", [twin.get("location", "")])
