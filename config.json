@@ -49,7 +49,23 @@
     "WeaveGrid",
     "Verrus",
     "Pearl Street Technologies",
-    "Station A"
+    "Station A",
+    "Schneider Electric",
+    "Eaton",
+    "ABB",
+    "Siemens Energy",
+    "Powell Industries",
+    "VoltaGrid",
+    "Enchanted Rock",
+    "PowerSecure",
+    "Compass Datacenters",
+    "nVent",
+    "Prometheus Hyperscale",
+    "Delta Electronics",
+    "Mitsubishi Electric Power Products",
+    "Modine",
+    "ZutaCore",
+    "Accelsius"
   ],
   "hyperscalers": {
     "microsoft": true,
@@ -209,6 +225,12 @@
       "provider": "lever",
       "board": "mainspringenergy",
       "company": "Mainspring Energy"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "submer",
+      "company": "Submer",
+      "keep_all": true
     }
   ],
   "workday_boards": [
@@ -259,6 +281,36 @@
       "tenant": "vantagedc",
       "site": "Vantage",
       "company": "Vantage Data Centers"
+    },
+    {
+      "host": "flextronics.wd1.myworkdayjobs.com",
+      "tenant": "flextronics",
+      "site": "Careers",
+      "company": "Flex"
+    },
+    {
+      "host": "bloomenergy.wd1.myworkdayjobs.com",
+      "tenant": "bloomenergy",
+      "site": "BloomEnergyCareers",
+      "company": "Bloom Energy"
+    },
+    {
+      "host": "tranetechnologies.wd12.myworkdayjobs.com",
+      "tenant": "tranetechnologies",
+      "site": "Trane_Technologies_Careers",
+      "company": "Trane Technologies"
+    },
+    {
+      "host": "jci.wd5.myworkdayjobs.com",
+      "tenant": "jci",
+      "site": "JCI",
+      "company": "Johnson Controls"
+    },
+    {
+      "host": "hitachi.wd1.myworkdayjobs.com",
+      "tenant": "hitachi",
+      "site": "hitachi",
+      "company": "Hitachi"
     }
   ],
   "successfactors_boards": [
