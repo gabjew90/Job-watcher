@@ -168,6 +168,34 @@
   "url": "https://www.indeed.com/viewjob?jk=a9215de7286fe389",
   "work_mode": "remote"
  },
+ "00780e382e272cf4": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $160,807",
+  "priority": false,
+  "rationale": "Plastics commodity sourcing/procurement role, not BESS product or energy-market strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Senior Global Supply Manager, Plastic Parts",
+  "url": "https://jobs.ashbyhq.com/formenergy/b21aad47-8221-4b84-b9b1-1fec5aa74eea",
+  "work_mode": "hybrid"
+ },
  "007c495838634f5c": {
   "band": "misfit",
   "company": "SpaceX",
@@ -201,6 +229,32 @@
   "source": "greenhouse",
   "title": "Sr. Electrical Design Engineer (Starshield)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8517504002",
+  "work_mode": ""
+ },
+ "00b02914caa91557": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Raleigh, North Carolina, United States",
+  "locations": [
+   "Raleigh, North Carolina, United States",
+   "Petaling Jaya, Selangor,Malaysia"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Plain 'Energy System Project Manager' title reads as technical PM, not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy System Project Manager",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Petaling-Jaya-SelangorMalaysia/Energy-System-Project-Management-Senior-Professional_R0136437",
   "work_mode": ""
  },
  "00b4207cef9bba8d": {
@@ -421,7 +475,9 @@
   "work_mode": "remote"
  },
  "01a864aced6173a0": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-03",
   "company": "Hut 8",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-28",
@@ -582,14 +638,18 @@
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-26",
   "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US",
+   "USA, TX, Austin"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Principal-level power engineering at infrastructure vendor Flex; excellent seniority and domain fit for energy/power expertise.",
   "score": 75,
   "seniority_match": true,
-  "source": "indeed",
+  "source": "workday",
   "title": "Principal Engineer, Advanced Power Engineering",
-  "url": "https://www.indeed.com/viewjob?jk=8646216862d61760",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/USA-TX-Austin/Principal-Engineer--Advanced-Power-Engineering_WD228344",
   "work_mode": ""
  },
  "01f9a381c2fc5e52": {
@@ -903,6 +963,34 @@
   "url": "https://www.indeed.com/viewjob?jk=e118baaff7af5a35",
   "work_mode": ""
  },
+ "02fe16d2f552b5f7": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Corporate operations-finance director role, unrelated to energy-markets finance or BESS strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Director of Finance, Operations",
+  "url": "https://jobs.ashbyhq.com/formenergy/13844e3b-8781-4344-82d4-72864f709d72",
+  "work_mode": "onsite"
+ },
  "030d4afe26a3257b": {
   "active": false,
   "band": "misfit",
@@ -1021,6 +1109,31 @@
   "title": "Senior Director of FP&A / Treasury",
   "url": "https://job-boards.greenhouse.io/endeavourinspiredinfrastructure/jobs/4370157009",
   "work_mode": "remote"
+ },
+ "037327b2bf159cd6": {
+  "band": "weak",
+  "company": "Form Energy",
+  "date_posted": "2026-06-12",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Factory design/construction-coordination management, which prior feedback treats as weak even at mission-aligned employers.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Factory Design Manager",
+  "url": "https://jobs.ashbyhq.com/formenergy/8a6bbb28-0a80-44f8-9261-158e331e041a",
+  "work_mode": "onsite"
  },
  "0376857e8c43fedc": {
   "active": false,
@@ -1142,6 +1255,31 @@
   "source": "indeed",
   "title": "Sr. Account Director, Data Center Portfolio",
   "url": "https://www.indeed.com/viewjob?jk=bf5251036bd80aeb",
+  "work_mode": ""
+ },
+ "03de73d551958f26": {
+  "band": "possible",
+  "company": "Amazon Web Services",
+  "date_posted": "2026-09-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "TX, US",
+  "locations": [
+   "TX, US"
+  ],
+  "pay": "$153,600\u2013$207,800/yr",
+  "priority": false,
+  "rationale": "Cloud solutions architect for energy customers pairs AI/cloud with energy domain but is pre-sales technical, not product/strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Solutions Architect, AWS Industries - Energy & Utilities",
+  "url": "https://www.indeed.com/viewjob?jk=c9bbd3ab414615c5",
   "work_mode": ""
  },
  "03e74b0ad968efff": {
@@ -1755,6 +1893,34 @@
   "url": "https://www.indeed.com/viewjob?jk=50f5f6cd366eed09",
   "work_mode": "hybrid"
  },
+ "05c5ec120bec7fe3": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Dublin, Ireland",
+  "locations": [
+   "Dublin, Ireland"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior inside sales/telesales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "ICS Cool Energy Ltd - Inside Sales - Telesales - Dublin Office",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Dublin-Ireland/ICS-Cool-Energy-Ltd---Inside-Sales---Telesales---Dublin-Office_JR-6579-1",
+  "work_mode": "onsite"
+ },
  "05ce7b3d3e0bda84": {
   "band": "weak",
   "company": "AES Corporation",
@@ -1868,6 +2034,56 @@
   "source": "indeed",
   "title": "Architect Designer I",
   "url": "https://www.indeed.com/viewjob?jk=ebe954dcd5c4c2bf",
+  "work_mode": ""
+ },
+ "065743c4256bd7e3": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Birmingham, England, United Kingdom\u00a0\u00a0\u00a0\u00a0\u00a0",
+  "locations": [
+   "Birmingham, England, United Kingdom\u00a0\u00a0\u00a0\u00a0\u00a0"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Sales & business development manager role capped per feedback on pure BD roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Sales & Business Development Manager \u2013 Power Consulting (Europe / UK)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Birmingham-England-United-Kingdom/Business-Development-Sales-Manager--Europe---Power-Consulting_R0113175-1",
+  "work_mode": ""
+ },
+ "0661b5a916886d7a": {
+  "band": "top",
+  "company": "VEIR",
+  "date_posted": "2026-04-27",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Woburn, Massachusetts, United States",
+  "locations": [
+   "Woburn, Massachusetts, United States"
+  ],
+  "pay": "$170,000 - $200,000 per year",
+  "priority": false,
+  "rationale": "Principal PM owning product strategy for a datacenter power delivery system \u2014 direct integration-role fit at right seniority.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "greenhouse",
+  "title": "Principal Product Manager - Low Voltage",
+  "url": "https://job-boards.greenhouse.io/veir/jobs/5168795008",
   "work_mode": ""
  },
  "0667709ec866ce03": {
@@ -2060,6 +2276,34 @@
   "url": "https://jobs.ashbyhq.com/formenergy/5c321150-58da-4412-be5d-3a35b3299b9e",
   "work_mode": "onsite"
  },
+ "06d719654c036e52": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-11",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $221,973",
+  "priority": false,
+  "rationale": "Staff-level dimensional/mechanical engineering IC role, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Mechanical Engineer, Dimensional Management",
+  "url": "https://jobs.ashbyhq.com/formenergy/aeee73e4-5127-4c1c-9abe-d6ef36962263",
+  "work_mode": "onsite"
+ },
  "06efbe3fbe34a7f4": {
   "band": "misfit",
   "company": "SpaceX",
@@ -2224,6 +2468,31 @@
   "title": "Electrical Design Engineer",
   "url": "https://www.indeed.com/viewjob?jk=cac5b1783da3b7b2",
   "work_mode": ""
+ },
+ "07953fe5d2b8a00d": {
+  "band": "weak",
+  "company": "SB Energy",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Piketon, OH",
+  "locations": [
+   "Piketon, OH"
+  ],
+  "pay": "$140,000-$165,000",
+  "priority": true,
+  "rationale": "Site development PM for powered land touches interconnection and financing but is real-estate execution, not the candidate's development experience.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "greenhouse",
+  "title": "Project Manager, Site Development - Powered Land",
+  "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6148535004",
+  "work_mode": "hybrid"
  },
  "07c49d4811b75c2b": {
   "active": false,
@@ -2855,6 +3124,34 @@
   "url": "https://vantagedc.wd1.myworkdayjobs.com/en-US/Vantage/job/Denver-Colorado/Vice-President--Procurement-Center-of-Excellence--Global_R24545",
   "work_mode": ""
  },
+ "097e9e70879bd393": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2025-12-16",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Generic talent-pool posting, not an actual role to score.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Don't see the job you're looking for?",
+  "url": "https://jobs.ashbyhq.com/formenergy/7620ae84-843c-43e1-9896-41ae75a02723",
+  "work_mode": ""
+ },
  "0992cfaa0544685b": {
   "band": "misfit",
   "company": "Leidos",
@@ -3120,6 +3417,31 @@
   "title": "Electrical Maintenance Technician",
   "url": "https://www.indeed.com/viewjob?jk=545348b09e96f8d5",
   "work_mode": ""
+ },
+ "0a559b06f9dd6b80": {
+  "band": "weak",
+  "company": "Form Energy",
+  "date_posted": "2026-03-10",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior manufacturing engineering leadership role, domain is production-line engineering not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Senior Manager, Manufacturing Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/9bcdf1d3-711b-4570-b5b0-3b385fe07e85",
+  "work_mode": "onsite"
  },
  "0a69b38ddd49f1e8": {
   "band": "strong",
@@ -3461,6 +3783,31 @@
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/5979483004",
   "work_mode": "hybrid"
  },
+ "0b64c1474183ccd3": {
+  "band": "possible",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Remote - North Carolina, United States",
+  "locations": [
+   "Remote - North Carolina, United States"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Principal-level power consulting is senior but likely deep-technical consulting, capped per feedback on study/consulting roles.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Principal Power Consultant",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---North-Carolina-United-States/Principal-Consultant_R0115961",
+  "work_mode": "remote"
+ },
  "0b6af40a1f909d29": {
   "active": false,
   "band": "strong",
@@ -3672,6 +4019,34 @@
   "title": "Journeyman Electrician - PV & BESS",
   "url": "https://www.indeed.com/viewjob?jk=fff5f37e599701cd",
   "work_mode": "remote"
+ },
+ "0c42b93d601c62a7": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-07",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $194,218",
+  "priority": false,
+  "rationale": "Controls/firmware engineering leadership for BMS state machines, out of skillset per feedback.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Controls Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/39b29efd-bb13-4f61-93c5-6c2e7c63a343",
+  "work_mode": "onsite"
  },
  "0c513202b80cc28a": {
   "active": false,
@@ -4257,6 +4632,31 @@
   "url": "https://jobs.ashbyhq.com/base-power/a6d44f72-eb29-44f4-9fe1-737cc7d166a2",
   "work_mode": ""
  },
+ "0dc94eecd20738e1": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Plain PM title on deep-technical substation delivery, not product/strategy scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Project Manager \u2013 High Voltage substation & Power Quality Solutions",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Beynost-Ain-France/Project-Manager---High-Voltage-substation---Power-Quality-Solutions_R0112106",
+  "work_mode": ""
+ },
  "0dd2248d5a135cb5": {
   "active": false,
   "band": "misfit",
@@ -4527,6 +4927,34 @@
   "source": "indeed",
   "title": "Electrical Technician II - American Airlines - 2nd shift",
   "url": "https://www.indeed.com/viewjob?jk=505593f753c4fc24"
+ },
+ "0ec99e2b0ca77cbf": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Long Island City NY  46th Ave",
+  "locations": [
+   "Long Island City NY  46th Ave"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "VP Sales is a quota-carrying sales function, out of scope regardless of seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "VP Sales, Building Energy Optimization",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Long-Island-City-NY--46th-Ave/VP-Sales--Building-Energy-Optimization_JR-12027-1",
+  "work_mode": ""
  },
  "0ecb0e5094678333": {
   "active": false,
@@ -5066,6 +5494,31 @@
   "url": "https://www.indeed.com/viewjob?jk=a000ff5eb73fa7cb",
   "work_mode": ""
  },
+ "103430de080b195e": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Seoul, Seoul, South Korea",
+  "locations": [
+   "Seoul, Seoul, South Korea"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "BD Specialist title is junior-mid and BD-centric roles band possible at most per feedback.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Business Development Specialist - Korea and Off Shore Wind, Renewable, Energy Transition, SMR, Data Center",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Seoul-Seoul-South-Korea/Business-Development-Specialist---Korea-and-Off-Shore-Wind-Asia_R0114557",
+  "work_mode": ""
+ },
  "107e1cae69b37271": {
   "band": "weak",
   "company": "CoreWeave",
@@ -5231,6 +5684,34 @@
   "title": "Supervisor, Development Operations",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8642695002",
   "work_mode": "onsite"
+ },
+ "11230d35f3132db4": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Turgi, Aargau, Switzerland",
+  "locations": [
+   "Turgi, Aargau, Switzerland"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Deep technical project-controls engineering IC role, no product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Project Control Engineer \u2013 Power Conversion 80 \u2013 100% (f/m/d)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Turgi-Aargau-Switzerland/Senior-Project-Control-Engineer---Power-Conversion-80---100---f-m-d-_R0137310",
+  "work_mode": ""
  },
  "112516e614e106b2": {
   "band": "strong",
@@ -5814,7 +6295,9 @@
   "work_mode": ""
  },
  "12b72b039e6e1991": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-03",
   "company": "Mainspring Energy",
   "date_posted": "2026-05-05",
   "first_seen": "2026-09-03",
@@ -5900,6 +6383,31 @@
   "title": "Lead Mechanical Engineer - Heat Exchangers (Austin, TX)",
   "url": "https://jobs.lever.co/exowatt/c2770d40-e7ba-457c-b152-350e9741b932",
   "work_mode": "onsite"
+ },
+ "12d68f35d8c08807": {
+  "band": "possible",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Operating unit manager suggests business-unit leadership over the data center segment, plausible senior scope though vague.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Operating Unit manager - Data Centers",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Raleigh-North-Carolina-United-States/Operating-Unit-manager---Data-Centers_R0139823",
+  "work_mode": ""
  },
  "130b6becfb9710ab": {
   "band": "possible",
@@ -6378,6 +6886,34 @@
   "url": "https://www.indeed.com/viewjob?jk=eee919ffae887d08",
   "work_mode": "remote"
  },
+ "157dd5a11e556133": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-04-13",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quality engineering IC role focused on manufacturing process control, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Quality Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/c1f2b8df-0046-48f2-99bc-3ed4df5c15c3",
+  "work_mode": "onsite"
+ },
  "15902a6dcd0b8f30": {
   "band": "possible",
   "company": "Microsoft",
@@ -6779,6 +7315,34 @@
   "title": "Program Manager II, Energy",
   "url": "https://www.indeed.com/viewjob?jk=f2d12bb1c7a623a7"
  },
+ "16b70c4db8f04187": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Flex",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "USA, TX, Austin",
+  "locations": [
+   "USA, TX, Austin"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Deep technical electrical engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Associate Principal Engineer, Electrical Engineering",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/USA-TX-Austin/Associate-Principal-Engineer--Electrical-Engineering_WD228495",
+  "work_mode": ""
+ },
  "16c3a81c7bf85f03": {
   "band": "weak",
   "company": "Base Power",
@@ -6993,6 +7557,34 @@
   "title": "Sr. Power Electronics Engineer (Starship)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8692896002",
   "work_mode": ""
+ },
+ "17c0f1523009bb6e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Floor production supervisor role, trade-level scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Production Supervisor",
+  "url": "https://jobs.ashbyhq.com/formenergy/ed7740d4-9d7e-4b69-9358-5203a44f828b",
+  "work_mode": "onsite"
  },
  "17e5bd734400aa58": {
   "band": "strong",
@@ -7271,6 +7863,34 @@
   "url": "https://careers.amd.com/careers-home/jobs/86061?lang=en-us",
   "work_mode": "onsite"
  },
+ "18f513e346924ca0": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-05",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Floor-level process engineering on night shift, operational not strategic scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Process Engineer, Mechanical Assembly, Night Shift",
+  "url": "https://jobs.ashbyhq.com/formenergy/b17f56c2-589d-4ed1-a7a1-9b6631d311bf",
+  "work_mode": "onsite"
+ },
  "18f9eeea5e85957e": {
   "active": false,
   "band": "misfit",
@@ -7375,6 +7995,31 @@
   "url": "https://jobs.ashbyhq.com/openai/fff7b15d-a1a0-441f-90f1-5efcae7f0051",
   "work_mode": "remote"
  },
+ "1993227cdb9943cb": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "4 Locations",
+  "locations": [
+   "4 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Regional technical sales consultant is a sales-engineering role.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Regional Technical Sales Consultant - US Data Centers",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---Tennessee-United-States-of-America/Regional-Technical-Sales-Consultant---US-Data-Centers_R0138793-1",
+  "work_mode": ""
+ },
  "19a00c7651732d87": {
   "band": "possible",
   "company": "GE Vernova",
@@ -7458,6 +8103,31 @@
   "source": "microsoft",
   "title": "Senior Data Center Technician",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556943808"
+ },
+ "19e5850151285c35": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Business development role in adjacent eMobility segment, capped per BD calibration.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Business Development - eMobility Energy Solutions",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Raleigh-North-Carolina-United-States/Business-Development---eMobility-Energy-Solutions_R0136639",
+  "work_mode": ""
  },
  "19e9e727729d2302": {
   "active": false,
@@ -7869,6 +8539,34 @@
   "url": "https://www.indeed.com/viewjob?jk=438d0cdb826c32d2",
   "work_mode": ""
  },
+ "1b56e887d0c9402f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-02-16",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior electrical design engineering IC role for a factory site, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Electrical Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/045a3404-16bb-4106-ab8a-35b35dd3419b",
+  "work_mode": "onsite"
+ },
  "1b84811c5f65b833": {
   "band": "misfit",
   "company": "SpaceX",
@@ -7971,6 +8669,31 @@
   "title": "Implementation Engineer",
   "url": "https://jobs.ashbyhq.com/neara/27c3a016-71ea-45e1-8fab-2ae25b155e7a",
   "work_mode": "remote"
+ },
+ "1bf1b33a1ee4de63": {
+  "band": "weak",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Davidson, North Carolina",
+  "locations": [
+   "Davidson, North Carolina"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Municipal market leadership role reads as sales/BD-driven rather than product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Municipal Market Leader - Energy Services",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Davidson-North-Carolina/Municipal-Market-Leader---Energy-Services_JR-10980-1",
+  "work_mode": ""
  },
  "1bf96dab95cab2cc": {
   "active": false,
@@ -9773,6 +10496,32 @@
   "url": "https://www.indeed.com/viewjob?jk=87c86d9274788881",
   "work_mode": ""
  },
+ "21b663334004390d": {
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-05-28",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Nashville, TN, US",
+  "locations": [
+   "Nashville, TN, US",
+   "Austin, TX, US"
+  ],
+  "pay": "$141,300\u2013$191,100/yr",
+  "priority": false,
+  "rationale": "Senior TPM role at Amazon covers ops/robotics infrastructure with no power or energy connection.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Sr Technical Program Manager, Ops Infrastructure Solutions",
+  "url": "https://www.indeed.com/viewjob?jk=b69925ec2acf19e9",
+  "work_mode": ""
+ },
  "21bc17b3f31ea9b0": {
   "band": "weak",
   "company": "ProEnergy Services",
@@ -10443,6 +11192,31 @@
   "url": "https://www.indeed.com/viewjob?jk=74aa19a9871ef78c",
   "work_mode": ""
  },
+ "24174c3774c554fa": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Petaling Jaya, Selangor,Malaysia",
+  "locations": [
+   "Petaling Jaya, Selangor,Malaysia"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Project supply chain manager is a procurement/logistics function, unrelated corporate role.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Project Supply Chain Manager (Electrical Infrastructure & Data Centers)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Petaling-Jaya-SelangorMalaysia/Project-Manager---based-in-Gelang-Patah--Johor_R0112292",
+  "work_mode": ""
+ },
  "243d51d7daf42167": {
   "band": "misfit",
   "company": "OpenAI",
@@ -10742,6 +11516,31 @@
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556979109",
   "work_mode": "onsite"
  },
+ "25455dc41afc5bb4": {
+  "band": "strong",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior energy research & analysis lead pairs data/analysis with energy market domain, fitting the secondary sweet spot.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "a Global Energy Research & Analysis Lead \u2013 North America",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---North-Carolina-United-States/Senior-Policy-and-Regulatory-Lead---North-America_R0112386",
+  "work_mode": ""
+ },
  "25756607974e7929": {
   "active": false,
   "band": "misfit",
@@ -10845,7 +11644,9 @@
   "work_mode": "hybrid"
  },
  "25acc9bcc96c5a62": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-03",
   "company": "Form Energy",
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-01",
@@ -11101,6 +11902,61 @@
   "source": "indeed",
   "title": "BESS Engineer III (Remote)",
   "url": "https://www.indeed.com/viewjob?jk=4eeb5ebc9c03902c",
+  "work_mode": "remote"
+ },
+ "269b2f9c38e806dd": {
+  "band": "weak",
+  "company": "SOLV Energy",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Tallahassee, FL, US",
+  "locations": [
+   "Tallahassee, FL, US",
+   "Richmond, VA, US",
+   "Phoenix, AZ, US",
+   "Dover, DE, US",
+   "Indianapolis, IN, US",
+   "Little Rock, AR, US",
+   "Atlanta, GA, US",
+   "Topeka, KS, US",
+   "Hartford, CT, US",
+   "Madison, WI, US",
+   "Montgomery, AL, US",
+   "Des Moines, IA, US",
+   "Austin, TX, US",
+   "Boise, ID, US",
+   "Denver, CO, US",
+   "Springfield, IL, US",
+   "Charleston, WV, US",
+   "Cheyenne, WY, US",
+   "Oklahoma City, OK, US",
+   "Sacramento, CA, US",
+   "Bismarck, ND, US",
+   "Baton Rouge, LA, US",
+   "Albany, NY, US",
+   "Olympia, WA, US",
+   "Nashville, TN, US",
+   "Salt Lake City, UT, US",
+   "Salem, OR, US",
+   "Carson City, NV, US",
+   "Santa Fe, NM, US",
+   "Augusta, ME, US",
+   "Montpelier, VT, US"
+  ],
+  "pay": "$110,448\u2013$138,060/yr",
+  "priority": false,
+  "rationale": "Preconstruction project management is construction/budget execution focused, banding weak per prior calibration.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Preconstruction Project Manager (Remote)",
+  "url": "https://www.indeed.com/viewjob?jk=77c8d3ed0bd23d31",
   "work_mode": "remote"
  },
  "26a8edfa592df03d": {
@@ -11610,6 +12466,34 @@
   "url": "https://jobs.lever.co/exowatt/8c588733-6248-455a-9662-983c7763c5aa",
   "work_mode": "onsite"
  },
+ "28589b32768eccff": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-05-29",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $221,973",
+  "priority": false,
+  "rationale": "IC air-delivery system design engineering, out of candidate's domain.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Mechanical Engineer, Air Delivery System",
+  "url": "https://jobs.ashbyhq.com/formenergy/33a07ac4-b995-46e0-b652-a8a0cac764a3",
+  "work_mode": "onsite"
+ },
  "28702bf65644bcd6": {
   "active": false,
   "band": "weak",
@@ -11729,6 +12613,34 @@
   "url": "https://jobs.ashbyhq.com/openai/68f7ef0f-97a4-47ce-ac0a-a442572ab7a7",
   "work_mode": "remote"
  },
+ "28d89c7d59eb05ac": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Lodz, Lodz, Poland",
+  "locations": [
+   "Lodz, Lodz, Poland"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Vague IT/engineering infrastructure specialist role, likely unrelated to power/energy domain.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Engineering Infrastructure Specialist",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Lodz-Lodz-Poland/Engineering-Infrastructure-Specialist_R0123355",
+  "work_mode": ""
+ },
  "290c80259fbc7bfc": {
   "active": false,
   "band": "misfit",
@@ -11795,6 +12707,31 @@
   "source": "indeed",
   "title": "Forklift Operator / Material Handler - Day Shift",
   "url": "https://www.indeed.com/viewjob?jk=8e10e33e3af578fa",
+  "work_mode": "onsite"
+ },
+ "2920b91be31c9241": {
+  "band": "weak",
+  "company": "Form Energy",
+  "date_posted": "2026-06-26",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Broad ownership of assembly-line strategy and vendor negotiation gives it some strategic scope, but it's deep manufacturing/automation engineering, not product/commercial strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Senior Staff Manufacturing Engineer, Assembly",
+  "url": "https://jobs.ashbyhq.com/formenergy/c6123376-025d-4e42-805b-06fee94fa691",
   "work_mode": "onsite"
  },
  "2929d1986cc2ff6c": {
@@ -12031,6 +12968,34 @@
   "title": "Data Center Program Manager",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556912990",
   "work_mode": "onsite"
+ },
+ "29d333763fc679b1": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Johnson Controls",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Gilbert-Arizona-United States of America",
+  "locations": [
+   "Gilbert-Arizona-United States of America"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Electrical engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Electrical Engineer",
+  "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Gilbert-Arizona-United-States-of-America/Electrical-Engineer_WD30277969",
+  "work_mode": ""
  },
  "29ddbaaaa5ed25a3": {
   "band": "weak",
@@ -12425,6 +13390,34 @@
   "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=4e1f673a-e23b-4f79-98bf-9967bc802aac&ccId=19000101_000001&lang=en_US&jobId=9201843129619_1",
   "work_mode": "onsite"
  },
+ "2ad8448917191f7b": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-11",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $160,807",
+  "priority": false,
+  "rationale": "Hands-on test engineering IC role for battery hardware, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Test Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/6d4b5690-740d-4097-b63d-25f0463a6d63",
+  "work_mode": "onsite"
+ },
  "2ae7e9759cccd97c": {
   "active": false,
   "band": "misfit",
@@ -12508,6 +13501,31 @@
   "title": "Manager, Supply Chain - Datacenter Compute Infrastructure (Starlink)   ",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8648031002",
   "work_mode": "onsite"
+ },
+ "2b0e5f777dd82541": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Chennai, Tamil Nadu, India",
+  "locations": [
+   "Chennai, Tamil Nadu, India"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep technical modeling/simulation engineering IC role for BESS edge solutions.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "R&D Modelling and Simulation Engineer (Edge Solutions, BESS) - IDC",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Chennai-Tamil-Nadu-India/R-D-Modelling-and-Simulation-Engineer--Edge-Solutions--BESS----IDC_R0141157",
+  "work_mode": ""
  },
  "2b1ea38eecb20be5": {
   "band": "weak",
@@ -12818,6 +13836,31 @@
   "url": "https://www.indeed.com/viewjob?jk=55ee73135a2abe31",
   "work_mode": ""
  },
+ "2c225798155c1513": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+  "locations": [
+   "Ho Chi Minh City, Ho Chi Minh, Vietnam"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Generic Energy SME title with no stated scope or seniority signal.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy SME",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Ho-Chi-Minh-City-Ho-Chi-Minh-Vietnam/Energy-SME_R0135782",
+  "work_mode": ""
+ },
  "2c29205066b1d4aa": {
   "active": false,
   "band": "misfit",
@@ -12962,6 +14005,31 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8631722002",
   "work_mode": "remote"
  },
+ "2c7c5e3fb8a80ccc": {
+  "band": "weak",
+  "company": "ABB",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Phoenix, AZ, US",
+  "locations": [
+   "Phoenix, AZ, US"
+  ],
+  "pay": "$100,500\u2013$160,800/yr",
+  "priority": false,
+  "rationale": "Commissioning/construction-execution PM for data center power equipment, not product or strategy work.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Data Center Project Manager",
+  "url": "https://www.indeed.com/viewjob?jk=db16d961888bada6",
+  "work_mode": "remote"
+ },
  "2c7da6e1a4ae1fea": {
   "band": "possible",
   "company": "Blattner Company",
@@ -13013,7 +14081,8 @@
   "locations": [
    "St. Paul, MN, US, 55107",
    "Juno Beach, FL, US, 33408",
-   "Palm Beach Gardens, FL, US, 33410"
+   "Palm Beach Gardens, FL, US, 33410",
+   "MARTELL, NE, US, 68404"
   ],
   "pay": "",
   "priority": true,
@@ -14397,6 +15466,34 @@
   "title": "Quality Engineer",
   "url": "https://www.indeed.com/viewjob?jk=2e7279806bea1f20"
  },
+ "3131f0dad8498685": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Kuala Lumpur, Malaysia",
+  "locations": [
+   "Kuala Lumpur, Malaysia"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-adjacent sales engineering role, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Sales Engineer (Energy)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Kuala-Lumpur-Malaysia/Sales-Engineer--Energy-_R0016154",
+  "work_mode": ""
+ },
  "3144924950a27b34": {
   "active": false,
   "band": "misfit",
@@ -14751,6 +15848,32 @@
   "title": "Senior Attorney",
   "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Senior-Attorney-FL-33408/1425337200/",
   "work_mode": "onsite"
+ },
+ "323b946ff3a617b9": {
+  "band": "weak",
+  "company": "Mitsubishi Electric Power Products Inc",
+  "date_posted": "2026-08-27",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "US",
+  "locations": [
+   "US",
+   "Remote, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Software engineering leadership at a power-products company, but generic dev-org management rather than energy-subject-matter work.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Digital Solutions Development Manager",
+  "url": "https://www.indeed.com/viewjob?jk=d9e253d36a210210",
+  "work_mode": "hybrid"
  },
  "323ccb80ff815579": {
   "active": false,
@@ -15811,6 +16934,31 @@
   "url": "https://www.indeed.com/viewjob?jk=300542400bad7c30",
   "work_mode": ""
  },
+ "36527f154b6a7307": {
+  "band": "possible",
+  "company": "Form Energy",
+  "date_posted": "2026-06-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Somerville, MA",
+  "locations": [
+   "Somerville, MA"
+  ],
+  "pay": "$170,246 \u2013 $212,813",
+  "priority": false,
+  "rationale": "Engineering people-leadership at a battery company (builds/coaches team), but scope is deep cathode materials science outside candidate's expertise.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Manager, Materials Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/acfb02f8-4528-47ea-b8f3-acf0c427d5dd",
+  "work_mode": "onsite"
+ },
  "3673a1ee87e2bc1f": {
   "active": false,
   "band": "misfit",
@@ -16377,6 +17525,34 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8583754002",
   "work_mode": "onsite"
  },
+ "38fcd20c2e40235d": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-11",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Somerville, MA",
+  "locations": [
+   "Somerville, MA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $160,807",
+  "priority": false,
+  "rationale": "IC electrode mechanical design engineering, deep specialist scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Mechanical Engineer, Electrodes",
+  "url": "https://jobs.ashbyhq.com/formenergy/f1fd3b2c-7942-40b6-94f4-d616338a0201",
+  "work_mode": "onsite"
+ },
  "3904a91747d03b3c": {
   "band": "weak",
   "company": "Amazon.com",
@@ -16678,7 +17854,9 @@
   "work_mode": ""
  },
  "3a1a62eff6e7cdfe": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-03",
   "company": "LiquidStack",
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
@@ -17264,6 +18442,31 @@
   "source": "jibe",
   "title": "High Speed SR Signal and Power Integrity Engineer",
   "url": "https://careers.amd.com/careers-home/jobs/78315?lang=en-us",
+  "work_mode": ""
+ },
+ "3ce0341ba588a002": {
+  "band": "possible",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Grid integration is domain-relevant but this reads as technical/execution project management, not product-strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Senior Project Manager - Grid Integration",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Raleigh-North-Carolina-United-States/Senior-Project-Manager---Grid-Integration_R0142736",
   "work_mode": ""
  },
  "3ce075b70f160249": {
@@ -18097,6 +19300,34 @@
   "url": "https://iren.careers.hibob.com/jobs/b067209a-4c86-488c-9467-7c239a40a075",
   "work_mode": "hybrid"
  },
+ "401e2207dfc2dcf2": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Flex",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "United Kingdom, Remote",
+  "locations": [
+   "United Kingdom, Remote"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Electrical safety/compliance specialist role, narrow specialist function not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Head of Electrical Safety (Authorised Person)",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom-Remote/Head-of-Electrical-Safety--Authorised-Person-_WD221000-1",
+  "work_mode": "remote"
+ },
  "4025650a0f8dcefd": {
   "band": "weak",
   "company": "SpaceX",
@@ -18380,6 +19611,34 @@
   "source": "ashby",
   "title": "Deployment Operations Specialist (Utility Partnerships)",
   "url": "https://jobs.ashbyhq.com/base-power/862daba1-c0ec-48f2-8f39-5aafc3932f32"
+ },
+ "40ed3f3ed72bab05": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Lexington, Kentucky",
+  "locations": [
+   "Lexington, Kentucky"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Submittal engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Data Center Submittal Engineer",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Lexington-Kentucky/Data-Center-Submittal-Engineer_JR-9881-1",
+  "work_mode": ""
  },
  "410ac5225bb86104": {
   "active": false,
@@ -18950,6 +20209,31 @@
   "url": "https://careers.pge.com/job/Oakland-Quantitative-Analyst-Energy-Policy-&amp;-Procurement-CA-94612/1424272700/",
   "work_mode": ""
  },
+ "435687201b13bab0": {
+  "band": "possible",
+  "company": "Schneider Electric",
+  "date_posted": "2026-08-27",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Nashville, TN, US",
+  "locations": [
+   "Nashville, TN, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Power-systems offer/product management with market strategy and pricing scope, but not BESS/interconnection/datacenter specific.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager, Power Systems Low Voltage Offer Team",
+  "url": "https://www.indeed.com/viewjob?jk=17964edf202b62c8",
+  "work_mode": ""
+ },
  "43581b93e08895e7": {
   "active": false,
   "band": "misfit",
@@ -19040,6 +20324,31 @@
   "source": "indeed",
   "title": "Nuclear Battery Program Coordinator (Temporary Part-time)",
   "url": "https://www.indeed.com/viewjob?jk=cae20a579dd2f6a2",
+  "work_mode": ""
+ },
+ "4397d00bd6d1effb": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Technical design sales specialist is a sales-engineering role.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Technical Design Sales Specialist - Power Systems Application Engineering",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Raleigh-North-Carolina-United-States/Technical-Design-Sales-Specialist---Power-Systems-Application-Engineering_R0135595",
   "work_mode": ""
  },
  "43b8d071f091212c": {
@@ -19507,6 +20816,34 @@
   "title": "Senior Manager, Data Center Support Services - Santa Teresa, NM",
   "url": "https://www.indeed.com/viewjob?jk=51d3c7b87fb6628c",
   "work_mode": ""
+ },
+ "45cb0a0965bd01ec": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-30",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IC nonconforming-material/quality engineering role, no domain overlap.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "MRB Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/f4a41e55-49fe-439e-8b50-7670bb9f180c",
+  "work_mode": "onsite"
  },
  "45e59d38f2416c5a": {
   "band": "weak",
@@ -20443,6 +21780,34 @@
   "url": "https://www.indeed.com/viewjob?jk=dd1e0007663762d9",
   "work_mode": ""
  },
+ "47f91b64de09f894": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Flex",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "USA, CA, San Jose",
+  "locations": [
+   "USA, CA, San Jose"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Marketing communications function, unrelated to candidate's technical/product background.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Marketing Communications Manager \u2013 Power",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/USA-CA-San-Jose/Technical-Marketing-Manager---Power_WD217059",
+  "work_mode": ""
+ },
  "482323a8d5d2bdf0": {
   "band": "strong",
   "company": "Teneo",
@@ -20608,6 +21973,32 @@
   "title": "Inside Sales Specialist",
   "url": "https://www.indeed.com/viewjob?jk=ecae549d80978a0f"
  },
+ "48f07360a1397f1d": {
+  "band": "possible",
+  "company": "PG&E",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "",
+  "locations": [
+   "",
+   "West Sacramento, CA, US, 95605"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Energy procurement/RPS strategy analyst role fits domain but reads as senior IC support, not director-level ownership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Senior Energy Transactions &amp; Solicitations Analyst",
+  "url": "https://careers.pge.com/job/Oakland-Senior-Energy-Transactions-&amp;-Solicitations-Analyst-CA-94612/1426607500/",
+  "work_mode": "hybrid"
+ },
  "48f57145862dc073": {
   "active": false,
   "band": "strong",
@@ -20694,6 +22085,34 @@
   "source": "workday",
   "title": "Senior MEP Engineer \u2013 Datacenter Lab Infrastructure",
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-MEP-Engineer---Datacenter-Lab-Infrastructure_JR2016959",
+  "work_mode": ""
+ },
+ "49d40fb717efe468": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Dallas, Texas, United States",
+  "locations": [
+   "Dallas, Texas, United States"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Inside sales representative is a junior quota-carrying role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Digital Infrastructure Inside Sales Representative",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Dallas-Texas-United-States/Digital-Infrastructure-Inside-Sales-Representative_R0136796",
   "work_mode": ""
  },
  "49db9844dffe32d0": {
@@ -20821,7 +22240,7 @@
   "score": 68,
   "seniority_match": true,
   "source": "indeed",
-  "title": "Senior Technical Product Manager \u2013 GW-scale Microgrid Solutions, Raleigh/Morrisville, NC",
+  "title": "Senior Technical Product Manager \u2013 GW-scale Microgrid Solutions, Morrisville/Raleigh, NC",
   "url": "https://www.indeed.com/viewjob?jk=f43e216c38b3dcd6",
   "work_mode": ""
  },
@@ -20859,6 +22278,34 @@
   "source": "indeed",
   "title": "Maintenance Supervisor 2nd shift",
   "url": "https://www.indeed.com/viewjob?jk=3e2a934a449b11d8"
+ },
+ "4a88a51e21dfb9fe": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2025-11-10",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $184,966",
+  "priority": true,
+  "rationale": "Same deep technical project-engineering IC scope as the senior staff version, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Project Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/08116d5c-9418-4971-b877-4869fc5a552a",
+  "work_mode": "onsite"
  },
  "4a8dbab66d7f6a9d": {
   "band": "top",
@@ -21909,6 +23356,32 @@
   "url": "https://www.indeed.com/viewjob?jk=2bd241be7de79400",
   "work_mode": ""
  },
+ "4e8e72b7adcd6634": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Maneja, Gujarat, India",
+  "locations": [
+   "Maneja, Gujarat, India",
+   "Beijing, China"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Vague 'experienced professional' consulting title with no senior scope signal.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy Consulting Experienced Professional",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Beijing-China/Energy-Consulting-Experienced-Professional_R0114448",
+  "work_mode": ""
+ },
  "4ea3656b120033e8": {
   "band": "weak",
   "company": "LG Energy Solution Michigan",
@@ -22025,6 +23498,31 @@
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-TX-Remote/Solutions-Architect--Energy-OT-and-Industrial-AI_JR2021478",
   "work_mode": "remote"
  },
+ "4f0976f088473c89": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "7 Locations",
+  "locations": [
+   "7 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Transformer services project manager is technical service delivery, not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Data Center Project Manager, Transformer Services",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Houston-Texas-United-States/Project-Manager-Transformer-Services_R0138035-1",
+  "work_mode": ""
+ },
  "4f2fd761f422cc66": {
   "active": false,
   "band": "strong",
@@ -22140,6 +23638,31 @@
   "url": "https://www.indeed.com/viewjob?jk=19a8e260abb894ec",
   "work_mode": "remote"
  },
+ "4f903be801aaf5e6": {
+  "band": "possible",
+  "company": "Form Energy",
+  "date_posted": "2026-07-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "pay": "$195,719 \u2013 $244,677",
+  "priority": false,
+  "rationale": "Senior engineering-leadership role defining systems architecture strategy and building a team at a battery company, though deep MBSE/systems scope outside candidate's specialty.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Senior Manager, Systems Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/750fc7bb-19d7-4ad4-b30e-b4badf61dedf",
+  "work_mode": "onsite"
+ },
  "4f9855615f388c89": {
   "band": "weak",
   "company": "Pearce Services",
@@ -22211,6 +23734,34 @@
   "title": "Manager of Applications Engineering (Professional Engineer) - EPS",
   "url": "https://www.indeed.com/viewjob?jk=1bd47789f0052e2d",
   "work_mode": "remote"
+ },
+ "4fbce9bc4b16d7d4": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Siemens Energy",
+  "date_posted": "2026-08-31",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Director-level leadership but for gas turbine overhaul/service operations, unrelated to BESS/grid product work.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Head of Overhauls and Testing - Service Competence Center NA",
+  "url": "https://www.indeed.com/viewjob?jk=7c46a6db36df197e",
+  "work_mode": ""
  },
  "4fc0517db9a41c5f": {
   "active": false,
@@ -22329,6 +23880,34 @@
   "title": "Power Marketing Contract Manager (Advisor)",
   "url": "https://www.edisoncareers.com/job/23742810/power-marketing-contract-manager-advisor-rosemead-ca/",
   "work_mode": "hybrid"
+ },
+ "5022ac90cb21cb60": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-05-27",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$111,880 \u2013 $168,844 \u00b7 Multiple Ranges",
+  "priority": false,
+  "rationale": "Plastics supplier industrialization/DFM engineering, no domain overlap.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Supplier Industrialization Engineer, Plastics",
+  "url": "https://jobs.ashbyhq.com/formenergy/e26a0733-907e-4fdc-ad58-21faeffd57d7",
+  "work_mode": "onsite"
  },
  "50324d368f764292": {
   "active": false,
@@ -23026,6 +24605,34 @@
   "url": "https://jobs.ashbyhq.com/formenergy/951334f1-5d09-4c02-aa23-ae64811223f1",
   "work_mode": "onsite"
  },
+ "525fe346e279be75": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-05",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IC production process engineering, no product/strategy/data overlap.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Process Engineer, Operations",
+  "url": "https://jobs.ashbyhq.com/formenergy/93414409-7176-4b1d-9d85-c4700142abcc",
+  "work_mode": "onsite"
+ },
  "527330411cc331b2": {
   "band": "weak",
   "company": "Tesla",
@@ -23527,6 +25134,31 @@
   "url": "https://job-boards.greenhouse.io/hut8/jobs/5279514008",
   "work_mode": "hybrid"
  },
+ "53b73f96d9e02a06": {
+  "band": "weak",
+  "company": "Form Energy",
+  "date_posted": "2026-03-10",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Manufacturing engineering manager for pack assembly, domain mismatch despite real team-leadership scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Manager, Manufacturing Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/6672c6c9-ec55-4344-afeb-c0febf6d9bb6",
+  "work_mode": ""
+ },
  "53bfbeffb3cab7c9": {
   "active": false,
   "band": "misfit",
@@ -23923,6 +25555,10 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Philadelphia, PA, US",
+  "locations": [
+   "Philadelphia, PA, US",
+   "Morristown, NJ, US"
+  ],
   "lowscore": true,
   "pay": "$500,000",
   "priority": true,
@@ -23931,7 +25567,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Outside Sales Energy Consultant [ Commission Only upto $500K]",
-  "url": "https://www.indeed.com/viewjob?jk=b40f040d84c1329e",
+  "url": "https://www.indeed.com/viewjob?jk=be00005a279f3dd5",
   "work_mode": "hybrid"
  },
  "558b58fcd56f25fa": {
@@ -24123,6 +25759,35 @@
   "url": "https://jobs.ashbyhq.com/openai/a67d16f7-0273-4052-bb48-06bf9c478eb6",
   "work_mode": "remote"
  },
+ "567ca39e41d1c742": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Johnson Controls",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Metairie-Louisiana-United States of America",
+  "locations": [
+   "Metairie-Louisiana-United States of America",
+   "Lake Mary-Florida-United States of America"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-carrying account executive sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Account Executive- Sustainable Infrastructure",
+  "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Lake-Mary-Florida-United-States-of-America/Senior-Account-Executive---Sustainable-Infrastructure--Central-and-North-Florida-_WD30267307",
+  "work_mode": ""
+ },
  "568200fb762521d3": {
   "active": false,
   "band": "misfit",
@@ -24141,6 +25806,34 @@
   "title": "Electrical Test Specialist, PCB (Starlink)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8495213002",
   "work_mode": ""
+ },
+ "5697683e7fec4f2a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-26",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Entry-level (0-3 yrs) quality engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Quality Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/3d33ec8f-9fdf-472e-9da9-46052ebf66b9",
+  "work_mode": "onsite"
  },
  "569e2994060978c9": {
   "band": "weak",
@@ -24182,6 +25875,34 @@
   "title": "Business Development Partner \u2013 Energy & Infrastructure",
   "url": "https://www.indeed.com/viewjob?jk=5f5bb1371ab2af24",
   "work_mode": "remote"
+ },
+ "56f2477f05a3f307": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $168,844",
+  "priority": false,
+  "rationale": "Controls panel electrical design engineering is explicitly outside candidate's skillset per prior feedback.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Electrical Engineer - Controls Panel",
+  "url": "https://jobs.ashbyhq.com/formenergy/3120cb2f-0594-41c4-8ca7-597542cb2108",
+  "work_mode": "onsite"
  },
  "56f6751a7554558e": {
   "band": "weak",
@@ -25069,6 +26790,34 @@
   "url": "https://www.indeed.com/viewjob?jk=54f045c091da036f",
   "work_mode": ""
  },
+ "59e3e448fc28d9e5": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Power electronics controls R&D engineering is out of skillset per feedback on controls/firmware roles.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Power Electronics Controls Research and Development Engineer\u00a0",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Charleroi-Hainaut-Belgium/Power-Electronics-Controls-Research-and-Development-Engineer-_R0137490",
+  "work_mode": ""
+ },
  "59f4eeaf6c71a3ce": {
   "band": "strong",
   "company": "NextEra Energy",
@@ -25384,6 +27133,33 @@
   "title": "Lead Electrical Engineer - Buildings",
   "url": "https://www.indeed.com/viewjob?jk=424d879ce561a79e",
   "work_mode": ""
+ },
+ "5b437330894c19d6": {
+  "band": "weak",
+  "company": "Eaton",
+  "date_posted": "2026-09-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Beachwood, OH, US",
+  "locations": [
+   "Beachwood, OH, US",
+   "Moon Township, PA, US",
+   "Raleigh, NC, US"
+  ],
+  "pay": "$146,000\u2013$215,000/yr",
+  "priority": false,
+  "rationale": "Supply-chain sustainability program manager for datacenter cooling components, not product/strategy scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "SCM Sustainability Program Manager - Boyd Thermal Integration",
+  "url": "https://www.indeed.com/viewjob?jk=b326bc1cc9e3932e",
+  "work_mode": "remote"
  },
  "5b48cb4ba661a06c": {
   "band": "strong",
@@ -25867,7 +27643,9 @@
   "work_mode": "remote"
  },
  "5cd5d79f1d12fb4a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-03",
   "company": "Hut 8",
   "date_posted": "2026-08-19",
   "first_seen": "2026-09-03",
@@ -26075,7 +27853,8 @@
   "first_seen_at": "2026-09-03T20:25:12Z",
   "location": "Berkeley, CA",
   "locations": [
-   "Berkeley, CA"
+   "Berkeley, CA",
+   "Berkeley, CA, US"
   ],
   "pay": "$170,246 \u2013 $212,813",
   "priority": true,
@@ -26249,6 +28028,31 @@
   "source": "indeed",
   "title": "Principal Supply Chain Engineer",
   "url": "https://www.indeed.com/viewjob?jk=b33d52ddc6552d90",
+  "work_mode": ""
+ },
+ "5e723353c5e6beea": {
+  "band": "possible",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Davidson, North Carolina",
+  "locations": [
+   "Davidson, North Carolina"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Sustainability leadership role at an HVAC company with vague but plausibly senior strategy scope.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Clean Energy & Sustainability Leader",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Davidson-North-Carolina/Clean-Energy---Sustainability-Leader_JR-7323-1",
   "work_mode": ""
  },
  "5e7d4d67fce6cae5": {
@@ -27052,6 +28856,34 @@
   "url": "https://jobs.ashbyhq.com/formenergy/e7a042b2-d15e-428e-9348-7c2c662a20cb",
   "work_mode": "onsite"
  },
+ "6100070fd308c032": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Account manager for colocation sales is a quota-carrying role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Account Manager - Data Centers Colocations",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/HERemote_Santa-Clara-California/Account-Manager---Data-Centers-Colocations_R0045484",
+  "work_mode": ""
+ },
  "6101f4df3e7841c7": {
   "band": "weak",
   "company": "EnergyHub",
@@ -27239,6 +29071,34 @@
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4752361101",
   "work_mode": ""
  },
+ "61c6b6bf1f4146fc": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Schneider Electric",
+  "date_posted": "2026-09-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Raleigh, NC, US",
+  "locations": [
+   "Raleigh, NC, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Embedded firmware engineering leadership is out-of-skillset per profile even at senior level.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Firmware Engineering Manager",
+  "url": "https://www.indeed.com/viewjob?jk=6f90aaa2d1dcecce",
+  "work_mode": "onsite"
+ },
  "61c8e1e5d8e63d2c": {
   "band": "possible",
   "company": "Neara",
@@ -27298,6 +29158,34 @@
   "source": "workday",
   "title": "Director, Renewable Energy & CleanTech Solutions, APAC",
   "url": "https://vantagedc.wd1.myworkdayjobs.com/en-US/Vantage/job/Sydney-Australia/Director--Renewable-Energy---CleanTech-Solutions--APAC_R24165",
+  "work_mode": ""
+ },
+ "61dda2c3442611f0": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-carrying sales manager role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Sales Manager - Data Centers",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---England-United-Kingdom/Sales-Manager---Data-Centers_R0133164",
   "work_mode": ""
  },
  "61dfd6c0a128011d": {
@@ -27473,6 +29361,34 @@
   "title": "Technical Program Manager- AI Cluster Validation",
   "url": "https://careers.amd.com/careers-home/jobs/87318?lang=en-us",
   "work_mode": ""
+ },
+ "622148818ac4bec6": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-08",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Somerville, MA",
+  "locations": [
+   "Somerville, MA"
+  ],
+  "lowscore": true,
+  "pay": "$97,221 \u2013 $121,518",
+  "priority": false,
+  "rationale": "Entry-level (2+ yrs) test-development IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Test Development Engineer II",
+  "url": "https://jobs.ashbyhq.com/formenergy/73c6f66f-8311-49ab-aad8-61c763fdb714",
+  "work_mode": "onsite"
  },
  "623bd4e242f1732c": {
   "band": "strong",
@@ -27662,6 +29578,34 @@
   "title": "Senior Project Manager, Manufacturing Infrastructure",
   "url": "https://jobs.ashbyhq.com/crusoe/c14aab38-5269-494b-8293-96868bce6795",
   "work_mode": "onsite"
+ },
+ "62a199c7d6782b92": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Cybersecurity infrastructure manager is an unrelated IT security function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Cybersecurity Infrastructure Manager",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Vaesteras-Vastmanland-County-Sweden/Cybersecurity-Infrastructure-Manager_R0126154",
+  "work_mode": ""
  },
  "62c59db154179109": {
   "band": "possible",
@@ -27903,6 +29847,34 @@
   "title": "Data Center Engineer, HPC and AI",
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Data-Center-Engineer--HPC-and-AI_JR2019312",
   "work_mode": ""
+ },
+ "63be5787528da1fe": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $168,844",
+  "priority": true,
+  "rationale": "IC high-voltage electromechanical design engineering, not a product/strategy role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Mechanical Engineer, High-Voltage Design",
+  "url": "https://jobs.ashbyhq.com/formenergy/7f691074-b05c-4b61-857d-17da14bd069d",
+  "work_mode": "onsite"
  },
  "63e031e864fd236d": {
   "active": false,
@@ -28547,6 +30519,34 @@
   "url": "https://www.amazon.jobs/en/jobs/10443895/power-generation-infrastructure-engineer-field-engineering",
   "work_mode": "hybrid"
  },
+ "65ddcd9d6ad2a936": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Vertiv",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Ironton, OH, US",
+  "locations": [
+   "Ironton, OH, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Factory machine-operator technician role, entirely unrelated to product/strategy/energy fit.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "(Days/Solar) Machine Operator II",
+  "url": "https://www.indeed.com/viewjob?jk=e67e0c8f689fa0a0",
+  "work_mode": "onsite"
+ },
  "65ea9d1970938525": {
   "band": "strong",
   "company": "Anthropic",
@@ -28667,6 +30667,34 @@
   "title": "Data Center Technician (nightshift)",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556971304",
   "work_mode": "onsite"
+ },
+ "669b49d8ee9953c2": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Regional sales manager is a quota-carrying sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Region Sales Manager - Power Conversion Solutions (West Region)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---North-Carolina-United-States/Region-Sales-Manager---Power-Conversion-Solutions--West-Region-_R0141388",
+  "work_mode": ""
  },
  "66da1fc5b1415778": {
   "band": "weak",
@@ -28913,6 +30941,31 @@
   "url": "https://jobs.ashbyhq.com/openai/ad6b55f9-fa63-4860-b852-d90592e49d1c",
   "work_mode": "remote"
  },
+ "67a9d1445a029f5e": {
+  "band": "possible",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "R&D battery leadership is domain-relevant but engineering-focused rather than product/commercial strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "R&D Battery Lead",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Beijing-China/R-D-Battery-Lead_R0135818-1",
+  "work_mode": ""
+ },
  "67cea7708547f48b": {
   "band": "misfit",
   "company": "Nebius",
@@ -29154,6 +31207,31 @@
   "url": "https://www.indeed.com/viewjob?jk=27548464dfbfcdf3",
   "work_mode": "remote"
  },
+ "68b48f6cfe4a09bf": {
+  "band": "top",
+  "company": "AES Corporation",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "San Francisco, CA, US",
+  "locations": [
+   "San Francisco, CA, US"
+  ],
+  "pay": "$158,000\u2013$198,050/yr",
+  "priority": true,
+  "rationale": "Interconnection Manager leading a team through the full interconnection lifecycle is a direct match to the candidate's PG&E ICA work.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Interconnection Manager",
+  "url": "https://www.indeed.com/viewjob?jk=ca088eee6fa0383f",
+  "work_mode": ""
+ },
  "68bc3cb88cda2eb2": {
   "active": false,
   "band": "misfit",
@@ -29372,6 +31450,31 @@
   "title": "Automation & Controls Specialist, Infrastructure & Utility (Starship) - Level 4/5",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8730117002",
   "work_mode": ""
+ },
+ "69333c97b1be6f26": {
+  "band": "weak",
+  "company": "Siemens Energy",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Raleigh, NC, US",
+  "locations": [
+   "Raleigh, NC, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Executive EPC project-delivery leadership is construction/execution focused, not product or grid-strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Project Director - Large Capital EPC",
+  "url": "https://www.indeed.com/viewjob?jk=8da0813bc5e489b1",
+  "work_mode": "remote"
  },
  "695d9d200170d402": {
   "active": false,
@@ -30191,6 +32294,34 @@
   "url": "https://www.indeed.com/viewjob?jk=b61f82d8d864e431",
   "work_mode": "hybrid"
  },
+ "6c9a2ca8d664281c": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-11",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Somerville, MA",
+  "locations": [
+   "Somerville, MA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $184,966",
+  "priority": false,
+  "rationale": "IC electrode mechanical design engineering, deep specialist scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": " Staff Mechanical Engineer, Electrodes",
+  "url": "https://jobs.ashbyhq.com/formenergy/ccb7b33e-e1bb-4222-adbe-26eae4b40567",
+  "work_mode": "onsite"
+ },
  "6d030e46d71720ea": {
   "active": false,
   "band": "misfit",
@@ -30823,6 +32954,34 @@
   "url": "https://www.indeed.com/viewjob?jk=1a79189fd48546cb",
   "work_mode": "remote"
  },
+ "6f5110dbb1c02312": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Mannheim, Baden-Wurttemberg, Germany",
+  "locations": [
+   "Mannheim, Baden-Wurttemberg, Germany"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Segment sales manager is a quota-carrying sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Segment Sales Manager Data Centers D-A-CH (f/m/d)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Mannheim-Baden-Wurttemberg-Germany/Segment-Sales-Manager-Data-Centers-D-A-CH--f-m-d-_R0141078-1",
+  "work_mode": ""
+ },
  "6f53e1924adde65e": {
   "active": false,
   "band": "misfit",
@@ -31045,6 +33204,34 @@
   "title": "Staff Electrical Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/b1819583-e095-4717-b6dd-5630ee698163",
   "work_mode": ""
+ },
+ "6fc52bf8e7bad696": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-08",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Global supply chain/procurement management, unrelated function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Global Supply Chain Manager",
+  "url": "https://jobs.ashbyhq.com/formenergy/d6875bb1-eaeb-461a-9d99-40d92da21d20",
+  "work_mode": "remote"
  },
  "6fdffc5c2576fd2e": {
   "band": "weak",
@@ -31473,7 +33660,8 @@
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "New York, NY / San Francisco, CA",
   "locations": [
-   "New York, NY / San Francisco, CA"
+   "New York, NY / San Francisco, CA",
+   "San Francisco, CA"
   ],
   "lowscore": true,
   "pay": "$182,000 to $242,000.",
@@ -31630,6 +33818,34 @@
   "title": "HR Business Partner (Solar)",
   "url": "https://www.indeed.com/viewjob?jk=0c2aff285660ca1e",
   "work_mode": "onsite"
+ },
+ "71224f99c35a437f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-09-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "HR/People-partner leadership role, unrelated corporate function regardless of seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "People Partner Lead",
+  "url": "https://jobs.ashbyhq.com/formenergy/f7d56ba3-682f-44cb-ba9e-4a3d136230f8",
+  "work_mode": "remote"
  },
  "7126f17baf66d055": {
   "band": "weak",
@@ -32202,6 +34418,31 @@
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4679718006",
   "work_mode": ""
  },
+ "7362d7b93b926eaa": {
+  "band": "strong",
+  "company": "PowerSecure Inc.",
+  "date_posted": "2026-09-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Durham, NC, US",
+  "locations": [
+   "Durham, NC, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Energy-sector product strategy and roadmap ownership bridging engineering and commercial execution matches the core thesis well.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Product Development Manager",
+  "url": "https://www.indeed.com/viewjob?jk=2a65805b75e1c121",
+  "work_mode": "hybrid"
+ },
  "736593693ff251b6": {
   "band": "possible",
   "company": "MISO",
@@ -32510,6 +34751,31 @@
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Remote/Senior-Planner_R5048624-2",
   "work_mode": ""
  },
+ "7449d8f9fe108198": {
+  "band": "weak",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Site/project development execution role \u2014 candidate works alongside developers but lacks direct development experience per feedback.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy Project Developer",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Wilmington-MA--181-Ballardvale/Energy-Project-Developer_JR-9941-1",
+  "work_mode": ""
+ },
  "7483c006ccad76f8": {
   "band": "strong",
   "company": "Microsoft",
@@ -32524,6 +34790,31 @@
   "source": "microsoft",
   "title": "Senior Data Center Design Architect",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556971194",
+  "work_mode": "onsite"
+ },
+ "74a04322fe2ca1bb": {
+  "band": "possible",
+  "company": "Form Energy",
+  "date_posted": "2026-04-20",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Battery-company engineering leadership building a test team, but pure test-engineering scope with no product/strategy component.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Manager, System Test Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/4e416ae5-0fff-4f46-9eee-5d84cfb622fd",
   "work_mode": "onsite"
  },
  "74bfb79e0237465b": {
@@ -33245,6 +35536,34 @@
   "title": "Global Power Delivery Equipment Lead",
   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5405748008",
   "work_mode": "hybrid"
+ },
+ "77780ee72fd9624a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "7 Locations",
+  "locations": [
+   "7 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-carrying strategic sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy Services Strategic Sales - Central US",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Nashville-Tennessee/Energy-Services-Strategic-Sales---Central-US_JR-10986-1",
+  "work_mode": ""
  },
  "777e2200e8b09b88": {
   "active": false,
@@ -34710,6 +37029,34 @@
   "url": "https://jobs.lever.co/mainspringenergy/4158cabe-5480-4c34-87d1-f5ae73e96980",
   "work_mode": "hybrid"
  },
+ "7d354b3cfacf4da7": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Johnson Controls",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Windsor-Queensland-Australia",
+  "locations": [
+   "Windsor-Queensland-Australia"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Electrical design engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Electrical Engineer (Project and Design)",
+  "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Windsor-Queensland-Australia/Electrical-Engineer--Project-and-Design-_WD30273299",
+  "work_mode": ""
+ },
  "7d37d249764533f2": {
   "band": "weak",
   "company": "",
@@ -34733,6 +37080,31 @@
   "title": "Structural Design Engineer",
   "url": "https://www.indeed.com/viewjob?jk=4e50490784f35f96",
   "work_mode": "onsite"
+ },
+ "7d3982e019325456": {
+  "band": "weak",
+  "company": "Flex",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "USA, WA, Lynnwood",
+  "locations": [
+   "USA, WA, Lynnwood"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Data Center Specialist title suggests an operational/field-level role, not senior product/strategy scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Data Center Specialist",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/USA-WA-Lynnwood/Data-Center-Technician_WD220406",
+  "work_mode": ""
  },
  "7d43ea8c23cf9ec1": {
   "band": "strong",
@@ -34803,6 +37175,34 @@
   "url": "https://jobs.lever.co/mainspringenergy/8bcc0fb4-676b-4cd6-8e08-8c7eb3631e7c",
   "work_mode": "hybrid"
  },
+ "7d863120c9675412": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-07",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$97,221 \u2013 $121,518",
+  "priority": false,
+  "rationale": "Revenue/project accounting role, unrelated corporate finance function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Accountant, Revenue and Projects",
+  "url": "https://jobs.ashbyhq.com/formenergy/31025496-d617-44f6-a35e-b0c605fba0aa",
+  "work_mode": "remote"
+ },
  "7dbc2ce2441a78fa": {
   "active": false,
   "band": "misfit",
@@ -34867,6 +37267,34 @@
   "title": "Manager, Interconnection Services - Northeast (PJM/NYISO/ISO-NE/Ontario /NS/ NB)",
   "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Manager%2C-Interconnection-Services-Northeast-%28PJMNYISOISO-NEOntario-NS-NB%29-FL-33408/1395613700/",
   "work_mode": ""
+ },
+ "7dd47d1be8a4c42b": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-08-18",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$170,246 \u2013 $212,813",
+  "priority": true,
+  "rationale": "Deep technical project-engineering IC role covering design/construction execution, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Staff Project Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/f9310f61-6e9f-448a-909f-d0eada2078e9",
+  "work_mode": "onsite"
  },
  "7deb8232f0176db2": {
   "active": false,
@@ -35038,6 +37466,34 @@
   "title": "Technical Project Engineer \u2013 HV Substations",
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Madrid/Technical-Project-Engineer---HV-Substations_R5048898",
   "work_mode": ""
+ },
+ "7ea719d83f95b93f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $184,966",
+  "priority": false,
+  "rationale": "Deep electrochemistry/electrolyte R&D IC role, no product/strategy/data overlap.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Chemical Engineer, Electrolyte Management",
+  "url": "https://jobs.ashbyhq.com/formenergy/52bc3f1e-9440-40d1-9562-6d2e1dfcfe07",
+  "work_mode": "onsite"
  },
  "7eafba0a48454002": {
   "active": false,
@@ -35458,6 +37914,31 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8771528002",
   "work_mode": "remote"
  },
+ "7fb1856b15bda228": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Remote - North Carolina, United States",
+  "locations": [
+   "Remote - North Carolina, United States"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Deep technical IC electrical design engineering role for data centers, outside product/strategy scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Lead Electrical Engineer - Data Center",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---North-Carolina-United-States/Senior-Electrical-Engineer---Data-Center_R0123405",
+  "work_mode": "remote"
+ },
  "7fb3ff278c87a6c4": {
   "active": false,
   "band": "misfit",
@@ -35713,11 +38194,16 @@
   "work_mode": ""
  },
  "80cbac0ad88f42d0": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-03",
   "company": "Hut 8",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-28",
   "location": "Miami, FL",
+  "locations": [
+   "Miami, FL"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "Associate-level interconnection study support at relevant company in adjacent domain but junior analyst role, not director/PM/strategy level.",
@@ -35729,7 +38215,7 @@
   },
   "seniority_match": false,
   "source": "greenhouse",
-  "title": "Associate, Transmission & Interconnection ",
+  "title": "Transmission & Interconnection, Principal",
   "url": "https://job-boards.greenhouse.io/hut8/jobs/5365181008",
   "work_mode": ""
  },
@@ -36069,6 +38555,31 @@
   "source": "workday",
   "title": "Energy Product Marketing Manager",
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Energy-Product-Marketing-Manager_JR2016521",
+  "work_mode": ""
+ },
+ "81f75896407e4df0": {
+  "band": "possible",
+  "company": "VEIR",
+  "date_posted": "2026-09-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Woburn, Massachusetts, United States",
+  "locations": [
+   "Woburn, Massachusetts, United States"
+  ],
+  "pay": "$170,000 - $200,000 per year",
+  "priority": false,
+  "rationale": "Principal TPM role is deep technical program execution/engineering accountability rather than product or commercial strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "greenhouse",
+  "title": "Principal Technical Program Manager",
+  "url": "https://job-boards.greenhouse.io/veir/jobs/5409700008",
   "work_mode": ""
  },
  "81fc2ceb1b865290": {
@@ -37347,6 +39858,31 @@
   "url": "https://www.indeed.com/viewjob?jk=443ccb66d2d00934",
   "work_mode": "remote"
  },
+ "862e8a8fbf195c15": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Beijing, China",
+  "locations": [
+   "Beijing, China"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Generic energy consultant title with no scope details or seniority signal.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy consultant",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Beijing-China/Energy-consultant_R0101551",
+  "work_mode": ""
+ },
  "86445d263ac51520": {
   "active": false,
   "band": "misfit",
@@ -37620,6 +40156,31 @@
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6120036004",
   "work_mode": "hybrid"
  },
+ "86d9f276d96ebbd6": {
+  "band": "weak",
+  "company": "Bloom Energy",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Newark, Delaware",
+  "locations": [
+   "Newark, Delaware"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Vague 'Energy Transition Champion' title suggests a customer-facing/sales role rather than product or strategy scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Energy Transition Champion",
+  "url": "https://bloomenergy.wd1.myworkdayjobs.com/en-US/BloomEnergyCareers/job/Newark-Delaware/Senior-Energy-Transition-Champion_JR-19241",
+  "work_mode": ""
+ },
  "870cf5715a0c7a5b": {
   "active": false,
   "band": "misfit",
@@ -37666,6 +40227,34 @@
   "title": "Software Development Test Engineer (Starlink)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8675233002",
   "work_mode": ""
+ },
+ "874d460e9c1bb536": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-02-10",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $192,953",
+  "priority": false,
+  "rationale": "Plastics design mechanical engineering IC role, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Mechanical Engineer, Plastics Design",
+  "url": "https://jobs.ashbyhq.com/formenergy/334b047a-b637-4f0c-99d1-fb644b5c5567",
+  "work_mode": "onsite"
  },
  "874d96527bb59992": {
   "band": "weak",
@@ -37738,6 +40327,88 @@
   "url": "https://careers.amd.com/careers-home/jobs/87857?lang=en-us",
   "work_mode": "hybrid"
  },
+ "87855bd56572028b": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Transformer service consultant is deep technical/service work, not product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Transformer Service Consultant - Data Centers",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---North-Carolina-United-States/Transformer-Service-Consultant---Data-Centers_R0103854",
+  "work_mode": ""
+ },
+ "878fab976b807cb4": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-18",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Supervises QC technicians on the floor \u2014 trade-level oversight, not director/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Quality Control Supervisor",
+  "url": "https://jobs.ashbyhq.com/formenergy/b8016d7e-9756-4f94-8256-9cd5520b1da5",
+  "work_mode": "onsite"
+ },
+ "87c641815c150421": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Hyderabad, Telangana",
+  "locations": [
+   "Hyderabad, Telangana",
+   "Mumbai, Maharashtra"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior/mid-level sales management role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Assistant / Deputy Manager Sales - Data Center",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Mumbai-Maharashtra/Assistant--Deputy-Manager-Sales--Data-Center_92506887-1",
+  "work_mode": ""
+ },
  "87c86cedd7dbaad8": {
   "band": "weak",
   "company": "AutoZone",
@@ -37762,6 +40433,31 @@
   "url": "https://www.indeed.com/viewjob?jk=3a34bb48760ecb6c",
   "work_mode": "onsite"
  },
+ "87c8dbe1f8461e94": {
+  "band": "weak",
+  "company": "National Louis University",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Morrisville, NC, US",
+  "locations": [
+   "Morrisville, NC, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep technical microgrid power-system studies/protection engineering, too specialist-IC per past calibration on study roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Microgrid System Studies & Validation Engineer - Morrisville/Raleigh, NC",
+  "url": "https://www.indeed.com/viewjob?jk=ecc3d46dc521a36e",
+  "work_mode": ""
+ },
  "87d13532a4e4a00a": {
   "band": "possible",
   "company": "Amazon",
@@ -37781,6 +40477,34 @@
   "source": "amazon",
   "title": "Water Infrastructure Engineer, AWS Water Team (ADC)",
   "url": "https://www.amazon.jobs/en/jobs/10492887/water-infrastructure-engineer-aws-water-team-adc",
+  "work_mode": "onsite"
+ },
+ "87d3fc525e0f3f9e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-05",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Floor-level process engineering, operational manufacturing scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Process Engineer, Mechanical Assembly",
+  "url": "https://jobs.ashbyhq.com/formenergy/36598883-f81d-4c7e-a7ac-a8427ac63cb3",
   "work_mode": "onsite"
  },
  "87ed89ee10b13d1a": {
@@ -38178,6 +40902,34 @@
   "source": "indeed",
   "title": "Data Center Traveling Sr Superintendent",
   "url": "https://www.indeed.com/viewjob?jk=ac0140ca67899dcd",
+  "work_mode": "onsite"
+ },
+ "893dfb8b4a237ae3": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-08",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $221,973",
+  "priority": false,
+  "rationale": "Deep structural FEA design engineering IC role, out of skillset per profile's deep-technical-design rule.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Mechanical Design Engineer, Structures",
+  "url": "https://jobs.ashbyhq.com/formenergy/fc524af1-240c-40c2-a9bc-7574be817b8b",
   "work_mode": "onsite"
  },
  "895bc9d4bd18db8f": {
@@ -38877,6 +41629,35 @@
   "title": "Equipment Engineering Manager - Solar Cell Factory (Starlink)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8646660002",
   "work_mode": ""
+ },
+ "8bc904aebd5e6818": {
+  "band": "possible",
+  "company": "Eaton",
+  "date_posted": "2026-09-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Moon Township, PA, US",
+  "locations": [
+   "Moon Township, PA, US",
+   "Menomonee Falls, WI, US",
+   "Raleigh, NC, US",
+   "Galesburg, MI, US",
+   "Beachwood, OH, US"
+  ],
+  "pay": "$130,000\u2013$190,000/yr",
+  "priority": false,
+  "rationale": "Hands-on senior AI governance pod lead at an energy company \u2014 domain+AI hybrid, but enterprise IT governance rather than grid/energy data.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "IT AI Senior Specialist",
+  "url": "https://www.indeed.com/viewjob?jk=cd8c6c6438801353",
+  "work_mode": "hybrid"
  },
  "8bf465cd467bfafe": {
   "band": "weak",
@@ -39838,6 +42619,31 @@
   "title": "Senior Product Manager, Storage",
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4703535006"
  },
+ "8eaa484835e2dd84": {
+  "band": "weak",
+  "company": "Form Energy",
+  "date_posted": "2026-02-13",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "pay": "$147,959 \u2013 $184,966",
+  "priority": false,
+  "rationale": "Senior supply-chain program manager scope is real but the domain is manufacturing/ops execution, not product or grid strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Staff Supply Chain Program Manager",
+  "url": "https://jobs.ashbyhq.com/formenergy/7f835fb9-4d44-496b-bd9b-527cf8e8f9a2",
+  "work_mode": "onsite"
+ },
  "8eaa9a139348ddbd": {
   "active": false,
   "band": "weak",
@@ -40209,6 +43015,34 @@
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/5968607004",
   "work_mode": "hybrid"
  },
+ "8f7a7ec3190208bd": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-15",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $184,966",
+  "priority": true,
+  "rationale": "IC systems engineering (requirements/architecture) role, deep technical scope not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Systems Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/a14469e9-fee4-4da4-8e43-ab82f1ca1c23",
+  "work_mode": "onsite"
+ },
  "8f7cd72302ac6637": {
   "active": false,
   "band": "misfit",
@@ -40405,6 +43239,31 @@
   "source": "greenhouse",
   "title": "Sr. Hardware / Infrastructure Site Reliability Engineer (Starlink)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8573251002",
+  "work_mode": ""
+ },
+ "8fc80badc26be950": {
+  "band": "possible",
+  "company": "National Louis University",
+  "date_posted": "2026-09-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Bothell, WA, US",
+  "locations": [
+   "Bothell, WA, US"
+  ],
+  "pay": "$130,000\u2013$170,000/yr",
+  "priority": false,
+  "rationale": "Technical PM for data center power infrastructure with budget and stakeholder ownership, adjacent but execution-heavy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Technical Project Manager - Bothell, WA",
+  "url": "https://www.indeed.com/viewjob?jk=6c1367dd54bfebca",
   "work_mode": ""
  },
  "901ee0612b622714": {
@@ -40731,6 +43590,34 @@
   "title": "Project Manager - Southeast",
   "url": "https://www.indeed.com/viewjob?jk=a81affeb071e7e6d",
   "work_mode": "remote"
+ },
+ "90f016c84b13fe2c": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "8 Locations",
+  "locations": [
+   "8 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-carrying strategic sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy Services Strategic Sales - Eastern US",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Davidson-North-Carolina/Energy-Services-Strategic-Sales---Eastern-US_JR-10984-1",
+  "work_mode": ""
  },
  "90fb59786115d31a": {
   "active": false,
@@ -41461,6 +44348,34 @@
   "url": "https://jobs.ashbyhq.com/base-power/3954270d-b1b8-45b1-9c10-8816dcbeb2a3",
   "work_mode": ""
  },
+ "93d5608542fa970d": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-05-27",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Staff manufacturing equipment engineering IC role, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Manufacturing Equipment Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/702ab99a-cd67-419d-a1e9-8761aa90b1de",
+  "work_mode": "onsite"
+ },
  "93d854165ab8cb0b": {
   "band": "misfit",
   "company": "PG&E",
@@ -41697,6 +44612,31 @@
   "title": "Product Manager, AI Platform SW - Agentic AI Kernel Generation",
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager--AI-Platform-SW---Agentic-AI-Kernel-Generation_JR2016992",
   "work_mode": "onsite"
+ },
+ "94be750e4ae2d739": {
+  "band": "possible",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Davidson, North Carolina",
+  "locations": [
+   "Davidson, North Carolina"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Partnership Leader for data centers at an HVAC/thermal company reads as BD-flavored leadership, bands possible per feedback on BD-centric roles.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Partnership Leader (Data Centers)",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Davidson-North-Carolina/Partnership-Leader--Data-Centers-_JR-7760",
+  "work_mode": ""
  },
  "94ec76e42c614ba6": {
   "band": "weak",
@@ -41971,6 +44911,34 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8614098002",
   "work_mode": ""
  },
+ "96240870e1748d9a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-17",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Tool installation superintendent is hands-on construction/maintenance supervision, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Tool Install Superintendent ",
+  "url": "https://jobs.ashbyhq.com/formenergy/fdd0a986-7e54-476b-ba90-4ae52300e8e6",
+  "work_mode": "onsite"
+ },
  "9627b59a423fba93": {
   "band": "weak",
   "company": "Edged U.S.",
@@ -42054,6 +45022,31 @@
   "title": "Process Engineer II, Welding",
   "url": "https://jobs.ashbyhq.com/formenergy/b66cbfea-12d4-46d2-952d-ecdd4012fd7e",
   "work_mode": "onsite"
+ },
+ "96968acf51cc5992": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Tokyo, Tokyo, Japan",
+  "locations": [
+   "Tokyo, Tokyo, Japan"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Vague internal leadership title with no discernible role scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "One Hitachi / Hitachi Energy Leader",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Tokyo-Tokyo-Japan/One-Hitachi---Hitachi-Energy-Leader_R0134852-3",
+  "work_mode": ""
  },
  "969b49497c0de4f4": {
   "band": "weak",
@@ -42146,6 +45139,34 @@
   "source": "workday",
   "title": "Lead Project Manager \u2013 HVDC Transformers",
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Stafford/Lead-Project-Manager---HVDC-Transformers_R5050527",
+  "work_mode": ""
+ },
+ "96bfe273f0c932eb": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Chennai, Tamil Nadu, India",
+  "locations": [
+   "Chennai, Tamil Nadu, India"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "BESS SCADA design/testing is controls engineering, out of skillset per feedback.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "BESS - SCADA Design and Testing Engineer",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Chennai-Tamil-Nadu-India/BESS---SCADA-Design-and-Testing-Engineer_R0140434",
   "work_mode": ""
  },
  "96c0a63eebf5e1da": {
@@ -42726,6 +45747,31 @@
   "title": "Sr. Power Systems Engineer (PE)",
   "url": "https://www.indeed.com/viewjob?jk=5827891c08ce9d76"
  },
+ "98c0af7109a7ff60": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Business development manager role capped per feedback on pure BD roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Business Development Manager - Data Center",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Mumbai-Maharashtra-India/BD-Manager---Data-Center_R0132908",
+  "work_mode": ""
+ },
  "98db7617f4af325a": {
   "active": false,
   "band": "misfit",
@@ -42932,6 +45978,31 @@
   "title": "Senior Data Engineer",
   "url": "https://job-boards.greenhouse.io/spearmintenergy/jobs/4393136009",
   "work_mode": "hybrid"
+ },
+ "9a1bccb763ed7b70": {
+  "band": "strong",
+  "company": "Flex",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Taiwan, Taipei Wugu",
+  "locations": [
+   "Taiwan, Taipei Wugu"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director-level power engineering at an AI-datacenter power supplier matches the data-center power infrastructure HIGH category.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Director, Power Engineering",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/Taiwan-Taipei-Wugu/Director--Power-Engineering_WD221650",
+  "work_mode": ""
  },
  "9a1f65ea74c9fbf9": {
   "active": false,
@@ -43401,6 +46472,34 @@
   "url": "https://jobs.ashbyhq.com/crusoe/e74781da-b363-4526-bf4f-1d61a4f9126d",
   "work_mode": ""
  },
+ "9c144eaa9f4cf154": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-29",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$199,950 \u2013 $293,835 \u00b7 Multiple Ranges",
+  "priority": false,
+  "rationale": "IT infrastructure/network director role \u2014 wrong field per prior feedback even at leadership level.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Director, IT Operations",
+  "url": "https://jobs.ashbyhq.com/formenergy/cd7e2265-08db-487e-83b7-2743aab70127",
+  "work_mode": "remote"
+ },
  "9c1c3c2f4cf1a2b5": {
   "band": "top",
   "company": "Texture",
@@ -43771,6 +46870,31 @@
   "url": "https://job-boards.greenhouse.io/niraenergy/jobs/5235896008",
   "work_mode": "remote"
  },
+ "9d691bbe551cec16": {
+  "band": "weak",
+  "company": "Schneider Electric",
+  "date_posted": "2026-08-28",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Buffalo, NY, US",
+  "locations": [
+   "Buffalo, NY, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Strategic sourcing/procurement lead for datacenter thermal components \u2014 specialist procurement function, not product/AI.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Strategic Sourcing Lead",
+  "url": "https://www.indeed.com/viewjob?jk=cbb00ff784edb864",
+  "work_mode": ""
+ },
  "9d82f6d423c3e698": {
   "band": "strong",
   "company": "Southern California Edison",
@@ -43795,6 +46919,31 @@
   "title": "Principal Manager - AMI 2.0 Program Delivery",
   "url": "https://www.edisoncareers.com/job/23549175/principal-manager-ami-2-0-program-delivery-pomona-ca/",
   "work_mode": "hybrid"
+ },
+ "9d88bdc18b44eded": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Technical solutions engineer is a sales-support IC engineering role.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Technical Solutions Engineer - Data Centers",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---North-Carolina-United-States/Solutions-Engineer---Data-Centers_R0123029",
+  "work_mode": ""
  },
  "9da004d1c58219de": {
   "active": false,
@@ -44304,6 +47453,31 @@
   "title": "Sourcing Manager, Ground Infrastructure (Starlink) ",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8619968002",
   "work_mode": ""
+ },
+ "9f12c53bd400e0f3": {
+  "band": "weak",
+  "company": "Form Energy",
+  "date_posted": "2026-08-14",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "pay": "$199,950 \u2013 $293,835 \u00b7 Multiple Ranges",
+  "priority": false,
+  "rationale": "Director-level field service/commissioning leadership for BESS is O&M execution, not product/commercial strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Director of Commissioning and Field Service",
+  "url": "https://jobs.ashbyhq.com/formenergy/a5c18c3f-da88-4743-9d11-58a5205d2883",
+  "work_mode": "onsite"
  },
  "9f1adfb0d6165e94": {
   "band": "possible",
@@ -45137,6 +48311,34 @@
   "url": "https://servicetitan.wd1.myworkdayjobs.com/en-US/ServiceTitan/job/US-Remote/Manager--Software-Engineering_JR114680",
   "work_mode": "remote"
  },
+ "a236dd36bb5b6795": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Regional sales management role, outside candidate's product/strategy track.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Regional Sales Manager for Automation and Communciation for DataCenters",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---California-United-States/Regional-Sales-Manager-for-Automation-and-Communciation-for-DataCenters_R0131347",
+  "work_mode": ""
+ },
  "a270c5cfed3d840a": {
   "band": "weak",
   "company": "CoreWeave",
@@ -45247,14 +48449,18 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "Denver, CO, US",
+  "locations": [
+   "Denver, CO, US",
+   "2 Locations"
+  ],
   "pay": "$240,000",
   "priority": true,
   "rationale": "Senior Director of Energy Systems at major datacenter operator is direct high-seniority fit in datacenter energy infrastructure.",
   "score": 85,
   "seniority_match": true,
-  "source": "indeed",
+  "source": "workday",
   "title": "Senior Director, Energy Systems, Global",
-  "url": "https://www.indeed.com/viewjob?jk=6b46838e778fb548",
+  "url": "https://vantagedc.wd1.myworkdayjobs.com/en-US/Vantage/job/Denver-Colorado/Senior-Director--Energy-Systems--Global_R24223",
   "work_mode": "remote"
  },
  "a310def372c7a81b": {
@@ -45350,6 +48556,34 @@
   "title": "Commercial Solar & Battery Interconnection Specialist",
   "url": "https://www.indeed.com/viewjob?jk=411a7eba9ab607cc",
   "work_mode": "onsite"
+ },
+ "a38341cd6ec948e2": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-02-13",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $194,218",
+  "priority": false,
+  "rationale": "Supplier quality/industrialization engineering IC role, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Supplier Industrialization Engineer, Electromechanical ",
+  "url": "https://jobs.ashbyhq.com/formenergy/b3c10d77-1d55-4abf-a4e3-1ec9075966ea",
+  "work_mode": "remote"
  },
  "a39068bfd9c15d12": {
   "active": false,
@@ -45552,6 +48786,34 @@
   "source": "workday",
   "title": "Director, Energy & Power Origination, APAC",
   "url": "https://vantagedc.wd1.myworkdayjobs.com/en-US/Vantage/job/Tokyo-Japan/Director--Energy---Power-Origination--APAC_R24004",
+  "work_mode": ""
+ },
+ "a486f38fceac0b32": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "5 Locations",
+  "locations": [
+   "5 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Regional service sales manager is a quota-carrying sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Regional Service Sales Manager - Data Center",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Houston-Texas-United-States/Regional-Service-Sales-Manager---Data-Center_R0120833",
   "work_mode": ""
  },
  "a48cf5e7406ef1f7": {
@@ -46296,6 +49558,34 @@
   "url": "https://www.amazon.jobs/en/jobs/10493370/sr-data-center-project-manager-critical-projects-implementation",
   "work_mode": "onsite"
  },
+ "a68e6a011df02cbf": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Milwaukee, Wisconsin",
+  "locations": [
+   "Milwaukee, Wisconsin"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Coordinator-level role, junior seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Data Center Resource Coordinator",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Milwaukee-Wisconsin/Data-Center-Resource-Coordinator_JR-13119-1",
+  "work_mode": ""
+ },
  "a694bebde442d3d6": {
   "band": "weak",
   "company": "Exowatt",
@@ -46345,6 +49635,34 @@
   "source": "indeed",
   "title": "Infrastructure Program Manager",
   "url": "https://www.indeed.com/viewjob?jk=92cc705fdc0038ae"
+ },
+ "a6cd89718db7dd52": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Hyderabad, Telangana",
+  "locations": [
+   "Hyderabad, Telangana"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Field service engineering role for data centers.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Service Engineer - Data Center",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Hyderabad-Telangana/Senior-Service-Engineer---Data-Center_JR-14166",
+  "work_mode": ""
  },
  "a6d91fb7fb16a099": {
   "active": false,
@@ -46528,7 +49846,8 @@
    "Oakland, CA, US, 94612",
    "Vacaville, CA, US, 95688",
    "Fremont, CA, US, 94538",
-   "Fulton, CA, US, 95439"
+   "Fulton, CA, US, 95439",
+   "Petaluma, CA, US, 94954"
   ],
   "pay": "$114,000",
   "priority": false,
@@ -46706,6 +50025,31 @@
   "title": "Senior Manager, Enterprise AI Solutions Business Development",
   "url": "https://careers.amd.com/careers-home/jobs/79860?lang=en-us",
   "work_mode": "hybrid"
+ },
+ "a7e9141348b82f0b": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Raleigh, North Carolina, United States",
+  "locations": [
+   "Raleigh, North Carolina, United States"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Energy consulting with team-lead scope, but IC study/consulting work stays below director level.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Team Lead - Energy Consultant",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Raleigh-North-Carolina-United-States/Team-Lead---Energy-Consultant_R0117443",
+  "work_mode": ""
  },
  "a7f610e77928d007": {
   "band": "weak",
@@ -47131,6 +50475,31 @@
   "url": "https://www.indeed.com/viewjob?jk=c765f7ddb56b6b8f",
   "work_mode": "onsite"
  },
+ "a91099404ad5b2b9": {
+  "band": "weak",
+  "company": "ICF",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Reston, VA, US",
+  "locations": [
+   "Reston, VA, US"
+  ],
+  "pay": "$81,499\u2013$138,549/yr",
+  "priority": true,
+  "rationale": "Deep technical transmission-planning study/consulting role, too specialist per prior calibration on study engineering.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Transmission Planning Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=9823c6efc4550d41",
+  "work_mode": "remote"
+ },
  "a935f2cff0a355b8": {
   "band": "possible",
   "company": "PG&E",
@@ -47475,6 +50844,31 @@
   "url": "https://www.amazon.jobs/en/jobs/10479537/data-center-project-manager-ii-critical-projects-implementation",
   "work_mode": "onsite"
  },
+ "aa7b38c5fed3d6e9": {
+  "band": "possible",
+  "company": "VEIR",
+  "date_posted": "2026-07-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Woburn, Massachusetts, United States",
+  "locations": [
+   "Woburn, Massachusetts, United States"
+  ],
+  "pay": "$150,000 - $170,000 per year",
+  "priority": false,
+  "rationale": "Hardware PM for cryogenic systems/controls is engineering-embedded rather than commercial/product-strategy focused.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "greenhouse",
+  "title": "Senior Technical Product Manager - Cryogenic Infrastructure & Controls",
+  "url": "https://job-boards.greenhouse.io/veir/jobs/5217353008",
+  "work_mode": ""
+ },
  "aa8144c9d41addb2": {
   "active": false,
   "band": "misfit",
@@ -47610,6 +51004,67 @@
   "title": "Product Director",
   "url": "https://www.indeed.com/viewjob?jk=1b1992929c223d87",
   "work_mode": "hybrid"
+ },
+ "aacd0fd903b6aa70": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Burnaby, British Columbia",
+  "locations": [
+   "Burnaby, British Columbia",
+   "Atlanta, Georgia",
+   "San Antonio, Texas",
+   "Arden Hills, Minnesota",
+   "Willowbrook, Illinois",
+   "Tampa, Florida"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Explicitly entry-level engineering role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Entry Level Energy Engineer",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Tampa-Florida/Entry-Level-Energy-Engineer_JR-15039-1",
+  "work_mode": ""
+ },
+ "aad5432d038ab38a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-18",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IC test-automation/controls engineering, out of candidate's skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Electrical Test Automation Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/b508639e-3d08-4046-b74d-ffeaf1a39548",
+  "work_mode": "onsite"
  },
  "aae4cfad2a71581b": {
   "band": "weak",
@@ -48175,6 +51630,34 @@
   "title": "Supervisor, Production Test Technicians",
   "url": "https://www.indeed.com/viewjob?jk=419be8ce088ac9bc",
   "work_mode": ""
+ },
+ "ad4908ea09d48dfb": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-15",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$111,826 \u2013 $139,777",
+  "priority": false,
+  "rationale": "IC chemical engineering/fluid modeling role, deep specialist scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Chemical Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/2b1ae5b7-0a25-46bb-a09c-40db134ad53f",
+  "work_mode": "onsite"
  },
  "ad504910b4bdc3c3": {
   "active": false,
@@ -49167,6 +52650,34 @@
   "source": "greenhouse",
   "title": "IT Storage Engineer",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8687953002",
+  "work_mode": ""
+ },
+ "af506c0bceb7297d": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Krakow, Lesser Poland, Poland",
+  "locations": [
+   "Krakow, Lesser Poland, Poland"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IT category manager is a procurement function, unrelated corporate role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "IT Category Manager \u2013 Infrastructure",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Krakow-Lesser-Poland-Poland/IT-Category-Manager_R0116064",
   "work_mode": ""
  },
  "af95b5507b996520": {
@@ -50325,6 +53836,31 @@
   "title": "Senior Product Manager, Commissioning & Field Service Software",
   "url": "https://jobs.ashbyhq.com/formenergy/ff3f435f-f337-4a98-beb7-f1f29b0c8cd8",
   "work_mode": "remote"
+ },
+ "b392af940d7d3ba2": {
+  "band": "weak",
+  "company": "Black & Veatch",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Greenwood Village, CO, US",
+  "locations": [
+   "Greenwood Village, CO, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director-level role but scope is enterprise IT/OT integration architecture (middleware, APIs), not product/BESS/grid strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director of Integration and Architecture, Energy and Utilities",
+  "url": "https://www.indeed.com/viewjob?jk=3c7fa91f65f961ca",
+  "work_mode": "hybrid"
  },
  "b3dd0d15928541ec": {
   "band": "possible",
@@ -51784,6 +55320,34 @@
   "url": "https://jobs.ashbyhq.com/neara/250fc7e8-efa6-4af6-a643-cb029133e0d6",
   "work_mode": "remote"
  },
+ "b95cdb707aebcb3e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-17",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Hands-on systems test engineering IC role for BMS/power electronics validation, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Test Engineer, Systems Test",
+  "url": "https://jobs.ashbyhq.com/formenergy/4dc6565b-04d6-4402-b7f8-c9e878e1534a",
+  "work_mode": "onsite"
+ },
  "b99d653a8237c8cd": {
   "band": "weak",
   "company": "Wanzek Construction",
@@ -52177,6 +55741,34 @@
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4948117101",
   "work_mode": "remote"
  },
+ "bbcf111df9d5492d": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-16",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $194,218",
+  "priority": false,
+  "rationale": "IC PCBA electrical design engineering, adjacent to firmware/controls which is out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Electrical Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/f8858e93-2080-4b01-a7c4-01d17543f14e",
+  "work_mode": "onsite"
+ },
  "bbd76a511667fb6d": {
   "band": "misfit",
   "company": "ServiceTitan",
@@ -52488,6 +56080,34 @@
   "title": "Staff Data Center Operations Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/687f20ac-6010-4b3a-b861-d40f632dc6b8"
  },
+ "bd4dc6879c4fd997": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-05-29",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$170,246 \u2013 $255,381",
+  "priority": false,
+  "rationale": "Senior Staff IC thermal design role, deep mechanical specialization not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Staff Mechanical Design Engineer, Thermal Systems",
+  "url": "https://jobs.ashbyhq.com/formenergy/8ef8e5bc-7eca-4e68-9d06-beacaf015980",
+  "work_mode": "onsite"
+ },
  "bd560bc7d151f65a": {
   "band": "weak",
   "company": "Arcadis",
@@ -52677,6 +56297,34 @@
   "source": "successfactors",
   "title": "Project Manager - BESS SME",
   "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Project-Manager-BESS-SME-FL-33408/1404835700/",
+  "work_mode": ""
+ },
+ "bdaf1a7a6c516758": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "7 Locations",
+  "locations": [
+   "7 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-carrying strategic sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy Services Strategic Sales - Western US",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Denver-Colorado/Energy-Services-Strategic-Sales---Western-US_JR-10987-1",
   "work_mode": ""
  },
  "bdc5b1d2e92bc47d": {
@@ -53027,6 +56675,34 @@
   "url": "https://www.indeed.com/viewjob?jk=29245776a1799ae7",
   "work_mode": "onsite"
  },
+ "beb91f22643cae87": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-08-12",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$128,660 \u2013 $184,966 \u00b7 Multiple Ranges",
+  "priority": true,
+  "rationale": "Site EHS/safety specialist IC role, unrelated to product/strategy skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Project Safety Specialist",
+  "url": "https://jobs.ashbyhq.com/formenergy/45f318d6-9448-4747-841e-6d743b984616",
+  "work_mode": "onsite"
+ },
  "bebc280f82986544": {
   "band": "possible",
   "company": "Exowatt",
@@ -53274,6 +56950,34 @@
   "url": "https://www.indeed.com/viewjob?jk=33765531eeecb1c6",
   "work_mode": "remote"
  },
+ "bf678b9312613ca8": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-02-13",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $184,966",
+  "priority": false,
+  "rationale": "Commodity sourcing/procurement IC role for stamped metal parts, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Global Supply Manager, Stamped Metals",
+  "url": "https://jobs.ashbyhq.com/formenergy/ce7ab32e-8a54-42ad-a7d0-e6196ccede90",
+  "work_mode": "remote"
+ },
  "bf716d8153aab16d": {
   "active": false,
   "band": "misfit",
@@ -53381,6 +57085,34 @@
   "title": "Senior Consultant - Energy Markets",
   "url": "https://www.indeed.com/viewjob?jk=ac16c7f8378be8d7",
   "work_mode": ""
+ },
+ "bf95dd3db8e897bd": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Caterpillar",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Mossville, IL, US",
+  "locations": [
+   "Mossville, IL, US"
+  ],
+  "lowscore": true,
+  "pay": "$112,710\u2013$169,060/yr",
+  "priority": true,
+  "rationale": "Deep IC electrification systems-integration engineering role, not product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Senior Engineer \u2013 Electrification Site Applications & Integration",
+  "url": "https://www.indeed.com/viewjob?jk=d19030590c85b52b",
+  "work_mode": "hybrid"
  },
  "bf9e442ee9b9c9bf": {
   "band": "possible",
@@ -53949,6 +57681,34 @@
   "url": "https://jobs.lever.co/gridware/c89f6642-62ee-437a-8812-c39a4aa092d6",
   "work_mode": "hybrid"
  },
+ "c1bb5adca18610e0": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-23",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Logistics analyst role is junior and unrelated to product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Supply Chain Logistics Analyst ",
+  "url": "https://jobs.ashbyhq.com/formenergy/5592f375-8718-4d2e-9617-3ee6a044ebd0",
+  "work_mode": "remote"
+ },
  "c1bc22b2270bed5c": {
   "band": "weak",
   "company": "Off-Grid Power Systems",
@@ -54079,6 +57839,31 @@
   "title": "Senior Manager, Energy Procurement & Utility Strategy",
   "url": "https://www.amazon.jobs/en/jobs/10428897/senior-manager-energy-procurement-utility-strategy",
   "work_mode": "onsite"
+ },
+ "c20bf2a69ef92507": {
+  "band": "weak",
+  "company": "Anthropic",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "San Francisco, CA | New York City, NY",
+  "locations": [
+   "San Francisco, CA | New York City, NY"
+  ],
+  "pay": "$365,000",
+  "priority": false,
+  "rationale": "Senior TPM role manages AI compute/datacenter infrastructure programs with no power/energy component.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "greenhouse",
+  "title": "TPM Manager, Infrastructure ",
+  "url": "https://job-boards.greenhouse.io/anthropic/jobs/5416059008",
+  "work_mode": "hybrid"
  },
  "c233b72da7ebf17f": {
   "band": "weak",
@@ -54340,6 +58125,34 @@
   "url": "https://careers.pge.com/job/American-Canyon-Utility-Worker-Gas-Transmission-&amp;-Distribution-CA-94503/1424589500/",
   "work_mode": ""
  },
+ "c2f5ec7c7ab2764c": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-05-04",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $192,953",
+  "priority": false,
+  "rationale": "Pure IC mechanical hardware design engineering, no product/strategy/data overlap.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Mechanical Engineer, Hardware Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/4d61360a-6528-43fe-a8ef-067d9b11b3f6",
+  "work_mode": "onsite"
+ },
  "c2f785f0619e7fd0": {
   "active": false,
   "band": "misfit",
@@ -54544,6 +58357,31 @@
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556959725",
   "work_mode": "onsite"
  },
+ "c3e76a8c7bde7cce": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Zaventem, Flemish Brabant, Belgium",
+  "locations": [
+   "Zaventem, Flemish Brabant, Belgium"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Strategic account manager is a relationship/sales role for a single customer segment.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Strategic Account Manager for a Transmission System Operator (f/m/d)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Zaventem-Flemish-Brabant-Belgium/Strategic-Account-Manager-for-a-Transmission-System-Operator--f-m-d-_R0135750",
+  "work_mode": ""
+ },
  "c3fb2c810e8d58e9": {
   "band": "weak",
   "company": "Saft",
@@ -54564,6 +58402,34 @@
   "title": "Installation & Commissioning Engineer",
   "url": "https://www.indeed.com/viewjob?jk=91993ba25fdea3e7",
   "work_mode": ""
+ },
+ "c4048f6546f8605e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-08-11",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "$148,040 \u2013 $191,530 \u00b7 Multiple Ranges",
+  "priority": false,
+  "rationale": "Corporate treasury/cash-management function, unrelated to candidate's domain.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Treasury Manager",
+  "url": "https://jobs.ashbyhq.com/formenergy/5afce4a1-86b7-4c9c-920f-443a45c665f1",
+  "work_mode": "remote"
  },
  "c40b3abc9fd5c2e1": {
   "band": "weak",
@@ -55039,6 +58905,34 @@
   "url": "https://www.indeed.com/viewjob?jk=6100bdc5440657d9",
   "work_mode": "onsite"
  },
+ "c666c9c0298f5289": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2025-10-15",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Manufacturing/process engineering IC role for electrode production, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Manufacturing Engineer, Electrode",
+  "url": "https://jobs.ashbyhq.com/formenergy/2fe771f1-41f3-48ac-9e85-36d1efe1526f",
+  "work_mode": "onsite"
+ },
  "c6706e7731e48df9": {
   "band": "weak",
   "company": "CEI Services",
@@ -55188,6 +59082,34 @@
   "title": "Principal Solutions Architect, South Korea",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4959213101",
   "work_mode": "remote"
+ },
+ "c6c4309fb0372d68": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-05-15",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $221,973",
+  "priority": false,
+  "rationale": "IC thermal systems design engineering, deep specialist scope outside candidate's skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Mechanical Design Engineer, Thermal Systems",
+  "url": "https://jobs.ashbyhq.com/formenergy/1235ba3b-566f-4597-8cbb-d4dd95cd1f7a",
+  "work_mode": "onsite"
  },
  "c6cc574ade3482d3": {
   "active": false,
@@ -55704,7 +59626,7 @@
   "score": 18,
   "seniority_match": false,
   "source": "greenhouse",
-  "title": "HR Manager, Payroll and Benefits",
+  "title": "HR Operations Manager",
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6121290004",
   "work_mode": "hybrid"
  },
@@ -56232,6 +60154,31 @@
   "url": "https://www.indeed.com/viewjob?jk=c9909b3d2c8609b2",
   "work_mode": "onsite"
  },
+ "ca7ec7f5c5a9c100": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "5 Locations",
+  "locations": [
+   "5 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Digital and energy solution manager hints at a digital+energy hybrid but scope is unclear.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Digital & HMAX Energy Solution Manager",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Milan-Lombardy-Italy/Digital---HMAX-Energy-Solution-Manager_R0136839",
+  "work_mode": ""
+ },
  "ca938ab1e48991f3": {
   "active": false,
   "band": "misfit",
@@ -56551,6 +60498,34 @@
   "url": "https://jobs.ashbyhq.com/crusoe/2f962450-58bb-42aa-8f74-ce1796cc9566",
   "work_mode": ""
  },
+ "cb7fe63394e750af": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-05",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IC manufacturing equipment engineering, no product/strategy/data fit.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Equipment Engineer, Operations",
+  "url": "https://jobs.ashbyhq.com/formenergy/fc6f86bc-77ba-4f1d-adbc-27ff8d831656",
+  "work_mode": "onsite"
+ },
  "cb805532c644a7db": {
   "band": "possible",
   "company": "TotalEnergies",
@@ -56586,6 +60561,34 @@
   "source": "greenhouse",
   "title": "Civil Engineer ",
   "url": "https://job-boards.greenhouse.io/hut8/jobs/5399853008",
+  "work_mode": ""
+ },
+ "cb872b408d24c639": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Regional sales manager is a quota-carrying sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Regional Sales Manager - Power Conversion Solutions, Utility-Scale",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Solna-Stockholm-Sweden/Regional-Sales-Manager---Power-Conversion-Solutions--Utility-Scale_R0138952",
   "work_mode": ""
  },
  "cb88ad40f5020692": {
@@ -57182,6 +61185,34 @@
   "url": "https://www.indeed.com/viewjob?jk=24df7ccb30d0ef68",
   "work_mode": ""
  },
+ "cced4bea3a82a47e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Johnson Controls",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Las Rozas-Madrid-Spain",
+  "locations": [
+   "Las Rozas-Madrid-Spain"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Account management for fire detection/suppression, unrelated specialty sales.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Data Center Account Manager \u2013 Fire Detection & Suppression",
+  "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Las-Rozas-Madrid-Spain/Data-Center-Account-Manager---Fire-Detection---Suppression_WD30278927",
+  "work_mode": ""
+ },
  "cd24d37b7cba5421": {
   "active": false,
   "band": "misfit",
@@ -57305,6 +61336,62 @@
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Brazil-Sao-Paulo/Senior-Solutions-Architect--Energy-Industry_JR2012359",
   "work_mode": ""
  },
+ "cd77b1eb93dc370e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Flex",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Taiwan, Taipei Wugu",
+  "locations": [
+   "Taiwan, Taipei Wugu"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Test development engineering IC role in power hardware.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Test Development Engineer (Power)",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/Taiwan-Taipei-Wugu/Test-Development-Engineer-Power-_WD218837",
+  "work_mode": ""
+ },
+ "cd988da93a97f8af": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Bloom Energy",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Office - 4353 North 1st Street",
+  "locations": [
+   "Office - 4353 North 1st Street"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Manufacturing/NPI electrical engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Staff Electrical Engineer, NPI",
+  "url": "https://bloomenergy.wd1.myworkdayjobs.com/en-US/BloomEnergyCareers/job/Office---4353-North-1st-Street/Senior-Staff-Electrical-Engineer--NPI_JR-21033",
+  "work_mode": ""
+ },
  "cd9c2959e9cbabfc": {
   "band": "misfit",
   "company": "SpaceX",
@@ -57319,6 +61406,31 @@
   "source": "greenhouse",
   "title": "Manager, Production (Solar Cells) ",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8461256002",
+  "work_mode": ""
+ },
+ "cdb33ef6a5ded1da": {
+  "band": "possible",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "VP-level data center market development is BD-heavy; feedback caps pure BD roles below strong despite senior title and DC domain match.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "VP Data Center Market Development",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---California-United-States/VP-Data-Center-Market-Development_R0065039-2",
   "work_mode": ""
  },
  "cdd6b5a921f40f6a": {
@@ -57938,6 +62050,34 @@
   "url": "https://www.indeed.com/viewjob?jk=1d9b11907e0ce211",
   "work_mode": "remote"
  },
+ "cf3931d36de134cf": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Lodz, Lodz, Poland",
+  "locations": [
+   "Lodz, Lodz, Poland"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Deep technical electrical design engineering IC role for power transformers.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Electrical Design Engineer \u2013 Power Transformers (f/m/d)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Lodz-Lodz-Poland/Electrical-Design-Engineer---Power-Transformers--f-m-d-_R0128553",
+  "work_mode": ""
+ },
  "cf548ec61304d4e3": {
   "active": false,
   "band": "misfit",
@@ -58458,6 +62598,34 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8698113002",
   "work_mode": ""
  },
+ "d0c9adeb613fbb02": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Regional service sales manager is a quota-carrying sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Regional Service Sales Manager \u2013 Data Centers",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Washington-District-Of-Columbia-United-States/Regional-Service-Sales-Manager---Data-Centers_R0120832",
+  "work_mode": ""
+ },
  "d0d1dbf6a60371ff": {
   "band": "misfit",
   "company": "SpaceX",
@@ -58545,6 +62713,31 @@
   "title": "Security Architect Manager (Corporate & Cloud Security)",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4827753101",
   "work_mode": "hybrid"
+ },
+ "d122843d9390252f": {
+  "band": "possible",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Singapore, Central Singapore, Singapore",
+  "locations": [
+   "Singapore, Central Singapore, Singapore"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "BESS-focused business development role, capped by BD calibration despite strong battery domain match.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Regional Business Development Manager for BESS & Edge",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Singapore-Central-Singapore-Singapore/Regional-Business-Development-Manager-for-BESS---Edge_R0138577",
+  "work_mode": ""
  },
  "d1348e1eb2df850a": {
   "active": false,
@@ -58646,7 +62839,9 @@
   "work_mode": "hybrid"
  },
  "d1848fe9e7aa4e7c": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-03",
   "company": "OpenAI",
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
@@ -59530,6 +63725,31 @@
   "url": "https://www.indeed.com/viewjob?jk=c52ed2b2f4e52d99",
   "work_mode": ""
  },
+ "d428197405cfb3d7": {
+  "band": "weak",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Willowbrook, Illinois",
+  "locations": [
+   "Willowbrook, Illinois"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Plain 'Energy Engineer' title with no stated senior scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Energy Engineer",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Willowbrook-Illinois/Energy-Engineer_92601746",
+  "work_mode": ""
+ },
  "d42e40c03bea7e7f": {
   "band": "weak",
   "company": "QTS",
@@ -59848,7 +64068,8 @@
   "location": "Newark, CA, US, 94538",
   "locations": [
    "Newark, CA, US, 94538",
-   "San Ramon, CA, US, 94583"
+   "San Ramon, CA, US, 94583",
+   "Tracy, CA, US, 95376"
   ],
   "lowscore": true,
   "pay": "$99,936",
@@ -60234,6 +64455,34 @@
   "title": "Data Center Infrastructure Engineering Program Manager (Network and Whitespace)",
   "url": "https://jobs.ashbyhq.com/openai/0ed12b35-0115-4ad3-81f5-ea1bb05c9f6b",
   "work_mode": "remote"
+ },
+ "d8018ce2834dd3e2": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2025-11-21",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Manufacturing process/robotics engineering lead role, out of skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Lead Process Engineer, Robotics",
+  "url": "https://jobs.ashbyhq.com/formenergy/58edccef-1cac-4723-b444-bbfcb8851250",
+  "work_mode": "onsite"
  },
  "d80360ac899585c8": {
   "band": "weak",
@@ -60878,6 +65127,31 @@
   "url": "https://www.edisoncareers.com/job/23682231/planning-specialist-rimforest-ca/",
   "work_mode": "hybrid"
  },
+ "dab6f30881153a4f": {
+  "band": "possible",
+  "company": "Form Energy",
+  "date_posted": "2026-07-08",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "pay": "$170,246 \u2013 $255,381",
+  "priority": false,
+  "rationale": "Engineering-manager role recruiting and leading a mechanical design team at a battery company, but scope is structural/mechanical design outside candidate's specialty.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Manager, Mechanical Design Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/4949680f-c370-4b5b-be3a-3e287e1cf802",
+  "work_mode": "onsite"
+ },
  "dafb319e977c1114": {
   "band": "misfit",
   "company": "SB Energy",
@@ -61418,6 +65692,34 @@
   "source": "indeed",
   "title": "Lead Principal Technical Program Manager, Data Centers",
   "url": "https://www.indeed.com/viewjob?jk=079befc9d2b98be2",
+  "work_mode": ""
+ },
+ "dd91d29da06a7bfc": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Bloom Energy",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Fremont, California",
+  "locations": [
+   "Fremont, California"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Deep technical electrical engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Staff Electrical Engineer",
+  "url": "https://bloomenergy.wd1.myworkdayjobs.com/en-US/BloomEnergyCareers/job/Fremont-California/Senior-Staff-Electrical-Engineer_JR-22715-1",
   "work_mode": ""
  },
  "dd9683b226a79184": {
@@ -63288,6 +67590,34 @@
   "url": "https://jobs.ashbyhq.com/openai/f9da623f-b16e-496d-ae06-056132b01ff7",
   "work_mode": "remote"
  },
+ "e48447abf85b30fe": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Rotterdam, South Holland, Netherlands",
+  "locations": [
+   "Rotterdam, South Holland, Netherlands"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Site mechanical & electrical supervisor is a field/O&M supervisory role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Site Mechanical & Electrical Supervisor",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Rotterdam-South-Holland-Netherlands/Site-Mechanical---Electrical-Supervisor_R0117126",
+  "work_mode": ""
+ },
  "e493acc6a4eda23a": {
   "band": "misfit",
   "company": "Nebius",
@@ -63489,6 +67819,31 @@
   "title": "Data Center Location Strategy Analyst",
   "url": "https://www.indeed.com/viewjob?jk=e964f432b0f9458a",
   "work_mode": ""
+ },
+ "e4e8fd6115fe6123": {
+  "band": "strong",
+  "company": "Modine Manufacturing Company",
+  "date_posted": "2026-08-28",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Owatonna, MN, US",
+  "locations": [
+   "Owatonna, MN, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director-level product/strategy leadership for chillers & air handling \u2014 direct HVAC/thermal subject-matter fit at the right seniority.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Product Management & Marketing Director",
+  "url": "https://www.indeed.com/viewjob?jk=f685b9d8a98feb2a",
+  "work_mode": "onsite"
  },
  "e52ce13a48aee06f": {
   "band": "misfit",
@@ -64340,6 +68695,31 @@
   "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Sr-Power-Generation-Engineer-FL-33410/1416405400/",
   "work_mode": "onsite"
  },
+ "e81d5f4d5ed50c1b": {
+  "band": "weak",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "5 Locations",
+  "locations": [
+   "5 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Plain-titled data center PM role, likely construction/delivery focused, no senior scope stated.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Data Center Project Manager",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Rocklin-California/Data-Center-Project-Manager_92601245-1",
+  "work_mode": ""
+ },
  "e82ffcce97bc380c": {
   "active": false,
   "band": "misfit",
@@ -64632,6 +69012,34 @@
   "title": "Advanced Solar Field Service Technician (Operations and Maintenance)",
   "url": "https://www.indeed.com/viewjob?jk=1b1c9e68ec0787d2"
  },
+ "e8da144b8fe41207": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-12",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Somerville, MA",
+  "locations": [
+   "Somerville, MA"
+  ],
+  "lowscore": true,
+  "pay": "$128,662 \u2013 $160,807",
+  "priority": false,
+  "rationale": "IC manufacturing process engineering for R&D test lines, no domain overlap.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Process Engineer, R&D",
+  "url": "https://jobs.ashbyhq.com/formenergy/8d88022e-9218-49ba-8152-a1d6eb1b1fa8",
+  "work_mode": "onsite"
+ },
  "e8f442fe53474757": {
   "active": false,
   "band": "possible",
@@ -64762,6 +69170,31 @@
   "source": "indeed",
   "title": "Project Coordinator - Energy Execution",
   "url": "https://www.indeed.com/viewjob?jk=87fbe5d3e9711c85",
+  "work_mode": ""
+ },
+ "e97520a254f7b74b": {
+  "band": "weak",
+  "company": "Bloom Energy",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "San Jose, California",
+  "locations": [
+   "San Jose, California"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior microgrid modeling role is grid-adjacent but a pure deep-technical IC specialty, not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Sr. Principal Electrical Engineer, Microgrid Modeling",
+  "url": "https://bloomenergy.wd1.myworkdayjobs.com/en-US/BloomEnergyCareers/job/San-Jose-California/Sr-Principal-Electrical-Engineer--Microgrid-Modeling_JR-22017",
   "work_mode": ""
  },
  "e97d8a3c26f73ab0": {
@@ -65274,6 +69707,34 @@
   "url": "https://www.indeed.com/viewjob?jk=6968a8da2fa7aa91",
   "work_mode": "remote"
  },
+ "ebc81655cbf0f500": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "lowscore": true,
+  "pay": "$147,959 \u2013 $194,218",
+  "priority": false,
+  "rationale": "IC test-equipment/electronics engineering role, out of candidate's skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Staff Electronics Engineer, Test Infrastructure",
+  "url": "https://jobs.ashbyhq.com/formenergy/3319f03f-8e10-4dcd-a44c-29f15066af89",
+  "work_mode": "onsite"
+ },
  "ebf08df1d1373cfc": {
   "active": false,
   "band": "misfit",
@@ -65409,6 +69870,34 @@
   "url": "https://www.indeed.com/viewjob?jk=a0c546c1902211ee",
   "work_mode": "hybrid"
  },
+ "ec69810dd218816b": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-06-26",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IC manufacturing test engineering, deep hardware/software specialist scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Manufacturing Test Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/87da48da-0b8a-463d-bc1e-c5495d25dee8",
+  "work_mode": "onsite"
+ },
  "eca7720dcc56b629": {
   "band": "misfit",
   "company": "Colliers Engineering & Design",
@@ -65483,6 +69972,34 @@
   "source": "ashby",
   "title": "Staff Data Engineer",
   "url": "https://jobs.ashbyhq.com/formenergy/65f6cfeb-5f94-4f9a-bcb2-ab27357e3f88",
+  "work_mode": "onsite"
+ },
+ "ed29523d3693adf7": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-07-01",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior manufacturing floor role operating equipment.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Manufacturing Associate",
+  "url": "https://jobs.ashbyhq.com/formenergy/c09d4857-24e3-4064-8ece-2c135388cc45",
   "work_mode": "onsite"
  },
  "ed30223c45763561": {
@@ -65925,6 +70442,31 @@
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4961188101",
   "work_mode": ""
  },
+ "ef5996c68e91c16b": {
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "3 Locations",
+  "locations": [
+   "3 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Business development manager role capped per feedback on pure BD roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Business Development Manager \u2013 Data Center Segment PGTR (f/m/d)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Bad-Honnef-North-Rhine-Westphalia-Germany/Business-Development-Manager---Data-Center-Segment-PGTR--f-m-d-_R0122597-1",
+  "work_mode": ""
+ },
  "ef5d46c19b9a49b2": {
   "band": "weak",
   "company": "Worley",
@@ -65986,6 +70528,10 @@
   "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612",
+   "Lodi, CA, US, 95240"
+  ],
   "pay": "$44.70 to $74.42,",
   "priority": false,
   "rationale": "Mid-level design engineer IC; no strategic component or seniority match.",
@@ -65993,7 +70539,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Design Engineer, Substation",
-  "url": "https://careers.pge.com/job/Oakland-Design-Engineer%2C-Substation-CA-94612/1423256700/",
+  "url": "https://careers.pge.com/job/Fresno-Design-Engineer%2C-Substation-CA-93720/1374500900/",
   "work_mode": "hybrid"
  },
  "ef6d59a1948bb8d9": {
@@ -66801,6 +71347,62 @@
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Remote/Automation-Readiness---Enablement-Leader--f-m-d-_R5051806-2",
   "work_mode": ""
  },
+ "f1fd6682d959030a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Tesla",
+  "date_posted": "2026-09-02",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Palo Alto, CA, US",
+  "locations": [
+   "Palo Alto, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$112,000\u2013$228,000/yr",
+  "priority": false,
+  "rationale": "Internal software/licensing portfolio PM role at an EV company with no energy or power subject matter.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Product Manager, Design Technology",
+  "url": "https://www.indeed.com/viewjob?jk=e59ae62f00a2764e",
+  "work_mode": ""
+ },
+ "f2296740d326bb10": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Johnson Controls",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Jacksonville-Florida-United States of America",
+  "locations": [
+   "Jacksonville-Florida-United States of America"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-carrying account executive sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Account Executive - Sustainability Infrastructure",
+  "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Jacksonville-Florida-United-States-of-America/Senior-Account-Executive---Sustainability-Infrastructure_WD30270420",
+  "work_mode": ""
+ },
  "f22f2d48428847b5": {
   "active": false,
   "band": "misfit",
@@ -67173,6 +71775,34 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8530759002",
   "work_mode": ""
  },
+ "f36df1a866d45d87": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Form Energy",
+  "date_posted": "2026-08-28",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior material-planning/procurement IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Material Planner",
+  "url": "https://jobs.ashbyhq.com/formenergy/c4116ac0-6f2a-42ab-9c79-154c29ad271f",
+  "work_mode": "onsite"
+ },
  "f3d1c2f740ffc233": {
   "active": false,
   "band": "misfit",
@@ -67496,6 +72126,56 @@
   "url": "https://www.indeed.com/viewjob?jk=7405eda8cfd4c7fb",
   "work_mode": ""
  },
+ "f4d830b1bad1ad77": {
+  "band": "possible",
+  "company": "PG&E",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Principal-level storage/renewable origination fits domain well but is deal-negotiation-lead work, capped per prior negotiation-role calibration.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal Renewable and Storage Originator Analyst",
+  "url": "https://careers.pge.com/job/Oakland-Principal-Renewable-and-Storage-Originator-Analyst-CA-94612/1426617300/",
+  "work_mode": "hybrid"
+ },
+ "f500a5014c4bd5af": {
+  "band": "possible",
+  "company": "Form Energy",
+  "date_posted": "2026-08-19",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Weirton, WV",
+  "locations": [
+   "Weirton, WV"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Engineering leadership building a manufacturing test team at a battery company, but scope is deep test-hardware engineering, not product/strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Manager, Manufacturing Test Engineering",
+  "url": "https://jobs.ashbyhq.com/formenergy/c7a831f8-f7f8-469e-998e-556994a929d6",
+  "work_mode": "onsite"
+ },
  "f540dc337062ade2": {
   "active": false,
   "band": "misfit",
@@ -67801,6 +72481,31 @@
   "url": "https://www.indeed.com/viewjob?jk=dc0896a47ed927b5",
   "work_mode": "onsite"
  },
+ "f64462ab0bd91dc6": {
+  "band": "weak",
+  "company": "Form Energy",
+  "date_posted": "2026-07-09",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Berkeley, CA",
+  "locations": [
+   "Berkeley, CA"
+  ],
+  "pay": "$170,246 \u2013 $212,813",
+  "priority": false,
+  "rationale": "Senior IC test-engineering role mentoring others but not people-management, still deep specialist scope not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Staff Test Engineer",
+  "url": "https://jobs.ashbyhq.com/formenergy/9c7c8275-8ded-41e0-ab68-d029550ff01b",
+  "work_mode": "onsite"
+ },
  "f6b12b78f99eaa81": {
   "band": "weak",
   "company": "Eos Energy Storage",
@@ -67844,6 +72549,35 @@
   "source": "workday",
   "title": "Customer Success Manager, Strategic",
   "url": "https://servicetitan.wd1.myworkdayjobs.com/en-US/ServiceTitan/job/US-Remote/Customer-Success-Manager--Strategic_JR115654",
+  "work_mode": "remote"
+ },
+ "f6d802f5e848c95f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "ABB",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Cary, NC, US",
+  "locations": [
+   "Cary, NC, US",
+   "Lake Mary, FL, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep technical design-engineering IC role for data center electrical equipment, excluded per prior calibration on design IC roles.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Senior Project Engineer-Data Center Applications",
+  "url": "https://www.indeed.com/viewjob?jk=55d5c2951137dcd9",
   "work_mode": "remote"
  },
  "f6fef093de563f0d": {
@@ -68080,6 +72814,34 @@
   "source": "indeed",
   "title": "Senior Solutions Engineer \u2013 Systems Integration (BESS)",
   "url": "https://www.indeed.com/viewjob?jk=7219934c024e395d",
+  "work_mode": ""
+ },
+ "f7762a0541d6b6c1": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Hitachi",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Account Director is a quota-carrying sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Account Director, Data Centers",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---California-United-States/Account-Director--Data-Centers_R0133169",
   "work_mode": ""
  },
  "f78870d6df6a09c0": {
@@ -68431,7 +73193,8 @@
    "Fulton, CA, US, 95439",
    "San Ramon, CA, US, 94583",
    "Newark, CA, US, 94538",
-   "Petaluma, CA, US, 94954"
+   "Petaluma, CA, US, 94954",
+   "Morgan Hill, CA, US, 95037"
   ],
   "pay": "",
   "priority": false,
@@ -68551,6 +73314,34 @@
   "source": "ashby",
   "title": "Data Center Design Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/2b4a11df-090a-4427-b87a-09614d5b7b16"
+ },
+ "f8fc060e92a04e72": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-04",
+  "company": "Trane Technologies",
+  "date_posted": "",
+  "first_seen": "2026-09-03",
+  "first_seen_at": "2026-09-03T23:50:39Z",
+  "location": "Shenzhen, Guangdong",
+  "locations": [
+   "Shenzhen, Guangdong"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Technical sales engineering IC role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-04T00:00Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Contracting and Control Sales Engineer, Energy Solution",
+  "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Shenzhen-Guangdong/_92507113-1",
+  "work_mode": ""
  },
  "f911086b11d3f755": {
   "band": "top",
@@ -68981,7 +73772,8 @@
   "first_seen_at": "2026-09-03T20:25:12Z",
   "location": "Berkeley, CA",
   "locations": [
-   "Berkeley, CA"
+   "Berkeley, CA",
+   "Weirton, WV"
   ],
   "lowscore": true,
   "pay": "$147,959 \u2013 $184,966",
@@ -68996,7 +73788,7 @@
   "seniority_match": true,
   "source": "ashby",
   "title": "Staff Test Engineer, Systems Test",
-  "url": "https://jobs.ashbyhq.com/formenergy/18650ee4-02f6-4954-b6f8-1abdcc8ac429",
+  "url": "https://jobs.ashbyhq.com/formenergy/62584787-1d14-4c5b-8b38-04b7bd613727",
   "work_mode": "onsite"
  },
  "fab499a543fa688b": {
@@ -69399,7 +74191,9 @@
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4687147006"
  },
  "fcb15d852c004f0f": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-03",
   "company": "Hut 8",
   "date_posted": "2026-07-17",
   "first_seen": "2026-09-03",
