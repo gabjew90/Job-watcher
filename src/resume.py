@@ -681,21 +681,52 @@ def _contact_line(header: dict) -> str:
                                   header.get("linkedin"), header.get("github")) if x)
 
 
-def render_docx(content: dict, header: dict, job: Job | None, path: Path) -> Path:
+THEMES = {
+    # Ruled small-caps headings, employer first. Reads like a well-set
+    # traditional resume.
+    "classic": dict(font="Calibri", body=10.5, name=16, name_color=None, contact=9.5,
+                    contact_color=None, name_rule=False, heading_size=9.5,
+                    heading_color="333333", heading_spacing=0, heading_before=7,
+                    rule=True, rule_color="999999", rule_size=6, role_order="employer",
+                    dates_italic=True, dates_color=None, label_color=None),
+    # No rules: letter-spaced slate headings, Arial, title before employer,
+    # grey dates. The quiet modern look.
+    "modern": dict(font="Arial", body=10, name=18, name_color="1F2933", contact=9,
+                   contact_color="5B6470", name_rule=True, heading_size=8.5,
+                   heading_color="2F4F6F", heading_spacing=30, heading_before=9,
+                   rule=False, rule_color="D9DDE2", rule_size=4, role_order="title",
+                   dates_italic=False, dates_color="5B6470", label_color="2F4F6F"),
+    # One accent colour on the name, headings and their rules; otherwise
+    # classic bones.
+    "accent": dict(font="Calibri", body=10.5, name=16, name_color="1B4965", contact=9.5,
+                   contact_color="5B6470", name_rule=False, heading_size=9,
+                   heading_color="1B4965", heading_spacing=20, heading_before=6,
+                   rule=True, rule_color="1B4965", rule_size=8, role_order="employer",
+                   dates_italic=True, dates_color="5B6470", label_color="1B4965"),
+}
+DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "classic")
+
+
+def render_docx(content: dict, header: dict, job: Job | None, path: Path,
+                theme: str = DEFAULT_THEME) -> Path:
     from docx import Document
     from docx.enum.text import WD_TAB_ALIGNMENT
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
     from docx.shared import Inches, Pt, RGBColor
 
+    t = THEMES[theme]
     doc = Document()
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Inches(8.5), Inches(11)
     sec.left_margin = sec.right_margin = Inches(0.6)
     sec.top_margin = sec.bottom_margin = Inches(0.55)
 
+    def _rgb(hex6):
+        return RGBColor.from_string(hex6) if hex6 else None
+
     def _font(style, size, bold=None):
-        style.font.name = "Calibri"
+        style.font.name = t["font"]
         style.font.size = Pt(size)
         if bold is not None:
             style.font.bold = bold
@@ -705,15 +736,31 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path) -> Pat
             fonts = OxmlElement("w:rFonts")
             rpr.append(fonts)
         for attr in ("w:ascii", "w:hAnsi", "w:eastAsia", "w:cs"):
-            fonts.set(qn(attr), "Calibri")
+            fonts.set(qn(attr), t["font"])
+
+    def _bottom_rule(p, color, size):
+        ppr = p._p.get_or_add_pPr()
+        border = OxmlElement("w:pBdr")
+        bottom = OxmlElement("w:bottom")
+        for k, v in (("w:val", "single"), ("w:sz", str(size)), ("w:space", "1"), ("w:color", color)):
+            bottom.set(qn(k), v)
+        border.append(bottom)
+        ppr.append(border)
+
+    def _spacing(run, twentieths):
+        if twentieths:
+            rpr = run._r.get_or_add_rPr()
+            sp = OxmlElement("w:spacing")
+            sp.set(qn("w:val"), str(twentieths))
+            rpr.append(sp)
 
     normal = doc.styles["Normal"]
-    _font(normal, 10.5)
+    _font(normal, t["body"])
     normal.paragraph_format.space_before = Pt(0)
     normal.paragraph_format.space_after = Pt(0)
     normal.paragraph_format.line_spacing = 1.0
     bullets_style = doc.styles["List Bullet"]
-    _font(bullets_style, 10.5)
+    _font(bullets_style, t["body"])
     bullets_style.paragraph_format.space_after = Pt(0)
     bullets_style.paragraph_format.left_indent = Inches(0.22)
     bullets_style.paragraph_format.first_line_indent = Inches(-0.16)
@@ -722,26 +769,29 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path) -> Pat
         p = doc.add_paragraph()
         run = p.add_run(text.upper())
         run.bold = True
-        run.font.size = Pt(9.5)
-        run.font.color.rgb = RGBColor(0x33, 0x33, 0x33)
-        p.paragraph_format.space_before = Pt(7)
+        run.font.size = Pt(t["heading_size"])
+        if t["heading_color"]:
+            run.font.color.rgb = _rgb(t["heading_color"])
+        _spacing(run, t["heading_spacing"])
+        p.paragraph_format.space_before = Pt(t["heading_before"])
         p.paragraph_format.space_after = Pt(2)
-        ppr = p._p.get_or_add_pPr()
-        border = OxmlElement("w:pBdr")
-        bottom = OxmlElement("w:bottom")
-        for k, v in (("w:val", "single"), ("w:sz", "6"), ("w:space", "1"), ("w:color", "999999")):
-            bottom.set(qn(k), v)
-        border.append(bottom)
-        ppr.append(border)
+        if t["rule"]:
+            _bottom_rule(p, t["rule_color"], t["rule_size"])
 
     name = doc.add_paragraph()
     r = name.add_run(header.get("name", ""))
     r.bold = True
-    r.font.size = Pt(16)
+    r.font.size = Pt(t["name"])
+    if t["name_color"]:
+        r.font.color.rgb = _rgb(t["name_color"])
     contact = doc.add_paragraph()
     rc = contact.add_run(_contact_line(header))
-    rc.font.size = Pt(9.5)
-    contact.paragraph_format.space_after = Pt(2)
+    rc.font.size = Pt(t["contact"])
+    if t["contact_color"]:
+        rc.font.color.rgb = _rgb(t["contact_color"])
+    contact.paragraph_format.space_after = Pt(4 if t["name_rule"] else 2)
+    if t["name_rule"]:
+        _bottom_rule(contact, t["rule_color"], t["rule_size"])
 
     heading("Summary")
     doc.add_paragraph(content.get("summary", ""))
@@ -751,11 +801,17 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path) -> Pat
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(4)
         p.paragraph_format.tab_stops.add_tab_stop(Inches(7.3), WD_TAB_ALIGNMENT.RIGHT)
-        r1 = p.add_run(e["employer"])
+        first, second = ((e["employer"], e["title"]) if t["role_order"] == "employer"
+                         else (e["title"], e["employer"]))
+        r1 = p.add_run(first)
         r1.bold = True
-        p.add_run(f"  |  {e['title']}")
+        r2 = p.add_run(f"  |  {second}")
+        if t["dates_color"]:
+            r2.font.color.rgb = _rgb(t["dates_color"])
         r3 = p.add_run(f"\t{e['dates']}")
-        r3.italic = True
+        r3.italic = t["dates_italic"]
+        if t["dates_color"]:
+            r3.font.color.rgb = _rgb(t["dates_color"])
         for b in e["bullets"]:
             doc.add_paragraph(b, style="List Bullet")
 
@@ -781,6 +837,8 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path) -> Pat
             p = doc.add_paragraph()
             rl = p.add_run(f"{c['category']}: ")
             rl.bold = True
+            if t["label_color"]:
+                rl.font.color.rgb = _rgb(t["label_color"])
             p.add_run(", ".join(c["items"]))
 
     doc.core_properties.author = header.get("name", "")
@@ -905,7 +963,8 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
     md_path = DRAFTS_DIR / f"{stem}.md"
     pdf_path, pages = None, None
     for _ in range(MAX_PDF_ROUNDS):
-        render_docx(content, header, job, docx_path)
+        render_docx(content, header, job, docx_path,
+                    theme=(config or {}).get("resume_theme", DEFAULT_THEME))
         pdf_path = to_pdf(docx_path)
         pages = page_count(pdf_path) if pdf_path else None
         if pages is None or pages <= 1:
@@ -931,7 +990,7 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
 # ------------------------------------------------------------------ CLI
 
 def _main(argv: list[str]) -> int:
-    """render <draft.json> <out_stem> | check <draft.json>  (no model calls)"""
+    """render <draft.json> <out_stem> [theme] | check <draft.json>  (no model calls)"""
     import sys
     if len(argv) < 2 or argv[0] not in ("render", "check"):
         print(_main.__doc__)
@@ -946,7 +1005,8 @@ def _main(argv: list[str]) -> int:
         return 0
     stem = Path(argv[2])
     trimmed = fit_to_page(content)
-    docx_path = render_docx(content, header, None, stem.with_suffix(".docx"))
+    theme = argv[3] if len(argv) > 3 else DEFAULT_THEME
+    docx_path = render_docx(content, header, None, stem.with_suffix(".docx"), theme=theme)
     stem.with_suffix(".md").write_text(render_markdown(content, header))
     pdf = to_pdf(docx_path)
     print(f"wrote {docx_path} and {stem.with_suffix('.md')}"
