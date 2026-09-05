@@ -149,7 +149,7 @@ def main() -> None:
               and (r["first_seen_at"] >= cutoff if r.get("first_seen_at")
                    else r.get("first_seen") == today)]
 
-    if new_jobs or closed_recs:
+    if new_jobs or closed_recs or drafts:
         # Digest floor never sits below the archive floor.
         digest_floor = max(config.get("digest_min_score", 40), archive_floor)
         suggestions = notify.coverage_suggestions(seen, config)
@@ -172,7 +172,7 @@ def main() -> None:
                           digest_floor, suggestions, audit_recs, discovered,
                           reject_audit, screen_stats)
     else:
-        log.info("No new or closed postings; skipping notification.")
+        log.info("No new or closed postings and no drafts; skipping notification.")
 
 
 if __name__ == "__main__":

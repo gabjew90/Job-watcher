@@ -22,7 +22,9 @@ careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD)
     role-type signal (rescue_title_keywords); ≤600 titles/run (screen.py)
   → dedupe vs state/seen_jobs.json  (committed each run)
   → Claude triage: fit band vs profile.md + feedback (Sonnet, batched)
-  → resume drafts for scores ≥ 75, from experience_library.md only (Sonnet)
+  → resume drafts on demand (dashboard ✍️ → issue): one-page DOCX + PDF +
+    Markdown twin, from experience_library.md only, in the voice set by
+    resume_style.md, with an ATS keyword check and a fabrication guard
   → GitHub Issue digest (sorted by score) + docs/index.html dashboard
 ```
 
@@ -44,13 +46,16 @@ careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD)
    named `CLAUDE_CODE_OAUTH_TOKEN` (Settings → Secrets and variables →
    Actions). No API key billing — triage runs on your subscription. Without
    the secret, runs still work; digests are just unscored.
-3. **Fill in `experience_library.md`** — resume drafting stays disabled
-   until its `STATUS: TEMPLATE` line is deleted. Drafts land in `drafts/`,
-   committed by the workflow, and draw ONLY from the library (hard rule in
-   the prompt: no invented metrics, skills, employers, or accomplishments —
-   gaps become TODO notes).
+3. **Keep `experience_library.md` current** — it is the only source of
+   facts for resume drafts. To get a draft, tap ✍️ on a dashboard row: it
+   opens a pre-filled `draft-request` issue; add emphasis notes in the body
+   if you like. The next run answers on the issue with links to the PDF,
+   DOCX and Markdown in `drafts/`, the ATS keyword coverage, and the
+   posting requirements the library cannot evidence (gaps). Gaps never
+   enter the resume. `resume_style.md` sets the voice; edit it to tune the
+   writing.
 4. **Tune `config.json`**: search terms, keyword filter, title exclusions,
-   priority topics, ATS boards, resume threshold, retention. `profile.md`
+   priority topics, ATS boards, retention. `profile.md`
    is what postings are scored against — keep it current.
 
 ## Running locally
@@ -143,5 +148,13 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   never reach state, so that sample is the only view of what the filter
   loses. Screen drops are remembered in `state/screened_out.json` (60
   days) so a title is judged once.
+- Resume drafts: the model writes words only, as structured JSON; the
+  one-page layout is code (`src/resume.py`, python-docx), the PDF is that
+  DOCX converted by LibreOffice, and the page count is checked. A
+  fabrication guard drops any line whose numbers, dates or employers are
+  not in the library (drop, never rewrite) and lists the removals on the
+  issue. `resume_style.md` rules marked ✔ are also checked in code; a
+  revision pass fixes violations and works in missing ATS terms only where
+  the library supports them. No auto-drafting by score.
 - No LinkedIn scraping. No auto-applying. Discovery, scoring, and drafting
   only.
