@@ -717,6 +717,14 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
 
     t = THEMES[theme]
     doc = Document()
+    # An explicit white page fill. Without it the exported PDF paints no
+    # background, and viewers that composite pages over a dark UI (phone
+    # apps in dark mode) show dark text on dark: the resume looks black.
+    bg = OxmlElement("w:background")
+    bg.set(qn("w:color"), "FFFFFF")
+    doc.element.insert(0, bg)
+    if doc.settings.element.find(qn("w:displayBackgroundShape")) is None:
+        doc.settings.element.insert(0, OxmlElement("w:displayBackgroundShape"))
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Inches(8.5), Inches(11)
     sec.left_margin = sec.right_margin = Inches(0.6)
