@@ -1267,6 +1267,34 @@
   "url": "https://www.indeed.com/viewjob?jk=dc096e9fa045608d",
   "work_mode": "hybrid"
  },
+ "03d481ed159e4f32": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Meta",
+  "date_posted": "2026-05-10",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Kuna, ID, US",
+  "locations": [
+   "Kuna, ID, US"
+  ],
+  "lowscore": true,
+  "pay": "$123,000\u2013$176,000/yr",
+  "priority": false,
+  "rationale": "Field/construction connectivity engineering role at a datacenter, not product/strategy/power scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Connectivity Engineer - Data Center Design, Engineering, & Construction",
+  "url": "https://www.indeed.com/viewjob?jk=dbe61b9acadc37ad",
+  "work_mode": "onsite"
+ },
  "03d9b71b3c40b64d": {
   "band": "weak",
   "company": "SB Energy",
@@ -2683,6 +2711,34 @@
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6148535004",
   "work_mode": "hybrid"
  },
+ "07ab5c66e3e1ef6a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Nor-Cal Controls ES, LLC",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "El Dorado Hills, CA, US",
+  "locations": [
+   "El Dorado Hills, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$85,000\u2013$105,000/yr",
+  "priority": true,
+  "rationale": "Entry-level Project Manager I role ($85-105k) with no senior signals or clear energy/power domain.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Manager I (Remote)",
+  "url": "https://www.indeed.com/viewjob?jk=31c1de14d3c9f78b",
+  "work_mode": "remote"
+ },
  "07c49d4811b75c2b": {
   "active": false,
   "band": "misfit",
@@ -2753,6 +2809,31 @@
   "source": "ashby",
   "title": "Regional Manager, Project Controls (SF)",
   "url": "https://jobs.ashbyhq.com/crusoe/aa910650-6ddf-4274-b99b-192da747efe8",
+  "work_mode": "onsite"
+ },
+ "07dfa6254d8bf7c8": {
+  "band": "weak",
+  "company": "Panasonic",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Sparks, NV, US",
+  "locations": [
+   "Sparks, NV, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior cross-functional process-transformation role but generic manufacturing scope, not energy/grid/product-strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Business Process Engineer III",
+  "url": "https://www.indeed.com/viewjob?jk=5bce54c35721ab0d",
   "work_mode": "onsite"
  },
  "080defd17bdba7b2": {
@@ -13675,6 +13756,34 @@
   "url": "https://jobs.ashbyhq.com/formenergy/33a07ac4-b995-46e0-b652-a8a0cac764a3",
   "work_mode": "onsite"
  },
+ "2864c3e686383f3a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Mitsubishi Power Americas, Inc.",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Lake Mary, FL, US",
+  "locations": [
+   "Lake Mary, FL, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior structural design engineering IC role (2 yrs exp) \u2014 too deep-technical and junior for target scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Engineer II, Civil & Structural",
+  "url": "https://www.indeed.com/viewjob?jk=3e9592598bad8b1c",
+  "work_mode": ""
+ },
  "28702bf65644bcd6": {
   "active": false,
   "band": "weak",
@@ -15324,7 +15433,8 @@
    "Juno Beach, FL, US, 33408",
    "Palm Beach Gardens, FL, US, 33410",
    "MARTELL, NE, US, 68404",
-   "Palo, IA, US, 52324"
+   "Palo, IA, US, 52324",
+   "Cocoa, FL, US, 32927"
   ],
   "pay": "",
   "priority": true,
@@ -16073,6 +16183,34 @@
   "title": "Key Account Director",
   "url": "https://jobs.ashbyhq.com/neara/58d62911-7968-49f0-bbf1-8945c9d89870",
   "work_mode": "remote"
+ },
+ "2ec007621165e20a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Adventurer Manufacturing",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Yakima, WA, US",
+  "locations": [
+   "Yakima, WA, US"
+  ],
+  "lowscore": true,
+  "pay": "$75,000\u2013$85,000/yr",
+  "priority": false,
+  "rationale": "Vehicle electrical harness engineering role with no energy/grid/datacenter connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Electrical Systems & Manufacturing Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=79c410b078383411",
+  "work_mode": ""
  },
  "2ec68f5d5e809f25": {
   "band": "strong",
@@ -19552,6 +19690,34 @@
   "url": "https://iren.careers.hibob.com/jobs/5f9cb6c9-3f90-4452-bb76-943c28441253",
   "work_mode": "remote"
  },
+ "3a2ade5292518021": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Microsoft",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Redmond, WA, US",
+  "locations": [
+   "Redmond, WA, US"
+  ],
+  "lowscore": true,
+  "pay": "$142,800\u2013$304,200/yr",
+  "priority": false,
+  "rationale": "Principal cloud hardware TPM role for new product development with no energy or power-infrastructure focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Principal Hardware Technical Program Manager",
+  "url": "https://www.indeed.com/viewjob?jk=975ee6bfd2b8958d",
+  "work_mode": ""
+ },
  "3a30234683cff4d5": {
   "band": "misfit",
   "company": "CrowdStrike",
@@ -21635,7 +21801,9 @@
   "first_seen_at": "2026-09-04T17:19:48Z",
   "location": "St. Paul, MN, US, 55107",
   "locations": [
-   "St. Paul, MN, US, 55107"
+   "St. Paul, MN, US, 55107",
+   "PERRYTON, TX, US, 79070",
+   "Juno Beach, FL, US, 33408"
   ],
   "pay": "",
   "priority": true,
@@ -23913,7 +24081,8 @@
    "Ukiah, CA, US, 95482",
    "Stockton, CA, US, 95206",
    "Rocklin, CA, US, 95765",
-   "Vacaville, CA, US, 95688"
+   "Vacaville, CA, US, 95688",
+   "San Francisco, CA, US, 94110"
   ],
   "pay": "",
   "priority": false,
@@ -29660,7 +29829,7 @@
   "source": "indeed",
   "title": "Senior Core Infrastructure Engineer",
   "url": "https://www.indeed.com/viewjob?jk=4f24e3a2eb4a8f33",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "5bd345f7f74b3142": {
   "active": false,
@@ -32496,7 +32665,8 @@
   "location": "Vacaville, CA, US, 95688",
   "locations": [
    "Vacaville, CA, US, 95688",
-   "Chico, CA, US, 95928"
+   "Chico, CA, US, 95928",
+   "Oakland, CA, US, 94612"
   ],
   "lowscore": true,
   "pay": "$115,128",
@@ -38986,6 +39156,33 @@
   "title": "Construction Project Manager",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4705958101",
   "work_mode": "onsite"
+ },
+ "77daa6a9f93d56c5": {
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-08-28",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Cupertino, CA, US",
+  "locations": [
+   "Cupertino, CA, US",
+   "Herndon, VA, US",
+   "Seattle, WA, US"
+  ],
+  "pay": "$176,900\u2013$239,400/yr",
+  "priority": false,
+  "rationale": "Principal-level AI/ML server supply-chain planning at AWS, but no power/grid/BESS/finance scope tying it to the candidate's domain.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Principal, AI/ML Infrastructure Planning",
+  "url": "https://www.indeed.com/viewjob?jk=61e99542b8eae571",
+  "work_mode": ""
  },
  "77e2ddfc9382f939": {
   "active": false,
@@ -46838,7 +47035,7 @@
   "source": "indeed",
   "title": "Manager, Data Center Support Services - Saline, MI",
   "url": "https://www.indeed.com/viewjob?jk=425ae982ada3761a",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "8ee9e1a936fdcbdb": {
   "active": false,
@@ -48455,7 +48652,8 @@
   "location": "Juno Beach, FL, US, 33408",
   "locations": [
    "Juno Beach, FL, US, 33408",
-   "Palo, IA, US, 52324"
+   "Palo, IA, US, 52324",
+   "St. Paul, MN, US, 55107"
   ],
   "pay": "",
   "priority": false,
@@ -49216,6 +49414,31 @@
   "title": "Project Controls Manager - Portfolio Planning",
   "url": "https://jobs.dayforcehcm.com/en-US/edc/CandidatePortalEDC/jobs/906",
   "work_mode": ""
+ },
+ "962a6e09980ee6e2": {
+  "band": "strong",
+  "company": "PG&E",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "",
+  "locations": [
+   ""
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Principal-level strategic-initiatives IC role driving PG&E's electric compliance program \u2014 senior utility strategy fit per secondary-sweet-spot guidance.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal, Electric Compliance Strategic Initiatives - Location Flexible",
+  "url": "https://careers.pge.com/job/Oakland-Principal%2C-Electric-Compliance-Strategic-Initiatives-Location-Flexible-CA-94612/1417268200/",
+  "work_mode": "hybrid"
  },
  "962b5576ca28806d": {
   "band": "possible",
@@ -52689,6 +52912,31 @@
   "source": "indeed",
   "title": "Tire & Battery Technician",
   "url": "https://www.indeed.com/viewjob?jk=a62e7f618f162796",
+  "work_mode": ""
+ },
+ "a154688ed232ab6f": {
+  "band": "strong",
+  "company": "Provident M\u00e9xico",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Dallas, TX, US",
+  "locations": [
+   "Dallas, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "VP-level behind-the-meter power development for hyperscale datacenters with PPA/tolling/IPP structuring \u2014 strong secondary-sweet-spot fit though title runs above target seniority.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Vice President, Power Development (Data Centers)",
+  "url": "https://www.indeed.com/viewjob?jk=14d89b8b6ad7bafb",
   "work_mode": ""
  },
  "a155d0906d11cacd": {
@@ -59865,6 +60113,34 @@
   "url": "https://brookfield.wd5.myworkdayjobs.com/en-US/brookfield/job/So-Paulo-So-Paulo-Brazil/Analyst--Investments--Energy-_R2049725",
   "work_mode": ""
  },
+ "b6fd57601728ba39": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Panasonic",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Sparks, NV, US",
+  "locations": [
+   "Sparks, NV, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Generic manufacturing business-process-improvement IC role, unrelated to power/grid/product-strategy skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Business Process Engineer II",
+  "url": "https://www.indeed.com/viewjob?jk=664e82303e59acd3",
+  "work_mode": "onsite"
+ },
  "b7244ddc7b531ab5": {
   "band": "weak",
   "company": "Apptad Inc",
@@ -63116,6 +63392,34 @@
   "url": "https://jobs.ashbyhq.com/texture/4fd23c03-7887-4620-90a5-c62579942f5a",
   "work_mode": "remote"
  },
+ "c0cadfc1b1fdac82": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Comtel Group",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Remote, US",
+  "locations": [
+   "Remote, US"
+  ],
+  "lowscore": true,
+  "pay": "$110,000\u2013$130,000/yr",
+  "priority": false,
+  "rationale": "Generic cloud/IT infrastructure advisory role with no energy or datacenter-power connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Solution Advisor, Cloud & Infrastructure New",
+  "url": "https://www.indeed.com/viewjob?jk=cd17ee0d9d210d6b",
+  "work_mode": "remote"
+ },
  "c0ccce80d527a8d0": {
   "band": "misfit",
   "company": "SB Energy",
@@ -65228,7 +65532,8 @@
    "Juno Beach, FL, US, 33408",
    "MARTELL, NE, US, 68404",
    "Denver, CO, US, 80201",
-   "Palm Beach Gardens, FL, US, 33410"
+   "Palm Beach Gardens, FL, US, 33410",
+   "Cocoa, FL, US, 32927"
   ],
   "pay": "",
   "priority": false,
@@ -66610,7 +66915,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Senior Power Systems Modeling Engineer, Real Time Simulation",
-  "url": "https://www.indeed.com/viewjob?jk=58df80717e62f5fc",
+  "url": "https://www.indeed.com/viewjob?jk=ca7a512f5e3aa8a8",
   "work_mode": "hybrid"
  },
  "cb8c4216ae92a636": {
@@ -71385,6 +71690,31 @@
   "title": "Account Executive & Growth - Utilities",
   "url": "https://job-boards.greenhouse.io/niraenergy/jobs/5173302008",
   "work_mode": "remote"
+ },
+ "da4377a469903b42": {
+  "band": "weak",
+  "company": "JPMorganChase",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "New York, NY, US",
+  "locations": [
+   "New York, NY, US"
+  ],
+  "pay": "$200,000\u2013$350,000/yr",
+  "priority": true,
+  "rationale": "Executive Director commodity/BESS financing structuring role \u2014 finance-first trading/structuring career track, not his product/strategy skillset, per feedback on deal-execution finance roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Commodity Finance Structuring - NAMR & LatAm - Executive Director",
+  "url": "https://www.indeed.com/viewjob?jk=cfd65527df65757a",
+  "work_mode": ""
  },
  "da4de8890d81a762": {
   "active": false,
@@ -76785,7 +77115,8 @@
   "first_seen_at": "2026-09-05T04:34:09Z",
   "location": "Somerville, MA",
   "locations": [
-   "Somerville, MA"
+   "Somerville, MA",
+   "Somerville, MA, US"
   ],
   "pay": "$111,826 \u2013 $139,777",
   "priority": false,
@@ -77747,6 +78078,31 @@
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6102299004",
   "work_mode": "hybrid"
  },
+ "f0354e0e69542bbf": {
+  "band": "weak",
+  "company": "American Electric Power",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "Tulsa, OK, US",
+  "locations": [
+   "Tulsa, OK, US"
+  ],
+  "pay": "$189,000\u2013$245,080/yr",
+  "priority": true,
+  "rationale": "Director-level but pure EPC/construction delivery leadership for utility generation projects, not product/strategy/finance integration.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Major Projects | NEW GENERATION (Construction Utility Projects) - Tulsa, OK",
+  "url": "https://www.indeed.com/viewjob?jk=26bdfad1afe1be9d",
+  "work_mode": "onsite"
+ },
  "f0366f26cfdf12e4": {
   "active": false,
   "band": "misfit",
@@ -78178,6 +78534,34 @@
   "source": "indeed",
   "title": "Senior Performance Engineer",
   "url": "https://www.indeed.com/viewjob?jk=5cfde902ce915f4e",
+  "work_mode": "remote"
+ },
+ "f14665ba1e5b53e3": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Mythics, Inc.",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T16:27:10Z",
+  "location": "US",
+  "locations": [
+   "US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Federal cloud/IT architecture role with no energy, power, or datacenter-energy connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T16:28Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "OCI Lead Architect - Federal Enterprise Infrastructure",
+  "url": "https://www.indeed.com/viewjob?jk=f46470d14bd5987b",
   "work_mode": "remote"
  },
  "f148e497d442b6e7": {
@@ -79223,7 +79607,9 @@
    "Vacaville, CA, US, 95688",
    "Stockton, CA, US, 95206",
    "Ukiah, CA, US, 95482",
-   "Rocklin, CA, US, 95765"
+   "Rocklin, CA, US, 95765",
+   "Concord, CA, US, 94518",
+   "San Francisco, CA, US, 94110"
   ],
   "pay": "",
   "priority": false,
