@@ -205,6 +205,9 @@ def test_render_docx_layout(rendered):
                                           "EDUCATION", "CERTIFICATIONS", "SKILLS")]
     assert headings == ["SUMMARY", "EXPERIENCE", "SELECTED PROJECTS", "EDUCATION", "CERTIFICATIONS", "SKILLS"]
     assert len(doc.tables) == 0
+    from docx.oxml.ns import qn
+    bg = doc.element.find(qn("w:background"))  # painted page, so dark-mode viewers show white
+    assert bg is not None and bg.get(qn("w:color")) == "FFFFFF"
     sec = doc.sections[0]
     assert sec.left_margin == Inches(0.6) and sec.top_margin == Inches(0.55)
     assert doc.styles["Normal"].font.name == "Calibri"
