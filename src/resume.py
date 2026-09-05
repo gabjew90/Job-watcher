@@ -704,7 +704,7 @@ THEMES = {
                    rule=True, rule_color="1B4965", rule_size=8, role_order="employer",
                    dates_italic=True, dates_color="5B6470", label_color="1B4965"),
 }
-DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "classic")
+DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "accent")
 
 
 def render_docx(content: dict, header: dict, job: Job | None, path: Path,
