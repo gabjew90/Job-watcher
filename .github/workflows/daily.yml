@@ -42,6 +42,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Resume drafts ship as PDF converted from the DOCX by LibreOffice;
+      # Carlito is metric-compatible with Calibri so the PDF paginates like
+      # Word. About a minute per run; only draft requests use it.
+      - name: Install LibreOffice Writer (resume PDFs)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends libreoffice-writer fonts-crosextra-carlito
+
       - name: Install Claude Code CLI (triage)
         run: npm install -g @anthropic-ai/claude-code
 

@@ -170,9 +170,13 @@ def _row(rec: dict) -> str:
     ref = quote(rec.get("title", "")[:80] + " @ " + rec.get("company", ""))
     fb_url = (f"https://github.com/{REPO}/issues/new?labels=feedback"
               f"&title={quote('feedback: ')}{ref}&body={quote(_feedback_body(rec))}")
+    # The hidden url comment lets draft_requests match the posting exactly
+    # (issue titles are cut at 80 chars) and fetch its page when needed.
+    draft_body = ("Requested from dashboard. Optional: add emphasis notes here.\n\n"
+                  f"<!-- url: {rec.get('url', '')} -->")
     draft_url = (f"https://github.com/{REPO}/issues/new?labels=draft-request"
                  f"&title={quote('draft: ')}{ref}"
-                 f"&body={quote('Requested from dashboard. Optional: add emphasis notes here.')}")
+                 f"&body={quote(draft_body)}")
     return (
         f'<tr{cls}><td><a href="{e(rec.get("url"))}" target="_blank">{e(rec.get("title"))}</a>'
         f'<br><small>{e(rec.get("source"))} · <a href="{fb_url}" target="_blank">feedback</a>'

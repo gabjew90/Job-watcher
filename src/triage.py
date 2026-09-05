@@ -1,4 +1,4 @@
-"""Claude triage: score new postings for fit, then draft resumes for top hits.
+"""Claude triage: score new postings for fit.
 
 Runs headless Claude Code (`claude -p`), authenticated in CI via the
 CLAUDE_CODE_OAUTH_TOKEN repo secret (minted with `claude setup-token`) —
@@ -6,11 +6,11 @@ subscription usage, no API key. Scoring uses Sonnet — the calibration
 rules in feedback.md (seniority from described scope, not title) are
 judgment calls a stronger model gets right more often, and the volume
 (~50 postings a run, batched) keeps it cheap. The title screen
-(screen.py) uses Haiku; resume drafts use Sonnet.
+(screen.py) uses Haiku. Resume drafting lives in resume.py and is
+on-demand only (draft_requests.py); it shares _run_claude and _parse_json.
 
-Cost hygiene: the whole step is skipped when there are no new postings,
-scoring is batched (CHUNK jobs per call), and drafting is disabled until
-experience_library.md stops being a template.
+Cost hygiene: the whole step is skipped when there are no new postings and
+scoring is batched (CHUNK jobs per call).
 """
 import json
 import logging
@@ -18,7 +18,6 @@ import os
 import re
 import shutil
 import subprocess
-from datetime import datetime, timezone
 from pathlib import Path
 
 from .models import Job
@@ -27,13 +26,10 @@ from .util import role_excerpt
 log = logging.getLogger(__name__)
 
 PROFILE = Path("profile.md")
-LIBRARY = Path("experience_library.md")
-DRAFTS_DIR = Path("drafts")
 CHUNK = 40
 # Pinned model versions (CLI aliases like "haiku" drift across releases);
 # override via env for experiments.
 SCORE_MODEL = os.environ.get("JOBWATCH_SCORE_MODEL", "claude-sonnet-5")
-DRAFT_MODEL = os.environ.get("JOBWATCH_DRAFT_MODEL", "claude-sonnet-5")
 
 # Bands make the four real decisions (archive / hide / show / rank)
 # explicit instead of manufacturing 0-100 precision nobody uses. The
@@ -72,23 +68,6 @@ it is unambiguous; "" otherwise. Never guess either field.
 
 Postings:
 {postings}"""
-
-DRAFT_PROMPT = """Draft a tailored one-page resume in Markdown for this job posting.
-
-HARD RULES:
-- Draw ONLY from the experience library below. Never invent metrics, skills,
-  employers, dates, or accomplishments that are not written there.
-- If the library lacks material for a section, write "TODO: <what's missing>"
-  instead of filling it in.
-- Tailor emphasis and ordering to the posting; do not fabricate relevance.
-- Output ONLY the resume markdown, no commentary.
-
-JOB POSTING:
-{job}
-
-EXPERIENCE LIBRARY:
-{library}"""
-
 
 def available() -> bool:
     return shutil.which("claude") is not None
@@ -192,38 +171,3 @@ def scoring_fingerprint(feedback_text: str) -> dict:
         "at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
         "rubric": hashlib.sha1(rubric.encode()).hexdigest()[:10],
     }
-
-
-def library_ready() -> bool:
-    return LIBRARY.exists() and "STATUS: TEMPLATE" not in LIBRARY.read_text()
-
-
-def draft_resumes(new_jobs: list[Job], scores: dict[str, dict], threshold: int) -> list[Path]:
-    top = [j for j in new_jobs
-           if scores.get(j.job_id, {}).get("score", 0) >= threshold]
-    if not top:
-        return []
-    if not library_ready():
-        log.info("%d posting(s) above threshold, but experience_library.md is "
-                 "still a template — skipping resume drafts.", len(top))
-        return []
-    library = LIBRARY.read_text()
-    DRAFTS_DIR.mkdir(exist_ok=True)
-    date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    written = []
-    for job in top:
-        job_text = (f"title: {job.title}\ncompany: {job.company}\n"
-                    f"location: {job.location}\nurl: {job.url}\n"
-                    f"description: {job.description[:4000]}")
-        try:
-            resume = _run_claude(
-                DRAFT_PROMPT.format(job=job_text, library=library), DRAFT_MODEL)
-            resume = re.sub(r"^```(?:markdown)?\s*|\s*```$", "", resume.strip(), flags=re.S)
-            slug = re.sub(r"[^a-z0-9]+", "-", f"{job.company}-{job.title}".lower()).strip("-")[:80]
-            path = DRAFTS_DIR / f"{date}-{slug}.md"
-            path.write_text(f"<!-- {job.title} @ {job.company} — {job.url} -->\n\n{resume}\n")
-            written.append(path)
-            log.info("Drafted resume: %s", path)
-        except Exception as e:  # noqa: BLE001
-            log.warning("DRAFT FAILURE for %s @ %s: %s", job.title, job.company, e)
-    return written

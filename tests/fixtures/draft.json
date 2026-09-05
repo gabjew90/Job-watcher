@@ -1,0 +1,79 @@
+{
+  "lead_role": "LG Energy Solution",
+  "summary": "Senior product manager for grid-scale battery storage sold to AI data center operators at Meta, Google, NVIDIA and Microsoft. 12 years across utility programs, HVAC design-build and lithium-ion storage, from systems engineering to product. Licensed PE with an MBA in product management and strategy.",
+  "experience": [
+    {
+      "employer": "LG Energy Solution",
+      "title": "Senior Product Manager, Grid-Scale BESS",
+      "dates": "Feb 2021 – present",
+      "bullets": [
+        "Lead product strategy for grid-scale battery storage aimed at AI data center customers, including Meta, Google, NVIDIA and Microsoft.",
+        "Run the engineering program for battery, enclosure, PCS, controls, HVAC and fire systems from requirements to delivery.",
+        "Set market requirements from customer interviews and competitive analysis, then prioritize them for the development teams.",
+        "Designed LG's first pre-integrated battery container, 2.86 MWh."
+      ]
+    },
+    {
+      "employer": "Pacific Gas and Electric",
+      "title": "Senior Grid Innovation Engineer",
+      "dates": "June 2023 – present",
+      "bullets": [
+        "Manage PG&E's Integration Capacity Analysis platform, the interconnection and hosting-capacity data system, with its vendors and contractors.",
+        "Wrote the business cases that won approval for a non-wires alternatives planning tool and a hosting-capacity tool.",
+        "Author regulatory compliance reports and present them to regulators."
+      ]
+    },
+    {
+      "employer": "LG Chem",
+      "title": "Senior Systems Engineer, Energy Storage",
+      "dates": "Feb 2018 – Feb 2021",
+      "bullets": [
+        "Sized and designed lithium-ion battery systems for North American sales, including lifecycle and degradation modeling.",
+        "Negotiated proposals, bid clarifications and contract terms with utilities, developers and consultants.",
+        "Built battery modeling tools that cut proposal turnaround time."
+      ]
+    },
+    {
+      "employer": "Comfort Energy",
+      "title": "Design-Build Engineering Manager, HVAC",
+      "dates": "July 2016 – Oct 2017",
+      "bullets": [
+        "Managed sales, design and delivery of commercial HVAC projects and beat the department's $2M annual sales goal.",
+        "Scheduled contractors and technicians across concurrent projects to code and customer requirements."
+      ]
+    },
+    {
+      "employer": "Pacific Gas and Electric",
+      "title": "Energy Solutions Engineer",
+      "dates": "Dec 2013 – July 2016",
+      "bullets": [
+        "Developed efficiency and demand-response projects for commercial and industrial customers, including cogeneration, thermal storage and battery peak shifting.",
+        "Delivered 2,500 kW and 7 million kWh of cumulative savings, helping the company beat its annual target."
+      ]
+    }
+  ],
+  "projects": [
+    {"name": "Institutional Research Pulse Bot", "line": "Multi-agent system that reads 100 to 200 sell-side research PDFs a day and publishes a daily market brief. Has a paying customer."},
+    {"name": "Weekly Options Pre-Trade Brief", "line": "FastAPI decision-support dashboard on the Unusual Whales API with a 60-second refresh and Parquet archives for backtesting."}
+  ],
+  "education": [
+    "MBA, Product Management and Strategy, UC Davis Graduate School of Management, 2022",
+    "BS Mechanical Engineering, UC Davis, 2013, Dean's Honor List"
+  ],
+  "certifications": [
+    "California Professional Engineer #M38303, Thermal and Fluid Systems, 2016"
+  ],
+  "skills": [
+    {"category": "BESS", "items": ["system sizing", "PCS and BMS", "degradation and thermal modeling", "augmentation optimization", "UL and NFPA codes", "techno-economic analysis"]},
+    {"category": "Grid and utility", "items": ["interconnection and hosting capacity", "non-wires alternatives", "demand response", "ERCOT markets", "forwards, tolling and swaps"]},
+    {"category": "Product and commercial", "items": ["product strategy", "voice of customer", "market requirements", "proposal tendering", "contract negotiation", "financial modeling"]},
+    {"category": "Software and AI", "items": ["Python", "SQL", "TypeScript", "Anthropic and Gemini APIs", "MCP", "FastAPI", "GitHub Actions"]}
+  ],
+  "gaps": [
+    "Preconstruction budgeting and estimating at VP scope",
+    "General contractor bid management and entitlements"
+  ],
+  "omitted_requirements": [
+    "Experience with hyperscale campus master scheduling"
+  ]
+}

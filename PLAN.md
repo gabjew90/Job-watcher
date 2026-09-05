@@ -20,7 +20,7 @@ sources (jobspy | hyperscaler APIs | ATS boards)
   → dedupe against state/seen_jobs.json
   → new jobs: GitHub Issue digest + docs/ dashboard (GitHub Pages)
   → Claude triage (score 0-100, rationale, seniority check)
-  → resume drafts for scores ≥ threshold, from experience_library.md only
+  → resume drafts on demand (dashboard ✍️ → issue), from experience_library.md only
 ```
 
 ## Decisions log
@@ -36,6 +36,7 @@ sources (jobspy | hyperscaler APIs | ATS boards)
 | Cost control | Skip LLM step entirely when zero new postings; batch all new postings in one prompt | |
 | Scoring model (2026-09) | **Sonnet** for banding (was Haiku); Haiku for the new title screen | 71% of keyword-filter passes were banded weak/misfit and 70% failed seniority — the calibration rules are judgment calls; volume is ~50 postings/run so the stronger model is cheap. Eval gates the switch |
 | Title screen (2026-09) | Haiku pass over NEW postings' title+company before the keyword gate is final: rescues flat titles at target employers, drops obvious misfits; drops remembered 60 days; Monday digest samples the rejects | Keyword filter was recall-first with unmeasured false negatives; a judged pre-pass both raises recall and cuts the junk the full scorer paid for |
+| Resume drafts (2026-09) | On-demand only (dashboard ✍️ → issue). The model returns structured JSON words; code owns a one-page DOCX layout (python-docx), the PDF is that DOCX via LibreOffice, and the page count is verified. `resume_style.md` (owner-curated) sets the voice and its ✔ rules are linted in code; a fabrication guard drops any unit whose numbers, dates or employers are not in the library; ATS keyword coverage with one library-bounded revision pass; gaps go to the issue comment | Free-form Markdown drafts varied in layout, carried inline TODOs and read as AI prose (308 em-dashes in 25 drafts); code-owned format plus a deterministic guard make the file sendable and invented facts checkable |
 | JS-rendered careers sites (2026-09) | Fetch the vendor JSON endpoint behind the page (Radancy/HiBob/ADP/Jibe in `career_sites.py`); a headless browser is a **discovery tool only** (`scripts/probe_careers_site.js`), never part of the daily run | Every such site is fed by a plain JSON call; capturing it once is cheaper and more robust than rendering in CI, and full-list feeds get exact expiry like ATS boards |
 
 ## Phases
@@ -52,12 +53,16 @@ sources (jobspy | hyperscaler APIs | ATS boards)
   Haiku scoring / Sonnet drafting) + `profile.md` + `experience_library.md`
   template + resume drafting to `drafts/`, wired into the daily workflow.
   Live-validated: 162/166 postings scored in 5 batched calls; drafting
-  correctly held off while the library is a template.
+  correctly held off while the library is a template. (Superseded 2026-09:
+  Sonnet scoring; drafting is on-demand, see the decisions log.)
 
 ## Hard rules
 
 - Resume drafts draw ONLY from `experience_library.md`; never invent metrics,
-  skills, employers, or accomplishments. Insufficient library → TODO note.
+  skills, employers, or accomplishments. Insufficient library → reported as
+  gaps on the draft-request issue; the resume omits it. A deterministic
+  guard drops any line whose numbers, dates or employers are not in the
+  library.
 - Per-source try/except: one broken endpoint never kills the run; failures
   logged visibly in Actions output.
 - No secrets in code. `CLAUDE_CODE_OAUTH_TOKEN` as repo secret; the issue

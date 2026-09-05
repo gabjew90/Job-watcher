@@ -1,0 +1,39 @@
+name: Tests
+
+on:
+  push:
+    paths:
+      - "src/resume.py"
+      - "src/draft_requests.py"
+      - "src/util.py"
+      - "src/models.py"
+      - "resume_style.md"
+      - "experience_library.md"
+      - "tests/**"
+      - "requirements.txt"
+      - ".github/workflows/tests.yml"
+  pull_request:
+    paths:
+      - "src/resume.py"
+      - "src/draft_requests.py"
+      - "tests/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      # No jobspy and no claude auth: the drafter's deterministic parts are
+      # tested with a fixture. LibreOffice renders the one-page PDF check;
+      # Carlito is metric-compatible with Calibri so pagination matches Word.
+      - name: Install LibreOffice Writer
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends libreoffice-writer fonts-crosextra-carlito
+      - run: pip install python-docx==1.2.0 pytest requests
+      - run: python -m pytest -q tests

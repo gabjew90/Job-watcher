@@ -492,8 +492,5 @@
   ],
   "state_retention_days": 180,
   "dashboard_max_rows": 500,
-  "assume_expired_days": 30,
-  "triage": {
-    "resume_threshold": 75
-  }
+  "assume_expired_days": 30
 }
