@@ -5796,6 +5796,34 @@
   "url": "https://iren.careers.hibob.com/jobs/edb9c774-bd39-4aa4-b14c-1f020b43b77f",
   "work_mode": "hybrid"
  },
+ "0fad1c0f5ef5ce67": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-05",
+  "company": "Rivo Holdings",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T23:23:24Z",
+  "location": "San Diego, CA, US",
+  "locations": [
+   "San Diego, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$110,000\u2013$140,000/yr",
+  "priority": false,
+  "rationale": "Email deliverability/martech role at a lending company with no energy, power, or datacenter connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T23:23Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Email Deliverability & Infrastructure Specialist",
+  "url": "https://www.indeed.com/viewjob?jk=5278fb50afdffbbc",
+  "work_mode": ""
+ },
  "0fb85afda7b2ec95": {
   "active": false,
   "band": "misfit",
@@ -13846,7 +13874,9 @@
   "locations": [
    "Juno Beach, FL, US, 33408",
    "Palo, IA, US, 52324",
-   "Baldwin, FL, US, 32234"
+   "Baldwin, FL, US, 32234",
+   "St. Paul, MN, US, 55107",
+   "Cocoa, FL, US, 32927"
   ],
   "pay": "",
   "priority": false,
@@ -21912,7 +21942,8 @@
   "locations": [
    "St. Paul, MN, US, 55107",
    "PERRYTON, TX, US, 79070",
-   "Juno Beach, FL, US, 33408"
+   "Juno Beach, FL, US, 33408",
+   "Green Cove Springs, FL, US, 32043"
   ],
   "pay": "",
   "priority": true,
@@ -29826,6 +29857,32 @@
   "title": "Systems Process Engineer, Energy Service",
   "url": "https://www.indeed.com/viewjob?jk=91680be04c2da1f8",
   "work_mode": "onsite"
+ },
+ "5b1fc44c753607ce": {
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-07-14",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T23:23:24Z",
+  "location": "Seattle, WA, US",
+  "locations": [
+   "Seattle, WA, US",
+   "Austin, TX, US"
+  ],
+  "pay": "$116,800\u2013$160,000/yr",
+  "priority": false,
+  "rationale": "Regional data center design engineering manager overseeing structural/civil/electrical/mechanical design teams \u2014 deep technical design leadership, not product/strategy/commercial.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T23:23Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "DC Design Manager for Region (AMER), Data Center Engineering",
+  "url": "https://www.indeed.com/viewjob?jk=eabee24899cba188",
+  "work_mode": ""
  },
  "5b2750f5b2b07b75": {
   "active": false,
@@ -47863,6 +47920,31 @@
   "title": "Sr. Manager, Technical Business Development",
   "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Edmonton-Alberta-Canada/Sr-Manager--Technical-Business-Development_WD30278654",
   "work_mode": ""
+ },
+ "9013df2548854add": {
+  "band": "weak",
+  "company": "Arcadis",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T23:23:24Z",
+  "location": "Dallas, TX, US",
+  "locations": [
+   "Dallas, TX, US"
+  ],
+  "pay": "$105,000\u2013$170,000/yr",
+  "priority": false,
+  "rationale": "Building electrical design engineering consultant role for data centers/commercial \u2014 deep technical IC design engineering, not product/strategy scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T23:23Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Sr Electrical Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=e922638046fe1d55",
+  "work_mode": "onsite"
  },
  "901ee0612b622714": {
   "active": false,
@@ -67364,7 +67446,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Senior Power Systems Modeling Engineer, Real Time Simulation",
-  "url": "https://www.indeed.com/viewjob?jk=ca7a512f5e3aa8a8",
+  "url": "https://www.indeed.com/viewjob?jk=b4274928945c3da9",
   "work_mode": "hybrid"
  },
  "cb8c4216ae92a636": {
@@ -72425,6 +72507,31 @@
   "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Sydney-New-South-Wales-Australia/Business-Development-Manager---HVAC-Retrofit_WD30266633",
   "work_mode": ""
  },
+ "db2ef0afbfe31a63": {
+  "band": "possible",
+  "company": "",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-05",
+  "first_seen_at": "2026-09-05T23:23:24Z",
+  "location": "Bloomington, MN, US",
+  "locations": [
+   "Bloomington, MN, US"
+  ],
+  "pay": "$142,000\u2013$178,000/yr",
+  "priority": true,
+  "rationale": "Senior greenfield project development IC role (solar/wind/BESS/data parks) \u2014 development execution lifecycle, not product/strategy scope per prior feedback on similar development-lead roles.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-05T23:23Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Developer",
+  "url": "https://www.indeed.com/viewjob?jk=6d5cc9bf612fe2d1",
+  "work_mode": "onsite"
+ },
  "db3c49ae78e073f6": {
   "band": "weak",
   "company": "SpaceX",
@@ -72658,7 +72765,8 @@
   "location": "Hayward, CA, US",
   "locations": [
    "Hayward, CA, US",
-   "Humble, TX, US"
+   "Humble, TX, US",
+   "Largo, FL, US"
   ],
   "lowscore": true,
   "pay": "$51,408\u2013$87,288/yr",
@@ -72668,7 +72776,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Solar Appointment Setter",
-  "url": "https://www.indeed.com/viewjob?jk=f5932387d9a77150"
+  "url": "https://www.indeed.com/viewjob?jk=018c1533d2b2138f"
  },
  "dcb776d5e16305ec": {
   "active": false,
@@ -81479,6 +81587,10 @@
   "date_posted": "2026-08-26",
   "first_seen": "2026-08-26",
   "location": "College Station, TX, US",
+  "locations": [
+   "College Station, TX, US",
+   "Beavercreek, OH, US"
+  ],
   "lowscore": true,
   "pay": "$19\u2013$27/hr",
   "priority": false,
@@ -81487,7 +81599,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "(USA) Tire and Battery Service Advisor",
-  "url": "https://www.indeed.com/viewjob?jk=71fecf6ff90180ec",
+  "url": "https://www.indeed.com/viewjob?jk=dac3256c626d24b1",
   "work_mode": ""
  },
  "f8be3d64645fbf74": {
