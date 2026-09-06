@@ -5546,6 +5546,34 @@
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4700444101",
   "work_mode": "hybrid"
  },
+ "0f442605bc6da0ed": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "SpaceX",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T06:38:26Z",
+  "location": "Starbase, TX",
+  "locations": [
+   "Starbase, TX"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Facilities/HVAC maintenance and technician-team management, a field/O&M leadership role rather than power/grid product or strategy work.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T06:38Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "greenhouse",
+  "title": "Manager, Facilities Infrastructure",
+  "url": "https://job-boards.greenhouse.io/spacex/jobs/8784894002",
+  "work_mode": "remote"
+ },
  "0f519e4c62d40cdb": {
   "band": "weak",
   "company": "Southern California Edison",
@@ -11196,7 +11224,9 @@
   "work_mode": "hybrid"
  },
  "20d2aaff121e3806": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-06",
   "company": "Endeavour",
   "date_posted": "2026-08-06",
   "first_seen": "2026-09-03",
@@ -15011,7 +15041,9 @@
   "work_mode": ""
  },
  "2b805d09034c9400": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-06",
   "company": "Amazon",
   "date_posted": "2026-08-06",
   "first_seen": "2026-08-28",
@@ -22522,6 +22554,36 @@
   "url": "https://www.indeed.com/viewjob?jk=61d32d5424ea3347",
   "work_mode": "remote"
  },
+ "43b922eb6c5f7559": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "Sunrun",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T06:38:26Z",
+  "location": "Murrieta, CA, US",
+  "locations": [
+   "Murrieta, CA, US",
+   "Palm Springs, CA, US",
+   "Kahului, HI, US"
+  ],
+  "lowscore": true,
+  "pay": "$90,000\u2013$120,000/yr",
+  "priority": false,
+  "rationale": "Quota-carrying door-to-door residential sales role, unrelated to the candidate's product/strategy/technical background.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T06:38Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "In-Home Solar Sales Consultant (B2C Sales)",
+  "url": "https://www.indeed.com/viewjob?jk=5145c54048fcde28",
+  "work_mode": "onsite"
+ },
  "43e7612ea087d44b": {
   "band": "possible",
   "company": "Highland Electric Fleets",
@@ -23000,6 +23062,34 @@
   "title": "Office & Corporate Operations Coordinator",
   "url": "https://job-boards.greenhouse.io/pluspower/jobs/4705207006",
   "work_mode": "remote"
+ },
+ "45be96848a2f950c": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T06:38:26Z",
+  "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Hands-on manufacturing/mechatronics engineering for valves and flow control, no energy or power connection and no product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T06:38Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Manufacturing Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=1ac9e0c25916f15a",
+  "work_mode": "onsite"
  },
  "45c39cdef288c060": {
   "band": "possible",
@@ -24428,12 +24518,13 @@
  "49f3b4ab33e64009": {
   "band": "weak",
   "company": "NextEra Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-05",
   "first_seen": "2026-09-05",
   "first_seen_at": "2026-09-05T19:37:18Z",
   "location": "",
   "locations": [
-   ""
+   "",
+   "PERRYTON, TX, US, 79070"
   ],
   "pay": "",
   "priority": true,
@@ -29859,7 +29950,9 @@
   "work_mode": "onsite"
  },
  "5b1fc44c753607ce": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-06",
   "company": "Amazon.com",
   "date_posted": "2026-07-14",
   "first_seen": "2026-09-05",
@@ -43026,6 +43119,31 @@
   "url": "https://www.indeed.com/viewjob?jk=c92b5ed3d5b73006",
   "work_mode": "onsite"
  },
+ "82b3b66cd94e7e29": {
+  "band": "weak",
+  "company": "Powertown",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T06:38:26Z",
+  "location": "Boston, MA, US",
+  "locations": [
+   "Boston, MA, US"
+  ],
+  "pay": "$190,000\u2013$200,000/yr",
+  "priority": false,
+  "rationale": "Grid/energy-storage domain and forecasting/optimization data work overlap well, but this is a hands-on ML engineering IC role rather than the product/strategy scope the candidate targets.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T06:38Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Machine Learning Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=ed55851056a5e9d1",
+  "work_mode": ""
+ },
  "82b8a48290365848": {
   "band": "possible",
   "company": "NVIDIA",
@@ -45269,6 +45387,34 @@
   "source": "ashby",
   "title": "Hardware Technical Program Manager, Infrastructure Partner Operations",
   "url": "https://jobs.ashbyhq.com/openai/0fae998b-5295-4567-b4b5-b20cf0346da3",
+  "work_mode": "onsite"
+ },
+ "892969f41eab79ea": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "Microsoft",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T06:38:26Z",
+  "location": "United States, Washington, Redmond (+1 more)",
+  "locations": [
+   "United States, Washington, Redmond (+1 more)"
+  ],
+  "lowscore": true,
+  "pay": "USD $97,600 - $188,400 per year",
+  "priority": false,
+  "rationale": "Accounting/financial-controls management role at a datacenter operator, but the function is corporate accounting rather than energy/power/AI product work.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T06:38Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "microsoft",
+  "title": "Senior Accounting Manager, Data Center Infrastructure",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556977502",
   "work_mode": "onsite"
  },
  "8929eacca1fac7ad": {
@@ -71137,7 +71283,8 @@
    "Oakland, CA, US, 94612",
    "West Sacramento, CA, US, 95605",
    "Stockton, CA, US, 95206",
-   "Rocklin, CA, US, 95765"
+   "Rocklin, CA, US, 95765",
+   "Concord, CA, US, 94518"
   ],
   "lowscore": true,
   "pay": "$99,936",
@@ -81515,7 +81662,8 @@
    "Petaluma, CA, US, 94954",
    "Morgan Hill, CA, US, 95037",
    "Vacaville, CA, US, 95688",
-   "Chico, CA, US, 95928"
+   "Chico, CA, US, 95928",
+   "West Sacramento, CA, US, 95605"
   ],
   "pay": "$207,000",
   "priority": false,
@@ -82593,7 +82741,8 @@
    "Livonia, LA, US, 70755",
    "Juno Beach, FL, US, 33408",
    "Palo, IA, US, 52324",
-   "St. Paul, MN, US, 55107"
+   "St. Paul, MN, US, 55107",
+   "Cocoa, FL, US, 32927"
   ],
   "pay": "",
   "priority": true,
