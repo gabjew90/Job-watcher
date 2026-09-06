@@ -21975,7 +21975,9 @@
    "St. Paul, MN, US, 55107",
    "PERRYTON, TX, US, 79070",
    "Juno Beach, FL, US, 33408",
-   "Green Cove Springs, FL, US, 32043"
+   "Green Cove Springs, FL, US, 32043",
+   "McCamey, TX, US, 79752",
+   "Palm Beach Gardens, FL, US, 33410"
   ],
   "pay": "",
   "priority": true,
@@ -26729,7 +26731,9 @@
    "",
    "Juno Beach, FL, US, 33408",
    "MARTELL, NE, US, 68404",
-   "Palm Beach Gardens, FL, US, 33410"
+   "Palm Beach Gardens, FL, US, 33410",
+   "Baldwin, FL, US, 32234",
+   "Palo, IA, US, 52324"
   ],
   "pay": "",
   "priority": false,
@@ -28755,6 +28759,34 @@
   "source": "indeed",
   "title": "Supervisor Engineering - Protection & Control",
   "url": "https://www.indeed.com/viewjob?jk=1bcaaaa4dd18d70d",
+  "work_mode": ""
+ },
+ "574898cb6b07bb6d": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "SSOE Group",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T16:35:43Z",
+  "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$100,000\u2013$150,000/yr",
+  "priority": false,
+  "rationale": "Deep technical electrical design-lead IC role for semiconductor facilities \u2014 no product/strategy/BESS/grid-interconnection framing, out of skillset per prior design-engineer feedback.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T16:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Senior Electrical Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=a64fbc1191e045fb",
   "work_mode": ""
  },
  "5757918a8a1ea3e2": {
@@ -42289,6 +42321,34 @@
   "url": "https://www.indeed.com/viewjob?jk=e6b3ff45447dc624",
   "work_mode": ""
  },
+ "7fba040d62b16289": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "Maccor",
+  "date_posted": "2026-09-06",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T16:35:43Z",
+  "location": "Tulsa, OK, US",
+  "locations": [
+   "Tulsa, OK, US"
+  ],
+  "lowscore": true,
+  "pay": "$60,000\u2013$80,000/yr",
+  "priority": false,
+  "rationale": "Quota-carrying sales engineer role selling battery test equipment \u2014 sales function scores low regardless of battery-domain adjacency.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T16:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Sales Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=ebf005f4ca323fa6",
+  "work_mode": ""
+ },
  "7fd81e8191d9b371": {
   "band": "misfit",
   "company": "SpaceX",
@@ -42815,7 +42875,9 @@
   "work_mode": "remote"
  },
  "8198f633449d739d": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-06",
   "company": "Microsoft",
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-19",
@@ -48067,6 +48129,31 @@
   "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Edmonton-Alberta-Canada/Sr-Manager--Technical-Business-Development_WD30278654",
   "work_mode": ""
  },
+ "9005624c0533dce0": {
+  "band": "weak",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-06",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T16:35:43Z",
+  "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Principal-level data governance/ETRM-migration IC role at an energy company \u2014 data fluency overlaps but scope is trading/risk data engineering, not grid/BESS/AI product work.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T16:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal Data Analyst",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Principal-Data-Analyst-FL-33408/1390852300/",
+  "work_mode": ""
+ },
  "9013df2548854add": {
   "band": "weak",
   "company": "Arcadis",
@@ -49243,7 +49330,8 @@
   "locations": [
    "Juno Beach, FL, US, 33408",
    "Palo, IA, US, 52324",
-   "St. Paul, MN, US, 55107"
+   "St. Paul, MN, US, 55107",
+   "Green Cove Springs, FL, US, 32043"
   ],
   "pay": "",
   "priority": false,
@@ -63865,6 +63953,34 @@
   "url": "https://www.indeed.com/viewjob?jk=ee84a75d5a9f8101",
   "work_mode": "onsite"
  },
+ "c025754d4b30a433": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "Microsoft",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T16:35:43Z",
+  "location": "United States, Washington, Redmond (+1 more)",
+  "locations": [
+   "United States, Washington, Redmond (+1 more)"
+  ],
+  "lowscore": true,
+  "pay": "USD $116,900 - $203,600 per year",
+  "priority": false,
+  "rationale": "Corporate accounting/SOX-compliance function at a datacenter unit \u2014 unrelated to power/product/strategy skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T16:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "microsoft",
+  "title": "Group Accounting Manager, Data Center Infrastructure",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556977525",
+  "work_mode": "onsite"
+ },
  "c027d0596940d66d": {
   "active": false,
   "band": "misfit",
@@ -71284,7 +71400,8 @@
    "West Sacramento, CA, US, 95605",
    "Stockton, CA, US, 95206",
    "Rocklin, CA, US, 95765",
-   "Concord, CA, US, 94518"
+   "Concord, CA, US, 94518",
+   "Ukiah, CA, US, 95482"
   ],
   "lowscore": true,
   "pay": "$99,936",
@@ -75552,6 +75669,34 @@
   "url": "https://www.indeed.com/viewjob?jk=f685b9d8a98feb2a",
   "work_mode": "onsite"
  },
+ "e50321e530c71eeb": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "Electric Power Research Institute",
+  "date_posted": "2026-09-05",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T16:35:43Z",
+  "location": "Knoxville, TN, US",
+  "locations": [
+   "Knoxville, TN, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Staff-level power-system simulation/research IC role (EMTP/PSS/E modeling) \u2014 too deep-technical and below director/PM scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T16:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Staff Level III \u2013 Critical Power & Electromagnetic Threats",
+  "url": "https://www.indeed.com/viewjob?jk=7d91b995a3ac6940",
+  "work_mode": ""
+ },
  "e52ce13a48aee06f": {
   "band": "misfit",
   "company": "Apple",
@@ -75924,7 +76069,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Data Center Program Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393556972681",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556984706",
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
