@@ -36235,6 +36235,34 @@
   "url": "https://www.indeed.com/viewjob?jk=c000fd28bbb9afec",
   "work_mode": "remote"
  },
+ "6dff52442314336c": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-06",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-06",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T19:38:03Z",
+  "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior controls/automation engineering IC role working under senior engineer guidance on wind-farm systems, out of skillset and seniority per prior feedback on controls/embedded roles.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T19:38Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "successfactors",
+  "title": "Power Generation Engineer - Controls",
+  "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Power-Generation-Engineer-Controls-FL-33410/1407822000/",
+  "work_mode": ""
+ },
  "6e0a091266697d7c": {
   "active": false,
   "band": "misfit",
@@ -38577,7 +38605,9 @@
   "work_mode": ""
  },
  "7483c006ccad76f8": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-06",
   "company": "Microsoft",
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-19",
@@ -51487,7 +51517,8 @@
   "locations": [
    "Juno Beach, FL, US, 33408",
    "Florida City, FL, US, 33035",
-   "PERRYTON, TX, US, 79070"
+   "PERRYTON, TX, US, 79070",
+   "Douglas, WY, US, 82633"
   ],
   "pay": "$60.77 to $91.15 per hour",
   "priority": true,
@@ -51666,18 +51697,23 @@
   "work_mode": ""
  },
  "9b6ddcf9ede58226": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-06",
   "company": "OpenAI",
   "date_posted": "2026-07-27",
   "first_seen": "2026-08-28",
   "location": "US - Remote",
+  "locations": [
+   "US - Remote"
+  ],
   "pay": "$185K \u2013 $285K \u00b7 Offers Equity",
   "priority": true,
   "rationale": "Excellent domain match (powered-land, interconnection, utility studies) and strategic scope, but individual contributor lead without full director autonomy.",
   "score": 75,
   "seniority_match": true,
   "source": "ashby",
-  "title": "Power Land Developer, Development & Power Projects",
+  "title": "Powered Land Developer, Development & Power Projects",
   "url": "https://jobs.ashbyhq.com/openai/d44d9fac-3a9f-4731-a4fc-7a6759ddb427",
   "work_mode": "remote"
  },
@@ -53091,6 +53127,9 @@
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
   "location": "New York, NY, US",
+  "locations": [
+   "New York, NY, US"
+  ],
   "pay": "",
   "priority": false,
   "rationale": "Investment banking associate; infrastructure finance role at associate level, not PM/strategy focus on energy operations.",
@@ -53098,7 +53137,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Investment Banking - Infrastructure Finance and Advisory - Associate",
-  "url": "https://www.indeed.com/viewjob?jk=9ed919efb69d437d",
+  "url": "https://www.indeed.com/viewjob?jk=25203ffe4173d1da",
   "work_mode": ""
  },
  "9fe3da1f93e2b3f3": {
@@ -61556,6 +61595,31 @@
   "title": "R&D Senior Electrical Engineer",
   "url": "https://www.indeed.com/viewjob?jk=13c020585b121518",
   "work_mode": "onsite"
+ },
+ "b89f24b0aff53489": {
+  "band": "possible",
+  "company": "OpenAI",
+  "date_posted": "2026-09-06",
+  "first_seen": "2026-09-06",
+  "first_seen_at": "2026-09-06T19:38:03Z",
+  "location": "San Francisco",
+  "locations": [
+   "San Francisco"
+  ],
+  "pay": "$225K \u2013 $285K \u00b7 Offers Equity",
+  "priority": false,
+  "rationale": "Senior cross-functional site-selection/land-development strategy role at an AI datacenter operator, but it's land/real-estate development execution rather than power/BESS/grid strategy, which feedback caps at possible despite strong employer fit.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-06T19:38Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Site Selection Lead",
+  "url": "https://jobs.ashbyhq.com/openai/98f65aa5-0f19-4942-9296-63382883dc55",
+  "work_mode": "remote"
  },
  "b8bb968b2668a719": {
   "band": "strong",
@@ -81882,7 +81946,8 @@
   "location": "College Station, TX, US",
   "locations": [
    "College Station, TX, US",
-   "Beavercreek, OH, US"
+   "Beavercreek, OH, US",
+   "Elgin, IL, US"
   ],
   "lowscore": true,
   "pay": "$19\u2013$27/hr",
@@ -81892,7 +81957,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "(USA) Tire and Battery Service Advisor",
-  "url": "https://www.indeed.com/viewjob?jk=dac3256c626d24b1",
+  "url": "https://www.indeed.com/viewjob?jk=4275790d26ff159d",
   "work_mode": ""
  },
  "f8be3d64645fbf74": {
