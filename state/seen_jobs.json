@@ -2543,6 +2543,20 @@
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-27",
   "location": "Traverse City, MI, US",
+  "locations": [
+   "Traverse City, MI, US",
+   "Cincinnati, OH, US",
+   "Dearborn Heights, MI, US",
+   "Ames, IA, US",
+   "Chattanooga, TN, US",
+   "Charlotte, NC, US",
+   "IL, US",
+   "Zionsville, IN, US",
+   "Ann Arbor, MI, US",
+   "AZ, US",
+   "Cleveland, OH, US",
+   "Fort Worth, TX, US"
+  ],
   "pay": "$80,000\u2013$115,000/yr",
   "priority": true,
   "rationale": "Power engineering consulting domain is excellent but title is IC engineer level, not senior PM/director level.",
@@ -2550,7 +2564,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Electrical Power Engineer",
-  "url": "https://www.indeed.com/viewjob?jk=35812740fbef8dc4",
+  "url": "https://www.indeed.com/viewjob?jk=020cdb15c3291f07",
   "work_mode": "remote"
  },
  "070d07366c2d5bc2": {
@@ -9399,6 +9413,31 @@
   "url": "https://careers.pge.com/job/Auberry-Power-Generation-Project-Engineer-%28Electrical%29-CA-93602/1379856200/",
   "work_mode": "hybrid"
  },
+ "1abdf493808bbc54": {
+  "band": "top",
+  "company": "",
+  "date_posted": "2026-03-22",
+  "first_seen": "2026-09-07",
+  "first_seen_at": "2026-09-07T18:35:13Z",
+  "location": "Pittsburgh, PA, US",
+  "locations": [
+   "Pittsburgh, PA, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Director-level ownership of interconnection strategy, GIA/IA negotiation, and RTO/ISO relationships is a core high-fit category at the right seniority.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-09-07T18:35Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Transmission Planning",
+  "url": "https://www.indeed.com/viewjob?jk=98649229755aa070",
+  "work_mode": ""
+ },
  "1ac2da79b43f023d": {
   "active": false,
   "band": "possible",
@@ -12938,6 +12977,34 @@
   "source": "indeed",
   "title": "Director of Engineering, Flex Compute",
   "url": "https://www.indeed.com/viewjob?jk=4126125d4a61308e",
+  "work_mode": ""
+ },
+ "2593d2d637f10a8b": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-07",
+  "company": "Siemens",
+  "date_posted": "2026-09-06",
+  "first_seen": "2026-09-07",
+  "first_seen_at": "2026-09-07T18:35:13Z",
+  "location": "Wendell, NC, US",
+  "locations": [
+   "Wendell, NC, US"
+  ],
+  "lowscore": true,
+  "pay": "$82,000\u2013$85,000/yr",
+  "priority": true,
+  "rationale": "Explicitly an early-career leadership development program for recent graduates.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-07T18:35Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Power Protection and Automation Engineering Development Program (June Cohort)",
+  "url": "https://www.indeed.com/viewjob?jk=feab602c1759b845",
   "work_mode": ""
  },
  "25a10c04a56722a9": {
@@ -22800,7 +22867,9 @@
   "work_mode": "onsite"
  },
  "44b2e10e8e73b3e6": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-07",
   "company": "Nebius",
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
@@ -25296,7 +25365,8 @@
   "first_seen_at": "2026-09-02T23:38:02Z",
   "location": "Manassas, VA, US",
   "locations": [
-   "Manassas, VA, US"
+   "Manassas, VA, US",
+   "Boardman, OR, US"
   ],
   "pay": "$129,200\u2013$193,000/yr",
   "priority": false,
@@ -25310,7 +25380,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Data Center Facilities Manager",
-  "url": "https://www.indeed.com/viewjob?jk=4749a2d1a84fc79a",
+  "url": "https://www.indeed.com/viewjob?jk=eb13d76967f80d18",
   "work_mode": "onsite"
  },
  "4c8565fe16f0440f": {
@@ -32397,7 +32467,8 @@
    "Orland, CA, US, 95963",
    "Ukiah, CA, US, 95482",
    "San Francisco, CA, US, 94110",
-   "Stockton, CA, US, 95206"
+   "Stockton, CA, US, 95206",
+   "Concord, CA, US, 94518"
   ],
   "lowscore": true,
   "pay": "",
@@ -37762,6 +37833,31 @@
   "source": "indeed",
   "title": "Senior Manager, Data Center Facilities Engineering",
   "url": "https://www.indeed.com/viewjob?jk=a3cfe5f87b9d5e53",
+  "work_mode": ""
+ },
+ "71a27a95eb2d1778": {
+  "band": "weak",
+  "company": "Eni Spa",
+  "date_posted": "2026-09-07",
+  "first_seen": "2026-09-07",
+  "first_seen_at": "2026-09-07T18:35:13Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Renewable/BESS asset management touches the domain but is commercial/O&M administration, not product or strategy, with no clear senior scope stated.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-07T18:35Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Asset Manager",
+  "url": "https://www.indeed.com/viewjob?jk=0f46470d304e6a6c",
   "work_mode": ""
  },
  "7205ca70c631dd20": {
@@ -52132,6 +52228,35 @@
   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5385557008",
   "work_mode": "hybrid"
  },
+ "9c6aa35881884d12": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-07",
+  "company": "Amazon Web Services",
+  "date_posted": "2026-08-27",
+  "first_seen": "2026-09-07",
+  "first_seen_at": "2026-09-07T18:35:13Z",
+  "location": "Chicago, IL, US",
+  "locations": [
+   "Chicago, IL, US",
+   "Austin, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$131,300\u2013$204,300/yr",
+  "priority": false,
+  "rationale": "Generic AWS cloud technical account management with no energy, power, or datacenter-specific connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-07T18:35Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Technical Account Manager, AWS Enterprise Support, Strategic Industries",
+  "url": "https://www.indeed.com/viewjob?jk=65c0d50ffaaa1a60",
+  "work_mode": ""
+ },
  "9c85318f2c007c2f": {
   "band": "possible",
   "company": "GE Vernova",
@@ -55721,7 +55846,9 @@
   "work_mode": "remote"
  },
  "a6dadcb449be99bf": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-07",
   "company": "Anthropic",
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-28",
@@ -58891,6 +59018,34 @@
   "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Krakow-Lesser-Poland-Poland/IT-Category-Manager_R0116064",
   "work_mode": ""
  },
+ "af61753ccec10e8e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-07",
+  "company": "Amazon.com",
+  "date_posted": "2026-09-03",
+  "first_seen": "2026-09-07",
+  "first_seen_at": "2026-09-07T18:35:13Z",
+  "location": "Boardman, OR, US",
+  "locations": [
+   "Boardman, OR, US"
+  ],
+  "lowscore": true,
+  "pay": "$96,000\u2013$166,300/yr",
+  "priority": false,
+  "rationale": "Facilities O&M leadership over switchgear/generators/UPS is hands-on operations management, not the product/strategy scope targeted.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-07T18:35Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Chief Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=3c6b5b7770a787c4",
+  "work_mode": "onsite"
+ },
  "af95b5507b996520": {
   "active": false,
   "band": "misfit",
@@ -62002,6 +62157,31 @@
   "title": "Control Testing Engineer - Plymouth Township, MI",
   "url": "https://www.indeed.com/viewjob?jk=b35b8954e49f9eaa",
   "work_mode": ""
+ },
+ "b942f24474a2b774": {
+  "band": "weak",
+  "company": "Neara",
+  "date_posted": "2026-09-07",
+  "first_seen": "2026-09-07",
+  "first_seen_at": "2026-09-07T18:35:13Z",
+  "location": "Sydney",
+  "locations": [
+   "Sydney"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "ML platform engineering serving utility customers has a domain thread but is deep hands-on ML infrastructure engineering, not a product/strategy/AI-application role.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-07T18:35Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "ashby",
+  "title": "Senior Machine Learning Engineer (Platform)",
+  "url": "https://jobs.ashbyhq.com/neara/196f8d8c-6556-4eca-8b03-b34e1946e76a",
+  "work_mode": "remote"
  },
  "b95061df74f3a6bc": {
   "active": false,
@@ -66508,7 +66688,8 @@
    "MARTELL, NE, US, 68404",
    "Denver, CO, US, 80201",
    "Palm Beach Gardens, FL, US, 33410",
-   "Cocoa, FL, US, 32927"
+   "Cocoa, FL, US, 32927",
+   "Palo, IA, US, 52324"
   ],
   "pay": "",
   "priority": false,
@@ -75331,6 +75512,34 @@
   "url": "https://www.indeed.com/viewjob?jk=0687985b1a8bced9",
   "work_mode": "hybrid"
  },
+ "e349ed2a4b6a1adf": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-07",
+  "company": "Koch",
+  "date_posted": "2026-09-07",
+  "first_seen": "2026-09-07",
+  "first_seen_at": "2026-09-07T18:35:13Z",
+  "location": "Katy, TX, US",
+  "locations": [
+   "Katy, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep technical EPC electrical engineering (load flow, short circuit, arc flash studies) is a specialist design IC role far from product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-07T18:35Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Lead Electrical Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=de24340c704f9f6d",
+  "work_mode": ""
+ },
  "e36310f792ee797d": {
   "active": false,
   "band": "misfit",
@@ -75560,7 +75769,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Site Lead, Data Center Operations",
-  "url": "https://www.indeed.com/viewjob?jk=a3fce3ac09298d97",
+  "url": "https://www.indeed.com/viewjob?jk=4d1b880cb6e1d35f",
   "work_mode": "remote"
  },
  "e4499d4dcc644978": {
