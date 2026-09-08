@@ -4122,6 +4122,31 @@
   "url": "https://www.indeed.com/viewjob?jk=db7fd22334d1ec94",
   "work_mode": ""
  },
+ "0b4d2cfec28b64e4": {
+  "band": "weak",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-08",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Deep specialist data-science IC role on equipment diagnostics, not the product/strategy/AI-bridging work the candidate targets.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal Data Scientist",
+  "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Principal-Data-Scientist-FL-33410/1427583500/",
+  "work_mode": ""
+ },
  "0b5a040ee39506d2": {
   "band": "weak",
   "company": "SB Energy",
@@ -7461,7 +7486,9 @@
   "work_mode": "onsite"
  },
  "144f315cf69e898f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-08",
   "company": "Terawatt Infrastructure",
   "date_posted": "2026-07-31",
   "first_seen": "2026-08-13",
@@ -9904,6 +9931,33 @@
   "title": "Staff Electrical Engineer",
   "url": "https://www.indeed.com/viewjob?jk=d8d7f6d9b2b9b74b",
   "work_mode": ""
+ },
+ "1c53606c318925f7": {
+  "band": "weak",
+  "company": "Eversource Energy",
+  "date_posted": "2026-09-08",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "Westwood, MA, US",
+  "locations": [
+   "Westwood, MA, US",
+   "Springfield, MA, US",
+   "Berlin, CT, US"
+  ],
+  "pay": "$121,730\u2013$135,250/yr",
+  "priority": true,
+  "rationale": "Interconnection domain fits but described duties (invoicing, equipment tracking, licenses) read as administrative PM work, not senior strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Manager, Interconnections (hybrid schedule)",
+  "url": "https://www.indeed.com/viewjob?jk=74db377b70fc0c8a",
+  "work_mode": "remote"
  },
  "1c65df23e74ccdb4": {
   "active": false,
@@ -12858,7 +12912,9 @@
   "work_mode": ""
  },
  "24b3276cc811f77d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-08",
   "company": "SpaceX",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -19882,6 +19938,34 @@
   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5227845008",
   "work_mode": "hybrid"
  },
+ "39de99a8fe57c14a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-08",
+  "company": "CenterPoint Energy",
+  "date_posted": "2026-09-07",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep IC-level protection/relay engineering role, outside product/strategy scope and below target seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Electrical Engineer II Substation Relay",
+  "url": "https://www.indeed.com/viewjob?jk=f6c6adc1d8e19604",
+  "work_mode": ""
+ },
  "39e62302dd27ac27": {
   "active": false,
   "band": "misfit",
@@ -26228,7 +26312,8 @@
    "Danville, CA, US, 94583",
    "Hayward, CA, US, 94545",
    "Oakland, CA, US, 94612",
-   "West Sacramento, CA, US, 95605"
+   "West Sacramento, CA, US, 95605",
+   "San Ramon, CA, US, 94583"
   ],
   "pay": "",
   "priority": false,
@@ -28855,6 +28940,34 @@
   "title": "Senior Consultant - Energy Markets",
   "url": "https://www.indeed.com/viewjob?jk=6b91b53e2c6280ff",
   "work_mode": ""
+ },
+ "564b6548f262a172": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-08",
+  "company": "Massed Compute",
+  "date_posted": "2026-09-07",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "US",
+  "locations": [
+   "US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "GPU/compute infrastructure logistics and ops role, not power/energy-focused and not a product/strategy leadership scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Infrastructure Ops Specialist",
+  "url": "https://www.indeed.com/viewjob?jk=07bfea08818c6857",
+  "work_mode": "remote"
  },
  "5651ad81345612f9": {
   "band": "weak",
@@ -31952,6 +32065,31 @@
   "source": "indeed",
   "title": "Director of Sales - ESS",
   "url": "https://www.indeed.com/viewjob?jk=22d30a2cc7c59d52"
+ },
+ "5f18b1bc65adb362": {
+  "band": "possible",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-08",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Transmission/substation early-stage development PM has decent domain and cross-functional scope but flat PM title without clear director-level signals.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Project Manager - Transmission &amp; Substation",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Project-Manager-Transmission-&amp;-Substation-FL-33408/1427524000/",
+  "work_mode": ""
  },
  "5f291bc937e7aac5": {
   "active": false,
@@ -36668,7 +36806,9 @@
   "work_mode": ""
  },
  "6d92faca3933751e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-08",
   "company": "Mainspring Energy",
   "date_posted": "2026-02-06",
   "first_seen": "2026-09-03",
@@ -36726,6 +36866,34 @@
   "title": "Site Reliability Engineer in Network Infrastructure",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4871704101",
   "work_mode": "remote"
+ },
+ "6d9d2b519d987c24": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-08",
+  "company": "Oracle",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "US",
+  "locations": [
+   "US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Hands-on critical-environment maintenance/incident-response engineering for OCI data centers, not product or strategy scope despite Principal title.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Principal Engineering Critical Environment Consultant",
+  "url": "https://www.indeed.com/viewjob?jk=65fa23cecc5ad0cb",
+  "work_mode": ""
  },
  "6d9faa14b45f153a": {
   "active": false,
@@ -44094,7 +44262,9 @@
   "work_mode": "onsite"
  },
  "83c102dce5356a65": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-08",
   "company": "SB Energy",
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
@@ -48805,7 +48975,8 @@
   "first_seen_at": "2026-09-06T16:35:43Z",
   "location": "Juno Beach, FL, US, 33408",
   "locations": [
-   "Juno Beach, FL, US, 33408"
+   "Juno Beach, FL, US, 33408",
+   "Cisco, TX, US, 76437"
   ],
   "pay": "",
   "priority": false,
@@ -50771,7 +50942,8 @@
   "first_seen_at": "2026-09-05T16:27:10Z",
   "location": "",
   "locations": [
-   ""
+   "",
+   "Fresno, CA, US, 93720"
   ],
   "pay": "",
   "priority": false,
@@ -55295,7 +55467,8 @@
   "locations": [
    "Danville, CA, US, 94583",
    "West Sacramento, CA, US, 95605",
-   "Fresno, CA, US, 93702"
+   "Fresno, CA, US, 93702",
+   "Hayward, CA, US, 94545"
   ],
   "pay": "",
   "priority": false,
@@ -61361,7 +61534,9 @@
   "work_mode": "hybrid"
  },
  "b4f61df5df2b90e7": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-08",
   "company": "Southern California Edison",
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-03",
@@ -62145,6 +62320,31 @@
   "title": "Senior Sales Director",
   "url": "https://www.indeed.com/viewjob?jk=efbaab6a0d8bc940",
   "work_mode": ""
+ },
+ "b7815865a9e56add": {
+  "band": "weak",
+  "company": "Southern California Edison",
+  "date_posted": "2026-09-07",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "Rosemead, CA",
+  "locations": [
+   "Rosemead, CA"
+  ],
+  "pay": "$206,400\u2013$309,600/yr",
+  "priority": false,
+  "rationale": "Generic enterprise IT solutions architecture management at a utility, with no grid/power/BESS domain content.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "radancy",
+  "title": "Senior Manager, IT Solutions Architecture",
+  "url": "https://www.edisoncareers.com/job/23842928/senior-manager-it-solutions-architecture-rosemead-ca/",
+  "work_mode": "hybrid"
  },
  "b7956a1737252618": {
   "active": false,
@@ -67449,7 +67649,8 @@
    "Denver, CO, US, 80201",
    "Palm Beach Gardens, FL, US, 33410",
    "Cocoa, FL, US, 32927",
-   "Palo, IA, US, 52324"
+   "Palo, IA, US, 52324",
+   "Baldwin, FL, US, 32234"
   ],
   "pay": "",
   "priority": false,
@@ -68057,6 +68258,31 @@
   "title": "New Graduate Engineer, Electrical (Starship)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8729124002",
   "work_mode": ""
+ },
+ "c9e1ce40f4d52d69": {
+  "band": "strong",
+  "company": "Apex Clean Energy",
+  "date_posted": "2026-09-08",
+  "first_seen": "2026-09-08",
+  "first_seen_at": "2026-09-08T17:40:34Z",
+  "location": "Charlottesville, VA, US",
+  "locations": [
+   "Charlottesville, VA, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Director-level role bridging technical BESS/renewables expertise with financing and lender/investor relationships, matching the technical+finance thesis.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-08T17:41Z",
+   "model": "claude-sonnet-5",
+   "rubric": "8bc70b75c0"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Technical Assurance",
+  "url": "https://www.indeed.com/viewjob?jk=78252e8eff73cf70",
+  "work_mode": "onsite"
  },
  "c9ecc6ab04083ba5": {
   "band": "possible",
@@ -77391,7 +77617,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Data Center Program Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393556984706",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556972681",
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
@@ -79158,7 +79384,8 @@
    "Danville, CA, US, 94583",
    "Fresno, CA, US, 93702",
    "Hayward, CA, US, 94545",
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "San Ramon, CA, US, 94583"
   ],
   "pay": "$140,000 - $189,000.",
   "priority": true,
@@ -84739,7 +84966,9 @@
   "work_mode": "hybrid"
  },
  "fe6699bfa3766190": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-08",
   "company": "Southern California Edison",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-03",
