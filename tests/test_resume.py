@@ -261,3 +261,14 @@ def test_find_job_by_url_and_truncated_title():
     got = draft_requests._find_job("Energy Manager, Power Delivery", "Meta", raw, seen)
     assert got is not None and got.company == "Meta" and got.description == ""
     assert draft_requests._find_job("Nothing", "Nobody", raw, seen) is None
+
+
+def test_workday_job_url_maps_to_cxs_api():
+    m = draft_requests.WORKDAY_JOB.match(
+        "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/USA-Remote/"
+        "Product-Line-Director--DC-Power-and-BESS_WD229281-1")
+    assert m and m["tenant"] == "flextronics" and m["site"] == "Careers"
+    assert m["path"] == "USA-Remote/Product-Line-Director--DC-Power-and-BESS_WD229281-1"
+    m = draft_requests.WORKDAY_JOB.match("https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA/Director_JR1")
+    assert m and m["site"] == "NVIDIAExternalCareerSite"
+    assert draft_requests.WORKDAY_JOB.match("https://jobs.example.com/job/1") is None
