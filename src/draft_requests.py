@@ -4,7 +4,8 @@ The dashboard's ✍️ link on each row opens a pre-filled issue titled
 "draft: <title> @ <company>" labeled `draft-request`, with the posting URL
 in a hidden HTML comment. Each run:
 
-1. reads open draft-request issues (workflow GITHUB_TOKEN), skipping any
+1. reads open issues titled "draft: ..." (workflow GITHUB_TOKEN), adding
+   the `draft-request` label when a client dropped it, and skipping any
    labeled `draft-failed` (a broken request is a one-shot, not a 6-hourly
    retry; remove the label to retry),
 2. matches each to a tracked posting: by URL, then by company + title,
@@ -34,6 +35,7 @@ log = logging.getLogger(__name__)
 
 API = "https://api.github.com"
 PLACEHOLDER = "Requested from dashboard. Optional: add emphasis notes here."
+LABEL = "draft-request"
 FAILED_LABEL = "draft-failed"
 NOTES_CAP = 1500
 
@@ -112,20 +114,28 @@ def process(raw_jobs: list[Job], seen: dict, config: dict) -> list:
     if not token or not repo:
         log.info("No GITHUB_TOKEN; skipping draft requests.")
         return []
+    # Selected by title, not label: GitHub's new-issue form drops the
+    # `labels=` query parameter in some clients (the mobile app filed #88
+    # unlabeled and two runs skipped it). The label is applied here when
+    # missing so the issue list still reads right.
     resp = requests.get(f"{API}/repos/{repo}/issues",
-                        params={"labels": "draft-request", "state": "open",
-                                "per_page": 20},
+                        params={"state": "open", "per_page": 50},
                         headers=_gh(token), timeout=30)
     resp.raise_for_status()
     written = []
     branch = os.environ.get("GITHUB_REF_NAME", "claude/brainstorm-approach-8qukjx")
     library = resume.LIBRARY.read_text() if resume.LIBRARY.exists() else ""
     for issue in resp.json():
-        if any(lb.get("name") == FAILED_LABEL for lb in issue.get("labels") or []):
+        if issue.get("pull_request"):
+            continue
+        labels = {lb.get("name") for lb in issue.get("labels") or []}
+        if FAILED_LABEL in labels:
             continue
         m = re.match(r"draft:\s*(.+?)\s*@\s*(.+)", issue.get("title", ""), re.I)
         if not m:
             continue
+        if LABEL not in labels:
+            _label(token, repo, issue["number"], LABEL)
         title, company = m.group(1), m.group(2)
         number = issue["number"]
         body = issue.get("body") or ""
