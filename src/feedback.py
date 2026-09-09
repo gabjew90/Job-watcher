@@ -38,14 +38,19 @@ def _issue_entries() -> list[dict]:
     try:
         resp = requests.get(
             f"https://api.github.com/repos/{repo}/issues",
-            params={"labels": "feedback", "state": "open", "per_page": 50},
+            params={"state": "open", "per_page": 100},
             headers={"Authorization": f"Bearer {token}",
                      "Accept": "application/vnd.github+json"},
             timeout=30,
         )
         resp.raise_for_status()
+        # By label OR by the dashboard's "feedback:" title prefix: some
+        # clients drop the `labels=` parameter from the new-issue URL.
         return [{"title": i.get("title", ""), "body": i.get("body") or ""}
-                for i in resp.json()]
+                for i in resp.json()
+                if not i.get("pull_request")
+                and ("feedback" in {lb.get("name") for lb in i.get("labels") or []}
+                     or i.get("title", "").lower().startswith("feedback:"))]
     except Exception as e:  # noqa: BLE001
         log.warning("feedback issue fetch failed: %s", e)
         return []
