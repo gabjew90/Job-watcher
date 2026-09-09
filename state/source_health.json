@@ -21066,11 +21066,11 @@
    }
   },
   {
-   "date": "2026-09-09 23:15",
+   "date": "2026-09-09 23:37",
    "sources": {
     "indeed-watch:Meta": {
      "ok": true,
-     "count": 50,
+     "count": 44,
      "error": null
     },
     "indeed-watch:Tesla": {
@@ -21080,7 +21080,7 @@
     },
     "indeed-watch:Vertiv": {
      "ok": true,
-     "count": 40,
+     "count": 50,
      "error": null
     },
     "indeed-watch:Oracle": {
@@ -21340,8 +21340,8 @@
     },
     "microsoft": {
      "ok": true,
-     "count": 52,
-     "error": null
+     "count": 20,
+     "error": "429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=energy+infrastructure&location=United+States&num=20"
     },
     "amazon": {
      "ok": true,
@@ -21395,7 +21395,7 @@
     },
     "greenhouse:spacex": {
      "ok": true,
-     "count": 2370,
+     "count": 2372,
      "error": null
     },
     "greenhouse:anthropic": {
@@ -21410,7 +21410,7 @@
     },
     "ashby:openai": {
      "ok": true,
-     "count": 787,
+     "count": 788,
      "error": null
     },
     "ashby:emerald-ai": {
@@ -21525,7 +21525,7 @@
     },
     "workday:gevernova": {
      "ok": true,
-     "count": 85,
+     "count": 86,
      "error": null
     },
     "workday:nextracker": {
@@ -21580,7 +21580,7 @@
     },
     "successfactors:PG&E": {
      "ok": true,
-     "count": 82,
+     "count": 81,
      "error": null
     },
     "successfactors:NextEra Energy": {
@@ -21590,7 +21590,7 @@
     },
     "radancy:Southern California Edison": {
      "ok": true,
-     "count": 219,
+     "count": 220,
      "error": null
     },
     "hibob:IREN": {
