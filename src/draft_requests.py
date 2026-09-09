@@ -92,12 +92,37 @@ def _from_record(r: dict) -> Job:
                url=r.get("url", ""), source=r.get("source", ""))
 
 
+# https://{tenant}.wdN.myworkdayjobs.com/[{lang}/]{site}/job/{location}/{slug}
+WORKDAY_JOB = re.compile(
+    r"^https://(?P<host>(?P<tenant>[a-z0-9-]+)\.wd\d+\.myworkdayjobs\.com)/"
+    r"(?:[a-z]{2}-[A-Za-z]{2}/)?(?P<site>[^/]+)/job/(?P<path>.+)$")
+
+
+def _workday_description(url: str) -> str:
+    """Workday posting pages are JS shells; the same job is plain JSON at
+    /wday/cxs/{tenant}/{site}/job/{location}/{slug} (the endpoint the page
+    itself loads). Empty when the URL is not a Workday posting."""
+    m = WORKDAY_JOB.match(url)
+    if not m:
+        return ""
+    api = f"https://{m['host']}/wday/cxs/{m['tenant']}/{m['site']}/job/{m['path']}"
+    resp = requests.get(api, headers={**HEADERS, "Accept": "application/json"}, timeout=20)
+    if resp.status_code != 200:
+        return ""
+    info = resp.json().get("jobPostingInfo") or {}
+    text = strip_html(info.get("jobDescription") or "")
+    return role_excerpt(text, 6000) if len(text) > 200 else ""
+
+
 def _fetch_description(url: str) -> str:
-    """Best effort. Server-rendered postings come back; JS-rendered pages
-    and aggregators that block datacenter IPs come back empty."""
+    """Best effort. Server-rendered postings and Workday's JSON come back;
+    other JS-rendered pages and aggregators that block datacenter IPs come
+    back empty."""
     if not url:
         return ""
     try:
+        if WORKDAY_JOB.match(url):
+            return _workday_description(url)
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code != 200 or "html" not in resp.headers.get("content-type", ""):
             return ""
