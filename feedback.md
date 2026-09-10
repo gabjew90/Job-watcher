@@ -108,3 +108,11 @@ hide: Solution Engineer - Structural Design @ Neara
   operators pivoting to AI compute (Bitdeer, Core Scientific, IREN
   peers). (from issue #99, re: Bitdeer Director, Power Infrastructure:
   "great fit")
+- calibration (owner: very strong fit): product management for a BESS,
+  UPS or power product line at a storage integrator or power-systems
+  supplier (ON.energy, Flex, Delta, Vertiv peers) — market assessment,
+  requirements, product development process, customer and engineering
+  interface — bands top, even when the title says principal or senior
+  rather than director and the posting leans engineering. (owner note
+  2026-09-10, re: ON.energy Product Management Principal (AI UPS); was
+  scored strong)
