@@ -52,13 +52,46 @@ OTHER_BULLETS = 3
 BULLET_WORDS = 22
 MAX_PROJECTS = 3
 MAX_SKILL_CATEGORIES = 4
-MAX_SKILL_ITEMS = 12
-# Calibrated on a rendered page: 407 words / ~62 estimated lines filled
-# about 85% of the sheet. The PDF page count is the final judge anyway.
+MAX_SKILL_ITEMS = 9
 TOTAL_WORDS = 560
-LINE_BUDGET = 62
-CHARS_PER_LINE = 115
-MAX_PDF_ROUNDS = 3
+# The page is estimated in points from the theme's font sizes and spacing
+# (see estimate_height), against the sheet's usable height: Letter, 0.55 in
+# top and bottom margins, 792 - 79.2 = 712.8 pt. Measured on LibreOffice
+# output: a Calibri 10.5 line is 12.8 pt, a full-width line holds ~117
+# characters, an indented bullet line ~122. The estimate lands within about
+# 10 pt of the real layout, so the budget keeps a small margin and the PDF
+# page count is the final judge.
+PAGE_HEIGHT_PT = 712.8
+PAGE_BUDGET_PT = 705
+LINE_HEIGHT = {"Calibri": 1.22, "Arial": 1.15}       # line height / font size
+CHARS_PER_LINE = {"Calibri": 117, "Arial": 112}      # full-width body line
+BULLET_INDENT_CHARS = 5                              # fewer on an indented line
+MAX_PDF_ROUNDS = 8
+
+THEMES = {
+    # Ruled small-caps headings, employer first. Reads like a well-set
+    # traditional resume.
+    "classic": dict(font="Calibri", body=10.5, name=16, name_color=None, contact=9.5,
+                    contact_color=None, name_rule=False, heading_size=9.5,
+                    heading_color="333333", heading_spacing=0, heading_before=7,
+                    rule=True, rule_color="999999", rule_size=6, role_order="employer",
+                    dates_italic=True, dates_color=None, label_color=None),
+    # No rules: letter-spaced slate headings, Arial, title before employer,
+    # grey dates. The quiet modern look.
+    "modern": dict(font="Arial", body=10, name=18, name_color="1F2933", contact=9,
+                   contact_color="5B6470", name_rule=True, heading_size=8.5,
+                   heading_color="2F4F6F", heading_spacing=30, heading_before=9,
+                   rule=False, rule_color="D9DDE2", rule_size=4, role_order="title",
+                   dates_italic=False, dates_color="5B6470", label_color="2F4F6F"),
+    # One accent colour on the name, headings and their rules; otherwise
+    # classic bones.
+    "accent": dict(font="Calibri", body=10.5, name=16, name_color="1B4965", contact=9.5,
+                   contact_color="5B6470", name_rule=False, heading_size=9,
+                   heading_color="1B4965", heading_spacing=20, heading_before=6,
+                   rule=True, rule_color="1B4965", rule_size=8, role_order="employer",
+                   dates_italic=True, dates_color="5B6470", label_color="1B4965"),
+}
+DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "accent")
 
 SECTION_ORDER = ("summary", "experience", "projects", "education", "certifications", "skills")
 
@@ -92,8 +125,20 @@ HARD_RULES = """HARD RULES
   posting's terms or to follow the style guide.
 - Lead with the role the framing guidance names for this kind of posting
   (set "lead_role" to that employer); up to 5 bullets for it, up to 3 for
-  every other role. Up to 3 projects, only if relevant. Up to 4 skill
-  categories with up to 12 items each, posting terms first.
+  every other role. Include every role in the library, most recent first,
+  so the career shows its full length; the oldest or least relevant roles
+  get 1 or 2 bullets rather than being dropped. Up to 3 projects, only if
+  relevant. Up to 4 skill categories with up to 12 items each, posting
+  terms first.
+- The page holds about 400 words once every role is listed. Budget:
+  lead role 4 or 5 bullets, the other current role 2 or 3, older roles 1
+  each (2 for the one most relevant to this posting), 1 or 2 projects, 4
+  skill categories of 6 to 9 items. Aim for 380 to 450 words in total.
+  Order bullets within a role by importance: if the page overflows, the
+  last bullet of the oldest roles is cut first.
+- Tense: bullets for a role whose dates end in "present" use the plain
+  present tense with no -s (Lead, Run, Manage); past roles use the past
+  tense (Led, Ran, Managed). Never the third-person -s form (Leads).
 - No first person. Return ONLY the JSON object, no prose, no fences."""
 
 DRAFT_PROMPT = """Write the content of a tailored one-page resume for the job posting below,
@@ -138,8 +183,10 @@ Do these things and nothing else:
    the matching skills category. If the library does not support a term,
    leave it out and say so in revision_notes.
 2. Style violations to fix: {violations}
-3. Keep every bullet count, word budget and section as it is. Never add or
-   change a number, employer, date, or the lead_role.
+3. Keep every bullet count, word budget and section as it is. Keep every
+   posting term the draft already uses (do not swap "data center" for
+   "AI infrastructure"; use both). Never add or change a number, employer,
+   date, or the lead_role.
 
 {hard_rules}
 
@@ -287,6 +334,38 @@ help helps helped provide provides provided perform performs performed conduct c
 execute executes executed complete completes completed achieve achieves achieved earn earns earned
 convert converts converted turn turns turned bring brings brought take takes took make makes made
 give gives gave keep keeps kept hold holds held drove built
+formulate formulates formulated architect architects architected commercialize commercializes
+commercialized position positions positioned benchmark benchmarks benchmarked standardize
+standardizes standardized consolidate consolidates consolidated streamline streamlines streamlined
+expand expands expanded accelerate accelerates accelerated align aligns aligned assemble assembles
+assembled budget budgets budgeted capture captures captured chair chairs chaired coach coaches
+coached commission commissions commissioned configure configures configured decrease decreases
+decreased demonstrate demonstrates demonstrated devise devises devised diagnose diagnoses diagnosed
+document documents documented double doubles doubled draft drafts drafted eliminate eliminates
+eliminated enable enables enabled engage engages engaged ensure ensures ensured estimate estimates
+estimated examine examines examined expedite expedites expedited facilitate facilitates
+facilitated finalize finalizes finalized fix fixes fixed frame frames framed fund funds funded
+identify identifies identified influence influences influenced initiate initiates initiated
+inspect inspects inspected install installs installed institute institutes instituted introduce
+introduces introduced investigate investigates investigated issue issues issued justify justifies
+justified lower lowers lowered market markets marketed measure measures measured migrate migrates
+migrated modernize modernizes modernized monitor monitors monitored negotiate open opens opened
+organize organizes organized outline outlines outlined package packages packaged pilot pilots
+piloted pitch pitches pitched prepare prepares prepared prevent prevents prevented process
+processes processed program programs programmed propose proposes proposed prototype prototypes
+prototyped prove proves proved qualify qualifies qualified raise raises raised rebuild rebuilds
+rebuilt recommend recommends recommended reconcile reconciles reconciled redesign redesigns
+redesigned refine refines refined relaunch relaunches relaunched remediate remediates remediated
+renegotiate renegotiates renegotiated reorganize reorganizes reorganized repair repairs repaired
+replace replaces replaced represent represents represented rewrite rewrites rewrote screen screens
+screened shorten shortens shortened simplify simplifies simplified solve solves solved staff
+staffs staffed start starts started stand stands stood strengthen strengthens strengthened submit
+submits submitted supervise supervises supervised sustain sustains sustained target targets
+targeted teach teaches taught tender tenders tendered tighten tightens tightened triple triples
+tripled tune tunes tuned unify unifies unified update updates updated upgrade upgrades upgraded
+verify verifies verified visualize visualizes visualized calibrate calibrates calibrated
+contribute contributes contributed control controls controled controlled enhance enhances enhanced
+participate participates participated place places placed rate rates rated sort sorts sorted
 """.split())
 
 
@@ -339,6 +418,8 @@ def style_lint(content: dict) -> list[str]:
             first = re.sub(r"[^a-z]", "", low.split(" ", 1)[0]) if "bullet" in label else ""
             if first and first not in VERBS:
                 flags.append(f"{label}: does not open with a verb ('{first}')")
+            elif first and _third_person(first):
+                flags.append(f"{label}: third-person '{first}' (use '{_third_person(first)}')")
     if _words(content.get("summary", "")) > SUMMARY_WORDS:
         flags.append(f"summary: {_words(content['summary'])} words (max {SUMMARY_WORDS})")
     for e in content.get("experience", []):
@@ -348,6 +429,27 @@ def style_lint(content: dict) -> list[str]:
                 flags.append(f"{e['employer']}: two bullets in a row open with '{a}'")
                 break
     return flags
+
+
+def _third_person(verb: str) -> str:
+    """The plain form when `verb` is a third-person -s form of a verb in
+    VERBS ('leads' -> 'lead', 'identifies' -> 'identify'); else ''."""
+    if not verb.endswith("s") or verb.endswith("ss"):
+        return ""
+    candidates = ([verb[:-3] + "y"] if verb.endswith("ies") else []) + \
+                 ([verb[:-2]] if verb.endswith("es") else []) + [verb[:-1]]
+    for base in candidates:
+        if base in VERBS:
+            return base
+    return ""
+
+
+def _fix_opener(text: str) -> tuple[str, list[str]]:
+    first, _, rest = text.partition(" ")
+    plain = _third_person(re.sub(r"[^a-z]", "", first.lower()))
+    if plain and rest:
+        return f"{plain.capitalize()} {rest}", [f"'{first}' to '{plain.capitalize()}'"]
+    return text, []
 
 
 def _fix_text(text: str) -> tuple[str, list[str]]:
@@ -375,6 +477,8 @@ def auto_fix(content: dict) -> list[str]:
         new = []
         for j, b in enumerate(e.get("bullets", [])):
             b2, fixes = _fix_text(b)
+            b2, opener = _fix_opener(b2)
+            fixes += opener
             new.append(b2)
             if fixes:
                 changed.append(f"{e['employer']} bullet {j + 1}: {', '.join(fixes)}")
@@ -423,6 +527,31 @@ def _number_violations(text: str, full: set, bare: set) -> list[str]:
         elif not has_unit and _bare(n) not in bare:
             bad.append(tok.strip())
     return bad
+
+
+SKILL_STOPWORDS = {"and", "or", "the", "of", "for", "with", "in", "on", "to", "a", "an", "us", "by", "at", "via"}
+
+
+def _library_words(library: str) -> set[str]:
+    words = set()
+    for w in re.findall(r"[a-z0-9]+", _norm(library)):
+        words.update({w, _stem(w), w[:-1] if w.endswith("s") else w})
+    return words
+
+
+def unsupported_skill_words(item: str, library_words: set[str]) -> list[str]:
+    """Content words of a skills item that appear nowhere in the library.
+    Skills are the one place the revision pass can plant a posting term
+    with no fact behind it ('renewable integration' on a resume whose
+    library never mentions renewables), so every word must be sourced."""
+    out = []
+    for w in re.findall(r"[a-z0-9]+", _norm(item)):
+        if w in SKILL_STOPWORDS or len(w) <= 2:
+            continue
+        forms = {w, _stem(w), w[:-1] if w.endswith("s") else w}
+        if not forms & library_words:
+            out.append(w)
+    return out
 
 
 def fabrication_guard(content: dict, library: str) -> list[str]:
@@ -478,8 +607,18 @@ def fabrication_guard(content: dict, library: str) -> list[str]:
     content["education"] = education
     content["certifications"] = [c for c in content.get("certifications", [])
                                  if ok_numbers(c, "certification")]
+    library_words = _library_words(library)
     for cat in content.get("skills", []):
-        cat["items"] = [i for i in cat["items"] if ok_numbers(i, f"skills {cat['category']}")]
+        kept = []
+        for item in cat["items"]:
+            if not ok_numbers(item, f"skills {cat['category']}"):
+                continue
+            missing = unsupported_skill_words(item, library_words)
+            if missing:
+                removed.append(f"skills {cat['category']}: '{item}' not in library ({', '.join(missing)})")
+                continue
+            kept.append(item)
+        cat["items"] = kept
     content["skills"] = [c for c in content.get("skills", []) if c["items"]]
     return removed
 
@@ -588,32 +727,60 @@ def word_count(content: dict) -> int:
     return _words(draft_text(content)) + sum(_words(e["employer"]) for e in content.get("experience", []))
 
 
-def estimate_lines(content: dict) -> int:
-    lines = 2  # name + contact
-    lines += 2 + sum(math.ceil(len(s) / CHARS_PER_LINE) for s in [content.get("summary", "")])
-    lines += 2
+def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
+    """Estimated height of the rendered page body in points, from the
+    theme's sizes and the renderer's spacing (render_docx is the source of
+    truth for those). Text wraps by character count."""
+    t = THEMES[theme]
+    lh = LINE_HEIGHT.get(t["font"], 1.22)
+    body = t["body"] * lh
+    cpl = CHARS_PER_LINE.get(t["font"], 115)
+    cpl_bullet = cpl + BULLET_INDENT_CHARS  # measured: indented lines hold more, not less
+
+    def wrapped(text: str, width: int) -> int:
+        return math.ceil(max(len(text), 1) / width)
+
+    h = t["name"] * lh + t["contact"] * lh + (4 if t["name_rule"] else 2)
+    sections = 2 + sum(bool(content.get(k)) for k in ("projects", "education", "certifications", "skills"))
+    h += sections * (t["heading_before"] + t["heading_size"] * lh + 2 + (3 if t["rule"] else 0))
+    h += wrapped(content.get("summary", ""), cpl) * body
     for e in content.get("experience", []):
-        lines += 1 + sum(math.ceil(len(b) / CHARS_PER_LINE) for b in e["bullets"])
-    if content.get("projects"):
-        lines += 2 + sum(math.ceil((len(p["name"]) + len(p["line"]) + 3) / CHARS_PER_LINE)
-                         for p in content["projects"])
-    for key in ("education", "certifications"):
-        if content.get(key):
-            lines += 2 + len(content[key])
-    if content.get("skills"):
-        lines += 2 + sum(math.ceil((len(c["category"]) + len(", ".join(c["items"])) + 2) / CHARS_PER_LINE)
-                         for c in content["skills"])
-    return lines
+        h += 4 + body + sum(wrapped(b, cpl_bullet) for b in e["bullets"]) * body
+    h += sum(wrapped(p["name"] + p["line"], cpl_bullet - 3) for p in content.get("projects", [])) * body
+    h += (len(content.get("education", [])) + len(content.get("certifications", []))) * body
+    h += sum(wrapped(c["category"] + ", ".join(c["items"]), cpl - 2) for c in content.get("skills", [])) * body
+    return round(h, 1)
 
 
-def _over_budget(content: dict) -> bool:
-    return estimate_lines(content) > LINE_BUDGET or word_count(content) > TOTAL_WORDS
+def _over_budget(content: dict, theme: str = DEFAULT_THEME) -> bool:
+    return estimate_height(content, theme) > PAGE_BUDGET_PT or word_count(content) > TOTAL_WORDS
 
 
 def trim_one(content: dict) -> str | None:
-    """Remove the lowest-priority item. Returns what was removed, or None."""
+    """Remove the lowest-priority item. Returns what was removed, or None.
+
+    Cheapest first: a third project; older roles' extra bullets (the
+    prompt asks the model to order bullets by importance); skills past
+    seven per category; the lead role's fifth bullet; a marginal oldest
+    role (keeping three); and only then the second project, skills past
+    five, the lead role's fourth bullet, the last project, and the oldest
+    role down to two."""
     exp = content.get("experience", [])
     projects = content.get("projects", [])
+
+    def cap_skills(n: int) -> str | None:
+        for c in content.get("skills", []):
+            if len(c["items"]) > n:
+                c["items"] = c["items"][:n]
+                return f"skills {c['category']} beyond {n} items"
+        return None
+
+    def drop_oldest_role(keep: int) -> str | None:
+        if len(exp) > keep:
+            e = exp.pop()
+            return f"role '{e['employer']}, {e['title']}'"
+        return None
+
     if len(projects) > 2:
         p = projects.pop()
         return f"project '{p['name']}'"
@@ -622,25 +789,30 @@ def trim_one(content: dict) -> str | None:
         if len(e["bullets"]) > 1:
             b = e["bullets"].pop()
             return f"{e['employer']} bullet '{b[:60]}'"
-    for c in content.get("skills", []):
-        if len(c["items"]) > 8:
-            c["items"] = c["items"][:8]
-            return f"skills {c['category']} beyond 8 items"
+    if (r := cap_skills(7)):
+        return r
+    if exp and len(exp[0]["bullets"]) > 4:
+        b = exp[0]["bullets"].pop()
+        return f"{exp[0]['employer']} bullet '{b[:60]}'"
+    if (r := drop_oldest_role(3)):
+        return r
+    if len(projects) > 1:
+        p = projects.pop()
+        return f"project '{p['name']}'"
+    if (r := cap_skills(5)):
+        return r
     if exp and len(exp[0]["bullets"]) > 3:
         b = exp[0]["bullets"].pop()
         return f"{exp[0]['employer']} bullet '{b[:60]}'"
     if projects:
         p = projects.pop()
         return f"project '{p['name']}'"
-    if len(exp) > 2:
-        e = exp.pop()
-        return f"role '{e['employer']}, {e['title']}'"
-    return None
+    return drop_oldest_role(2)
 
 
-def fit_to_page(content: dict) -> list[str]:
+def fit_to_page(content: dict, theme: str = DEFAULT_THEME) -> list[str]:
     trimmed = []
-    while _over_budget(content):
+    while _over_budget(content, theme):
         removed = trim_one(content)
         if removed is None:
             break
@@ -681,30 +853,6 @@ def _contact_line(header: dict) -> str:
                                   header.get("linkedin"), header.get("github")) if x)
 
 
-THEMES = {
-    # Ruled small-caps headings, employer first. Reads like a well-set
-    # traditional resume.
-    "classic": dict(font="Calibri", body=10.5, name=16, name_color=None, contact=9.5,
-                    contact_color=None, name_rule=False, heading_size=9.5,
-                    heading_color="333333", heading_spacing=0, heading_before=7,
-                    rule=True, rule_color="999999", rule_size=6, role_order="employer",
-                    dates_italic=True, dates_color=None, label_color=None),
-    # No rules: letter-spaced slate headings, Arial, title before employer,
-    # grey dates. The quiet modern look.
-    "modern": dict(font="Arial", body=10, name=18, name_color="1F2933", contact=9,
-                   contact_color="5B6470", name_rule=True, heading_size=8.5,
-                   heading_color="2F4F6F", heading_spacing=30, heading_before=9,
-                   rule=False, rule_color="D9DDE2", rule_size=4, role_order="title",
-                   dates_italic=False, dates_color="5B6470", label_color="2F4F6F"),
-    # One accent colour on the name, headings and their rules; otherwise
-    # classic bones.
-    "accent": dict(font="Calibri", body=10.5, name=16, name_color="1B4965", contact=9.5,
-                   contact_color="5B6470", name_rule=False, heading_size=9,
-                   heading_color="1B4965", heading_spacing=20, heading_before=6,
-                   rule=True, rule_color="1B4965", rule_size=8, role_order="employer",
-                   dates_italic=True, dates_color="5B6470", label_color="1B4965"),
-}
-DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "accent")
 
 
 def render_docx(content: dict, header: dict, job: Job | None, path: Path,
@@ -963,7 +1111,8 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
 
     removals = fabrication_guard(content, library)
     fixes = auto_fix(content)
-    trimmed = fit_to_page(content)
+    theme = (config or {}).get("resume_theme", DEFAULT_THEME)
+    trimmed = fit_to_page(content, theme)
 
     date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     stem = _unique_stem(f"{date}-{_slug(job)}")
@@ -971,8 +1120,7 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
     md_path = DRAFTS_DIR / f"{stem}.md"
     pdf_path, pages = None, None
     for _ in range(MAX_PDF_ROUNDS):
-        render_docx(content, header, job, docx_path,
-                    theme=(config or {}).get("resume_theme", DEFAULT_THEME))
+        render_docx(content, header, job, docx_path, theme=theme)
         pdf_path = to_pdf(docx_path)
         pages = page_count(pdf_path) if pdf_path else None
         if pages is None or pages <= 1:
@@ -1009,7 +1157,7 @@ def _main(argv: list[str]) -> int:
     if argv[0] == "check":
         print("style:", *style_lint(content), sep="\n  ")
         print("guard:", *fabrication_guard(content, library), sep="\n  ")
-        print("lines ~", estimate_lines(content), "| words", word_count(content))
+        print("height ~", estimate_height(content), "pt of", PAGE_BUDGET_PT, "| words", word_count(content))
         return 0
     stem = Path(argv[2])
     trimmed = fit_to_page(content)
@@ -1019,7 +1167,7 @@ def _main(argv: list[str]) -> int:
     pdf = to_pdf(docx_path)
     print(f"wrote {docx_path} and {stem.with_suffix('.md')}"
           + (f"; pdf {pdf} ({page_count(pdf)} page(s))" if pdf else "; no soffice, no pdf"))
-    print("lines ~", estimate_lines(content), "| words", word_count(content),
+    print("height ~", estimate_height(content, theme), "pt of", PAGE_BUDGET_PT, "| words", word_count(content),
           "| trimmed:", trimmed or "nothing")
     return 0
 
