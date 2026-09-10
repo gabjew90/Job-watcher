@@ -14,16 +14,6 @@
       ]
     },
     {
-      "employer": "Pacific Gas and Electric",
-      "title": "Senior Grid Innovation Engineer",
-      "dates": "June 2023 – present",
-      "bullets": [
-        "Manage PG&E's Integration Capacity Analysis platform, the interconnection and hosting-capacity data system, with its vendors and contractors.",
-        "Wrote the business cases that won approval for a non-wires alternatives planning tool and a hosting-capacity tool.",
-        "Author regulatory compliance reports and present them to regulators."
-      ]
-    },
-    {
       "employer": "LG Chem",
       "title": "Senior Systems Engineer, Energy Storage",
       "dates": "Feb 2018 – Feb 2021",
@@ -53,8 +43,14 @@
     }
   ],
   "projects": [
-    {"name": "Institutional Research Pulse Bot", "line": "Multi-agent system that reads 100 to 200 sell-side research PDFs a day and publishes a daily market brief. Has a paying customer."},
-    {"name": "Weekly Options Pre-Trade Brief", "line": "FastAPI decision-support dashboard on the Unusual Whales API with a 60-second refresh and Parquet archives for backtesting."}
+    {
+      "name": "Institutional Research Pulse Bot",
+      "line": "Multi-agent system that reads 100 to 200 sell-side research PDFs a day and publishes a daily market brief. Has a paying customer."
+    },
+    {
+      "name": "Weekly Options Pre-Trade Brief",
+      "line": "FastAPI decision-support dashboard on the Unusual Whales API with a 60-second refresh and Parquet archives for backtesting."
+    }
   ],
   "education": [
     "MBA, Product Management and Strategy, UC Davis Graduate School of Management, 2022",
@@ -64,10 +60,49 @@
     "California Professional Engineer #M38303, Thermal and Fluid Systems, 2016"
   ],
   "skills": [
-    {"category": "BESS", "items": ["system sizing", "PCS and BMS", "degradation and thermal modeling", "augmentation optimization", "UL and NFPA codes", "techno-economic analysis"]},
-    {"category": "Grid and utility", "items": ["interconnection and hosting capacity", "non-wires alternatives", "demand response", "ERCOT markets", "forwards, tolling and swaps"]},
-    {"category": "Product and commercial", "items": ["product strategy", "voice of customer", "market requirements", "proposal tendering", "contract negotiation", "financial modeling"]},
-    {"category": "Software and AI", "items": ["Python", "SQL", "TypeScript", "Anthropic and Gemini APIs", "MCP", "FastAPI", "GitHub Actions"]}
+    {
+      "category": "BESS",
+      "items": [
+        "system sizing",
+        "PCS and BMS",
+        "degradation and thermal modeling",
+        "augmentation optimization",
+        "UL and NFPA codes",
+        "techno-economic analysis"
+      ]
+    },
+    {
+      "category": "Grid and utility",
+      "items": [
+        "interconnection",
+        "demand response",
+        "ERCOT markets",
+        "forwards, tolling and swaps"
+      ]
+    },
+    {
+      "category": "Product and commercial",
+      "items": [
+        "product strategy",
+        "voice of customer",
+        "market requirements",
+        "proposal tendering",
+        "contract negotiation",
+        "financial modeling"
+      ]
+    },
+    {
+      "category": "Software and AI",
+      "items": [
+        "Python",
+        "SQL",
+        "TypeScript",
+        "Anthropic and Gemini APIs",
+        "MCP",
+        "FastAPI",
+        "GitHub Actions"
+      ]
+    }
   ],
   "gaps": [
     "Preconstruction budgeting and estimating at VP scope",

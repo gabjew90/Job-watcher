@@ -59,7 +59,8 @@ def test_thesis_and_framing_parse():
 def test_normalize_reorders_to_lead_role_and_clips():
     raw = copy.deepcopy(FIXTURE)
     raw["lead_role"] = "PG&E"
-    raw["experience"][1]["bullets"] += ["Extra one.", "Extra two.", "Extra three."]
+    pge = next(e for e in raw["experience"] if e["employer"] == "Pacific Gas and Electric")
+    pge["bullets"] += ["Extra one.", "Extra two.", "Extra three.", "Extra four."]
     c = resume.normalize(raw)
     assert c["experience"][0]["employer"] == "Pacific Gas and Electric"
     assert len(c["experience"][0]["bullets"]) == resume.LEAD_BULLETS
@@ -116,7 +117,7 @@ def test_guard_drops_unknown_employer_and_dates():
     c = content()
     c["experience"].append({"employer": "Tesla", "title": "Director", "dates": "2019 – 2020",
                             "bullets": ["Led things."]})
-    c["experience"][2]["dates"] = "Feb 2011 – Feb 2021"  # LG Chem, wrong year
+    c["experience"][1]["dates"] = "Feb 2011 – Feb 2021"  # LG Chem, wrong year
     removed = resume.fabrication_guard(c, LIBRARY)
     employers = [e["employer"] for e in c["experience"]]
     assert "Tesla" not in employers and "LG Chem" not in employers

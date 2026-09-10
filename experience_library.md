@@ -9,18 +9,21 @@ from Gabriel's own account; other roles still in the compiled form.
 
 ## FRAMING GUIDANCE FOR DRAFTS
 
-The two current roles below (LG Energy Solution and PG&E) are CONCURRENT —
-both run to present. Per application, LEAD with whichever fits the target
-role and give it the fuller treatment:
+Career shown on resumes in this version: PG&E (2013–2016) → Comfort
+Energy (2016–2017) → LG Chem (2018–2021) → LG Energy Solution (2021–
+present). The concurrent PG&E Senior Grid Innovation Engineer role is
+deliberately left out of this version (owner decision 2026-09; its text is
+kept in experience_library_archive.md, which drafts never read). Lead
+with LG Energy Solution and give it the fuller treatment:
 - Product / BESS / datacenter-energy / hyperscaler roles → lead LG Energy
   Solution (Senior PM, grid-scale BESS for AI datacenters).
-- Utility / interconnection / grid-planning / regulatory roles → lead PG&E
-  (Senior Grid Innovation Engineer, ICA platform).
+- Utility / interconnection / grid-planning / regulatory roles → still lead
+  LG, choosing its interconnection and AI data center bullets, and give
+  the 2013–2016 PG&E role two bullets.
 - Prefab / modular / EMS / contract-manufacturing postings (Flex, Jabil
   peers, container suppliers) → lead LG and put the Jabil standardized
   container bullets first; name Jabil.
-Never invent an end date for either role, and don't claim more hours or
-scope for one than this file states.
+Never invent an end date for the LG role.
 
 ## Header
 
@@ -37,9 +40,7 @@ Energy product leader at the intersection of power engineering, energy
 finance, and applied AI — the translator between grid physics, project
 economics, and data. Senior Product Manager for grid-scale battery energy
 storage systems (BESS) at LG Energy Solution, focused on AI datacenter
-power customers (Meta, Google, NVIDIA, Microsoft); concurrently Senior
-Grid Innovation Engineer at PG&E (interconnection/hosting-capacity
-platform). Licensed Professional Engineer, MBA (STEM, Product Management/
+power customers (Meta, Google, NVIDIA, Microsoft). Licensed Professional Engineer, MBA (STEM, Product Management/
 Strategy) with energy-markets finance. 12+ years across the energy
 industry — utility programs, HVAC design-build, lithium-ion storage from
 systems engineering to product. Ships production AI/multi-agent systems
@@ -52,8 +53,7 @@ summaries and cover letters — adapt which leg gets emphasis to the role.)
 
 ### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2021 – present)
 
-(One continuous role and title from Feb 2021. Concurrent with the PG&E
-role below. Owner-confirmed 2026-09.)
+(One continuous role and title from Feb 2021. Owner-confirmed 2026-09.)
 
 Facts, for context (not resume prose): LG traditionally sold battery packs
 and racks to system integrators, who did bespoke on-site containerization,
@@ -115,21 +115,6 @@ Summary sentences (pick, do not rewrite; each under 30 words):
 - Senior product manager for grid-scale BESS with 8 years in lithium-ion storage, from deal engineering to product line ownership.
 - Opened LG's AI data center segment and made the case for the 2-hour product that became its flagship.
 - Licensed Professional Engineer with an MBA in product strategy.
-
-### Pacific Gas and Electric — Senior Grid Innovation Engineer (June 2023 – present)
-
-(Concurrent with the LG Energy Solution role above.)
-
-- Managed development of the Integration Capacity Analysis (ICA) platform —
-  the hosting-capacity/interconnection data platform — coordinating vendors,
-  contractors, and cross-functional stakeholders to meet timelines and
-  requirements.
-- Developed business cases and secured management approval for internal
-  products, including a Non-Wires Alternatives planning tool and an internal
-  tool leveraging ICA load hosting-capacity data, via user interviews,
-  quantified pain points, and actionable requirements.
-- Authored reports and delivered presentations for regulatory compliance and
-  stakeholder/regulator communication.
 
 ### LG Chem — Senior Systems Engineer, Energy Storage (Feb 2018 – Feb 2021)
 
@@ -203,9 +188,9 @@ Summary sentences (pick, do not rewrite; each under 30 words):
 - BESS: lithium-ion system design, PCS, BMS, degradation/thermal modeling,
   augmentation optimization, system sizing, techno-economic analysis, fire
   safety, codes & standards (UL, NFPA), testing & certification
-- Grid/utility: interconnection & hosting capacity (ICA), non-wires
-  alternatives, energy efficiency, demand response, US energy markets
-  (ERCOT), electricity financial contracts (forwards, tolling, swaps)
+- Grid/utility: interconnection, energy efficiency, demand response, US
+  energy markets (ERCOT), electricity financial contracts (forwards,
+  tolling, swaps)
 - Product & commercial: product strategy, VOC, market requirements,
   competitive analysis, proposal tendering, contract negotiation, financial
   modeling, statistical forecasting, linear/non-linear optimization, US GAAP
