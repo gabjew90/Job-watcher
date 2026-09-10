@@ -1,5 +1,5 @@
 {
- "_readme": "Frozen scoring eval set. Each case is a real posting as it was scored (many were title-only backfills \u2014 descriptions reflect that), the correct band per owner feedback, and the reason. Every issue cited by a feedback.md rule must be covered by a case citing that issue (enforced per-issue by eval_runner, no grandfathering). Pass = exact band; adjacent band = warn; >=2 bands off, or any top/misfit confusion = fail. owner_verified=false means the label was derived (from prior model output or rubric intent), not confirmed by the owner \u2014 treat failures on those as questions, not regressions.",
+ "_readme": "Frozen scoring eval set. Each case is a real posting as it was scored (many were title-only backfills — descriptions reflect that), the correct band per owner feedback, and the reason. Every issue cited by a feedback.md rule must be covered by a case citing that issue (enforced per-issue by eval_runner, no grandfathering). Pass = exact band; adjacent band = warn; >=2 bands off, or any top/misfit confusion = fail. owner_verified=false means the label was derived (from prior model output or rubric intent), not confirmed by the owner — treat failures on those as questions, not regressions.",
  "cases": [
   {
    "id": "negotiator-google",
@@ -36,7 +36,7 @@
   },
   {
    "id": "battery-pm-gsr",
-   "title": "Product Manager \u2013 Battery Customer Strategy Lead",
+   "title": "Product Manager – Battery Customer Strategy Lead",
    "company": "Global Software Resources",
    "location": "Pleasanton, CA",
    "description": "",
@@ -129,7 +129,7 @@
    "location": "US Remote",
    "description": "Lead product design for back-office workflows: design systems, IC design management.",
    "expected_band": "weak",
-   "reason": "Owner-adjudicated 2026-08-28: 'I like AI tools at an HVAC SaaS but I don't specialize in UX design' \u2014 design-craft roles are weak even at thermal-adjacent companies",
+   "reason": "Owner-adjudicated 2026-08-28: 'I like AI tools at an HVAC SaaS but I don't specialize in UX design' — design-craft roles are weak even at thermal-adjacent companies",
    "source": "organic",
    "owner_verified": true
   },
@@ -140,7 +140,7 @@
    "location": "US",
    "description": "",
    "expected_band": "misfit",
-   "reason": "Owner: 'Too technical' \u2014 structural design engineering is out of skillset even at mission-pure grid-software companies (issue #28)",
+   "reason": "Owner: 'Too technical' — structural design engineering is out of skillset even at mission-pure grid-software companies (issue #28)",
    "source": "feedback",
    "owner_verified": true
   },
@@ -149,7 +149,7 @@
    "title": "Energy Manager, Power Delivery",
    "company": "Meta",
    "location": "United States (Remote)",
-   "description": "Our data centers are the foundation upon which our rapidly scaling infrastructure efficiently operates to deliver our innovative services. Meta is seeking an experienced, organized and individual to support the development of cost\\-effective energy solutions for our growing fleet of data centers. In this role, you will be a key contributor to Meta\u2019s data center energy strategy, specifically supporting the energy infrastructure arrangements of our data centers through various stages of development including site selection, construction and operations. Your responsibilities will include: supporting the development of interconnection and energy supply agreements, monitoring progress towards key development milestones, developing processes and building and maintaining relationships with key in",
+   "description": "Our data centers are the foundation upon which our rapidly scaling infrastructure efficiently operates to deliver our innovative services. Meta is seeking an experienced, organized and individual to support the development of cost\\-effective energy solutions for our growing fleet of data centers. In this role, you will be a key contributor to Meta’s data center energy strategy, specifically supporting the energy infrastructure arrangements of our data centers through various stages of development including site selection, construction and operations. Your responsibilities will include: supporting the development of interconnection and energy supply agreements, monitoring progress towards key development milestones, developing processes and building and maintaining relationships with key in",
    "expected_band": "strong",
    "reason": "Scope-based seniority: flat big-tech title but senior described scope and $202-273k pay; excellent domain fit must not be capped by title-only seniority (owner-directed rule, 2026-08-31)",
    "source": "feedback",
@@ -160,7 +160,7 @@
    "title": "Senior Director, Development",
    "company": "Crusoe",
    "location": "Dallas, TX - US",
-   "description": "s, and be part of a high-performing team that believes in each other, come build with us at Crusoe. ABOUT THIS ROLE Crusoe is seeking a Senior Director, Development to serve as the strategic architect and executive lead for our flagship AI data center campuses. These are not just buildings; they are multi-billion dollar infrastructure assets that represent the frontier of AI compute. In this high-impact leadership role, you will own the end-to-end development lifecycle for our largest capital investments. You are responsible for transforming raw land and power into operational excellence, navigating the complexities of large-scale industrial development, and mitigating executive-level risk. You will lead a multidisciplinary ecosystem of internal experts and external partners to deliver the physical engine of Crusoe\u2019s growth. Location: This role is required to be in-office 5 days per week in our Dallas, TX office. WHAT YOU\u2019LL BE WORKING ON - Executive Project Ownership: Lead the strategic execution of multi-billion dollar AI campuses, serving as the ultimate point of accountability for delivery, budget, and quality. - Strategic Lifecycle Management: Drive the full development stack\u2014from site selection and entitlement strategy to complex municipal negotiations and final commissioning. - High-Stakes Stakeholder Diplomacy: Act as the primary face of Crusoe to government officials, utility executives, and community leaders to secure critical entitlements and infrastructure. - Advanced Risk Orchestration: Anticipate macroeconomic, regulatory, and technical bottlenecks before they",
+   "description": "s, and be part of a high-performing team that believes in each other, come build with us at Crusoe. ABOUT THIS ROLE Crusoe is seeking a Senior Director, Development to serve as the strategic architect and executive lead for our flagship AI data center campuses. These are not just buildings; they are multi-billion dollar infrastructure assets that represent the frontier of AI compute. In this high-impact leadership role, you will own the end-to-end development lifecycle for our largest capital investments. You are responsible for transforming raw land and power into operational excellence, navigating the complexities of large-scale industrial development, and mitigating executive-level risk. You will lead a multidisciplinary ecosystem of internal experts and external partners to deliver the physical engine of Crusoe’s growth. Location: This role is required to be in-office 5 days per week in our Dallas, TX office. WHAT YOU’LL BE WORKING ON - Executive Project Ownership: Lead the strategic execution of multi-billion dollar AI campuses, serving as the ultimate point of accountability for delivery, budget, and quality. - Strategic Lifecycle Management: Drive the full development stack—from site selection and entitlement strategy to complex municipal negotiations and final commissioning. - High-Stakes Stakeholder Diplomacy: Act as the primary face of Crusoe to government officials, utility executives, and community leaders to secure critical entitlements and infrastructure. - Advanced Risk Orchestration: Anticipate macroeconomic, regulatory, and technical bottlenecks before they",
    "expected_band": "possible",
    "reason": "Site-development execution leadership (land-to-commissioning lifecycle): owner has no direct development experience; company/industry fit does not lift it (from issue #30: 'great company and industry fit in AI infrastructure; cons: no direct development experience'; was top)",
    "source": "feedback",
@@ -204,7 +204,7 @@
    "title": "Vice President, Preconstruction, NA",
    "company": "Vantage Data Centers",
    "location": "Denver, Colorado",
-   "description": "he front-end of the process of ensuring we have the critical capacity required to meet the evolving requirements of our wholesale and hyperscale customer base. We evaluate supply, demand, pricing, network, power, and a myriad of other factors when developing our market and site plans. We then acquire sites that align with those plans. The team collaborates with Commercial Management, Sales, Solution Engineering, Design Engineering, Construction, Operations, Finance, and Senior Management along the way. We also help ensure optimal revenue realization post-construction through development of commercial constructs and pricing that aligns to the objectives of both Vantage and our customers. Position Overview This role can be based in any of our US locations: Denver, CO; Phoenix, AZ; Santa Clara, CA; or Ashburn, VA. The Vice President, Preconstruction is responsible for leading the strategic planning, design integration, and execution readiness of Vantage\u2019s hyperscale and AI-driven data center developments. This role drives the full preconstruction lifecycle\u2014from site validation and power feasibility through design development and transition to construction\u2014ensuring projects are optimized for large-scale deployment, accelerated delivery, and high-density performance. Grounded in Vantage\u2019s core values of trust, integrity, accountability, teamwork, responsibility, and agility, the VP, Preconstruction serves as a critical connector across development, design, and construction. This leader ensures projects are fully de-risked, power-aligned, and scalable to support multi-phase campu",
+   "description": "he front-end of the process of ensuring we have the critical capacity required to meet the evolving requirements of our wholesale and hyperscale customer base. We evaluate supply, demand, pricing, network, power, and a myriad of other factors when developing our market and site plans. We then acquire sites that align with those plans. The team collaborates with Commercial Management, Sales, Solution Engineering, Design Engineering, Construction, Operations, Finance, and Senior Management along the way. We also help ensure optimal revenue realization post-construction through development of commercial constructs and pricing that aligns to the objectives of both Vantage and our customers. Position Overview This role can be based in any of our US locations: Denver, CO; Phoenix, AZ; Santa Clara, CA; or Ashburn, VA. The Vice President, Preconstruction is responsible for leading the strategic planning, design integration, and execution readiness of Vantage’s hyperscale and AI-driven data center developments. This role drives the full preconstruction lifecycle—from site validation and power feasibility through design development and transition to construction—ensuring projects are optimized for large-scale deployment, accelerated delivery, and high-density performance. Grounded in Vantage’s core values of trust, integrity, accountability, teamwork, responsibility, and agility, the VP, Preconstruction serves as a critical connector across development, design, and construction. This leader ensures projects are fully de-risked, power-aligned, and scalable to support multi-phase campu",
    "expected_band": "weak",
    "reason": "Preconstruction/construction-delivery leadership at a hyperscale operator: owner says 'too construction focused' despite the power-feasibility framing (from issue #51; was top)",
    "source": "feedback",
@@ -220,6 +220,17 @@
    "reason": "'storage' here is block/file/object compute storage, not energy storage; an energy-first employer does not make a platform PM role energy work (from issue #52: 'wrong type of storage'; was top)",
    "source": "feedback",
    "owner_verified": false
+  },
+  {
+   "id": "product-line-director-flex",
+   "title": "Product Line Director, DC Power and BESS",
+   "company": "Flex",
+   "location": "USA, Remote",
+   "description": "Flex is the diversified manufacturing partner of choice that helps market-leading brands design, build and deliver innovative products that improve the world. A career at Flex offers the opportunity to make a difference and invest in your growth in a respectful, inclusive, and collaborative environment. If you are excited about a role but don't meet every bullet point, we encourage you to apply and join us to create the extraordinary. Job Summary To support our extraordinary teams who build great products and contribute to our growth, we’re looking to add a/an Product Line Director, DC Power and BESS. Reporting to the VP, Product Line Strategy & Business Development the Product Line Director, DC Power and BESS will lead the strategy, commercialization and portfolio development of Flex Critical Power’s emerging DC power and battery-energy storage solutions. Will establish the category through internal development, strategic partnerships and targeted market-entry programs, with a pathway to build a dedicated team as the business scales. What a typical day looks like: Define the strategy, roadmap and business case for DC power, 800VDC/HVDC distribution, DC PDUs, power conversion and BESS. Identify market-entry priorities across AI infrastructure, hyperscale, colocation, utility and industrial applications. Develop solution architectures linking DC distribution, BESS, controls, thermal systems and modular infrastructure. Lead strategic relationships with OEMs, battery providers, power-conversion suppliers and grid-management partners. Assess build, buy, license and partner oppo",
+   "expected_band": "top",
+   "reason": "Owner: 'perfect fit'. Product line strategy and commercialization of BESS at a prefab/EMS supplier selling into AI data centers is the core thesis; DC-power terms in the posting do not pull it down (from issue #98; scored top, confirmed)",
+   "source": "feedback",
+   "owner_verified": true
   }
  ]
 }
