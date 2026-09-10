@@ -81,8 +81,11 @@ built the standardized customer artifacts (reference designs, simulation
 data, PSCAD models) that shorten technical review. He set the fire safety
 requirements while the industry was still working out how to prove them
 (fire consultants, hazard mitigation analysis, deflagration CFD modeling)
-with UL 9540 as a core product requirement, and built the cost model from
-cell cost to system selling price plus customers' EPC cost. 8 years in
+with UL 9540 as a core product requirement (the container is UL 9540
+listed), and built the cost model from cell cost to system selling price
+plus customers' EPC cost, used to set the selling price and to compare
+inverter configurations. His battery modeling tools cut proposal
+turnaround from days to hours. 8 years in
 lithium-ion storage counting LG Chem (2018).
 
 Approved bullets (use verbatim; swap a word only for a posting term that
@@ -106,15 +109,16 @@ AI data center segment [aidc] [customer-facing] [commercialization]
 - Lead grid-scale BESS product strategy for AI data center customers Meta, Google, NVIDIA and Microsoft.
 
 Safety and certification [safety] [ul-9540] [codes]
-- Met UL 9540 on the container by setting fire safety requirements before the industry had settled how to prove them.
+- Achieved UL 9540 listing for the container by setting fire safety requirements before the industry had settled how to prove them.
 - Proved the container's fire safety with hazard mitigation analysis and deflagration CFD modeling, working with fire consultants.
 
 Cost and pricing [pricing] [cost-model] [business-case]
-- Built the cost model from cell cost to system selling price, plus customers' EPC cost, behind the container's pricing.
+- Set the container's selling price with a cost model from cell cost to system price, plus customers' EPC cost.
+- Chose the inverter configuration with a cell-to-system cost model that priced each option, including customers' EPC cost.
 - Set the product roadmap with business cases, competitor analyses and techno-economic feature models.
 
 Deal engineering, 2018 – 2021 [deal-engineering] [sizing] [technical-sales]
-- Cut proposal turnaround time with battery modeling tools for degradation, thermal and augmentation optimization.
+- Cut proposal turnaround from days to hours with battery modeling tools for degradation, thermal and augmentation optimization.
 - Sized and modeled lithium-ion systems for North American deals and wrote their contract technical exhibits.
 - Negotiated technical exhibits and bid clarifications with utilities, developers and consultants.
 - Built the US team's local knowledge base from HQ engineering resources.
