@@ -47,7 +47,7 @@ KEYWORD_MODEL = os.environ.get("JOBWATCH_KEYWORD_MODEL", "claude-haiku-4-5-20251
 # about 58 lines of body text; 54 leaves room for spacing drift.
 SUMMARY_WORDS = 60
 SENTENCE_WORDS = 30
-LEAD_BULLETS = 7
+LEAD_BULLETS = 8
 OTHER_BULLETS = 3
 BULLET_WORDS = 22
 MAX_PROJECTS = 3
@@ -133,10 +133,11 @@ HARD_RULES = """HARD RULES
   get 1 or 2 bullets rather than being dropped. Up to 3 projects, only if
   relevant. Up to 4 skill categories with up to 12 items each, posting
   terms first.
-- The page holds about 400 words with six roles and about 450 with
-  four. Budget: lead role 5 to 7 bullets, the next most relevant role 2
-  or 3, other roles 1 each, 1 or 2 projects, 4 skill categories of 6 to
-  9 items. Aim for 400 to 450 words in total.
+- {budget}
+- Summary: 2 or 3 of the library's summary sentences, verbatim, in the
+  order that fits the posting. Do not compose a new one.
+- Skills items in lowercase except proper nouns and acronyms (Python,
+  PSCAD, BESS).
   Order bullets within a role by importance: if the page overflows, the
   last bullet of the oldest roles is cut first.
 - Tense: ongoing responsibilities in a current role use the plain
@@ -205,6 +206,21 @@ CURRENT DRAFT:
 
 
 # ------------------------------------------------------- library parsing
+
+def budget_line(n_roles: int) -> str:
+    """Structural budget for one page, by how many roles the library has:
+    role headings cost about a line and a half each, so fewer roles mean
+    a fuller lead role."""
+    if n_roles <= 3:
+        lead, words = "7 or 8", "420 to 470"
+    elif n_roles == 4:
+        lead, words = "5 to 7", "400 to 450"
+    else:
+        lead, words = "4 or 5", "380 to 430"
+    return (f"The library has {n_roles} roles. Budget for one page: lead role {lead} "
+            "bullets, the next most relevant role 2 or 3, other roles 1 or 2, 1 or 2 "
+            f"projects, 4 skill categories of 6 to 9 items. Aim for {words} words in total.")
+
 
 def _section(text: str, heading: str) -> str:
     m = re.search(rf"^## {re.escape(heading)}[^\n]*\n(.*?)(?=^## |\Z)", text, re.S | re.M)
@@ -1084,8 +1100,9 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
     notes_block = (f"\nREQUESTER EMPHASIS NOTES (honor these):\n{notes.strip()}\n"
                    if notes and notes.strip() else "")
 
+    hard_rules = HARD_RULES.replace("{budget}", budget_line(len(employers_from_library(library))))
     raw = triage._run_claude(DRAFT_PROMPT.format(
-        schema=SCHEMA, hard_rules=HARD_RULES, style=style_text, notes=notes_block,
+        schema=SCHEMA, hard_rules=hard_rules, style=style_text, notes=notes_block,
         thesis=thesis_from_profile(profile_text), framing=framing_from_library(library),
         job=posting, library=library), DRAFT_MODEL)
     content = normalize(parse_object(raw))
@@ -1109,7 +1126,7 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
             revised = normalize(parse_object(triage._run_claude(REVISE_PROMPT.format(
                 missing=", ".join(missing) or "(none)",
                 violations="; ".join(violations) or "(none)",
-                hard_rules=HARD_RULES, style=style_text, library=library,
+                hard_rules=hard_rules, style=style_text, library=library,
                 draft=json.dumps(content, indent=1)), DRAFT_MODEL)))
             revision_notes = revised.pop("revision_notes", [])
             revised["gaps"] = revised["gaps"] or content["gaps"]
