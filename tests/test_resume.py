@@ -333,3 +333,15 @@ def test_lint_flags_duty_bullets_and_lists():
     flags = "\n".join(resume.style_lint(c))
     assert "carries no number" in flags and "reads as a list" in flags
     assert "Supported 12" not in flags and flags.count("carries no number") == 1
+
+
+def test_repetition_lint_flags_a_name_used_three_times():
+    c = content()
+    assert resume.repetition_lint(c) == []
+    c["experience"][0]["bullets"][:3] = [
+        "Partnered with Jabil to build the container.",
+        "Designed the container with Jabil.",
+        "Shipped the Jabil container to Texas.",
+    ]
+    flags = resume.repetition_lint(c)
+    assert any("'Jabil' appears in 3" in f for f in flags)

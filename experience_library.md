@@ -88,51 +88,48 @@ inverter configurations. His battery modeling tools cut proposal
 turnaround from days to hours. 8 years in
 lithium-ion storage counting LG Chem (2018).
 
-Approved bullets (use verbatim; swap a word only for a posting term that
-names the same thing; tags guide selection). Written result first: what
-changed and the number, then how.
+Approved bullets. One bullet per fact: never use two bullets that carry
+the same fact, and never restate a bullet's fact in the summary. Lines
+marked ALT are alternates for the bullet above them, one or the other.
+Use verbatim; swap a word only for a posting term that names the same
+thing. Tags guide selection.
 
 Standardized container, Jabil [prefab] [partnerships] [commercialization]
-- Replaced bespoke on-site integration, the market's biggest pain point, with LG's first prefabricated ESS container, built with Jabil.
-- Designed the 2.86 MWh pre-integrated container with Jabil, moving LG from selling racks to integrators to selling a finished product.
-- Deployed the standardized container at 584 MWh on Fifth Standard in California and 361 MWh on Bright Arrow in Texas.
+- Replaced bespoke on-site integration, the market's biggest pain point, with LG's first prefabricated 2.86 MWh ESS container, built with Jabil.
+  ALT: Designed the 2.86 MWh pre-integrated container with Jabil, moving LG from selling racks to integrators to selling a finished product.
+- Deployed 584 MWh on Fifth Standard in California and 361 MWh on Bright Arrow in Texas with the standardized container.
 
 2-hour AC-integrated container [product-strategy] [business-case] [npi]
 - Won approval for a 2-hour AC-integrated BESS, against a plan to stay at 4-hour, with a techno-economic business case.
-- Turned the 2-hour container into LG's flagship for AI data centers, with about 3 GWh booked for 2027.
-- Priced feature trade-offs in EPC and installation cost, energy density and shipping weight to set the 2-hour container's requirements.
-- Took the 2-hour container from requirements to launch, owning vendor coordination, supply chain planning and customer documentation.
+- Booked about 3 GWh for 2027 on the 2-hour product, now LG's flagship for AI data centers.
+- Priced feature trade-offs in EPC and installation cost, energy density and shipping weight to set the product requirements.
+  ALT: Took the 2-hour container from requirements to launch, owning vendor coordination, supply chain planning and customer documentation.
 
 AI data center segment [aidc] [customer-facing] [commercialization]
 - Opened the AI data center segment for LG's BESS by defining its ride-through, interconnection and bring-your-own-generation feature set.
 - Cut technical review time on data center deals with standard reference designs, simulation data and PSCAD models.
-- Lead grid-scale BESS product strategy for AI data center customers Meta, Google, NVIDIA and Microsoft.
 
 Safety and certification [safety] [ul-9540] [codes]
-- Achieved UL 9540 listing for the container by setting fire safety requirements before the industry had settled how to prove them.
-- Proved the container's fire safety with hazard mitigation analysis and deflagration CFD modeling, working with fire consultants.
+- Achieved UL 9540 listing for the container, setting fire safety requirements and running hazard mitigation analysis and deflagration CFD with fire consultants.
+  ALT: Achieved UL 9540 listing for the container by setting fire safety requirements before the industry had settled how to prove them.
 
 Cost and pricing [pricing] [cost-model] [business-case]
-- Set the container's selling price with a cost model from cell cost to system price, plus customers' EPC cost.
-- Chose the inverter configuration with a cell-to-system cost model that priced each option, including customers' EPC cost.
-- Set the product roadmap with business cases, competitor analyses and techno-economic feature models.
+- Set the container's selling price and chose its inverter configuration with a cell-to-system cost model that included customers' EPC cost.
 
 Deal engineering, 2018 – 2021 [deal-engineering] [sizing] [technical-sales]
 - Cut proposal turnaround from days to hours with battery modeling tools for degradation, thermal and augmentation optimization.
-- Sized and modeled lithium-ion systems for North American deals and wrote their contract technical exhibits.
-- Negotiated technical exhibits and bid clarifications with utilities, developers and consultants.
+- Sized lithium-ion systems for North American deals and negotiated their technical exhibits and bid clarifications with utilities and developers.
 - Built the US team's local knowledge base from HQ engineering resources.
 
-Scope, use at most one [scope]
+Scope, use at most one, only when the page has room [scope]
 - Own new product development for grid-scale ESS, from voice of customer through market requirements.
-- Own system engineering of the container across battery, enclosure, PCS and controls.
 
-Summary sentences (pick, do not rewrite; each under 30 words):
-- Product manager who took LG Energy Solution from battery racks to a prefabricated containerized ESS, partnering with Jabil on the first product.
-- Built the 2-hour AC-integrated BESS now booked at about 3 GWh for AI data centers.
-- Senior product manager for grid-scale BESS with 8 years in lithium-ion storage, from deal engineering to product line ownership.
-- Opened LG's AI data center segment and made the case for the 2-hour product that became its flagship.
+Summary sentences (pick 2 or 3, verbatim; they carry no fact that a
+bullet carries, so nothing repeats):
+- Senior product manager for grid-scale BESS at LG Energy Solution, with 8 years in lithium-ion storage from deal engineering to product line ownership.
+- Sells to AI data center customers including Meta, Google, NVIDIA and Microsoft, and to front-of-meter grid storage developers.
 - Licensed Professional Engineer with an MBA in product strategy.
+- Mechanical engineer by training, with utility efficiency programs and HVAC design-build before battery storage.
 
 ### Comfort Energy — Design-Build Engineering Manager, HVAC (July 2016 – Oct 2017)
 

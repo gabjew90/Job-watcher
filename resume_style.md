@@ -28,6 +28,13 @@ skimming for thirty seconds and an ATS parser that wants exact terms.
   form (leads, manages). ✔
 - One idea per bullet. If an "and" joins two accomplishments, make two
   bullets or drop one.
+- Each fact once. A name or number (Jabil, 2.86 MWh, 3 GWh, UL 9540)
+  appears in one bullet, and not again in the summary. ✔ (A distinctive
+  term in three or more units is flagged.)
+- Relevance over fullness. Older roles get the one bullet closest to the
+  posting, two only when the role itself is relevant. Projects and skill
+  categories appear only when the posting asks for what they show; an
+  irrelevant section is left out, not filled.
 - No lists of more than three things inside a bullet. ✔ (More than three
   commas reads as a list.) Name the two or three that matter.
 - When a number improved, give the baseline if the library has it: "from

@@ -47,7 +47,7 @@ KEYWORD_MODEL = os.environ.get("JOBWATCH_KEYWORD_MODEL", "claude-haiku-4-5-20251
 # about 58 lines of body text; 54 leaves room for spacing drift.
 SUMMARY_WORDS = 60
 SENTENCE_WORDS = 30
-LEAD_BULLETS = 8
+LEAD_BULLETS = 10
 OTHER_BULLETS = 3
 BULLET_WORDS = 22
 MAX_PROJECTS = 3
@@ -134,6 +134,15 @@ HARD_RULES = """HARD RULES
   relevant. Up to 4 skill categories with up to 12 items each, posting
   terms first.
 - {budget}
+- Relevance over fullness. Fill the page with lead-role bullets that
+  speak to the posting, not with older roles, projects or skills that do
+  not. Older roles: the one bullet closest to the posting, two only when
+  the role itself is relevant. Projects: only those that speak to the
+  posting, else omit the section. Skills: only categories the posting
+  asks about.
+- Each fact once. Never use two bullets carrying the same fact (the
+  library marks alternates ALT), and never restate a bullet's fact in
+  the summary.
 - Summary: 2 or 3 of the library's summary sentences, verbatim, in the
   order that fits the posting. Do not compose a new one.
 - Skills items in lowercase except proper nouns and acronyms (Python,
@@ -212,14 +221,14 @@ def budget_line(n_roles: int) -> str:
     role headings cost about a line and a half each, so fewer roles mean
     a fuller lead role."""
     if n_roles <= 3:
-        lead, words = "7 or 8", "420 to 470"
+        lead, words = "8 to 10", "400 to 460"
     elif n_roles == 4:
         lead, words = "5 to 7", "400 to 450"
     else:
         lead, words = "4 or 5", "380 to 430"
     return (f"The library has {n_roles} roles. Budget for one page: lead role {lead} "
-            "bullets, the next most relevant role 2 or 3, other roles 1 or 2, 1 or 2 "
-            f"projects, 4 skill categories of 6 to 9 items. Aim for {words} words in total.")
+            "bullets, other roles 1 each (2 when the role itself is relevant), 0 to 2 "
+            f"projects, 3 or 4 skill categories of 6 to 9 items. Aim for {words} words in total.")
 
 
 def _section(text: str, heading: str) -> str:
@@ -393,6 +402,7 @@ contribute contributes contributed control controls controled controlled enhance
 participate participates participated place places placed rate rates rated sort sorts sorted
 move moves moved productize productizes productized work works worked open opened
 meet meets met reach reaches reached price prices priced turn turns turned choose chooses chose
+book books booked replace replaces replaced
 """.split())
 
 
@@ -458,6 +468,7 @@ def style_lint(content: dict) -> list[str]:
                 flags.append(f"{label}: {text.count(',')} commas, reads as a list")
     if _words(content.get("summary", "")) > SUMMARY_WORDS:
         flags.append(f"summary: {_words(content['summary'])} words (max {SUMMARY_WORDS})")
+    flags += repetition_lint(content)
     for e in content.get("experience", []):
         openers = [re.sub(r"[^a-z]", "", b.lower().split(" ", 1)[0]) for b in e.get("bullets", [])]
         for a, b in zip(openers, openers[1:]):
@@ -478,6 +489,28 @@ def _third_person(verb: str) -> str:
         if base in VERBS:
             return base
     return ""
+
+
+REPEAT_STOP = {"data", "center", "centers", "product", "products", "system", "systems", "battery",
+               "storage", "energy", "grid", "scale", "with", "from", "that", "into", "for", "and",
+               "lg", "lg's", "bess", "ess", "pg&e"}  # the employer and the product class are the subject
+
+
+def repetition_lint(content: dict) -> list[str]:
+    """A distinctive term (a capitalized name, a number, or a hyphenated
+    term) in three or more of the summary sentences and bullets means the
+    draft is repeating itself."""
+    units = _sentences(content.get("summary", ""))
+    units += [b for e in content.get("experience", []) for b in e.get("bullets", [])]
+    units += [p["line"] for p in content.get("projects", [])]
+    seen: dict[str, int] = {}
+    for u in units:
+        terms = set(re.findall(r"\b(?:[A-Z][A-Za-z0-9&']+|\d[\d.,]*\s?[A-Za-z]{1,3}|\w+-\w+)\b", u))
+        for t in terms:
+            if t.lower() in REPEAT_STOP or len(t) < 3:
+                continue
+            seen[t] = seen.get(t, 0) + 1
+    return [f"'{t}' appears in {n} bullets or sentences" for t, n in seen.items() if n >= 3]
 
 
 def _fix_opener(text: str) -> tuple[str, list[str]]:
