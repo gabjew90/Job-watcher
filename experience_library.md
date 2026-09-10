@@ -121,7 +121,7 @@ Deal engineering, 2018 – 2021 [deal-engineering] [sizing] [technical-sales]
 - Sized lithium-ion systems for North American deals and negotiated their technical exhibits and bid clarifications with utilities and developers.
 - Built the US team's local knowledge base from HQ engineering resources.
 
-Scope, use at most one, only when the page has room [scope]
+Scope, use at most one, only when the page has room, and always as the last bullet of the role [scope]
 - Own new product development for grid-scale ESS, from voice of customer through market requirements.
 
 Summary sentences (pick 2 or 3, verbatim; they carry no fact that a

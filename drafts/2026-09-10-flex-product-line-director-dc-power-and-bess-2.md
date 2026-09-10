@@ -4,44 +4,42 @@
 San Diego, CA | (510) 388-0629 | gabjew90@gmail.com | linkedin.com/in/gabjew90 | github.com/gabjew90
 
 ## Summary
-Senior product manager for grid-scale BESS with 8 years in lithium-ion storage, from deal engineering to product line ownership. Product manager who took LG Energy Solution from battery racks to a prefabricated containerized ESS, partnering with Jabil on the first product. Licensed Professional Engineer with an MBA in product strategy.
+Senior product manager for grid-scale BESS at LG Energy Solution, with 8 years in lithium-ion storage from deal engineering to product line ownership. Sells to AI data center customers including Meta, Google, NVIDIA and Microsoft, and to front-of-meter grid storage developers. Licensed Professional Engineer with an MBA in product strategy.
 
 ## Experience
 
 ### LG Energy Solution | Senior Product Manager, Grid-Scale BESS
 *Feb 2018 – present*
-- Replaced bespoke on-site integration, the market's biggest pain point, with LG's first prefabricated ESS container, built with Jabil.
+- Own new product development for grid-scale ESS, from voice of customer through market requirements.
 - Designed the 2.86 MWh pre-integrated container with Jabil, moving LG from selling racks to integrators to selling a finished product.
+- Deployed 584 MWh on Fifth Standard in California and 361 MWh on Bright Arrow in Texas with the standardized container.
 - Won approval for a 2-hour AC-integrated BESS, against a plan to stay at 4-hour, with a techno-economic business case.
-- Turned the 2-hour container into LG's flagship for AI data centers, with about 3 GWh booked for 2027.
-- Opened the AI data center segment for LG's BESS by defining its ride-through, interconnection and bring-your-own-generation feature set.
-- Met UL 9540 on the container by setting fire safety requirements before the industry had settled how to prove them.
-- Built the cost model from cell cost to system selling price, plus customers' EPC cost, behind the container's pricing.
-- Lead grid-scale BESS product strategy for AI data center customers Meta, Google, NVIDIA and Microsoft.
+- Booked about 3 GWh for 2027 on the 2-hour product, now LG's flagship for AI data centers.
+- Priced feature trade-offs in EPC and installation cost, energy density and shipping weight to set the product requirements.
+- Opened the AI infrastructure and data center segment for LG's BESS by defining its ride-through, interconnection and bring-your-own-generation feature set.
+- Achieved UL 9540 listing for the container by setting fire safety requirements before the industry had settled how to prove them.
+- Set the container's selling price and chose its inverter configuration with a cell-to-system cost model that included customers' EPC cost.
+- Cut proposal turnaround from days to hours with battery modeling tools for degradation, thermal and augmentation optimization.
 
 ### Comfort Energy | Design-Build Engineering Manager, HVAC
 *July 2016 – Oct 2017*
-- Managed HVAC project sales, design and delivery, exceeding the department's $2M annual sales goal.
-- Designed HVAC and hydronic systems with energy modeling, equipment sizing and duct and piping layouts for commercial and residential projects.
-- Set up an OSHA-compliant internal safety program with technician training classes and record-keeping procedures.
+- Managed HVAC projects from proposal through construction and startup, exceeding the department's $2M annual sales goal.
 
 ### Pacific Gas and Electric | Energy Solutions Engineer
 *Dec 2013 – July 2016*
 - Generated cumulative savings of 2,500 kW and 7 million kWh, helping the company exceed its energy-savings goal.
-- Developed energy-efficiency projects for commercial and industrial customers under statewide efficiency and demand-response incentives, covering chillers, boilers and cooling towers.
 
 ## Selected projects
-- **MBA Honda IMPACT Project**: Built a five-year go-to-market plan for Honda to launch hydrogen fuel cells, electrolyzers and second-life EV batteries in the US C&I market.
+- **MBA Honda IMPACT Project**: Built a five-year go-to-market plan for Honda to launch hydrogen fuel cells, electrolyzers and second-life EV batteries into the US C&I market.
 
 ## Education
 - MBA (STEM-designated), Product Management/Strategy, UC Davis Graduate School of Management, 2022
 - BS Mechanical Engineering, UC Davis, 2013, Dean's Honor List
 
 ## Certifications
-- California Licensed Professional Engineer #M38303, Thermal and Fluid Systems (NCEES), 2016
+- California Licensed Professional Engineer #M38303, Thermal and Fluid Systems (2016, NCEES)
 
 ## Skills
-**BESS & Power Systems:** energy storage, BMS, lithium-ion system design, degradation/thermal modeling, augmentation optimization, system sizing, fire safety, codes and standards (UL, NFPA)  
-**Grid & Data Center:** interconnection, US energy markets (ERCOT), techno-economic analysis, energy efficiency, demand response, electricity financial contracts  
-**Product & Commercial:** commercialization, product development, NPI, product strategy, market requirements, competitive analysis, financial modeling, contract negotiation  
-**Tools:** Tableau, Advanced Excel, Salesforce, AutoCAD, MATLAB, Python  
+**BESS & power systems:** energy storage systems, thermal systems, power conversion systems (PCS), lithium-ion system design, BMS, fire safety, codes & standards (UL, NFPA), techno-economic analysis  
+**Product & commercial:** product strategy, market requirements, VOC, competitive analysis, proposal tendering, contract negotiation, financial modeling  
+**Grid/utility:** interconnection, energy efficiency, demand response, US energy markets (ERCOT)  
