@@ -4,7 +4,8 @@ This file is the ONLY source of truth for drafted resumes. Nothing gets
 invented beyond what's written here; thin sections become TODO notes in
 drafts. Compiled 2026-08 from: 2019–2022 resume PDFs (Google Drive), the
 2025 resume PDF (uploaded), and the June 2026 resume (Gmail); dual-role
-framing confirmed by Gabriel.
+framing confirmed by Gabriel. LG Energy Solution section rewritten 2026-09
+from Gabriel's own account; other roles still in the compiled form.
 
 ## FRAMING GUIDANCE FOR DRAFTS
 
@@ -15,6 +16,9 @@ role and give it the fuller treatment:
   Solution (Senior PM, grid-scale BESS for AI datacenters).
 - Utility / interconnection / grid-planning / regulatory roles → lead PG&E
   (Senior Grid Innovation Engineer, ICA platform).
+- Prefab / modular / EMS / contract-manufacturing postings (Flex, Jabil
+  peers, container suppliers) → lead LG and put the Jabil standardized
+  container bullets first; name Jabil.
 Never invent an end date for either role, and don't claim more hours or
 scope for one than this file states.
 
@@ -46,23 +50,71 @@ summaries and cover letters — adapt which leg gets emphasis to the role.)
 
 ## Roles (reverse chronological)
 
-### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2021 – present; Senior PM in current phase)
+### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2021 – present)
 
-(Continuous LG tenure from Feb 2021; the earlier phase is broken out below
-so drafts can show progression. Concurrent with the PG&E role below.)
+(One continuous role and title from Feb 2021. Concurrent with the PG&E
+role below. Owner-confirmed 2026-09.)
 
-Scope: Lead product strategy for grid-scale battery storage systems
-targeting AI datacenter customers (Meta, Google, NVIDIA, Microsoft). New
-product development of grid-scale ESS and data science products: product
-strategy, voice of customer, competitive analysis, driving/prioritizing
-market requirements. Coordinate cross-functional teams for system
-engineering of batteries, enclosure, PCS, controls, HVAC, fire suppression,
-and balance of plant.
+Facts, for context (not resume prose): LG traditionally sold battery packs
+and racks to system integrators, who did bespoke on-site containerization,
+the market's biggest pain point. Gabriel worked with Jabil to standardize
+and prefabricate a containerized ESS, LG's first, 2.86 MWh per container;
+it is deployed on two projects, Fifth Standard (584 MWh, California) and
+Bright Arrow (361 MWh, Texas). After LG became a system integrator he
+led product development of a 2-hour AC-integrated container, when the
+company planned to stay at 4-hour duration; the 2-hour product is now
+LG's flagship for AI data centers (short duration for power fluctuation
+ride-through, interconnection enablement, bring-your-own-generation with
+gas turbines) and is booked for about 3 GWh in 2027. He productized the
+AI data center segment (as opposed to front-of-meter grid storage) and
+built the standardized customer artifacts (reference designs, simulation
+data, PSCAD models) that shorten technical review. He set the fire safety
+requirements while the industry was still working out how to prove them
+(fire consultants, hazard mitigation analysis, deflagration CFD modeling)
+with UL 9540 as a core product requirement, and built the cost model from
+cell cost to system selling price plus customers' EPC cost. 8 years in
+lithium-ion storage counting LG Chem (2018).
 
-Outcomes (TODO — the most important gap; quantify 3-5 bullets):
-- TODO e.g. AIDC product/config launches (MWh scale, $/kWh outcomes)
-- TODO e.g. revenue/pipeline influenced, design wins, cost reductions
-- TODO e.g. specific datacenter-customer engagements and what you drove
+Approved bullets (use verbatim; swap a term for the posting's synonym at
+most; tags guide selection):
+
+Standardized container, Jabil [prefab] [partnerships] [commercialization]
+- Partnered with Jabil to standardize and prefabricate LG's first containerized ESS, replacing bespoke on-site integration by system integrators.
+- Moved LG from selling racks to integrators toward a prefabricated container product, removing on-site integration, the market's largest pain point.
+- Designed LG's first pre-integrated 2.86 MWh battery container with Jabil.
+- Deployed the standardized container at 584 MWh on Fifth Standard in California and 361 MWh on Bright Arrow in Texas.
+
+2-hour AC-integrated container [product-strategy] [business-case] [npi]
+- Made the case for a 2-hour AC-integrated BESS when LG planned to stay at 4-hour duration.
+- Led product development of the 2-hour container, now LG's flagship for AI data centers, with about 3 GWh booked for 2027.
+- Quantified feature value with techno-economic models covering EPC and installation cost, energy density, weight and transportation.
+- Aligned engineering, sales, supply chain and vendors on product requirements, sales material and customer documentation for the 2-hour product.
+- Coordinated vendors and supply chain planning for the 2-hour container from requirements through launch.
+
+AI data center segment [aidc] [customer-facing] [commercialization]
+- Defined the AI data center feature set for LG's BESS, covering power fluctuation ride-through, interconnection support and bring-your-own-generation with gas turbines.
+- Productized LG's BESS for the AI data center segment, distinct from front-of-meter grid storage, and supported its sales.
+- Created standardized customer artifacts, reference designs, simulation data and PSCAD models, to shorten technical review and close data center deals.
+- Lead product strategy for grid-scale battery storage sold to AI data center customers, including Meta, Google, NVIDIA and Microsoft.
+
+Safety and certification [safety] [ul-9540] [codes]
+- Set the fire safety requirements for the container while the industry was still defining how to prove them.
+- Worked with fire consultants on hazard mitigation analysis and deflagration CFD modeling to meet UL 9540, a core product requirement.
+
+Cost and pricing [pricing] [cost-model] [business-case]
+- Modeled product cost from cell cost through system selling price, plus customers' EPC and installation cost.
+- Built business cases, competitor analyses and techno-economic feature models that set the product roadmap.
+
+General [scope]
+- Manage new product development for grid-scale ESS, from voice of customer through competitive analysis and market requirements.
+- Run the engineering program for battery, enclosure, PCS, controls, HVAC, fire suppression and balance of plant.
+
+Summary sentences (pick, do not rewrite; each under 30 words):
+- Product manager who took LG Energy Solution from battery racks to a prefabricated containerized ESS, partnering with Jabil on the first product.
+- Built the 2-hour AC-integrated BESS now booked at about 3 GWh for AI data centers.
+- Senior product manager for grid-scale BESS with 8 years in lithium-ion storage, from deal engineering to product line ownership.
+- Opened LG's AI data center segment and made the case for the 2-hour product that became its flagship.
+- Licensed Professional Engineer with an MBA in product strategy.
 
 ### Pacific Gas and Electric — Senior Grid Innovation Engineer (June 2023 – present)
 
@@ -78,17 +130,6 @@ Outcomes (TODO — the most important gap; quantify 3-5 bullets):
   quantified pain points, and actionable requirements.
 - Authored reports and delivered presentations for regulatory compliance and
   stakeholder/regulator communication.
-
-### LG Energy Solution — Product Manager, Grid-Scale ESS (Feb 2021 – 2023 phase)
-
-- Formulated product strategy for grid-scale energy storage products: market
-  research, voice of customer, quantitative/qualitative analyses, and
-  competitive analysis.
-- Led product development and market requirements, coordinating
-  cross-functional system engineering of batteries, enclosures, power
-  conversion systems, controls, fire safety, and thermal management.
-- **Spearheaded design and development of LG's first pre-integrated battery
-  container (2.86 MWh).**
 
 ### LG Chem — Senior Systems Engineer, Energy Storage (Feb 2018 – Feb 2021)
 
