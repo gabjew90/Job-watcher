@@ -59,10 +59,12 @@ def test_thesis_and_framing_parse():
 def test_normalize_reorders_to_lead_role_and_clips():
     raw = copy.deepcopy(FIXTURE)
     raw["lead_role"] = "PG&E"
-    raw["experience"][1]["bullets"] += ["Extra one.", "Extra two.", "Extra three."]
+    pge = next(e for e in raw["experience"] if e["employer"] == "Pacific Gas and Electric")
+    pge["bullets"] += ["Extra one.", "Extra two.", "Extra three.", "Extra four."]
     c = resume.normalize(raw)
     assert c["experience"][0]["employer"] == "Pacific Gas and Electric"
-    assert len(c["experience"][0]["bullets"]) == resume.LEAD_BULLETS
+    assert len(c["experience"][0]["bullets"]) == min(resume.LEAD_BULLETS, len(pge["bullets"]))
+    assert c["experience"][0]["dates"] == "Dec 2013 – July 2016"
     assert all(len(e["bullets"]) <= resume.OTHER_BULLETS for e in c["experience"][1:])
     assert c["experience"][0]["bullets"][0].endswith(".")
 
@@ -116,10 +118,11 @@ def test_guard_drops_unknown_employer_and_dates():
     c = content()
     c["experience"].append({"employer": "Tesla", "title": "Director", "dates": "2019 – 2020",
                             "bullets": ["Led things."]})
-    c["experience"][2]["dates"] = "Feb 2011 – Feb 2021"  # LG Chem, wrong year
+    comfort = next(e for e in c["experience"] if e["employer"] == "Comfort Energy")
+    comfort["dates"] = "July 2011 – Oct 2017"  # wrong year
     removed = resume.fabrication_guard(c, LIBRARY)
     employers = [e["employer"] for e in c["experience"]]
-    assert "Tesla" not in employers and "LG Chem" not in employers
+    assert "Tesla" not in employers and "Comfort Energy" not in employers
     assert "Pacific Gas and Electric" in employers
     assert any("Tesla" in r for r in removed) and any("2011" in r for r in removed)
 
@@ -219,7 +222,7 @@ def test_render_docx_layout(rendered):
     for e in c["experience"]:
         for b in e["bullets"]:
             assert b in texts
-    assert any("\t" in t and "Feb 2021" in t for t in texts)  # dates on the right tab
+    assert any("\t" in t and "Feb 2018" in t for t in texts)  # dates on the right tab
 
 
 def test_markdown_matches_docx(rendered):
@@ -313,3 +316,60 @@ def test_guard_drops_skill_terms_absent_from_library():
     assert "renewable integration" not in items and "AI infrastructure" not in items
     assert "Anthropic and Gemini APIs" in items and "system sizing" in items
     assert any("renewable" in r for r in removed)
+
+
+def test_dates_normalized_to_en_dash():
+    assert resume._dates("Feb 2021 - present") == "Feb 2021 – present"
+    assert resume._dates("Feb 2021 -- 2023") == "Feb 2021 – 2023"
+    assert resume._dates("Feb 2021 – present") == "Feb 2021 – present"
+
+
+def test_lint_flags_duty_bullets_and_lists():
+    c = content()
+    c["experience"][0]["bullets"] = [
+        "Coordinated vendors and supply chain planning for the container.",
+        "Ran the program for battery, enclosure, PCS, controls, HVAC and fire suppression.",
+        "Supported 12 deals across North America with sizing and degradation modeling.",
+    ]
+    flags = "\n".join(resume.style_lint(c))
+    assert "carries no number" in flags and "reads as a list" in flags
+    assert "Supported 12" not in flags and flags.count("carries no number") == 1
+
+
+def test_repetition_lint_flags_a_name_used_three_times():
+    c = content()
+    assert resume.repetition_lint(c) == []
+    c["experience"][0]["bullets"][:3] = [
+        "Partnered with Jabil to build the container.",
+        "Designed the container with Jabil.",
+        "Shipped the Jabil container to Texas.",
+    ]
+    flags = resume.repetition_lint(c)
+    assert any("'Jabil' appears in 3" in f for f in flags)
+
+
+def test_two_titles_under_one_employer(tmp_path):
+    from docx import Document
+    c = content()
+    gs = resume.groups(c["experience"])
+    assert [len(g) for g in gs] == [2, 1, 1]
+    assert resume.span_dates(gs[0]) == "Feb 2018 – present"
+    # Lead-role reorder keeps both LG entries together and first, newest first.
+    raw = copy.deepcopy(FIXTURE)
+    raw["experience"].reverse()
+    c2 = resume.normalize(raw)
+    assert [e["title"][:6] for e in c2["experience"][:2]] == ["Senior", "Senior"]
+    assert c2["experience"][0]["dates"] == "Feb 2021 – present"
+    header = resume.header_from_library(LIBRARY)
+    doc = Document(str(resume.render_docx(c, header, None, tmp_path / "g.docx")))
+    texts = [p.text for p in doc.paragraphs]
+    assert "LG Energy Solution\tFeb 2018 – present" in texts
+    assert "Senior Systems Engineer, Energy Storage\tFeb 2018 – Feb 2021" in texts
+    md = resume.render_markdown(c, header)
+    assert "### LG Energy Solution\n*Feb 2018 – present*" in md
+    assert "**Senior Systems Engineer, Energy Storage** *(Feb 2018 – Feb 2021)*" in md
+    # Trimming never drops a lead-employer title, only its extra bullets.
+    for e in c["experience"]:
+        e["bullets"] = (e["bullets"] * 4)[:5]
+    resume.fit_to_page(c)
+    assert len(resume.groups(c["experience"])[0]) == 2

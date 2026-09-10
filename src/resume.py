@@ -47,7 +47,7 @@ KEYWORD_MODEL = os.environ.get("JOBWATCH_KEYWORD_MODEL", "claude-haiku-4-5-20251
 # about 58 lines of body text; 54 leaves room for spacing drift.
 SUMMARY_WORDS = 60
 SENTENCE_WORDS = 30
-LEAD_BULLETS = 5
+LEAD_BULLETS = 10
 OTHER_BULLETS = 3
 BULLET_WORDS = 22
 MAX_PROJECTS = 3
@@ -104,6 +104,8 @@ SCHEMA = """{
   "experience": [
     {"employer": "<as in library>", "title": "<as in library>", "dates": "<as in library>",
      "bullets": ["<verb first, 22 words max>"]}
+    // one employer with several titles: one entry per title, same employer, newest
+    // first and adjacent; the renderer groups them under one employer heading
   ],
   "projects": [{"name": "<as in library>", "line": "<one sentence, 22 words max>"}],
   "education": ["<one line each>"],
@@ -121,8 +123,11 @@ HARD_RULES = """HARD RULES
   the library cannot evidence, list it under "gaps" (must-haves) or
   "omitted_requirements" (nice-to-haves) and leave it out of the resume.
 - Do not write the header (name, contact details): the code adds it.
-- Prefer the library's own wording. Change words only to match the
-  posting's terms or to follow the style guide.
+- Where the library lists approved bullets, use them verbatim, tense
+  included: a finished accomplishment stays in the past tense even under
+  a current role ("Partnered with Jabil", "Designed"); only an ongoing
+  responsibility uses the present tense. Swap a word only for a posting
+  term that names the same thing. Elsewhere prefer the library's wording.
 - Lead with the role the framing guidance names for this kind of posting
   (set "lead_role" to that employer); up to 5 bullets for it, up to 3 for
   every other role. Include every role in the library, most recent first,
@@ -130,15 +135,26 @@ HARD_RULES = """HARD RULES
   get 1 or 2 bullets rather than being dropped. Up to 3 projects, only if
   relevant. Up to 4 skill categories with up to 12 items each, posting
   terms first.
-- The page holds about 400 words once every role is listed. Budget:
-  lead role 4 or 5 bullets, the other current role 2 or 3, older roles 1
-  each (2 for the one most relevant to this posting), 1 or 2 projects, 4
-  skill categories of 6 to 9 items. Aim for 380 to 450 words in total.
+- {budget}
+- Relevance over fullness. Fill the page with lead-role bullets that
+  speak to the posting, not with older roles, projects or skills that do
+  not. Older roles: the one bullet closest to the posting, two only when
+  the role itself is relevant. Projects: only those that speak to the
+  posting, else omit the section. Skills: only categories the posting
+  asks about.
+- Each fact once. Never use two bullets carrying the same fact (the
+  library marks alternates ALT), and never restate a bullet's fact in
+  the summary.
+- Summary: 2 or 3 of the library's summary sentences, verbatim, in the
+  order that fits the posting. Do not compose a new one.
+- Skills items in lowercase except proper nouns and acronyms (Python,
+  PSCAD, BESS).
   Order bullets within a role by importance: if the page overflows, the
   last bullet of the oldest roles is cut first.
-- Tense: bullets for a role whose dates end in "present" use the plain
-  present tense with no -s (Lead, Run, Manage); past roles use the past
-  tense (Led, Ran, Managed). Never the third-person -s form (Leads).
+- Tense: ongoing responsibilities in a current role use the plain
+  present tense with no -s (Lead, Run, Manage); finished accomplishments
+  and past roles use the past tense (Led, Ran, Managed). Never the
+  third-person -s form (Leads).
 - No first person. Return ONLY the JSON object, no prose, no fences."""
 
 DRAFT_PROMPT = """Write the content of a tailored one-page resume for the job posting below,
@@ -202,6 +218,21 @@ CURRENT DRAFT:
 
 # ------------------------------------------------------- library parsing
 
+def budget_line(n_roles: int) -> str:
+    """Structural budget for one page, by how many roles the library has:
+    role headings cost about a line and a half each, so fewer roles mean
+    a fuller lead role."""
+    if n_roles <= 3:
+        lead, words = "8 to 10", "400 to 460"
+    elif n_roles == 4:
+        lead, words = "5 to 7", "400 to 450"
+    else:
+        lead, words = "4 or 5", "380 to 430"
+    return (f"The library has {n_roles} roles. Budget for one page: lead role {lead} "
+            "bullets, other roles 1 each (2 when the role itself is relevant), 0 to 2 "
+            f"projects, 3 or 4 skill categories of 6 to 9 items. Aim for {words} words in total.")
+
+
 def _section(text: str, heading: str) -> str:
     m = re.search(rf"^## {re.escape(heading)}[^\n]*\n(.*?)(?=^## |\Z)", text, re.S | re.M)
     return m.group(1).strip() if m else ""
@@ -252,6 +283,11 @@ def _clean_bullet(text: str) -> str:
     return text
 
 
+def _dates(value) -> str:
+    """'Feb 2021 - present' and 'Feb 2021 -- present' become 'Feb 2021 – present'."""
+    return re.sub(r"\s+(?:-{1,2}|–|—)\s+", " – ", _s(value))
+
+
 def normalize(content: dict) -> dict:
     """Coerce the model's object into the schema, clip to budgets, and put
     the lead role first."""
@@ -272,7 +308,7 @@ def normalize(content: dict) -> dict:
             continue
         bullets = [_clean_bullet(b) for b in (e.get("bullets") or []) if _s(b)]
         out["experience"].append({"employer": _s(e.get("employer")), "title": _s(e.get("title")),
-                                  "dates": _s(e.get("dates")), "bullets": bullets})
+                                  "dates": _dates(e.get("dates")), "bullets": bullets})
     for p in (content.get("projects") or [])[:MAX_PROJECTS]:
         if isinstance(p, dict) and _s(p.get("name")):
             out["projects"].append({"name": _s(p.get("name")), "line": _clean_bullet(p.get("line"))})
@@ -281,17 +317,49 @@ def normalize(content: dict) -> dict:
             items = [_s(i).rstrip(".") for i in (c.get("items") or []) if _s(i)][:MAX_SKILL_ITEMS]
             if items:
                 out["skills"].append({"category": _s(c.get("category")), "items": items})
-    # Lead role first, then clip bullet counts.
+    # Lead employer's entries first (all of them, in order), then clip.
+    out["experience"] = [e for e in out["experience"] if e["employer"]]
     lead = company_key(out["lead_role"])
     if lead:
-        for i, e in enumerate(out["experience"]):
-            if company_key(e["employer"]) == lead:
-                out["experience"].insert(0, out["experience"].pop(i))
-                break
+        mine = [e for e in out["experience"] if company_key(e["employer"]) == lead]
+        out["experience"] = mine + [e for e in out["experience"] if company_key(e["employer"]) != lead]
+    # Within one employer, newest title first (the renderer assumes it).
+    ordered: list[dict] = []
+    for g in groups(out["experience"]):
+        ordered += sorted(g, key=_end_year, reverse=True)
+    out["experience"] = ordered
     for i, e in enumerate(out["experience"]):
         e["bullets"] = e["bullets"][:LEAD_BULLETS if i == 0 else OTHER_BULLETS]
-    out["experience"] = [e for e in out["experience"] if e["employer"]]
     return out
+
+
+def _end_year(entry: dict) -> int:
+    dates = entry.get("dates", "")
+    if "present" in dates.lower():
+        return 9999
+    years = YEAR_RE.findall(dates)
+    return int(years[-1]) if years else 0
+
+
+def groups(experience: list[dict]) -> list[list[dict]]:
+    """Consecutive entries with the same employer, e.g. two titles at LG."""
+    out: list[list[dict]] = []
+    for e in experience:
+        if out and company_key(out[-1][0]["employer"]) == company_key(e["employer"]):
+            out[-1].append(e)
+        else:
+            out.append([e])
+    return out
+
+
+def span_dates(group: list[dict]) -> str:
+    """'Feb 2018 – present' for a group whose newest entry ends 'present'
+    and whose oldest starts 'Feb 2018'."""
+    if len(group) == 1:
+        return group[0]["dates"]
+    start = group[-1]["dates"].split(" – ")[0]
+    end = group[0]["dates"].split(" – ")[-1]
+    return f"{start} – {end}"
 
 
 # ---------------------------------------------------------------- style
@@ -366,7 +434,15 @@ tripled tune tunes tuned unify unifies unified update updates updated upgrade up
 verify verifies verified visualize visualizes visualized calibrate calibrates calibrated
 contribute contributes contributed control controls controled controlled enhance enhances enhanced
 participate participates participated place places placed rate rates rated sort sorts sorted
+move moves moved productize productizes productized work works worked open opened
+meet meets met reach reaches reached price prices priced turn turns turned choose chooses chose
+book books booked replace replaces replaced
 """.split())
+
+
+COORDINATION_VERBS = {"coordinated", "coordinate", "aligned", "align", "supported", "support",
+                      "collaborated", "collaborate", "facilitated", "facilitate", "helped", "help",
+                      "assisted", "assist", "contributed", "contribute", "participated", "participate"}
 
 
 def _sentences(text: str) -> list[str]:
@@ -420,8 +496,13 @@ def style_lint(content: dict) -> list[str]:
                 flags.append(f"{label}: does not open with a verb ('{first}')")
             elif first and _third_person(first):
                 flags.append(f"{label}: third-person '{first}' (use '{_third_person(first)}')")
+            if first in COORDINATION_VERBS and not re.search(r"\d", text):
+                flags.append(f"{label}: opens with '{first}' and carries no number (duty, not result)")
+            if text.count(",") > 3:
+                flags.append(f"{label}: {text.count(',')} commas, reads as a list")
     if _words(content.get("summary", "")) > SUMMARY_WORDS:
         flags.append(f"summary: {_words(content['summary'])} words (max {SUMMARY_WORDS})")
+    flags += repetition_lint(content)
     for e in content.get("experience", []):
         openers = [re.sub(r"[^a-z]", "", b.lower().split(" ", 1)[0]) for b in e.get("bullets", [])]
         for a, b in zip(openers, openers[1:]):
@@ -442,6 +523,28 @@ def _third_person(verb: str) -> str:
         if base in VERBS:
             return base
     return ""
+
+
+REPEAT_STOP = {"data", "center", "centers", "product", "products", "system", "systems", "battery",
+               "storage", "energy", "grid", "scale", "with", "from", "that", "into", "for", "and",
+               "lg", "lg's", "bess", "ess", "pg&e"}  # the employer and the product class are the subject
+
+
+def repetition_lint(content: dict) -> list[str]:
+    """A distinctive term (a capitalized name, a number, or a hyphenated
+    term) in three or more of the summary sentences and bullets means the
+    draft is repeating itself."""
+    units = _sentences(content.get("summary", ""))
+    units += [b for e in content.get("experience", []) for b in e.get("bullets", [])]
+    units += [p["line"] for p in content.get("projects", [])]
+    seen: dict[str, int] = {}
+    for u in units:
+        terms = set(re.findall(r"\b(?:[A-Z][A-Za-z0-9&']+|\d[\d.,]*\s?[A-Za-z]{1,3}|\w+-\w+)\b", u))
+        for t in terms:
+            if t.lower() in REPEAT_STOP or len(t) < 3:
+                continue
+            seen[t] = seen.get(t, 0) + 1
+    return [f"'{t}' appears in {n} bullets or sentences" for t, n in seen.items() if n >= 3]
 
 
 def _fix_opener(text: str) -> tuple[str, list[str]]:
@@ -744,8 +847,11 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
     sections = 2 + sum(bool(content.get(k)) for k in ("projects", "education", "certifications", "skills"))
     h += sections * (t["heading_before"] + t["heading_size"] * lh + 2 + (3 if t["rule"] else 0))
     h += wrapped(content.get("summary", ""), cpl) * body
-    for e in content.get("experience", []):
-        h += 4 + body + sum(wrapped(b, cpl_bullet) for b in e["bullets"]) * body
+    for g in groups(content.get("experience", [])):
+        if len(g) > 1:
+            h += 4 + body  # employer line above the title lines
+        for e in g:
+            h += 4 + body + sum(wrapped(b, cpl_bullet) for b in e["bullets"]) * body
     h += sum(wrapped(p["name"] + p["line"], cpl_bullet - 3) for p in content.get("projects", [])) * body
     h += (len(content.get("education", [])) + len(content.get("certifications", []))) * body
     h += sum(wrapped(c["category"] + ", ".join(c["items"]), cpl - 2) for c in content.get("skills", [])) * body
@@ -759,14 +865,17 @@ def _over_budget(content: dict, theme: str = DEFAULT_THEME) -> bool:
 def trim_one(content: dict) -> str | None:
     """Remove the lowest-priority item. Returns what was removed, or None.
 
-    Cheapest first: a third project; older roles' extra bullets (the
+    Cheapest first: a third project; other employers' extra bullets (the
     prompt asks the model to order bullets by importance); skills past
-    seven per category; the lead role's fifth bullet; a marginal oldest
-    role (keeping three); and only then the second project, skills past
-    five, the lead role's fourth bullet, the last project, and the oldest
-    role down to two."""
+    seven per category; the lead employer's earlier titles down to one
+    bullet; the lead title's fifth bullet; a marginal oldest employer
+    (keeping three employers); and only then the second project, skills
+    past five, the lead title's fourth bullet, the last project, and the
+    oldest employer down to two."""
     exp = content.get("experience", [])
     projects = content.get("projects", [])
+    lead_n = len(groups(exp)[0]) if exp else 0  # entries of the lead employer
+    lead_rest, others = exp[1:lead_n], exp[lead_n:]
 
     def cap_skills(n: int) -> str | None:
         for c in content.get("skills", []):
@@ -775,26 +884,35 @@ def trim_one(content: dict) -> str | None:
                 return f"skills {c['category']} beyond {n} items"
         return None
 
-    def drop_oldest_role(keep: int) -> str | None:
-        if len(exp) > keep:
-            e = exp.pop()
+    def pop_bullet(entries: list[dict]) -> str | None:
+        for e in reversed(entries):
+            if len(e["bullets"]) > 1:
+                b = e["bullets"].pop()
+                return f"{e['employer']} bullet '{b[:60]}'"
+        return None
+
+    def drop_oldest_employer(keep: int) -> str | None:
+        gs = groups(exp)
+        if len(gs) > keep:
+            for e in gs[-1]:
+                exp.remove(e)
+            e = gs[-1][0]
             return f"role '{e['employer']}, {e['title']}'"
         return None
 
     if len(projects) > 2:
         p = projects.pop()
         return f"project '{p['name']}'"
-    # Oldest non-lead role first, cycling toward the newest, never below 1.
-    for e in reversed(exp[1:]):
-        if len(e["bullets"]) > 1:
-            b = e["bullets"].pop()
-            return f"{e['employer']} bullet '{b[:60]}'"
+    if (r := pop_bullet(others)):
+        return r
     if (r := cap_skills(7)):
+        return r
+    if (r := pop_bullet(lead_rest)):
         return r
     if exp and len(exp[0]["bullets"]) > 4:
         b = exp[0]["bullets"].pop()
         return f"{exp[0]['employer']} bullet '{b[:60]}'"
-    if (r := drop_oldest_role(3)):
+    if (r := drop_oldest_employer(3)):
         return r
     if len(projects) > 1:
         p = projects.pop()
@@ -807,7 +925,7 @@ def trim_one(content: dict) -> str | None:
     if projects:
         p = projects.pop()
         return f"project '{p['name']}'"
-    return drop_oldest_role(2)
+    return drop_oldest_employer(2)
 
 
 def fit_to_page(content: dict, theme: str = DEFAULT_THEME) -> list[str]:
@@ -830,7 +948,14 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
     lines.append(_contact_line(header))
     lines.append("\n## Summary\n" + content.get("summary", ""))
     lines.append("\n## Experience")
-    for e in content.get("experience", []):
+    for g in groups(content.get("experience", [])):
+        if len(g) > 1:
+            lines.append(f"\n### {g[0]['employer']}\n*{span_dates(g)}*")
+            for e in g:
+                lines.append(f"\n**{e['title']}** *({e['dates']})*")
+                lines += [f"- {b}" for b in e["bullets"]]
+            continue
+        e = g[0]
         lines.append(f"\n### {e['employer']} | {e['title']}\n*{e['dates']}*")
         lines += [f"- {b}" for b in e["bullets"]]
     if content.get("projects"):
@@ -952,22 +1077,36 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     heading("Summary")
     doc.add_paragraph(content.get("summary", ""))
 
-    heading("Experience")
-    for e in content.get("experience", []):
+    def role_line(first: str, second: str | None, dates: str, before: int, bold: bool = True):
         p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(4)
+        p.paragraph_format.space_before = Pt(before)
         p.paragraph_format.tab_stops.add_tab_stop(Inches(7.3), WD_TAB_ALIGNMENT.RIGHT)
-        first, second = ((e["employer"], e["title"]) if t["role_order"] == "employer"
-                         else (e["title"], e["employer"]))
         r1 = p.add_run(first)
-        r1.bold = True
-        r2 = p.add_run(f"  |  {second}")
-        if t["dates_color"]:
-            r2.font.color.rgb = _rgb(t["dates_color"])
-        r3 = p.add_run(f"\t{e['dates']}")
+        r1.bold = bold
+        if second:
+            r2 = p.add_run(f"  |  {second}")
+            if t["dates_color"]:
+                r2.font.color.rgb = _rgb(t["dates_color"])
+        r3 = p.add_run(f"\t{dates}")
         r3.italic = t["dates_italic"]
         if t["dates_color"]:
             r3.font.color.rgb = _rgb(t["dates_color"])
+
+    heading("Experience")
+    for g in groups(content.get("experience", [])):
+        if len(g) > 1:
+            # One employer, several titles: employer line with the full span,
+            # then a title line per position, newest first.
+            role_line(g[0]["employer"], None, span_dates(g), 4)
+            for e in g:
+                role_line(e["title"], None, e["dates"], 2, bold=False)
+                for b in e["bullets"]:
+                    doc.add_paragraph(b, style="List Bullet")
+            continue
+        e = g[0]
+        first, second = ((e["employer"], e["title"]) if t["role_order"] == "employer"
+                         else (e["title"], e["employer"]))
+        role_line(first, second, e["dates"], 4)
         for b in e["bullets"]:
             doc.add_paragraph(b, style="List Bullet")
 
@@ -1074,8 +1213,9 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
     notes_block = (f"\nREQUESTER EMPHASIS NOTES (honor these):\n{notes.strip()}\n"
                    if notes and notes.strip() else "")
 
+    hard_rules = HARD_RULES.replace("{budget}", budget_line(len(employers_from_library(library))))
     raw = triage._run_claude(DRAFT_PROMPT.format(
-        schema=SCHEMA, hard_rules=HARD_RULES, style=style_text, notes=notes_block,
+        schema=SCHEMA, hard_rules=hard_rules, style=style_text, notes=notes_block,
         thesis=thesis_from_profile(profile_text), framing=framing_from_library(library),
         job=posting, library=library), DRAFT_MODEL)
     content = normalize(parse_object(raw))
@@ -1099,7 +1239,7 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
             revised = normalize(parse_object(triage._run_claude(REVISE_PROMPT.format(
                 missing=", ".join(missing) or "(none)",
                 violations="; ".join(violations) or "(none)",
-                hard_rules=HARD_RULES, style=style_text, library=library,
+                hard_rules=hard_rules, style=style_text, library=library,
                 draft=json.dumps(content, indent=1)), DRAFT_MODEL)))
             revision_notes = revised.pop("revision_notes", [])
             revised["gaps"] = revised["gaps"] or content["gaps"]

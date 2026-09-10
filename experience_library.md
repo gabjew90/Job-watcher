@@ -4,19 +4,27 @@ This file is the ONLY source of truth for drafted resumes. Nothing gets
 invented beyond what's written here; thin sections become TODO notes in
 drafts. Compiled 2026-08 from: 2019–2022 resume PDFs (Google Drive), the
 2025 resume PDF (uploaded), and the June 2026 resume (Gmail); dual-role
-framing confirmed by Gabriel.
+framing confirmed by Gabriel. LG Energy Solution section rewritten 2026-09
+from Gabriel's own account; other roles still in the compiled form.
 
 ## FRAMING GUIDANCE FOR DRAFTS
 
-The two current roles below (LG Energy Solution and PG&E) are CONCURRENT —
-both run to present. Per application, LEAD with whichever fits the target
-role and give it the fuller treatment:
+Career shown on resumes in this version: PG&E (2013–2016) → Comfort
+Energy (2016–2017) → LG Energy Solution (2018–present, one employer
+heading with two titles under it: Senior Systems Engineer 2018–2021,
+Senior Product Manager 2021–present). The concurrent PG&E Senior Grid Innovation Engineer role is
+deliberately left out of this version (owner decision 2026-09; its text is
+kept in experience_library_archive.md, which drafts never read). Lead
+with LG Energy Solution and give it the fuller treatment:
 - Product / BESS / datacenter-energy / hyperscaler roles → lead LG Energy
   Solution (Senior PM, grid-scale BESS for AI datacenters).
-- Utility / interconnection / grid-planning / regulatory roles → lead PG&E
-  (Senior Grid Innovation Engineer, ICA platform).
-Never invent an end date for either role, and don't claim more hours or
-scope for one than this file states.
+- Utility / interconnection / grid-planning / regulatory roles → still lead
+  LG, choosing its interconnection and AI data center bullets, and give
+  the 2013–2016 PG&E role two bullets.
+- Prefab / modular / EMS / contract-manufacturing postings (Flex, Jabil
+  peers, container suppliers) → lead LG and put the Jabil standardized
+  container bullets first; name Jabil.
+Never invent an end date for the LG role.
 
 ## Header
 
@@ -33,9 +41,7 @@ Energy product leader at the intersection of power engineering, energy
 finance, and applied AI — the translator between grid physics, project
 economics, and data. Senior Product Manager for grid-scale battery energy
 storage systems (BESS) at LG Energy Solution, focused on AI datacenter
-power customers (Meta, Google, NVIDIA, Microsoft); concurrently Senior
-Grid Innovation Engineer at PG&E (interconnection/hosting-capacity
-platform). Licensed Professional Engineer, MBA (STEM, Product Management/
+power customers (Meta, Google, NVIDIA, Microsoft). Licensed Professional Engineer, MBA (STEM, Product Management/
 Strategy) with energy-markets finance. 12+ years across the energy
 industry — utility programs, HVAC design-build, lithium-ion storage from
 systems engineering to product. Ships production AI/multi-agent systems
@@ -46,61 +52,91 @@ summaries and cover letters — adapt which leg gets emphasis to the role.)
 
 ## Roles (reverse chronological)
 
-### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2021 – present; Senior PM in current phase)
+### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2018 – present)
 
-(Continuous LG tenure from Feb 2021; the earlier phase is broken out below
-so drafts can show progression. Concurrent with the PG&E role below.)
+(One employer heading for the whole LG tenure, owner decision 2026-09,
+with two titles under it, newest first:
+- Senior Product Manager, Grid-Scale BESS (Feb 2021 – present)
+- Senior Systems Engineer, Energy Storage (Feb 2018 – Feb 2021), at LG
+  Chem's energy storage business before the spin-off into LG Energy
+  Solution; write the employer as LG Energy Solution for both.
+In the JSON that is two experience entries with employer "LG Energy
+Solution", adjacent, newest first; the renderer draws one employer line
+spanning Feb 2018 – present and a title line for each. The deal
+engineering bullets below belong under the Senior Systems Engineer
+title, everything else under Senior Product Manager.)
 
-Scope: Lead product strategy for grid-scale battery storage systems
-targeting AI datacenter customers (Meta, Google, NVIDIA, Microsoft). New
-product development of grid-scale ESS and data science products: product
-strategy, voice of customer, competitive analysis, driving/prioritizing
-market requirements. Coordinate cross-functional teams for system
-engineering of batteries, enclosure, PCS, controls, HVAC, fire suppression,
-and balance of plant.
+Facts, for context (not resume prose): 2018 to 2021 he supported the
+technical side of sales deals: battery system sizing, degradation
+modeling, contract technical exhibits, bid clarifications and technical
+communications with utilities, developers and consultants; he built
+battery modeling tools (degradation, thermal, augmentation optimization,
+log-data analysis) that cut proposal turnaround time, and built the US
+team's local knowledge base from HQ engineering resources. LG traditionally sold battery packs
+and racks to system integrators, who did bespoke on-site containerization,
+the market's biggest pain point. Gabriel worked with Jabil to standardize
+and prefabricate a containerized ESS, LG's first, 2.86 MWh per container;
+it is deployed on two projects, Fifth Standard (584 MWh, California) and
+Bright Arrow (361 MWh, Texas). After LG became a system integrator he
+led product development of a 2-hour AC-integrated container, when the
+company planned to stay at 4-hour duration; the 2-hour product is now
+LG's flagship for AI data centers (short duration for power fluctuation
+ride-through, interconnection enablement, bring-your-own-generation with
+gas turbines) and is booked for about 3 GWh in 2027. He productized the
+AI data center segment (as opposed to front-of-meter grid storage) and
+built the standardized customer artifacts (reference designs, simulation
+data, PSCAD models) that shorten technical review. He set the fire safety
+requirements while the industry was still working out how to prove them
+(fire consultants, hazard mitigation analysis, deflagration CFD modeling)
+with UL 9540 as a core product requirement (the container is UL 9540
+listed), and built the cost model from cell cost to system selling price
+plus customers' EPC cost, used to set the selling price and to compare
+inverter configurations. His battery modeling tools cut proposal
+turnaround from days to hours. 8 years in
+lithium-ion storage counting LG Chem (2018).
 
-Outcomes (TODO — the most important gap; quantify 3-5 bullets):
-- TODO e.g. AIDC product/config launches (MWh scale, $/kWh outcomes)
-- TODO e.g. revenue/pipeline influenced, design wins, cost reductions
-- TODO e.g. specific datacenter-customer engagements and what you drove
+Approved bullets. One bullet per fact: never use two bullets that carry
+the same fact, and never restate a bullet's fact in the summary. Lines
+marked ALT are alternates for the bullet above them, one or the other.
+Use verbatim; swap a word only for a posting term that names the same
+thing. Tags guide selection.
 
-### Pacific Gas and Electric — Senior Grid Innovation Engineer (June 2023 – present)
+Standardized container, Jabil [prefab] [partnerships] [commercialization]
+- Replaced bespoke on-site integration, the market's biggest pain point, with LG's first prefabricated 2.86 MWh ESS container, built with Jabil.
+  ALT: Designed the 2.86 MWh pre-integrated container with Jabil, moving LG from selling racks to integrators to selling a finished product.
+- Deployed 584 MWh on Fifth Standard in California and 361 MWh on Bright Arrow in Texas with the standardized container.
 
-(Concurrent with the LG Energy Solution role above.)
+2-hour AC-integrated container [product-strategy] [business-case] [npi]
+- Won approval for a 2-hour AC-integrated BESS, against a plan to stay at 4-hour, with a techno-economic business case.
+- Booked about 3 GWh for 2027 on the 2-hour product, now LG's flagship for AI data centers.
+- Priced feature trade-offs in EPC and installation cost, energy density and shipping weight to set the product requirements.
+  ALT: Took the 2-hour container from requirements to launch, owning vendor coordination, supply chain planning and customer documentation.
 
-- Managed development of the Integration Capacity Analysis (ICA) platform —
-  the hosting-capacity/interconnection data platform — coordinating vendors,
-  contractors, and cross-functional stakeholders to meet timelines and
-  requirements.
-- Developed business cases and secured management approval for internal
-  products, including a Non-Wires Alternatives planning tool and an internal
-  tool leveraging ICA load hosting-capacity data, via user interviews,
-  quantified pain points, and actionable requirements.
-- Authored reports and delivered presentations for regulatory compliance and
-  stakeholder/regulator communication.
+AI data center segment [aidc] [customer-facing] [commercialization]
+- Opened the AI data center segment for LG's BESS by defining its ride-through, interconnection and bring-your-own-generation feature set.
+- Cut technical review time on data center deals with standard reference designs, simulation data and PSCAD models.
 
-### LG Energy Solution — Product Manager, Grid-Scale ESS (Feb 2021 – 2023 phase)
+Safety and certification [safety] [ul-9540] [codes]
+- Achieved UL 9540 listing for the container, setting fire safety requirements and running hazard mitigation analysis and deflagration CFD with fire consultants.
+  ALT: Achieved UL 9540 listing for the container by setting fire safety requirements before the industry had settled how to prove them.
 
-- Formulated product strategy for grid-scale energy storage products: market
-  research, voice of customer, quantitative/qualitative analyses, and
-  competitive analysis.
-- Led product development and market requirements, coordinating
-  cross-functional system engineering of batteries, enclosures, power
-  conversion systems, controls, fire safety, and thermal management.
-- **Spearheaded design and development of LG's first pre-integrated battery
-  container (2.86 MWh).**
+Cost and pricing [pricing] [cost-model] [business-case]
+- Set the container's selling price and chose its inverter configuration with a cell-to-system cost model that included customers' EPC cost.
 
-### LG Chem — Senior Systems Engineer, Energy Storage (Feb 2018 – Feb 2021)
+Deal engineering, under the Senior Systems Engineer title (Feb 2018 – Feb 2021) [deal-engineering] [sizing] [technical-sales]
+- Cut proposal turnaround from days to hours with battery modeling tools for degradation, thermal and augmentation optimization.
+- Sized lithium-ion systems for North American deals and negotiated their technical exhibits and bid clarifications with utilities and developers.
+- Built the US team's local knowledge base from HQ engineering resources.
 
-- Engineering support for lithium-ion battery system sales across North
-  America: system sizing/design, product selection, troubleshooting, and
-  battery lifecycle/degradation modeling for optimal configurations.
-- Led technical communications with electric utilities, project developers,
-  and consultants: proposals, bid clarifications, contract-term negotiation.
-- Improved proposal turnaround time by developing battery modeling tools
-  (degradation, thermal, augmentation optimization, log-data analysis),
-  strengthening customer relationships; built the US team's local knowledge
-  base from HQ engineering resources.
+Scope, use at most one, only when the page has room, and always as the last bullet of the role [scope]
+- Own new product development for grid-scale ESS, from voice of customer through market requirements.
+
+Summary sentences (pick 2 or 3, verbatim; they carry no fact that a
+bullet carries, so nothing repeats):
+- Senior product manager for grid-scale BESS at LG Energy Solution, with 8 years in lithium-ion storage from deal engineering to product line ownership.
+- Sells to AI data center customers including Meta, Google, NVIDIA and Microsoft, and to front-of-meter grid storage developers.
+- Licensed Professional Engineer with an MBA in product strategy.
+- Mechanical engineer by training, with utility efficiency programs and HVAC design-build before battery storage.
 
 ### Comfort Energy — Design-Build Engineering Manager, HVAC (July 2016 – Oct 2017)
 
@@ -159,12 +195,13 @@ Outcomes (TODO — the most important gap; quantify 3-5 bullets):
 
 ## Skills / domain knowledge
 
-- BESS: lithium-ion system design, PCS, BMS, degradation/thermal modeling,
+- BESS: lithium-ion system design, power conversion systems (PCS), BMS,
+  degradation/thermal modeling,
   augmentation optimization, system sizing, techno-economic analysis, fire
   safety, codes & standards (UL, NFPA), testing & certification
-- Grid/utility: interconnection & hosting capacity (ICA), non-wires
-  alternatives, energy efficiency, demand response, US energy markets
-  (ERCOT), electricity financial contracts (forwards, tolling, swaps)
+- Grid/utility: interconnection, energy efficiency, demand response, US
+  energy markets (ERCOT), electricity financial contracts (forwards,
+  tolling, swaps)
 - Product & commercial: product strategy, VOC, market requirements,
   competitive analysis, proposal tendering, contract negotiation, financial
   modeling, statistical forecasting, linear/non-linear optimization, US GAAP

@@ -11,19 +11,42 @@ skimming for thirty seconds and an ATS parser that wants exact terms.
 
 ## Bullets
 
-- Start with a plain verb in the past tense for past roles and the present
-  tense for current roles: led, built, ran, designed, launched, negotiated,
-  won, cut, sized, modeled, managed, wrote, shipped. ✔
-- Verb, then what, then the result or scale. Stop there. ✔ 22 words max.
-- One idea per bullet. If there is an "and" joining two accomplishments,
-  make two bullets or drop one.
+- Result first. Say what changed and the number, then how, after "by" or
+  "with": "Cut proposal turnaround time with battery modeling tools for
+  degradation, thermal and augmentation." Google's version: accomplished
+  X, measured by Y, by doing Z. The verb still comes first, but it is the
+  verb of the outcome (won, cut, shipped, booked, replaced), not of the
+  activity (coordinated, supported, aligned). ✔ 22 words max.
+- Every lead-role bullet carries a number, a name (customer, project,
+  partner, product) or a decision you owned. A bullet with none of those
+  is a duty. Cut it or fold it into one that has them.
+- Coordination verbs (coordinated, aligned, supported, collaborated,
+  facilitated, helped, assisted, contributed, participated) never open a
+  bullet unless the bullet also carries a number. ✔
+- Start with a plain verb: past tense for anything finished, present tense
+  only for an ongoing responsibility in a current role. ✔ Never the -s
+  form (leads, manages). ✔
+- One idea per bullet. If an "and" joins two accomplishments, make two
+  bullets or drop one.
+- Each fact once. A name or number (Jabil, 2.86 MWh, 3 GWh, UL 9540)
+  appears in one bullet, and not again in the summary. ✔ (A distinctive
+  term in three or more units is flagged.)
+- Relevance over fullness. Older roles get the one bullet closest to the
+  posting, two only when the role itself is relevant. Projects and skill
+  categories appear only when the posting asks for what they show; an
+  irrelevant section is left out, not filled.
+- No lists of more than three things inside a bullet. ✔ (More than three
+  commas reads as a list.) Name the two or three that matter.
+- When a number improved, give the baseline if the library has it: "from
+  4-hour to 2-hour", "from racks to a finished container".
 - Numbers as digits (2.86 MWh, $2M, 12 years). Never write a number that
   is not in the experience library.
 - No em-dashes and no semicolons anywhere. ✔ Use a comma or a full stop.
 - No colon-introduced lists inside a bullet. ✔
 - At most one parenthetical per bullet. ✔
 - Do not start two bullets in a row with the same verb. ✔
-- Prefer the library's own wording. Change words only to match the
+- Where the library has approved bullets, use them verbatim. Otherwise
+  prefer the library's own wording and change words only to match the
   posting's terms or to follow these rules.
 
 ## Words to avoid ✔
@@ -49,21 +72,25 @@ controls, HVAC and fire systems.
 
 Before: Spearheaded design and development of LG's first pre-integrated
 battery container (2.86 MWh).
-After: Designed LG's first pre-integrated battery container, 2.86 MWh.
+After: Designed the 2.86 MWh pre-integrated container with Jabil, moving
+LG from selling racks to integrators to selling a finished product.
 
 Before: Coordinate cross-functional engineering teams — batteries,
 enclosure, power conversion systems, controls, HVAC, fire suppression, and
 balance of plant — from requirements through delivery.
-After: Run the engineering program for battery, enclosure, PCS, controls,
-HVAC and fire systems from requirements to delivery.
+After: Took the 2-hour container from requirements to launch, owning
+vendor coordination, supply chain planning and customer documentation.
 
-Before: Manage development of the Integration Capacity Analysis (ICA)
-platform — the hosting-capacity/interconnection data platform —
-coordinating vendors, contractors, and cross-functional stakeholders to
-meet project timelines and requirements.
-After: Manage PG&E's Integration Capacity Analysis platform, the
-interconnection and hosting-capacity data system, with its vendors and
-contractors.
+Before: Led product development of the 2-hour container, now LG's
+flagship for AI data centers, with about 3 GWh booked for 2027.
+After: Turned the 2-hour container into LG's flagship for AI data
+centers, with about 3 GWh booked for 2027.
+(Same facts. The first reports an activity, the second an outcome.)
+
+Before: Aligned engineering, sales, supply chain and vendors on product
+requirements, sales material and customer documentation for the 2-hour
+product.
+After: (cut: a coordination bullet with no number, name or decision.)
 
 Before: Energy infrastructure leader at the intersection of power
 engineering, product strategy, and cross-functional delivery for AI
