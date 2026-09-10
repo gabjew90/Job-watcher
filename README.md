@@ -152,8 +152,12 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   one-page layout is code (`src/resume.py`, python-docx), the PDF is that
   DOCX converted by LibreOffice, and the page count is checked. A
   fabrication guard drops any line whose numbers, dates or employers are
-  not in the library (drop, never rewrite) and lists the removals on the
-  issue. `resume_style.md` rules marked ✔ are also checked in code; a
+  not in the library, and any skills term with a word the library never
+  uses (drop, never rewrite), and lists the removals on the issue. The
+  page estimate is in points from the theme's sizes and spacing,
+  calibrated on LibreOffice output; the PDF page count is still the
+  final judge, trimming the cheapest items first (a third project, older
+  roles' extra bullets, long skills lists) so lead-role bullets survive. `resume_style.md` rules marked ✔ are also checked in code; a
   revision pass fixes violations and works in missing ATS terms only where
   the library supports them. No auto-drafting by score.
 - No LinkedIn scraping. No auto-applying. Discovery, scoring, and drafting

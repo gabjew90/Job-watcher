@@ -62,7 +62,7 @@ sources (jobspy | hyperscaler APIs | ATS boards)
   skills, employers, or accomplishments. Insufficient library → reported as
   gaps on the draft-request issue; the resume omits it. A deterministic
   guard drops any line whose numbers, dates or employers are not in the
-  library.
+  library, and any skills term with a word the library never uses.
 - Per-source try/except: one broken endpoint never kills the run; failures
   logged visibly in Actions output.
 - No secrets in code. `CLAUDE_CODE_OAUTH_TOKEN` as repo secret; the issue

@@ -167,10 +167,14 @@ def test_fit_trims_overflow_and_keeps_one_bullet_per_role():
     c["projects"] = c["projects"] * 2
     for cat in c["skills"]:
         cat["items"] = (cat["items"] * 3)[:12]
-    assert resume.estimate_lines(c) > resume.LINE_BUDGET
+    assert resume.estimate_height(c) > resume.PAGE_BUDGET_PT
     trimmed = resume.fit_to_page(c)
     assert trimmed
-    assert resume.estimate_lines(c) <= resume.LINE_BUDGET
+    assert resume.estimate_height(c) <= resume.PAGE_BUDGET_PT
+    # A third project and older roles' extra bullets go before any lead-role bullet.
+    assert trimmed[0].startswith("project ")
+    assert not any("Pacific Gas and Electric" in t and "bullet" in t for t in trimmed[:1])
+    assert len(c["experience"][0]["bullets"]) >= 3
     assert resume.word_count(c) <= resume.TOTAL_WORDS
     assert all(len(e["bullets"]) >= 1 for e in c["experience"])
 
@@ -272,3 +276,40 @@ def test_workday_job_url_maps_to_cxs_api():
     m = draft_requests.WORKDAY_JOB.match("https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA/Director_JR1")
     assert m and m["site"] == "NVIDIAExternalCareerSite"
     assert draft_requests.WORKDAY_JOB.match("https://jobs.example.com/job/1") is None
+
+
+def test_estimate_matches_libreoffice_measurements():
+    """Anchors from real renders: the page holds ~712.8 pt of content.
+    A six-role, 397-word draft measured 704 pt and fit; the same draft one
+    bullet longer measured ~730 pt and spilled."""
+    c = content()
+    h = resume.estimate_height(c)
+    assert 500 < h < resume.PAGE_BUDGET_PT
+    c["experience"][0]["bullets"].append("Led one more bullet, long enough to wrap onto a second line once it passes the measured one-hundred-and-twenty-two character width.")
+    assert resume.estimate_height(c) - h == pytest.approx(2 * 10.5 * 1.22, abs=0.2)
+    assert resume.estimate_height(c, "modern") != h
+
+
+def test_third_person_openers_flagged_and_fixed():
+    assert resume._third_person("leads") == "lead"
+    assert resume._third_person("manages") == "manage"
+    assert resume._third_person("prioritizes") == "prioritize"
+    assert resume._third_person("identifies") == "identify"
+    assert resume._third_person("led") == "" and resume._third_person("assess") == ""
+    c = content()
+    c["experience"][0]["bullets"][0] = "Leads product strategy for grid-scale storage."
+    assert any("third-person 'leads'" in f for f in resume.style_lint(c))
+    fixes = resume.auto_fix(c)
+    assert c["experience"][0]["bullets"][0] == "Lead product strategy for grid-scale storage."
+    assert fixes and "'Leads' to 'Lead'" in fixes[0]
+    assert resume.style_lint(c) == []
+
+
+def test_guard_drops_skill_terms_absent_from_library():
+    c = content()
+    c["skills"][0]["items"] += ["renewable integration", "Anthropic and Gemini APIs", "AI infrastructure"]
+    removed = resume.fabrication_guard(c, LIBRARY)
+    items = c["skills"][0]["items"]
+    assert "renewable integration" not in items and "AI infrastructure" not in items
+    assert "Anthropic and Gemini APIs" in items and "system sizing" in items
+    assert any("renewable" in r for r in removed)
