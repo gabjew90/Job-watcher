@@ -10,8 +10,9 @@ from Gabriel's own account; other roles still in the compiled form.
 ## FRAMING GUIDANCE FOR DRAFTS
 
 Career shown on resumes in this version: PG&E (2013–2016) → Comfort
-Energy (2016–2017) → LG Energy Solution (2018–present, one entry that
-includes the LG Chem years). The concurrent PG&E Senior Grid Innovation Engineer role is
+Energy (2016–2017) → LG Energy Solution (2018–present, one employer
+heading with two titles under it: Senior Systems Engineer 2018–2021,
+Senior Product Manager 2021–present). The concurrent PG&E Senior Grid Innovation Engineer role is
 deliberately left out of this version (owner decision 2026-09; its text is
 kept in experience_library_archive.md, which drafts never read). Lead
 with LG Energy Solution and give it the fuller treatment:
@@ -53,11 +54,17 @@ summaries and cover letters — adapt which leg gets emphasis to the role.)
 
 ### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2018 – present)
 
-(One entry for the whole LG tenure, owner decision 2026-09: Senior Systems
-Engineer at LG Chem's energy storage business Feb 2018 – Feb 2021, Senior
-Product Manager from Feb 2021 after the spin-off into LG Energy Solution.
-Resumes show it as one role, LG Energy Solution, Feb 2018 – present; do
-not split it into two entries.)
+(One employer heading for the whole LG tenure, owner decision 2026-09,
+with two titles under it, newest first:
+- Senior Product Manager, Grid-Scale BESS (Feb 2021 – present)
+- Senior Systems Engineer, Energy Storage (Feb 2018 – Feb 2021), at LG
+  Chem's energy storage business before the spin-off into LG Energy
+  Solution; write the employer as LG Energy Solution for both.
+In the JSON that is two experience entries with employer "LG Energy
+Solution", adjacent, newest first; the renderer draws one employer line
+spanning Feb 2018 – present and a title line for each. The deal
+engineering bullets below belong under the Senior Systems Engineer
+title, everything else under Senior Product Manager.)
 
 Facts, for context (not resume prose): 2018 to 2021 he supported the
 technical side of sales deals: battery system sizing, degradation
@@ -116,7 +123,7 @@ Safety and certification [safety] [ul-9540] [codes]
 Cost and pricing [pricing] [cost-model] [business-case]
 - Set the container's selling price and chose its inverter configuration with a cell-to-system cost model that included customers' EPC cost.
 
-Deal engineering, 2018 – 2021 [deal-engineering] [sizing] [technical-sales]
+Deal engineering, under the Senior Systems Engineer title (Feb 2018 – Feb 2021) [deal-engineering] [sizing] [technical-sales]
 - Cut proposal turnaround from days to hours with battery modeling tools for degradation, thermal and augmentation optimization.
 - Sized lithium-ion systems for North American deals and negotiated their technical exhibits and bid clarifications with utilities and developers.
 - Built the US team's local knowledge base from HQ engineering resources.

@@ -104,6 +104,8 @@ SCHEMA = """{
   "experience": [
     {"employer": "<as in library>", "title": "<as in library>", "dates": "<as in library>",
      "bullets": ["<verb first, 22 words max>"]}
+    // one employer with several titles: one entry per title, same employer, newest
+    // first and adjacent; the renderer groups them under one employer heading
   ],
   "projects": [{"name": "<as in library>", "line": "<one sentence, 22 words max>"}],
   "education": ["<one line each>"],
@@ -315,17 +317,49 @@ def normalize(content: dict) -> dict:
             items = [_s(i).rstrip(".") for i in (c.get("items") or []) if _s(i)][:MAX_SKILL_ITEMS]
             if items:
                 out["skills"].append({"category": _s(c.get("category")), "items": items})
-    # Lead role first, then clip bullet counts.
+    # Lead employer's entries first (all of them, in order), then clip.
+    out["experience"] = [e for e in out["experience"] if e["employer"]]
     lead = company_key(out["lead_role"])
     if lead:
-        for i, e in enumerate(out["experience"]):
-            if company_key(e["employer"]) == lead:
-                out["experience"].insert(0, out["experience"].pop(i))
-                break
+        mine = [e for e in out["experience"] if company_key(e["employer"]) == lead]
+        out["experience"] = mine + [e for e in out["experience"] if company_key(e["employer"]) != lead]
+    # Within one employer, newest title first (the renderer assumes it).
+    ordered: list[dict] = []
+    for g in groups(out["experience"]):
+        ordered += sorted(g, key=_end_year, reverse=True)
+    out["experience"] = ordered
     for i, e in enumerate(out["experience"]):
         e["bullets"] = e["bullets"][:LEAD_BULLETS if i == 0 else OTHER_BULLETS]
-    out["experience"] = [e for e in out["experience"] if e["employer"]]
     return out
+
+
+def _end_year(entry: dict) -> int:
+    dates = entry.get("dates", "")
+    if "present" in dates.lower():
+        return 9999
+    years = YEAR_RE.findall(dates)
+    return int(years[-1]) if years else 0
+
+
+def groups(experience: list[dict]) -> list[list[dict]]:
+    """Consecutive entries with the same employer, e.g. two titles at LG."""
+    out: list[list[dict]] = []
+    for e in experience:
+        if out and company_key(out[-1][0]["employer"]) == company_key(e["employer"]):
+            out[-1].append(e)
+        else:
+            out.append([e])
+    return out
+
+
+def span_dates(group: list[dict]) -> str:
+    """'Feb 2018 – present' for a group whose newest entry ends 'present'
+    and whose oldest starts 'Feb 2018'."""
+    if len(group) == 1:
+        return group[0]["dates"]
+    start = group[-1]["dates"].split(" – ")[0]
+    end = group[0]["dates"].split(" – ")[-1]
+    return f"{start} – {end}"
 
 
 # ---------------------------------------------------------------- style
@@ -813,8 +847,11 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
     sections = 2 + sum(bool(content.get(k)) for k in ("projects", "education", "certifications", "skills"))
     h += sections * (t["heading_before"] + t["heading_size"] * lh + 2 + (3 if t["rule"] else 0))
     h += wrapped(content.get("summary", ""), cpl) * body
-    for e in content.get("experience", []):
-        h += 4 + body + sum(wrapped(b, cpl_bullet) for b in e["bullets"]) * body
+    for g in groups(content.get("experience", [])):
+        if len(g) > 1:
+            h += 4 + body  # employer line above the title lines
+        for e in g:
+            h += 4 + body + sum(wrapped(b, cpl_bullet) for b in e["bullets"]) * body
     h += sum(wrapped(p["name"] + p["line"], cpl_bullet - 3) for p in content.get("projects", [])) * body
     h += (len(content.get("education", [])) + len(content.get("certifications", []))) * body
     h += sum(wrapped(c["category"] + ", ".join(c["items"]), cpl - 2) for c in content.get("skills", [])) * body
@@ -828,14 +865,17 @@ def _over_budget(content: dict, theme: str = DEFAULT_THEME) -> bool:
 def trim_one(content: dict) -> str | None:
     """Remove the lowest-priority item. Returns what was removed, or None.
 
-    Cheapest first: a third project; older roles' extra bullets (the
+    Cheapest first: a third project; other employers' extra bullets (the
     prompt asks the model to order bullets by importance); skills past
-    seven per category; the lead role's fifth bullet; a marginal oldest
-    role (keeping three); and only then the second project, skills past
-    five, the lead role's fourth bullet, the last project, and the oldest
-    role down to two."""
+    seven per category; the lead employer's earlier titles down to one
+    bullet; the lead title's fifth bullet; a marginal oldest employer
+    (keeping three employers); and only then the second project, skills
+    past five, the lead title's fourth bullet, the last project, and the
+    oldest employer down to two."""
     exp = content.get("experience", [])
     projects = content.get("projects", [])
+    lead_n = len(groups(exp)[0]) if exp else 0  # entries of the lead employer
+    lead_rest, others = exp[1:lead_n], exp[lead_n:]
 
     def cap_skills(n: int) -> str | None:
         for c in content.get("skills", []):
@@ -844,26 +884,35 @@ def trim_one(content: dict) -> str | None:
                 return f"skills {c['category']} beyond {n} items"
         return None
 
-    def drop_oldest_role(keep: int) -> str | None:
-        if len(exp) > keep:
-            e = exp.pop()
+    def pop_bullet(entries: list[dict]) -> str | None:
+        for e in reversed(entries):
+            if len(e["bullets"]) > 1:
+                b = e["bullets"].pop()
+                return f"{e['employer']} bullet '{b[:60]}'"
+        return None
+
+    def drop_oldest_employer(keep: int) -> str | None:
+        gs = groups(exp)
+        if len(gs) > keep:
+            for e in gs[-1]:
+                exp.remove(e)
+            e = gs[-1][0]
             return f"role '{e['employer']}, {e['title']}'"
         return None
 
     if len(projects) > 2:
         p = projects.pop()
         return f"project '{p['name']}'"
-    # Oldest non-lead role first, cycling toward the newest, never below 1.
-    for e in reversed(exp[1:]):
-        if len(e["bullets"]) > 1:
-            b = e["bullets"].pop()
-            return f"{e['employer']} bullet '{b[:60]}'"
+    if (r := pop_bullet(others)):
+        return r
     if (r := cap_skills(7)):
+        return r
+    if (r := pop_bullet(lead_rest)):
         return r
     if exp and len(exp[0]["bullets"]) > 4:
         b = exp[0]["bullets"].pop()
         return f"{exp[0]['employer']} bullet '{b[:60]}'"
-    if (r := drop_oldest_role(3)):
+    if (r := drop_oldest_employer(3)):
         return r
     if len(projects) > 1:
         p = projects.pop()
@@ -876,7 +925,7 @@ def trim_one(content: dict) -> str | None:
     if projects:
         p = projects.pop()
         return f"project '{p['name']}'"
-    return drop_oldest_role(2)
+    return drop_oldest_employer(2)
 
 
 def fit_to_page(content: dict, theme: str = DEFAULT_THEME) -> list[str]:
@@ -899,7 +948,14 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
     lines.append(_contact_line(header))
     lines.append("\n## Summary\n" + content.get("summary", ""))
     lines.append("\n## Experience")
-    for e in content.get("experience", []):
+    for g in groups(content.get("experience", [])):
+        if len(g) > 1:
+            lines.append(f"\n### {g[0]['employer']}\n*{span_dates(g)}*")
+            for e in g:
+                lines.append(f"\n**{e['title']}** *({e['dates']})*")
+                lines += [f"- {b}" for b in e["bullets"]]
+            continue
+        e = g[0]
         lines.append(f"\n### {e['employer']} | {e['title']}\n*{e['dates']}*")
         lines += [f"- {b}" for b in e["bullets"]]
     if content.get("projects"):
@@ -1021,22 +1077,36 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     heading("Summary")
     doc.add_paragraph(content.get("summary", ""))
 
-    heading("Experience")
-    for e in content.get("experience", []):
+    def role_line(first: str, second: str | None, dates: str, before: int, bold: bool = True):
         p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(4)
+        p.paragraph_format.space_before = Pt(before)
         p.paragraph_format.tab_stops.add_tab_stop(Inches(7.3), WD_TAB_ALIGNMENT.RIGHT)
-        first, second = ((e["employer"], e["title"]) if t["role_order"] == "employer"
-                         else (e["title"], e["employer"]))
         r1 = p.add_run(first)
-        r1.bold = True
-        r2 = p.add_run(f"  |  {second}")
-        if t["dates_color"]:
-            r2.font.color.rgb = _rgb(t["dates_color"])
-        r3 = p.add_run(f"\t{e['dates']}")
+        r1.bold = bold
+        if second:
+            r2 = p.add_run(f"  |  {second}")
+            if t["dates_color"]:
+                r2.font.color.rgb = _rgb(t["dates_color"])
+        r3 = p.add_run(f"\t{dates}")
         r3.italic = t["dates_italic"]
         if t["dates_color"]:
             r3.font.color.rgb = _rgb(t["dates_color"])
+
+    heading("Experience")
+    for g in groups(content.get("experience", [])):
+        if len(g) > 1:
+            # One employer, several titles: employer line with the full span,
+            # then a title line per position, newest first.
+            role_line(g[0]["employer"], None, span_dates(g), 4)
+            for e in g:
+                role_line(e["title"], None, e["dates"], 2, bold=False)
+                for b in e["bullets"]:
+                    doc.add_paragraph(b, style="List Bullet")
+            continue
+        e = g[0]
+        first, second = ((e["employer"], e["title"]) if t["role_order"] == "employer"
+                         else (e["title"], e["employer"]))
+        role_line(first, second, e["dates"], 4)
         for b in e["bullets"]:
             doc.add_paragraph(b, style="List Bullet")
 

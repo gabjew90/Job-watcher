@@ -118,7 +118,8 @@ def test_guard_drops_unknown_employer_and_dates():
     c = content()
     c["experience"].append({"employer": "Tesla", "title": "Director", "dates": "2019 – 2020",
                             "bullets": ["Led things."]})
-    c["experience"][1]["dates"] = "July 2011 – Oct 2017"  # Comfort Energy, wrong year
+    comfort = next(e for e in c["experience"] if e["employer"] == "Comfort Energy")
+    comfort["dates"] = "July 2011 – Oct 2017"  # wrong year
     removed = resume.fabrication_guard(c, LIBRARY)
     employers = [e["employer"] for e in c["experience"]]
     assert "Tesla" not in employers and "Comfort Energy" not in employers
@@ -345,3 +346,30 @@ def test_repetition_lint_flags_a_name_used_three_times():
     ]
     flags = resume.repetition_lint(c)
     assert any("'Jabil' appears in 3" in f for f in flags)
+
+
+def test_two_titles_under_one_employer(tmp_path):
+    from docx import Document
+    c = content()
+    gs = resume.groups(c["experience"])
+    assert [len(g) for g in gs] == [2, 1, 1]
+    assert resume.span_dates(gs[0]) == "Feb 2018 – present"
+    # Lead-role reorder keeps both LG entries together and first, newest first.
+    raw = copy.deepcopy(FIXTURE)
+    raw["experience"].reverse()
+    c2 = resume.normalize(raw)
+    assert [e["title"][:6] for e in c2["experience"][:2]] == ["Senior", "Senior"]
+    assert c2["experience"][0]["dates"] == "Feb 2021 – present"
+    header = resume.header_from_library(LIBRARY)
+    doc = Document(str(resume.render_docx(c, header, None, tmp_path / "g.docx")))
+    texts = [p.text for p in doc.paragraphs]
+    assert "LG Energy Solution\tFeb 2018 – present" in texts
+    assert "Senior Systems Engineer, Energy Storage\tFeb 2018 – Feb 2021" in texts
+    md = resume.render_markdown(c, header)
+    assert "### LG Energy Solution\n*Feb 2018 – present*" in md
+    assert "**Senior Systems Engineer, Energy Storage** *(Feb 2018 – Feb 2021)*" in md
+    # Trimming never drops a lead-employer title, only its extra bullets.
+    for e in c["experience"]:
+        e["bullets"] = (e["bullets"] * 4)[:5]
+    resume.fit_to_page(c)
+    assert len(resume.groups(c["experience"])[0]) == 2
