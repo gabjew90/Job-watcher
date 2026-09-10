@@ -185,7 +185,8 @@ Summary sentences (pick, do not rewrite; each under 30 words):
 
 ## Skills / domain knowledge
 
-- BESS: lithium-ion system design, PCS, BMS, degradation/thermal modeling,
+- BESS: lithium-ion system design, power conversion systems (PCS), BMS,
+  degradation/thermal modeling,
   augmentation optimization, system sizing, techno-economic analysis, fire
   safety, codes & standards (UL, NFPA), testing & certification
 - Grid/utility: interconnection, energy efficiency, demand response, US

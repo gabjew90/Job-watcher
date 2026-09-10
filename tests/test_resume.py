@@ -63,7 +63,8 @@ def test_normalize_reorders_to_lead_role_and_clips():
     pge["bullets"] += ["Extra one.", "Extra two.", "Extra three.", "Extra four."]
     c = resume.normalize(raw)
     assert c["experience"][0]["employer"] == "Pacific Gas and Electric"
-    assert len(c["experience"][0]["bullets"]) == resume.LEAD_BULLETS
+    assert len(c["experience"][0]["bullets"]) == min(resume.LEAD_BULLETS, len(pge["bullets"]))
+    assert c["experience"][0]["dates"] == "Dec 2013 – July 2016"
     assert all(len(e["bullets"]) <= resume.OTHER_BULLETS for e in c["experience"][1:])
     assert c["experience"][0]["bullets"][0].endswith(".")
 
@@ -314,3 +315,9 @@ def test_guard_drops_skill_terms_absent_from_library():
     assert "renewable integration" not in items and "AI infrastructure" not in items
     assert "Anthropic and Gemini APIs" in items and "system sizing" in items
     assert any("renewable" in r for r in removed)
+
+
+def test_dates_normalized_to_en_dash():
+    assert resume._dates("Feb 2021 - present") == "Feb 2021 – present"
+    assert resume._dates("Feb 2021 -- 2023") == "Feb 2021 – 2023"
+    assert resume._dates("Feb 2021 – present") == "Feb 2021 – present"

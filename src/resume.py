@@ -47,7 +47,7 @@ KEYWORD_MODEL = os.environ.get("JOBWATCH_KEYWORD_MODEL", "claude-haiku-4-5-20251
 # about 58 lines of body text; 54 leaves room for spacing drift.
 SUMMARY_WORDS = 60
 SENTENCE_WORDS = 30
-LEAD_BULLETS = 5
+LEAD_BULLETS = 7
 OTHER_BULLETS = 3
 BULLET_WORDS = 22
 MAX_PROJECTS = 3
@@ -121,8 +121,11 @@ HARD_RULES = """HARD RULES
   the library cannot evidence, list it under "gaps" (must-haves) or
   "omitted_requirements" (nice-to-haves) and leave it out of the resume.
 - Do not write the header (name, contact details): the code adds it.
-- Prefer the library's own wording. Change words only to match the
-  posting's terms or to follow the style guide.
+- Where the library lists approved bullets, use them verbatim, tense
+  included: a finished accomplishment stays in the past tense even under
+  a current role ("Partnered with Jabil", "Designed"); only an ongoing
+  responsibility uses the present tense. Swap a word only for a posting
+  term that names the same thing. Elsewhere prefer the library's wording.
 - Lead with the role the framing guidance names for this kind of posting
   (set "lead_role" to that employer); up to 5 bullets for it, up to 3 for
   every other role. Include every role in the library, most recent first,
@@ -130,15 +133,16 @@ HARD_RULES = """HARD RULES
   get 1 or 2 bullets rather than being dropped. Up to 3 projects, only if
   relevant. Up to 4 skill categories with up to 12 items each, posting
   terms first.
-- The page holds about 400 words once every role is listed. Budget:
-  lead role 4 or 5 bullets, the other current role 2 or 3, older roles 1
-  each (2 for the one most relevant to this posting), 1 or 2 projects, 4
-  skill categories of 6 to 9 items. Aim for 380 to 450 words in total.
+- The page holds about 400 words with six roles and about 450 with
+  four. Budget: lead role 5 to 7 bullets, the next most relevant role 2
+  or 3, other roles 1 each, 1 or 2 projects, 4 skill categories of 6 to
+  9 items. Aim for 400 to 450 words in total.
   Order bullets within a role by importance: if the page overflows, the
   last bullet of the oldest roles is cut first.
-- Tense: bullets for a role whose dates end in "present" use the plain
-  present tense with no -s (Lead, Run, Manage); past roles use the past
-  tense (Led, Ran, Managed). Never the third-person -s form (Leads).
+- Tense: ongoing responsibilities in a current role use the plain
+  present tense with no -s (Lead, Run, Manage); finished accomplishments
+  and past roles use the past tense (Led, Ran, Managed). Never the
+  third-person -s form (Leads).
 - No first person. Return ONLY the JSON object, no prose, no fences."""
 
 DRAFT_PROMPT = """Write the content of a tailored one-page resume for the job posting below,
@@ -252,6 +256,11 @@ def _clean_bullet(text: str) -> str:
     return text
 
 
+def _dates(value) -> str:
+    """'Feb 2021 - present' and 'Feb 2021 -- present' become 'Feb 2021 – present'."""
+    return re.sub(r"\s+(?:-{1,2}|–|—)\s+", " – ", _s(value))
+
+
 def normalize(content: dict) -> dict:
     """Coerce the model's object into the schema, clip to budgets, and put
     the lead role first."""
@@ -272,7 +281,7 @@ def normalize(content: dict) -> dict:
             continue
         bullets = [_clean_bullet(b) for b in (e.get("bullets") or []) if _s(b)]
         out["experience"].append({"employer": _s(e.get("employer")), "title": _s(e.get("title")),
-                                  "dates": _s(e.get("dates")), "bullets": bullets})
+                                  "dates": _dates(e.get("dates")), "bullets": bullets})
     for p in (content.get("projects") or [])[:MAX_PROJECTS]:
         if isinstance(p, dict) and _s(p.get("name")):
             out["projects"].append({"name": _s(p.get("name")), "line": _clean_bullet(p.get("line"))})
