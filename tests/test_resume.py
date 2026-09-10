@@ -321,3 +321,15 @@ def test_dates_normalized_to_en_dash():
     assert resume._dates("Feb 2021 - present") == "Feb 2021 – present"
     assert resume._dates("Feb 2021 -- 2023") == "Feb 2021 – 2023"
     assert resume._dates("Feb 2021 – present") == "Feb 2021 – present"
+
+
+def test_lint_flags_duty_bullets_and_lists():
+    c = content()
+    c["experience"][0]["bullets"] = [
+        "Coordinated vendors and supply chain planning for the container.",
+        "Ran the program for battery, enclosure, PCS, controls, HVAC and fire suppression.",
+        "Supported 12 deals across North America with sizing and degradation modeling.",
+    ]
+    flags = "\n".join(resume.style_lint(c))
+    assert "carries no number" in flags and "reads as a list" in flags
+    assert "Supported 12" not in flags and flags.count("carries no number") == 1

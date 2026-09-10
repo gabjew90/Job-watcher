@@ -392,7 +392,13 @@ verify verifies verified visualize visualizes visualized calibrate calibrates ca
 contribute contributes contributed control controls controled controlled enhance enhances enhanced
 participate participates participated place places placed rate rates rated sort sorts sorted
 move moves moved productize productizes productized work works worked open opened
+meet meets met reach reaches reached price prices priced turn turns turned
 """.split())
+
+
+COORDINATION_VERBS = {"coordinated", "coordinate", "aligned", "align", "supported", "support",
+                      "collaborated", "collaborate", "facilitated", "facilitate", "helped", "help",
+                      "assisted", "assist", "contributed", "contribute", "participated", "participate"}
 
 
 def _sentences(text: str) -> list[str]:
@@ -446,6 +452,10 @@ def style_lint(content: dict) -> list[str]:
                 flags.append(f"{label}: does not open with a verb ('{first}')")
             elif first and _third_person(first):
                 flags.append(f"{label}: third-person '{first}' (use '{_third_person(first)}')")
+            if first in COORDINATION_VERBS and not re.search(r"\d", text):
+                flags.append(f"{label}: opens with '{first}' and carries no number (duty, not result)")
+            if text.count(",") > 3:
+                flags.append(f"{label}: {text.count(',')} commas, reads as a list")
     if _words(content.get("summary", "")) > SUMMARY_WORDS:
         flags.append(f"summary: {_words(content['summary'])} words (max {SUMMARY_WORDS})")
     for e in content.get("experience", []):

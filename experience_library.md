@@ -85,46 +85,43 @@ with UL 9540 as a core product requirement, and built the cost model from
 cell cost to system selling price plus customers' EPC cost. 8 years in
 lithium-ion storage counting LG Chem (2018).
 
-Approved bullets (use verbatim; swap a term for the posting's synonym at
-most; tags guide selection):
+Approved bullets (use verbatim; swap a word only for a posting term that
+names the same thing; tags guide selection). Written result first: what
+changed and the number, then how.
 
 Standardized container, Jabil [prefab] [partnerships] [commercialization]
-- Partnered with Jabil to standardize and prefabricate LG's first containerized ESS, replacing bespoke on-site integration by system integrators.
-- Moved LG from selling racks to integrators toward a prefabricated container product, removing on-site integration, the market's largest pain point.
-- Designed LG's first pre-integrated 2.86 MWh battery container with Jabil.
+- Replaced bespoke on-site integration, the market's biggest pain point, with LG's first prefabricated ESS container, built with Jabil.
+- Designed the 2.86 MWh pre-integrated container with Jabil, moving LG from selling racks to integrators to selling a finished product.
 - Deployed the standardized container at 584 MWh on Fifth Standard in California and 361 MWh on Bright Arrow in Texas.
 
 2-hour AC-integrated container [product-strategy] [business-case] [npi]
-- Made the case for a 2-hour AC-integrated BESS when LG planned to stay at 4-hour duration.
-- Led product development of the 2-hour container, now LG's flagship for AI data centers, with about 3 GWh booked for 2027.
-- Quantified feature value with techno-economic models covering EPC and installation cost, energy density, weight and transportation.
-- Aligned engineering, sales, supply chain and vendors on product requirements, sales material and customer documentation for the 2-hour product.
-- Coordinated vendors and supply chain planning for the 2-hour container from requirements through launch.
+- Won approval for a 2-hour AC-integrated BESS, against a plan to stay at 4-hour, with a techno-economic business case.
+- Turned the 2-hour container into LG's flagship for AI data centers, with about 3 GWh booked for 2027.
+- Priced feature trade-offs in EPC and installation cost, energy density and shipping weight to set the 2-hour container's requirements.
+- Took the 2-hour container from requirements to launch, owning vendor coordination, supply chain planning and customer documentation.
 
 AI data center segment [aidc] [customer-facing] [commercialization]
-- Defined the AI data center feature set for LG's BESS, covering power fluctuation ride-through, interconnection support and bring-your-own-generation with gas turbines.
-- Productized LG's BESS for the AI data center segment, distinct from front-of-meter grid storage, and supported its sales.
-- Created standardized customer artifacts, reference designs, simulation data and PSCAD models, to shorten technical review and close data center deals.
-- Lead product strategy for grid-scale battery storage sold to AI data center customers, including Meta, Google, NVIDIA and Microsoft.
+- Opened the AI data center segment for LG's BESS by defining its ride-through, interconnection and bring-your-own-generation feature set.
+- Cut technical review time on data center deals with standard reference designs, simulation data and PSCAD models.
+- Lead grid-scale BESS product strategy for AI data center customers Meta, Google, NVIDIA and Microsoft.
 
 Safety and certification [safety] [ul-9540] [codes]
-- Set the fire safety requirements for the container while the industry was still defining how to prove them.
-- Worked with fire consultants on hazard mitigation analysis and deflagration CFD modeling to meet UL 9540, a core product requirement.
+- Met UL 9540 on the container by setting fire safety requirements before the industry had settled how to prove them.
+- Proved the container's fire safety with hazard mitigation analysis and deflagration CFD modeling, working with fire consultants.
 
 Cost and pricing [pricing] [cost-model] [business-case]
-- Modeled product cost from cell cost through system selling price, plus customers' EPC and installation cost.
-- Built business cases, competitor analyses and techno-economic feature models that set the product roadmap.
+- Built the cost model from cell cost to system selling price, plus customers' EPC cost, behind the container's pricing.
+- Set the product roadmap with business cases, competitor analyses and techno-economic feature models.
 
 Deal engineering, 2018 – 2021 [deal-engineering] [sizing] [technical-sales]
-- Owned the technical side of battery sales deals, from system sizing and degradation modeling to contract technical exhibits.
-- Sized and modeled lithium-ion battery systems for North American deals, including degradation modeling and contract technical exhibits.
+- Cut proposal turnaround time with battery modeling tools for degradation, thermal and augmentation optimization.
+- Sized and modeled lithium-ion systems for North American deals and wrote their contract technical exhibits.
 - Negotiated technical exhibits and bid clarifications with utilities, developers and consultants.
-- Cut proposal turnaround time by building battery modeling tools for degradation, thermal and augmentation optimization.
 - Built the US team's local knowledge base from HQ engineering resources.
 
-General [scope]
-- Manage new product development for grid-scale ESS, from voice of customer through competitive analysis and market requirements.
-- Run the engineering program for battery, enclosure, PCS, controls, HVAC, fire suppression and balance of plant.
+Scope, use at most one [scope]
+- Own new product development for grid-scale ESS, from voice of customer through market requirements.
+- Own system engineering of the container across battery, enclosure, PCS and controls.
 
 Summary sentences (pick, do not rewrite; each under 30 words):
 - Product manager who took LG Energy Solution from battery racks to a prefabricated containerized ESS, partnering with Jabil on the first product.
