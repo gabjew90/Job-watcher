@@ -101,3 +101,10 @@ hide: Solution Engineer - Structural Design @ Neara
   management for a storage product line, even when the posting leads
   with DC power architecture terms I have not worked in. (from issue
   #98, re: Flex Product Line Director, DC Power and BESS: "perfect fit")
+- calibration (confirmed top): a director owning an AI data center
+  operator's power infrastructure strategy — utility, transmission and
+  regulatory engagement, interconnection and grid access, site power
+  planning — is the core thesis, band top, including at Bitcoin-mining
+  operators pivoting to AI compute (Bitdeer, Core Scientific, IREN
+  peers). (from issue #99, re: Bitdeer Director, Power Infrastructure:
+  "great fit")
