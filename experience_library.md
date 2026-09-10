@@ -10,8 +10,8 @@ from Gabriel's own account; other roles still in the compiled form.
 ## FRAMING GUIDANCE FOR DRAFTS
 
 Career shown on resumes in this version: PG&E (2013–2016) → Comfort
-Energy (2016–2017) → LG Chem (2018–2021) → LG Energy Solution (2021–
-present). The concurrent PG&E Senior Grid Innovation Engineer role is
+Energy (2016–2017) → LG Energy Solution (2018–present, one entry that
+includes the LG Chem years). The concurrent PG&E Senior Grid Innovation Engineer role is
 deliberately left out of this version (owner decision 2026-09; its text is
 kept in experience_library_archive.md, which drafts never read). Lead
 with LG Energy Solution and give it the fuller treatment:
@@ -51,11 +51,21 @@ summaries and cover letters — adapt which leg gets emphasis to the role.)
 
 ## Roles (reverse chronological)
 
-### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2021 – present)
+### LG Energy Solution — Senior Product Manager, Grid-Scale BESS (Feb 2018 – present)
 
-(One continuous role and title from Feb 2021. Owner-confirmed 2026-09.)
+(One entry for the whole LG tenure, owner decision 2026-09: Senior Systems
+Engineer at LG Chem's energy storage business Feb 2018 – Feb 2021, Senior
+Product Manager from Feb 2021 after the spin-off into LG Energy Solution.
+Resumes show it as one role, LG Energy Solution, Feb 2018 – present; do
+not split it into two entries.)
 
-Facts, for context (not resume prose): LG traditionally sold battery packs
+Facts, for context (not resume prose): 2018 to 2021 he supported the
+technical side of sales deals: battery system sizing, degradation
+modeling, contract technical exhibits, bid clarifications and technical
+communications with utilities, developers and consultants; he built
+battery modeling tools (degradation, thermal, augmentation optimization,
+log-data analysis) that cut proposal turnaround time, and built the US
+team's local knowledge base from HQ engineering resources. LG traditionally sold battery packs
 and racks to system integrators, who did bespoke on-site containerization,
 the market's biggest pain point. Gabriel worked with Jabil to standardize
 and prefabricate a containerized ESS, LG's first, 2.86 MWh per container;
@@ -105,6 +115,13 @@ Cost and pricing [pricing] [cost-model] [business-case]
 - Modeled product cost from cell cost through system selling price, plus customers' EPC and installation cost.
 - Built business cases, competitor analyses and techno-economic feature models that set the product roadmap.
 
+Deal engineering, 2018 – 2021 [deal-engineering] [sizing] [technical-sales]
+- Owned the technical side of battery sales deals, from system sizing and degradation modeling to contract technical exhibits.
+- Sized and modeled lithium-ion battery systems for North American deals, including degradation modeling and contract technical exhibits.
+- Negotiated technical exhibits and bid clarifications with utilities, developers and consultants.
+- Cut proposal turnaround time by building battery modeling tools for degradation, thermal and augmentation optimization.
+- Built the US team's local knowledge base from HQ engineering resources.
+
 General [scope]
 - Manage new product development for grid-scale ESS, from voice of customer through competitive analysis and market requirements.
 - Run the engineering program for battery, enclosure, PCS, controls, HVAC, fire suppression and balance of plant.
@@ -115,18 +132,6 @@ Summary sentences (pick, do not rewrite; each under 30 words):
 - Senior product manager for grid-scale BESS with 8 years in lithium-ion storage, from deal engineering to product line ownership.
 - Opened LG's AI data center segment and made the case for the 2-hour product that became its flagship.
 - Licensed Professional Engineer with an MBA in product strategy.
-
-### LG Chem — Senior Systems Engineer, Energy Storage (Feb 2018 – Feb 2021)
-
-- Engineering support for lithium-ion battery system sales across North
-  America: system sizing/design, product selection, troubleshooting, and
-  battery lifecycle/degradation modeling for optimal configurations.
-- Led technical communications with electric utilities, project developers,
-  and consultants: proposals, bid clarifications, contract-term negotiation.
-- Improved proposal turnaround time by developing battery modeling tools
-  (degradation, thermal, augmentation optimization, log-data analysis),
-  strengthening customer relationships; built the US team's local knowledge
-  base from HQ engineering resources.
 
 ### Comfort Energy — Design-Build Engineering Manager, HVAC (July 2016 – Oct 2017)
 

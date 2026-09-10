@@ -118,10 +118,10 @@ def test_guard_drops_unknown_employer_and_dates():
     c = content()
     c["experience"].append({"employer": "Tesla", "title": "Director", "dates": "2019 – 2020",
                             "bullets": ["Led things."]})
-    c["experience"][1]["dates"] = "Feb 2011 – Feb 2021"  # LG Chem, wrong year
+    c["experience"][1]["dates"] = "July 2011 – Oct 2017"  # Comfort Energy, wrong year
     removed = resume.fabrication_guard(c, LIBRARY)
     employers = [e["employer"] for e in c["experience"]]
-    assert "Tesla" not in employers and "LG Chem" not in employers
+    assert "Tesla" not in employers and "Comfort Energy" not in employers
     assert "Pacific Gas and Electric" in employers
     assert any("Tesla" in r for r in removed) and any("2011" in r for r in removed)
 
@@ -221,7 +221,7 @@ def test_render_docx_layout(rendered):
     for e in c["experience"]:
         for b in e["bullets"]:
             assert b in texts
-    assert any("\t" in t and "Feb 2021" in t for t in texts)  # dates on the right tab
+    assert any("\t" in t and "Feb 2018" in t for t in texts)  # dates on the right tab
 
 
 def test_markdown_matches_docx(rendered):
