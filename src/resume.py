@@ -392,7 +392,7 @@ verify verifies verified visualize visualizes visualized calibrate calibrates ca
 contribute contributes contributed control controls controled controlled enhance enhances enhanced
 participate participates participated place places placed rate rates rated sort sorts sorted
 move moves moved productize productizes productized work works worked open opened
-meet meets met reach reaches reached price prices priced turn turns turned
+meet meets met reach reaches reached price prices priced turn turns turned choose chooses chose
 """.split())
 
 
