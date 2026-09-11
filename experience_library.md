@@ -152,8 +152,7 @@ and piping layouts. Exceeded the department's annual project sales goal
 of $2M. Set up an OSHA-compliant internal safety program with technician
 training classes and record-keeping procedures.
 
-Approved bullets (one per fact; on product-line or strategy postings use
-one, the first, and two at most):
+Approved bullets (one per fact; use 2 or 3, the first always among them):
 
 Ownership and commercial [commercial] [delivery] [p&l]
 - Exceeded the department's $2M annual sales goal, owning each HVAC project from first site walk to commissioning and startup.
@@ -181,9 +180,9 @@ audits, savings calculations, investigation reports and design
 assistance. Generated cumulative savings of 2,500 kW and 7 million kWh,
 helping the company exceed its energy-savings goal.
 
-Approved bullets (one per fact; on product-line or strategy postings use
-one or two, the data center bullet first when the posting is data
-center power):
+Approved bullets (one per fact; use 2 or 3, the data center bullet first
+when the posting is data center power, the 2,500 kW result always among
+them):
 
 Results and customer work [efficiency] [customer-facing] [data-center]
 - Generated 2,500 kW and 7 million kWh of cumulative savings across commercial and industrial efficiency projects, helping PG&E exceed its goal.
