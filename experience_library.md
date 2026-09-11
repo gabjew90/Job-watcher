@@ -194,6 +194,10 @@ Results and customer work [efficiency] [customer-facing] [data-center]
 
 ## Selected projects (AI / software)
 
+(Owner decision 2026-09-11: the MBA Honda IMPACT Project is always
+included, one line, on every draft; the other projects only when the
+posting asks for software, data or AI tooling.)
+
 - **Weekly Options Pre-Trade Brief** — decision-support dashboard on the
   Unusual Whales API + MCP server. FastAPI backend, 60-second snapshot
   refresh, per-ticker TTL caching, Parquet archival for longitudinal
