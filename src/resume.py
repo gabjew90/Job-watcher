@@ -136,12 +136,11 @@ HARD_RULES = """HARD RULES
   relevant. Up to 4 skill categories with up to 12 items each, posting
   terms first.
 - {budget}
-- Relevance over fullness. Fill the page with lead-role bullets that
-  speak to the posting, not with older roles, projects or skills that do
-  not. Older roles: the one bullet closest to the posting, two only when
-  the role itself is relevant. Projects: only those that speak to the
-  posting, else omit the section. Skills: only categories the posting
-  asks about.
+- Relevance over padding. Every role gets the bullets from its approved
+  list that speak to this posting, within the budget above; pick the
+  ones closest to the posting, never filler. Projects: those the library
+  marks always-on, plus any that speak to the posting. Skills: only
+  categories the posting asks about.
 - Each fact once. Never use two bullets carrying the same fact (the
   library marks alternates ALT), and never restate a bullet's fact in
   the summary.
@@ -223,14 +222,14 @@ def budget_line(n_roles: int) -> str:
     role headings cost about a line and a half each, so fewer roles mean
     a fuller lead role."""
     if n_roles <= 3:
-        lead, words = "8 to 10", "400 to 460"
+        lead, others, words = "5 or 6", "2 or 3", "400 to 460"
     elif n_roles == 4:
-        lead, words = "5 to 7", "400 to 450"
+        lead, others, words = "4 or 5", "1 or 2", "400 to 450"
     else:
-        lead, words = "4 or 5", "380 to 430"
-    return (f"The library has {n_roles} roles. Budget for one page: lead role {lead} "
-            "bullets, other roles 1 each (2 when the role itself is relevant), 0 to 2 "
-            f"projects, 3 or 4 skill categories of 6 to 9 items. Aim for {words} words in total.")
+        lead, others, words = "4 or 5", "1", "380 to 430"
+    return (f"The library has {n_roles} roles. Budget for one page: lead title {lead} "
+            f"bullets, an earlier title at the lead employer 2, other roles {others} each, "
+            f"0 to 2 projects, 3 or 4 skill categories of 6 to 9 items. Aim for {words} words in total.")
 
 
 def _section(text: str, heading: str) -> str:
