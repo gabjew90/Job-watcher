@@ -67,6 +67,7 @@ LINE_HEIGHT = {"Calibri": 1.22, "Arial": 1.15}       # line height / font size
 CHARS_PER_LINE = {"Calibri": 117, "Arial": 112}      # full-width body line
 BULLET_INDENT_CHARS = 5                              # fewer on an indented line
 MAX_PDF_ROUNDS = 8
+GROUP_INDENT = 0.14  # inches; title lines and bullets under a multi-title employer
 
 THEMES = {
     # Ruled small-caps headings, employer first. Reads like a well-set
@@ -144,6 +145,10 @@ HARD_RULES = """HARD RULES
 - Each fact once. Never use two bullets carrying the same fact (the
   library marks alternates ALT), and never restate a bullet's fact in
   the summary.
+- The first bullet under every role and every title is its SCOPE line
+  from the library, verbatim: one sentence saying what the job was.
+  Accomplishment bullets follow it. The scope line counts toward the
+  bullet budget.
 - Summary: 2 or 3 of the library's summary sentences, verbatim, in the
   order that fits the posting. Do not compose a new one.
 - Skills items in lowercase except proper nouns and acronyms (Python,
@@ -435,7 +440,7 @@ contribute contributes contributed control controls controled controlled enhance
 participate participates participated place places placed rate rates rated sort sorts sorted
 move moves moved productize productizes productized work works worked open opened
 meet meets met reach reaches reached price prices priced turn turns turned choose chooses chose
-book books booked replace replaces replaced scope scopes scoped quote quotes quoted
+book books booked replace replaces replaced scope scopes scoped quote quotes quoted carry carries carried
 """.split())
 
 
@@ -1076,12 +1081,16 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     heading("Summary")
     doc.add_paragraph(content.get("summary", ""))
 
-    def role_line(first: str, second: str | None, dates: str, before: int, bold: bool = True):
+    def role_line(first: str, second: str | None, dates: str, before: int, bold: bool = True,
+                  indent: float = 0.0, color: str | None = None):
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(before)
+        p.paragraph_format.left_indent = Inches(indent)
         p.paragraph_format.tab_stops.add_tab_stop(Inches(7.3), WD_TAB_ALIGNMENT.RIGHT)
         r1 = p.add_run(first)
         r1.bold = bold
+        if color:
+            r1.font.color.rgb = _rgb(color)
         if second:
             r2 = p.add_run(f"  |  {second}")
             if t["dates_color"]:
@@ -1094,13 +1103,15 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     heading("Experience")
     for g in groups(content.get("experience", [])):
         if len(g) > 1:
-            # One employer, several titles: employer line with the full span,
-            # then a title line per position, newest first.
-            role_line(g[0]["employer"], None, span_dates(g), 4)
+            # One employer, several titles: employer line (bold, accent colour)
+            # with the full span, then an indented bold title line per
+            # position, newest first, with its bullets indented to match.
+            role_line(g[0]["employer"], None, span_dates(g), 4, color=t["label_color"])
             for e in g:
-                role_line(e["title"], None, e["dates"], 2, bold=False)
+                role_line(e["title"], None, e["dates"], 3, indent=GROUP_INDENT)
                 for b in e["bullets"]:
-                    doc.add_paragraph(b, style="List Bullet")
+                    bp = doc.add_paragraph(b, style="List Bullet")
+                    bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
             continue
         e = g[0]
         first, second = ((e["employer"], e["title"]) if t["role_order"] == "employer"
