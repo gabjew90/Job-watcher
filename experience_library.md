@@ -169,13 +169,28 @@ Engineering and safety [design] [safety]
 
 (Contracted via Energy Resources Integration, LLC for the first 10 months.)
 
-- Developed energy-efficiency projects for commercial and industrial
-  customers under statewide efficiency and demand-response incentives —
-  large chillers, boilers, cooling towers, pumps, air handlers, VRF, plus
-  cogeneration, thermal energy storage, and battery peak-shifting.
-- **Generated cumulative savings of 2,500 kW and 7 million kWh**, helping
-  the company exceed its energy-savings goal; field audits, savings
-  calculations, investigation reports, design assistance.
+Facts, for context (owner's account 2026-09): worked directly with
+commercial and industrial customers to identify energy-savings capital
+projects and quantified them, savings and incentive amounts included,
+under statewide efficiency and demand-response incentive programs.
+Data center projects included hot and cold aisle containment,
+economizers and variable-frequency drives. Other measures: large
+chillers, boilers, cooling towers, pumps, air handlers, VRF,
+cogeneration, thermal energy storage and battery peak-shifting. Field
+audits, savings calculations, investigation reports and design
+assistance. Generated cumulative savings of 2,500 kW and 7 million kWh,
+helping the company exceed its energy-savings goal.
+
+Approved bullets (one per fact; on product-line or strategy postings use
+one or two, the data center bullet first when the posting is data
+center power):
+
+Results and customer work [efficiency] [customer-facing] [data-center]
+- Generated 2,500 kW and 7 million kWh of cumulative savings across commercial and industrial efficiency projects, helping PG&E exceed its goal.
+- Identified and quantified energy-savings capital projects directly with customers, including incentive amounts, from field audit to design assistance.
+- Scoped data center efficiency projects, hot and cold aisle containment, economizers and variable-frequency drives, and quantified their savings and incentives.
+- Developed cogeneration, thermal energy storage and battery peak-shifting projects under statewide efficiency and demand-response incentives.
+- Wrote savings calculations and investigation reports for chiller, boiler and air-handling retrofits.
 
 ## Selected projects (AI / software)
 
