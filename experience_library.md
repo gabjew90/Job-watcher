@@ -74,7 +74,7 @@ battery modeling tools (degradation, thermal, augmentation optimization,
 log-data analysis) that cut proposal turnaround time, and built the US
 team's local knowledge base from HQ engineering resources. LG traditionally sold battery packs
 and racks to system integrators, who did bespoke on-site containerization,
-the market's biggest pain point. Gabriel worked with Jabil to standardize
+the market's biggest pain point. Gabriel formed a strategic partnership with Jabil to standardize
 and prefabricate a containerized ESS, LG's first, 2.86 MWh per container;
 it is deployed on two projects, Fifth Standard (584 MWh, California) and
 Bright Arrow (361 MWh, Texas). After LG became a system integrator he
@@ -226,14 +226,17 @@ Results and customer work [efficiency] [customer-facing] [data-center]
 
 ## Skills / domain knowledge
 
-- BESS: lithium-ion system design, power conversion systems (PCS), BMS,
+- BESS: lithium-ion system design, power electronics, power conversion
+  systems (PCS), BMS,
   degradation/thermal modeling,
   augmentation optimization, system sizing, techno-economic analysis, fire
   safety, codes & standards (UL, NFPA), testing & certification
-- Grid/utility: interconnection, energy efficiency, demand response, US
+- Grid/utility: AI infrastructure power, interconnection, energy
+  efficiency, demand response, US
   energy markets (ERCOT), electricity financial contracts (forwards,
   tolling, swaps)
-- Product & commercial: product strategy, VOC, market requirements,
+- Product & commercial: product strategy, strategic partnerships (Jabil),
+  VOC, market requirements,
   competitive analysis, proposal tendering, contract negotiation, financial
   modeling, statistical forecasting, linear/non-linear optimization, US GAAP
 - Software/AI: Python, TypeScript, SQL, MATLAB, Tableau, SPSS, Minitab,

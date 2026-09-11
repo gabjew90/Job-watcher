@@ -310,10 +310,10 @@ def test_third_person_openers_flagged_and_fixed():
 
 def test_guard_drops_skill_terms_absent_from_library():
     c = content()
-    c["skills"][0]["items"] += ["renewable integration", "Anthropic and Gemini APIs", "AI infrastructure"]
+    c["skills"][0]["items"] += ["renewable integration", "Anthropic and Gemini APIs", "microgrid controls"]
     removed = resume.fabrication_guard(c, LIBRARY)
     items = c["skills"][0]["items"]
-    assert "renewable integration" not in items and "AI infrastructure" not in items
+    assert "renewable integration" not in items and "microgrid controls" not in items
     assert "Anthropic and Gemini APIs" in items and "system sizing" in items
     assert any("renewable" in r for r in removed)
 
