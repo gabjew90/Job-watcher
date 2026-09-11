@@ -140,14 +140,30 @@ bullet carries, so nothing repeats):
 
 ### Comfort Energy — Design-Build Engineering Manager, HVAC (July 2016 – Oct 2017)
 
-- Managed sales, design, and project management of commercial and luxury
-  residential HVAC projects from proposal → engineering → construction →
-  startup; exceeded the department's annual project sales goal of $2M.
-- Designed HVAC and hydronic systems via building energy modeling, equipment
-  selection/sizing, and duct/piping layouts; scheduled contractors and
-  technicians across concurrent projects to code and customer requirements.
-- Proactively set up an OSHA-compliant internal safety program with
-  technician training classes and record-keeping procedures.
+Facts, for context (owner's account 2026-09): owned every project end to
+end: customer relationships with general contractors, developers and
+architects; site walks and scope development; estimating and the
+proposal or quote; purchasing and inventory management; installer
+management and scheduling; change orders and in-flight problem solving
+on active construction sites; final commissioning and startup. Projects
+were commercial and luxury residential HVAC and hydronic systems, designed
+with building energy modeling, equipment selection and sizing, and duct
+and piping layouts. Exceeded the department's annual project sales goal
+of $2M. Set up an OSHA-compliant internal safety program with technician
+training classes and record-keeping procedures.
+
+Approved bullets (one per fact; on product-line or strategy postings use
+one, the first, and two at most):
+
+Ownership and commercial [commercial] [delivery] [p&l]
+- Exceeded the department's $2M annual sales goal, owning each HVAC project from first site walk to commissioning and startup.
+- Won work from general contractors, developers and architects through site walks, scope development, estimates and quotes.
+- Ran purchasing, inventory and installer scheduling across concurrent commercial and luxury residential projects.
+- Resolved change orders and field problems on active construction sites, then commissioned and started up each system.
+
+Engineering and safety [design] [safety]
+- Designed HVAC and hydronic systems with building energy modeling, equipment sizing and duct and piping layouts.
+- Set up an OSHA-compliant safety program with technician training classes and record-keeping procedures.
 
 ### Pacific Gas and Electric — Energy Solutions Engineer (Dec 2013 – July 2016)
 
