@@ -436,7 +436,7 @@ contribute contributes contributed control controls controled controlled enhance
 participate participates participated place places placed rate rates rated sort sorts sorted
 move moves moved productize productizes productized work works worked open opened
 meet meets met reach reaches reached price prices priced turn turns turned choose chooses chose
-book books booked replace replaces replaced
+book books booked replace replaces replaced scope scopes scoped quote quotes quoted
 """.split())
 
 

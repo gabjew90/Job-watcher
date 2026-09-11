@@ -140,26 +140,57 @@ bullet carries, so nothing repeats):
 
 ### Comfort Energy — Design-Build Engineering Manager, HVAC (July 2016 – Oct 2017)
 
-- Managed sales, design, and project management of commercial and luxury
-  residential HVAC projects from proposal → engineering → construction →
-  startup; exceeded the department's annual project sales goal of $2M.
-- Designed HVAC and hydronic systems via building energy modeling, equipment
-  selection/sizing, and duct/piping layouts; scheduled contractors and
-  technicians across concurrent projects to code and customer requirements.
-- Proactively set up an OSHA-compliant internal safety program with
-  technician training classes and record-keeping procedures.
+Facts, for context (owner's account 2026-09): owned every project end to
+end: customer relationships with general contractors, developers and
+architects; site walks and scope development; estimating and the
+proposal or quote; purchasing and inventory management; installer
+management and scheduling; change orders and in-flight problem solving
+on active construction sites; final commissioning and startup. Projects
+were commercial and luxury residential HVAC and hydronic systems, designed
+with building energy modeling, equipment selection and sizing, and duct
+and piping layouts. Exceeded the department's annual project sales goal
+of $2M. Set up an OSHA-compliant internal safety program with technician
+training classes and record-keeping procedures.
+
+Approved bullets (one per fact; on product-line or strategy postings use
+one, the first, and two at most):
+
+Ownership and commercial [commercial] [delivery] [p&l]
+- Exceeded the department's $2M annual sales goal, owning each HVAC project from first site walk to commissioning and startup.
+- Won work from general contractors, developers and architects through site walks, scope development, estimates and quotes.
+- Ran purchasing, inventory and installer scheduling across concurrent commercial and luxury residential projects.
+- Resolved change orders and field problems on active construction sites, then commissioned and started up each system.
+
+Engineering and safety [design] [safety]
+- Designed HVAC and hydronic systems with building energy modeling, equipment sizing and duct and piping layouts.
+- Set up an OSHA-compliant safety program with technician training classes and record-keeping procedures.
 
 ### Pacific Gas and Electric — Energy Solutions Engineer (Dec 2013 – July 2016)
 
 (Contracted via Energy Resources Integration, LLC for the first 10 months.)
 
-- Developed energy-efficiency projects for commercial and industrial
-  customers under statewide efficiency and demand-response incentives —
-  large chillers, boilers, cooling towers, pumps, air handlers, VRF, plus
-  cogeneration, thermal energy storage, and battery peak-shifting.
-- **Generated cumulative savings of 2,500 kW and 7 million kWh**, helping
-  the company exceed its energy-savings goal; field audits, savings
-  calculations, investigation reports, design assistance.
+Facts, for context (owner's account 2026-09): worked directly with
+commercial and industrial customers to identify energy-savings capital
+projects and quantified them, savings and incentive amounts included,
+under statewide efficiency and demand-response incentive programs.
+Data center projects included hot and cold aisle containment,
+economizers and variable-frequency drives. Other measures: large
+chillers, boilers, cooling towers, pumps, air handlers, VRF,
+cogeneration, thermal energy storage and battery peak-shifting. Field
+audits, savings calculations, investigation reports and design
+assistance. Generated cumulative savings of 2,500 kW and 7 million kWh,
+helping the company exceed its energy-savings goal.
+
+Approved bullets (one per fact; on product-line or strategy postings use
+one or two, the data center bullet first when the posting is data
+center power):
+
+Results and customer work [efficiency] [customer-facing] [data-center]
+- Generated 2,500 kW and 7 million kWh of cumulative savings across commercial and industrial efficiency projects, helping PG&E exceed its goal.
+- Identified and quantified energy-savings capital projects directly with customers, including incentive amounts, from field audit to design assistance.
+- Scoped data center efficiency projects, hot and cold aisle containment, economizers and variable-frequency drives, and quantified their savings and incentives.
+- Developed cogeneration, thermal energy storage and battery peak-shifting projects under statewide efficiency and demand-response incentives.
+- Wrote savings calculations and investigation reports for chiller, boiler and air-handling retrofits.
 
 ## Selected projects (AI / software)
 
