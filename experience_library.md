@@ -101,6 +101,10 @@ marked ALT are alternates for the bullet above them, one or the other.
 Use verbatim; swap a word only for a posting term that names the same
 thing. Tags guide selection.
 
+Scope lines (the first bullet under each title, always):
+- SCOPE, Senior Product Manager: Own product strategy, requirements and business cases for LG's grid-scale BESS line, sold to AI data center and front-of-meter customers.
+- SCOPE, Senior Systems Engineer: Owned the technical side of North American battery sales deals, from sizing and degradation modeling to contract exhibits.
+
 Standardized container, Jabil [prefab] [partnerships] [commercialization]
 - Replaced bespoke on-site integration, the market's biggest pain point, with LG's first prefabricated 2.86 MWh ESS container, built with Jabil.
   ALT: Designed the 2.86 MWh pre-integrated container with Jabil, moving LG from selling racks to integrators to selling a finished product.
@@ -125,11 +129,8 @@ Cost and pricing [pricing] [cost-model] [business-case]
 
 Deal engineering, under the Senior Systems Engineer title (Feb 2018 – Feb 2021) [deal-engineering] [sizing] [technical-sales]
 - Cut proposal turnaround from days to hours with battery modeling tools for degradation, thermal and augmentation optimization.
-- Sized lithium-ion systems for North American deals and negotiated their technical exhibits and bid clarifications with utilities and developers.
+- Negotiated technical exhibits and bid clarifications with utilities, developers and consultants on lithium-ion system deals.
 - Built the US team's local knowledge base from HQ engineering resources.
-
-Scope, use at most one, only when the page has room, and always as the last bullet of the role [scope]
-- Own new product development for grid-scale ESS, from voice of customer through market requirements.
 
 Summary sentences (pick 2 or 3, verbatim; they carry no fact that a
 bullet carries, so nothing repeats):
@@ -152,10 +153,13 @@ and piping layouts. Exceeded the department's annual project sales goal
 of $2M. Set up an OSHA-compliant internal safety program with technician
 training classes and record-keeping procedures.
 
-Approved bullets (one per fact; use 2 or 3, the first always among them):
+Approved bullets (one per fact; the SCOPE line first, then 1 or 2 more,
+the $2M bullet always among them):
+
+- SCOPE: Ran commercial and luxury residential HVAC projects end to end, from customer relationship and site walk to commissioning and startup.
 
 Ownership and commercial [commercial] [delivery] [p&l]
-- Exceeded the department's $2M annual sales goal, owning each HVAC project from first site walk to commissioning and startup.
+- Exceeded the department's $2M annual sales goal on commercial and luxury residential projects.
 - Won work from general contractors, developers and architects through site walks, scope development, estimates and quotes.
 - Ran purchasing, inventory and installer scheduling across concurrent commercial and luxury residential projects.
 - Resolved change orders and field problems on active construction sites, then commissioned and started up each system.
@@ -180,13 +184,15 @@ audits, savings calculations, investigation reports and design
 assistance. Generated cumulative savings of 2,500 kW and 7 million kWh,
 helping the company exceed its energy-savings goal.
 
-Approved bullets (one per fact; use 2 or 3, the data center bullet first
-when the posting is data center power, the 2,500 kW result always among
-them):
+Approved bullets (one per fact; the SCOPE line first, then 1 or 2 more,
+the data center bullet when the posting is data center power, the
+2,500 kW result always among them):
+
+- SCOPE: Worked directly with commercial and industrial customers to identify, quantify and win incentives for energy-savings capital projects.
 
 Results and customer work [efficiency] [customer-facing] [data-center]
 - Generated 2,500 kW and 7 million kWh of cumulative savings across commercial and industrial efficiency projects, helping PG&E exceed its goal.
-- Identified and quantified energy-savings capital projects directly with customers, including incentive amounts, from field audit to design assistance.
+- Carried each project from field audit and savings calculation to design assistance and the incentive application.
 - Scoped data center efficiency projects, hot and cold aisle containment, economizers and variable-frequency drives, and quantified their savings and incentives.
 - Developed cogeneration, thermal energy storage and battery peak-shifting projects under statewide efficiency and demand-response incentives.
 - Wrote savings calculations and investigation reports for chiller, boiler and air-handling retrofits.
