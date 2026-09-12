@@ -15,7 +15,8 @@ jobspy (Indeed/Glassdoor/ZipRecruiter/Google Jobs)
 hyperscaler APIs (Microsoft/Amazon/Google careers; Meta off by default)
 ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
 Workday / SuccessFactors boards (NVIDIA, GE Vernova, PG&E, NextEra, ...)
-careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD)
+careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD, Aon)
+static careers pages with no ATS (regex over the HTML — Flux Power)
   → keyword filter + title exclusions + priority-topic ⭐
   → title screen: Haiku judges new postings' title+company, dropping obvious
     misfits and rescuing keyword-rejected titles that carry a leadership or
@@ -112,8 +113,12 @@ first bytes). The call carrying the postings names the platform: a
 its `companyName` parameter), `*.careers.hibob.com/api/job-ad` is HiBob
 (`slug` = subdomain), `workforcenow.adp.com/.../job-requisitions` is ADP
 (`cid`/`ccId` from the page URL), `/api/jobs?keywords=` is Jibe (`base` =
-the careers host). A platform not in the module needs a new fetcher there,
-same shape as the others. Not every site yields: Tesla sits behind Akamai
+the careers host). A page that lists its openings as plain HTML with no
+ATS at all (Flux Power's HubSpot page) uses the `page` provider: a
+`title_pattern` regex whose group 1 is the title, plus optional
+`location_pattern` and `link_pattern` searched in the HTML after each
+title; a title with no link is skipped. A platform not in the module
+needs a new fetcher there, same shape as the others. Not every site yields: Tesla sits behind Akamai
 and denies datacenter IPs even to a real browser.
 
 **Fixing a broken hyperscaler fetcher** (they use undocumented endpoints

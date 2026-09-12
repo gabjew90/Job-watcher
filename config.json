@@ -364,6 +364,19 @@
       "provider": "jibe",
       "company": "AMD",
       "base": "https://careers.amd.com"
+    },
+    {
+      "provider": "jibe",
+      "company": "Aon",
+      "base": "https://jobs.aon.com"
+    },
+    {
+      "provider": "page",
+      "company": "Flux Power",
+      "url": "https://www.fluxpower.com/careers",
+      "title_pattern": "<h4[^>]*c-icon-box__heading[^>]*>(.*?)</h4>",
+      "location_pattern": "^\\s*<p>(.*?)</p>",
+      "link_pattern": "href=\"([^\"]+\\.pdf)\""
     }
   ],
   "location": "United States",
