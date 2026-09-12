@@ -989,6 +989,31 @@
   "url": "https://www.indeed.com/viewjob?jk=019e9ad4d04914ae",
   "work_mode": "remote"
  },
+ "0285d8615078fd14": {
+  "band": "weak",
+  "company": "Enervia",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Youngsville, NC, US",
+  "locations": [
+   "Youngsville, NC, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Construction scheduling IC role for solar/BESS projects, too deep-technical/execution-focused and below target seniority.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Scheduler: Utility Scale Solar & Battery Energy Storage Systems",
+  "url": "https://www.indeed.com/viewjob?jk=790bf839139b07aa",
+  "work_mode": "remote"
+ },
  "02865ef4c4ef0693": {
   "band": "strong",
   "company": "OpenAI",
@@ -3903,7 +3928,7 @@
   },
   "seniority_match": false,
   "source": "indeed",
-  "title": "DevelDevelopment Project Manager (Retrofit Data Center Construction)",
+  "title": "Development Project Manager (Retrofit Data Center Construction)",
   "url": "https://www.indeed.com/viewjob?jk=010cc07c0fc7585b",
   "work_mode": ""
  },
@@ -4429,6 +4454,31 @@
   "title": "Infrastructure Materials Manager",
   "url": "https://www.indeed.com/viewjob?jk=a4017e2d96c76208",
   "work_mode": ""
+ },
+ "0a84998121a35b20": {
+  "band": "weak",
+  "company": "Eaton",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "pay": "$97,000\u2013$143,000/yr",
+  "priority": false,
+  "rationale": "Controls/power-management project execution role at mid-level pay, not strategic or product-focused.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Manager- Power Systems Controls",
+  "url": "https://www.indeed.com/viewjob?jk=092164886602493b",
+  "work_mode": "remote"
  },
  "0a8b1e5467f82bfa": {
   "band": "weak",
@@ -4979,6 +5029,31 @@
   "title": "Head of Forward Deployment Engineering - Tavily ",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4879736101",
   "work_mode": "remote"
+ },
+ "0bcc4cbf6cf8cb55": {
+  "band": "weak",
+  "company": "QTS",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Irving, TX, US",
+  "locations": [
+   "Irving, TX, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Substation construction/procurement project management is mid-level execution work, not strategy or product.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Utility Development Project Manager",
+  "url": "https://www.indeed.com/viewjob?jk=49c0c96a37b763ee",
+  "work_mode": ""
  },
  "0bd0135f30dba9ce": {
   "band": "strong",
@@ -5921,7 +5996,7 @@
   },
   "seniority_match": false,
   "source": "greenhouse",
-  "title": "Senior Manufacturing Engineer \u2013 Superconductor Power Terminations ",
+  "title": "Lead Manufacturing Engineer \u2013 Superconductor Power Terminations ",
   "url": "https://job-boards.greenhouse.io/veir/jobs/5419354008",
   "work_mode": ""
  },
@@ -9281,6 +9356,10 @@
   "date_posted": "2026-07-13",
   "first_seen": "2026-08-28",
   "location": "US - Remote",
+  "locations": [
+   "US - Remote",
+   "Remote, US"
+  ],
   "pay": "$228K \u2013 $285K \u00b7 Offers Equity",
   "priority": true,
   "rationale": "Clean energy strategy and emerging tech lead for data center infrastructure\u2014excellent fit for BESS/energy/grid expertise.",
@@ -9744,7 +9823,9 @@
   "work_mode": "onsite"
  },
  "17c870858552334f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-12",
   "company": "Microsoft",
   "date_posted": "2026-08-27",
   "first_seen": "2026-09-09",
@@ -13509,6 +13590,34 @@
   "url": "https://www.indeed.com/viewjob?jk=c0a5fba312303ad4",
   "work_mode": "remote"
  },
+ "2133a1ac17c3e6d4": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Delta Electronics (Americas) Ltd.",
+  "date_posted": "2026-06-02",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Plano, TX, US",
+  "locations": [
+   "Plano, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$150,000\u2013$170,000/yr",
+  "priority": false,
+  "rationale": "Individual-contributor OEM account/sales management role, not a career track match.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Account Manager - META - Plano, TX",
+  "url": "https://www.indeed.com/viewjob?jk=cd5eeed686a09915",
+  "work_mode": ""
+ },
  "21465312a4cbcca7": {
   "band": "misfit",
   "company": "Sargent & Lundy",
@@ -13660,7 +13769,8 @@
   "first_seen_at": "2026-09-10T20:18:34Z",
   "location": "Jupiter, FL, US, 33478",
   "locations": [
-   "Jupiter, FL, US, 33478"
+   "Jupiter, FL, US, 33478",
+   "Winston Salem, NC, US, 27105"
   ],
   "lowscore": true,
   "pay": "",
@@ -15433,6 +15543,34 @@
   "url": "https://careers.pge.com/job/Oakland-Data-Engineer%2C-Expert-CA-94612/1425124500/",
   "work_mode": "hybrid"
  },
+ "25a46daac1286b9f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Oracle",
+  "date_posted": "2026-08-21",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Nashville, TN, US",
+  "locations": [
+   "Nashville, TN, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "NPI materials/supply-chain program manager role, no energy or power tie.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "NPI Materials Program Manager",
+  "url": "https://www.indeed.com/viewjob?jk=ce7acf514ad89c74",
+  "work_mode": ""
+ },
  "25acc9bcc96c5a62": {
   "active": false,
   "band": "weak",
@@ -16451,6 +16589,34 @@
   "title": "Lead Mechanical Engineer - Structures (Austin, TX)",
   "url": "https://jobs.lever.co/exowatt/8c588733-6248-455a-9662-983c7763c5aa",
   "work_mode": "onsite"
+ },
+ "2850678666232d61": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Oracle",
+  "date_posted": "2026-08-20",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Santa Clara, CA, US",
+  "locations": [
+   "Santa Clara, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Materials execution/supply planning program manager, no energy or power connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Business Operations Program Manager, Materials Execution & Supply Planning (IC4)",
+  "url": "https://www.indeed.com/viewjob?jk=71a6e80a0b11effb",
+  "work_mode": ""
  },
  "28589b32768eccff": {
   "active": false,
@@ -19665,7 +19831,9 @@
   "work_mode": ""
  },
  "2f954488c608c022": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-12",
   "company": "Gridware",
   "date_posted": "2026-07-15",
   "first_seen": "2026-08-28",
@@ -20378,6 +20546,34 @@
   "title": "Sr. Technical Infrastructure Program Manager, Infra Capacity Delivery, Infra Capacity Delivery",
   "url": "https://www.indeed.com/viewjob?jk=dd2765c16af7bb5b",
   "work_mode": "remote"
+ },
+ "318a1e843829af70": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "GXO Logistics",
+  "date_posted": "2026-09-09",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Red Oak, TX, US",
+  "locations": [
+   "Red Oak, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Warehouse shift-lead role, unrelated to the candidate's target scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Lead - Weekend 3rd Shift",
+  "url": "https://www.indeed.com/viewjob?jk=5cffcf7a4edabc01",
+  "work_mode": "onsite"
  },
  "318a3493ea8b8b77": {
   "active": false,
@@ -21118,6 +21314,34 @@
   "title": "Senior Staff Data Center Operations Engineer, GPU Hardware Architecture",
   "url": "https://jobs.ashbyhq.com/crusoe/0a5354b7-a128-43a3-8f87-63a3109918b4"
  },
+ "3363abed5b061227": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Micron Technology",
+  "date_posted": "2026-09-09",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Boise, ID, US",
+  "locations": [
+   "Boise, ID, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IT data center facilities coordination role, not power strategy or product.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "IT Data Center Infrastructure Coordinator",
+  "url": "https://www.indeed.com/viewjob?jk=3c8058d069a4e82b",
+  "work_mode": "onsite"
+ },
  "336971834a64e06b": {
   "active": false,
   "band": "misfit",
@@ -21525,6 +21749,31 @@
   "url": "https://www.indeed.com/viewjob?jk=a9060fba7c284921",
   "work_mode": "remote"
  },
+ "343eefacca0a6300": {
+  "band": "weak",
+  "company": "Irby Construction Company",
+  "date_posted": "2026-09-08",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Lockhart, TX, US",
+  "locations": [
+   "Lockhart, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Assistant Project Manager is a junior construction-support role in the BESS division, below target seniority.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "BESS Assistant Project Manager",
+  "url": "https://www.indeed.com/viewjob?jk=d7cda0f903b9a07a",
+  "work_mode": "onsite"
+ },
  "344db462217f356a": {
   "band": "strong",
   "company": "Crusoe",
@@ -21620,7 +21869,9 @@
   "first_seen_at": "2026-09-11T17:26:37Z",
   "location": "",
   "locations": [
-   ""
+   "",
+   "Petaluma, CA, US, 94954",
+   "Oakland, CA, US, 94612"
   ],
   "pay": "",
   "priority": false,
@@ -23948,6 +24199,34 @@
   "url": "https://www.indeed.com/viewjob?jk=6a56679918e307ed",
   "work_mode": ""
  },
+ "3b9b57c7c80b5a61": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Spectrum",
+  "date_posted": "2026-09-09",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Centennial, CO, US",
+  "locations": [
+   "Centennial, CO, US"
+  ],
+  "lowscore": true,
+  "pay": "$98,900\u2013$175,300/yr",
+  "priority": false,
+  "rationale": "Shift-based data center facilities operations manager, not power/energy strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Manager, Data Center",
+  "url": "https://www.indeed.com/viewjob?jk=f0cfa141d465a9d8",
+  "work_mode": "onsite"
+ },
  "3ba5ce7ce941bbfc": {
   "band": "weak",
   "company": "SB Energy",
@@ -25444,7 +25723,8 @@
   "locations": [
    "Oakland, CA, US, 94612",
    "Auberry, CA, US, 93602",
-   "San Ramon, CA, US, 94583"
+   "San Ramon, CA, US, 94583",
+   "Concord, CA, US, 94518"
   ],
   "pay": "",
   "priority": false,
@@ -28867,7 +29147,8 @@
   "first_seen_at": "2026-09-11T23:42:10Z",
   "location": "Oakland, CA, US, 94612",
   "locations": [
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "West Sacramento, CA, US, 95605"
   ],
   "pay": "",
   "priority": false,
@@ -33883,6 +34164,34 @@
   "url": "https://jobs.ashbyhq.com/crusoe/2875f7e1-7cfc-41d4-ba4d-1ed6be4939c8",
   "work_mode": "onsite"
  },
+ "5619d42ff7531d49": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Amazon.com",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Hamlet, NC, US",
+  "locations": [
+   "Hamlet, NC, US"
+  ],
+  "lowscore": true,
+  "pay": "$78,400\u2013$137,300/yr",
+  "priority": false,
+  "rationale": "Night-shift data center operations/technician management, not power strategy or product.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Manager - Night Shift, Data Center Operations",
+  "url": "https://www.indeed.com/viewjob?jk=bb7cf79d9ab3b604",
+  "work_mode": "onsite"
+ },
  "56360b0b28e98d1b": {
   "active": false,
   "band": "misfit",
@@ -34091,7 +34400,8 @@
   "first_seen_at": "2026-09-11T06:53:01Z",
   "location": "Weirton, WV",
   "locations": [
-   "Weirton, WV"
+   "Weirton, WV",
+   "Weirton, WV, US"
   ],
   "lowscore": true,
   "pay": "",
@@ -38433,6 +38743,31 @@
   "url": "https://jobs.ashbyhq.com/neara/c9a61470-a77e-4daf-bd9b-7c1e9c104839",
   "work_mode": "remote"
  },
+ "61ca763fbc7c1260": {
+  "band": "weak",
+  "company": "Tesla",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Palo Alto, CA, US",
+  "locations": [
+   "Palo Alto, CA, US"
+  ],
+  "pay": "$144,800\u2013$217,200/yr",
+  "priority": false,
+  "rationale": "Deep technical hardware program management for power electronics controls at Tesla is engineering-execution, not the product/strategy/BESS-commercial work that fits the candidate.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Technical Program Manager, Power Electronics Controls",
+  "url": "https://www.indeed.com/viewjob?jk=ac3e408ab46d56dc",
+  "work_mode": ""
+ },
  "61d3c5e426e096ff": {
   "band": "misfit",
   "company": "SB Energy",
@@ -40483,6 +40818,34 @@
   "url": "https://www.indeed.com/viewjob?jk=12d5c8a83d23eb4e",
   "work_mode": ""
  },
+ "66221fa8f4b1866f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Signal Energy Constructors",
+  "date_posted": "2026-09-09",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Lake Village, AR, US",
+  "locations": [
+   "Lake Village, AR, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Field surveyor labor role, unrelated skillset and seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Surveyor Labor",
+  "url": "https://www.indeed.com/viewjob?jk=2f4efd3683549858",
+  "work_mode": "onsite"
+ },
  "6636446b55fb8ba3": {
   "active": false,
   "band": "misfit",
@@ -40601,6 +40964,34 @@
   "title": "SVP - Platform Delivery",
   "url": "https://job-boards.eu.greenhouse.io/submer/jobs/4971195101",
   "work_mode": "hybrid"
+ },
+ "666a5eadcf8aa223": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Allied Universal",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Surprise, AZ, US",
+  "locations": [
+   "Surprise, AZ, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Unarmed security guard role, unrelated field and seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Security Officer- Data Center",
+  "url": "https://www.indeed.com/viewjob?jk=c039275f0ae5aa4e",
+  "work_mode": "onsite"
  },
  "669b49d8ee9953c2": {
   "active": false,
@@ -42295,6 +42686,34 @@
   "title": "Mechanical Critical Facilities Engineer, Data Center",
   "url": "https://www.indeed.com/viewjob?jk=d5570d92adf78082",
   "work_mode": "remote"
+ },
+ "6b1c0f178e1fe5db": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "IES Communications",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Monroe, LA, US",
+  "locations": [
+   "Monroe, LA, US"
+  ],
+  "lowscore": true,
+  "pay": "$115,000\u2013$125,000/yr",
+  "priority": false,
+  "rationale": "Field construction/staffing project management for low-voltage data center work, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Manager - low voltage - Data Center",
+  "url": "https://www.indeed.com/viewjob?jk=4ec2e04dace8b3d6",
+  "work_mode": "onsite"
  },
  "6b200bfdaf0b8411": {
   "band": "strong",
@@ -46500,7 +46919,7 @@
   },
   "seniority_match": true,
   "source": "indeed",
-  "title": "Data Center Infrastructure - Solutions Mechanical Architect - Fremont, CA or Plano, TX",
+  "title": "Data Center Infrastructure - Solutions Mechanical Architect - Plano, TX or Fremont, CA",
   "url": "https://www.indeed.com/viewjob?jk=08903fb296e61549",
   "work_mode": ""
  },
@@ -47300,6 +47719,31 @@
   "title": "Simulation Engineer \u2013 SST Solutions, Morrisville/Raleigh, NC",
   "url": "https://www.indeed.com/viewjob?jk=29153bff96ca4e94",
   "work_mode": ""
+ },
+ "77fb3d44365c1668": {
+  "band": "possible",
+  "company": "Electric Power Research Institute",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Remote, US",
+  "locations": [
+   "Remote, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Senior grid/customer-solutions business-formation lead at EPRI touches strategy but reads as a deep research-scientist role rather than product/commercial leadership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Emerging Grid & Customer Solutions Business Formation Lead",
+  "url": "https://www.indeed.com/viewjob?jk=21a2164312c80f74",
+  "work_mode": "remote"
  },
  "781e8ecec2cd03bb": {
   "band": "weak",
@@ -48561,6 +49005,34 @@
   "title": "Mechanical Engineer, Solar Cell Factory (Starlink)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8672706002",
   "work_mode": ""
+ },
+ "7b2777e6abaea22f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Allied Universal",
+  "date_posted": "2026-09-09",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Kearney, NE, US",
+  "locations": [
+   "Kearney, NE, US"
+  ],
+  "lowscore": true,
+  "pay": "$21.00/hour",
+  "priority": false,
+  "rationale": "Part-time security patrol officer role, unrelated field.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Security Officer Data Center Patrol",
+  "url": "https://www.indeed.com/viewjob?jk=9d8ad73e47946ae7",
+  "work_mode": "onsite"
  },
  "7b4bf1851b701b01": {
   "band": "misfit",
@@ -51989,7 +52461,9 @@
   "work_mode": "remote"
  },
  "847aedbc33dd9eaf": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-12",
   "company": "Meta",
   "date_posted": "2026-08-12",
   "first_seen": "2026-09-01",
@@ -53105,7 +53579,8 @@
   "first_seen_at": "2026-09-11T20:15:38Z",
   "location": "Oakland, CA, US, 94612",
   "locations": [
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "West Sacramento, CA, US, 95605"
   ],
   "pay": "",
   "priority": false,
@@ -53717,6 +54192,34 @@
   "source": "ashby",
   "title": "Modular Data Center Systems Engineer \u2013 Spark",
   "url": "https://jobs.ashbyhq.com/crusoe/9aa892be-71db-455e-9980-ffff4badfee3"
+ },
+ "87ee05d56f89d67b": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "SpaceX",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Starbase, TX",
+  "locations": [
+   "Starbase, TX"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "New-graduate engineering role, explicitly junior despite power-generation domain match.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "greenhouse",
+  "title": "New Graduate Engineer, Power Generation (Starship)",
+  "url": "https://job-boards.greenhouse.io/spacex/jobs/8803009002",
+  "work_mode": "onsite"
  },
  "87fb1b170c5115f7": {
   "active": false,
@@ -56781,6 +57284,31 @@
   "url": "https://www.indeed.com/viewjob?jk=5fcfaba0e780c5ff",
   "work_mode": "hybrid"
  },
+ "8f2eba3dba7d24f7": {
+  "band": "weak",
+  "company": "Vertiv",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Westerville, OH, US",
+  "locations": [
+   "Westerville, OH, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director-level role but scope is order-to-fulfillment program execution/delivery at Vertiv, which past feedback bands weak versus product/strategy roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Large Program Execution",
+  "url": "https://www.indeed.com/viewjob?jk=0c5054a33d4ab669",
+  "work_mode": ""
+ },
  "8f32b9441402ac74": {
   "band": "possible",
   "company": "Applied Digital",
@@ -58217,6 +58745,31 @@
   "url": "https://www.indeed.com/viewjob?jk=d732cc8fce978c13",
   "work_mode": "onsite"
  },
+ "9226b3a9f959ee9a": {
+  "band": "weak",
+  "company": "Turner & Townsend Pty Limited",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "San Francisco, CA, US",
+  "locations": [
+   "San Francisco, CA, US"
+  ],
+  "pay": "$100,000\u2013$130,000/yr",
+  "priority": false,
+  "rationale": "Associate PM role explicitly building toward ownership, an execution/coordination role below target seniority.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Associate Program Manager - Data Center Construction",
+  "url": "https://www.indeed.com/viewjob?jk=6a803e46f006357f",
+  "work_mode": "remote"
+ },
  "9226dd3cfb39f6c4": {
   "band": "possible",
   "company": "Mainspring Energy",
@@ -59630,7 +60183,8 @@
    "Auberry, CA, US, 93602",
    "Concord, CA, US, 94518",
    "San Ramon, CA, US, 94583",
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "Santa Maria, CA, US, 93455"
   ],
   "lowscore": true,
   "pay": "",
@@ -60141,6 +60695,34 @@
   "url": "https://www.indeed.com/viewjob?jk=66a33f067024e5a5",
   "work_mode": "remote"
  },
+ "977ecbdf94051e1e": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Torus Inc",
+  "date_posted": "2026-09-09",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Salt Lake City, UT, US",
+  "locations": [
+   "Salt Lake City, UT, US"
+  ],
+  "lowscore": true,
+  "pay": "$30\u2013$38/hr",
+  "priority": true,
+  "rationale": "Warehouse material-handling role for BESS logistics, not product/strategy/engineering.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Precision Material Handler",
+  "url": "https://www.indeed.com/viewjob?jk=6f0a3eae3abab086",
+  "work_mode": "onsite"
+ },
  "977eed4a3d6afc1a": {
   "active": false,
   "band": "strong",
@@ -60232,7 +60814,8 @@
   "first_seen_at": "2026-09-09T17:32:59Z",
   "location": "Hawthorne, CA",
   "locations": [
-   "Hawthorne, CA"
+   "Hawthorne, CA",
+   "Hawthorne, CA, US"
   ],
   "lowscore": true,
   "pay": "$165,000.00 - $240,000.00",
@@ -62878,7 +63461,9 @@
   "work_mode": "onsite"
  },
  "9e86897c37a9cd19": {
+  "active": false,
   "band": "top",
+  "closed": "2026-09-12",
   "company": "Microsoft",
   "date_posted": "2026-08-12",
   "first_seen": "2026-08-15",
@@ -66724,7 +67309,9 @@
   "url": "https://www.indeed.com/viewjob?jk=3d264fdf811c84d1"
  },
  "a85a11bb3ddb44ca": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-12",
   "company": "AMD",
   "date_posted": "2026-08-12",
   "first_seen": "2026-09-03",
@@ -68111,6 +68698,34 @@
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Rugby/Power-Systems-Engineer---Electrification---Propulsion-Systems_R5043888-2",
   "work_mode": ""
  },
+ "ab7fda60b1fc0ceb": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Oracle",
+  "date_posted": "2026-08-20",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Santa Clara, CA, US",
+  "locations": [
+   "Santa Clara, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Data/automation program manager applied to supply-chain operations, not energy or grid data despite AI framing.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Business Operations Program Manager, Data & Automation (IC4)",
+  "url": "https://www.indeed.com/viewjob?jk=d859eedfaf7f6ebf",
+  "work_mode": ""
+ },
  "ab84f539cf57856b": {
   "active": false,
   "band": "misfit",
@@ -68587,6 +69202,34 @@
   "url": "https://www.indeed.com/viewjob?jk=c316b1981a99935f",
   "work_mode": ""
  },
+ "ace3a0b64d9d93c9": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Dell Technologies",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Santa Clara, CA, US",
+  "locations": [
+   "Santa Clara, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$230,000\u2013$341,550/yr",
+  "priority": false,
+  "rationale": "Advanced-engineering technologist role at Dell with no stated energy, power, or datacenter connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Technical Staff, Engineering Technologist",
+  "url": "https://www.indeed.com/viewjob?jk=aac6696b18543cb4",
+  "work_mode": ""
+ },
  "acf0cefd5d91439e": {
   "active": false,
   "band": "misfit",
@@ -68658,6 +69301,31 @@
   "title": "Senior Electrical Design Engineer (onsite)",
   "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Largo-Florida-United-States-of-America/Senior-Electrical-Engineer--onsite-_WD30269772",
   "work_mode": "onsite"
+ },
+ "ad195398f92d2fa7": {
+  "band": "possible",
+  "company": "Aligned Data Centers",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Plano, TX, US",
+  "locations": [
+   "Plano, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Director-level powered-land acquisition for datacenter power sits in energy-adjacent real estate development, which past feedback bands possible rather than strong given no direct land-development experience.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Powered Land Development",
+  "url": "https://www.indeed.com/viewjob?jk=199f22ba2461d7c2",
+  "work_mode": ""
  },
  "ad27dbd6fdf3fcf6": {
   "active": false,
@@ -71679,6 +72347,34 @@
   "url": "https://www.indeed.com/viewjob?jk=a033e974ad58b998",
   "work_mode": "onsite"
  },
+ "b4dd21e93a7b1113": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Oracle",
+  "date_posted": "2026-08-21",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Santa Clara, CA, US",
+  "locations": [
+   "Santa Clara, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Supply-chain business operations program manager with no energy or power connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Business Operations Program Manager, Global Business Planning, Supply Chain Management (IC4)",
+  "url": "https://www.indeed.com/viewjob?jk=8baf51a4e179f2d9",
+  "work_mode": ""
+ },
  "b4e62f7b4a8c8c19": {
   "active": false,
   "band": "misfit",
@@ -72927,6 +73623,34 @@
   "url": "https://www.indeed.com/viewjob?jk=e58450e7c81b1da8",
   "work_mode": "onsite"
  },
+ "b7d3fd7d114ef474": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Clarios",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Florence, KY, US",
+  "locations": [
+   "Florence, KY, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Entry-level shipping/receiving clerk role, unrelated field and seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Shipping and Receiving Clerk",
+  "url": "https://www.indeed.com/viewjob?jk=cdf21075421fae9b",
+  "work_mode": "onsite"
+ },
  "b7d6c5a98ddf0440": {
   "band": "misfit",
   "company": "ServiceTitan",
@@ -73446,7 +74170,9 @@
   "work_mode": "remote"
  },
  "b8df4c1ff534d8a3": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-12",
   "company": "Amazon.com",
   "date_posted": "2026-08-12",
   "first_seen": "2026-08-28",
@@ -73782,7 +74508,9 @@
   "work_mode": "remote"
  },
  "b98ddd1ce958c676": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-12",
   "company": "Amazon.com",
   "date_posted": "2026-03-28",
   "first_seen": "2026-09-11",
@@ -74609,7 +75337,8 @@
   "first_seen_at": "2026-09-11T06:53:01Z",
   "location": "Weirton, WV",
   "locations": [
-   "Weirton, WV"
+   "Weirton, WV",
+   "Weirton, WV, US"
   ],
   "lowscore": true,
   "pay": "",
@@ -75042,6 +75771,34 @@
   "title": "Project Manager - BESS SME",
   "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Project-Manager-BESS-SME-FL-33408/1404835700/",
   "work_mode": ""
+ },
+ "bd9a95f00df24c61": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Microsoft",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "United States, Virginia, Boydton",
+  "locations": [
+   "United States, Virginia, Boydton"
+  ],
+  "lowscore": true,
+  "pay": "USD $84,400 - $168,800 per year",
+  "priority": false,
+  "rationale": "Financial controllership/business-analyst role for datacenter financials, not power/product/strategy fit.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "microsoft",
+  "title": "Data Center Critical Environment Business Analyst",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556994516",
+  "work_mode": "onsite"
  },
  "bda1c7f11280c91b": {
   "active": false,
@@ -78456,7 +79213,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Project Development Engineer Solar BESS and Energy Systems",
-  "url": "https://www.indeed.com/viewjob?jk=01e7e82723dfff2c",
+  "url": "https://www.indeed.com/viewjob?jk=812b2d17eb29f079",
   "work_mode": "remote"
  },
  "c6a35cfaa4ca68af": {
@@ -79015,6 +79772,34 @@
   "title": "Site Reliability Engineer (Manufacturing Infrastructure) ",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8776746002",
   "work_mode": "hybrid"
+ },
+ "c81a2c98591d5c4c": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Delta Electronics (Americas) Ltd.",
+  "date_posted": "2026-08-21",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Fremont, CA, US",
+  "locations": [
+   "Fremont, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$110,000\u2013$150,000/yr",
+  "priority": false,
+  "rationale": "Deep CAD/mechanical design engineering role, far from product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Infrastructure Mechanical Engineer - Fremont, CA or Plano, TX",
+  "url": "https://www.indeed.com/viewjob?jk=fa42108c92005141",
+  "work_mode": ""
  },
  "c82d6f05df3b7fff": {
   "active": false,
@@ -81199,7 +81984,8 @@
   "first_seen_at": "2026-09-04T20:06:18Z",
   "location": "Frederick, MD, US",
   "locations": [
-   "Frederick, MD, US"
+   "Frederick, MD, US",
+   "Boardman, OR, US"
   ],
   "pay": "$129,200\u2013$193,000/yr",
   "priority": false,
@@ -81213,7 +81999,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Data Center Facilities Manager\u00a0(Night Shift)",
-  "url": "https://www.indeed.com/viewjob?jk=f4eacfc2f402974c",
+  "url": "https://www.indeed.com/viewjob?jk=0855cdbac4b35868",
   "work_mode": "onsite"
  },
  "cced4bea3a82a47e": {
@@ -85525,6 +86311,34 @@
   "url": "https://www.indeed.com/viewjob?jk=417a6206a1ca7566",
   "work_mode": "onsite"
  },
+ "d8a84ff887479175": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Microsoft",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "United States, Wisconsin, Mount Pleasant",
+  "locations": [
+   "United States, Wisconsin, Mount Pleasant"
+  ],
+  "lowscore": true,
+  "pay": "USD $75,400 - $167,900 per year",
+  "priority": false,
+  "rationale": "Data center technician team management role, operational not strategic.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "microsoft",
+  "title": "Data Center Technicians Manager",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556982122",
+  "work_mode": "onsite"
+ },
  "d8b080e9a10c45d1": {
   "band": "misfit",
   "company": "SpaceX",
@@ -88524,7 +89338,9 @@
   "work_mode": "hybrid"
  },
  "e0ae28d357165e30": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-12",
   "company": "",
   "date_posted": "2026-08-12",
   "first_seen": "2026-08-31",
@@ -89899,7 +90715,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Site Lead, Data Center Operations",
-  "url": "https://www.indeed.com/viewjob?jk=48abc0d960f80edf",
+  "url": "https://www.indeed.com/viewjob?jk=3033e172d021a2c0",
   "work_mode": "remote"
  },
  "e4499d4dcc644978": {
@@ -90272,6 +91088,34 @@
   "url": "https://www.indeed.com/viewjob?jk=f685b9d8a98feb2a",
   "work_mode": "onsite"
  },
+ "e4f34d589081b69d": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-12",
+  "company": "Oracle",
+  "date_posted": "2026-08-20",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Nashville, TN, US",
+  "locations": [
+   "Nashville, TN, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Hardware end-of-life/asset-recovery planning role in supply chain, unrelated to power/product/strategy focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Strategic End-of-Life Monetization Planner (IC4)",
+  "url": "https://www.indeed.com/viewjob?jk=f51b347f1fc80d1e",
+  "work_mode": "hybrid"
+ },
  "e4f6090420444578": {
   "active": false,
   "band": "misfit",
@@ -90282,7 +91126,8 @@
   "first_seen_at": "2026-09-10T23:36:12Z",
   "location": "Weirton, WV",
   "locations": [
-   "Weirton, WV"
+   "Weirton, WV",
+   "Weirton, WV, US"
   ],
   "lowscore": true,
   "pay": "",
@@ -90758,7 +91603,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Data Center Program Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393556972035",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556972681",
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
@@ -99320,6 +100165,31 @@
   "source": "workday",
   "title": "Technical Marketing Manager - Data Center Infrastructure",
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Marketing-Manager---Data-Center-Infrastructure_JR1996301",
+  "work_mode": ""
+ },
+ "fd3fcb53757431d1": {
+  "band": "weak",
+  "company": "Oracle",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-12",
+  "first_seen_at": "2026-09-12T06:34:32Z",
+  "location": "Nashville, TN, US",
+  "locations": [
+   "Nashville, TN, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior program-delivery role tied to AI datacenter expansion but generically operational/business-facing with no power or product-specific scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-12T06:36Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Lead Principal Program Manager, Strategic Program Delivery",
+  "url": "https://www.indeed.com/viewjob?jk=cedbb9c12a3a3cb2",
   "work_mode": ""
  },
  "fd425395b501a7a5": {
