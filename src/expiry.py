@@ -31,7 +31,7 @@ from .util import HEADERS, group_key
 log = logging.getLogger(__name__)
 
 # Sources whose fetchers return the complete posting list every run.
-ATS_PROVIDERS = ("greenhouse", "lever", "ashby", "radancy", "hibob", "adp")
+ATS_PROVIDERS = ("greenhouse", "lever", "ashby", "radancy", "hibob", "adp", "page")
 MS_JOB_API = "https://apply.careers.microsoft.com/api/apply/v2/jobs/{pid}"
 MS_SEARCH_API = "https://apply.careers.microsoft.com/api/pcsx/search"
 

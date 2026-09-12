@@ -258,11 +258,57 @@ def fetch_jibe(entry: dict, terms: list[str]) -> list[Job]:
     return list(jobs.values())
 
 
+def fetch_page(entry: dict, terms: list[str]) -> list[Job]:
+    """A careers page that lists its openings as plain HTML with no ATS
+    behind it (Flux Power's HubSpot page: an <h4> title, a <p> with type
+    and location, and a link to a PDF job description). Config:
+
+      {"provider": "page", "company": "Flux Power",
+       "url": "https://www.fluxpower.com/careers",
+       "title_pattern": "<h4[^>]*>(.*?)</h4>",          # group 1 = title
+       "location_pattern": "^\\s*<p>(.*?)</p>",           # optional, group 1
+       "link_pattern": "href=\"([^\"]+\\.pdf)\""}       # optional, group 1
+
+    Every match of title_pattern is a posting; the location and link
+    patterns are searched in the HTML that follows each title, up to the
+    next title. When link_pattern is set, a title with no link is skipped
+    (perk headings on the same page). Descriptions are the title only (a linked PDF is not
+    fetched), so the title screen does the filtering. Full-list: the
+    expiry pass snapshot-diffs it like an ATS board."""
+    resp = requests.get(entry["url"], headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    html = resp.text
+    titles = list(re.finditer(entry["title_pattern"], html, re.S | re.I))
+    jobs: dict[str, Job] = {}
+    for i, m in enumerate(titles):
+        title = strip_html(m.group(1)).strip()
+        if not title or len(title) > 120:
+            continue
+        chunk = html[m.end():titles[i + 1].start() if i + 1 < len(titles) else m.end() + 3000]
+        location = ""
+        if entry.get("location_pattern"):
+            lm = re.search(entry["location_pattern"], chunk, re.S | re.I)
+            if lm:
+                location = strip_html(lm.group(1)).strip()
+                location = re.sub(r"^(full|part)[ -]time\s*[-–:]?\s*", "", location, flags=re.I).strip()
+        url = entry["url"]
+        if entry.get("link_pattern"):
+            km = re.search(entry["link_pattern"], chunk, re.S | re.I)
+            if not km:
+                continue  # a heading with no job link is page furniture, not a posting
+            url = requests.compat.urljoin(entry["url"], km.group(1))
+        job = Job(title=title, company=entry["company"], location=location, url=url,
+                  source="page", description="", work_mode=infer_work_mode(title, location, ""))
+        jobs[job.job_id] = job
+    return list(jobs.values())
+
+
 PROVIDERS = {
     "radancy": fetch_radancy,
     "hibob": fetch_hibob,
     "adp": fetch_adp,
     "jibe": fetch_jibe,
+    "page": fetch_page,
 }
 
 
