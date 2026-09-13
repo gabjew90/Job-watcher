@@ -366,6 +366,31 @@
   "url": "https://www.indeed.com/viewjob?jk=73954d3b84f14d74",
   "work_mode": ""
  },
+ "00bae6756cd742e1": {
+  "band": "strong",
+  "company": "NBCUniversal",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "New York, NY, US",
+  "locations": [
+   "New York, NY, US"
+  ],
+  "pay": "$235,000\u2013$300,000/yr",
+  "priority": false,
+  "rationale": "VP-level executive ownership of data center critical power/cooling infrastructure reliability strategy is a close match to the candidate's data-center power-infrastructure target, even though framed around facilities uptime rather than commercial strategy.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "VP Facilities Engineering & Critical Infrastructure",
+  "url": "https://www.indeed.com/viewjob?jk=8e63ff669355799a",
+  "work_mode": ""
+ },
  "00cc1efbb50a9f79": {
   "band": "misfit",
   "company": "SpartanX LLC",
@@ -8519,6 +8544,31 @@
   "url": "https://jobs.ashbyhq.com/openai/f51f750f-a737-4441-8f96-30133a2a8049",
   "work_mode": "remote"
  },
+ "13928d7546aaca51": {
+  "band": "weak",
+  "company": "Joby Aviation",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "San Carlos, CA, US",
+  "locations": [
+   "San Carlos, CA, US"
+  ],
+  "pay": "$118,700\u2013$192,800/yr",
+  "priority": false,
+  "rationale": "TPM role managing embedded battery-management firmware and DO-178C certification for eVTOL, outside the candidate's grid/BESS product-strategy skillset.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Technical Program Manager, Energy Storage & Distribution System Software",
+  "url": "https://www.indeed.com/viewjob?jk=5180c0924977b8cf",
+  "work_mode": "onsite"
+ },
  "1393537d9ae3b0bf": {
   "band": "misfit",
   "company": "SB Energy",
@@ -8948,6 +8998,34 @@
   "source": "google-careers",
   "title": "Energy Fuels Strategic Negotiator, Power Generation Solutions",
   "url": "https://www.google.com/about/careers/applications/jobs/results/107587069487784646-energy-fuels-strategic-negotiator-power-generation-solutions",
+  "work_mode": "onsite"
+ },
+ "14f98e6c3e84715b": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Caterpillar",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Mossville, IL, US",
+  "locations": [
+   "Mossville, IL, US"
+  ],
+  "lowscore": true,
+  "pay": "$89,210\u2013$133,810/yr",
+  "priority": false,
+  "rationale": "IC hardware component development engineer for e-powertrain inverters, unrelated to grid/BESS/datacenter product strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Power Electronics Core Component Development Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=ece13eaaeb7571ab",
   "work_mode": "onsite"
  },
  "15077f3ca56c50d0": {
@@ -11782,6 +11860,31 @@
   "source": "workday",
   "title": "Municipal Market Leader - Energy Services",
   "url": "https://tranetechnologies.wd12.myworkdayjobs.com/en-US/Trane_Technologies_Careers/job/Davidson-North-Carolina/Municipal-Market-Leader---Energy-Services_JR-10980-1",
+  "work_mode": ""
+ },
+ "1bf77be3f3eda7dc": {
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-08-31",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Santa Clara, CA, US",
+  "locations": [
+   "Santa Clara, CA, US"
+  ],
+  "pay": "$128,000\u2013$214,000/yr",
+  "priority": false,
+  "rationale": "Data center facilities CAPEX/OPEX program management is construction/operations-adjacent rather than power-strategy or product work.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Data Center Program Manager",
+  "url": "https://www.indeed.com/viewjob?jk=778f5cef6774ebf2",
   "work_mode": ""
  },
  "1bf96dab95cab2cc": {
@@ -17874,6 +17977,34 @@
   "url": "https://servicetitan.wd1.myworkdayjobs.com/en-US/ServiceTitan/job/Yerevan-Armenia/Director--Software-Engineering_JR112035",
   "work_mode": ""
  },
+ "2a3cc61d906fd3b0": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Core Government Services Corporation",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Kearneysville, WV, US",
+  "locations": [
+   "Kearneysville, WV, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "On-site 24/7 critical infrastructure operations/maintenance leadership, hands-on facility ops rather than strategy or product.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Assistant Program Manager / Lead Critical Systems Engineer (CRRC)",
+  "url": "https://www.indeed.com/viewjob?jk=b7c08bbdbe7a9ef5",
+  "work_mode": "onsite"
+ },
  "2a4076d1e1965f85": {
   "active": false,
   "band": "misfit",
@@ -20340,6 +20471,34 @@
   "url": "https://www.indeed.com/viewjob?jk=287890a721c55fe8",
   "work_mode": "remote"
  },
+ "2fc4add35ee130c5": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "WSP",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "New York, NY, US",
+  "locations": [
+   "New York, NY, US"
+  ],
+  "lowscore": true,
+  "pay": "$95,000\u2013$115,000/yr",
+  "priority": false,
+  "rationale": "Junior CFD mechanical analyst role (3 years experience) with no product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "CFD Analyst (Mission Critical/Data Center)",
+  "url": "https://www.indeed.com/viewjob?jk=1befa1530076eb73",
+  "work_mode": ""
+ },
  "2fcfbd1e5a62cc56": {
   "band": "weak",
   "company": "Quanta Services",
@@ -22717,6 +22876,34 @@
   "url": "https://www.indeed.com/viewjob?jk=f81af3c0e791d46c",
   "work_mode": ""
  },
+ "3571b01fa3224167": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Medcor",
+  "date_posted": "2026-09-04",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "San Antonio, TX, US",
+  "locations": [
+   "San Antonio, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$45\u2013$50/hr",
+  "priority": false,
+  "rationale": "Field-based construction safety specialist role, junior/trade level with no power-strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Construction Safety Professional \u2013 Data Center",
+  "url": "https://www.indeed.com/viewjob?jk=e6d776c7183c6b23",
+  "work_mode": "onsite"
+ },
  "3575c42f4d241602": {
   "active": false,
   "band": "misfit",
@@ -23012,6 +23199,34 @@
   "source": "indeed",
   "title": "Manager, Transmission Market Analytics",
   "url": "https://www.indeed.com/viewjob?jk=00c1dc1fb3338fab"
+ },
+ "3638211f217e3c5f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Amazon.com",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Columbus, OH, US",
+  "locations": [
+   "Columbus, OH, US"
+  ],
+  "lowscore": true,
+  "pay": "$116,800\u2013$160,000/yr",
+  "priority": false,
+  "rationale": "Deep technical civil design engineering lead for data center sites, too far from product/strategy/commercial scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Lead Civil Design Engineer, DCDE AMER Civil East",
+  "url": "https://www.indeed.com/viewjob?jk=0121c6f85d33f5ff",
+  "work_mode": ""
  },
  "363e1c9c12112f69": {
   "active": false,
@@ -26949,6 +27164,34 @@
   "title": "Electrical Systems Expert ",
   "url": "https://job-boards.greenhouse.io/hut8/jobs/5396119008",
   "work_mode": "onsite"
+ },
+ "40cfd5eb40f5660a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "",
+  "date_posted": "2026-05-17",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Remote, US",
+  "locations": [
+   "Remote, US"
+  ],
+  "lowscore": true,
+  "pay": "$100\u2013$140/hr",
+  "priority": false,
+  "rationale": "AI-output grading/reviewer contractor gig, not an actual MEP or product role in the candidate's target domain.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Mechanical, Electrical & Plumbing (MEP) Expert \u2014 Data Centers",
+  "url": "https://www.indeed.com/viewjob?jk=1eb1c1e55a4c82b8",
+  "work_mode": "remote"
  },
  "40cff2e9e07819c8": {
   "band": "possible",
@@ -48982,6 +49225,34 @@
   "url": "https://www.indeed.com/viewjob?jk=6d90b3b7f08ab0aa",
   "work_mode": ""
  },
+ "778be24a5d6c0328": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "DSV",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Lancaster, TX, US",
+  "locations": [
+   "Lancaster, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$87,000\u2013$92,000/yr",
+  "priority": false,
+  "rationale": "Warehouse/logistics operations supervisor role with no energy or power connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Supervisor, Data Center II - LBJ FWY",
+  "url": "https://www.indeed.com/viewjob?jk=267d624b7dfed583",
+  "work_mode": "onsite"
+ },
  "7790410ab71a6687": {
   "active": false,
   "band": "misfit",
@@ -49796,6 +50067,31 @@
   "url": "https://www.indeed.com/viewjob?jk=0857ff2edcd287a4",
   "work_mode": ""
  },
+ "79924a299fcff0c3": {
+  "band": "strong",
+  "company": "ENGIE",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior asset management ownership of renewable and battery storage portfolios blends commercial, financial, and technical asset performance, aligning with the investor/asset-management sweet spot.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Asset Management - Renewables (Evergreen)",
+  "url": "https://www.indeed.com/viewjob?jk=bf845dce1905d896",
+  "work_mode": ""
+ },
  "79a27a9c7299399c": {
   "active": false,
   "band": "weak",
@@ -49835,6 +50131,31 @@
   "title": "Senior Power Module Electrical Simulation Engineer",
   "url": "https://www.indeed.com/viewjob?jk=2b150cff48dca831",
   "work_mode": ""
+ },
+ "79b4a297682cbb73": {
+  "band": "weak",
+  "company": "Hewlett Packard Enterprise | HPE",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Sunnyvale, CA, US",
+  "locations": [
+   "Sunnyvale, CA, US"
+  ],
+  "pay": "$163,000\u2013$347,500/yr",
+  "priority": false,
+  "rationale": "Chief-of-staff/ops-execution role for a networking engineering org, not a power/energy strategy or product function despite the datacenter setting.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Chief of Staff, Data Center Engineering \u2014 HPE Networking",
+  "url": "https://www.indeed.com/viewjob?jk=c52b9a51fbaaf9da",
+  "work_mode": "hybrid"
  },
  "79b90f4e2ad70be8": {
   "band": "misfit",
@@ -50536,7 +50857,7 @@
   },
   "seniority_match": false,
   "source": "indeed",
-  "title": "Architecture, Engineering & Construction Expert \u2014 Data Center Projects",
+  "title": "Architecture, Engineering & Construction (AEC) Expert \u2014 Data Centers",
   "url": "https://www.indeed.com/viewjob?jk=db8bf824c7472247",
   "work_mode": "remote"
  },
@@ -55480,6 +55801,34 @@
   "url": "https://www.indeed.com/viewjob?jk=3f26a90cfcd5155c",
   "work_mode": ""
  },
+ "872c17ef74bf753a": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Ion Solar",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Orem, UT, US",
+  "locations": [
+   "Orem, UT, US"
+  ],
+  "lowscore": true,
+  "pay": "$18\u2013$22/hr",
+  "priority": false,
+  "rationale": "Field/trade compliance role for solar installation crews, junior scope with no product/strategy component.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Corporate Compliance Crew Member",
+  "url": "https://www.indeed.com/viewjob?jk=ca1d9c4b2652c988",
+  "work_mode": "onsite"
+ },
  "873b7e30bcc56b5a": {
   "active": false,
   "band": "misfit",
@@ -57855,6 +58204,34 @@
   "title": "Data Center Vendor Specialist",
   "url": "https://www.indeed.com/viewjob?jk=7947c2ee2605b2ad",
   "work_mode": ""
+ },
+ "8c7600b698e403c8": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "ENEL",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Union City, TN, US",
+  "locations": [
+   "Union City, TN, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Field O&M site management for solar assets, junior/technician-adjacent scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Solar Site Manager",
+  "url": "https://www.indeed.com/viewjob?jk=98c9fc046c850a7f",
+  "work_mode": "remote"
  },
  "8c8f02375395779e": {
   "band": "misfit",
@@ -60537,7 +60914,7 @@
   },
   "seniority_match": false,
   "source": "indeed",
-  "title": "HR Manager- Data Center Operations (Onsite - Greater Milwaukee / Mt Pleasant, WI)",
+  "title": "Sr. HR Manager- Data Center Operations (Onsite - Greater Milwaukee / Mt Pleasant, WI)",
   "url": "https://www.indeed.com/viewjob?jk=679a024fa5e5192d",
   "work_mode": "onsite"
  },
@@ -65543,6 +65920,34 @@
   "source": "greenhouse",
   "title": "IT Infrastructure Engineer (East London) ",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4769160101",
+  "work_mode": ""
+ },
+ "9ebe9e38802c357f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Delta Electronics (Americas) Ltd.",
+  "date_posted": "2026-01-20",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Fremont, CA, US",
+  "locations": [
+   "Fremont, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$150,000\u2013$180,000/yr",
+  "priority": false,
+  "rationale": "Deep IC thermal/mechanical R&D engineering for datacenter cooling hardware, not the product/strategy/AI bridging the candidate targets.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Thermal R&D Engineer - Fremont, CA",
+  "url": "https://www.indeed.com/viewjob?jk=c6fde34ef6b421ff",
   "work_mode": ""
  },
  "9ecb492a856a48d3": {
@@ -72964,7 +73369,8 @@
   "first_seen_at": "2026-09-11T06:53:01Z",
   "location": "Berkeley, CA",
   "locations": [
-   "Berkeley, CA"
+   "Berkeley, CA",
+   "Berkeley, CA, US"
   ],
   "lowscore": true,
   "pay": "$147,959 \u2013 $221,973",
@@ -73537,6 +73943,34 @@
   "source": "ashby",
   "title": "Customer Value Architect - USA (Denver)",
   "url": "https://jobs.ashbyhq.com/neara/7e948695-17fe-4789-8e21-d49419139335",
+  "work_mode": "remote"
+ },
+ "b14c89be27694573": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Henry Ford Health",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Rochester Hills, MI, US",
+  "locations": [
+   "Rochester Hills, MI, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IT business-process analyst at a hospital data center, unrelated to energy/power/BESS.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Operations Analyst - IT",
+  "url": "https://www.indeed.com/viewjob?jk=8a21d422e08524dd",
   "work_mode": "remote"
  },
  "b14d5f5b99232abb": {
@@ -75661,7 +76095,8 @@
   "location": "St. Louis, MO, US",
   "locations": [
    "St. Louis, MO, US",
-   "Appleton, WI, US"
+   "Appleton, WI, US",
+   "Cheyenne, WY, US"
   ],
   "lowscore": true,
   "pay": "",
@@ -75676,7 +76111,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Document Controls Engineer - Michels Infrastructure Solutions, Inc.",
-  "url": "https://www.indeed.com/viewjob?jk=648758d053c8d72e",
+  "url": "https://www.indeed.com/viewjob?jk=ce6a5a85b8c780b8",
   "work_mode": "onsite"
  },
  "b776edae2c5fe824": {
@@ -80340,6 +80775,34 @@
   "url": "https://jobs.ashbyhq.com/crusoe/90aa9112-1f98-493c-8f67-a9e1991ae7c1",
   "work_mode": ""
  },
+ "c271df8a3ad3ecee": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Microsoft",
+  "date_posted": "2026-09-12",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "United States, Wisconsin, Milwaukee",
+  "locations": [
+   "United States, Wisconsin, Milwaukee"
+  ],
+  "lowscore": true,
+  "pay": "USD $106,400 - $203,600 per year",
+  "priority": false,
+  "rationale": "HR manager role for data center workforce, an unrelated corporate function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "microsoft",
+  "title": "Sr. HR Manager- Data Center Operations (Onsite - Greater Milwaukee / Mt Pleasant, WI)",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556978209",
+  "work_mode": "onsite"
+ },
  "c2744d4f79109503": {
   "active": false,
   "band": "misfit",
@@ -84359,6 +84822,34 @@
   "url": "https://www.indeed.com/viewjob?jk=ff9a9cdcdb81aa7a",
   "work_mode": ""
  },
+ "cc6faa7d0156bc54": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Clarios",
+  "date_posted": "2026-09-12",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Milwaukee, WI, US",
+  "locations": [
+   "Milwaukee, WI, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Corporate communications/marketing leadership, unrelated corporate function outside the candidate's technical/energy focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Director Corporate Communications & Marketing",
+  "url": "https://www.indeed.com/viewjob?jk=b0efdf4e374de0da",
+  "work_mode": "hybrid"
+ },
  "cc70e5e6e82a2f73": {
   "active": false,
   "band": "misfit",
@@ -84530,6 +85021,34 @@
   "title": "Data Center Account Manager \u2013 Fire Detection & Suppression",
   "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Las-Rozas-Madrid-Spain/Data-Center-Account-Manager---Fire-Detection---Suppression_WD30278927",
   "work_mode": ""
+ },
+ "ccf17c085add68b5": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "SOLV Energy",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "El Paso, TX, US",
+  "locations": [
+   "El Paso, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$107,757\u2013$140,084/yr",
+  "priority": true,
+  "rationale": "Field construction superintendent leading craft labor on BESS installs, hands-on/O&M rather than product or strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Energy Storage Electrical Superintendent (AZ, NM, TX)",
+  "url": "https://www.indeed.com/viewjob?jk=d351a1a401f6c5a2",
+  "work_mode": "onsite"
  },
  "cd24d37b7cba5421": {
   "active": false,
@@ -88948,6 +89467,34 @@
   "url": "https://jobs.ashbyhq.com/crusoe/660c98be-40a6-4697-9e0c-b7db87c5c13a",
   "work_mode": ""
  },
+ "d83850f71cc87499": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Turner & Townsend Pty Limited",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "San Francisco, CA, US",
+  "locations": [
+   "San Francisco, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$170,000\u2013$210,000/yr",
+  "priority": false,
+  "rationale": "Construction schedule-review leadership for datacenter preconstruction is a specialist delivery/consulting function outside the candidate's power-strategy focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Lead Scheduler (Data Center Due Diligence and Preconstruction)",
+  "url": "https://www.indeed.com/viewjob?jk=818f59e1ca6f237a",
+  "work_mode": "remote"
+ },
  "d848ff2e8b9d5fcd": {
   "band": "weak",
   "company": "WSP",
@@ -91882,6 +92429,34 @@
   "title": "Principal Power Systems Engineer",
   "url": "https://www.indeed.com/viewjob?jk=14abf89f653987c6",
   "work_mode": ""
+ },
+ "e0460f3d2a654d7f": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "ContourGlobal",
+  "date_posted": "2026-09-11",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Hobbs, NM, US",
+  "locations": [
+   "Hobbs, NM, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Day-to-day plant operations management, hands-on generation ops rather than strategy/product/finance.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Operations Manager, Power Plant",
+  "url": "https://www.indeed.com/viewjob?jk=166a0b5bc459dc7c",
+  "work_mode": "onsite"
  },
  "e04e71de6b2c56fa": {
   "active": false,
@@ -95785,7 +96360,9 @@
   "locations": [
    "San Francisco, CA, US",
    "Menlo Park, CA, US",
-   "Austin, TX, US"
+   "Austin, TX, US",
+   "Seattle, WA, US",
+   "Bellevue, WA, US"
   ],
   "lowscore": true,
   "pay": "$202,000\u2013$274,000/yr",
@@ -95800,7 +96377,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Associate General Counsel, Infrastructure Technology Transactions",
-  "url": "https://www.indeed.com/viewjob?jk=f392bbde087ec57e",
+  "url": "https://www.indeed.com/viewjob?jk=e7dde0f095d1c19d",
   "work_mode": ""
  },
  "e9a321719dc5bcb2": {
@@ -96988,6 +97565,34 @@
   "url": "https://www.indeed.com/viewjob?jk=89234f2d2773fe0b",
   "work_mode": "remote"
  },
+ "ecb647e1f73977e9": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-13",
+  "company": "Peak Energy",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Burlingame, CA, US",
+  "locations": [
+   "Burlingame, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$120,000\u2013$170,000/yr",
+  "priority": true,
+  "rationale": "Hands-on field commissioning/troubleshooting role for BESS, explicitly not a design/strategy position.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Field Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=0d4beec1433b9b70",
+  "work_mode": "onsite"
+ },
  "ed10108ea7d95bd4": {
   "active": false,
   "band": "weak",
@@ -97506,7 +98111,8 @@
   "first_seen_at": "2026-09-13T17:15:32Z",
   "location": "Columbus, OH, US",
   "locations": [
-   "Columbus, OH, US"
+   "Columbus, OH, US",
+   "Austin, TX, US"
   ],
   "lowscore": true,
   "pay": "$116,800\u2013$160,000/yr",
@@ -97521,7 +98127,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Architect, Data Center Engineering",
-  "url": "https://www.indeed.com/viewjob?jk=7be3807e01cff373",
+  "url": "https://www.indeed.com/viewjob?jk=bd777a10269ddd73",
   "work_mode": ""
  },
  "eed275c7422421f3": {
@@ -99948,7 +100554,9 @@
   "work_mode": "onsite"
  },
  "f4b056be1c21a667": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-13",
   "company": "Amazon.com",
   "date_posted": "2025-12-05",
   "first_seen": "2026-09-13",
@@ -100558,6 +101166,31 @@
   "title": "Senior Staff Test Engineer, Integrated Systems",
   "url": "https://jobs.ashbyhq.com/formenergy/9c7c8275-8ded-41e0-ab68-d029550ff01b",
   "work_mode": "onsite"
+ },
+ "f64d976c65eb96fe": {
+  "band": "weak",
+  "company": "4P Consulting Inc.",
+  "date_posted": "2026-09-10",
+  "first_seen": "2026-09-13",
+  "first_seen_at": "2026-09-13T23:35:55Z",
+  "location": "Birmingham, AL, US",
+  "locations": [
+   "Birmingham, AL, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior-titled (Engineer 2) deep technical grid-modeling/digital-twin IC role, too specialist and below target seniority.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-13T23:37Z",
+   "model": "claude-sonnet-5",
+   "rubric": "825fec1650"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Electrical Engineer 2 4P/848",
+  "url": "https://www.indeed.com/viewjob?jk=bdae7ea6fa13ac03",
+  "work_mode": "hybrid"
  },
  "f66fd89f82785ed1": {
   "active": false,
