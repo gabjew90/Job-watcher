@@ -303,12 +303,51 @@ def fetch_page(entry: dict, terms: list[str]) -> list[Job]:
     return list(jobs.values())
 
 
+def fetch_smartrecruiters(entry: dict, terms: list[str]) -> list[Job]:
+    """SmartRecruiters public postings API (NBCUniversal). Config:
+    {"provider": "smartrecruiters", "company": "NBCUniversal",
+     "company_id": "NBCUniversal3"} (the id in the company's
+    careers.smartrecruiters.com URL). One search per term, then the
+    posting detail call for the description. Keyword search, so expiry
+    is age-based."""
+    base = f"https://api.smartrecruiters.com/v1/companies/{entry['company_id']}/postings"
+    jobs: dict[str, Job] = {}
+    for term in terms:
+        resp = requests.get(base, params={"q": term, "limit": 100}, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        for p in resp.json().get("content", []):
+            pid = p.get("id")
+            if not pid or pid in jobs:
+                continue
+            loc = p.get("location") or {}
+            location = ", ".join(x for x in (loc.get("city"), loc.get("region"), loc.get("country")) if x)
+            desc = ""
+            try:
+                det = requests.get(f"{base}/{pid}", headers=HEADERS, timeout=30)
+                if det.status_code == 200:
+                    sections = (det.json().get("jobAd") or {}).get("sections") or {}
+                    desc = strip_html(" ".join(v.get("text", "") for v in sections.values() if isinstance(v, dict)))
+            except requests.RequestException:
+                pass
+            title = p.get("name", "").strip()
+            jobs[pid] = Job(
+                title=title, company=entry["company"], location=location,
+                url=f"https://jobs.smartrecruiters.com/{entry['company_id']}/{pid}",
+                source="smartrecruiters", description=desc,
+                date_posted=(p.get("releasedDate") or "")[:10], pay=extract_pay(desc),
+                work_mode=_mode((loc.get("remote") and "remote") or "", title, location, desc),
+            )
+        time.sleep(1)
+    return list(jobs.values())
+
+
 PROVIDERS = {
     "radancy": fetch_radancy,
     "hibob": fetch_hibob,
     "adp": fetch_adp,
     "jibe": fetch_jibe,
     "page": fetch_page,
+    "smartrecruiters": fetch_smartrecruiters,
 }
 
 
