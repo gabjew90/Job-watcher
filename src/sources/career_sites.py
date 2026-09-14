@@ -341,6 +341,58 @@ def fetch_smartrecruiters(entry: dict, terms: list[str]) -> list[Job]:
     return list(jobs.values())
 
 
+BREEZY_DESC = re.compile(r'<div class="description[^"]*">(.*?)</div>\s*</div>', re.S)
+
+
+def fetch_breezy(entry: dict, terms: list[str]) -> list[Job]:
+    """Breezy HR (Bitdeer). `{slug}.breezy.hr/json` is the complete board
+    with no descriptions, so each posting's page is fetched for its
+    description div. Config: {"provider": "breezy", "company": "...",
+    "slug": "bitdeer", "max_details": 60}. Full list, so expiry
+    snapshot-diffs it.
+
+    A board of 128 postings costs ~140 s to fetch in full, four times a
+    day, so descriptions are fetched only for the `max_details` most
+    recently published (default 60); older postings come back title-only
+    and were already scored with their description when they were new.
+    """
+    resp = requests.get(f"https://{entry['slug']}.breezy.hr/json", headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    items = sorted(resp.json(), key=lambda i: i.get("published_date") or "", reverse=True)
+    budget = int(entry.get("max_details", 60))
+    jobs = []
+    for item in items:
+        title = (item.get("name") or "").strip()
+        url = item.get("url") or ""
+        if not title or not url:
+            continue
+        loc = item.get("location") or {}
+        location = loc.get("name") or ", ".join(
+            x for x in (loc.get("city"), (loc.get("state") or {}).get("name"),
+                        (loc.get("country") or {}).get("name")) if x)
+        desc = ""
+        if budget > 0:
+            budget -= 1
+            try:
+                time.sleep(0.2)
+                page = requests.get(url, headers=HEADERS, timeout=25)
+                if page.status_code == 200:
+                    m = BREEZY_DESC.search(page.text)
+                    if m:
+                        desc = strip_html(m.group(1))
+            except requests.RequestException as e:
+                log.debug("breezy detail fetch failed for %s: %s", url, e)
+        remote = ((loc.get("remote_details") or {}).get("value") or "") if loc.get("is_remote") else ""
+        jobs.append(Job(
+            title=title, company=entry["company"], location=location, url=url,
+            source="breezy", description=desc,
+            date_posted=(item.get("published_date") or "")[:10],
+            pay=(item.get("salary") or "").strip() or extract_pay(desc),
+            work_mode=_mode(remote, title, location, desc),
+        ))
+    return jobs
+
+
 PROVIDERS = {
     "radancy": fetch_radancy,
     "hibob": fetch_hibob,
@@ -348,6 +400,7 @@ PROVIDERS = {
     "jibe": fetch_jibe,
     "page": fetch_page,
     "smartrecruiters": fetch_smartrecruiters,
+    "breezy": fetch_breezy,
 }
 
 
