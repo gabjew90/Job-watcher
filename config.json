@@ -343,6 +343,30 @@
       "tenant": "micron",
       "site": "External",
       "company": "Micron Technology"
+    },
+    {
+      "host": "nisource.wd1.myworkdayjobs.com",
+      "tenant": "nisource",
+      "site": "NiSource",
+      "company": "NiSource"
+    },
+    {
+      "host": "wgl.wd5.myworkdayjobs.com",
+      "tenant": "wgl",
+      "site": "AltaGas",
+      "company": "AltaGas"
+    },
+    {
+      "host": "solvenergy.wd1.myworkdayjobs.com",
+      "tenant": "solvenergy",
+      "site": "SOLV_External_Career",
+      "company": "SOLV Energy"
+    },
+    {
+      "host": "woodmac.wd3.myworkdayjobs.com",
+      "tenant": "woodmac",
+      "site": "woodmaccareers",
+      "company": "Wood Mackenzie"
     }
   ],
   "successfactors_boards": [
@@ -395,6 +419,11 @@
       "provider": "smartrecruiters",
       "company": "NBCUniversal",
       "company_id": "NBCUniversal3"
+    },
+    {
+      "provider": "breezy",
+      "company": "Bitdeer Technologies Group",
+      "slug": "bitdeer"
     }
   ],
   "location": "United States",

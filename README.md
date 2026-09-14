@@ -14,8 +14,10 @@ posts a GitHub Issue digest, and renders a dashboard on GitHub Pages.
 jobspy (Indeed/Glassdoor/ZipRecruiter/Google Jobs)
 hyperscaler APIs (Microsoft/Amazon/Google careers; Meta off by default)
 ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
-Workday / SuccessFactors boards (NVIDIA, GE Vernova, Equinix, Micron, PG&E, NextEra, ...)
-careers-site APIs (Radancy/HiBob/ADP/Jibe/SmartRecruiters — SCE, IREN, Applied Digital, AMD, Aon, NBCUniversal)
+Workday / SuccessFactors boards (NVIDIA, GE Vernova, Equinix, Micron,
+  NiSource, AltaGas, Wood Mackenzie, PG&E, NextEra, ...)
+careers-site APIs (Radancy/HiBob/ADP/Jibe/SmartRecruiters/Breezy — SCE,
+  IREN, Applied Digital, AMD, Aon, NBCUniversal, Bitdeer)
 static careers pages with no ATS (regex over the HTML — Flux Power)
   → keyword filter + title exclusions + priority-topic ⭐
   → title screen: Haiku judges new postings' title+company, dropping obvious
@@ -114,7 +116,9 @@ its `companyName` parameter), `*.careers.hibob.com/api/job-ad` is HiBob
 (`slug` = subdomain), `workforcenow.adp.com/.../job-requisitions` is ADP
 (`cid`/`ccId` from the page URL), `/api/jobs?keywords=` is Jibe (`base` =
 the careers host), `api.smartrecruiters.com/v1/companies/<id>/postings`
-is SmartRecruiters (`company_id` = that id). A page that lists its openings as plain HTML with no
+is SmartRecruiters (`company_id` = that id), `{slug}.breezy.hr/json` is
+Breezy (`slug` = the subdomain; descriptions come from each posting
+page). A page that lists its openings as plain HTML with no
 ATS at all (Flux Power's HubSpot page) uses the `page` provider: a
 `title_pattern` regex whose group 1 is the title, plus optional
 `location_pattern` and `link_pattern` searched in the HTML after each
