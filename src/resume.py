@@ -94,7 +94,7 @@ THEMES = {
 }
 DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "accent")
 
-SECTION_ORDER = ("summary", "experience", "projects", "education", "certifications", "skills")
+SECTION_ORDER = ("summary", "skills", "experience", "projects", "education")
 
 
 # ---------------------------------------------------------------- prompts
@@ -227,9 +227,9 @@ def budget_line(n_roles: int) -> str:
     role headings cost about a line and a half each, so fewer roles mean
     a fuller lead role."""
     if n_roles <= 3:
-        lead, others, words = "5 or 6", "2 or 3", "400 to 460"
+        lead, others, words = "5 or 6", "2", "370 to 420"
     elif n_roles == 4:
-        lead, others, words = "4 or 5", "1 or 2", "400 to 450"
+        lead, others, words = "4 or 5", "1 or 2", "370 to 410"
     else:
         lead, others, words = "4 or 5", "1", "380 to 430"
     return (f"The library has {n_roles} roles. Budget for one page: lead title {lead} "
@@ -309,6 +309,7 @@ def normalize(content: dict, clip: bool = True) -> dict:
         "certifications": [_s(x) for x in content.get("certifications") or [] if _s(x)],
         "skills": [],
         "skills_heading": _s(content.get("skills_heading")),
+        "education_heading": _s(content.get("education_heading")),
         "projects_heading": _s(content.get("projects_heading")),
         "gaps": [_s(x) for x in content.get("gaps") or [] if _s(x)],
         "omitted_requirements": [_s(x) for x in content.get("omitted_requirements") or [] if _s(x)],
@@ -871,14 +872,15 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
         return math.ceil(max(len(text), 1) / width)
 
     h = t["name"] * lh + t["contact"] * lh + (4 if t["name_rule"] else 2)
-    sections = 2 + sum(bool(content.get(k)) for k in ("projects", "education", "certifications", "skills"))
+    # summary + experience, plus skills, projects and one merged credentials section
+    sections = 2 + bool(content.get("skills")) + bool(content.get("projects")) \
+        + bool(content.get("education") or content.get("certifications"))
     h += sections * (t["heading_before"] + t["heading_size"] * lh + 2 + (3 if t["rule"] else 0))
     h += wrapped(content.get("summary", ""), cpl) * body
     for g in groups(content.get("experience", [])):
-        if len(g) > 1:
-            h += 4 + body  # employer line above the title lines
+        h += 4 + body  # employer line above the title lines
         for e in g:
-            h += 4 + body + sum(wrapped(bullet_text(b), cpl_bullet) for b in e["bullets"]) * body
+            h += (2 if len(g) > 1 else 0) + body + sum(wrapped(bullet_text(b), cpl_bullet) for b in e["bullets"]) * body
     for p in content.get("projects", []):
         h += wrapped(p["name"] + p.get("line", ""), cpl_bullet - 3) * body
         if p.get("tech"):
@@ -978,17 +980,15 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
     lines.append(f"# {header.get('name', '')}")
     lines.append(_contact_line(header))
     lines.append("\n## Summary\n" + content.get("summary", ""))
+    if content.get("skills"):
+        lines.append("\n## " + (content.get("skills_heading") or "Skills"))
+        lines += [f"**{c['category']}:** {', '.join(c['items'])}  " for c in content["skills"]]
     lines.append("\n## Experience")
     for g in groups(content.get("experience", [])):
-        if len(g) > 1:
-            lines.append(f"\n### {g[0]['employer']}\n*{span_dates(g)}*")
-            for e in g:
-                lines.append(f"\n**{e['title']}** *({e['dates']})*")
-                lines += [_md_bullet(b) for b in e["bullets"]]
-            continue
-        e = g[0]
-        lines.append(f"\n### {e['employer']} | {e['title']}\n*{e['dates']}*")
-        lines += [_md_bullet(b) for b in e["bullets"]]
+        lines.append(f"\n### {g[0]['employer']}\n*{span_dates(g)}*")
+        for e in g:
+            lines.append(f"\n**{e['title']}**" + (f" *({e['dates']})*" if len(g) > 1 else ""))
+            lines += [_md_bullet(b) for b in e["bullets"]]
     if content.get("projects"):
         lines.append("\n## " + (content.get("projects_heading") or "Selected projects"))
         for p in content["projects"]:
@@ -999,15 +999,10 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
                 lines += [_md_bullet(b) for b in p.get("bullets", [])]
             else:
                 lines.append(f"- **{p['name']}**: {p['line']}")
-    if content.get("education"):
-        lines.append("\n## Education")
-        lines += [f"- {x}" for x in content["education"]]
-    if content.get("certifications"):
-        lines.append("\n## Certifications")
-        lines += [f"- {x}" for x in content["certifications"]]
-    if content.get("skills"):
-        lines.append("\n## " + (content.get("skills_heading") or "Skills"))
-        lines += [f"**{c['category']}:** {', '.join(c['items'])}  " for c in content["skills"]]
+    credentials = list(content.get("education", [])) + list(content.get("certifications", []))
+    if credentials:
+        lines.append("\n## " + (content.get("education_heading") or "Education & Credentials"))
+        lines += [f"- {x}" for x in credentials]
     return "\n".join(lines) + "\n"
 
 
@@ -1121,6 +1116,19 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     heading("Summary")
     doc.add_paragraph(content.get("summary", ""))
 
+    def skills_block():
+        heading(content.get("skills_heading") or "Skills")
+        for c in content["skills"]:
+            p = doc.add_paragraph()
+            rl = p.add_run(f"{c['category']}: ")
+            rl.bold = True
+            if t["label_color"]:
+                rl.font.color.rgb = _rgb(t["label_color"])
+            p.add_run(", ".join(c["items"]))
+
+    if content.get("skills"):
+        skills_block()
+
     def role_line(first: str, second: str | None, dates: str, before: int, bold: bool = True,
                   indent: float = 0.0, color: str | None = None):
         p = doc.add_paragraph()
@@ -1155,23 +1163,17 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
 
     heading("Experience")
     for g in groups(content.get("experience", [])):
-        if len(g) > 1:
-            # One employer, several titles: employer line (bold, accent colour)
-            # with the full span, then an indented bold title line per
-            # position, newest first, with its bullets indented to match.
-            role_line(g[0]["employer"], None, span_dates(g), 4, color=t["label_color"])
-            for e in g:
-                role_line(e["title"], None, e["dates"], 3, indent=GROUP_INDENT)
-                for b in e["bullets"]:
-                    bp = bullet_para(b)
-                    bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
-            continue
-        e = g[0]
-        first, second = ((e["employer"], e["title"]) if t["role_order"] == "employer"
-                         else (e["title"], e["employer"]))
-        role_line(first, second, e["dates"], 4)
-        for b in e["bullets"]:
-            bullet_para(b)
+        # Every employer reads the same way: an employer line (bold, accent
+        # colour) carrying the whole tenure, then an indented bold title line
+        # per position, newest first, with its bullets indented to match. A
+        # lone title does not repeat the dates the employer line already shows.
+        role_line(g[0]["employer"], None, span_dates(g), 4, color=t["label_color"])
+        for e in g:
+            role_line(e["title"], None, e["dates"] if len(g) > 1 else "",
+                      2 if len(g) > 1 else 0, indent=GROUP_INDENT)
+            for b in e["bullets"]:
+                bp = bullet_para(b)
+                bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
 
     if content.get("projects"):
         heading(content.get("projects_heading") or "Selected projects")
@@ -1197,23 +1199,11 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
             rn.bold = True
             p.add_run(f": {pj['line']}")
 
-    if content.get("education"):
-        heading("Education")
-        for line in content["education"]:
+    credentials = list(content.get("education", [])) + list(content.get("certifications", []))
+    if credentials:
+        heading(content.get("education_heading") or "Education & Credentials")
+        for line in credentials:
             doc.add_paragraph(line)
-    if content.get("certifications"):
-        heading("Certifications")
-        for line in content["certifications"]:
-            doc.add_paragraph(line)
-    if content.get("skills"):
-        heading(content.get("skills_heading") or "Skills")
-        for c in content["skills"]:
-            p = doc.add_paragraph()
-            rl = p.add_run(f"{c['category']}: ")
-            rl.bold = True
-            if t["label_color"]:
-                rl.font.color.rgb = _rgb(t["label_color"])
-            p.add_run(", ".join(c["items"]))
 
     doc.core_properties.author = header.get("name", "")
     doc.core_properties.title = (f"{header.get('name', '')} resume"
