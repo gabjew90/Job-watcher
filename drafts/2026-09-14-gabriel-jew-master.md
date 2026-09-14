@@ -41,7 +41,8 @@ Product manager for grid-scale BESS with a utility and construction background, 
 
 ## Selected Technical Project
 
-**Institutional Equity & Macroeconomic Research Engine** *[Python, Gemini API, PyMuPDF, SQLite, Discord API, Railway]*
+### Institutional Equity & Macroeconomic Research Engine
+*Python, Gemini API, PyMuPDF, SQLite, Discord API, Railway*
 
 Automated synthesis and cited RAG bot converting institutional research into a daily brief and Q&A for 100+ paid subscribers.
 - **Multi-Source Ingestion & Schema Extraction:** Engineered an automated pipeline ingesting 100+ equity and macroeconomic research PDFs daily (16,000+ total); parsed unstructured multi-asset commentary into structured JSON schemas with verbatim anchor quotes, programmatically verifying every extracted metric against source text before database commit.
@@ -49,6 +50,18 @@ Automated synthesis and cited RAG bot converting institutional research into a d
 - **Cited RAG Agent:** Built an interactive Q&A agent executing cited answers over the research corpus (1,470+ production queries); regex-based tool router restricts model actions per query, and a payload provenance guard blocks any figure absent from tool output.
 
 ## Education & Credentials
-- MBA (STEM-designated), Product Management/Strategy, UC Davis Graduate School of Management, 2022
-- BS Mechanical Engineering, UC Davis, 2013, Dean's Honor List
-- California Licensed Professional Engineer #M38303, Thermal and Fluid Systems (NCEES), 2016
+
+### UC Davis Graduate School of Management
+*2022*
+
+MBA (STEM-designated), Product Management & Strategy
+
+### UC Davis
+*2013*
+
+BS Mechanical Engineering, Dean's Honor List
+
+### Professional Engineer, California
+*2016*
+
+License #M38303, Thermal and Fluid Systems (NCEES)

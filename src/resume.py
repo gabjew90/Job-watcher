@@ -62,7 +62,7 @@ TOTAL_WORDS = 560
 # 10 pt of the real layout, so the budget keeps a small margin and the PDF
 # page count is the final judge.
 PAGE_HEIGHT_PT = 712.8
-PAGE_BUDGET_PT = 705
+PAGE_BUDGET_PT = 735
 LINE_HEIGHT = {"Calibri": 1.22, "Arial": 1.15}       # line height / font size
 CHARS_PER_LINE = {"Calibri": 117, "Arial": 112}      # full-width body line
 BULLET_INDENT_CHARS = 5                              # fewer on an indented line
@@ -109,8 +109,10 @@ SCHEMA = """{
     // first and adjacent; the renderer groups them under one employer heading
   ],
   "projects": [{"name": "<as in library>", "line": "<one sentence, 22 words max>"}],
-  "education": ["<one line each>"],
-  "certifications": ["<one line each>"],
+  "education": [{"school": "<institution as in library>", "detail": "<degree and honors>",
+                 "date": "<year>"}],
+  "certifications": [{"school": "<license or issuer>", "detail": "<number and discipline>",
+                      "date": "<year>"}],
   "skills": [{"category": "<name>", "items": ["<term>"]}],
   "gaps": ["<must-have posting requirement the library cannot evidence>"],
   "omitted_requirements": ["<nice-to-have posting ask the library cannot evidence>"]
@@ -227,9 +229,9 @@ def budget_line(n_roles: int) -> str:
     role headings cost about a line and a half each, so fewer roles mean
     a fuller lead role."""
     if n_roles <= 3:
-        lead, others, words = "5 or 6", "2", "370 to 420"
+        lead, others, words = "5", "2", "350 to 400"
     elif n_roles == 4:
-        lead, others, words = "4 or 5", "1 or 2", "370 to 410"
+        lead, others, words = "4", "1 or 2", "320 to 360"
     else:
         lead, others, words = "4 or 5", "1", "380 to 430"
     return (f"The library has {n_roles} roles. Budget for one page: lead title {lead} "
@@ -305,8 +307,10 @@ def normalize(content: dict, clip: bool = True) -> dict:
         "summary": _s(content.get("summary")),
         "experience": [],
         "projects": [],
-        "education": [_s(x) for x in content.get("education") or [] if _s(x)],
-        "certifications": [_s(x) for x in content.get("certifications") or [] if _s(x)],
+        "education": [x if isinstance(x, dict) else _s(x)
+                      for x in content.get("education") or [] if x],
+        "certifications": [x if isinstance(x, dict) else _s(x)
+                           for x in content.get("certifications") or [] if x],
         "skills": [],
         "skills_heading": _s(content.get("skills_heading")),
         "education_heading": _s(content.get("education_heading")),
@@ -463,6 +467,24 @@ COORDINATION_VERBS = {"coordinated", "coordinate", "aligned", "align", "supporte
                       "assisted", "assist", "contributed", "contribute", "participated", "participate"}
 
 
+CRED_YEAR = re.compile(r"[,(]?\s*((?:19|20)\d{2})\)?\s*$")
+
+
+def credential_parts(item) -> tuple[str, str, str]:
+    """(name, detail, date) for one education or certification entry.
+
+    Owner-written entries say it directly as {"school", "detail", "date"}.
+    A model-written line is one string, so the trailing year becomes the
+    date column and the rest is the name; nothing is invented."""
+    if isinstance(item, dict):
+        return (_s(item.get("school")), _s(item.get("detail")), _s(item.get("date")))
+    text = _s(item)
+    m = CRED_YEAR.search(text)
+    if m:
+        return (text[:m.start()].rstrip(" ,("), "", m.group(1))
+    return (text, "", "")
+
+
 def bullet_text(b) -> str:
     """Bullets are plain strings from the model. Owner-written content may
     use {"label": "Pricing Strategy", "text": "..."} for a bold lead-in;
@@ -488,10 +510,10 @@ def _units(content: dict) -> list[tuple[str, str]]:
             units.append((f"{e['employer']} bullet {j + 1}", bullet_text(b)))
     for p in content.get("projects", []):
         units.append((f"project {p['name']}", p["line"]))
-    for line in content.get("education", []):
-        units.append(("education", line))
-    for line in content.get("certifications", []):
-        units.append(("certification", line))
+    for label, key in (("education", "education"), ("certification", "certifications")):
+        for item in content.get(key, []):
+            name, detail, date = credential_parts(item)
+            units.append((label, " ".join(x for x in (name, detail, date) if x)))
     return units
 
 
@@ -725,18 +747,23 @@ def fabrication_guard(content: dict, library: str) -> list[str]:
     content["projects"] = projects
 
     education = []
-    for line in content.get("education", []):
+    for entry in content.get("education", []):
+        name, detail, date = credential_parts(entry)
+        line = " ".join(x for x in (name, detail, date) if x)
         if not ok_numbers(line, "education"):
             continue
-        parts = [x.strip() for x in re.split(r",| — ", line)]
-        schools = [x for x in parts if SCHOOL_RE.search(x)]
+        # A structured entry names its institution outright; a one-line entry
+        # has it among the comma-separated parts.
+        fields = [name] if isinstance(entry, dict) else re.split(r",| — ", line)
+        schools = [x.strip() for x in fields if SCHOOL_RE.search(x)]
         if any(re.sub(r"\s+", " ", s.lower()) not in lib_low for s in schools):
             removed.append(f"education '{line[:90]}': institution not in library")
             continue
-        education.append(line)
+        education.append(entry)
     content["education"] = education
-    content["certifications"] = [c for c in content.get("certifications", [])
-                                 if ok_numbers(c, "certification")]
+    content["certifications"] = [
+        c for c in content.get("certifications", [])
+        if ok_numbers(" ".join(x for x in credential_parts(c) if x), "certification")]
     library_words = _library_words(library)
     for cat in content.get("skills", []):
         kept = []
@@ -814,7 +841,9 @@ def draft_text(content: dict) -> str:
         parts += [e["title"], *(bullet_text(b) for b in e["bullets"])]
     for p in content.get("projects", []):
         parts += [p.get("line", ""), p.get("tech", ""), *(bullet_text(b) for b in p.get("bullets", []))]
-    parts += content.get("education", []) + content.get("certifications", [])
+    for item in list(content.get("education", [])) + list(content.get("certifications", [])):
+        name, detail, date = credential_parts(item)
+        parts += [name, detail, date]
     for c in content.get("skills", []):
         parts += c["items"]
     return " ".join(parts)
@@ -882,11 +911,13 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
         for e in g:
             h += (2 if len(g) > 1 else 0) + body + sum(wrapped(bullet_text(b), cpl_bullet) for b in e["bullets"]) * body
     for p in content.get("projects", []):
-        h += wrapped(p["name"] + p.get("line", ""), cpl_bullet - 3) * body
-        if p.get("tech"):
-            h += wrapped(p["tech"], cpl_bullet) * body
+        h += 4 + body  # name line with the stack in the right column
+        if p.get("line"):
+            h += wrapped(p["line"], cpl) * body
         h += sum(wrapped(bullet_text(b), cpl_bullet) for b in p.get("bullets", [])) * body
-    h += (len(content.get("education", [])) + len(content.get("certifications", []))) * body
+    for item in list(content.get("education", [])) + list(content.get("certifications", [])):
+        name, detail, _ = credential_parts(item)
+        h += 3 + wrapped(name, cpl) * body + (wrapped(detail, cpl) * body if detail else 0)
     h += sum(wrapped(c["category"] + ", ".join(c["items"]), cpl - 2) for c in content.get("skills", [])) * body
     return round(h, 1)
 
@@ -992,17 +1023,18 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
     if content.get("projects"):
         lines.append("\n## " + (content.get("projects_heading") or "Selected projects"))
         for p in content["projects"]:
-            if p.get("tech") or p.get("bullets"):
-                lines.append(f"\n**{p['name']}**" + (f" *[{p['tech']}]*" if p.get("tech") else ""))
-                if p.get("line"):
-                    lines.append(f"\n{p['line']}")
-                lines += [_md_bullet(b) for b in p.get("bullets", [])]
-            else:
-                lines.append(f"- **{p['name']}**: {p['line']}")
+            lines.append(f"\n### {p['name']}" + (f"\n*{p['tech']}*" if p.get("tech") else ""))
+            if p.get("line"):
+                lines.append(f"\n{p['line']}")
+            lines += [_md_bullet(b) for b in p.get("bullets", [])]
     credentials = list(content.get("education", [])) + list(content.get("certifications", []))
     if credentials:
         lines.append("\n## " + (content.get("education_heading") or "Education & Credentials"))
-        lines += [f"- {x}" for x in credentials]
+        for item in credentials:
+            name, detail, date = credential_parts(item)
+            lines.append(f"\n### {name}" + (f"\n*{date}*" if date else ""))
+            if detail:
+                lines.append(f"\n{detail}")
     return "\n".join(lines) + "\n"
 
 
@@ -1130,7 +1162,7 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         skills_block()
 
     def role_line(first: str, second: str | None, dates: str, before: int, bold: bool = True,
-                  indent: float = 0.0, color: str | None = None):
+                  indent: float = 0.0, color: str | None = None, italic_right: bool | None = None):
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(before)
         p.paragraph_format.left_indent = Inches(indent)
@@ -1144,7 +1176,7 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
             if t["dates_color"]:
                 r2.font.color.rgb = _rgb(t["dates_color"])
         r3 = p.add_run(f"\t{dates}")
-        r3.italic = t["dates_italic"]
+        r3.italic = t["dates_italic"] if italic_right is None else italic_right
         if t["dates_color"]:
             r3.font.color.rgb = _rgb(t["dates_color"])
 
@@ -1178,32 +1210,26 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     if content.get("projects"):
         heading(content.get("projects_heading") or "Selected projects")
         for pj in content["projects"]:
-            if pj.get("tech") or pj.get("bullets"):
-                # Owner-written project block: a bold name line carrying the
-                # stack, a description line, then its own bullets.
-                np = doc.add_paragraph()
-                np.paragraph_format.space_before = Pt(3)
-                rn = np.add_run(pj["name"])
-                rn.bold = True
-                if pj.get("tech"):
-                    rt = np.add_run(f"  |  {pj['tech']}")
-                    if t["dates_color"]:
-                        rt.font.color.rgb = _rgb(t["dates_color"])
-                if pj.get("line"):
-                    doc.add_paragraph(pj["line"])
-                for b in pj.get("bullets", []):
-                    bullet_para(b)
-                continue
-            p = doc.add_paragraph(style="List Bullet")
-            rn = p.add_run(pj["name"])
-            rn.bold = True
-            p.add_run(f": {pj['line']}")
+            # Same grammar as an employer: an accent name line with the stack
+            # in the right column, then the description and bullets indented.
+            role_line(pj["name"], None, pj.get("tech", ""), 4,
+                      color=t["label_color"], italic_right=False)
+            if pj.get("line"):
+                dp = doc.add_paragraph(pj["line"])
+                dp.paragraph_format.left_indent = Inches(GROUP_INDENT)
+            for b in pj.get("bullets", []):
+                bp = bullet_para(b)
+                bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
 
     credentials = list(content.get("education", [])) + list(content.get("certifications", []))
     if credentials:
         heading(content.get("education_heading") or "Education & Credentials")
-        for line in credentials:
-            doc.add_paragraph(line)
+        for item in credentials:
+            name, detail, date = credential_parts(item)
+            role_line(name, None, date, 3, color=t["label_color"])
+            if detail:
+                dp = doc.add_paragraph(detail)
+                dp.paragraph_format.left_indent = Inches(GROUP_INDENT)
 
     doc.core_properties.author = header.get("name", "")
     doc.core_properties.title = (f"{header.get('name', '')} resume"
