@@ -64,7 +64,8 @@
     "Mitsubishi Electric Power Products",
     "Modine",
     "ZutaCore",
-    "Accelsius"
+    "Accelsius",
+    "Apple"
   ],
   "hyperscalers": {
     "microsoft": true,
@@ -330,6 +331,18 @@
       "tenant": "hitachi",
       "site": "hitachi",
       "company": "Hitachi"
+    },
+    {
+      "host": "equinix.wd1.myworkdayjobs.com",
+      "tenant": "equinix",
+      "site": "External",
+      "company": "Equinix"
+    },
+    {
+      "host": "micron.wd1.myworkdayjobs.com",
+      "tenant": "micron",
+      "site": "External",
+      "company": "Micron Technology"
     }
   ],
   "successfactors_boards": [
@@ -377,6 +390,11 @@
       "title_pattern": "<h4[^>]*c-icon-box__heading[^>]*>(.*?)</h4>",
       "location_pattern": "^\\s*<p>(.*?)</p>",
       "link_pattern": "href=\"([^\"]+\\.pdf)\""
+    },
+    {
+      "provider": "smartrecruiters",
+      "company": "NBCUniversal",
+      "company_id": "NBCUniversal3"
     }
   ],
   "location": "United States",

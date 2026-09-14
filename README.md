@@ -14,8 +14,8 @@ posts a GitHub Issue digest, and renders a dashboard on GitHub Pages.
 jobspy (Indeed/Glassdoor/ZipRecruiter/Google Jobs)
 hyperscaler APIs (Microsoft/Amazon/Google careers; Meta off by default)
 ATS boards (Greenhouse/Lever/Ashby — curated ecosystem companies)
-Workday / SuccessFactors boards (NVIDIA, GE Vernova, PG&E, NextEra, ...)
-careers-site APIs (Radancy/HiBob/ADP/Jibe — SCE, IREN, Applied Digital, AMD, Aon)
+Workday / SuccessFactors boards (NVIDIA, GE Vernova, Equinix, Micron, PG&E, NextEra, ...)
+careers-site APIs (Radancy/HiBob/ADP/Jibe/SmartRecruiters — SCE, IREN, Applied Digital, AMD, Aon, NBCUniversal)
 static careers pages with no ATS (regex over the HTML — Flux Power)
   → keyword filter + title exclusions + priority-topic ⭐
   → title screen: Haiku judges new postings' title+company, dropping obvious
@@ -113,7 +113,8 @@ first bytes). The call carrying the postings names the platform: a
 its `companyName` parameter), `*.careers.hibob.com/api/job-ad` is HiBob
 (`slug` = subdomain), `workforcenow.adp.com/.../job-requisitions` is ADP
 (`cid`/`ccId` from the page URL), `/api/jobs?keywords=` is Jibe (`base` =
-the careers host). A page that lists its openings as plain HTML with no
+the careers host), `api.smartrecruiters.com/v1/companies/<id>/postings`
+is SmartRecruiters (`company_id` = that id). A page that lists its openings as plain HTML with no
 ATS at all (Flux Power's HubSpot page) uses the `page` provider: a
 `title_pattern` regex whose group 1 is the title, plus optional
 `location_pattern` and `link_pattern` searched in the HTML after each
