@@ -9,20 +9,20 @@
       "dates": "Feb 2021 – Present",
       "bullets": [
         {
-          "label": "Roadmap Ownership & Commercial Impact",
-          "text": "Expanded the product portfolio from 4-hour to 2-hour duration with an AC-integrated containerized BESS to capture emerging AI data center demand; secured executive and commercial buy-in to establish the platform as LG's flagship offering for the segment, driving multi-GWh forward bookings for 2027 delivery."
+          "lead": "Expanded product portfolio from 4-hour to 2-hour duration",
+          "text": " with an AC-integrated containerized BESS to capture emerging AI data center demand; secured executive and commercial buy-in to establish the platform as LG's flagship offering, driving multi-GWh forward bookings for 2027 delivery."
         },
         {
-          "label": "Techno-Economics & Pricing Strategy",
-          "text": "Built bottom-up cell-to-system cost, EPC installation, and logistics models to set competitive system pricing, evaluate PCS configurations, and quantify the margin, energy density, and transport advantages of the 2-hour architecture."
+          "lead": "Built bottom-up cell-to-system cost, EPC installation, and logistics models",
+          "text": " to set competitive system pricing, evaluate PCS configurations, and quantify the margin, energy density, and transport advantages of the 2-hour architecture."
         },
         {
-          "label": "Technical Translation & System Requirements",
-          "text": "Translated hyperscale and AI data center power constraints into core BESS requirements: authored specifications for compute step-load transient smoothing, voltage fault ride-through with active recovery, gas turbine pairing, black start and islanding, and capacity management for non-firm interconnection with curtailment."
+          "lead": "Translated hyperscale and AI data center power constraints",
+          "text": " into core BESS requirements: authored specifications for compute step-load transient smoothing, voltage fault ride-through with active recovery, gas turbine pairing, black start and islanding, and capacity management for non-firm interconnection with curtailment."
         },
         {
-          "label": "Cross-Functional Delivery",
-          "text": "Led PCS vendor selection and owned the UL 9540 listing path; served as the product interface between engineering, sales, and project execution, aligning volume commitments, cost-down trajectory, development and certification schedules, technical documentation, and commissioning and service procedures."
+          "lead": "Led PCS vendor selection and owned the UL 9540 listing path",
+          "text": "; served as the product interface between engineering, sales, and project execution, aligning volume commitments, cost-down trajectory, development/certification schedules, technical documentation, and commissioning procedures."
         }
       ]
     },
@@ -31,9 +31,18 @@
       "title": "Senior Systems Engineer, Grid-Scale BESS (LG Chem)",
       "dates": "Feb 2018 – Feb 2021",
       "bullets": [
-        "Led product engineering for LG's first prefabricated containerized BESS (2.86 MWh/unit); partnered with contract manufacturer Jabil from architecture through functional prototype, managing cost, safety, and size/weight tradeoffs to replace bespoke field assembly and deliver nearly 1 GWh across CAISO and ERCOT.",
-        "Developed Python and spreadsheet degradation models simulating calendar and cycle aging, C-rate, temperature, and depth of discharge; optimized battery-to-inverter ratios and augmentation schedules to minimize lifetime cost while satisfying developer warranty terms.",
-        "Directed technical sales engineering for integrators, EPCs, and IPP/developers; led requirements capture, system sizing, and RFP/RFI technical defense, translating site duty-cycle constraints into pre-construction proposals."
+        {
+          "lead": "Led product engineering for LG's first prefabricated containerized BESS",
+          "text": " (2.86 MWh/unit); partnered with contract manufacturer Jabil from architecture through functional prototype, managing cost, safety, and size/weight tradeoffs to replace bespoke field assembly and deliver nearly 1 GWh across CAISO and ERCOT."
+        },
+        {
+          "lead": "Developed Python and spreadsheet degradation models",
+          "text": " simulating calendar and cycle aging, C-rate, temperature, and depth of discharge; optimized battery-to-inverter ratios and augmentation schedules to minimize lifetime cost while satisfying developer warranty terms."
+        },
+        {
+          "lead": "Directed technical sales engineering for integrators, EPCs, and IPP/developers",
+          "text": "; led requirements capture, system sizing, and RFP/RFI technical defense, translating site duty-cycle constraints into pre-construction proposals."
+        }
       ]
     },
     {
@@ -41,8 +50,14 @@
       "title": "Design-Build Engineering Manager, HVAC",
       "dates": "Jul 2016 – Oct 2017",
       "bullets": [
-        "Managed end-to-end commercial HVAC delivery on active construction sites: scope definition, equipment selection, and mechanical and electrical commissioning and startup, coordinating with general contractors, architects, and developers.",
-        "Owned estimating, procurement, and field operations; produced mechanical bids, directed trade installer crews, and negotiated in-flight change orders to protect margin and schedule."
+        {
+          "lead": "Managed end-to-end commercial HVAC delivery on active construction sites",
+          "text": ": scope definition, equipment selection, and mechanical and electrical commissioning and startup, coordinating with general contractors, architects, and developers."
+        },
+        {
+          "lead": "Owned estimating, procurement, and field operations",
+          "text": "; produced mechanical bids, directed trade installer crews, and negotiated in-flight change orders to protect margin and schedule."
+        }
       ]
     },
     {
@@ -50,8 +65,14 @@
       "title": "Energy Solutions Engineer",
       "dates": "Dec 2013 – Jul 2016",
       "bullets": [
-        "Delivered 2.5 MW of peak demand reduction and 7 GWh of cumulative energy savings across commercial and industrial portfolios through customer-facing technical audits, incentive structuring, and capital project evaluation.",
-        "Engineered efficiency and demand-response projects for data centers and critical facilities: developed technical scopes and savings models for data center cooling retrofits (hot/cold aisle containment, economizers, VFDs), central plant systems (chillers, boilers, AHUs), and behind-the-meter thermal and battery peak-shifting assets."
+        {
+          "lead": "Delivered 2.5 MW of peak demand reduction and 7 GWh of cumulative energy savings",
+          "text": " across commercial and industrial portfolios through customer-facing technical audits, incentive structuring, and capital project evaluation."
+        },
+        {
+          "lead": "Engineered efficiency and demand-response projects for data centers and critical facilities",
+          "text": ": developed technical scopes and savings models for data center cooling retrofits (hot/cold aisle containment, economizers, VFDs), central plant systems (chillers, boilers, AHUs), and behind-the-meter thermal and battery peak-shifting assets."
+        }
       ]
     }
   ],
@@ -62,16 +83,16 @@
       "line": "Automated synthesis and cited RAG bot converting institutional research into a daily brief and Q&A for 100+ paid subscribers.",
       "bullets": [
         {
-          "label": "Multi-Source Ingestion & Schema Extraction",
-          "text": "Engineered an automated pipeline ingesting 100+ equity and macroeconomic research PDFs daily (16,000+ total); parsed unstructured multi-asset commentary into structured JSON schemas with verbatim anchor quotes, programmatically verifying every extracted metric against source text before database commit."
+          "lead": "Engineered an automated pipeline ingesting 100+ research PDFs daily",
+          "text": " (16,000+ total); parsed unstructured multi-asset commentary into structured JSON schemas with verbatim anchor quotes, programmatically verifying every extracted metric against source text before database commit."
         },
         {
-          "label": "Morning Pulse Synthesis",
-          "text": "Built the automated \"Morning Pulse\" briefing, published every trading day (110+ issues) with a lead theme, desk-call trade board, and economic and earnings calendar drawn from live options chains and agency APIs; a redesigned synthesis pipeline in shadow pilot raised extraction fidelity against source PDFs from 33–60% to 87–100% and cut grouping fragmentation from 30–60% to 9–16%."
+          "lead": "Built the automated “Morning Pulse” briefing, published every trading day",
+          "text": " (110+ issues) with a lead theme, desk-call trade board, and economic and earnings calendar drawn from live options chains and agency APIs; a redesigned synthesis pipeline in shadow pilot raised extraction fidelity against source PDFs from 33–60% to 87–100% and cut grouping fragmentation from 30–60% to 9–16%."
         },
         {
-          "label": "Cited RAG Agent",
-          "text": "Built an interactive Q&A agent executing cited answers over the research corpus (1,470+ production queries); regex-based tool router restricts model actions per query, and a payload provenance guard blocks any figure absent from tool output."
+          "lead": "Built an interactive Q&A agent executing cited answers over the research corpus",
+          "text": " (1,470+ production queries); regex-based tool router restricts model actions per query, and a payload provenance guard blocks any figure absent from tool output."
         }
       ]
     }
@@ -135,5 +156,6 @@
   "gaps": [],
   "omitted_requirements": [],
   "skills_heading": "Core Competencies",
-  "projects_heading": "Selected Technical Project"
+  "projects_heading": "Selected Technical Project",
+  "density": "relaxed"
 }

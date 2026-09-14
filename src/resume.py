@@ -94,6 +94,18 @@ THEMES = {
 }
 DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "accent")
 
+# How tightly the page is set. "compact" is what a one-page tailored draft
+# needs; "relaxed" opens the leading and the gaps between entries so a
+# longer master resume fills its pages instead of stopping halfway down
+# the last one. Content picks it with a "density" key.
+DENSITY = {
+    "compact": dict(line_spacing=1.0, bullet_after=0, entry_before=4, title_before=2,
+                    heading_extra=0, heading_after=2, block_after=0),
+    "relaxed": dict(line_spacing=1.14, bullet_after=5, entry_before=12, title_before=6,
+                    heading_extra=8, heading_after=5, block_after=5),
+}
+DEFAULT_DENSITY = "compact"
+
 SECTION_ORDER = ("summary", "skills", "experience", "projects", "education")
 
 
@@ -287,6 +299,11 @@ def _clean_bullet(text):
     """Strip any list marker and end with a stop. A dict bullet keeps its
     label and cleans only the text."""
     if isinstance(text, dict):
+        if text.get("lead"):
+            body = re.sub(r"\s+", " ", str(text.get("text") or "")).rstrip()
+            if body and body[-1] not in ".!?":
+                body += "."
+            return {"lead": _s(text.get("lead")), "text": body}
         return {"label": _s(text.get("label")), "text": _clean_bullet(text.get("text"))}
     text = re.sub(r"^[\-•\*\d\.\)\s]+", "", _s(text))
     if text and text[-1] not in ".!?":
@@ -313,6 +330,7 @@ def normalize(content: dict, clip: bool = True) -> dict:
         "certifications": [x if isinstance(x, dict) else _s(x)
                            for x in content.get("certifications") or [] if x],
         "skills": [],
+        "density": _s(content.get("density")),
         "skills_heading": _s(content.get("skills_heading")),
         "education_heading": _s(content.get("education_heading")),
         "projects_heading": _s(content.get("projects_heading")),
@@ -493,6 +511,8 @@ def bullet_text(b) -> str:
     use {"label": "Pricing Strategy", "text": "..."} for a bold lead-in;
     everything that reasons about the words wants them joined."""
     if isinstance(b, dict):
+        if b.get("lead"):
+            return f"{b['lead']}{b.get('text', '')}".strip()
         return f"{b.get('label', '')}: {b.get('text', '')}".strip(": ").strip()
     return b
 
@@ -895,7 +915,8 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
     theme's sizes and the renderer's spacing (render_docx is the source of
     truth for those). Text wraps by character count."""
     t = THEMES[theme]
-    lh = LINE_HEIGHT.get(t["font"], 1.22)
+    d = DENSITY[content.get("density") or DEFAULT_DENSITY]
+    lh = LINE_HEIGHT.get(t["font"], 1.22) * d["line_spacing"]
     body = t["body"] * lh
     cpl = CHARS_PER_LINE.get(t["font"], 115)
     cpl_bullet = cpl + BULLET_INDENT_CHARS  # measured: indented lines hold more, not less
@@ -907,21 +928,25 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
     # summary + experience, plus skills, projects and one merged credentials section
     sections = 2 + bool(content.get("skills")) + bool(content.get("projects")) \
         + bool(content.get("education") or content.get("certifications"))
-    h += sections * (t["heading_before"] + t["heading_size"] * lh + 2 + (3 if t["rule"] else 0))
+    extra = d["heading_extra"] + d["heading_after"] - 2
+    h += sections * (t["heading_before"] + extra + t["heading_size"] * lh + 2 + (3 if t["rule"] else 0))
     h += wrapped(content.get("summary", ""), cpl) * body
     for g in groups(content.get("experience", [])):
-        h += 4 + body  # employer line above the title lines
+        h += d["entry_before"] + body  # employer line above the title lines
         for e in g:
-            h += (2 if len(g) > 1 else 0) + body + sum(wrapped(bullet_text(b), cpl_bullet) for b in e["bullets"]) * body
+            h += (d["title_before"] if len(g) > 1 else d["block_after"]) + body \
+                + sum(wrapped(bullet_text(b), cpl_bullet) * body + d["bullet_after"]
+                      for b in e["bullets"])
     for p in content.get("projects", []):
-        h += 4 + body  # name line with the stack in the right column
+        h += d["entry_before"] + body  # name line with the stack in the right column
         subtitle = p.get("title") or p.get("line")
         if subtitle:
             h += wrapped(subtitle, cpl) * body
-        h += sum(wrapped(bullet_text(b), cpl_bullet) for b in p.get("bullets", [])) * body
+        h += sum(wrapped(bullet_text(b), cpl_bullet) * body + d["bullet_after"]
+                 for b in p.get("bullets", []))
     for item in list(content.get("education", [])) + list(content.get("certifications", [])):
         name, detail, _ = credential_parts(item)
-        h += 3 + wrapped(name, cpl) * body + (wrapped(detail, cpl) * body if detail else 0)
+        h += d["entry_before"] + wrapped(name, cpl) * body + (wrapped(detail, cpl) * body if detail else 0)
     h += sum(wrapped(c["category"] + ", ".join(c["items"]), cpl - 2) for c in content.get("skills", [])) * body
     return round(h, 1)
 
@@ -956,7 +981,7 @@ def trim_one(content: dict) -> str | None:
         for e in reversed(entries):
             if len(e["bullets"]) > 1:
                 b = e["bullets"].pop()
-                return f"{e['employer']} bullet '{b[:60]}'"
+                return f"{e['employer']} bullet '{bullet_text(b)[:60]}'"
         return None
 
     def drop_oldest_employer(keep: int) -> str | None:
@@ -979,7 +1004,7 @@ def trim_one(content: dict) -> str | None:
         return r
     if exp and len(exp[0]["bullets"]) > 4:
         b = exp[0]["bullets"].pop()
-        return f"{exp[0]['employer']} bullet '{b[:60]}'"
+        return f"{exp[0]['employer']} bullet '{bullet_text(b)[:60]}'"
     if (r := drop_oldest_employer(3)):
         return r
     if len(projects) > 1:
@@ -989,7 +1014,7 @@ def trim_one(content: dict) -> str | None:
         return r
     if exp and len(exp[0]["bullets"]) > 3:
         b = exp[0]["bullets"].pop()
-        return f"{exp[0]['employer']} bullet '{b[:60]}'"
+        return f"{exp[0]['employer']} bullet '{bullet_text(b)[:60]}'"
     if projects:
         p = projects.pop()
         return f"project '{p['name']}'"
@@ -1044,6 +1069,8 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
 
 
 def _md_bullet(b) -> str:
+    if isinstance(b, dict) and b.get("lead"):
+        return f"- **{b['lead']}**{b.get('text', '')}"
     if isinstance(b, dict):
         return f"- **{b.get('label', '')}:** {b.get('text', '')}"
     return f"- {b}"
@@ -1065,6 +1092,7 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     from docx.shared import Inches, Pt, RGBColor
 
     t = THEMES[theme]
+    d = DENSITY[content.get("density") or DEFAULT_DENSITY]
     doc = Document()
     # An explicit white page fill. Without it the exported PDF paints no
     # background, and viewers that composite pages over a dark UI (phone
@@ -1115,12 +1143,14 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     _font(normal, t["body"])
     normal.paragraph_format.space_before = Pt(0)
     normal.paragraph_format.space_after = Pt(0)
-    normal.paragraph_format.line_spacing = 1.0
+    normal.paragraph_format.line_spacing = d["line_spacing"]
     bullets_style = doc.styles["List Bullet"]
     _font(bullets_style, t["body"])
-    bullets_style.paragraph_format.space_after = Pt(0)
+    bullets_style.paragraph_format.space_after = Pt(d["bullet_after"])
     bullets_style.paragraph_format.left_indent = Inches(0.22)
     bullets_style.paragraph_format.first_line_indent = Inches(-0.16)
+
+    first_heading = [True]
 
     def heading(text):
         p = doc.add_paragraph()
@@ -1130,8 +1160,11 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         if t["heading_color"]:
             run.font.color.rgb = _rgb(t["heading_color"])
         _spacing(run, t["heading_spacing"])
-        p.paragraph_format.space_before = Pt(t["heading_before"])
-        p.paragraph_format.space_after = Pt(2)
+        before = 5 if first_heading[0] else t["heading_before"] + d["heading_extra"]
+        first_heading[0] = False
+        p.paragraph_format.space_before = Pt(max(before, 0))
+        p.paragraph_format.space_after = Pt(d["heading_after"])
+        p.paragraph_format.keep_with_next = True
         if t["rule"]:
             _bottom_rule(p, t["rule_color"], t["rule_size"])
 
@@ -1151,7 +1184,7 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         _bottom_rule(contact, t["rule_color"], t["rule_size"])
 
     heading("Summary")
-    doc.add_paragraph(content.get("summary", ""))
+    doc.add_paragraph(content.get("summary", "")).paragraph_format.space_after = Pt(d["block_after"])
 
     def skills_block():
         heading(content.get("skills_heading") or "Skills")
@@ -1162,6 +1195,7 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
             if t["label_color"]:
                 rl.font.color.rgb = _rgb(t["label_color"])
             p.add_run(", ".join(c["items"]))
+            p.paragraph_format.space_before = Pt(d["block_after"])
 
     if content.get("skills"):
         skills_block()
@@ -1171,6 +1205,9 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(before)
         p.paragraph_format.left_indent = Inches(indent)
+        # An employer or title line stranded at the foot of a page reads as a
+        # mistake, so it always carries the line under it to the next page.
+        p.paragraph_format.keep_with_next = True
         p.paragraph_format.tab_stops.add_tab_stop(Inches(7.3), WD_TAB_ALIGNMENT.RIGHT)
         r1 = p.add_run(first)
         r1.bold = bold
@@ -1188,7 +1225,13 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     def bullet_para(b):
         """A list bullet; a dict bullet gets its label in bold first."""
         bp = doc.add_paragraph(style="List Bullet")
-        if isinstance(b, dict):
+        if isinstance(b, dict) and b.get("lead"):
+            # A bold anchor on the opening words: the same scannability a
+            # coloured prefix gives, without the visual weight or the
+            # category label restating what the sentence already says.
+            bp.add_run(b["lead"]).bold = True
+            bp.add_run(b.get("text", ""))
+        elif isinstance(b, dict):
             rl = bp.add_run(f"{b.get('label', '')}: ")
             rl.bold = True
             if t["label_color"]:
@@ -1204,10 +1247,12 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         # colour) carrying the whole tenure, then an indented bold title line
         # per position, newest first, with its bullets indented to match. A
         # lone title does not repeat the dates the employer line already shows.
-        role_line(g[0]["employer"], None, span_dates(g), 4, color=t["label_color"])
+        role_line(g[0]["employer"], None, span_dates(g), d["entry_before"],
+                  color=t["label_color"])
         for e in g:
             role_line(e["title"], None, e["dates"] if len(g) > 1 else "",
-                      2 if len(g) > 1 else 0, indent=GROUP_INDENT)
+                      d["title_before"] if len(g) > 1 else d["block_after"],
+                      indent=GROUP_INDENT)
             for b in e["bullets"]:
                 bp = bullet_para(b)
                 bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
@@ -1218,11 +1263,11 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
             # Exactly an employer entry: accent name line with the stack in
             # the right column (where dates sit), an indented bold line
             # playing the title's part, then indented bullets.
-            role_line(pj["name"], None, pj.get("tech", ""), 4,
+            role_line(pj["name"], None, pj.get("tech", ""), d["entry_before"],
                       color=t["label_color"], italic_right=False)
             subtitle = pj.get("title") or pj.get("line")
             if subtitle:
-                role_line(subtitle, None, "", 0, indent=GROUP_INDENT)
+                role_line(subtitle, None, "", d["block_after"], indent=GROUP_INDENT)
             for b in pj.get("bullets", []):
                 bp = bullet_para(b)
                 bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
@@ -1232,10 +1277,11 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         heading(content.get("education_heading") or "Education & Credentials")
         for item in credentials:
             name, detail, date = credential_parts(item)
-            role_line(name, None, date, 3, color=t["label_color"])
+            role_line(name, None, date, d["entry_before"], color=t["label_color"])
             if detail:
                 dp = doc.add_paragraph(detail)
                 dp.paragraph_format.left_indent = Inches(GROUP_INDENT)
+                dp.paragraph_format.space_after = Pt(d["block_after"])
 
     doc.core_properties.author = header.get("name", "")
     doc.core_properties.title = (f"{header.get('name', '')} resume"
