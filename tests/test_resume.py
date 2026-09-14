@@ -208,9 +208,13 @@ def test_render_docx_layout(rendered):
     texts = [p.text for p in doc.paragraphs]
     assert texts[0] == "Gabriel Jew, P.E."
     assert "gabjew90@gmail.com" in texts[1]
-    headings = [t for t in texts if t in ("SUMMARY", "EXPERIENCE", "SELECTED PROJECTS",
-                                          "EDUCATION", "CERTIFICATIONS", "SKILLS")]
-    assert headings == ["SUMMARY", "EXPERIENCE", "SELECTED PROJECTS", "EDUCATION", "CERTIFICATIONS", "SKILLS"]
+    # Skills sit under the summary; education and credentials are one closing section.
+    headings = [t for t in texts if t in ("SUMMARY", "SKILLS", "EXPERIENCE", "SELECTED PROJECTS",
+                                          "EDUCATION & CREDENTIALS")]
+    assert headings == ["SUMMARY", "SKILLS", "EXPERIENCE", "SELECTED PROJECTS",
+                        "EDUCATION & CREDENTIALS"]
+    creds = texts[texts.index("EDUCATION & CREDENTIALS") + 1:]
+    assert any("UC Davis" in x for x in creds) and any("M38303" in x for x in creds)
     assert len(doc.tables) == 0
     from docx.oxml.ns import qn
     bg = doc.element.find(qn("w:background"))  # painted page, so dark-mode viewers show white
