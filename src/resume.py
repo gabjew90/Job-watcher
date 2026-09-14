@@ -98,11 +98,21 @@ DEFAULT_THEME = os.environ.get("JOBWATCH_RESUME_THEME", "accent")
 # needs; "relaxed" opens the leading and the gaps between entries so a
 # longer master resume fills its pages instead of stopping halfway down
 # the last one. Content picks it with a "density" key.
+# Set on typographic grounds rather than by eye. Resume guidance puts body
+# type at 10-12 pt, line spacing at 1.0-1.15, and margins at 0.75-1 in;
+# classical typography wants a measure of 45-75 characters and block
+# spacing tied to the line height rather than chosen ad hoc. "compact"
+# trades some of that away to hold a tailored draft to one page. "relaxed"
+# buys the space back where it helps reading (bigger type, wider margins,
+# so a shorter line) instead of by padding the gaps: bullets stay a tight
+# group, entries get about half a line, sections about one line.
 DENSITY = {
     "compact": dict(line_spacing=1.0, bullet_after=0, entry_before=4, title_before=2,
-                    heading_extra=0, heading_after=2, block_after=0),
-    "relaxed": dict(line_spacing=1.14, bullet_after=5, entry_before=12, title_before=6,
-                    heading_extra=8, heading_after=5, block_after=5),
+                    heading_extra=0, heading_after=2, block_after=0,
+                    body_delta=0.0, margin_x=0.6, margin_y=0.55),
+    "relaxed": dict(line_spacing=1.08, bullet_after=1, entry_before=8, title_before=3,
+                    heading_extra=4, heading_after=3, block_after=3,
+                    body_delta=0.5, margin_x=0.9, margin_y=0.6),
 }
 DEFAULT_DENSITY = "compact"
 
@@ -917,8 +927,12 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
     t = THEMES[theme]
     d = DENSITY[content.get("density") or DEFAULT_DENSITY]
     lh = LINE_HEIGHT.get(t["font"], 1.22) * d["line_spacing"]
-    body = t["body"] * lh
-    cpl = CHARS_PER_LINE.get(t["font"], 115)
+    size = t["body"] + d["body_delta"]
+    body = size * lh
+    # Characters per line scale with the text width and inversely with the
+    # type size; the table is measured at 10.5 pt across a 7.3 in column.
+    cpl = round(CHARS_PER_LINE.get(t["font"], 115)
+                * ((8.5 - 2 * d["margin_x"]) / 7.3) * (t["body"] / size))
     cpl_bullet = cpl + BULLET_INDENT_CHARS  # measured: indented lines hold more, not less
 
     def wrapped(text: str, width: int) -> int:
@@ -951,8 +965,15 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
     return round(h, 1)
 
 
+def usable_height(content: dict) -> float:
+    """Text height of one page for this content's density."""
+    d = DENSITY[content.get("density") or DEFAULT_DENSITY]
+    return 792 - 2 * d["margin_y"] * 72
+
+
 def _over_budget(content: dict, theme: str = DEFAULT_THEME) -> bool:
-    return estimate_height(content, theme) > PAGE_BUDGET_PT or word_count(content) > TOTAL_WORDS
+    budget = PAGE_BUDGET_PT - (712.8 - usable_height(content))
+    return estimate_height(content, theme) > budget or word_count(content) > TOTAL_WORDS
 
 
 def trim_one(content: dict) -> str | None:
@@ -1104,8 +1125,8 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         doc.settings.element.insert(0, OxmlElement("w:displayBackgroundShape"))
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Inches(8.5), Inches(11)
-    sec.left_margin = sec.right_margin = Inches(0.6)
-    sec.top_margin = sec.bottom_margin = Inches(0.55)
+    sec.left_margin = sec.right_margin = Inches(d["margin_x"])
+    sec.top_margin = sec.bottom_margin = Inches(d["margin_y"])
 
     def _rgb(hex6):
         return RGBColor.from_string(hex6) if hex6 else None
@@ -1140,12 +1161,12 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
             rpr.append(sp)
 
     normal = doc.styles["Normal"]
-    _font(normal, t["body"])
+    _font(normal, t["body"] + d["body_delta"])
     normal.paragraph_format.space_before = Pt(0)
     normal.paragraph_format.space_after = Pt(0)
     normal.paragraph_format.line_spacing = d["line_spacing"]
     bullets_style = doc.styles["List Bullet"]
-    _font(bullets_style, t["body"])
+    _font(bullets_style, t["body"] + d["body_delta"])
     bullets_style.paragraph_format.space_after = Pt(d["bullet_after"])
     bullets_style.paragraph_format.left_indent = Inches(0.22)
     bullets_style.paragraph_format.first_line_indent = Inches(-0.16)
@@ -1208,7 +1229,8 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         # An employer or title line stranded at the foot of a page reads as a
         # mistake, so it always carries the line under it to the next page.
         p.paragraph_format.keep_with_next = True
-        p.paragraph_format.tab_stops.add_tab_stop(Inches(7.3), WD_TAB_ALIGNMENT.RIGHT)
+        p.paragraph_format.tab_stops.add_tab_stop(Inches(8.5 - 2 * d["margin_x"]),
+                                                  WD_TAB_ALIGNMENT.RIGHT)
         r1 = p.add_run(first)
         r1.bold = bold
         if color:
