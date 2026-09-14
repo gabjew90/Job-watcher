@@ -77,11 +77,23 @@
     }
   ],
   "education": [
-    "MBA (STEM-designated), Product Management/Strategy, UC Davis Graduate School of Management, 2022",
-    "BS Mechanical Engineering, UC Davis, 2013, Dean's Honor List"
+    {
+      "school": "UC Davis Graduate School of Management",
+      "detail": "MBA (STEM-designated), Product Management & Strategy",
+      "date": "2022"
+    },
+    {
+      "school": "UC Davis",
+      "detail": "BS Mechanical Engineering, Dean's Honor List",
+      "date": "2013"
+    }
   ],
   "certifications": [
-    "California Licensed Professional Engineer #M38303, Thermal and Fluid Systems (NCEES), 2016"
+    {
+      "school": "Professional Engineer, California",
+      "detail": "License #M38303, Thermal and Fluid Systems (NCEES)",
+      "date": "2016"
+    }
   ],
   "skills": [
     {
