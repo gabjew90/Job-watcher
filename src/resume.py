@@ -280,7 +280,11 @@ def _s(value) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
-def _clean_bullet(text: str) -> str:
+def _clean_bullet(text):
+    """Strip any list marker and end with a stop. A dict bullet keeps its
+    label and cleans only the text."""
+    if isinstance(text, dict):
+        return {"label": _s(text.get("label")), "text": _clean_bullet(text.get("text"))}
     text = re.sub(r"^[\-•\*\d\.\)\s]+", "", _s(text))
     if text and text[-1] not in ".!?":
         text += "."
@@ -292,9 +296,10 @@ def _dates(value) -> str:
     return re.sub(r"\s+(?:-{1,2}|–|—)\s+", " – ", _s(value))
 
 
-def normalize(content: dict) -> dict:
+def normalize(content: dict, clip: bool = True) -> dict:
     """Coerce the model's object into the schema, clip to budgets, and put
-    the lead role first."""
+    the lead role first. `clip=False` keeps every bullet, project and skill
+    the caller wrote: owner-authored content is not the model's to trim."""
     out = {
         "lead_role": _s(content.get("lead_role")),
         "summary": _s(content.get("summary")),
@@ -303,6 +308,8 @@ def normalize(content: dict) -> dict:
         "education": [_s(x) for x in content.get("education") or [] if _s(x)],
         "certifications": [_s(x) for x in content.get("certifications") or [] if _s(x)],
         "skills": [],
+        "skills_heading": _s(content.get("skills_heading")),
+        "projects_heading": _s(content.get("projects_heading")),
         "gaps": [_s(x) for x in content.get("gaps") or [] if _s(x)],
         "omitted_requirements": [_s(x) for x in content.get("omitted_requirements") or [] if _s(x)],
         "revision_notes": [_s(x) for x in content.get("revision_notes") or [] if _s(x)],
@@ -310,15 +317,20 @@ def normalize(content: dict) -> dict:
     for e in content.get("experience") or []:
         if not isinstance(e, dict):
             continue
-        bullets = [_clean_bullet(b) for b in (e.get("bullets") or []) if _s(b)]
+        bullets = [_clean_bullet(b) for b in (e.get("bullets") or []) if _s(bullet_text(b))]
         out["experience"].append({"employer": _s(e.get("employer")), "title": _s(e.get("title")),
                                   "dates": _dates(e.get("dates")), "bullets": bullets})
-    for p in (content.get("projects") or [])[:MAX_PROJECTS]:
+    for p in (content.get("projects") or [])[:MAX_PROJECTS if clip else None]:
         if isinstance(p, dict) and _s(p.get("name")):
-            out["projects"].append({"name": _s(p.get("name")), "line": _clean_bullet(p.get("line"))})
-    for c in (content.get("skills") or [])[:MAX_SKILL_CATEGORIES]:
+            entry = {"name": _s(p.get("name")), "line": _clean_bullet(p.get("line"))}
+            if p.get("tech"):
+                entry["tech"] = _s(p["tech"])
+            if p.get("bullets"):
+                entry["bullets"] = [_clean_bullet(b) for b in p["bullets"] if _s(bullet_text(b))]
+            out["projects"].append(entry)
+    for c in (content.get("skills") or [])[:MAX_SKILL_CATEGORIES if clip else None]:
         if isinstance(c, dict) and _s(c.get("category")):
-            items = [_s(i).rstrip(".") for i in (c.get("items") or []) if _s(i)][:MAX_SKILL_ITEMS]
+            items = [_s(i).rstrip(".") for i in (c.get("items") or []) if _s(i)][:MAX_SKILL_ITEMS if clip else None]
             if items:
                 out["skills"].append({"category": _s(c.get("category")), "items": items})
     # Lead employer's entries first (all of them, in order), then clip.
@@ -332,8 +344,9 @@ def normalize(content: dict) -> dict:
     for g in groups(out["experience"]):
         ordered += sorted(g, key=_end_year, reverse=True)
     out["experience"] = ordered
-    for i, e in enumerate(out["experience"]):
-        e["bullets"] = e["bullets"][:LEAD_BULLETS if i == 0 else OTHER_BULLETS]
+    if clip:
+        for i, e in enumerate(out["experience"]):
+            e["bullets"] = e["bullets"][:LEAD_BULLETS if i == 0 else OTHER_BULLETS]
     return out
 
 
@@ -449,6 +462,15 @@ COORDINATION_VERBS = {"coordinated", "coordinate", "aligned", "align", "supporte
                       "assisted", "assist", "contributed", "contribute", "participated", "participate"}
 
 
+def bullet_text(b) -> str:
+    """Bullets are plain strings from the model. Owner-written content may
+    use {"label": "Pricing Strategy", "text": "..."} for a bold lead-in;
+    everything that reasons about the words wants them joined."""
+    if isinstance(b, dict):
+        return f"{b.get('label', '')}: {b.get('text', '')}".strip(": ").strip()
+    return b
+
+
 def _sentences(text: str) -> list[str]:
     return [s for s in re.split(r"(?<=[.!?])\s+", text.strip()) if s]
 
@@ -462,7 +484,7 @@ def _units(content: dict) -> list[tuple[str, str]]:
     units = [(f"summary sentence {i + 1}", s) for i, s in enumerate(_sentences(content.get("summary", "")))]
     for e in content.get("experience", []):
         for j, b in enumerate(e.get("bullets", [])):
-            units.append((f"{e['employer']} bullet {j + 1}", b))
+            units.append((f"{e['employer']} bullet {j + 1}", bullet_text(b)))
     for p in content.get("projects", []):
         units.append((f"project {p['name']}", p["line"]))
     for line in content.get("education", []):
@@ -539,7 +561,7 @@ def repetition_lint(content: dict) -> list[str]:
     term) in three or more of the summary sentences and bullets means the
     draft is repeating itself."""
     units = _sentences(content.get("summary", ""))
-    units += [b for e in content.get("experience", []) for b in e.get("bullets", [])]
+    units += [bullet_text(b) for e in content.get("experience", []) for b in e.get("bullets", [])]
     units += [p["line"] for p in content.get("projects", [])]
     seen: dict[str, int] = {}
     for u in units:
@@ -788,8 +810,9 @@ def _contains(hay: list[str], needle: list[str]) -> bool:
 def draft_text(content: dict) -> str:
     parts = [content.get("summary", "")]
     for e in content.get("experience", []):
-        parts += [e["title"], *e["bullets"]]
-    parts += [p["line"] for p in content.get("projects", [])]
+        parts += [e["title"], *(bullet_text(b) for b in e["bullets"])]
+    for p in content.get("projects", []):
+        parts += [p.get("line", ""), p.get("tech", ""), *(bullet_text(b) for b in p.get("bullets", []))]
     parts += content.get("education", []) + content.get("certifications", [])
     for c in content.get("skills", []):
         parts += c["items"]
@@ -855,8 +878,12 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
         if len(g) > 1:
             h += 4 + body  # employer line above the title lines
         for e in g:
-            h += 4 + body + sum(wrapped(b, cpl_bullet) for b in e["bullets"]) * body
-    h += sum(wrapped(p["name"] + p["line"], cpl_bullet - 3) for p in content.get("projects", [])) * body
+            h += 4 + body + sum(wrapped(bullet_text(b), cpl_bullet) for b in e["bullets"]) * body
+    for p in content.get("projects", []):
+        h += wrapped(p["name"] + p.get("line", ""), cpl_bullet - 3) * body
+        if p.get("tech"):
+            h += wrapped(p["tech"], cpl_bullet) * body
+        h += sum(wrapped(bullet_text(b), cpl_bullet) for b in p.get("bullets", [])) * body
     h += (len(content.get("education", [])) + len(content.get("certifications", []))) * body
     h += sum(wrapped(c["category"] + ", ".join(c["items"]), cpl - 2) for c in content.get("skills", [])) * body
     return round(h, 1)
@@ -957,14 +984,21 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
             lines.append(f"\n### {g[0]['employer']}\n*{span_dates(g)}*")
             for e in g:
                 lines.append(f"\n**{e['title']}** *({e['dates']})*")
-                lines += [f"- {b}" for b in e["bullets"]]
+                lines += [_md_bullet(b) for b in e["bullets"]]
             continue
         e = g[0]
         lines.append(f"\n### {e['employer']} | {e['title']}\n*{e['dates']}*")
-        lines += [f"- {b}" for b in e["bullets"]]
+        lines += [_md_bullet(b) for b in e["bullets"]]
     if content.get("projects"):
-        lines.append("\n## Selected projects")
-        lines += [f"- **{p['name']}**: {p['line']}" for p in content["projects"]]
+        lines.append("\n## " + (content.get("projects_heading") or "Selected projects"))
+        for p in content["projects"]:
+            if p.get("tech") or p.get("bullets"):
+                lines.append(f"\n**{p['name']}**" + (f" *[{p['tech']}]*" if p.get("tech") else ""))
+                if p.get("line"):
+                    lines.append(f"\n{p['line']}")
+                lines += [_md_bullet(b) for b in p.get("bullets", [])]
+            else:
+                lines.append(f"- **{p['name']}**: {p['line']}")
     if content.get("education"):
         lines.append("\n## Education")
         lines += [f"- {x}" for x in content["education"]]
@@ -972,9 +1006,15 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
         lines.append("\n## Certifications")
         lines += [f"- {x}" for x in content["certifications"]]
     if content.get("skills"):
-        lines.append("\n## Skills")
+        lines.append("\n## " + (content.get("skills_heading") or "Skills"))
         lines += [f"**{c['category']}:** {', '.join(c['items'])}  " for c in content["skills"]]
     return "\n".join(lines) + "\n"
+
+
+def _md_bullet(b) -> str:
+    if isinstance(b, dict):
+        return f"- **{b.get('label', '')}:** {b.get('text', '')}"
+    return f"- {b}"
 
 
 def _contact_line(header: dict) -> str:
@@ -1100,6 +1140,19 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         if t["dates_color"]:
             r3.font.color.rgb = _rgb(t["dates_color"])
 
+    def bullet_para(b):
+        """A list bullet; a dict bullet gets its label in bold first."""
+        bp = doc.add_paragraph(style="List Bullet")
+        if isinstance(b, dict):
+            rl = bp.add_run(f"{b.get('label', '')}: ")
+            rl.bold = True
+            if t["label_color"]:
+                rl.font.color.rgb = _rgb(t["label_color"])
+            bp.add_run(b.get("text", ""))
+        else:
+            bp.add_run(b)
+        return bp
+
     heading("Experience")
     for g in groups(content.get("experience", [])):
         if len(g) > 1:
@@ -1110,7 +1163,7 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
             for e in g:
                 role_line(e["title"], None, e["dates"], 3, indent=GROUP_INDENT)
                 for b in e["bullets"]:
-                    bp = doc.add_paragraph(b, style="List Bullet")
+                    bp = bullet_para(b)
                     bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
             continue
         e = g[0]
@@ -1118,11 +1171,27 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
                          else (e["title"], e["employer"]))
         role_line(first, second, e["dates"], 4)
         for b in e["bullets"]:
-            doc.add_paragraph(b, style="List Bullet")
+            bullet_para(b)
 
     if content.get("projects"):
-        heading("Selected projects")
+        heading(content.get("projects_heading") or "Selected projects")
         for pj in content["projects"]:
+            if pj.get("tech") or pj.get("bullets"):
+                # Owner-written project block: a bold name line carrying the
+                # stack, a description line, then its own bullets.
+                np = doc.add_paragraph()
+                np.paragraph_format.space_before = Pt(3)
+                rn = np.add_run(pj["name"])
+                rn.bold = True
+                if pj.get("tech"):
+                    rt = np.add_run(f"  |  {pj['tech']}")
+                    if t["dates_color"]:
+                        rt.font.color.rgb = _rgb(t["dates_color"])
+                if pj.get("line"):
+                    doc.add_paragraph(pj["line"])
+                for b in pj.get("bullets", []):
+                    bullet_para(b)
+                continue
             p = doc.add_paragraph(style="List Bullet")
             rn = p.add_run(pj["name"])
             rn.bold = True
@@ -1137,7 +1206,7 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         for line in content["certifications"]:
             doc.add_paragraph(line)
     if content.get("skills"):
-        heading("Skills")
+        heading(content.get("skills_heading") or "Skills")
         for c in content["skills"]:
             p = doc.add_paragraph()
             rl = p.add_run(f"{c['category']}: ")
@@ -1296,12 +1365,19 @@ def draft(job: Job, library: str, notes: str = "", config: dict | None = None,
 # ------------------------------------------------------------------ CLI
 
 def _main(argv: list[str]) -> int:
-    """render <draft.json> <out_stem> [theme] | check <draft.json>  (no model calls)"""
+    """render [--verbatim] <draft.json> <out_stem> [theme] | check <draft.json>
+
+    --verbatim keeps every bullet, project and skill as written and skips the
+    one-page trim: for owner-authored content the file is the authority.
+    No model calls either way.
+    """
     import sys
+    verbatim = "--verbatim" in argv
+    argv = [a for a in argv if a != "--verbatim"]
     if len(argv) < 2 or argv[0] not in ("render", "check"):
         print(_main.__doc__)
         return 2
-    content = normalize(json.loads(Path(argv[1]).read_text()))
+    content = normalize(json.loads(Path(argv[1]).read_text()), clip=not verbatim)
     library = LIBRARY.read_text()
     header = header_from_library(library)
     if argv[0] == "check":
@@ -1310,7 +1386,7 @@ def _main(argv: list[str]) -> int:
         print("height ~", estimate_height(content), "pt of", PAGE_BUDGET_PT, "| words", word_count(content))
         return 0
     stem = Path(argv[2])
-    trimmed = fit_to_page(content)
+    trimmed = [] if verbatim else fit_to_page(content)
     theme = argv[3] if len(argv) > 3 else DEFAULT_THEME
     docx_path = render_docx(content, header, None, stem.with_suffix(".docx"), theme=theme)
     stem.with_suffix(".md").write_text(render_markdown(content, header))
