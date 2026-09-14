@@ -109,10 +109,11 @@ SCHEMA = """{
     // first and adjacent; the renderer groups them under one employer heading
   ],
   "projects": [{"name": "<as in library>", "line": "<one sentence, 22 words max>"}],
+  // a project may also carry "tech" (right column) and its own "bullets"
   "education": [{"school": "<institution as in library>", "detail": "<degree and honors>",
                  "date": "<year>"}],
-  "certifications": [{"school": "<license or issuer>", "detail": "<number and discipline>",
-                      "date": "<year>"}],
+  "certifications": [{"school": "<the credential itself, e.g. Professional Engineer, California>",
+                      "detail": "<number, discipline, issuing body>", "date": "<year>"}],
   "skills": [{"category": "<name>", "items": ["<term>"]}],
   "gaps": ["<must-have posting requirement the library cannot evidence>"],
   "omitted_requirements": ["<nice-to-have posting ask the library cannot evidence>"]
@@ -330,6 +331,8 @@ def normalize(content: dict, clip: bool = True) -> dict:
             entry = {"name": _s(p.get("name")), "line": _clean_bullet(p.get("line"))}
             if p.get("tech"):
                 entry["tech"] = _s(p["tech"])
+            if p.get("title"):
+                entry["title"] = _s(p["title"])
             if p.get("bullets"):
                 entry["bullets"] = [_clean_bullet(b) for b in p["bullets"] if _s(bullet_text(b))]
             out["projects"].append(entry)
@@ -912,8 +915,9 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
             h += (2 if len(g) > 1 else 0) + body + sum(wrapped(bullet_text(b), cpl_bullet) for b in e["bullets"]) * body
     for p in content.get("projects", []):
         h += 4 + body  # name line with the stack in the right column
-        if p.get("line"):
-            h += wrapped(p["line"], cpl) * body
+        subtitle = p.get("title") or p.get("line")
+        if subtitle:
+            h += wrapped(subtitle, cpl) * body
         h += sum(wrapped(bullet_text(b), cpl_bullet) for b in p.get("bullets", [])) * body
     for item in list(content.get("education", [])) + list(content.get("certifications", [])):
         name, detail, _ = credential_parts(item)
@@ -1024,8 +1028,9 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
         lines.append("\n## " + (content.get("projects_heading") or "Selected projects"))
         for p in content["projects"]:
             lines.append(f"\n### {p['name']}" + (f"\n*{p['tech']}*" if p.get("tech") else ""))
-            if p.get("line"):
-                lines.append(f"\n{p['line']}")
+            subtitle = p.get("title") or p.get("line")
+            if subtitle:
+                lines.append(f"\n**{subtitle}**")
             lines += [_md_bullet(b) for b in p.get("bullets", [])]
     credentials = list(content.get("education", [])) + list(content.get("certifications", []))
     if credentials:
@@ -1210,13 +1215,14 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     if content.get("projects"):
         heading(content.get("projects_heading") or "Selected projects")
         for pj in content["projects"]:
-            # Same grammar as an employer: an accent name line with the stack
-            # in the right column, then the description and bullets indented.
+            # Exactly an employer entry: accent name line with the stack in
+            # the right column (where dates sit), an indented bold line
+            # playing the title's part, then indented bullets.
             role_line(pj["name"], None, pj.get("tech", ""), 4,
                       color=t["label_color"], italic_right=False)
-            if pj.get("line"):
-                dp = doc.add_paragraph(pj["line"])
-                dp.paragraph_format.left_indent = Inches(GROUP_INDENT)
+            subtitle = pj.get("title") or pj.get("line")
+            if subtitle:
+                role_line(subtitle, None, "", 0, indent=GROUP_INDENT)
             for b in pj.get("bullets", []):
                 bp = bullet_para(b)
                 bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)

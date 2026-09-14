@@ -44,7 +44,7 @@ Product manager for grid-scale BESS with a utility and construction background, 
 ### Institutional Equity & Macroeconomic Research Engine
 *Python, Gemini API, PyMuPDF, SQLite, Discord API, Railway*
 
-Automated synthesis and cited RAG bot converting institutional research into a daily brief and Q&A for 100+ paid subscribers.
+**Automated synthesis and cited RAG bot converting institutional research into a daily brief and Q&A for 100+ paid subscribers.**
 - **Multi-Source Ingestion & Schema Extraction:** Engineered an automated pipeline ingesting 100+ equity and macroeconomic research PDFs daily (16,000+ total); parsed unstructured multi-asset commentary into structured JSON schemas with verbatim anchor quotes, programmatically verifying every extracted metric against source text before database commit.
 - **Morning Pulse Synthesis:** Built the automated "Morning Pulse" briefing, published every trading day (110+ issues) with a lead theme, desk-call trade board, and economic and earnings calendar drawn from live options chains and agency APIs; a redesigned synthesis pipeline in shadow pilot raised extraction fidelity against source PDFs from 33–60% to 87–100% and cut grouping fragmentation from 30–60% to 9–16%.
 - **Cited RAG Agent:** Built an interactive Q&A agent executing cited answers over the research corpus (1,470+ production queries); regex-based tool router restricts model actions per query, and a payload provenance guard blocks any figure absent from tool output.
