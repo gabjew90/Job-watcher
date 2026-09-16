@@ -116,3 +116,10 @@ hide: Solution Engineer - Structural Design @ Neara
   rather than director and the posting leans engineering. (owner note
   2026-09-10, re: ON.energy Product Management Principal (AI UPS); was
   scored strong)
+- calibration (confirmed strong): product line management for a data
+  center liquid-cooling product at a thermal vendor (LiquidStack, Submer,
+  ZutaCore peers) — strategy, roadmap, PRD-to-launch lifecycle, competitive
+  analysis of direct-to-chip cooling for AI data centers — matches product
+  management plus the thermal and fluids PE background; band strong. (from
+  issue #137, re: LiquidStack Product Line Manager – Liquid Cooling: "nice
+  find")
