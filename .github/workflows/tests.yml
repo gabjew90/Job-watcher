@@ -5,6 +5,8 @@ on:
     paths:
       - "src/resume.py"
       - "src/draft_requests.py"
+      - "src/expiry.py"
+      - "src/health.py"
       - "src/util.py"
       - "src/models.py"
       - "resume_style.md"
@@ -16,6 +18,7 @@ on:
     paths:
       - "src/resume.py"
       - "src/draft_requests.py"
+      - "src/expiry.py"
       - "tests/**"
   workflow_dispatch:
 
