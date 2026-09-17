@@ -2,13 +2,16 @@ name: Daily job watch
 
 on:
   schedule:
-    # One firing a day, 06:37 Pacific. Every run screens up to 600 titles on
-    # Haiku and scores everything new on Sonnet against the owner's Claude
-    # subscription, and four firings a day exhausted its weekly limit
-    # (2026-09-15, eight runs with nothing scored). GitHub's shared cron can
-    # drift by hours; a missed day is caught up by the next run, since
-    # dedupe scores only what is new. Off-the-hour minutes queue better.
+    # Primary firing 06:37 Pacific, with a fallback at 09:37. GitHub's shared
+    # cron drifts by hours and skips firings outright (2026-09-17: the single
+    # slot never fired). The fallback is free when the primary ran: the title
+    # screen judges only unseen titles and triage scores only new postings,
+    # so a run with nothing new makes no model calls and posts no digest.
+    # Claude usage is set by the day's new postings, not the run count; the
+    # 2026-09-15 weekly-limit outage came from interactive sessions on the
+    # same subscription. Off-the-hour minutes queue better.
     - cron: "37 13 * * *"
+    - cron: "37 16 * * *"
   workflow_dispatch:
 
 permissions:
