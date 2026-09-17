@@ -148,10 +148,14 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   JavaScript widget from an internal API — they appear in no fetchable
   text (search API, page HTML, or per-job JSON). Amazon rows show blank
   pay by design; check the posting page.
-- Posting liveness: full-list sources (ATS boards; Radancy/HiBob/ADP
-  careers sites) are snapshot-diffed exactly; Microsoft and Google postings
-  are probed individually each run; other sources (including keyword-search
-  ones like Workday and Jibe) auto-close after `assume_expired_days`.
+- Posting liveness: a posting closes only when its source says it is gone,
+  never on a timer. Full-list sources (ATS boards; Radancy/HiBob/ADP/Breezy
+  careers sites; the Edged feed) are snapshot-diffed exactly; keyword-search
+  sources are probed each run (Indeed by job key through its API, Workday
+  through the CxS job endpoint, SuccessFactors by its error-page redirect,
+  Amazon and SmartRecruiters by 404, Jibe by req_id search, Microsoft and
+  Google as before). A probe that reports most of a source dead in one run
+  is treated as broken and closes nothing.
 - Filter recall is audited, not assumed: every Monday the digest samples
   ten postings the title screen (or, without the CLI, the keyword filter)
   turned away before scoring, alongside ten auto-archived ones. Rejects
