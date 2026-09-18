@@ -57,6 +57,9 @@ def run_scoring() -> int:
                 description=c["description"])
         jobs.append(j)
         expect[j.job_id] = c
+    if not jobs:
+        print("no scoring cases yet — nothing to check")
+        return 0
     results = triage.score(jobs, feedback.load()["text"])
 
     order = triage.BAND_ORDER
@@ -116,6 +119,10 @@ def run_screen() -> int:
                 url="https://example.com/screen-eval", source="eval", description="")
         jobs.append(j)
         expect[j.job_id] = c
+
+    if not jobs:
+        print("no screen cases yet — nothing to check")
+        return 0
 
     passes = []
     for n in range(SCREEN_PASSES):
