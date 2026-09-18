@@ -82,10 +82,19 @@ def run_scoring() -> int:
     return 1 if fails else 0
 
 
+SCREEN_PASSES = 2
+
+
 def run_screen() -> int:
-    """Grade the title screen. A missed keep is a FAIL: the screen drops
-    before any description is read and remembers the drop, so nothing
-    downstream can recover the posting."""
+    """Grade the title screen over SCREEN_PASSES independent judgements.
+
+    A missed keep is a FAIL: the screen decides before any description is
+    read and remembers the drop, so nothing downstream recovers the
+    posting. Production gets exactly one judgement, so a case the screen
+    keeps only sometimes is a role it will sometimes lose — the keep has
+    to hold in every pass. An over-keep costs one scoring call, so it
+    warns, and warns on a majority rather than a single stray.
+    """
     data = json.loads(SCREEN_CASES.read_text())["cases"]
     jobs, expect = [], {}
     for c in data:
@@ -93,30 +102,37 @@ def run_screen() -> int:
                 url="https://example.com/screen-eval", source="eval", description="")
         jobs.append(j)
         expect[j.job_id] = c
-    verdicts = screen.judge(jobs)
-    if not verdicts:
-        print("FAIL: the screen returned no verdicts (claude CLI unavailable?)")
-        return 1
+
+    passes = []
+    for n in range(SCREEN_PASSES):
+        verdicts = screen.judge(jobs)
+        if not verdicts:
+            print(f"FAIL: the screen returned no verdicts on pass {n + 1} "
+                  f"(claude CLI unavailable?)")
+            return 1
+        passes.append(verdicts)
 
     fails = warns = 0
     for j in jobs:
         c = expect[j.job_id]
-        got = verdicts.get(j.job_id)
-        want = c["expected_keep"]
-        label = "keep" if want else "drop"
-        if got is None:
-            print(f"FAIL {c['id']}: no verdict returned")
-            fails += 1
-        elif got == want:
-            print(f"PASS {c['id']}: {label}")
-        elif want:
-            print(f"FAIL {c['id']}: dropped, should keep — {c['reason']}")
-            fails += 1
+        got = [p.get(j.job_id) for p in passes]
+        kept = sum(1 for g in got if g is True)
+        tally = f"{kept}/{SCREEN_PASSES} kept"
+        if c["expected_keep"]:
+            if kept == SCREEN_PASSES:
+                print(f"PASS {c['id']}: keep ({tally})")
+            else:
+                print(f"FAIL {c['id']}: dropped, should keep ({tally}) — {c['reason']}")
+                fails += 1
         else:
-            print(f"WARN {c['id']}: kept, should drop — {c['reason']}")
-            warns += 1
-    print(f"\n{len(jobs)} screen cases: {len(jobs) - fails - warns} pass, "
-          f"{warns} warn (over-keep), {fails} fail (missed keep)")
+            if kept * 2 > SCREEN_PASSES:
+                print(f"WARN {c['id']}: kept, should drop ({tally}) — {c['reason']}")
+                warns += 1
+            else:
+                print(f"PASS {c['id']}: drop ({tally})")
+    print(f"\n{len(jobs)} screen cases over {SCREEN_PASSES} passes: "
+          f"{len(jobs) - fails - warns} pass, {warns} warn (over-keep), "
+          f"{fails} fail (missed keep)")
     return 1 if fails else 0
 
 

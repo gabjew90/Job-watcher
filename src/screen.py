@@ -42,36 +42,43 @@ title, company and location (no description is available at this stage).
 
 {profile}
 
-Decide keep or drop for each posting:
-- KEEP anything plausibly a director / senior PM / principal / head-of /
-  lead-of-a-function ("Leader", "Lead", "Head") / senior strategy, product,
-  development, procurement or investment role in energy, power, grid,
-  interconnection, battery storage, datacenter infrastructure, energy
-  finance, or AI applied to energy.
-- KEEP when the title is ambiguous but the company operates in those
-  industries: a flat "Program Manager" or "Development Manager" at a
-  datacenter, storage, utility or energy company may be senior in scope.
-- DROP clear misfits: trades, field, technician, construction crew,
-  commissioning, facilities-operations and O&M roles; supervisors and
-  superintendents; junior, entry-level, intern, associate, coordinator,
-  analyst; hands-on individual-contributor engineering of any discipline
-  (electrical, mechanical, controls, reliability, project, design,
-  firmware, software, network, RTL, validation, "subject matter expert");
-  quota-carrying sales; HR, recruiting, legal, finance, accounting,
-  marketing, admin; and roles in unrelated industries.
-Scope outranks function. The DROP list above describes the WORK, not the
-title's seniority: when a title carries clear executive or head-of scope
-(VP, Head, Chief, Director, Principal, "Leader" of a named area) over a
-target domain, KEEP it even if a dropped function word also appears — a
-"VP, Facilities Engineering & Critical Infrastructure" owns a strategy, an
-"Assistant Building Engineer" does the work. Likewise KEEP when the title
-pairs engineering with ownership of development, product or commercial
-scope in a target domain ("Project Development Engineer, Solar and BESS"),
-which is a deal-side role, not bench engineering.
+Work these steps IN ORDER for each posting and stop at the first one that
+applies. The steps are a procedure, not a list of preferences: once a step
+decides, the later steps do not get a say.
 
-When a title that fits the domain is ambiguous about level, keep — a later
-pass reads the full description. When the title says nothing about the
-domain AND nothing about leadership scope, drop.
+STEP 1 — Does the title name executive or head-of scope (VP, SVP, Vice
+President, Head, Chief, Director, Principal, or "<area> Leader"/"Lead of
+<area>") over anything in the candidate's domains — energy, power, grid,
+interconnection, battery storage, datacenter infrastructure, energy
+finance, or AI applied to energy? KEEP, and skip STEP 3 entirely. At this
+level the title names someone who owns the area rather than works in it,
+so "VP, Facilities Engineering & Critical Infrastructure" keeps even
+though "Building Engineer" drops, and "Digital Infrastructure Power
+Leader" keeps even at a company outside the industry.
+
+STEP 2 — Is it a senior product, program, strategy, development,
+procurement or investment role in those domains? KEEP, and skip STEP 3.
+This covers a flat "Program Manager", "Technical Program Manager" or
+"Development Manager" at a datacenter, storage, utility, energy or AI
+infrastructure company, where the title understates the scope; and
+engineering titles that carry development, product or commercial
+ownership ("Project Development Engineer, Solar and BESS"), which are
+deal-side roles rather than bench engineering.
+
+STEP 3 — Otherwise DROP clear misfits: trades, field, technician,
+construction crew, commissioning, facilities-operations and O&M roles;
+supervisors and superintendents; junior, entry-level, intern, associate,
+coordinator, analyst; hands-on individual-contributor engineering of any
+discipline (electrical, mechanical, controls, reliability, project,
+design, firmware, software, network, RTL, validation, "subject matter
+expert"); quota-carrying sales and account management; HR, recruiting,
+legal, finance, accounting, marketing, admin; and roles in unrelated
+industries.
+
+STEP 4 — Anything still undecided: KEEP if the title fits a domain but is
+ambiguous about level, because the next pass reads the full description.
+DROP if the title says nothing about the domain AND nothing about
+leadership scope.
 
 Return ONLY a JSON array, no prose, one object per posting:
 [{{"job_id": "...", "keep": true}}, ...]
