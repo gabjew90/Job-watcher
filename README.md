@@ -164,6 +164,17 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   days) so a title is judged once, and a remembered drop binds on every
   later run — until 2026-09-18 it did not, and 962 of 5,178 tracked
   records were postings the screen had already turned away.
+- Board discovery proves identity before wiring a company's board into
+  `config.json`: Greenhouse states the organization's own name and a
+  mismatch rejects the board however well its titles line up; Ashby and
+  Lever state none, so there two distinct known titles must match, one
+  exactly, at least one carrying a non-generic word. (The name check is
+  deliberately not `util.company_key`, which collapses a name to its first
+  word — under it "Hive Systems" and "HIVE Digital" are the same company.)
+- A draft request is answered only after its files are pushed: the
+  pipeline queues the comment in `state/pending_delivery.json` and the
+  workflow runs `python -m src.deliver` after the commit lands, so a
+  failed push can no longer close a request whose links point at nothing.
 - Both model gates have regression evals (`python -m src.eval_runner`,
   CI on any change to the prompts, rubric or feedback). Scoring
   (`eval/cases.json`) grades the band production stores, since
@@ -171,7 +182,9 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   (`eval/screen_cases.json`) is graded asymmetrically: keeping a posting
   that should drop costs one scoring call (WARN), dropping one that
   should keep loses the role outright (FAIL), because the screen decides
-  without a description and remembers its answer.
+  without a description and remembers its answer. It is judged over two
+  independent passes and a keep must hold in both — production gets one
+  judgement, so a role kept only sometimes is a role sometimes lost.
 - Resume drafts: the model writes words only, as structured JSON; the
   one-page layout is code (`src/resume.py`, python-docx), the PDF is that
   DOCX converted by LibreOffice, and the page count is checked. A

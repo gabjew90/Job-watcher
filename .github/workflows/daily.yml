@@ -68,3 +68,12 @@ jobs:
               git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
             done
           fi
+
+      # Only now are the draft files reachable at the links the comment
+      # uses, so a draft request is answered and closed here rather than
+      # in the pipeline. A failed push above exits before this step and
+      # the request stays open for the next run to redo.
+      - name: Deliver queued draft announcements
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m src.deliver
