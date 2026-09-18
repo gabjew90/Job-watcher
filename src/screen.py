@@ -66,7 +66,11 @@ ownership ("Project Development Engineer, Solar and BESS"), which are
 deal-side roles rather than bench engineering.
 
 STEP 3 — Otherwise DROP clear misfits: trades, field, technician,
-construction crew, commissioning, facilities-operations and O&M roles;
+construction crew, commissioning, facilities-operations and O&M roles
+(operating a site's building systems — but NOT operating an energy or
+power portfolio: "Manager, Energy Operations" at a datacenter, utility
+or energy company runs supply, procurement and the grid interface, which
+is domain work and keeps);
 supervisors and superintendents; junior, entry-level, intern, associate,
 coordinator, analyst; hands-on individual-contributor engineering of any
 discipline (electrical, mechanical, controls, reliability, project,
