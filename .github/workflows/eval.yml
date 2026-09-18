@@ -7,6 +7,7 @@ on:
       - "feedback.md"
       - "src/triage.py"
       - "src/screen.py"
+      - "src/eval_runner.py"
       - "eval/**"
   workflow_dispatch:
 
