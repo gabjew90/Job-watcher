@@ -30,8 +30,13 @@ stop and ask, don't guess. Everything else you can do alone.
 
 ```bash
 git clone https://github.com/gabjew90/Job-watcher.git /tmp/source
-cp -r /tmp/source/{src,tests,eval,.github,requirements.txt,PLAN.md} .
+rsync -a --exclude .git /tmp/source/ .     # or: cp -r /tmp/source/. . && rm -rf .git-source
 ```
+
+Copy everything, then remove what you don't want — an allowlist of paths
+drifts as the repo changes, and `config.json` in particular is needed in
+step 4. `profile.md` and `feedback.md` come across as templates and get
+replaced below.
 
 This setup covers the job board and digest only, not the resume drafter.
 Remove it:
