@@ -161,7 +161,17 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   turned away before scoring, alongside ten auto-archived ones. Rejects
   never reach state, so that sample is the only view of what the filter
   loses. Screen drops are remembered in `state/screened_out.json` (60
-  days) so a title is judged once.
+  days) so a title is judged once, and a remembered drop binds on every
+  later run — until 2026-09-18 it did not, and 962 of 5,178 tracked
+  records were postings the screen had already turned away.
+- Both model gates have regression evals (`python -m src.eval_runner`,
+  CI on any change to the prompts, rubric or feedback). Scoring
+  (`eval/cases.json`) grades the band production stores, since
+  `triage.score` applies the code-side policy. The title screen
+  (`eval/screen_cases.json`) is graded asymmetrically: keeping a posting
+  that should drop costs one scoring call (WARN), dropping one that
+  should keep loses the role outright (FAIL), because the screen decides
+  without a description and remembers its answer.
 - Resume drafts: the model writes words only, as structured JSON; the
   one-page layout is code (`src/resume.py`, python-docx), the PDF is that
   DOCX converted by LibreOffice, and the page count is checked. A

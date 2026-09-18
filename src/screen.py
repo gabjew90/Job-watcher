@@ -13,8 +13,9 @@ posting not yet in state, in one batched call per ~120 titles:
 
 Only obvious misfits are dropped; ambiguity keeps, because the full scorer
 reads the description next. Drops are remembered in state/screened_out.json
-so a title is judged once, not every run. Without the claude CLI (local
-runs), the keyword filter's decision stands unchanged.
+so a title is judged once, not every run, and a remembered drop is binding
+on every later run (see `apply`). Without the claude CLI (local runs), the
+keyword filter's decision stands unchanged.
 """
 import json
 import logging
@@ -43,9 +44,10 @@ title, company and location (no description is available at this stage).
 
 Decide keep or drop for each posting:
 - KEEP anything plausibly a director / senior PM / principal / head-of /
-  senior strategy, product, development, procurement or investment role in
-  energy, power, grid, interconnection, battery storage, datacenter
-  infrastructure, energy finance, or AI applied to energy.
+  lead-of-a-function ("Leader", "Lead", "Head") / senior strategy, product,
+  development, procurement or investment role in energy, power, grid,
+  interconnection, battery storage, datacenter infrastructure, energy
+  finance, or AI applied to energy.
 - KEEP when the title is ambiguous but the company operates in those
   industries: a flat "Program Manager" or "Development Manager" at a
   datacenter, storage, utility or energy company may be senior in scope.
@@ -57,6 +59,16 @@ Decide keep or drop for each posting:
   firmware, software, network, RTL, validation, "subject matter expert");
   quota-carrying sales; HR, recruiting, legal, finance, accounting,
   marketing, admin; and roles in unrelated industries.
+Scope outranks function. The DROP list above describes the WORK, not the
+title's seniority: when a title carries clear executive or head-of scope
+(VP, Head, Chief, Director, Principal, "Leader" of a named area) over a
+target domain, KEEP it even if a dropped function word also appears — a
+"VP, Facilities Engineering & Critical Infrastructure" owns a strategy, an
+"Assistant Building Engineer" does the work. Likewise KEEP when the title
+pairs engineering with ownership of development, product or commercial
+scope in a target domain ("Project Development Engineer, Solar and BESS"),
+which is a deal-side role, not bench engineering.
+
 When a title that fits the domain is ambiguous about level, keep — a later
 pass reads the full description. When the title says nothing about the
 domain AND nothing about leadership scope, drop.
@@ -117,6 +129,14 @@ def apply(raw: list[Job], kept: list[Job], seen: dict, config: dict
     keyword rejects when the screen is unavailable) for the weekly audit.
     """
     screened = load()
+    # A remembered verdict is binding. Skipping these in `candidates` below
+    # only stops them being re-judged; until this filter they stayed in the
+    # keyword filter's `kept` list and walked into state as new on the next
+    # run, so the screen's drop lasted exactly one run. 962 of 5,178 tracked
+    # records had arrived that way (680 of them keyword passes the screen
+    # had dropped), costing a Sonnet scoring each.
+    held = [j for j in kept if j.job_id in screened]
+    kept = [j for j in kept if j.job_id not in screened]
     kept_ids = {j.job_id for j in kept}
     candidates = [j for j in raw
                   if j.job_id not in seen and j.job_id not in screened
@@ -129,8 +149,11 @@ def apply(raw: list[Job], kept: list[Job], seen: dict, config: dict
         unseen = unseen[:MAX_JUDGED_PER_RUN]
     verdicts = judge(unseen)
     stats = {"screened": len(verdicts), "rescued": 0, "dropped": 0,
-             "available": bool(verdicts) or not unseen}
+             "held": len(held), "available": bool(verdicts) or not unseen}
     if not verdicts:
+        # A remembered drop still stands when the screen is unavailable.
+        log.info("Title screen unavailable: %d held out by a remembered verdict",
+                 stats["held"])
         rejected = [j for j in unseen if j.job_id not in kept_ids]
         return kept, rejected, stats
 
@@ -161,6 +184,6 @@ def apply(raw: list[Job], kept: list[Job], seen: dict, config: dict
     rejected = [j for j in unseen if j.job_id in drop_ids]
     save(screened)
     log.info("Title screen: %d judged, %d rescued past the keyword filter, "
-             "%d keyword passes dropped", stats["screened"], stats["rescued"],
-             stats["dropped"])
+             "%d keyword passes dropped, %d held out by a remembered verdict",
+             stats["screened"], stats["rescued"], stats["dropped"], stats["held"])
     return kept, rejected, stats

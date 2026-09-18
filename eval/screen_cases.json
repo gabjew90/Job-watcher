@@ -1,0 +1,165 @@
+{
+ "_readme": "Title-screen regression cases, derived from production outcomes. Every case is a posting the screen DROPPED that nevertheless reached the full scorer through the screened-out leak fixed in src/screen.py, so each carries a real band from the Sonnet scorer reading the full description. expected_keep=true where that band was top or strong (the screen was wrong to drop it); expected_keep=false where it was misfit (the screen was right). Keeping a posting that should drop costs one Sonnet scoring, so it grades WARN; dropping one that should keep loses the role outright and grades FAIL. Add a case whenever a screen drop turns out to have been a real role.",
+ "cases": [
+  {
+   "id": "bitdeer-director-power-infrastructure",
+   "title": "Director, Power Infrastructure",
+   "company": "Bitdeer Technologies Group",
+   "location": "Austin, TX, US",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it top (90) — \"Director-level power infrastructure strategy for AI datacenters, spanning utility engagement, interconnection, and grid access — direct core fit.\""
+  },
+  {
+   "id": "delta-product-manager--",
+   "title": "Product Manager - Energy - North Carolina",
+   "company": "Delta Electronics (Americas) Ltd.",
+   "location": "Morrisville, NC, US",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it top (90) — \"Product management role owning data center energy infrastructure solution strategy across BESS/PV/microgrids, a core-thesis fit.\""
+  },
+  {
+   "id": "nbcuniversal-vp-facilities-engineering",
+   "title": "VP Facilities Engineering & Critical Infrastructure",
+   "company": "NBCUniversal",
+   "location": "New York, NY, US",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it strong (75) — \"VP-level executive ownership of data center critical power/cooling infrastructure reliability strategy is a close match to the candidate's data-center\""
+  },
+  {
+   "id": "openai-technical-program-manager",
+   "title": "Technical Program Manager, AI Infrastructure Capacity Planning",
+   "company": "OpenAI",
+   "location": "San Francisco",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it strong (75) — \"Capacity-planning role bridging research, infrastructure, power, and finance for AI datacenter build-out, a strong integration-thesis match.\""
+  },
+  {
+   "id": "aon-digital-infrastructure-power",
+   "title": "Digital Infrastructure Power Leader",
+   "company": "Aon",
+   "location": "New York, NY, US",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it strong (75) — \"Leadership role over digital infrastructure power strategy with strong stated pay corroborating senior scope.\""
+  },
+  {
+   "id": "apple-data-center-capacity",
+   "title": "Data Center Capacity Planner, Infrastructure Services",
+   "company": "Apple",
+   "location": "Austin, TX, US",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it strong (75) — \"Senior data center physical infrastructure capacity-planning role with cross-functional strategy ownership and explicit AI-driven analytics adoption —\""
+  },
+  {
+   "id": "zero-project-development-engineer",
+   "title": "Project Development Engineer Solar BESS and Energy Systems",
+   "company": "Zero Impact Solutions",
+   "location": "Huntington Beach, CA, US",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it strong (75) — \"Techno-economic BESS sizing, dispatch optimization and financial modeling closely mirror candidate's stated skillset.\""
+  },
+  {
+   "id": "micron-senior-global-energy",
+   "title": "Senior Global Energy Program Manager",
+   "company": "Micron Technology",
+   "location": "Boise, ID, US",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it strong (75) — \"Senior energy program management coordinating utility relationships, PPA/VPPA negotiation support, and commercial analysis for major manufacturing pow\""
+  },
+  {
+   "id": "equinix-manager-energy-operations",
+   "title": "Manager, Energy Operations (EMEA)",
+   "company": "Equinix",
+   "location": "London",
+   "expected_keep": true,
+   "reason": "Screen dropped it; the full scorer banded it strong (75) — \"Energy operations management for a datacenter provider across EMEA reads as a regional-scope energy/utility-partnership role matching the core thesis.\""
+  },
+  {
+   "id": "openai-ai-infrastructure-engineer",
+   "title": "AI Infrastructure Engineer, pAGI",
+   "company": "OpenAI",
+   "location": "San Francisco",
+   "expected_keep": false,
+   "reason": "individual-contributor engineering, even at a target-domain AI company; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "aon-account-executive-power",
+   "title": "Account Executive, Power & Renewables",
+   "company": "Aon",
+   "location": "New York, New York",
+   "expected_keep": false,
+   "reason": "quota-carrying sales in the power domain; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "saft-battery-systems-engineer",
+   "title": "Battery Systems Engineer",
+   "company": "Saft",
+   "location": "Cockeysville, MD, US",
+   "expected_keep": false,
+   "reason": "individual-contributor engineering in the battery domain; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "cbre-assistant-building-engineer",
+   "title": "Assistant Building Engineer - Data Center",
+   "company": "CBRE",
+   "location": "Santa Clara, CA, US",
+   "expected_keep": false,
+   "reason": "facilities operations at a data center; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "invenergy-2027-summer-internships",
+   "title": "2027 Summer Internships - Electrical Engineering (Grid Focus)",
+   "company": "Invenergy",
+   "location": "Chicago, IL, US",
+   "expected_keep": false,
+   "reason": "internship; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "meta-associate-general-counsel",
+   "title": "Associate General Counsel, Infrastructure Technology Transactions",
+   "company": "Meta",
+   "location": "San Francisco, CA, US",
+   "expected_keep": false,
+   "reason": "legal; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "imi-account-based-marketing-manager",
+   "title": "Account-Based Marketing Manager, Data Centers",
+   "company": "IMI Plc - Legacy Precision",
+   "location": "Dallas, TX, US",
+   "expected_keep": false,
+   "reason": "marketing; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "vertiv-days-solar-machine-operator",
+   "title": "(Days/Solar) Machine Operator II",
+   "company": "Vertiv",
+   "location": "Ironton, OH, US",
+   "expected_keep": false,
+   "reason": "trades / shop floor; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "westwood-civil-project-manager",
+   "title": "Civil Project Manager - Data Center Development",
+   "company": "Westwood Professional Services",
+   "location": "Raleigh, NC, US",
+   "expected_keep": false,
+   "reason": "construction project management; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "engie-bess-engineer-i",
+   "title": "BESS Engineer I",
+   "company": "ENGIE",
+   "location": "Broomfield, CO, US",
+   "expected_keep": false,
+   "reason": "junior individual-contributor engineering in the core BESS domain; the full scorer confirmed misfit (15)"
+  },
+  {
+   "id": "turner-associate-director--",
+   "title": "Associate Director - Scheduler - Data Center Construction",
+   "company": "Turner & Townsend Pty Limited",
+   "location": "Richmond, VA, US",
+   "expected_keep": false,
+   "reason": "construction scheduling despite a director-flavored title; the full scorer confirmed misfit (15)"
+  }
+ ]
+}
