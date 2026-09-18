@@ -145,16 +145,46 @@ Keep the file's structure; replace the targeting. With the owner:
 - `priority_topics` — the subset that earns a ⭐ in the digest.
 - `location`, `hours_old`, `watch_hours_old` — usually fine as-is.
 
-**Empty these to start:** `ats_boards`, `workday_boards`,
-`successfactors_boards`, `career_sites`, `indeed_company_watch`. They are
-the previous owner's company list and are wrong for anyone else. Do not
-try to rebuild 100 companies by hand — the discovery module watches for
-companies that repeatedly surface strong roles and wires their job boards
-in automatically over the first couple of weeks. Seed it with at most five
-companies the owner names, and let it grow.
+**Companies: keep the broad employers, drop the specialists.** Most of the
+inherited list is specific to power and data-centre infrastructure and is
+wrong for anyone else. But three groups hire across almost every function
+— product, finance, operations, legal, marketing, research — so they are
+worth keeping whatever the field:
 
-Keep `hyperscalers` if large tech employers are relevant; set them all to
-`false` if not.
+- **Hyperscalers** (`hyperscalers`): Microsoft, Amazon, Google, Meta.
+  Leave enabled.
+- **Developers and operators** of large projects and sites: Vantage Data
+  Centers, Equinix, Brookfield, Crusoe, Aligned, QTS, Switch, Compass.
+- **Funds and investors**: Blackstone, Brookfield, KKR, Stonepeak,
+  Generate Capital, DigitalBridge, Energy Capital Partners.
+
+Delete the rest — the equipment makers, the battery and grid specialists,
+the utilities — unless the new owner's field actually touches them.
+
+**One cost caveat when choosing how to keep them.** Sources come in two
+kinds, and it decides how much screening the first weeks cost:
+
+- *Keyword-searched* (`workday_boards`, `successfactors_boards`,
+  `hyperscalers`, `indeed_company_watch`, and the jibe/smartrecruiters
+  career sites) return only postings matching the search terms — a few
+  dozen each. Cheap. Keep these freely.
+- *Full-list* (`ats_boards` on greenhouse/lever/ashby, and the
+  radancy/hibob/adp/breezy career sites) return the employer's ENTIRE
+  board — SpaceX returns 2,463 postings, OpenAI 816, Anthropic 603. Every
+  one of those is a candidate for the title screen, which judges at most
+  600 per run, so a handful of large boards means weeks of working
+  through a backlog before the pipeline reaches a steady state.
+
+So prefer the Workday/Indeed entry for a big diversified employer over its
+Greenhouse board, and keep full-list boards for employers whose whole
+board is plausibly relevant. A tight `title_exclusions` list also helps:
+excluded titles are dropped before the screen ever sees them.
+
+Beyond that, do not rebuild a hundred companies by hand. The discovery
+module watches for companies that repeatedly surface strong roles and
+wires their boards in automatically over the first couple of weeks, which
+is how the original list grew. Seed a handful the owner names and let it
+accumulate.
 
 ### Step 5 — Retarget the title screen
 
