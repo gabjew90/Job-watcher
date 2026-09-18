@@ -100,6 +100,32 @@ def _parse_json(text: str):
     return json.loads(text[start:end + 1])
 
 
+# The code-side scoring policy. The model answers a band; the band that
+# ships is this function applied to that answer. It lives here, not in
+# main.py, so the eval grades what production serves — while the cap was
+# in main.py the eval graded an intermediate band no record ever carried.
+# Bump POLICY_VERSION when this policy changes, so scoring_fingerprint
+# distinguishes records scored under it.
+SENIORITY_CAP = "weak"
+POLICY_VERSION = 1
+
+
+def finalize(result: dict, title: str = "") -> dict:
+    """Apply the code-side policy to one model result, in place.
+
+    Seniority coupling is enforced here rather than in the prompt: a
+    posting the model marked a seniority mismatch cannot band above weak,
+    whatever fit it otherwise shows.
+    """
+    if (not result.get("seniority_match")
+            and BAND_ORDER.index(result["band"]) > BAND_ORDER.index(SENIORITY_CAP)):
+        log.info("Seniority cap: %r %s -> %s", title[:45], result["band"],
+                 SENIORITY_CAP)
+        result["band"] = SENIORITY_CAP
+        result["score"] = BAND_SCORE[SENIORITY_CAP]
+    return result
+
+
 def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
     """Return {job_id: {score, rationale, seniority_match, pay, work_mode}}."""
     if not new_jobs:
@@ -128,6 +154,9 @@ def score(new_jobs: list[Job], feedback_text: str = "") -> dict[str, dict]:
                      i + 1, i + len(chunk), len(results))
         except Exception as e:  # noqa: BLE001 - a failed chunk shouldn't kill the run
             log.warning("TRIAGE FAILURE on chunk %d-%d: %s", i + 1, i + len(chunk), e)
+    titles = {j.job_id: j.title for j in new_jobs}
+    for job_id, result in results.items():
+        finalize(result, titles.get(job_id, ""))
     return results
 
 
@@ -159,15 +188,21 @@ def _score_chunk(chunk: list[Job], profile: str, feedback: str) -> dict[str, dic
 
 
 def scoring_fingerprint(feedback_text: str) -> dict:
-    """Provenance stamped on every scored record: which model, when, and a
-    hash of the fully resolved rubric (profile.md + feedback file + open
-    feedback issues). Two records with different fingerprints were scored
-    under different regimes and are not directly comparable."""
+    """Provenance stamped on every scored record: which model, when, a hash
+    of the fully resolved rubric (profile.md + feedback file + open feedback
+    issues), and a hash of the code-side regime (prompt, band scale, policy).
+    Two records with different fingerprints were scored under different
+    regimes and are not directly comparable. The rubric hash alone was not
+    enough: editing the prompt or the seniority cap changed what a band
+    meant while leaving the fingerprint identical."""
     import hashlib
     from datetime import datetime, timezone
     rubric = PROFILE.read_text() + "\n" + feedback_text
+    policy = "\n".join([SCORE_PROMPT, str(POLICY_VERSION), SENIORITY_CAP,
+                        json.dumps(BAND_SCORE, sort_keys=True)])
     return {
         "model": SCORE_MODEL,
         "at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
         "rubric": hashlib.sha1(rubric.encode()).hexdigest()[:10],
+        "policy": hashlib.sha1(policy.encode()).hexdigest()[:10],
     }
