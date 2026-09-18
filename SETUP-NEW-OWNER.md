@@ -14,8 +14,10 @@ hour, most of it answering questions about your career.
 
 1. Your resume, as a file (PDF or Word both fine), in the repo folder.
 2. A GitHub repo you own, empty.
-3. A `CLAUDE_CODE_OAUTH_TOKEN` — get this from whoever shared this repo
-   with you, or generate your own with `claude setup-token`.
+3. The `CLAUDE_CODE_OAUTH_TOKEN` from the person who shared this repo —
+   the same token and the same Claude account the original watcher uses.
+   You do not need your own subscription. See "Sharing one Claude
+   account" at the end for what that implies.
 4. Nothing else. No servers, no API keys, no paid services. GitHub Actions
    runs it free.
 
@@ -212,12 +214,17 @@ The scorer (`src/triage.py`) needs no edit — it reads `profile.md`.
 
 ### Step 6 — Wire up GitHub
 
-1. Repo → Settings → Secrets → Actions → add `CLAUDE_CODE_OAUTH_TOKEN`.
+1. Repo → Settings → Secrets and variables → Actions → add
+   `CLAUDE_CODE_OAUTH_TOKEN`, with the same value as the original repo's.
+   This is the one step that must be done in the GitHub UI.
 2. Repo → Settings → Pages → Source: Deploy from a branch → your default
    branch, `/docs`. This publishes the dashboard.
-3. In `.github/workflows/daily.yml`, set the schedule. **One slot a day
-   to start** (`- cron: "37 13 * * *"` is 06:37 Pacific). If you are
-   sharing a Claude account with another watcher, see the note at the end.
+3. In `.github/workflows/daily.yml`, set the schedule: **one slot a day,
+   at a different hour from the other watcher's.** The original runs at
+   13:37 and 16:37 UTC, so `- cron: "37 19 * * *"` (12:37 Pacific) keeps
+   them apart. Staggering matters because both draw on one Claude
+   account: overlapping runs compete for the same limit, and when
+   something does go wrong it is obvious which run spent what.
 4. Commit and push everything.
 
 ### Step 7 — First run
@@ -251,14 +258,28 @@ The first week will be mediocre; it gets good because they correct it.
 
 ## Notes
 
-**Sharing a Claude account.** Both watchers draw on one subscription, and
-the weekly limit is real — the original hit it on 2026-09-15 and ran for
-two days scoring nothing, silently, because every model call returned 429
-and the pipeline is built to degrade rather than crash. The symptom is a
-digest with no bands and `You've hit your weekly limit` in the Actions
-log. Mitigations, in order: one cron slot a day each, avoid long
-interactive Claude sessions on the same account during heavy weeks, and
-if it recurs, one of you moves to a separate account.
+**Sharing one Claude account.** Both watchers run on the same
+subscription and the same token. That is fine, and the pipelines are not
+what puts it at risk: a run costs about five cheap screening calls plus
+two to eight scoring calls, so both watchers together are roughly fifteen
+model calls a day.
+
+What does exhaust the weekly limit is long interactive Claude sessions on
+that account — the original's limit was hit on 2026-09-15 during heavy
+interactive work, not by the cron. The pipeline then ran for two days
+scoring nothing, silently, because every call returned 429 and the
+pipeline is built to degrade rather than crash.
+
+So: **know the symptom**, which is a digest whose table has no bands, and
+`You've hit your weekly limit · resets <time>` in the Actions log. If you
+see it, nothing is broken — wait for the reset and trigger a run
+manually. The next run rescores everything it missed automatically, so
+nothing is lost but time.
+
+A new owner's first weeks cost more than a steady state, because the
+title screen works through a backlog at 600 titles per run. Keeping large
+full-list boards out of the starting config (see step 4) is what keeps
+that backlog short.
 
 **Cost.** GitHub Actions is free at this volume. The model calls are the
 only cost: roughly five cheap screening calls plus two to eight scoring
