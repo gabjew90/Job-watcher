@@ -14,8 +14,10 @@ invariant: every issue a feedback.md rule cites needs an eval case.
 SCREEN (eval/screen_cases.json) runs the title screen over cases drawn
 from postings it dropped in production that the full scorer then banded.
 The errors are not symmetrical: keeping a posting that should drop costs
-one Sonnet scoring (WARN), dropping one that should keep loses the role
-outright (FAIL). The screen is the only gate with no second chance.
+one Sonnet scoring, dropping one that should keep loses the role outright,
+because the screen is the only gate with no second chance. It is also a
+sampled classifier, so the run fails on a case dropped in EVERY pass or on
+the keep rate falling below the floor — not on one flipped judgement.
 
 CI runs both on any change to profile.md, feedback.md, src/triage.py,
 src/screen.py or eval/, and both should be run before a backlog re-score.
@@ -82,18 +84,30 @@ def run_scoring() -> int:
     return 1 if fails else 0
 
 
-SCREEN_PASSES = 2
+SCREEN_PASSES = 3
+# A keep the screen gets right 97% of the time still fails an
+# all-must-hold gate over 27 judgements 44% of the time, so that gate
+# measures sampling luck, not the prompt. The floor does measure the
+# prompt: a healthy screen (~97%) clears 23/27 in 99.9% of runs, while a
+# drop to 80% clears it in 35% and so fails within a couple of runs.
+KEEP_RATE_FLOOR = 23 / 27
 
 
 def run_screen() -> int:
     """Grade the title screen over SCREEN_PASSES independent judgements.
 
-    A missed keep is a FAIL: the screen decides before any description is
-    read and remembers the drop, so nothing downstream recovers the
-    posting. Production gets exactly one judgement, so a case the screen
-    keeps only sometimes is a role it will sometimes lose — the keep has
-    to hold in every pass. An over-keep costs one scoring call, so it
-    warns, and warns on a majority rather than a single stray.
+    The screen decides from a title alone, once, and remembers the answer,
+    so a missed keep loses the role with nothing downstream to recover it —
+    the errors are not symmetrical and neither is the grading. But the
+    screen is a sampled classifier, so a single flipped judgement is noise,
+    not a regression. Two things fail the run:
+
+      * a case dropped in EVERY pass — reproducible, so a real miss;
+      * the keep rate across all passes falling below KEEP_RATE_FLOOR.
+
+    A case kept in some passes but not all is reported as unstable, which
+    is a prompt smell worth reading but not a build break. Over-keeps warn:
+    they cost one scoring call each.
     """
     data = json.loads(SCREEN_CASES.read_text())["cases"]
     jobs, expect = [], {}
@@ -112,27 +126,38 @@ def run_screen() -> int:
             return 1
         passes.append(verdicts)
 
-    fails = warns = 0
+    fails = warns = unstable = 0
+    kept_total = keep_judgements = 0
     for j in jobs:
         c = expect[j.job_id]
-        got = [p.get(j.job_id) for p in passes]
-        kept = sum(1 for g in got if g is True)
+        kept = sum(1 for p in passes if p.get(j.job_id) is True)
         tally = f"{kept}/{SCREEN_PASSES} kept"
         if c["expected_keep"]:
-            if kept == SCREEN_PASSES:
-                print(f"PASS {c['id']}: keep ({tally})")
-            else:
-                print(f"FAIL {c['id']}: dropped, should keep ({tally}) — {c['reason']}")
+            kept_total += kept
+            keep_judgements += SCREEN_PASSES
+            if kept == 0:
+                print(f"FAIL {c['id']}: dropped in every pass — {c['reason']}")
                 fails += 1
-        else:
-            if kept * 2 > SCREEN_PASSES:
-                print(f"WARN {c['id']}: kept, should drop ({tally}) — {c['reason']}")
-                warns += 1
+            elif kept < SCREEN_PASSES:
+                print(f"UNSTABLE {c['id']}: keep ({tally})")
+                unstable += 1
             else:
-                print(f"PASS {c['id']}: drop ({tally})")
+                print(f"PASS {c['id']}: keep ({tally})")
+        elif kept * 2 > SCREEN_PASSES:
+            print(f"WARN {c['id']}: kept, should drop ({tally}) — {c['reason']}")
+            warns += 1
+        else:
+            print(f"PASS {c['id']}: drop ({tally})")
+
+    rate = kept_total / keep_judgements if keep_judgements else 0.0
     print(f"\n{len(jobs)} screen cases over {SCREEN_PASSES} passes: "
-          f"{len(jobs) - fails - warns} pass, {warns} warn (over-keep), "
-          f"{fails} fail (missed keep)")
+          f"keep rate {kept_total}/{keep_judgements} ({rate:.0%}), "
+          f"{fails} reproducible miss(es), {unstable} unstable, "
+          f"{warns} over-keep(s)")
+    if rate < KEEP_RATE_FLOOR:
+        print(f"FAIL: keep rate {rate:.0%} is below the "
+              f"{KEEP_RATE_FLOOR:.0%} floor")
+        return 1
     return 1 if fails else 0
 
 

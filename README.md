@@ -181,10 +181,13 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   `triage.score` applies the code-side policy. The title screen
   (`eval/screen_cases.json`) is graded asymmetrically: keeping a posting
   that should drop costs one scoring call (WARN), dropping one that
-  should keep loses the role outright (FAIL), because the screen decides
-  without a description and remembers its answer. It is judged over two
-  independent passes and a keep must hold in both — production gets one
-  judgement, so a role kept only sometimes is a role sometimes lost.
+  should keep loses the role outright, because the screen decides without
+  a description and remembers its answer. It is also a sampled
+  classifier: at 97% per-judgement accuracy, demanding a clean sweep of
+  27 judgements would fail 44% of runs on luck alone, so the run fails
+  instead on a case dropped in EVERY pass (reproducible, so real) or on
+  the keep rate falling below 23/27. A case kept in some passes but not
+  all prints as UNSTABLE — a prompt smell, not a build break.
 - Resume drafts: the model writes words only, as structured JSON; the
   one-page layout is code (`src/resume.py`, python-docx), the PDF is that
   DOCX converted by LibreOffice, and the page count is checked. A
