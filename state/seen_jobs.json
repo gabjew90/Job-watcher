@@ -6417,7 +6417,8 @@
   "location": "Conde, SD, US, 57434",
   "locations": [
    "Conde, SD, US, 57434",
-   "Fort Pierce, FL, US, 34945"
+   "Fort Pierce, FL, US, 34945",
+   "Blythe, CA, US, 92225"
   ],
   "pay": "",
   "priority": false,
@@ -6635,7 +6636,9 @@
   "work_mode": "hybrid"
  },
  "0d23365f8e661ef3": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-18",
   "company": "Nebius",
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
@@ -10592,7 +10595,8 @@
   "locations": [
    "North Palm Beach, FL, US, 33408",
    "Juno Beach, FL, US",
-   "Fort Pierce, FL, US, 34945"
+   "Fort Pierce, FL, US, 34945",
+   "Palm Beach Gardens, FL, US, 33410"
   ],
   "pay": "",
   "priority": true,
@@ -15963,7 +15967,7 @@
   },
   "seniority_match": true,
   "source": "indeed",
-  "title": "Senior Development Project Manager (Data Center Construction MEPR)",
+  "title": "Senior Development Project Manager (Data Center Construction OFCI)",
   "url": "https://www.indeed.com/viewjob?jk=0f9b4f56f21c083a",
   "work_mode": ""
  },
@@ -32553,7 +32557,8 @@
   "first_seen_at": "2026-09-18T17:47:25Z",
   "location": "North Palm Beach, FL, US, 33408",
   "locations": [
-   "North Palm Beach, FL, US, 33408"
+   "North Palm Beach, FL, US, 33408",
+   "Fort Pierce, FL, US, 34945"
   ],
   "pay": "",
   "priority": false,
@@ -43787,7 +43792,8 @@
    "Stockton, CA, US, 95206",
    "West Sacramento, CA, US, 95605",
    "Fresno, CA, US, 93720",
-   "Napa, CA, US, 94559"
+   "Napa, CA, US, 94559",
+   "Eureka, CA, US, 95501"
   ],
   "pay": "",
   "priority": false,
@@ -47242,7 +47248,8 @@
   "first_seen_at": "2026-09-17T20:13:02Z",
   "location": "Fresno, CA, US, 93720",
   "locations": [
-   "Fresno, CA, US, 93720"
+   "Fresno, CA, US, 93720",
+   "Napa, CA, US, 94559"
   ],
   "lowscore": true,
   "pay": "",
@@ -55341,7 +55348,9 @@
   "work_mode": "onsite"
  },
  "701c884a20ecbe19": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-18",
   "company": "Rhythm Energy",
   "date_posted": "2026-09-17",
   "first_seen": "2026-09-17",
@@ -58753,7 +58762,8 @@
   "location": "Juno Beach, FL, US, 33408",
   "locations": [
    "Juno Beach, FL, US, 33408",
-   "Houston, TX, US, 77002"
+   "Houston, TX, US, 77002",
+   "STERLING CITY, TX, US, 76951"
   ],
   "pay": "",
   "priority": true,
@@ -60302,6 +60312,35 @@
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Rugby/Lead-Power-Systems-Engineer---Power-Quality---EMC--Naval-_R5050414",
   "work_mode": ""
  },
+ "7a0f2afa2db060ee": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-18",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-18",
+  "first_seen_at": "2026-09-18T19:37:07Z",
+  "location": "Palo, IA, US, 52324",
+  "locations": [
+   "Palo, IA, US, 52324"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Field operations/O&M site management role (HS diploma minimum) with no product, strategy, or data component.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-18T19:37Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "successfactors",
+  "title": "Regional Solar Site Mgr &amp; ES II - East FL Region",
+  "url": "https://jobs.nexteraenergy.com/job/Fort-Pierce-Regional-Solar-Site-Mgr-&amp;-ES-II-East-FL-Region-FL-34945/1431635100/",
+  "work_mode": "onsite"
+ },
  "7a0f2ef733fc8a1f": {
   "band": "weak",
   "company": "Johnson Controls",
@@ -60907,6 +60946,32 @@
   "url": "https://www.indeed.com/viewjob?jk=9d8ad73e47946ae7",
   "work_mode": "onsite"
  },
+ "7b39aa109216061f": {
+  "band": "weak",
+  "company": "Wood Mackenzie",
+  "date_posted": "",
+  "first_seen": "2026-09-18",
+  "first_seen_at": "2026-09-18T19:37:07Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior energy-consulting title but scope is IT/supply-chain programs, not product/strategy/BESS/grid work central to the thesis.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-18T19:37Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Managing Consultant - Energy Supply Chain (IT Programs)",
+  "url": "https://woodmac.wd3.myworkdayjobs.com/en-US/woodmaccareers/job/US-TX-Houston-Office/Managing-Consultant---Energy-Supply-Chain--IT-Programs-_JR3187",
+  "work_mode": ""
+ },
  "7b4bf1851b701b01": {
   "active": false,
   "band": "misfit",
@@ -61486,7 +61551,9 @@
   "work_mode": "onsite"
  },
  "7cf21526f8c9f73e": {
+  "active": false,
   "band": "top",
+  "closed": "2026-09-18",
   "company": "DataBank",
   "date_posted": "2026-09-17",
   "first_seen": "2026-09-17",
@@ -72355,7 +72422,7 @@
   },
   "seniority_match": false,
   "source": "indeed",
-  "title": "Development Project Manager \u2013 Q-Systems Connectivity",
+  "title": "Development Project Manager \u2013 Q-Systems (Connectivity)",
   "url": "https://www.indeed.com/viewjob?jk=059a88d98ca407ce",
   "work_mode": ""
  },
@@ -75528,7 +75595,8 @@
    "Palo, IA, US, 52324",
    "Palm Beach Gardens, FL, US, 33410",
    "PALO, IA, US, 52324",
-   "Brinkley, AR, US, 72021"
+   "Brinkley, AR, US, 72021",
+   "Tallahassee, FL, US, 32301"
   ],
   "pay": "",
   "priority": true,
@@ -84748,7 +84816,8 @@
   "locations": [
    "WEBSTER, KY, US, 42450",
    "Palm Beach Gardens, FL, US, 33410",
-   "Jupiter, FL, US, 33478"
+   "Jupiter, FL, US, 33478",
+   "Brinkley, AR, US, 72021"
   ],
   "pay": "",
   "priority": false,
@@ -88242,7 +88311,9 @@
   "work_mode": "onsite"
  },
  "b2f58b7aa780bd8c": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-18",
   "company": "Microsoft",
   "date_posted": "2025-11-25",
   "first_seen": "2026-08-13",
@@ -90081,7 +90152,9 @@
   "work_mode": "onsite"
  },
  "b7304b7bc63671a6": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-18",
   "company": "Exentec",
   "date_posted": "2026-09-14",
   "first_seen": "2026-09-14",
@@ -103461,7 +103534,8 @@
   "locations": [
    "Palo, IA, US, 52324",
    "Palm Beach Gardens, FL, US, 33410",
-   "Jupiter, FL, US, 33478"
+   "Jupiter, FL, US, 33478",
+   "Brinkley, AR, US, 72021"
   ],
   "pay": "",
   "priority": true,
@@ -112965,7 +113039,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Data Center Program Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393556984706",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556972035",
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
