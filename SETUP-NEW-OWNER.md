@@ -81,33 +81,41 @@ everything downstream. Do not write it from the resume alone — a resume
 says what someone *did*, and this file has to say what they *want next*,
 which is not the same and is often the opposite.
 
-Ask these, one or two at a time, conversationally. Push back when an
-answer is vague: "senior roles in tech" is not usable, "director-level
-product management at a climate hardware company" is.
+First **summarise what you took from the resume** — current role and
+scope, level, domain, the through-line of their career — and ask them to
+correct it. That covers everything a resume already states, and their
+corrections are usually more revealing than the resume was.
 
-1. **Now:** current title, employer, how long, and what they actually own
-   day to day — not the job description, the real scope.
-2. **Next:** the titles they want. Same level, or a step up? Which
-   function — product, engineering, operations, strategy, sales,
-   research, something else?
-3. **Domain:** which industries or subject areas. Be concrete enough to
-   filter on. If they name more than three, ask which one they'd take
-   over the others.
-4. **The best possible posting:** describe a role that would make them
-   apply the same day. What is in it?
-5. **The near miss:** a role that looks right on paper but they'd turn
-   down. Why — the function, the level, the industry, the company stage?
-6. **Never:** role types to reject outright. Common ones: quota-carrying
+Then ask only these five. Each one is something a resume structurally
+cannot answer, because a resume is retrospective and this file is about
+what they want next. Ask one or two at a time, conversationally, and push
+back when an answer is vague: "senior roles in tech" is not usable,
+"director-level product management at a climate hardware company" is.
+
+1. **What next** — the titles they want, the function, and whether this
+   is a step up or a move sideways. (Their current level is on the
+   resume; the direction of travel is not, and the scorer caps any
+   posting it reads as a seniority mismatch, so this has teeth.)
+2. **Domain** — which industries or subject areas, and whether that is
+   the same field they are in now or a deliberate change. If they name
+   more than three, ask which they would take over the others.
+3. **The near miss** — a posting that looks right on paper but they would
+   turn down, and why: the function, the level, the industry, the company
+   stage. This is the highest-yield question in the list. The positive
+   case is largely inferable from the resume plus question 1; the
+   boundary is not, and a digest full of plausible near misses is the
+   most common way this tool becomes annoying.
+4. **Never** — role types to reject outright. Common ones: quota-carrying
    sales, on-call operations, people-management when they want IC, IC
    when they want management, consulting, pre-sales, relocation.
-7. **Hard constraints:** location, remote / hybrid / onsite, compensation
-   floor, work authorization, travel tolerance, company size or stage.
-8. **Level:** how to read seniority for them. What title is too junior,
-   and is there a title so senior it's not credible yet? (The pipeline
-   caps any posting that is a seniority mismatch, so this has teeth.)
-9. **Employers:** companies they'd love to hear from, and the archetype
-   behind that list — "climate hardware scale-ups", "AI labs",
-   "regulated utilities". The archetype matters more than the names.
+5. **Hard constraints** — location, remote / hybrid / onsite,
+   compensation floor, work authorization, travel tolerance, company size
+   or stage. None of this is on a resume and all of it decides whether a
+   posting is worth their attention.
+
+Target employers are worth a passing question but do not need their own
+round: the config step below covers companies, and the discovery module
+finds them from results anyway.
 
 Then write `profile.md` following the structure of the original
 (fetch `/tmp/source/profile.md` and mirror its shape, not its content):
