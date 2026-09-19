@@ -11854,7 +11854,8 @@
   "locations": [
    "United States, Washington, Quincy",
    "Quincy, WA, US",
-   "United States, Wisconsin, Milwaukee"
+   "United States, Wisconsin, Milwaukee",
+   "Boydton, VA, US"
   ],
   "pay": "USD $84,400 - $168,800 per year",
   "priority": false,
@@ -17682,14 +17683,15 @@
  "22fd0d139f2de3d0": {
   "band": "weak",
   "company": "Johnson Controls",
-  "date_posted": "",
+  "date_posted": "2026-09-18",
   "first_seen": "2026-09-18",
   "first_seen_at": "2026-09-18T17:47:25Z",
   "location": "Rocky Hill-Connecticut-United States of America",
   "locations": [
-   "Rocky Hill-Connecticut-United States of America"
+   "Rocky Hill-Connecticut-United States of America",
+   "Rocky Hill, CT, US"
   ],
-  "pay": "",
+  "pay": "$112,100\u2013$168,400/yr",
   "priority": false,
   "rationale": "Principal engineering IC role at an HVAC/infrastructure company, not a product/strategy/AI role.",
   "score": 35,
@@ -22766,6 +22768,32 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8631722002",
   "work_mode": "remote"
  },
+ "2c74be80994f8e69": {
+  "band": "weak",
+  "company": "Eaton",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Richmond, VA, US",
+  "locations": [
+   "Richmond, VA, US"
+  ],
+  "pay": "$97,000\u2013$143,000/yr",
+  "priority": false,
+  "rationale": "Program Manager for new product development in Eaton's data-center power distribution business is on-thesis domain but mid-level title, scope, and pay band.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Program Manager - Product Development",
+  "url": "https://www.indeed.com/viewjob?jk=081fb390c937640b",
+  "work_mode": "remote"
+ },
  "2c7c5e3fb8a80ccc": {
   "band": "weak",
   "company": "ABB",
@@ -26120,6 +26148,37 @@
   "title": "Sr. Business Development Manager - PSSD",
   "url": "https://www.indeed.com/viewjob?jk=1c4d0e4f2f64a707",
   "work_mode": ""
+ },
+ "32cd1c4d0c7c36cd": {
+  "band": "weak",
+  "company": "SOLV Energy",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Hartford, CT, US",
+  "locations": [
+   "Hartford, CT, US",
+   "Raleigh, NC, US",
+   "Jackson, MS, US",
+   "Concord, NH, US",
+   "Santa Fe, NM, US",
+   "Albany, NY, US"
+  ],
+  "pay": "$110,632\u2013$138,290/yr",
+  "priority": true,
+  "rationale": "Technical commissioning PM for HV/BESS projects is deep field-execution work rather than product or commercial strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Commissioning Project Manager, HV",
+  "url": "https://www.indeed.com/viewjob?jk=c1b95274aa8d79dd",
+  "work_mode": "remote"
  },
  "32e870b0cee01e1b": {
   "active": false,
@@ -33107,6 +33166,32 @@
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Bengaluru/GPU-System-Architect_JR2019269",
   "work_mode": "onsite"
  },
+ "41b94bc528cea4dc": {
+  "band": "strong",
+  "company": "Sensata Technologies, Inc.",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Attleboro, MA, US",
+  "locations": [
+   "Attleboro, MA, US"
+  ],
+  "pay": "$213,920\u2013$294,140/yr",
+  "priority": false,
+  "rationale": "Senior Director product portfolio strategy spanning HVAC, datacenter infrastructure, and energy verticals fits the thermal-adjacency and integration thesis at the right seniority.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Director, Product Management - Industrials",
+  "url": "https://www.indeed.com/viewjob?jk=c5aecb00455300dc",
+  "work_mode": ""
+ },
  "41c704536ffeba5c": {
   "active": false,
   "band": "misfit",
@@ -34795,6 +34880,35 @@
   "source": "ashby",
   "title": "Senior Manager, Environmental Planning",
   "url": "https://jobs.ashbyhq.com/crusoe/cfb7a446-f184-4c96-a473-9d120df0cb7e"
+ },
+ "457da1fec0d2f3ea": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "LOTTE Global Logistics",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Irving, TX, US",
+  "locations": [
+   "Irving, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$75,000\u2013$90,000/yr",
+  "priority": false,
+  "rationale": "Logistics operations associate role with no energy, power, or product connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Associate Out Of Gauge",
+  "url": "https://www.indeed.com/viewjob?jk=3c0c5a77ab5c0d37",
+  "work_mode": ""
  },
  "457e78df88e83634": {
   "active": true,
@@ -45771,6 +45885,32 @@
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Wilmington-NC-USA/Senior-Engineer--Outage-Engineering_R5050995-1",
   "work_mode": ""
  },
+ "5c17c023169cedef": {
+  "band": "weak",
+  "company": "Google",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "KS, US",
+  "locations": [
+   "KS, US"
+  ],
+  "pay": "$240,000\u2013$333,000/yr",
+  "priority": false,
+  "rationale": "Senior data center TPM role but scope is construction/facilities program delivery, which prior feedback bands weak even at hyperscalers.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Technical Program Manager, Data Center Services",
+  "url": "https://www.indeed.com/viewjob?jk=250ac4382fbbfad2",
+  "work_mode": "remote"
+ },
  "5c1974230ff956ff": {
   "active": false,
   "band": "misfit",
@@ -46560,6 +46700,35 @@
   "title": "Service Technician",
   "url": "https://www.indeed.com/viewjob?jk=d5a79497e99ac6ab"
  },
+ "5dd46ae1eb67c879": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "Oracle",
+  "date_posted": "2026-08-21",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Nashville, TN, US",
+  "locations": [
+   "Nashville, TN, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Logistics network design and freight cost-control program management, unrelated to energy/power domain.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Oracle Cloud Principal Logistics Commercial\u00a0& Network Design Program Manager",
+  "url": "https://www.indeed.com/viewjob?jk=4e4068a89f556e86",
+  "work_mode": ""
+ },
  "5de8e08367264654": {
   "active": false,
   "band": "misfit",
@@ -46859,7 +47028,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Senior Vice President, Corporate Development, M&A and Strategy (Renewable Energy)",
-  "url": "https://www.indeed.com/viewjob?jk=2701a7c312c602ba",
+  "url": "https://www.indeed.com/viewjob?jk=c5ba287e9597cf4b",
   "work_mode": "remote"
  },
  "5ea7b8ecb48faf48": {
@@ -48065,6 +48234,35 @@
   "title": "Material Planner, Energy Products",
   "url": "https://www.indeed.com/viewjob?jk=f41c178d5a447e5f",
   "work_mode": ""
+ },
+ "6159d8eedda4b415": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "",
+  "date_posted": "2026-09-19",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Wheeling, IL, US",
+  "locations": [
+   "Wheeling, IL, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Part-time quota-carrying residential solar/storage sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Part Time In Home Sales Rep Generators",
+  "url": "https://www.indeed.com/viewjob?jk=8313813a815fce02",
+  "work_mode": "remote"
  },
  "616178e9a6508fa0": {
   "band": "possible",
@@ -49415,6 +49613,35 @@
   "title": "Solar Appointment Setter",
   "url": "https://www.indeed.com/viewjob?jk=81b8c055c5e581f2",
   "work_mode": ""
+ },
+ "635c678951c95274": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "American Electric Power",
+  "date_posted": "2026-09-19",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Charleston, WV, US",
+  "locations": [
+   "Charleston, WV, US"
+  ],
+  "lowscore": true,
+  "pay": "$87,633\u2013$128,688/yr",
+  "priority": false,
+  "rationale": "Transmission construction/outage scheduling is field-execution engineering with no product/strategy component.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Transmission Construction Planner",
+  "url": "https://www.indeed.com/viewjob?jk=fe40fbef1c4e64b4",
+  "work_mode": "onsite"
  },
  "6360c3ffa49598b7": {
   "active": false,
@@ -62558,6 +62785,35 @@
   "source": "ashby",
   "title": "Staff Hardware Systems Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/23b5f7b3-d184-4a43-8cb2-1ff3b0b96903",
+  "work_mode": ""
+ },
+ "7ece6b359bf8cd26": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "RK",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Denver, CO, US",
+  "locations": [
+   "Denver, CO, US"
+  ],
+  "lowscore": true,
+  "pay": "$160,000\u2013$200,000/yr",
+  "priority": false,
+  "rationale": "General manufacturing/production leadership role with no stated energy, power, or product-strategy connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director of Manufacturing",
+  "url": "https://www.indeed.com/viewjob?jk=3f660e136c69b7d2",
   "work_mode": ""
  },
  "7eda585e38aa86a8": {
@@ -80031,6 +80287,32 @@
   "url": "https://iren.careers.hibob.com/jobs/0d6de542-a3e8-42c4-8872-2b9f53bd23e3",
   "work_mode": "remote"
  },
+ "a21614eedb23d4c0": {
+  "band": "weak",
+  "company": "AES Corporation",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "pay": "$113,000\u2013$141,525/yr",
+  "priority": true,
+  "rationale": "Deep technical IC engineering role (design, modeling, EPC pricing support) for solar/storage projects, not a product/strategy role.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Senior Project Engineer, Mega Projects and M&A Engineering",
+  "url": "https://www.indeed.com/viewjob?jk=1d58b411d6f1d46b",
+  "work_mode": "remote"
+ },
  "a21f64896d68e6b1": {
   "band": "weak",
   "company": "ServiceTitan",
@@ -82301,6 +82583,32 @@
   "source": "workday",
   "title": "Sr. Director, Supply Chain \u2013 North America",
   "url": "https://nextracker.wd5.myworkdayjobs.com/en-US/nextpower_careers/job/Fremont-South-Bldg-California---USA/Sr-Director--Supply-Chain---North-America_NX-4674",
+  "work_mode": ""
+ },
+ "a6b98626b65aacc2": {
+  "band": "weak",
+  "company": "TRC",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US"
+  ],
+  "pay": "$93,000\u2013$149,000/yr",
+  "priority": false,
+  "rationale": "Deep technical transmission line design IC role, out of skillset per prior calibration on design engineer roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Transmission Engineer III",
+  "url": "https://www.indeed.com/viewjob?jk=b998a86d92aa347a",
   "work_mode": ""
  },
  "a6b9a0940a3ef386": {
@@ -88849,6 +89157,35 @@
   "url": "https://www.indeed.com/viewjob?jk=1c59dcba89e0654f",
   "work_mode": "remote"
  },
+ "b3da78a8d87d7ac3": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "Qcells",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "US",
+  "locations": [
+   "US"
+  ],
+  "lowscore": true,
+  "pay": "$89,100\u2013$128,300/yr",
+  "priority": false,
+  "rationale": "Field construction oversight/installer management role, no product or strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "New Homes Field Manager - San Diego",
+  "url": "https://www.indeed.com/viewjob?jk=ca898da623046e27",
+  "work_mode": ""
+ },
  "b3dd0d15928541ec": {
   "band": "possible",
   "company": "Nebius",
@@ -91268,6 +91605,35 @@
   "title": "Lead Mechanical Engineer (Starship)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8627660002",
   "work_mode": "remote"
+ },
+ "b896f5d334ac3a34": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "Arup",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "$76,500\u2013$83,500/yr",
+  "priority": true,
+  "rationale": "Entry-level graduate engineering position, far below target seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Graduate High Voltage Electrical Engineer (Available 2027)",
+  "url": "https://www.indeed.com/viewjob?jk=12cfded8712b2022",
+  "work_mode": ""
  },
  "b89a40fe63dd20e0": {
   "active": false,
@@ -102289,7 +102655,9 @@
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4699712006"
  },
  "cec2af81aeffbf82": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-19",
   "company": "Crusoe",
   "date_posted": "2026-09-15",
   "first_seen": "2026-09-15",
@@ -102310,7 +102678,7 @@
   },
   "seniority_match": true,
   "source": "ashby",
-  "title": "Manager, Power Distribution Programs (MFG)",
+  "title": "Manager, Power Distribution Programs",
   "url": "https://jobs.ashbyhq.com/crusoe/8e2f8cce-e727-484a-a8bf-c4c5b6a615a8",
   "work_mode": ""
  },
@@ -119934,6 +120302,35 @@
   "url": "https://www.indeed.com/viewjob?jk=051c6e12fb5f003c",
   "work_mode": ""
  },
+ "f3e2d0fbab0feb82": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "Venture Home",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Baltimore, MD, US",
+  "locations": [
+   "Baltimore, MD, US"
+  ],
+  "lowscore": true,
+  "pay": "$100,000\u2013$250,000/yr",
+  "priority": false,
+  "rationale": "Quota-carrying residential solar sales role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Solar Sales Consultant - We Provide Leads!",
+  "url": "https://www.indeed.com/viewjob?jk=f20e89f0368d7c22",
+  "work_mode": ""
+ },
  "f3f6a79d2af851b9": {
   "active": false,
   "band": "weak",
@@ -121244,6 +121641,32 @@
   "url": "https://www.indeed.com/viewjob?jk=55d5c2951137dcd9",
   "work_mode": "remote"
  },
+ "f6dca11420c36732": {
+  "band": "possible",
+  "company": "Form Energy",
+  "date_posted": "2026-09-19",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Weirton, WV, US",
+  "locations": [
+   "Weirton, WV, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Battery manufacturing leadership role but scope is process/equipment engineering management, not product or commercial strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager, Electrode Process Engineering, Operations",
+  "url": "https://www.indeed.com/viewjob?jk=921782f5f6edbdf9",
+  "work_mode": "onsite"
+ },
  "f6f831b42a5aad29": {
   "active": false,
   "band": "misfit",
@@ -121445,6 +121868,36 @@
   "title": "Sr. Mechanical Design Engineer, Data Center Design Engineering",
   "url": "https://www.indeed.com/viewjob?jk=594c5ef8f6469cdd",
   "work_mode": "onsite"
+ },
+ "f7506338c16d9f10": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "ENFRA",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Westmont, IL, US",
+  "locations": [
+   "Westmont, IL, US",
+   "Glenolden, PA, US"
+  ],
+  "lowscore": true,
+  "pay": "$128,546\u2013$171,594/yr",
+  "priority": false,
+  "rationale": "Project controls/construction oversight function with no energy, power, or product/strategy connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Project Controls Manager",
+  "url": "https://www.indeed.com/viewjob?jk=b8f54d38b8414fa5",
+  "work_mode": ""
  },
  "f759619555fbf40a": {
   "active": false,
@@ -123597,6 +124050,32 @@
   "title": "Principal Power Systems Engineer",
   "url": "https://www.indeed.com/viewjob?jk=9d395bf91a8369b9",
   "work_mode": "remote"
+ },
+ "fb33fb0c4f8ea302": {
+  "band": "strong",
+  "company": "Vertiv",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T19:16:52Z",
+  "location": "Westerville, OH, US",
+  "locations": [
+   "Westerville, OH, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior PM role for Vertiv's thermal/power partnerships and business cases matches the HVAC/thermal-adjacency sweet spot plus core product-strategy thesis.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T19:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Global Senior Product Manager \u2013 Strategic Partnerships",
+  "url": "https://www.indeed.com/viewjob?jk=991d32c628ae4c2a",
+  "work_mode": ""
  },
  "fb594385095c53e6": {
   "active": false,
