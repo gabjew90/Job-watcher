@@ -6418,7 +6418,8 @@
   "locations": [
    "Conde, SD, US, 57434",
    "Fort Pierce, FL, US, 34945",
-   "Blythe, CA, US, 92225"
+   "Blythe, CA, US, 92225",
+   "Palo, IA, US, 52324"
   ],
   "pay": "",
   "priority": false,
@@ -16271,7 +16272,8 @@
    "San Francisco, CA, US, 94110",
    "San Carlos, CA, US, 94070",
    "Rocklin, CA, US, 95765",
-   "Napa, CA, US, 94559"
+   "Napa, CA, US, 94559",
+   "Eureka, CA, US, 95501"
   ],
   "pay": "$122,000",
   "priority": false,
@@ -18098,8 +18100,9 @@
   "work_mode": "remote"
  },
  "23def19376c05e13": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-19",
   "company": "Avangrid",
   "date_posted": "2026-08-17",
   "first_seen": "2026-08-18",
@@ -28660,7 +28663,9 @@
   "work_mode": "remote"
  },
  "37d9d59fc3b2adc1": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-19",
   "company": "ERCOT/Electric Reliability Council of Texas",
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-25",
@@ -31426,7 +31431,8 @@
    "Stockton, CA, US, 95206",
    "West Sacramento, CA, US, 95605",
    "Fresno, CA, US, 93720",
-   "Eureka, CA, US, 95501"
+   "Eureka, CA, US, 95501",
+   "Gilroy, CA, US, 95020"
   ],
   "pay": "$144,000",
   "priority": true,
@@ -36303,7 +36309,9 @@
   "work_mode": ""
  },
  "4837582d2cb2c263": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-19",
   "company": "Mach10 Solutions",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-03",
@@ -46595,7 +46603,9 @@
   "work_mode": ""
  },
  "5e0b2ba1080d0a0e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Vantage Data Centers",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-02",
@@ -47466,6 +47476,32 @@
   "title": "Commercial Sales Manager",
   "url": "https://www.indeed.com/viewjob?jk=9dfa5b3b537038b7",
   "work_mode": ""
+ },
+ "6002379c9034213f": {
+  "band": "weak",
+  "company": "Mainspring Energy",
+  "date_posted": "2026-09-17",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T17:07:59Z",
+  "location": "Menlo Park, CA",
+  "locations": [
+   "Menlo Park, CA"
+  ],
+  "pay": "$209,000\u2013$246,000/yr",
+  "priority": false,
+  "rationale": "Deep electrical design/systems-integration IC engineering for power plants, not the product/strategy/commercial scope the candidate targets.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T17:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "lever",
+  "title": "Senior Staff Electrical Engineer - Power Plant Integration Lead",
+  "url": "https://jobs.lever.co/mainspringenergy/5921ae79-2c77-4757-a229-20ab788d99c1",
+  "work_mode": "onsite"
  },
  "601dafd4395b9bd5": {
   "active": false,
@@ -58115,6 +58151,32 @@
   "url": "https://www.edisoncareers.com/job/23764463/substation-construction-senior-supervisor-alhambra-ca/",
   "work_mode": "hybrid"
  },
+ "754dba296ee8cbbe": {
+  "band": "weak",
+  "company": "Mainspring Energy",
+  "date_posted": "2026-09-17",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T17:07:59Z",
+  "location": "Menlo Park, CA",
+  "locations": [
+   "Menlo Park, CA"
+  ],
+  "pay": "$181,000\u2013$213,000/yr",
+  "priority": false,
+  "rationale": "Deep electrical design/systems-integration IC engineering for power plants, not the product/strategy/commercial scope the candidate targets.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T17:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "lever",
+  "title": "Staff Electrical Engineer - Power Plant Integration Lead",
+  "url": "https://jobs.lever.co/mainspringenergy/d14ceea1-f512-4a80-bbca-8852ca35c6e5",
+  "work_mode": "onsite"
+ },
  "756c89ae6f64a12b": {
   "active": false,
   "band": "misfit",
@@ -58763,7 +58825,8 @@
   "locations": [
    "Juno Beach, FL, US, 33408",
    "Houston, TX, US, 77002",
-   "STERLING CITY, TX, US, 76951"
+   "STERLING CITY, TX, US, 76951",
+   "Buckeye, AZ, US, 85326"
   ],
   "pay": "",
   "priority": true,
@@ -60367,7 +60430,9 @@
   "work_mode": ""
  },
  "7a2127fd73179de9": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Rio Tinto",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -63310,7 +63375,9 @@
   "work_mode": ""
  },
  "807237f76e3b5b88": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-19",
   "company": "Base Power",
   "date_posted": "2026-05-06",
   "first_seen": "2026-08-13",
@@ -66140,7 +66207,9 @@
   "work_mode": "hybrid"
  },
  "85f97addf95ae720": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Mainspring Energy",
   "date_posted": "2026-06-26",
   "first_seen": "2026-09-03",
@@ -66310,7 +66379,8 @@
    "Juno Beach, FL, US, 33408",
    "Ft Myers, FL, US, 33902",
    "Palm Beach Gardens, FL, US, 33410",
-   "Tallahassee, FL, US, 32301"
+   "Tallahassee, FL, US, 32301",
+   "STERLING CITY, TX, US, 76951"
   ],
   "pay": "",
   "priority": true,
@@ -76944,6 +77014,35 @@
   "url": "https://www.indeed.com/viewjob?jk=ca5e47ab6c40ec6a",
   "work_mode": "remote"
  },
+ "9c29e31fd7e319d0": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "IREN",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T17:07:59Z",
+  "location": "Vancouver, British Columbia",
+  "locations": [
+   "Vancouver, British Columbia"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Junior-mid technical project management for GPU/hardware infrastructure delivery, not power/energy strategy and well below target seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T17:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "hibob",
+  "title": "Technical Infrastructure Program Manager (TIPM)",
+  "url": "https://iren.careers.hibob.com/jobs/357482e3-b5ca-440c-a134-0cadcec84c92",
+  "work_mode": "hybrid"
+ },
  "9c3842abac3a61ba": {
   "band": "weak",
   "company": "Tetra Tech",
@@ -77135,7 +77234,9 @@
   "work_mode": ""
  },
  "9c85318f2c007c2f": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-19",
   "company": "GE Vernova",
   "date_posted": "",
   "first_seen": "2026-09-03",
@@ -79909,7 +80010,9 @@
   "work_mode": ""
  },
  "a1fc93ee134f5342": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-19",
   "company": "IREN",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
@@ -80341,7 +80444,9 @@
   "work_mode": ""
  },
  "a34b354a7c07a2ad": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Buffalo Solar",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -81751,7 +81856,9 @@
   "work_mode": ""
  },
  "a61083208ee59d96": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Reputation",
   "date_posted": "2026-08-30",
   "first_seen": "2026-08-30",
@@ -84120,7 +84227,8 @@
    "Richmond, CA, US, 94804",
    "San Francisco, CA, US, 94110",
    "San Carlos, CA, US, 94070",
-   "San Jose, CA, US, 95138"
+   "San Jose, CA, US, 95138",
+   "Napa, CA, US, 94559"
   ],
   "pay": "$140,000",
   "priority": false,
@@ -84817,7 +84925,9 @@
    "WEBSTER, KY, US, 42450",
    "Palm Beach Gardens, FL, US, 33410",
    "Jupiter, FL, US, 33478",
-   "Brinkley, AR, US, 72021"
+   "Brinkley, AR, US, 72021",
+   "North Palm Beach, FL, US, 33408",
+   "Duncan, OK, US, 73533"
   ],
   "pay": "",
   "priority": false,
@@ -86896,7 +87006,9 @@
   "locations": [
    "Oakland, CA, US, 94612",
    "Stockton, CA, US, 95206",
-   "Fresno, CA, US, 93720"
+   "Fresno, CA, US, 93720",
+   "San Ramon, CA, US, 94583",
+   "West Sacramento, CA, US, 95605"
   ],
   "pay": "$144,000.00",
   "priority": true,
@@ -88786,7 +88898,9 @@
   "url": "https://www.indeed.com/viewjob?jk=c3778b9bd134ba02"
  },
  "b3fc2ec2ce8d7eb5": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-19",
   "company": "Panasonic",
   "date_posted": "2026-08-18",
   "first_seen": "2026-08-19",
@@ -101525,7 +101639,9 @@
   "work_mode": ""
  },
  "cdb43369433ba12b": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-19",
   "company": "Amazon Web Services",
   "date_posted": "2026-09-03",
   "first_seen": "2026-09-08",
@@ -101996,7 +102112,9 @@
   "work_mode": "onsite"
  },
  "ce7633630a20e455": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-19",
   "company": "GE Vernova",
   "date_posted": "",
   "first_seen": "2026-09-03",
@@ -103563,7 +103681,7 @@
   "score": 70,
   "seniority_match": true,
   "source": "greenhouse",
-  "title": "Director, Power Generation Development & Integration - Data Center Construction",
+  "title": "Director, Power Generation Development & Integration ",
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6141379004",
   "work_mode": "hybrid"
  },
@@ -106958,7 +107076,9 @@
   "url": "https://www.indeed.com/viewjob?jk=42a7aed9026193a9"
  },
  "d95d09d86d9fb5ef": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "SpaceX",
   "date_posted": "2026-07-24",
   "first_seen": "2026-08-28",
@@ -112613,7 +112733,8 @@
   "location": "Houston, TX, US, 77002",
   "locations": [
    "Houston, TX, US, 77002",
-   "Brinkley, AR, US, 72021"
+   "Brinkley, AR, US, 72021",
+   "Tallahassee, FL, US, 32301"
   ],
   "pay": "",
   "priority": true,
@@ -115177,7 +115298,8 @@
    "West Sacramento, CA, US, 95605",
    "Brentwood, CA, US, 94513",
    "Moss Landing, CA, US, 95039",
-   "Bakersfield, CA, US, 93308"
+   "Bakersfield, CA, US, 93308",
+   "Napa, CA, US, 94559"
   ],
   "pay": "",
   "priority": false,
@@ -115284,6 +115406,36 @@
   "source": "indeed",
   "title": "Construction Coordinator",
   "url": "https://www.indeed.com/viewjob?jk=99847a78fdeb4acb",
+  "work_mode": ""
+ },
+ "eab1b7e9d1146f63": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-19",
+  "company": "Oracle",
+  "date_posted": "2026-08-20",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T17:07:59Z",
+  "location": "Nashville, TN, US",
+  "locations": [
+   "Nashville, TN, US",
+   "Santa Clara, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Procurement/supply-chain sourcing management for data center equipment is an unrelated corporate function, not product/strategy/power engineering.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T17:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Senior Data Center Supply Chain Manager (IC3)",
+  "url": "https://www.indeed.com/viewjob?jk=bafb1fbde6a42a5c",
   "work_mode": ""
  },
  "eab1c894bad4fb81": {
@@ -115441,7 +115593,9 @@
   "work_mode": "remote"
  },
  "eafa16f95668b1d8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Riot Platforms, Inc.",
   "date_posted": "2026-09-17",
   "first_seen": "2026-09-17",
@@ -119054,8 +119208,9 @@
   "work_mode": ""
  },
  "f22f2d48428847b5": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-19",
   "company": "Abstrakt Marketing Group",
   "date_posted": "2026-08-24",
   "excluded": true,
@@ -121261,7 +121416,9 @@
   "work_mode": "remote"
  },
  "f7455354afe64b04": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Amazon.com",
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-02",
@@ -123561,7 +123718,8 @@
    "Richmond, CA, US, 94804",
    "Rocklin, CA, US, 95765",
    "San Jose, CA, US, 95138",
-   "San Francisco, CA, US, 94110"
+   "San Francisco, CA, US, 94110",
+   "Eureka, CA, US, 95501"
   ],
   "pay": "",
   "priority": false,
@@ -123873,6 +124031,32 @@
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6143124004",
   "work_mode": "hybrid"
  },
+ "fc3b064f45cd73d1": {
+  "band": "weak",
+  "company": "Mainspring Energy",
+  "date_posted": "2026-09-17",
+  "first_seen": "2026-09-19",
+  "first_seen_at": "2026-09-19T17:07:59Z",
+  "location": "Menlo Park, CA",
+  "locations": [
+   "Menlo Park, CA"
+  ],
+  "pay": "$221,000\u2013$260,000/yr",
+  "priority": false,
+  "rationale": "Deep electrical design/systems-integration IC engineering for power plants, not the product/strategy/commercial scope the candidate targets.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-19T17:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "lever",
+  "title": "Principal Electrical Engineer - Power Plant Integration Lead",
+  "url": "https://jobs.lever.co/mainspringenergy/cbccd3c2-a0d7-4215-8f21-70842c8b858b",
+  "work_mode": "onsite"
+ },
  "fc657a10ff8d2bed": {
   "band": "weak",
   "company": "Crusoe",
@@ -123978,7 +124162,8 @@
    "Palm Beach Gardens, FL, US, 33410",
    "PALO, IA, US, 52324",
    "Brinkley, AR, US, 72021",
-   "Tallahassee, FL, US, 32301"
+   "Tallahassee, FL, US, 32301",
+   "GUYMON, OK, US, 73942"
   ],
   "pay": "",
   "priority": true,
@@ -124974,7 +125159,9 @@
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4689596006"
  },
  "fece2c3b81d67752": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-19",
   "company": "Pellera Technologies",
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
