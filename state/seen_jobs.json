@@ -31491,7 +31491,8 @@
    "West Sacramento, CA, US, 95605",
    "Fresno, CA, US, 93720",
    "Eureka, CA, US, 95501",
-   "Gilroy, CA, US, 95020"
+   "Gilroy, CA, US, 95020",
+   "San Ramon, CA, US, 94583"
   ],
   "pay": "$144,000",
   "priority": true,
@@ -43915,7 +43916,9 @@
    "West Sacramento, CA, US, 95605",
    "Fresno, CA, US, 93720",
    "Napa, CA, US, 94559",
-   "Eureka, CA, US, 95501"
+   "Eureka, CA, US, 95501",
+   "Gilroy, CA, US, 95020",
+   "Concord, CA, US, 94518"
   ],
   "pay": "",
   "priority": false,
@@ -62742,8 +62745,9 @@
   "work_mode": ""
  },
  "7eb092f59a793999": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-20",
   "company": "Deloitte",
   "date_posted": "2026-08-22",
   "duplicate": true,
@@ -64980,6 +64984,32 @@
   "source": "greenhouse",
   "title": "Sr. Electrical Test Engineer, AI Satellites (Starmind)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8687116002",
+  "work_mode": ""
+ },
+ "832d99e18aa0b4c3": {
+  "band": "weak",
+  "company": "NVIDIA",
+  "date_posted": "",
+  "first_seen": "2026-09-20",
+  "first_seen_at": "2026-09-20T17:17:46Z",
+  "location": "6 Locations",
+  "locations": [
+   "6 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "AI datacenter infrastructure at NVIDIA has domain overlap, but a Technical Program Manager role is execution/program management rather than product or strategy leadership, and no description confirms seniority or power-specific scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-20T17:18Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Technical Program Manager, AI Factory Infrastructure",
+  "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Program-Manager--AI-Factory-Infrastructure_JR2024574",
   "work_mode": ""
  },
  "832e4724b5fda457": {
@@ -92523,7 +92553,9 @@
   "work_mode": ""
  },
  "b9e8992147e68ba1": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-20",
   "company": "Renewable Energy Partners",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -98303,7 +98335,9 @@
   "work_mode": "hybrid"
  },
  "c71e3dc0a631cfd5": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-20",
   "company": "Deloitte",
   "date_posted": "2026-08-22",
   "first_seen": "2026-08-23",
@@ -111478,8 +111512,9 @@
   "work_mode": ""
  },
  "e2096c650f6a4cac": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-20",
   "company": "Deloitte",
   "date_posted": "2026-08-22",
   "duplicate": true,
@@ -117588,7 +117623,9 @@
   "work_mode": "hybrid"
  },
  "eea308653e909a0e": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-20",
   "company": "JPMorganChase",
   "date_posted": "2026-09-13",
   "first_seen": "2026-09-14",
@@ -118355,6 +118392,33 @@
   "title": "Senior Manager, Strategic Sourcing - WhiteSpace",
   "url": "https://iren.careers.hibob.com/jobs/5b3bc804-b28b-4787-accd-4fd49f33aafc",
   "work_mode": "hybrid"
+ },
+ "ef958bbf7f34624f": {
+  "band": "weak",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-20",
+  "first_seen": "2026-09-20",
+  "first_seen_at": "2026-09-20T17:17:46Z",
+  "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408",
+   "Palo, IA, US, 52324"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Corporate strategic-analysis role at an energy company, but the described scope is generic cross-industry strategy support (Bachelor's + 6 years, small SME team) rather than energy/grid-specific principal-level strategy ownership.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-20T17:18Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "successfactors",
+  "title": "Strategic Programs Lead",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Strategic-Programs-Lead-FL-33408/1412573000/",
+  "work_mode": ""
  },
  "ef9c205fd68623ae": {
   "active": false,
