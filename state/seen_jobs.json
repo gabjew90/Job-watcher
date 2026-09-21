@@ -5324,6 +5324,37 @@
   "url": "https://www.indeed.com/viewjob?jk=f563f35eaac11741",
   "work_mode": "hybrid"
  },
+ "0a2b3c0b2197fa28": {
+  "band": "weak",
+  "company": "CoreWeave",
+  "date_posted": "2026-09-21",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "San Francisco, CA, US",
+  "locations": [
+   "San Francisco, CA, US",
+   "New York, NY, US",
+   "Livingston, NJ, US",
+   "Bellevue, WA, US",
+   "Sunnyvale, CA, US",
+   "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA"
+  ],
+  "pay": "$143,000\u2013$210,000/yr",
+  "priority": false,
+  "rationale": "Datacenter architectural/MEP design and construction-delivery management \u2014 construction/design execution rather than power strategy or product, per the preconstruction-leadership calibration.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "greenhouse",
+  "title": "Sr Data Center Design Manager",
+  "url": "https://job-boards.greenhouse.io/coreweave/jobs/4714164006",
+  "work_mode": ""
+ },
  "0a34a973fe12c9b1": {
   "active": false,
   "band": "weak",
@@ -5608,6 +5639,32 @@
   "title": "Staff Infrastructure Engineer, Cluster Infrastructure",
   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5211297008",
   "work_mode": "hybrid"
+ },
+ "0ab03a47adfdfb1e": {
+  "band": "strong",
+  "company": "American Electric Power",
+  "date_posted": "2026-09-21",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "Columbus, OH, US",
+  "locations": [
+   "Columbus, OH, US"
+  ],
+  "pay": "$136,539\u2013$177,000/yr",
+  "priority": true,
+  "rationale": "Senior utility resource-planning/IRP strategy role spanning generation, storage and transmission with regulatory and executive engagement \u2014 close to the energy-strategy/grid-modernization sweet spot though not BESS-product specific.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Resource Planning Lead | INTEGRATED RESOURCE PLANNING (IRP)",
+  "url": "https://www.indeed.com/viewjob?jk=96f4b2018e57c641",
+  "work_mode": "onsite"
  },
  "0abf7a62accc543a": {
   "band": "weak",
@@ -17302,6 +17359,33 @@
   "url": "https://job-boards.greenhouse.io/pluspower/jobs/4713195006",
   "work_mode": "remote"
  },
+ "21f7771bf7b08c63": {
+  "band": "weak",
+  "company": "SpaceXAI",
+  "date_posted": "2026-09-21",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "Memphis, TN, US",
+  "locations": [
+   "Memphis, TN, US",
+   "Southaven, MS, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Hands-on engineering management of DCS/PLC, controls and electrical protection at a power-generation plant \u2014 deep technical engineering scope outside the product/strategy fit even though it serves AI compute.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager, Engineering (Power Generation & Utilities) - Memphis",
+  "url": "https://www.indeed.com/viewjob?jk=de7c92c336a7742e",
+  "work_mode": ""
+ },
  "2206e6f8348590c7": {
   "active": false,
   "band": "misfit",
@@ -17962,6 +18046,32 @@
   "source": "workday",
   "title": "Principal Development Engineer - Sustainable Infrastructure",
   "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Rocky-Hill-Connecticut-United-States-of-America/Principal-Development-Engineer---Sustainable-Infrastructure_WD30280087",
+  "work_mode": ""
+ },
+ "23004d1f5d3c6c8f": {
+  "band": "weak",
+  "company": "Scout Clean Energy",
+  "date_posted": "2026-09-21",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "Boulder, CO, US",
+  "locations": [
+   "Boulder, CO, US"
+  ],
+  "pay": "$110,000\u2013$140,000/yr",
+  "priority": true,
+  "rationale": "Renewable project development execution (budgets, schedules, contractor management) \u2014 matches the calibration that site/project-development leadership bands weak absent direct development experience.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Renewable Energy Project Manager, West Region Development",
+  "url": "https://www.indeed.com/viewjob?jk=c0a2798b4fb86e66",
   "work_mode": ""
  },
  "230864cd6b4aebb6": {
@@ -20988,6 +21098,33 @@
   "url": "https://www.indeed.com/viewjob?jk=86e55ead5373398f",
   "work_mode": ""
  },
+ "2908be627fad0582": {
+  "band": "strong",
+  "company": "Guidehouse",
+  "date_posted": "2026-09-21",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "Washington, DC, US",
+  "locations": [
+   "Washington, DC, US",
+   "McLean, VA, US"
+  ],
+  "pay": "$149,000\u2013$248,000/yr",
+  "priority": false,
+  "rationale": "Associate Director leading AI & Data consulting specifically for energy providers \u2014 a strong domain+AI hybrid fit per the secondary sweet spot.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Associate Director - AI & Data, Energy Providers",
+  "url": "https://www.indeed.com/viewjob?jk=ae1483d902a3d56a",
+  "work_mode": "remote"
+ },
  "290c80259fbc7bfc": {
   "active": false,
   "band": "misfit",
@@ -21664,8 +21801,9 @@
   "url": "https://jobs.ashbyhq.com/base-power/0f682103-d220-407f-bbf1-c9ae6cde6231"
  },
  "2a19eb6e4162f82a": {
-  "active": true,
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-21",
   "company": "X-ELIO",
   "date_posted": "2025-12-30",
   "first_seen": "2026-08-23",
@@ -25013,6 +25151,33 @@
   "title": "Director, Public Relations \u2013 AI and Cloud Infrastructure (Location: Mid-West Area)",
   "url": "https://www.indeed.com/viewjob?jk=b2545f4a0f13b739",
   "work_mode": ""
+ },
+ "304c8582a82bcb1e": {
+  "band": "possible",
+  "company": "SpaceX",
+  "date_posted": "2026-09-21",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "Bastrop, TX, US",
+  "locations": [
+   "Bastrop, TX, US",
+   "Bastrop, TX"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Director-scope leadership of power-generation operations and engineering teams, but deeply hands-on plant/turbine engineering rather than product/strategy work.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "greenhouse",
+  "title": "Manager, Power Generation",
+  "url": "https://job-boards.greenhouse.io/spacex/jobs/8827657002",
+  "work_mode": "onsite"
  },
  "3060df118fa31ca0": {
   "band": "weak",
@@ -30321,7 +30486,9 @@
   "work_mode": ""
  },
  "3a993ec8e8ca0f73": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-21",
   "company": "IREN",
   "date_posted": "2026-07-21",
   "first_seen": "2026-09-03",
@@ -31839,7 +32006,8 @@
    "Eureka, CA, US, 95501",
    "Gilroy, CA, US, 95020",
    "San Ramon, CA, US, 94583",
-   "Hayward, CA, US, 94545"
+   "Hayward, CA, US, 94545",
+   "Fresno, CA, US, 93710"
   ],
   "pay": "$144,000",
   "priority": true,
@@ -36313,6 +36481,32 @@
   "title": "Data Center Technician",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556971332",
   "work_mode": "onsite"
+ },
+ "474456c8048c58b2": {
+  "band": "possible",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-21",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "Jupiter, FL, US, 33478",
+  "locations": [
+   "Jupiter, FL, US, 33478"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Treasury-adjacent asset-level financing/capital-markets strategy role across energy asset classes \u2014 finance-first execution track rather than techno-economic/product work.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Asset-Level Financing- Strategy and Forecasting Manager",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Asset-Level-Financing-Strategy-and-Forecasting-Manager-FL-33408/1412395600/",
+  "work_mode": ""
  },
  "4748a7c66e88131b": {
   "band": "strong",
@@ -44423,7 +44617,8 @@
    "Napa, CA, US, 94559",
    "Eureka, CA, US, 95501",
    "Gilroy, CA, US, 95020",
-   "Concord, CA, US, 94518"
+   "Concord, CA, US, 94518",
+   "Hayward, CA, US, 94545"
   ],
   "pay": "",
   "priority": false,
@@ -67597,7 +67792,8 @@
    "Brentwood, CA, US, 94513",
    "Moss Landing, CA, US, 95039",
    "Auburn, CA, US, 95602",
-   "Daly City, CA, US, 94014"
+   "Daly City, CA, US, 94014",
+   "Fresno, CA, US, 93725"
   ],
   "pay": "$232,000",
   "priority": false,
@@ -86219,7 +86415,8 @@
    "Jupiter, FL, US, 33478",
    "Brinkley, AR, US, 72021",
    "North Palm Beach, FL, US, 33408",
-   "Duncan, OK, US, 73533"
+   "Duncan, OK, US, 73533",
+   "Ft Myers, FL, US, 33902"
   ],
   "pay": "",
   "priority": false,
@@ -96738,6 +96935,35 @@
   "title": "Sr. Partner Development Manager, Energy & Utilities, AMER Consulting Partners",
   "url": "https://www.amazon.jobs/en/jobs/10528669/sr-partner-development-manager-energy-utilities-amer-consulting-partners",
   "work_mode": ""
+ },
+ "c08a77a359945cc3": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-21",
+  "company": "Southern California Edison",
+  "date_posted": "2026-09-20",
+  "first_seen": "2026-09-21",
+  "first_seen_at": "2026-09-21T20:58:51Z",
+  "location": "Rosemead, CA",
+  "locations": [
+   "Rosemead, CA"
+  ],
+  "lowscore": true,
+  "pay": "$161,700\u2013$242,600/yr",
+  "priority": false,
+  "rationale": "Procurement source-to-pay process improvement leadership \u2014 an unrelated corporate function despite being at a utility.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-21T20:59Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "radancy",
+  "title": "Senior Procurement Process Improvement Lead",
+  "url": "https://www.edisoncareers.com/job/23899185/senior-procurement-process-improvement-lead-rosemead-ca/",
+  "work_mode": "hybrid"
  },
  "c0a1bef78e457a6b": {
   "active": false,
@@ -118716,7 +118942,9 @@
   "work_mode": "remote"
  },
  "ee1a0276d0a2c1f7": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-21",
   "company": "Iron Bow Technologies",
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
@@ -127389,7 +127617,9 @@
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556950893"
  },
  "ffc33a554cb22020": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-21",
   "company": "",
   "date_posted": "2026-09-10",
   "first_seen": "2026-09-11",
