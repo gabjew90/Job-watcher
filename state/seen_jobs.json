@@ -4677,6 +4677,32 @@
   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5227413008",
   "work_mode": "hybrid"
  },
+ "08d50273cab50e4c": {
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-09-22",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Seattle, WA, US",
+  "locations": [
+   "Seattle, WA, US"
+  ],
+  "pay": "$148,700\u2013$201,200/yr",
+  "priority": false,
+  "rationale": "AWS infra TPM is broad supply-chain/delivery program management across all datacenter systems, not power-specific product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "AWS Sr. Technical Program Manager, Infrastructure, US West",
+  "url": "https://www.indeed.com/viewjob?jk=ed2f44c92974be06",
+  "work_mode": "remote"
+ },
  "08de7029700f158f": {
   "active": false,
   "band": "strong",
@@ -15413,7 +15439,9 @@
   "work_mode": "onsite"
  },
  "1d7bd188f739e941": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-23",
   "company": "WSP",
   "date_posted": "2026-09-17",
   "first_seen": "2026-09-18",
@@ -16297,8 +16325,9 @@
   "work_mode": ""
  },
  "1faf498745e79462": {
-  "active": true,
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-23",
   "company": "X-ELIO",
   "date_posted": "2026-01-23",
   "first_seen": "2026-08-22",
@@ -23145,7 +23174,9 @@
   "work_mode": ""
  },
  "2b9b5230ce88687d": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-23",
   "company": "IREN",
   "date_posted": "2026-06-19",
   "first_seen": "2026-09-03",
@@ -24370,6 +24401,32 @@
   "source": "indeed",
   "title": "Contracts Administrator",
   "url": "https://www.indeed.com/viewjob?jk=1e9f07f0e9e3a91c",
+  "work_mode": ""
+ },
+ "2d693e62707028cb": {
+  "band": "weak",
+  "company": "Eaton",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Woodridge, IL, US",
+  "locations": [
+   "Woodridge, IL, US"
+  ],
+  "pay": "$113,000\u2013$165,000/yr",
+  "priority": false,
+  "rationale": "Hardware engineering manager for datacenter power/UPS is deep technical design leadership, outside product/strategy skillset.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Hardware Engineering Manager",
+  "url": "https://www.indeed.com/viewjob?jk=2dc44451ae34081e",
   "work_mode": ""
  },
  "2d77d9920d489c9f": {
@@ -25811,6 +25868,35 @@
   "title": "Principal Electrical Engineer, Satellites (Starlink)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8703623002",
   "work_mode": ""
+ },
+ "3080ee054e32cfbf": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-23",
+  "company": "Vondus Inc. / Abbasi Group",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Remote, US",
+  "locations": [
+   "Remote, US"
+  ],
+  "lowscore": true,
+  "pay": "$80,000\u2013$100,000/yr",
+  "priority": false,
+  "rationale": "Junior (2-5 yr) data center site deployment coordinator role, well below target seniority.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Manager \u2013 Data Center & Cloud Infrastructure",
+  "url": "https://www.indeed.com/viewjob?jk=23f0511f3fa2396a",
+  "work_mode": "remote"
  },
  "3087e3da1bb99aa5": {
   "active": false,
@@ -30676,6 +30762,37 @@
   "url": "https://www.indeed.com/viewjob?jk=8d0eafb6dda16363",
   "work_mode": ""
  },
+ "399d9e41bc0edc90": {
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-09-23",
+  "company": "SOLV Energy",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Plymouth, NC, US",
+  "locations": [
+   "Plymouth, NC, US",
+   "Greenville, SC, US",
+   "Raleigh, NC, US"
+  ],
+  "lowscore": true,
+  "pay": "$110,448\u2013$138,060/yr",
+  "priority": true,
+  "rationale": "Field EPC construction project manager overseeing labor crews on solar builds, purely construction execution.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "EPC Project Manager, Utility Scale Solar (Plymouth, NC)",
+  "url": "https://www.indeed.com/viewjob?jk=cb6f6d8515bd7b32",
+  "work_mode": "remote"
+ },
  "39ab44ad4d97bcf5": {
   "band": "weak",
   "company": "Worley",
@@ -33462,7 +33579,8 @@
    "Pleasanton, CA, US, 94588",
    "West Sacramento, CA, US, 95605",
    "Fresno, CA, US, 93710",
-   "American Canyon, CA, US, 94503"
+   "American Canyon, CA, US, 94503",
+   "Stockton, CA, US, 95204"
   ],
   "pay": "",
   "priority": false,
@@ -34469,7 +34587,8 @@
    "Parrish, FL, US, 34219",
    "Juno Beach, FL, US, 33408",
    "Loxahatchee, FL, US, 33470",
-   "Hialeah, FL, US, 33014"
+   "Hialeah, FL, US, 33014",
+   "Titusville, FL, US, 32781"
   ],
   "pay": "",
   "priority": false,
@@ -41202,7 +41321,8 @@
    "Palm Beach Gardens, FL, US, 33410",
    "Palo, IA, US, 52324",
    "Juno Beach, FL, US, 33408",
-   "Hialeah, FL, US, 33014"
+   "Hialeah, FL, US, 33014",
+   "Titusville, FL, US, 32781"
   ],
   "pay": "",
   "priority": false,
@@ -55940,7 +56060,9 @@
   "work_mode": "remote"
  },
  "6c7cb01f64adfe7c": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-23",
   "company": "ENEL",
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-26",
@@ -58347,6 +58469,32 @@
   "title": "Senior Controls Engineer",
   "url": "https://www.indeed.com/viewjob?jk=362a9a1c5933afc3",
   "work_mode": "remote"
+ },
+ "70ccfc91a936cf49": {
+  "band": "weak",
+  "company": "Stantec",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Bakersfield, CA, US",
+  "locations": [
+   "Bakersfield, CA, US"
+  ],
+  "pay": "$121,300\u2013$195,300/yr",
+  "priority": false,
+  "rationale": "AEC multidisciplinary project delivery PM for data centers, construction/design-firm scope not power product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Project Manager-Data Centers",
+  "url": "https://www.indeed.com/viewjob?jk=987ba5560a13845a",
+  "work_mode": ""
  },
  "70ced842a39aee7e": {
   "active": true,
@@ -61381,7 +61529,8 @@
    "Juno Beach, FL, US, 33408",
    "Houston, TX, US, 77002",
    "STERLING CITY, TX, US, 76951",
-   "Buckeye, AZ, US, 85326"
+   "Buckeye, AZ, US, 85326",
+   "Waynesboro, GA, US, 30830"
   ],
   "pay": "",
   "priority": true,
@@ -63986,7 +64135,9 @@
   "work_mode": "onsite"
  },
  "7c3518bab1c7fe02": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-23",
   "company": "Crusoe",
   "date_posted": "2026-09-16",
   "first_seen": "2026-09-16",
@@ -64006,7 +64157,7 @@
   },
   "seniority_match": true,
   "source": "ashby",
-  "title": "Staff Product Manager, Bare Metal",
+  "title": "Principal Product Manager, Bare Metal",
   "url": "https://jobs.ashbyhq.com/crusoe/c08a297f-2be4-467f-85c0-24f9ad0bec8e",
   "work_mode": ""
  },
@@ -66077,7 +66228,8 @@
    "Juno Beach, FL, US, 33408",
    "Houston, TX, US, 77002",
    "Parrish, FL, US, 34219",
-   "North Palm Beach, FL, US, 33408"
+   "North Palm Beach, FL, US, 33408",
+   "Miami, FL, US, 33134"
   ],
   "pay": "$118,400.00 to $177,600.00 per year",
   "priority": false,
@@ -76518,7 +76670,8 @@
    "American Canyon, CA, US, 94503",
    "Fresno, CA, US",
    "Redding, CA, US, 96002",
-   "Ukiah, CA, US, 95482"
+   "Ukiah, CA, US, 95482",
+   "Fresno, CA, US, 93710"
   ],
   "pay": "$129,000 - $168,000.",
   "priority": false,
@@ -79552,6 +79705,32 @@
   "source": "indeed",
   "title": "Business Development Associate - EV",
   "url": "https://www.indeed.com/viewjob?jk=1f4b91b6086db0d6",
+  "work_mode": ""
+ },
+ "9a3a82f1ec1922a1": {
+  "band": "possible",
+  "company": "Eaton",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Raleigh, NC, US",
+  "locations": [
+   "Raleigh, NC, US"
+  ],
+  "pay": "$137,000\u2013$201,000/yr",
+  "priority": false,
+  "rationale": "Battery team manager role is EMS/hardware engineering leadership, not product or commercial strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Battery Engineering Team Manager",
+  "url": "https://www.indeed.com/viewjob?jk=a74ae3cfd9f7c0a8",
   "work_mode": ""
  },
  "9a67e9b73838ca03": {
@@ -86949,7 +87128,8 @@
   "first_seen_at": "2026-09-23T18:36:09Z",
   "location": "Palm Beach Gardens, FL, US, 33410",
   "locations": [
-   "Palm Beach Gardens, FL, US, 33410"
+   "Palm Beach Gardens, FL, US, 33410",
+   "Juno Beach, FL, US, 33408"
   ],
   "pay": "",
   "priority": false,
@@ -90206,6 +90386,32 @@
   "title": "Energy Manager, Power Supply",
   "url": "https://www.indeed.com/viewjob?jk=e2fdf1ac79b3723c",
   "work_mode": "remote"
+ },
+ "ae7d9953b836c1a0": {
+  "band": "possible",
+  "company": "XCimer Energy",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Denver, CO, US",
+  "locations": [
+   "Denver, CO, US"
+  ],
+  "pay": "$155,000\u2013$182,000/yr",
+  "priority": false,
+  "rationale": "Cross-functional strategy/ops execution role at a fusion energy company, generic ops scope rather than power/BESS/data bridging.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Business Strategy & Operations Lead",
+  "url": "https://www.indeed.com/viewjob?jk=c39792b4dc5687d1",
+  "work_mode": ""
  },
  "ae93fcdd2f57d158": {
   "band": "weak",
@@ -95147,7 +95353,8 @@
    "Sacramento, CA, US, 95826",
    "Danville, CA, US, 94583",
    "Concord, CA, US, 94518",
-   "West Sacramento, CA, US, 95605"
+   "West Sacramento, CA, US, 95605",
+   "Vacaville, CA, US, 95688"
   ],
   "pay": "",
   "priority": false,
@@ -101829,6 +102036,32 @@
   "title": "Technical Program Manager \u2014 Data Center Delivery (Houston, TX - USA)",
   "url": "https://job-boards.eu.greenhouse.io/submer/jobs/4953368101",
   "work_mode": "hybrid"
+ },
+ "c64e30d40c2ed6d3": {
+  "band": "weak",
+  "company": "Tetra Tech",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Denver, CO, US",
+  "locations": [
+   "Denver, CO, US"
+  ],
+  "pay": "$95,000\u2013$150,000/yr",
+  "priority": false,
+  "rationale": "Non-senior permitting/siting project manager role, same wrong specialization as the senior version.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Manager (Energy & Permitting \u2013 Rockies Region) Remote/Hybrid",
+  "url": "https://www.indeed.com/viewjob?jk=fe05fc283eb9965e",
+  "work_mode": "remote"
  },
  "c666c9c0298f5289": {
   "active": false,
@@ -112781,6 +113014,32 @@
   "url": "https://www.indeed.com/viewjob?jk=53e438366a0ed382",
   "work_mode": "onsite"
  },
+ "dbecb3c2acb5c477": {
+  "band": "strong",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Palm Beach Gardens, FL, US, 33410",
+  "locations": [
+   "Palm Beach Gardens, FL, US, 33410"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior asset/portfolio manager role blending PPA compliance, financial analysis, and market optimization matches the energy-markets finance sweet spot.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Senior Business Manager",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Senior-Business-Manager-FL-33408/1433143000/",
+  "work_mode": ""
+ },
  "dc0f48805d4ac4ed": {
   "band": "possible",
   "company": "SK Battery America",
@@ -113146,6 +113405,32 @@
   "title": "Data Center Technician (NightShift) - CTJ - Poly",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556952671",
   "work_mode": "onsite"
+ },
+ "dd1964bd80b78100": {
+  "band": "weak",
+  "company": "Tetra Tech",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Denver, CO, US",
+  "locations": [
+   "Denver, CO, US"
+  ],
+  "pay": "$130,000\u2013$180,000/yr",
+  "priority": false,
+  "rationale": "Environmental permitting/siting consulting PM, too deep in permitting/BD rather than power product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Project Manager (Energy & Permitting \u2013 Rockies Region) Remote/Hybrid",
+  "url": "https://www.indeed.com/viewjob?jk=1b450830569ce66b",
+  "work_mode": "remote"
  },
  "dd1d201f76573704": {
   "band": "weak",
@@ -117589,6 +117874,32 @@
   "title": "Dispatcher - Utility Operations",
   "url": "https://www.indeed.com/viewjob?jk=a3a8b723ed3e0468",
   "work_mode": ""
+ },
+ "e5879f9db5700858": {
+  "band": "strong",
+  "company": "Southern California Edison",
+  "date_posted": "2026-09-22",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Pomona, CA",
+  "locations": [
+   "Pomona, CA"
+  ],
+  "pay": "$182,800\u2013$274,100/yr",
+  "priority": false,
+  "rationale": "Senior data-platform leadership for T&D grid data closely parallels the candidate's PG&E ICA hosting-capacity platform work.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "radancy",
+  "title": "Data Engineering, Senior Manager",
+  "url": "https://www.edisoncareers.com/job/23906576/data-engineering-senior-manager-remote/",
+  "work_mode": "remote"
  },
  "e5883c4959259e40": {
   "active": false,
@@ -126417,6 +126728,32 @@
   "url": "https://www.indeed.com/viewjob?jk=aefbba5493538e37",
   "work_mode": "onsite"
  },
+ "f71f711305df0e48": {
+  "band": "strong",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "St. Paul, MN, US, 55107",
+  "locations": [
+   "St. Paul, MN, US, 55107"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Product-owner role explicitly bridging data science and business/finance teams at a major energy company, a strong match to the integration thesis.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Manager, Business Management - Product Owner, Strategic Finance &amp; Transformation",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Manager%2C-Business-Management-Product-Owner%2C-Strategic-Finance-&amp;-Transformation-FL-33408/1432962500/",
+  "work_mode": ""
+ },
  "f724cb8b6610b54f": {
   "active": false,
   "band": "misfit",
@@ -127350,6 +127687,32 @@
   "title": "Electrical Test and Reliability Engineer, Satellites (Starlink)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8659087002",
   "work_mode": ""
+ },
+ "f89776cefce3be67": {
+  "band": "possible",
+  "company": "SparkFund",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-23",
+  "first_seen_at": "2026-09-23T20:16:40Z",
+  "location": "Remote, US",
+  "locations": [
+   "Remote, US"
+  ],
+  "pay": "$195,000\u2013$225,000/yr",
+  "priority": false,
+  "rationale": "VP title but the role is pure sales-origination/BD for electric co-op deals, which bands only possible per prior guidance.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-23T20:17Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Vice President, Electric Cooperative Markets",
+  "url": "https://www.indeed.com/viewjob?jk=be3c94eb03b395bd",
+  "work_mode": "remote"
  },
  "f89e2b557c7e5e60": {
   "active": false,
