@@ -152,7 +152,7 @@ def process(raw_jobs: list[Job], seen: dict, config: dict) -> list:
                         headers=_gh(token), timeout=30)
     resp.raise_for_status()
     written = []
-    branch = os.environ.get("GITHUB_REF_NAME", "claude/brainstorm-approach-8qukjx")
+    branch = os.environ.get("GITHUB_REF_NAME", "main")
     library = resume.LIBRARY.read_text() if resume.LIBRARY.exists() else ""
     for issue in resp.json():
         if issue.get("pull_request"):

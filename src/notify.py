@@ -79,7 +79,7 @@ def build_digest(records: list[dict], drafts: list[Path],
     lines = []
     if drafts:
         repo = os.environ.get("GITHUB_REPOSITORY", "gabjew90/Job-watcher")
-        branch = os.environ.get("GITHUB_REF_NAME", "claude/brainstorm-approach-8qukjx")
+        branch = os.environ.get("GITHUB_REF_NAME", "main")
         lines.append("## 📄 Resume drafts ready\n")
         lines += [f"- [{p.name}](https://github.com/{repo}/blob/{branch}/{p})"
                   for p in drafts]
