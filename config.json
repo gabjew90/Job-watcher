@@ -33,7 +33,6 @@
     "Key Capture Energy",
     "Lancium",
     "Aligned Data Centers",
-    "QTS Data Centers",
     "Switch",
     "Stonepeak",
     "Energy Capital Partners",
@@ -50,7 +49,6 @@
     "Station A",
     "Schneider Electric",
     "Eaton",
-    "ABB",
     "Siemens Energy",
     "Powell Industries",
     "VoltaGrid",
@@ -395,6 +393,18 @@
       "tenant": "eversource",
       "site": "ExternalSite",
       "company": "Eversource Energy"
+    },
+    {
+      "host": "qtsdatacenters.wd5.myworkdayjobs.com",
+      "tenant": "qtsdatacenters",
+      "site": "qts",
+      "company": "QTS"
+    },
+    {
+      "host": "abb.wd3.myworkdayjobs.com",
+      "tenant": "abb",
+      "site": "External_Career_Page",
+      "company": "ABB"
     }
   ],
   "successfactors_boards": [
