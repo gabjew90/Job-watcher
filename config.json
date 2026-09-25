@@ -28,7 +28,6 @@
     "Hive Digital",
     "San Diego Gas & Electric",
     "Sempra",
-    "Fluence",
     "Jupiter Power",
     "esVolta",
     "Key Capture Energy",
@@ -372,6 +371,30 @@
       "tenant": "woodmac",
       "site": "woodmaccareers",
       "company": "Wood Mackenzie"
+    },
+    {
+      "host": "talenenergy.wd1.myworkdayjobs.com",
+      "tenant": "talenenergy",
+      "site": "TalenCareers",
+      "company": "Talen Energy"
+    },
+    {
+      "host": "aep.wd1.myworkdayjobs.com",
+      "tenant": "aep",
+      "site": "AEPCareerSite",
+      "company": "American Electric Power"
+    },
+    {
+      "host": "fluenceenergy.wd12.myworkdayjobs.com",
+      "tenant": "fluenceenergy",
+      "site": "fluenceenergy-jobs",
+      "company": "Fluence Energy"
+    },
+    {
+      "host": "eversource.wd1.myworkdayjobs.com",
+      "tenant": "eversource",
+      "site": "ExternalSite",
+      "company": "Eversource Energy"
     }
   ],
   "successfactors_boards": [
