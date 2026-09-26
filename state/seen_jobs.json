@@ -1046,7 +1046,8 @@
   "locations": [
    "Lancaster, CA",
    "Irvine, CA",
-   "Santa Fe Springs, CA"
+   "Santa Fe Springs, CA",
+   "Wildomar, CA"
   ],
   "lowscore": true,
   "pay": "$42\u2013$63/hr",
@@ -1061,7 +1062,7 @@
   "seniority_match": false,
   "source": "radancy",
   "title": "District Planning Specialist",
-  "url": "https://www.edisoncareers.com/job/23875915/district-planning-specialist-santa-fe-springs-ca/",
+  "url": "https://www.edisoncareers.com/job/23674860/district-planning-specialist-wildomar-ca/",
   "work_mode": "hybrid"
  },
  "01f87f05091ef79b": {
@@ -2918,6 +2919,36 @@
   "title": "Manager, Wholesale Market Policy",
   "url": "https://www.indeed.com/viewjob?jk=151928931eb97b35",
   "work_mode": ""
+ },
+ "053295981458c94d": {
+  "active": false,
+  "apply_url": "https://www.careers.ford.com/job/dearborn/factory-acceptance-testing-process-engineer-ford-energy/48560/101146751776",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Ford Motor Company",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Dearborn, MI, US",
+  "locations": [
+   "Dearborn, MI, US"
+  ],
+  "lowscore": true,
+  "pay": "$99,100\u2013$166,200/yr",
+  "priority": true,
+  "rationale": "Factory acceptance test process engineering IC role for BESS manufacturing, deep technical/manufacturing scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Factory Acceptance Testing Process Engineer, Ford Energy",
+  "url": "https://www.indeed.com/viewjob?jk=f6d13e2a2fc70967",
+  "work_mode": "hybrid"
  },
  "054542c16b744519": {
   "active": false,
@@ -9918,17 +9949,20 @@
   "url": "https://www.indeed.com/viewjob?jk=132c693e3d1896a6"
  },
  "1185e7226bdf79cb": {
-  "apply_url": "",
+  "apply_url": "https://eversource.wd1.myworkdayjobs.com/ExternalSite/job/Hartford-CT/Manager--Economic-Analysis-and-Transmission-Strategy--hybrid-schedule-_R-032004",
   "band": "strong",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-25",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "3 Locations",
   "locations": [
-   "3 Locations"
+   "3 Locations",
+   "Hartford, CT, US",
+   "Manchester, NH, US",
+   "Westwood, MA, US"
   ],
-  "pay": "",
+  "pay": "$153,720\u2013$170,800/yr",
   "priority": false,
   "rationale": "Manager of economic analysis and transmission strategy directly combines grid, finance, and strategy per the core thesis.",
   "score": 75,
@@ -11157,6 +11191,33 @@
   "url": "https://www.indeed.com/viewjob?jk=7d81024b8c999048",
   "work_mode": "remote"
  },
+ "137cf3f12497a116": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Southern California Edison",
+  "date_posted": "2026-09-24",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Rosemead, CA",
+  "locations": [
+   "Rosemead, CA"
+  ],
+  "pay": "$129,200\u2013$193,700/yr",
+  "priority": false,
+  "rationale": "Real-time trading desk scheduling coordinator on rotating shifts \u2014 operational trading execution, not strategy/product.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "radancy",
+  "title": "Energy Trading Scheduling Senior Specialist",
+  "url": "https://www.edisoncareers.com/job/23920942/energy-trading-scheduling-senior-specialist-rosemead-ca/",
+  "work_mode": "onsite"
+ },
  "13916a0a018d41ca": {
   "band": "misfit",
   "company": "OpenAI",
@@ -11661,6 +11722,34 @@
   "title": "Sr. Cloud Technical Account Manager, AWS Enterprise Support, Strategic Industries",
   "url": "https://www.indeed.com/viewjob?jk=c1d9bfcdde5fa9c1",
   "work_mode": ""
+ },
+ "149c5b22d3498529": {
+  "apply_url": "https://grnh.se/8nkaw16i9us",
+  "band": "weak",
+  "company": "Valar Atomics",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Long Beach, CA, US",
+  "locations": [
+   "Long Beach, CA, US",
+   "El Segundo, CA, US"
+  ],
+  "pay": "$196,000\u2013$240,000/yr",
+  "priority": true,
+  "rationale": "Deep technical electrical engineering leadership for a nuclear power plant \u2014 power engineering adjacency but no BESS/grid-interconnection/product-strategy overlap, and no nuclear background.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Lead Electrical Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=8a9edc9061aa8eff",
+  "work_mode": "onsite"
  },
  "149edc9dec4e17c7": {
   "active": false,
@@ -13537,6 +13626,38 @@
   "source": "indeed",
   "title": "Principal BESS Engineer",
   "url": "https://www.indeed.com/viewjob?jk=2471829cf053fda5"
+ },
+ "188105332a9582a7": {
+  "apply_url": "https://www.amazon.jobs/jobs/10446023/electrical-engineer-data-center-colocation-regional-engineering--amer?cmpid=DA_INAD200785B",
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-06-02",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Mesa, AZ, US",
+  "locations": [
+   "Mesa, AZ, US",
+   "Austin, TX, US",
+   "Tempe, AZ, US",
+   "Denver, CO, US",
+   "Santa Clara, CA, US",
+   "Seattle, WA, US"
+  ],
+  "pay": "$116,800\u2013$160,000/yr",
+  "priority": false,
+  "rationale": "Deep technical MEP/critical-infrastructure design-review engineering for colocation data centers \u2014 pure engineering IC scope, not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Electrical Engineer, Data Center, Colocation Regional Engineering - AMER",
+  "url": "https://www.indeed.com/viewjob?jk=d61f740a0a1631d6",
+  "work_mode": ""
  },
  "18836dca40420ead": {
   "active": false,
@@ -18775,6 +18896,33 @@
   "url": "https://www.indeed.com/viewjob?jk=f32f465c9af9e96b",
   "work_mode": ""
  },
+ "2224b0f4fc0d3cf6": {
+  "apply_url": "https://www.careers.ford.com/job/dearborn/regulatory-requirements-engineer-ford-energy/48560/101146752720",
+  "band": "weak",
+  "company": "Ford Motor Company",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Dearborn, MI, US",
+  "locations": [
+   "Dearborn, MI, US"
+  ],
+  "pay": "$74,300\u2013$166,200/yr",
+  "priority": true,
+  "rationale": "Deep technical IC role translating regulatory codes into BESS engineering requirements \u2014 too specialist/technical, not product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Regulatory Requirements Engineer, Ford Energy",
+  "url": "https://www.indeed.com/viewjob?jk=ff1e1eac0fe04538",
+  "work_mode": "hybrid"
+ },
  "222e22e9cfbca8fc": {
   "band": "strong",
   "company": "Gridware",
@@ -19491,6 +19639,36 @@
   "url": "https://www.indeed.com/viewjob?jk=b903aec32160e30a",
   "work_mode": ""
  },
+ "230e1b2e58efa74a": {
+  "active": false,
+  "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=87c1930a-e946-4701-9394-a21f0ace2358&ccId=19000101_000003&jobId=606579&jwId=SYS:JW:001&source=IN&lang=en_US",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "magniX USA Inc",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Everett, WA, US",
+  "locations": [
+   "Everett, WA, US"
+  ],
+  "lowscore": true,
+  "pay": "$130,000\u2013$175,000/yr",
+  "priority": false,
+  "rationale": "Deep IC systems engineering V&V role for aerospace electric propulsion, unrelated to grid/BESS/product.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Systems Engineer, Verification and Validation",
+  "url": "https://www.indeed.com/viewjob?jk=4237d487d36fd1ec",
+  "work_mode": ""
+ },
  "2347c97f30491740": {
   "active": false,
   "band": "misfit",
@@ -20119,6 +20297,37 @@
   "source": "indeed",
   "title": "Data Center Site Negotiator, Acquisition and Development",
   "url": "https://www.indeed.com/viewjob?jk=1d1d633d18f01777",
+  "work_mode": ""
+ },
+ "243877122d990901": {
+  "active": false,
+  "apply_url": "",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Houston, TX, US, 77002",
+  "locations": [
+   "Houston, TX, US, 77002",
+   "Tucson, AZ, US, 85756"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Principal back-office business systems analyst configuring the Endur trading platform \u2014 an IT/trading-operations specialist role with no product, strategy, or grid/BESS relevance.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "successfactors",
+  "title": "Principal Endur Business Systems Analyst - Back Office",
+  "url": "https://jobs.nexteraenergy.com/job/Houston-Principal-Endur-Business-Systems-Analyst-Back-Office-TX-77002/1396097100/",
   "work_mode": ""
  },
  "243c1f2be08fc28c": {
@@ -23087,6 +23296,36 @@
   "url": "https://www.indeed.com/viewjob?jk=f673134dd47d55dc",
   "work_mode": "remote"
  },
+ "29534fae79f14ca3": {
+  "active": false,
+  "apply_url": "https://careers.qcells.com/jobs/18281712-tax-director?tm_job=2828&tm_event=view&tm_company=92338",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Qcells",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "US",
+  "locations": [
+   "US"
+  ],
+  "lowscore": true,
+  "pay": "$173,400\u2013$234,100/yr",
+  "priority": false,
+  "rationale": "Tax Director \u2014 unrelated corporate finance function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Tax Director",
+  "url": "https://www.indeed.com/viewjob?jk=d0ece1ad03025b3f",
+  "work_mode": ""
+ },
  "2974950c584bdf24": {
   "active": false,
   "band": "misfit",
@@ -23497,6 +23736,36 @@
   "url": "https://www.indeed.com/viewjob?jk=6c7d5b42c15ceb03",
   "work_mode": "hybrid"
  },
+ "2a31d7e0efa4ae8b": {
+  "active": false,
+  "apply_url": "",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "PG&E",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612"
+  ],
+  "lowscore": true,
+  "pay": "$120,888",
+  "priority": false,
+  "rationale": "Union-represented journey/associate-level distribution standards engineering role \u2014 deep technical IC design work well below director/senior-PM scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "successfactors",
+  "title": "Elec Stds and Strategy Engineer",
+  "url": "https://careers.pge.com/job/Oakland-Elec-Stds-and-Strategy-Engineer-CA-94612/1434138500/",
+  "work_mode": "hybrid"
+ },
  "2a3c0de3d7cb7971": {
   "active": false,
   "band": "misfit",
@@ -23905,6 +24174,36 @@
   "source": "ashby",
   "title": "Senior Hardware Test Engineer, Fluid Systems",
   "url": "https://jobs.ashbyhq.com/formenergy/6d4b5690-740d-4097-b63d-25f0463a6d63",
+  "work_mode": "onsite"
+ },
+ "2ae75e58f25b41da": {
+  "active": false,
+  "apply_url": "https://www.paycomonline.net/v4/ats/web.php/portal/00DFA2458AC47176034D9560DF4B98BA/jobs/168830?source=Indeed",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Civic Works",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Baltimore, MD, US",
+  "locations": [
+   "Baltimore, MD, US"
+  ],
+  "lowscore": true,
+  "pay": "$26\u2013$30/hr",
+  "priority": false,
+  "rationale": "Field crew supervisor for residential solar installation, trade-level.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Senior Solar Crew Leader",
+  "url": "https://www.indeed.com/viewjob?jk=ee0dc5b9b0f5d1f2",
   "work_mode": "onsite"
  },
  "2ae7e9759cccd97c": {
@@ -26145,6 +26444,34 @@
   "title": "Electrical Engineer (M.S. or Ph.D.)",
   "url": "https://www.indeed.com/viewjob?jk=cf62dc401d297375",
   "work_mode": "onsite"
+ },
+ "2e45e662da6e0110": {
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001mIjUAI_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1472245371388094%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D41e46ed0-b941-11f1-93ba-c10d50ccb635%26rx_job%3Da1KiE0000001mIjUAI_1005%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20260926T160404Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "band": "possible",
+  "company": "Meta",
+  "date_posted": "2026-09-23",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Chicago, IL, US",
+  "locations": [
+   "Chicago, IL, US",
+   "San Francisco, CA, US"
+  ],
+  "pay": "$154,000\u2013$200,000/yr",
+  "priority": false,
+  "rationale": "Site development execution (entitlements, permitting, construction) at Meta \u2014 development execution roles band possible per prior calibration, not strong.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Data Center Development Manager",
+  "url": "https://www.indeed.com/viewjob?jk=d47bbf003553f9ee",
+  "work_mode": ""
  },
  "2e4faf1009038ee3": {
   "active": false,
@@ -30079,6 +30406,33 @@
   "url": "https://www.indeed.com/viewjob?jk=7c34c55953c7caf4",
   "work_mode": ""
  },
+ "3526676b15b5943f": {
+  "apply_url": "https://careers.qcells.com/jobs/18283963-manager-module-product-management?tm_job=JR-2026-1855-OTHLOC-CvXLYfwV&tm_event=view&tm_company=92338",
+  "band": "possible",
+  "company": "Qcells",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Remote, US",
+  "locations": [
+   "Remote, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Product management role but for PV modules/EPC, not battery/grid/datacenter \u2014 adjacent domain, mid-level manager scope.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager, Module Product Management",
+  "url": "https://www.indeed.com/viewjob?jk=a4795c12dd76821d",
+  "work_mode": "remote"
+ },
  "353b4b2e9aca7ac0": {
   "band": "weak",
   "company": "ServiceTitan",
@@ -30368,7 +30722,7 @@
   "source": "greenhouse",
   "title": "Electrical Engineer",
   "url": "https://job-boards.greenhouse.io/hut8/jobs/5395784008",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "35a9f29c7cb9efe1": {
   "active": false,
@@ -34682,7 +35036,9 @@
   "work_mode": ""
  },
  "3e59f0e19801e47c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-26",
   "company": "ABB",
   "date_posted": "2026-09-04",
   "first_seen": "2026-09-05",
@@ -35903,7 +36259,9 @@
   "work_mode": "onsite"
  },
  "40bd7ba026a53c6f": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-26",
   "company": "Sawnee EMC",
   "date_posted": "2026-09-10",
   "first_seen": "2026-09-14",
@@ -36337,6 +36695,36 @@
   "title": "Cloud Storage Integration Engineer (Storage / Image / Registry)",
   "url": "https://bitdeer.breezy.hr/p/0781b7282214-cloud-storage-integration-engineer-storage-image-registry",
   "work_mode": ""
+ },
+ "416dc875f7c74e0c": {
+  "active": false,
+  "apply_url": "https://solvenergy.wd1.myworkdayjobs.com/SOLV_External_Career/job/Irrigon-OR/EPC-Project-Engineer--Irrigon--OR-_J13941",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "SOLV Energy",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Irrigon, OR, US",
+  "locations": [
+   "Irrigon, OR, US"
+  ],
+  "lowscore": true,
+  "pay": "$72,000\u2013$90,000/yr",
+  "priority": false,
+  "rationale": "Field service/technician-level solar equipment role under supervision.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "EPC Project Engineer (Irrigon, OR)",
+  "url": "https://www.indeed.com/viewjob?jk=952278b4dd3d09c9",
+  "work_mode": "remote"
  },
  "419bfb78f6f368f8": {
   "band": "possible",
@@ -38920,6 +39308,33 @@
   "title": "Master Electrician - Battery Energy Storage Systems (BESS)",
   "url": "https://www.indeed.com/viewjob?jk=c2106d74b4c213d9"
  },
+ "465c17655be7e611": {
+  "apply_url": "",
+  "band": "top",
+  "company": "PG&E",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Principal role leading predictive/state-aware grid analytics (ML, physics-based models, DSSE) \u2014 exactly the technical+data integration thesis at a senior IC/leadership level.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal, Quantitative Power System Analyst",
+  "url": "https://careers.pge.com/job/Oakland-Principal%2C-Quantitative-Power-System-Analyst-CA-94612/1410322000/",
+  "work_mode": "hybrid"
+ },
  "46611a154d6af9e4": {
   "active": false,
   "band": "weak",
@@ -39091,6 +39506,36 @@
   "title": "Customer Value Architect - USA (Seattle)",
   "url": "https://jobs.ashbyhq.com/neara/64f65448-84a4-43c0-8d5d-c6957904bc94",
   "work_mode": "remote"
+ },
+ "46e8b45da30d8761": {
+  "active": false,
+  "apply_url": "https://careers-enfra.icims.com/jobs/11286/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "ENFRA",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Philadelphia, PA, US",
+  "locations": [
+   "Philadelphia, PA, US"
+  ],
+  "lowscore": true,
+  "pay": "$101,610\u2013$152,662/yr",
+  "priority": true,
+  "rationale": "Junior PE design engineer role under supervision, deep technical design IC.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Electrical Engineer, PE I",
+  "url": "https://www.indeed.com/viewjob?jk=c33af3c17a75937b",
+  "work_mode": ""
  },
  "46f7201f5ba585ef": {
   "band": "weak",
@@ -39925,7 +40370,9 @@
   "work_mode": ""
  },
  "48528ffa127c146c": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-26",
   "company": "Microsoft",
   "date_posted": "2026-07-17",
   "first_seen": "2026-08-13",
@@ -43542,6 +43989,37 @@
   "url": "https://www.indeed.com/viewjob?jk=7c46a6db36df197e",
   "work_mode": ""
  },
+ "4fbeefeaf4750460": {
+  "active": false,
+  "apply_url": "https://grnh.se/8cx49uq92us",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "SpaceX",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Cape Canaveral, FL, US",
+  "locations": [
+   "Cape Canaveral, FL, US",
+   "Cape Canaveral, FL"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Hands-on data center hardware/IT infrastructure administration \u2014 wrong field per prior calibration on IT infra roles.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "greenhouse",
+  "title": "Sr. Data Center Administrator",
+  "url": "https://job-boards.greenhouse.io/spacex/jobs/8846102002",
+  "work_mode": "onsite"
+ },
  "4fc0517db9a41c5f": {
   "active": false,
   "band": "misfit",
@@ -44811,7 +45289,9 @@
   "work_mode": ""
  },
  "520d091c4bf1ce9c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-26",
   "company": "Deutsche Bank",
   "date_posted": "2026-09-17",
   "first_seen": "2026-09-18",
@@ -47956,7 +48436,8 @@
    "Gilroy, CA, US, 95020",
    "Concord, CA, US, 94518",
    "Hayward, CA, US, 94545",
-   "Danville, CA, US, 94583"
+   "Danville, CA, US, 94583",
+   "Daly City, CA, US, 94014"
   ],
   "pay": "",
   "priority": false,
@@ -50804,7 +51285,9 @@
   "work_mode": ""
  },
  "5d83e21ef0953fab": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-26",
   "company": "Vertiv",
   "date_posted": "2026-09-10",
   "first_seen": "2026-09-11",
@@ -51292,7 +51775,9 @@
   "work_mode": "remote"
  },
  "5e8c086e9967faff": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-26",
   "company": "E Source",
   "date_posted": "2026-09-09",
   "first_seen": "2026-09-09",
@@ -51921,6 +52406,36 @@
   "title": "Construction Superintendent, Solar Manufacturing Tool Install",
   "url": "https://www.indeed.com/viewjob?jk=386549db8d00df51",
   "work_mode": ""
+ },
+ "5fb4636411bb7ddb": {
+  "active": false,
+  "apply_url": "https://jobs.totalenergies.com/fr_FR/careers/JobDetail/Operations-Manager-Georgia/84499",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "TotalEnergies",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Conyers, GA, US",
+  "locations": [
+   "Conyers, GA, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Field O&M asset management for solar/storage plants is hands-on operations, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Operations Manager-Georgia",
+  "url": "https://www.indeed.com/viewjob?jk=780cd5c8a5c0588c",
+  "work_mode": "remote"
  },
  "5fb84f922230c643": {
   "active": false,
@@ -53504,7 +54019,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Senior Director, Data Center Operations",
-  "url": "https://www.indeed.com/viewjob?jk=ab4c93f8602a8e21",
+  "url": "https://www.indeed.com/viewjob?jk=fc4d999ac088589b",
   "work_mode": ""
  },
  "6269226623cb9437": {
@@ -54791,6 +55306,36 @@
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4765401101",
   "work_mode": "remote"
  },
+ "646c6d8d2e161331": {
+  "active": false,
+  "apply_url": "https://www.careers.ford.com/job/dearborn/technical-writer-documentation-engineer-ford-energy/48560/101146751600",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Ford Motor Company",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Dearborn, MI, US",
+  "locations": [
+   "Dearborn, MI, US"
+  ],
+  "lowscore": true,
+  "pay": "$74,300\u2013$166,200/yr",
+  "priority": true,
+  "rationale": "Documentation/document-control engineering IC role, unrelated to product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Technical Writer/Documentation Engineer, Ford Energy",
+  "url": "https://www.indeed.com/viewjob?jk=22fd85077a3780ce",
+  "work_mode": "hybrid"
+ },
  "646e2b66d5b6adba": {
   "band": "weak",
   "company": "Form Energy",
@@ -55469,6 +56014,36 @@
   "title": "Mechanical Design Engineer - Data Centers",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4956471101",
   "work_mode": "hybrid"
+ },
+ "659bd203fbb398d6": {
+  "active": false,
+  "apply_url": "",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "ONENERGY",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Miami, Florida, United States",
+  "locations": [
+   "Miami, Florida, United States"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Branding/marketing coordinator, unrelated corporate function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "greenhouse",
+  "title": "Branding Coordinator",
+  "url": "https://job-boards.greenhouse.io/onenergy/jobs/4421734009",
+  "work_mode": "onsite"
  },
  "65bdf6e5ee0712f6": {
   "active": true,
@@ -58858,6 +59433,33 @@
   "url": "https://www.indeed.com/viewjob?jk=b194cab0c07f8fe6",
   "work_mode": ""
  },
+ "6ca99fb8ede43b61": {
+  "apply_url": "https://calsolarinc.bamboohr.com/careers/211?source=indeed&src=indeed&postedDate=2026-09-25",
+  "band": "weak",
+  "company": "Cal Solar Inc",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "San Diego, CA, US",
+  "locations": [
+   "San Diego, CA, US"
+  ],
+  "pay": "$100,000\u2013$140,000/yr",
+  "priority": true,
+  "rationale": "Deep technical design coordination/client-facing engineering management for solar/BESS design firm \u2014 too far from product/strategy scope per prior calibration on design IC/leadership roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Design Manager",
+  "url": "https://www.indeed.com/viewjob?jk=bb7d4325a37fd342",
+  "work_mode": "remote"
+ },
  "6cbff8efb58c2fd4": {
   "active": false,
   "band": "misfit",
@@ -59428,6 +60030,35 @@
   "source": "indeed",
   "title": "BESS Solutions Engineer",
   "url": "https://www.indeed.com/viewjob?jk=7d22a8b8ae8af33e"
+ },
+ "6dcdfa2816c3120f": {
+  "apply_url": "https://solvenergy.wd1.myworkdayjobs.com/SOLV_External_Career/job/San-Diego-CA-Renewable-Group/Procurement-Category-Manager--Substation---Distribution_J13949",
+  "band": "weak",
+  "company": "SOLV Energy",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "San Diego, CA, US",
+  "locations": [
+   "San Diego, CA, US",
+   "Dallas, TX, US",
+   "Denver, CO, US"
+  ],
+  "pay": "$104,554\u2013$130,692/yr",
+  "priority": true,
+  "rationale": "Procurement/category management for BESS/substation components \u2014 supply chain function, not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Procurement Category Manager, Substation & Distribution",
+  "url": "https://www.indeed.com/viewjob?jk=03d76e07eb4e9f2d",
+  "work_mode": "hybrid"
  },
  "6df3d46e4eeb1dc8": {
   "active": false,
@@ -62807,6 +63438,36 @@
   "url": "https://www.indeed.com/viewjob?jk=4e6baec9f08e1024",
   "work_mode": "remote"
  },
+ "739b636f62812abb": {
+  "active": false,
+  "apply_url": "https://invenergyllc.wd1.myworkdayjobs.com/en-US/invenergycareers/job/Strykersville-NY/O-M-Manager_R11525",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Invenergy",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Strykersville, NY, US",
+  "locations": [
+   "Strykersville, NY, US"
+  ],
+  "lowscore": true,
+  "pay": "$115,000\u2013$155,000/yr",
+  "priority": false,
+  "rationale": "Hands-on wind/battery O&M field role including tower climbing, technician-adjacent.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "O&M Manager",
+  "url": "https://www.indeed.com/viewjob?jk=776df30f72497282",
+  "work_mode": "onsite"
+ },
  "73b5209bbda60bd1": {
   "active": false,
   "band": "misfit",
@@ -64037,6 +64698,33 @@
   "source": "indeed",
   "title": "Inspector II, Asset Protection (Gas Utility)",
   "url": "https://www.indeed.com/viewjob?jk=a92952fe40bc72bc",
+  "work_mode": "onsite"
+ },
+ "75e6a14a5a3b51c3": {
+  "apply_url": "https://grnh.se/98mqdnsl9us",
+  "band": "weak",
+  "company": "ONENERGY",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Dallas, TX, US",
+  "locations": [
+   "Dallas, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Manufacturing/production management for UPS skids at ON.energy \u2014 floor-based manufacturing ops, not the product/commercial strategy scope that scores top at this employer.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Supplier Manufacturing Manager \u2013 Energy Storage Skids",
+  "url": "https://www.indeed.com/viewjob?jk=d6816fc8e93e5e34",
   "work_mode": "onsite"
  },
  "75eb42a9edcc4473": {
@@ -68567,6 +69255,33 @@
   "url": "https://jobs.ashbyhq.com/crusoe/23b5f7b3-d184-4a43-8cb2-1ff3b0b96903",
   "work_mode": ""
  },
+ "7eccb1aea08c87cd": {
+  "apply_url": "https://careers.jacobs.com/en_US/careers/JobDetail/Utility-Transmission-Planning-Manager/45919",
+  "band": "possible",
+  "company": "Jacobs",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Boston, MA, US",
+  "locations": [
+   "Boston, MA, US"
+  ],
+  "pay": "$150,000\u2013$230,000/yr",
+  "priority": true,
+  "rationale": "Manages a team of transmission planning/study engineers at a consulting firm \u2014 interconnection/transmission-adjacent but deep-technical study consulting scores 50-60 per prior calibration.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Utility Transmission Planning Manager",
+  "url": "https://www.indeed.com/viewjob?jk=96ece5b69c912709",
+  "work_mode": "remote"
+ },
  "7ece6b359bf8cd26": {
   "active": false,
   "band": "misfit",
@@ -72929,7 +73644,8 @@
    "STERLING CITY, TX, US, 76951",
    "Mt Calm, TX, US, 76673",
    "Buckeye, AZ, US, 85326",
-   "Waynesboro, GA, US, 30830"
+   "Waynesboro, GA, US, 30830",
+   "Duncan, OK, US, 73533"
   ],
   "pay": "",
   "priority": true,
@@ -75186,6 +75902,33 @@
   "url": "https://www.indeed.com/viewjob?jk=c828b20a352d39bc",
   "work_mode": "remote"
  },
+ "8a4187bf4be5ee09": {
+  "apply_url": "https://aligneddc.wd12.myworkdayjobs.com/aligneddc/job/PHX-07/Director--Operations_JR101229",
+  "band": "possible",
+  "company": "Aligned Data Centers",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Waddell, AZ, US",
+  "locations": [
+   "Waddell, AZ, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director-level datacenter facilities/critical-infrastructure operations leadership \u2014 senior scope but O&M/facilities operations, not BESS/grid product-strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Operations",
+  "url": "https://www.indeed.com/viewjob?jk=fa0a8b87687eec5d",
+  "work_mode": "remote"
+ },
  "8a43aade4a99c406": {
   "active": false,
   "band": "misfit",
@@ -75303,8 +76046,9 @@
   "work_mode": ""
  },
  "8adbd375a10fd23c": {
-  "active": true,
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-26",
   "company": "Amazon.com",
   "date_posted": "2026-03-17",
   "first_seen": "2026-09-09",
@@ -78828,6 +79572,33 @@
   "url": "https://www.indeed.com/viewjob?jk=34b6857355292ce3",
   "work_mode": ""
  },
+ "90a6b2cf35b375c5": {
+  "apply_url": "https://careers-enfra.icims.com/jobs/11290/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
+  "band": "weak",
+  "company": "ENFRA",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Glenolden, PA, US",
+  "locations": [
+   "Glenolden, PA, US"
+  ],
+  "pay": "$134,430\u2013$201,922/yr",
+  "priority": true,
+  "rationale": "Senior IC electrical design engineering role (PE III) \u2014 deep technical design work, too far from product/strategy per prior calibration.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Electrical Engineer PE III",
+  "url": "https://www.indeed.com/viewjob?jk=b6df75e4c6226f6a",
+  "work_mode": ""
+ },
  "90c84601729f8fa6": {
   "band": "misfit",
   "company": "SpaceX",
@@ -80523,7 +81294,8 @@
    "Salinas, CA, US, 93901",
    "San Jose, CA, US, 95126",
    "Lakeport, CA, US, 95453",
-   "Stockton, CA, US, 95204"
+   "Stockton, CA, US, 95204",
+   "Fresno, CA, US, 93720"
   ],
   "pay": "$129,000 - $168,000.",
   "priority": false,
@@ -80645,7 +81417,9 @@
   "work_mode": ""
  },
  "946990c0d2e267b9": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-26",
   "company": "E Source",
   "date_posted": "2026-09-09",
   "first_seen": "2026-09-09",
@@ -83345,7 +84119,8 @@
   "first_seen_at": "2026-09-25T20:42:13Z",
   "location": "Bellevue, WA / Livingston, NJ / New York, NY / San Francisco, CA / Sunnyvale, CA",
   "locations": [
-   "Bellevue, WA / Livingston, NJ / New York, NY / San Francisco, CA / Sunnyvale, CA"
+   "Bellevue, WA / Livingston, NJ / New York, NY / San Francisco, CA / Sunnyvale, CA",
+   "Bellevue, WA / New York, NY"
   ],
   "pay": "$160,000 - $215,000.",
   "priority": false,
@@ -92039,7 +92814,8 @@
   "locations": [
    "",
    "Rocklin, CA, US, 95765",
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583"
   ],
   "pay": "",
   "priority": false,
@@ -93297,7 +94073,8 @@
    "North Palm Beach, FL, US, 33408",
    "Duncan, OK, US, 73533",
    "Ft Myers, FL, US, 33902",
-   "HOLLANDALE, MS, US, 38748"
+   "HOLLANDALE, MS, US, 38748",
+   "ROSELAND, LA, US, 70456"
   ],
   "pay": "",
   "priority": false,
@@ -93790,7 +94567,9 @@
   "work_mode": "hybrid"
  },
  "acc3a59f538a4ff4": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-26",
   "company": "GE Vernova",
   "date_posted": "",
   "first_seen": "2026-09-08",
@@ -94037,6 +94816,33 @@
   "title": "Senior Electrical Design Engineer (onsite)",
   "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Largo-Florida-United-States-of-America/Senior-Electrical-Engineer--onsite-_WD30269772",
   "work_mode": "onsite"
+ },
+ "ad04448c380395c9": {
+  "apply_url": "https://www.careers.ford.com/job/dearborn/manager-battery-management-systems-ford-energy/48560/101152648368",
+  "band": "possible",
+  "company": "Ford Motor Company",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Dearborn, MI, US",
+  "locations": [
+   "Dearborn, MI, US"
+  ],
+  "pay": "$141,700\u2013$268,300/yr",
+  "priority": true,
+  "rationale": "BMS engineering leadership for BESS \u2014 battery domain and program ownership are pluses, but deliverables are hardware/controls engineering, not product/commercial strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager, Battery Management Systems, Ford Energy",
+  "url": "https://www.indeed.com/viewjob?jk=e1f850ca0f42708d",
+  "work_mode": "hybrid"
  },
  "ad134f7bd6448949": {
   "active": false,
@@ -94468,6 +95274,36 @@
   "source": "greenhouse",
   "title": "Fleet Engineering Project Manager, Data Center",
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4696057006",
+  "work_mode": ""
+ },
+ "add88122a006bffc": {
+  "active": false,
+  "apply_url": "https://jobs.ashbyhq.com/tae-power-solutions/4d790389-c306-49c3-8e26-6fad498d4bd3?utm_source=o2OyAmaNYD",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "TAE Power Solutions",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Irvine, CA, US",
+  "locations": [
+   "Irvine, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$100,000\u2013$130,000/yr",
+  "priority": true,
+  "rationale": "IC test automation engineering role for BESS validation, deep technical/hardware focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Product Validation Automation Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=580437cfc21c76ff",
   "work_mode": ""
  },
  "add998d30305ebda": {
@@ -95517,7 +96353,8 @@
    "Fresno, CA, US, 93720",
    "San Ramon, CA, US, 94583",
    "West Sacramento, CA, US, 95605",
-   "Danville, CA, US, 94583"
+   "Danville, CA, US, 94583",
+   "Daly City, CA, US, 94014"
   ],
   "pay": "$144,000.00",
   "priority": true,
@@ -96545,8 +97382,9 @@
   "work_mode": ""
  },
  "b17dfebb17cfddcd": {
-  "active": true,
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-26",
   "company": "Amazon",
   "date_posted": "2026-06-03",
   "first_seen": "2026-08-13",
@@ -98566,6 +99404,36 @@
   "url": "https://www.indeed.com/viewjob?jk=70585f30202a6c31",
   "work_mode": ""
  },
+ "b601149a5c9d7c0c": {
+  "active": false,
+  "apply_url": "https://jobs.ashbyhq.com/tae-power-solutions/ac626ac3-d2e0-448b-868a-d4279cabef3c?utm_source=o2OyAmaNYD",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "TAE Power Solutions",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Irvine, CA, US",
+  "locations": [
+   "Irvine, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$100,000\u2013$130,000/yr",
+  "priority": true,
+  "rationale": "IC hardware validation/test execution role, deep technical.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Product Validation Test Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=24b6275bf9884cef",
+  "work_mode": ""
+ },
  "b605ac69a8429216": {
   "active": false,
   "band": "possible",
@@ -99121,6 +99989,36 @@
   "title": "Vice President Operations - Data Center (DTC)",
   "url": "https://www.indeed.com/viewjob?jk=85ea3fc942c9596d",
   "work_mode": ""
+ },
+ "b7344c93fa5919a7": {
+  "active": false,
+  "apply_url": "https://careers.cboe.com/us/en/job/R-4630/Data-Center-Engineer",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Cboe Global Markets",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Chicago, IL, US",
+  "locations": [
+   "Chicago, IL, US"
+  ],
+  "lowscore": true,
+  "pay": "$102,850\u2013$133,100/yr",
+  "priority": false,
+  "rationale": "Hands-on data center cabling/hardware installation on a fixed shift schedule, technician-level IT infrastructure work.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=d127be51a1f8eab0",
+  "work_mode": "onsite"
  },
  "b73605f4a53e6c43": {
   "active": false,
@@ -105377,6 +106275,33 @@
   "url": "https://www.indeed.com/viewjob?jk=922b20849ab36823",
   "work_mode": "remote"
  },
+ "c24fa75cf516378d": {
+  "apply_url": "https://jobs.totalenergies.com/fr_FR/careers/JobDetail/Senior-Manager-Remote-Operations-Center/84500",
+  "band": "weak",
+  "company": "TotalEnergies",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Austin, TX, US",
+  "locations": [
+   "Austin, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Building/operating a mission-critical SCADA/EMS control room and 24/7 shift org is grid operations infrastructure, not product/strategy/finance integration.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Manager, Remote Operations Center",
+  "url": "https://www.indeed.com/viewjob?jk=875eaddf614aaffe",
+  "work_mode": "remote"
+ },
  "c253b7190c61001b": {
   "apply_url": "",
   "band": "possible",
@@ -108918,6 +109843,33 @@
   "url": "https://www.indeed.com/viewjob?jk=78252e8eff73cf70",
   "work_mode": "onsite"
  },
+ "c9e46203dcdccbfb": {
+  "apply_url": "https://jobs.lever.co/pivotenergy/3632a3c5-977b-4fcc-a0b2-06eff66a96ba",
+  "band": "weak",
+  "company": "Pivot Energy",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Baltimore, MD, US",
+  "locations": [
+   "Baltimore, MD, US"
+  ],
+  "pay": "$90,000\u2013$135,000/yr",
+  "priority": true,
+  "rationale": "Site diligence/permitting/land development IC role for storage projects \u2014 development execution work the candidate supports but doesn't own, and title is not senior.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Developer",
+  "url": "https://www.indeed.com/viewjob?jk=28b4800ecacabba6",
+  "work_mode": "remote"
+ },
  "c9ecc6ab04083ba5": {
   "band": "possible",
   "company": "SB Energy",
@@ -110113,6 +111065,36 @@
   "url": "https://www.indeed.com/viewjob?jk=73745dae09a342e6",
   "work_mode": "onsite"
  },
+ "cbcee51d4daa0549": {
+  "active": false,
+  "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=cf8485e4-40dd-48d4-a828-d244162d4393&ccId=19000101_000001&jobId=547488&source=IN&lang=en_US",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Atlanta, GA, US",
+  "locations": [
+   "Atlanta, GA, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Graduate internship, junior by definition.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "SUSTAINABILITY & ENERGY PLANNING NTERN",
+  "url": "https://www.indeed.com/viewjob?jk=3339e992d5de1900",
+  "work_mode": "hybrid"
+ },
  "cbd1d7fafb65f954": {
   "band": "weak",
   "company": "AES Corporation",
@@ -110956,6 +111938,36 @@
   "source": "workday",
   "title": "Energy Storage Electrical Superintendent (AZ, NM, TX)",
   "url": "https://solvenergy.wd1.myworkdayjobs.com/en-US/SOLV_External_Career/job/Faben-TX/Energy-Storage-Electrical-Superintendent--AZ--NM--TX-_J13906",
+  "work_mode": "onsite"
+ },
+ "cd2440f76e1edc79": {
+  "active": false,
+  "apply_url": "",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Juno Beach, FL, US, 33408",
+  "locations": [
+   "Juno Beach, FL, US, 33408"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Construction-delivery project management for natural gas pipeline/compression infrastructure \u2014 wrong domain (gas, not electric grid/BESS) and execution-focused per prior construction-leadership feedback.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Senior Manager of Projects - E&amp;C",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Senior-Manager-of-Projects-E&amp;C-FL-33408/1414258100/",
   "work_mode": "onsite"
  },
  "cd24d37b7cba5421": {
@@ -112449,6 +113461,33 @@
   "url": "https://www.edisoncareers.com/job/23452087/district-planning-advisor-goleta-ca/",
   "work_mode": "hybrid"
  },
+ "cfa01ef0673d26dd": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "PG&E",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "",
+  "locations": [
+   ""
+  ],
+  "pay": "$184,000",
+  "priority": false,
+  "rationale": "Quality Management System/process liaison role for PG&E Electric T&D \u2014 process/compliance focus, not grid product/strategy/data integration.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Expert Business System Specialist, GIS Strategy",
+  "url": "https://careers.pge.com/job/Oakland-Expert-Business-System-Specialist%2C-GIS-Strategy-CA-94612/1407067600/",
+  "work_mode": "hybrid"
+ },
  "cfc50a0a9656b17e": {
   "active": false,
   "band": "misfit",
@@ -113085,6 +114124,33 @@
   "source": "greenhouse",
   "title": "Security Architect Manager (Corporate & Cloud Security)",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4827753101",
+  "work_mode": "hybrid"
+ },
+ "d11b4129de1dd128": {
+  "apply_url": "",
+  "band": "strong",
+  "company": "PG&E",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Oakland, CA, US, 94612",
+  "locations": [
+   "Oakland, CA, US, 94612"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Energy market/procurement policy strategy for PG&E's decarbonization roadmap \u2014 core HIGH-category fit (energy markets/procurement), senior analyst scope reads substantial despite non-director title.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Senior Market and Procurement Policy Analyst",
+  "url": "https://careers.pge.com/job/Oakland-Senior-Market-and-Procurement-Policy-Analyst-CA-94612/1434126200/",
   "work_mode": "hybrid"
  },
  "d122843d9390252f": {
@@ -114027,6 +115093,33 @@
   "title": "Member of Technical Staff - Grid Services",
   "url": "https://jobs.ashbyhq.com/emerald-ai/19f635ce-0b91-437f-a3a9-60594cd78108",
   "work_mode": "remote"
+ },
+ "d29f834771f614e2": {
+  "apply_url": "https://nextracker.wd5.myworkdayjobs.com/en-US/nextpower_careers/job/San-Jose-California---USA/Director-of-Operations_NX-4775",
+  "band": "weak",
+  "company": "NextPower",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "San Jose, CA, US",
+  "locations": [
+   "San Jose, CA, US"
+  ],
+  "pay": "$200,000\u2013$220,000/yr",
+  "priority": true,
+  "rationale": "Director title but scope is bid/proposal operations alignment across sales/sourcing/engineering for solar hardware, not BESS/grid strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director of Operations",
+  "url": "https://www.indeed.com/viewjob?jk=4504101af9f5b53f",
+  "work_mode": ""
  },
  "d2a15f6bfa7aff40": {
   "active": false,
@@ -115293,6 +116386,33 @@
   "source": "indeed",
   "title": "DevOps and Infrastructure Engineer",
   "url": "https://www.indeed.com/viewjob?jk=9a084932bbeae091",
+  "work_mode": "remote"
+ },
+ "d5352cdaa27ad1a0": {
+  "apply_url": "https://careers.icf.com/us/en/job/IIIIIIUSR2603196EXTERNALENUS/Senior-Manager-Project-Management-Power-Delivery?utm_source=indeed&utm_medium=phenom-feeds",
+  "band": "possible",
+  "company": "ICF",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Reston, VA, US",
+  "locations": [
+   "Reston, VA, US"
+  ],
+  "pay": "$98,614\u2013$167,644/yr",
+  "priority": true,
+  "rationale": "Senior leadership of a PM organization for utility grid engineering/consulting projects \u2014 adjacent to interconnection/grid strategy but is project-delivery management, not product/strategy ownership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Manager, Project Management-Power Delivery",
+  "url": "https://www.indeed.com/viewjob?jk=62a6e86716494b10",
   "work_mode": "remote"
  },
  "d53f686294d29031": {
@@ -118643,7 +119763,9 @@
   "work_mode": ""
  },
  "dcbeffe9bfe88238": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-26",
   "company": "Enterprise Products",
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-25",
@@ -122290,6 +123412,33 @@
   "url": "https://equinix.wd1.myworkdayjobs.com/en-US/External/job/Singapore/Data-Center-Critical-Facilities-III_JR-162833",
   "work_mode": ""
  },
+ "e398a08ddd08c851": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Brookfield",
+  "date_posted": "",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "New York, New York",
+  "locations": [
+   "New York, New York"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Deal-execution investment associate role in energy capital partnerships \u2014 per prior calibration these score 50-65 as a finance-first career track, and associate level is junior for the target seniority.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Associate/Senior Associate, Capital Partnerships, Energy",
+  "url": "https://brookfield.wd5.myworkdayjobs.com/en-US/brookfield/job/New-York-New-York/Associate-Senior-Associate--Capital-Partnerships--Energy_R2052433",
+  "work_mode": ""
+ },
  "e399ad34efe895c0": {
   "active": false,
   "band": "misfit",
@@ -122660,6 +123809,33 @@
   "title": "Site Lead, Data Center Operations",
   "url": "https://www.indeed.com/viewjob?jk=17818ea67f37a0aa",
   "work_mode": "remote"
+ },
+ "e447f4f370a5ed33": {
+  "apply_url": "https://www.careers.ford.com/job/dearborn/customer-accreditation-bankability-and-audits-engineer-ford-energy/48560/101146751664",
+  "band": "weak",
+  "company": "Ford Motor Company",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Dearborn, MI, US",
+  "locations": [
+   "Dearborn, MI, US"
+  ],
+  "pay": "$74,300\u2013$166,200/yr",
+  "priority": true,
+  "rationale": "Bankability/audit engineering role touches project finance and BESS, but is an IC compliance-documentation role, not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Customer Accreditation, Bankability and Audits Engineer, Ford Energy",
+  "url": "https://www.indeed.com/viewjob?jk=62d5b21f693796d9",
+  "work_mode": "hybrid"
  },
  "e4499d4dcc644978": {
   "band": "weak",
@@ -123572,6 +124748,37 @@
   "title": "Assembly Line Production Worker",
   "url": "https://www.indeed.com/viewjob?jk=d63d8b9ec3ad1ec3",
   "work_mode": ""
+ },
+ "e58a3faabf8f74c0": {
+  "active": false,
+  "apply_url": "https://click.appcast.io/t/1uR-D_yxO5f_xZ7_qgdOY2dVjPYxJ_C8Sep9ynlrAko=",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Johnson Controls",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Capitol Heights, MD, US",
+  "locations": [
+   "Capitol Heights, MD, US",
+   "Lubbock, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Union HVAC service technician role, trade-level.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Mech Svc Tech Jrny",
+  "url": "https://www.indeed.com/viewjob?jk=54c14f57920b0c01",
+  "work_mode": "onsite"
  },
  "e58ff35823e0631a": {
   "active": false,
@@ -124787,6 +125994,33 @@
   "title": "Project Engineer - BESS",
   "url": "https://job-boards.greenhouse.io/onenergy/jobs/4214871009",
   "work_mode": "hybrid"
+ },
+ "e7fd32e5bfa28cb0": {
+  "apply_url": "https://careers.se.com/jobs/135679/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
+  "band": "weak",
+  "company": "Schneider Electric",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Andover, MA, US",
+  "locations": [
+   "Andover, MA, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director leading an embedded software/firmware/controls engineering org \u2014 deep embedded-systems technical leadership, out of skillset per prior calibration on controls/firmware roles.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Innovation and Technology Management",
+  "url": "https://www.indeed.com/viewjob?jk=2346a515eb2fa225",
+  "work_mode": ""
  },
  "e7fe6a0e757547da": {
   "active": false,
@@ -128590,8 +129824,9 @@
   "work_mode": ""
  },
  "ef1d4b100e7ca430": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-26",
   "company": "Koch",
   "date_posted": "2026-08-27",
   "duplicate": true,
@@ -129375,7 +130610,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Portfolio Manager",
-  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Portfolio-Manager-FL-33408/1393044100/",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Portfolio-Manager-FL-33408/1396022900/",
   "work_mode": ""
  },
  "f0354e0e69542bbf": {
@@ -130570,7 +131805,8 @@
   "locations": [
    "WEBSTER, KY, US, 42450",
    "Palm Beach Gardens, FL, US, 33410",
-   "Brinkley, AR, US, 72021"
+   "Brinkley, AR, US, 72021",
+   "Tucson, AZ, US, 85756"
   ],
   "pay": "",
   "priority": false,
@@ -131493,6 +132729,36 @@
   "title": "Project Manager - Transmission & Distribution- Michels Power, Inc.",
   "url": "https://www.indeed.com/viewjob?jk=f180d5e34b5afd3d",
   "work_mode": "onsite"
+ },
+ "f47f5fea5ade6d11": {
+  "active": false,
+  "apply_url": "",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "Nextracker",
+  "date_posted": "",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Operations leadership at a solar/storage hardware company, but manufacturing/ops execution has no product, strategy, or grid-integration overlap with the candidate's target roles.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Director of Operations",
+  "url": "https://nextracker.wd5.myworkdayjobs.com/en-US/nextpower_careers/job/San-Jose-California---USA/Director-of-Operations_NX-4775",
+  "work_mode": ""
  },
  "f499a625271f79cb": {
   "active": false,
@@ -133315,6 +134581,36 @@
   "url": "https://careers.pge.com/job/Auberry-Power-Generation-Project-Engineer-%28Electrical%29-CA-93602/1379856200/",
   "work_mode": ""
  },
+ "f7e033e494d8d7ac": {
+  "active": false,
+  "apply_url": "https://solvenergy.wd1.myworkdayjobs.com/SOLV_External_Career/job/Flagstaff-AZ/Energy-Storage-Project-Engineer--Flagstaff--AZ-_J13951-1",
+  "band": "misfit",
+  "closed": "2026-09-26",
+  "company": "SOLV Energy",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T17:53:01Z",
+  "location": "Flagstaff, AZ, US",
+  "locations": [
+   "Flagstaff, AZ, US"
+  ],
+  "lowscore": true,
+  "pay": "$74,124\u2013$92,655/yr",
+  "priority": false,
+  "rationale": "Field/construction project engineer role with document control duties, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T17:55Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Energy Storage Project Engineer (Flagstaff, AZ)",
+  "url": "https://www.indeed.com/viewjob?jk=b9a6dcea6f31f854",
+  "work_mode": "onsite"
+ },
  "f7e03839f08c1472": {
   "active": false,
   "band": "misfit",
@@ -134795,17 +136091,20 @@
   "work_mode": "onsite"
  },
  "faaef3c4afc51ba2": {
-  "apply_url": "",
+  "apply_url": "https://eversource.wd1.myworkdayjobs.com/ExternalSite/job/Hartford-CT/Senior-Engineer--ISO-Policy-and-Economic-Analysis--Transmission--hybrid-schedule-_R-032005",
   "band": "strong",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-25",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "3 Locations",
   "locations": [
-   "3 Locations"
+   "3 Locations",
+   "Manchester, NH, US",
+   "Westwood, MA, US",
+   "Hartford, CT, US"
   ],
-  "pay": "",
+  "pay": "$129,450\u2013$143,830/yr",
   "priority": false,
   "rationale": "ISO policy and economic analysis for transmission matches the energy-markets/finance side of the thesis despite the engineer title.",
   "score": 75,
@@ -136105,7 +137404,9 @@
   "work_mode": ""
  },
  "fd24091cbfb7a9a3": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-26",
   "company": "Koch",
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-27",
