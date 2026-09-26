@@ -26315,6 +26315,33 @@
   "url": "https://www.indeed.com/viewjob?jk=cafa135bcbbc4f84",
   "work_mode": ""
  },
+ "2e28b1ff7589f648": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Pivot Energy",
+  "date_posted": "2026-06-12",
+  "first_seen": "2026-09-26",
+  "first_seen_at": "2026-09-26T19:50:08Z",
+  "location": "Denver, Colorado",
+  "locations": [
+   "Denver, Colorado"
+  ],
+  "pay": "$140,000\u2013$180,000/yr",
+  "priority": false,
+  "rationale": "Director-level but centered on solar/storage construction and project-delivery execution management, not BESS product/commercial strategy or energy-market/interconnection work \u2014 matches the pattern of construction-delivery leadership roles scoring weak.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-26T19:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "lever",
+  "title": "Director, Project Management",
+  "url": "https://jobs.lever.co/pivotenergy/b2b88b94-07eb-4ec6-976b-0615156cc9f7",
+  "work_mode": "hybrid"
+ },
  "2e29c1af4a224267": {
   "active": false,
   "band": "misfit",
@@ -32580,7 +32607,9 @@
   "work_mode": ""
  },
  "395b2182491abf25": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-26",
   "company": "ENGIE",
   "date_posted": "2026-09-12",
   "first_seen": "2026-09-12",
@@ -100946,7 +100975,8 @@
   "first_seen_at": "2026-09-18T17:47:25Z",
   "location": "Denver, CO, US",
   "locations": [
-   "Denver, CO, US"
+   "Denver, CO, US",
+   "Denver, Colorado"
   ],
   "pay": "$105,000\u2013$130,000/yr",
   "priority": true,
@@ -100959,9 +100989,9 @@
    "rubric": "abcdf1530a"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "lever",
   "title": "Portfolio Manager",
-  "url": "https://www.indeed.com/viewjob?jk=f57d7ce84eec30c1",
+  "url": "https://jobs.lever.co/pivotenergy/563a802f-3b60-4d49-a128-9e8c1ea9c265",
   "work_mode": "remote"
  },
  "b860f7910b420218": {
