@@ -2450,7 +2450,9 @@
   "work_mode": ""
  },
  "045137568fbf7ad1": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-27",
   "company": "Microsoft",
   "date_posted": "2026-07-20",
   "first_seen": "2026-08-13",
@@ -23747,7 +23749,8 @@
   "first_seen_at": "2026-09-26T17:53:01Z",
   "location": "Oakland, CA, US, 94612",
   "locations": [
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "West Sacramento, CA, US, 95605"
   ],
   "lowscore": true,
   "pay": "$120,888",
@@ -29485,7 +29488,9 @@
   "work_mode": ""
  },
  "3386eaf4b7865234": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-27",
   "company": "Microsoft",
   "date_posted": "2026-09-03",
   "first_seen": "2026-09-04",
@@ -32951,7 +32956,9 @@
   "work_mode": ""
  },
  "39eed3e50f7789e8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-27",
   "company": "Amazon.com",
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-17",
@@ -39346,7 +39353,8 @@
   "first_seen_at": "2026-09-26T17:53:01Z",
   "location": "Oakland, CA, US, 94612",
   "locations": [
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "Tracy, CA, US, 95377"
   ],
   "pay": "",
   "priority": false,
@@ -51938,6 +51946,9 @@
   "duplicate": true,
   "first_seen": "2026-08-30",
   "location": "Florida City, FL, US, 33035",
+  "locations": [
+   "Florida City, FL, US, 33035"
+  ],
   "pay": "",
   "priority": true,
   "rationale": "NextEra Energy principal engineer for BESS; description unavailable, but BESS domain and principal-level title suggest strong fit if role is strategy/product-oriented rather than deep technical design.",
@@ -64991,8 +65002,10 @@
   "work_mode": "hybrid"
  },
  "769e4e2c3da15ff6": {
+  "active": false,
   "apply_url": "https://careers.se.com/jobs/134450/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
   "band": "strong",
+  "closed": "2026-09-27",
   "company": "Schneider Electric",
   "date_posted": "2026-09-23",
   "first_seen": "2026-09-24",
@@ -66253,6 +66266,33 @@
   "source": "indeed",
   "title": "Junior Electrical Engineer",
   "url": "https://www.indeed.com/viewjob?jk=f137498467e42f2d",
+  "work_mode": "remote"
+ },
+ "78cdcee4783639e9": {
+  "apply_url": "https://jobs.engie.com/default/job/Contracts-Senior-Advisor-%28Renewable-Energy%29/71975-en_US",
+  "band": "possible",
+  "company": "ENGIE",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-27",
+  "first_seen_at": "2026-09-27T18:23:25Z",
+  "location": "Broomfield, CO, US",
+  "locations": [
+   "Broomfield, CO, US"
+  ],
+  "pay": "$135,000\u2013$206,885/yr",
+  "priority": false,
+  "rationale": "Commercial contracting/negotiation-lead role for renewable EPC agreements; per prior calibration, negotiation-lead roles band 55-70 given supporting (not deal-lead) negotiation background.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-27T18:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Contracts Senior Advisor (Renewable Energy)",
+  "url": "https://www.indeed.com/viewjob?jk=b965484a8050301f",
   "work_mode": "remote"
  },
  "78ec593ffee75765": {
@@ -69209,7 +69249,8 @@
   "first_seen_at": "2026-09-24T18:33:57Z",
   "location": "Oakland, CA, US, 94612",
   "locations": [
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583"
   ],
   "pay": "$105,000.00",
   "priority": false,
@@ -71163,6 +71204,7 @@
  },
  "81ac6051c075d628": {
   "active": false,
+  "apply_url": "https://careers2-quanta.icims.com/jobs/18795/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
   "band": "possible",
   "closed": "2026-09-25",
   "company": "Quanta Services",
@@ -71185,7 +71227,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Director, Operations - QDC",
-  "url": "https://www.indeed.com/viewjob?jk=501f887e8384c432",
+  "url": "https://www.indeed.com/viewjob?jk=9513aa2fc3087d57",
   "work_mode": ""
  },
  "81be2a20d1c31beb": {
@@ -85368,6 +85410,33 @@
   "source": "greenhouse",
   "title": "Power Procurement Manager",
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4688247006"
+ },
+ "9c42b8893c65c480": {
+  "apply_url": "https://careers.se.com/jobs/132758/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
+  "band": "strong",
+  "company": "Schneider Electric",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-27",
+  "first_seen_at": "2026-09-27T18:23:25Z",
+  "location": "Boston, MA, US",
+  "locations": [
+   "Boston, MA, US"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior Principal solution architect for data-center thermal/liquid-cooling systems, bridging technical, customer-facing, and strategic scope \u2014 matches HVAC/thermal PE adjacency at a data-center power/thermal vendor.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-27T18:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Principal, Solution Architect - Thermal system",
+  "url": "https://www.indeed.com/viewjob?jk=6a9f1d907b91c534",
+  "work_mode": ""
  },
  "9c5185b5e06c8d35": {
   "active": false,
@@ -108363,6 +108432,36 @@
   "url": "https://www.indeed.com/viewjob?jk=a6d8c3f43a5cf5c0",
   "work_mode": "hybrid"
  },
+ "c71a96c4cc867b24": {
+  "active": false,
+  "apply_url": "https://talent.qualuscorp.com/jobs/5609/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
+  "band": "misfit",
+  "closed": "2026-09-27",
+  "company": "Qualus",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-27",
+  "first_seen_at": "2026-09-27T18:23:25Z",
+  "location": "TN, US",
+  "locations": [
+   "TN, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep protection/relay-settings engineering IC role, far from product/strategy scope per prior calibration on protection & controls designers.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-27T18:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Principal Engineer - Systems Protection, Relay Settings",
+  "url": "https://www.indeed.com/viewjob?jk=a859e5e42110e28e",
+  "work_mode": "remote"
+ },
  "c71e3dc0a631cfd5": {
   "active": false,
   "band": "misfit",
@@ -111981,7 +112080,8 @@
   "first_seen_at": "2026-09-26T17:53:01Z",
   "location": "Juno Beach, FL, US, 33408",
   "locations": [
-   "Juno Beach, FL, US, 33408"
+   "Juno Beach, FL, US, 33408",
+   "Pueblo, CO, US, 81006"
   ],
   "lowscore": true,
   "pay": "",
@@ -119372,8 +119472,9 @@
   "work_mode": ""
  },
  "db89f7ffb175a20a": {
-  "active": true,
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-27",
   "company": "Amazon",
   "date_posted": "2026-05-08",
   "first_seen": "2026-08-13",
@@ -130626,7 +130727,8 @@
   "locations": [
    "",
    "Palm Beach Gardens, FL, US, 33410",
-   "Juno Beach, FL, US, 33408"
+   "Juno Beach, FL, US, 33408",
+   "Houston, TX, US, 77002"
   ],
   "pay": "",
   "priority": false,
@@ -133118,6 +133220,36 @@
   "title": "Civil Engineer (4 - 7 yrs)",
   "url": "https://www.indeed.com/viewjob?jk=56ed48e490efc2d2",
   "work_mode": "hybrid"
+ },
+ "f536d882721163c0": {
+  "active": false,
+  "apply_url": "https://axydeanalytics.catsone.com/careers/96002-General/jobs/16858427-260086013--Scientific-Advisor-Resilient-Infrastructure-and-Installations--ERDC-Consulting-Contingent/?ref=Indeed",
+  "band": "misfit",
+  "closed": "2026-09-27",
+  "company": "Axyde Analytics",
+  "date_posted": "2026-09-26",
+  "first_seen": "2026-09-27",
+  "first_seen_at": "2026-09-27T18:23:25Z",
+  "location": "Midlothian, VA, US",
+  "locations": [
+   "Midlothian, VA, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Low-volume contingent advisory consulting on broad infrastructure resilience, not a real full-time role and outside the energy/BESS/grid focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-27T18:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "26-0086-013 \u2014 Scientific Advisor: Resilient Infrastructure and Installations \u2014 ERDC (Consulting, Contingent)",
+  "url": "https://www.indeed.com/viewjob?jk=88d7e15dd3441eee",
+  "work_mode": "remote"
  },
  "f540dc337062ade2": {
   "active": false,
@@ -136760,6 +136892,33 @@
   "title": "(USA) Tire & Battery Technician - Automotive",
   "url": "https://www.indeed.com/viewjob?jk=7a6e282987261b9c",
   "work_mode": ""
+ },
+ "fbe2f5ad4fda6a07": {
+  "apply_url": "https://careers-patternenergy.icims.com/jobs/3467/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
+  "band": "strong",
+  "company": "Pattern Energy Group",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-27",
+  "first_seen_at": "2026-09-27T18:23:25Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "pay": "$188,000\u2013$234,000/yr",
+  "priority": false,
+  "rationale": "Senior Director owning enterprise data/AI/cloud strategy at a renewable energy company \u2014 strong secondary-sweet-spot AI-in-energy leadership fit.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-09-27T18:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Director- Data, AI, and Cloud",
+  "url": "https://www.indeed.com/viewjob?jk=6dd113bb1be680f8",
+  "work_mode": "hybrid"
  },
  "fbfaf3e683577636": {
   "active": false,
