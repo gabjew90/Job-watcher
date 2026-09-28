@@ -62,7 +62,8 @@
     "Modine",
     "ZutaCore",
     "Accelsius",
-    "Apple"
+    "Apple",
+    "LiquidStack"
   ],
   "hyperscalers": {
     "microsoft": true,
@@ -205,12 +206,6 @@
       "provider": "greenhouse",
       "board": "sbenergy",
       "company": "SB Energy",
-      "keep_all": true
-    },
-    {
-      "provider": "greenhouse",
-      "board": "liquidstack",
-      "company": "LiquidStack",
       "keep_all": true
     },
     {
@@ -410,6 +405,12 @@
       "tenant": "abb",
       "site": "External_Career_Page",
       "company": "ABB"
+    },
+    {
+      "host": "shell.wd3.myworkdayjobs.com",
+      "tenant": "shell",
+      "site": "shellcareers",
+      "company": "Shell"
     }
   ],
   "successfactors_boards": [
