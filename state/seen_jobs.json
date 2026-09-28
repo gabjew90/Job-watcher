@@ -2486,7 +2486,9 @@
   "url": "https://www.indeed.com/viewjob?jk=9e368599f7dc4bef"
  },
  "04621ce1f98d951c": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-28",
   "company": "Nebius",
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
@@ -3110,7 +3112,9 @@
   "work_mode": ""
  },
  "058cc2f972158b33": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-28",
   "company": "CoreWeave",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-13",
@@ -3918,7 +3922,7 @@
  "07216807dd9fa4b1": {
   "band": "possible",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-24",
   "first_seen": "2026-09-24",
   "first_seen_at": "2026-09-24T18:33:57Z",
   "location": "4 Locations",
@@ -7813,7 +7817,7 @@
  "0da090b59c612512": {
   "band": "misfit",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-14",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -8190,7 +8194,9 @@
   "work_mode": ""
  },
  "0e559a4985418a59": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-28",
   "company": "SB Energy",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -8425,7 +8431,7 @@
   "band": "misfit",
   "closed": "2026-09-04",
   "company": "Trane Technologies",
-  "date_posted": "",
+  "date_posted": "2026-08-31",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T23:50:39Z",
   "location": "Long Island City NY  46th Ave",
@@ -8569,7 +8575,7 @@
  "0f0ac6018a0472fc": {
   "band": "strong",
   "company": "Micron Technology",
-  "date_posted": "",
+  "date_posted": "2026-09-07",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T07:19:15Z",
   "location": "Fab 10A, Singapore",
@@ -11405,7 +11411,7 @@
  "13bbed58e3ac281c": {
   "band": "misfit",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-11",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -12504,7 +12510,7 @@
  "1616a015dbd319a0": {
   "band": "strong",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-01",
   "first_seen": "2026-08-28",
   "location": "Remote",
   "pay": "",
@@ -12619,7 +12625,7 @@
   "apply_url": "",
   "band": "strong",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-25",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T20:42:13Z",
   "location": "3 Locations",
@@ -13382,7 +13388,7 @@
   "active": true,
   "band": "possible",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-01",
   "duplicate": true,
   "first_seen": "2026-08-28",
   "location": "2 Locations",
@@ -13827,6 +13833,37 @@
   "url": "https://www.indeed.com/viewjob?jk=e2345ad8ed193e64",
   "work_mode": "remote"
  },
+ "18c20664298cec97": {
+  "active": false,
+  "apply_url": "https://app.eightfold.ai/careers/job/446721265713?domain=qualcomm.com",
+  "band": "misfit",
+  "closed": "2026-09-28",
+  "company": "Qualcomm",
+  "date_posted": "2026-09-28",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "Santa Clara, CA, US",
+  "locations": [
+   "Santa Clara, CA, US",
+   "San Diego, CA, US"
+  ],
+  "lowscore": true,
+  "pay": "$237,800\u2013$356,800/yr",
+  "priority": false,
+  "rationale": "Senior Director product role, but scope is GPU silicon/platform architecture and roadmap \u2014 a compute hardware specialty with no grid, power, or energy substance.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Director, Product Management (Datacenter GPU)",
+  "url": "https://www.indeed.com/viewjob?jk=d304be1e7dc42331",
+  "work_mode": "onsite"
+ },
  "18cb5685c47b73d2": {
   "active": false,
   "band": "misfit",
@@ -14157,7 +14194,7 @@
   "apply_url": "",
   "band": "weak",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-22",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T20:42:13Z",
   "location": "Houston, Texas, United States of America",
@@ -14776,7 +14813,7 @@
   "band": "misfit",
   "closed": "2026-09-25",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-14",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Dorchester, MA",
@@ -15454,6 +15491,33 @@
   "url": "https://jobs.ashbyhq.com/formenergy/045a3404-16bb-4106-ab8a-35b35dd3419b",
   "work_mode": "onsite"
  },
+ "1b796445f86de7ae": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Shell",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "SHELL CENTRE \u2013 CHENNAI",
+  "locations": [
+   "SHELL CENTRE \u2013 CHENNAI"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Data science role within Shell fits the AI/data-within-energy secondary sweet spot, but the posting gives no detail on scope or seniority to confirm a director-level fit.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Data Science Engagement Lead",
+  "url": "https://shell.wd3.myworkdayjobs.com/en-US/shellcareers/job/SHELL-CENTRE--CHENNAI/Data-Science-Engagement-Lead_R202317-1",
+  "work_mode": ""
+ },
  "1b84811c5f65b833": {
   "band": "misfit",
   "company": "SpaceX",
@@ -15557,7 +15621,7 @@
   "work_mode": ""
  },
  "1b9a13789ef8e49f": {
-  "apply_url": "",
+  "apply_url": "https://jobs.ashbyhq.com/Crusoe/8b7fce51-1d4d-4ead-9e7e-e2d851fcbbdc?utm_source=4MqBxxdA0Q",
   "band": "weak",
   "company": "Crusoe",
   "date_posted": "2026-09-28",
@@ -15565,7 +15629,10 @@
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "San Francisco, CA - US",
   "locations": [
-   "San Francisco, CA - US"
+   "San Francisco, CA - US",
+   "San Francisco, CA, US",
+   "Sunnyvale, CA, US",
+   "Seattle, WA, US"
   ],
   "pay": "$200,000-$240,000",
   "priority": false,
@@ -15613,7 +15680,7 @@
   "band": "misfit",
   "closed": "2026-09-14",
   "company": "SOLV Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-03",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T07:19:15Z",
   "location": "Yerington, NV",
@@ -17345,7 +17412,7 @@
  "1f5050fc8a01ae76": {
   "band": "weak",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-23",
   "first_seen": "2026-09-01",
   "location": "US Remote",
   "pay": "",
@@ -18009,7 +18076,9 @@
   "work_mode": "onsite"
  },
  "209bd6f0e7fd9be4": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-28",
   "company": "Plus Power",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-13",
@@ -19882,7 +19951,9 @@
   "work_mode": "remote"
  },
  "2369ae601d995c78": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-28",
   "company": "CoreWeave",
   "date_posted": "2026-09-14",
   "first_seen": "2026-09-14",
@@ -20349,7 +20420,7 @@
  "24174c3774c554fa": {
   "band": "weak",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-03",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T23:50:39Z",
   "location": "Petaling Jaya, Selangor,Malaysia",
@@ -20428,6 +20499,7 @@
   "work_mode": ""
  },
  "24336cd5baccfbd1": {
+  "apply_url": "https://careers.google.com/jobs/results/140966029525164742-data-center-site-negotiator/",
   "band": "possible",
   "company": "Google",
   "date_posted": "2026-09-10",
@@ -20437,7 +20509,8 @@
   "locations": [
    "Thornton, CO, US",
    "Sunnyvale, CA, US",
-   "San Francisco, CA, US"
+   "San Francisco, CA, US",
+   "Austin, TX, US"
   ],
   "pay": "$150,000\u2013$217,000/yr",
   "priority": false,
@@ -20451,7 +20524,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Data Center Site Negotiator, Acquisition and Development",
-  "url": "https://www.indeed.com/viewjob?jk=1d1d633d18f01777",
+  "url": "https://www.indeed.com/viewjob?jk=c2315d8524236640",
   "work_mode": ""
  },
  "243877122d990901": {
@@ -20732,7 +20805,7 @@
  "24988ec59b740027": {
   "band": "possible",
   "company": "Wood Mackenzie",
-  "date_posted": "",
+  "date_posted": "2026-09-15",
   "first_seen": "2026-09-15",
   "first_seen_at": "2026-09-15T06:48:35Z",
   "location": "Sydney, AU",
@@ -21320,7 +21393,7 @@
  "25b2291492ef48f9": {
   "band": "misfit",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-11",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -21402,7 +21475,7 @@
   "band": "misfit",
   "closed": "2026-09-25",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-10",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Berlin, CT",
@@ -21638,7 +21711,7 @@
  "2630259e476032bd": {
   "band": "weak",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-09-08",
   "first_seen": "2026-09-08",
   "first_seen_at": "2026-09-08T23:52:33Z",
   "location": "6 Locations",
@@ -21681,7 +21754,7 @@
  "264b882e2b2f7baf": {
   "band": "possible",
   "company": "Flex",
-  "date_posted": "",
+  "date_posted": "2026-09-17",
   "first_seen": "2026-09-15",
   "first_seen_at": "2026-09-15T20:37:22Z",
   "location": "USA, TX, Dallas",
@@ -22142,7 +22215,7 @@
  "273c6d9f76f02038": {
   "band": "misfit",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-21",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -26421,7 +26494,7 @@
   "band": "misfit",
   "closed": "2026-09-25",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-23",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Windsor, CT",
@@ -36092,7 +36165,7 @@
   "band": "misfit",
   "closed": "2026-09-04",
   "company": "Flex",
-  "date_posted": "",
+  "date_posted": "2026-09-15",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T23:50:39Z",
   "location": "United Kingdom, Remote",
@@ -36540,7 +36613,7 @@
   "band": "misfit",
   "closed": "2026-09-28",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "Richmond, Virginia, United States of America",
@@ -36775,17 +36848,18 @@
   "work_mode": "remote"
  },
  "412bfbd3bb15a3ca": {
-  "apply_url": "",
+  "apply_url": "https://aep.wd1.myworkdayjobs.com/AEPCareerSite/job/Columbus-OH/Project-Manager--Sr---Principal---Staff----NEW-GENERATION-----multiple-opportunities_R19665",
   "band": "possible",
   "company": "American Electric Power",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "Columbus, OH",
   "locations": [
-   "Columbus, OH"
+   "Columbus, OH",
+   "Columbus, OH, US"
   ],
-  "pay": "",
+  "pay": "$99,000\u2013$177,503/yr",
   "priority": false,
   "rationale": "New-generation project manager at a utility, likely construction/execution scope; domain fit plausible but unconfirmed by description.",
   "score": 55,
@@ -36799,7 +36873,7 @@
   "source": "workday",
   "title": "Project Manager (Sr. - Principal - Staff) | NEW GENERATION *** multiple opportunities",
   "url": "https://aep.wd1.myworkdayjobs.com/en-US/AEPCareerSite/job/Columbus-OH/Project-Manager--Sr---Principal---Staff----NEW-GENERATION-----multiple-opportunities_R19665",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "412f56214097565d": {
   "active": false,
@@ -38792,7 +38866,7 @@
   "band": "misfit",
   "closed": "2026-09-28",
   "company": "Fluence Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "2 Locations",
@@ -39178,7 +39252,7 @@
   "band": "misfit",
   "closed": "2026-09-14",
   "company": "Wood Mackenzie",
-  "date_posted": "",
+  "date_posted": "2026-09-02",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T07:19:15Z",
   "location": "SG-Singapore-Office",
@@ -40811,7 +40885,7 @@
   "apply_url": "",
   "band": "weak",
   "company": "American Electric Power",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "Bridgman, MI",
@@ -41218,7 +41292,7 @@
  "49b07d192db36904": {
   "band": "weak",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-09-01",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
   "pay": "",
@@ -41309,7 +41383,7 @@
   "band": "misfit",
   "closed": "2026-09-14",
   "company": "AltaGas",
-  "date_posted": "",
+  "date_posted": "2026-09-02",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T07:19:15Z",
   "location": "Springfield, VA",
@@ -45215,7 +45289,7 @@
  "513e7b4a7a4ebe7b": {
   "band": "weak",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-08",
   "first_seen": "2026-08-31",
   "location": "India Remote",
   "pay": "",
@@ -45453,17 +45527,18 @@
   "work_mode": "hybrid"
  },
  "51a2afcbd8c1d232": {
-  "apply_url": "",
+  "apply_url": "https://careers.gevernova.com/portfolio-technical-director-substation-north-america/job/R5054113",
   "band": "weak",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "5 Locations",
   "locations": [
-   "5 Locations"
+   "5 Locations",
+   "Oak Brook, IL, US"
   ],
-  "pay": "",
+  "pay": "$144,900\u2013$241,200/yr",
   "priority": false,
   "rationale": "Technical director for substation portfolio \u2014 deep power-systems engineering leadership, not product/commercial.",
   "score": 35,
@@ -45477,7 +45552,7 @@
   "source": "workday",
   "title": "Portfolio Technical Director - Substation (North America)",
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Oakbrook-Terrace/Portfolio-Technical-Director---Substation--North-America-_R5054113-2",
-  "work_mode": ""
+  "work_mode": "remote"
  },
  "51a775ba3d89c721": {
   "band": "weak",
@@ -49009,7 +49084,7 @@
  "587e4d720049c1d1": {
   "band": "strong",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-01",
   "first_seen": "2026-08-28",
   "location": "4 Locations",
   "pay": "",
@@ -49713,7 +49788,7 @@
   "band": "misfit",
   "closed": "2026-09-04",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-02",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T23:50:39Z",
   "location": "2 Locations",
@@ -52276,7 +52351,8 @@
   "first_seen": "2026-08-30",
   "location": "Florida City, FL, US, 33035",
   "locations": [
-   "Florida City, FL, US, 33035"
+   "Florida City, FL, US, 33035",
+   "Trenton, NJ, US, 08601"
   ],
   "pay": "",
   "priority": true,
@@ -52659,7 +52735,7 @@
  "5f81a0cabaae1ff4": {
   "band": "weak",
   "company": "Vantage Data Centers",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T00:40:23Z",
   "location": "London, England",
@@ -56832,7 +56908,7 @@
  "6675c07ac4efc895": {
   "band": "weak",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-21",
   "first_seen": "2026-09-18",
   "first_seen_at": "2026-09-18T17:47:25Z",
   "location": "3 Locations",
@@ -57966,7 +58042,7 @@
  "68a3e5d291736624": {
   "band": "weak",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-24",
   "first_seen": "2026-09-24",
   "first_seen_at": "2026-09-24T18:33:57Z",
   "location": "Yerevan, Armenia",
@@ -59120,7 +59196,9 @@
   "work_mode": ""
  },
  "6adac594842daee1": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-09-28",
   "company": "Anthropic",
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
@@ -61081,7 +61159,7 @@
   "band": "misfit",
   "closed": "2026-09-04",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-23",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T23:50:39Z",
   "location": "Mannheim, Baden-Wurttemberg, Germany",
@@ -66463,6 +66541,36 @@
   "url": "https://nextracker.wd5.myworkdayjobs.com/en-US/nextpower_careers/job/Sorocaba-Sao-Paulo---BRA/Sr-Systems-Engineer---Power-Conversion_NX-4654",
   "work_mode": ""
  },
+ "785f71c9a1718b92": {
+  "apply_url": "https://careers.google.com/jobs/results/132218315014578886-commercial-program-manager/",
+  "band": "possible",
+  "company": "Google",
+  "date_posted": "2026-09-28",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "San Francisco, CA, US",
+  "locations": [
+   "San Francisco, CA, US",
+   "Washington, DC, US",
+   "New York, NY, US",
+   "Austin, TX, US"
+  ],
+  "pay": "$163,000\u2013$236,000/yr",
+  "priority": false,
+  "rationale": "Strong domain fit (data center grid capacity, power markets, utility tariffs) but the role centers on negotiating/structuring commercial agreements, which prior feedback caps around 55-70 rather than top/strong.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Commercial Program Manager, Data Center Non-Firm Grid Capacity",
+  "url": "https://www.indeed.com/viewjob?jk=00bac4db710b6aba",
+  "work_mode": ""
+ },
  "785f9f3aa2783de5": {
   "active": false,
   "band": "misfit",
@@ -66488,7 +66596,7 @@
   "band": "misfit",
   "closed": "2026-09-28",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "Budapest, Budapest, Hungary",
@@ -67942,7 +68050,7 @@
  "7b39aa109216061f": {
   "band": "weak",
   "company": "Wood Mackenzie",
-  "date_posted": "",
+  "date_posted": "2026-09-18",
   "first_seen": "2026-09-18",
   "first_seen_at": "2026-09-18T19:37:07Z",
   "location": "2 Locations",
@@ -69159,7 +69267,7 @@
  "7df7818b5dbbfc95": {
   "band": "misfit",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-09",
   "first_seen": "2026-08-28",
   "location": "Findlay Township",
   "pay": "",
@@ -70060,7 +70168,7 @@
  "7f5282faf40061dc": {
   "band": "strong",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-24",
   "first_seen": "2026-09-24",
   "first_seen_at": "2026-09-24T18:33:57Z",
   "location": "5 Locations",
@@ -70211,7 +70319,7 @@
  "7f7ebd61f86ad516": {
   "band": "strong",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-22",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -71488,7 +71596,7 @@
  "818360df012f20ba": {
   "band": "possible",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-09-24",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
   "pay": "",
@@ -71542,7 +71650,7 @@
   "apply_url": "",
   "band": "weak",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-01",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Manchester, NH",
@@ -71994,7 +72102,7 @@
   "band": "strong",
   "closed": "2026-09-23",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-23",
   "first_seen": "2026-08-28",
   "location": "Queretaro",
   "pay": "",
@@ -72647,7 +72755,7 @@
  "83ff7b6f66d07068": {
   "band": "strong",
   "company": "Micron Technology",
-  "date_posted": "",
+  "date_posted": "2026-09-11",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T07:19:15Z",
   "location": "Boise, ID - Main Site",
@@ -72785,7 +72893,7 @@
   "apply_url": "",
   "band": "weak",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T20:42:13Z",
   "location": "Nottingham, Nottinghamshire, United Kingdom",
@@ -76153,7 +76261,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Regional Manager - Transmission & Distribution - Michels Power, Inc.",
-  "url": "https://www.indeed.com/viewjob?jk=45bc3db091e47f48",
+  "url": "https://www.indeed.com/viewjob?jk=b041603c7ee44215",
   "work_mode": "onsite"
  },
  "89cf86ee05295aab": {
@@ -76404,7 +76512,7 @@
   "band": "misfit",
   "closed": "2026-08-28",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-03",
   "first_seen": "2026-08-28",
   "location": "Remote",
   "lowscore": true,
@@ -78149,7 +78257,7 @@
  "8dabf0da08d1e575": {
   "band": "weak",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-11",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -79301,7 +79409,7 @@
   "apply_url": "",
   "band": "possible",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-23",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T20:42:13Z",
   "location": "2 Locations",
@@ -80699,7 +80807,7 @@
   "band": "misfit",
   "closed": "2026-09-28",
   "company": "Equinix",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "PA13A Paris",
@@ -81962,7 +82070,7 @@
  "9471a9265f984579": {
   "band": "weak",
   "company": "Nextracker",
-  "date_posted": "",
+  "date_posted": "2026-09-04",
   "first_seen": "2026-09-05",
   "first_seen_at": "2026-09-05T04:34:09Z",
   "location": "4 Locations",
@@ -82121,7 +82229,7 @@
  "94b33205647644eb": {
   "band": "weak",
   "company": "Nextracker",
-  "date_posted": "",
+  "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
   "location": "2 Locations",
   "pay": "",
@@ -82268,6 +82376,36 @@
   "source": "indeed",
   "title": "Principal Civil Engineer",
   "url": "https://www.indeed.com/viewjob?jk=90873a99ed5d096c",
+  "work_mode": ""
+ },
+ "9515b2c0f9b7e98a": {
+  "active": false,
+  "apply_url": "",
+  "band": "misfit",
+  "closed": "2026-09-28",
+  "company": "NextEra Energy",
+  "date_posted": "2026-09-28",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "Riviera Beach, FL, US, 33404",
+  "locations": [
+   "Riviera Beach, FL, US, 33404"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Construction-to-operations transition project management with QA/QC oversight and 50% site travel \u2014 field/construction execution, not product or strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "successfactors",
+  "title": "SR Project Manager - Renewable Operations Integration Readiness",
+  "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-SR-Project-Manager-Renewable-Operations-Integration-Readiness-FL-33410/1434615800/",
   "work_mode": ""
  },
  "95219830de5357ac": {
@@ -84453,7 +84591,7 @@
  "9968cf65ae0aaaf0": {
   "band": "possible",
   "company": "Equinix",
-  "date_posted": "",
+  "date_posted": "2026-09-15",
   "first_seen": "2026-09-16",
   "first_seen_at": "2026-09-16T17:54:00Z",
   "location": "Pantin",
@@ -87045,7 +87183,7 @@
  "9e5d89f3d042f5cf": {
   "band": "possible",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-08-28",
   "location": "Salt Lake City",
   "pay": "",
@@ -87437,7 +87575,9 @@
   "work_mode": "remote"
  },
  "9ef03470a9908ab2": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-28",
   "company": "Crusoe",
   "date_posted": "2026-06-02",
   "first_seen": "2026-08-28",
@@ -87572,7 +87712,7 @@
  "9f21b4b64d6dec4e": {
   "band": "misfit",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-14",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -89170,7 +89310,7 @@
  "a21f64896d68e6b1": {
   "band": "weak",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-11",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -89667,7 +89807,7 @@
  "a355d7d03ee70eb7": {
   "band": "weak",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-24",
   "first_seen": "2026-09-24",
   "first_seen_at": "2026-09-24T18:33:57Z",
   "location": "3 Locations",
@@ -91740,7 +91880,7 @@
   "band": "misfit",
   "closed": "2026-09-04",
   "company": "Trane Technologies",
-  "date_posted": "",
+  "date_posted": "2026-09-03",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T23:50:39Z",
   "location": "Hyderabad, Telangana",
@@ -93155,7 +93295,7 @@
  "a8feff2431b08a5a": {
   "band": "weak",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-14",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T19:11:24Z",
   "location": "Baden-Daettwil, Aargau, Switzerland",
@@ -93282,7 +93422,7 @@
  "a93addcaf029c4e8": {
   "band": "misfit",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-11",
   "first_seen": "2026-08-28",
   "location": "Yerevan, Armenia",
   "pay": "",
@@ -93550,7 +93690,7 @@
  "a9e39b81b9d4da3e": {
   "band": "weak",
   "company": "SOLV Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-23",
   "first_seen": "2026-09-23",
   "first_seen_at": "2026-09-23T18:36:09Z",
   "location": "48 Locations",
@@ -96647,7 +96787,7 @@
  "aef76a6119873116": {
   "band": "weak",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-17",
   "first_seen": "2026-09-15",
   "first_seen_at": "2026-09-15T23:50:53Z",
   "location": "India Bengaluru, Karnataka",
@@ -96996,7 +97136,7 @@
   "band": "misfit",
   "closed": "2026-08-28",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-08-28",
   "location": "Oberentfelden",
   "lowscore": true,
@@ -100586,6 +100726,33 @@
   "url": "https://www.indeed.com/viewjob?jk=c2ca9250350b0986",
   "work_mode": ""
  },
+ "b71aac84b05b2236": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Terawatt Infrastructure",
+  "date_posted": "2026-09-28",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "San Francisco, California",
+  "locations": [
+   "San Francisco, California"
+  ],
+  "pay": "$145,000\u2013$180,000/yr",
+  "priority": false,
+  "rationale": "Senior utilities-manager title with transferable grid/utility-engagement skills, but the domain is EV-charging real estate infrastructure, not BESS or AI data center power.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "lever",
+  "title": "Senior Energy and Utilities Manager",
+  "url": "https://jobs.lever.co/terawattinfrastructure/ef145955-9ba5-4f38-bfbc-e776ed9fe475",
+  "work_mode": "hybrid"
+ },
  "b7244ddc7b531ab5": {
   "band": "weak",
   "company": "Apptad Inc",
@@ -101248,7 +101415,7 @@
   "band": "misfit",
   "closed": "2026-09-24",
   "company": "Equinix",
-  "date_posted": "",
+  "date_posted": "2026-09-24",
   "first_seen": "2026-09-24",
   "first_seen_at": "2026-09-24T18:33:57Z",
   "location": "Frankfurt North East Office FRN",
@@ -104712,6 +104879,33 @@
   "url": "https://www.indeed.com/viewjob?jk=78ba768ef6e0479c",
   "work_mode": "remote"
  },
+ "be72aaaefc7e568d": {
+  "apply_url": "https://fa-eqcd-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/1066",
+  "band": "possible",
+  "company": "Hunt Energy",
+  "date_posted": "2026-09-28",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "Dallas, TX, US",
+  "locations": [
+   "Dallas, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Islanded BESS/gas power for AI data centers is core-thesis domain, but the role is primarily BD/offtake origination with execution support, which per prior calibration caps BD-heavy roles at possible.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager, Business Development & Project Management (Power Infrastructure)",
+  "url": "https://www.indeed.com/viewjob?jk=a8e24e937b211adf",
+  "work_mode": "hybrid"
+ },
  "be8354f78e9040c5": {
   "active": false,
   "band": "weak",
@@ -106011,6 +106205,33 @@
   "url": "https://www.edisoncareers.com/job/23899185/senior-procurement-process-improvement-lead-rosemead-ca/",
   "work_mode": "hybrid"
  },
+ "c094228efe3fbc6f": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Shell",
+  "date_posted": "2026-09-18",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Energy markets pricing/portfolio management aligns with the candidate's energy-finance background, but lack of description detail leaves scope and seniority unconfirmed.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Pricing and Portfolio Manager \u2013 ANZ",
+  "url": "https://shell.wd3.myworkdayjobs.com/en-US/shellcareers/job/Melbourne/Country-Manager-B2C-Oceania---SPI_R206722-1",
+  "work_mode": ""
+ },
  "c0a1bef78e457a6b": {
   "active": false,
   "band": "possible",
@@ -106318,7 +106539,7 @@
   "band": "misfit",
   "closed": "2026-09-21",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-21",
   "first_seen": "2026-09-21",
   "first_seen_at": "2026-09-21T19:31:39Z",
   "location": "US Remote",
@@ -106984,7 +107205,7 @@
   "apply_url": "",
   "band": "possible",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-25",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T20:42:13Z",
   "location": "Bangalore, Karnataka, India",
@@ -107810,7 +108031,7 @@
   "band": "misfit",
   "closed": "2026-09-28",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "Bucharest",
@@ -108892,7 +109113,7 @@
  "c6c0c07f7a6c4f43": {
   "band": "weak",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-11",
   "first_seen": "2026-09-11",
   "first_seen_at": "2026-09-11T17:26:37Z",
   "location": "Santa Fe Springs, California, United States of America",
@@ -111002,7 +111223,7 @@
  "ca7ec7f5c5a9c100": {
   "band": "weak",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-02",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T23:50:39Z",
   "location": "5 Locations",
@@ -112974,7 +113195,9 @@
   "work_mode": "hybrid"
  },
  "cd62d0f66cfe2cc9": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-09-28",
   "company": "Anthropic",
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
@@ -114799,7 +115022,7 @@
   "work_mode": "onsite"
  },
  "d0b60c8017cfd05b": {
-  "apply_url": "",
+  "apply_url": "https://jobs.ashbyhq.com/Crusoe/f74381d9-7d4e-4047-b6f3-c19dd2f29b5f?utm_source=4MqBxxdA0Q",
   "band": "weak",
   "company": "Crusoe",
   "date_posted": "2026-09-28",
@@ -114807,7 +115030,8 @@
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "San Francisco, CA - US",
   "locations": [
-   "San Francisco, CA - US"
+   "San Francisco, CA - US",
+   "San Francisco, CA, US"
   ],
   "pay": "$225,000 \u2013 $250,000.",
   "priority": false,
@@ -114919,7 +115143,7 @@
   "band": "misfit",
   "closed": "2026-09-28",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "3 Locations",
@@ -115763,7 +115987,7 @@
  "d2702b68e4593a19": {
   "band": "strong",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-09-03",
   "first_seen": "2026-09-02",
   "location": "3 Locations",
   "locations": [
@@ -116231,7 +116455,7 @@
   "band": "misfit",
   "closed": "2026-09-25",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-16",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Westwood, MA",
@@ -117379,7 +117603,7 @@
   "band": "misfit",
   "closed": "2026-09-28",
   "company": "Equinix",
-  "date_posted": "",
+  "date_posted": "2026-09-08",
   "first_seen": "2026-09-28",
   "first_seen_at": "2026-09-28T20:43:33Z",
   "location": "Dublin",
@@ -120279,7 +120503,7 @@
   "band": "misfit",
   "closed": "2026-09-14",
   "company": "Wood Mackenzie",
-  "date_posted": "",
+  "date_posted": "2026-09-22",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T07:19:15Z",
   "location": "Boston, US",
@@ -121389,6 +121613,33 @@
   "title": "Sr. Electrical System Design & Architecture Engineer, Energy Products",
   "url": "https://www.indeed.com/viewjob?jk=19915b0f75b90d7b",
   "work_mode": ""
+ },
+ "ddc2f2333c7d36a9": {
+  "apply_url": "https://jobs.ashbyhq.com/mavria/a780260f-1087-4625-9c42-3b1945c8cec0?utm_source=1ZjY2mNK2g",
+  "band": "weak",
+  "company": "",
+  "date_posted": "2026-09-28",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "The Woodlands, TX, US",
+  "locations": [
+   "The Woodlands, TX, US"
+  ],
+  "pay": "$150,000\u2013$300,000/yr",
+  "priority": false,
+  "rationale": "Strong domain adjacency (utility interconnection, large-load service for data centers) but framed as cold-call BD outreach with only 3+ years required, well below director-level scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Utility Development Manager",
+  "url": "https://www.indeed.com/viewjob?jk=c7888b1410713276",
+  "work_mode": "remote"
  },
  "ddc8c68654198c9b": {
   "band": "weak",
@@ -122527,7 +122778,7 @@
   "band": "misfit",
   "closed": "2026-09-24",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-09-24",
   "first_seen": "2026-09-24",
   "first_seen_at": "2026-09-24T18:33:57Z",
   "location": "2 Locations",
@@ -122862,6 +123113,36 @@
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6142583004",
   "work_mode": "hybrid"
  },
+ "e0baf5a7ce1d59ef": {
+  "active": false,
+  "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Operational-Procurement-Manager-VR/304226",
+  "band": "misfit",
+  "closed": "2026-09-28",
+  "company": "Siemens Energy",
+  "date_posted": "2026-09-28",
+  "first_seen": "2026-09-28",
+  "first_seen_at": "2026-09-28T22:47:51Z",
+  "location": "Richland, MS, US",
+  "locations": [
+   "Richland, MS, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Operational procurement/supply-chain management at a manufacturing site \u2014 no product, strategy, or grid/BESS relevance despite the energy-company employer.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-09-28T22:48Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "abcdf1530a"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Operational Procurement Manager - VR",
+  "url": "https://www.indeed.com/viewjob?jk=12f7412168411537",
+  "work_mode": ""
+ },
  "e0c2c4780445c6a9": {
   "band": "misfit",
   "company": "SpaceX",
@@ -123057,7 +123338,7 @@
  "e0fbfc3eb27dc8f1": {
   "band": "strong",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-14",
   "first_seen": "2026-08-28",
   "location": "2 Locations",
   "pay": "",
@@ -124759,7 +125040,7 @@
   "apply_url": "",
   "band": "possible",
   "company": "ABB",
-  "date_posted": "",
+  "date_posted": "2026-09-08",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T20:42:13Z",
   "location": "Untersiggenthal, Aargau, Switzerland",
@@ -126433,7 +126714,7 @@
  "e70ac70e0f3f317b": {
   "band": "possible",
   "company": "Nextracker",
-  "date_posted": "",
+  "date_posted": "2026-09-01",
   "first_seen": "2026-08-28",
   "location": "Fremont, North Bldg, California - USA",
   "pay": "",
@@ -127531,7 +127812,7 @@
  "e8b9a552c203aec4": {
   "band": "weak",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-28",
   "first_seen": "2026-09-18",
   "first_seen_at": "2026-09-18T17:47:25Z",
   "location": "Lisburn",
@@ -129018,7 +129299,7 @@
   "band": "misfit",
   "closed": "2026-09-16",
   "company": "Trane Technologies",
-  "date_posted": "",
+  "date_posted": "2026-09-16",
   "first_seen": "2026-09-16",
   "first_seen_at": "2026-09-16T17:54:00Z",
   "location": "2 Locations",
@@ -130121,7 +130402,9 @@
   "work_mode": ""
  },
  "edd7b2294fe612f4": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-28",
   "company": "Anthropic",
   "date_posted": "2026-09-04",
   "first_seen": "2026-09-04",
@@ -131604,7 +131887,8 @@
    "Palm Beach Gardens, FL, US, 33410",
    "Juno Beach, FL, US, 33408",
    "Houston, TX, US, 77002",
-   "St. Paul, MN, US, 55107"
+   "St. Paul, MN, US, 55107",
+   "Britt, IA, US, 50423"
   ],
   "pay": "",
   "priority": false,
@@ -132014,7 +132298,7 @@
   "apply_url": "",
   "band": "weak",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-14",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Dorchester, MA",
@@ -132365,7 +132649,7 @@
  "f14ecc447e92fab4": {
   "band": "weak",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-09-25",
   "first_seen": "2026-08-31",
   "location": "Remote",
   "locations": [
@@ -133542,7 +133826,7 @@
   "apply_url": "",
   "band": "weak",
   "company": "American Electric Power",
-  "date_posted": "",
+  "date_posted": "2026-09-25",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Columbus, OH",
@@ -133826,7 +134110,7 @@
  "f4a967ed50c4ff67": {
   "band": "weak",
   "company": "Nextracker",
-  "date_posted": "",
+  "date_posted": "2026-09-16",
   "first_seen": "2026-09-16",
   "first_seen_at": "2026-09-16T20:39:09Z",
   "location": "3 Locations",
@@ -134560,7 +134844,7 @@
   "band": "misfit",
   "closed": "2026-09-25",
   "company": "Eversource Energy",
-  "date_posted": "",
+  "date_posted": "2026-09-23",
   "first_seen": "2026-09-25",
   "first_seen_at": "2026-09-25T18:43:13Z",
   "location": "Berlin, CT",
@@ -135908,7 +136192,7 @@
  "f84af0fd4b008053": {
   "band": "possible",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-09-15",
   "first_seen": "2026-09-15",
   "first_seen_at": "2026-09-15T17:56:15Z",
   "location": "Abu Dhabi, Abu Dhabi, United Arab Emirates",
@@ -138823,7 +139107,7 @@
  "fdead35b32b27fa0": {
   "band": "misfit",
   "company": "ServiceTitan",
-  "date_posted": "",
+  "date_posted": "2026-09-25",
   "first_seen": "2026-08-28",
   "location": "US Remote",
   "pay": "",
@@ -139320,7 +139604,9 @@
   "work_mode": "hybrid"
  },
  "ff0cb8c4a8e12768": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-09-28",
   "company": "CoreWeave",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-13",
@@ -139335,7 +139621,9 @@
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4660956006"
  },
  "ff159bbbfe234ed3": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-09-28",
   "company": "ONENERGY",
   "date_posted": "2026-08-10",
   "first_seen": "2026-09-04",
