@@ -9,6 +9,10 @@
   "boards": [],
   "date": "2026-09-28"
  },
+ "belimo": {
+  "boards": [],
+  "date": "2026-09-29"
+ },
  "beowulf electricity data": {
   "boards": [],
   "date": "2026-09-25"
@@ -90,8 +94,10 @@
   "date": "2026-09-25"
  },
  "generac power systems": {
-  "boards": [],
-  "date": "2026-09-28"
+  "boards": [
+   "workday:generac.wd5.myworkdayjobs.com/external"
+  ],
+  "date": "2026-09-29"
  },
  "global software resources": {
   "boards": [],
@@ -228,6 +234,10 @@
  "stored energy systems": {
   "boards": [],
   "date": "2026-09-27"
+ },
+ "tesla": {
+  "boards": [],
+  "date": "2026-09-29"
  },
  "vertiv": {
   "boards": [],
