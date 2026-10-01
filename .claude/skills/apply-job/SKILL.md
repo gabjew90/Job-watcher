@@ -70,6 +70,17 @@ approval.
 8. **Log** it in `applications/log.md`: date, company, title, URL,
    submitted or not, and anything he should follow up on. Commit and push.
 
+## With Claude in Chrome (preferred)
+When Claude runs on Gabriel's computer with access to his Chrome (the
+Claude in Chrome extension, from Claude Code with `--chrome` or from the
+Claude desktop app), use his Chrome instead of `form.py`: open the
+application page in a tab, upload the newest `resume/GabrielJew_YYYYMM.pdf`
+from this repo's folder, fill the form from `answers.md`, and send him a
+screenshot plus the list of answers. Every rule above still applies: submit
+only after his "submit", ask about anything `answers.md` does not cover,
+and stop at a CAPTCHA or spam flag for him to handle. Run `git pull` in the
+repo folder first so the answers and resume are current.
+
 ## Where to run it
 Run the skill in Claude Code on Gabriel's own computer, so the browser uses
 his network. From the cloud container, the browser is an automated
