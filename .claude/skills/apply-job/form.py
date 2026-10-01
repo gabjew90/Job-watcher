@@ -77,7 +77,8 @@ def _page():
 
 def start():
     PROFILE.mkdir(parents=True, exist_ok=True)
-    args = [CHROME, "--headless=new", f"--remote-debugging-port={PORT}",
+    headless = os.environ.get("HEADLESS", "1") != "0"  # HEADLESS=0: visible window, on his own computer
+    args = [CHROME] + (["--headless=new"] if headless else []) + [f"--remote-debugging-port={PORT}",
             f"--user-data-dir={PROFILE}", "--window-size=1280,1000", "--no-first-run"]
     if os.geteuid() == 0:  # the cloud container runs as root
         args.append("--no-sandbox")
