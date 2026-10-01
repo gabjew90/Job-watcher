@@ -60,8 +60,9 @@ hide: Solution Engineer - Structural Design @ Neara
 - calibration: technical interconnection STUDY/consulting roles at
   engineering firms (performing power-system studies, load flow, short
   circuit) should score 50-60 — too deep-technical. Interconnection
-  strategy / program / product / hosting-capacity-platform roles remain
-  high fits. (from issue #23, re: Sargent & Lundy Senior Grid
+  strategy, product and hosting-capacity-platform roles remain high fits;
+  interconnection PROGRAM roles follow the program-management rule in
+  profile.md (possible). (from issue #23, re: Sargent & Lundy Senior Grid
   Interconnection Consultant)
 - calibration: real-estate / site DEVELOPMENT execution leadership — owning
   the land-to-commissioning lifecycle (site selection, entitlements,
@@ -123,3 +124,13 @@ hide: Solution Engineer - Structural Design @ Neara
   management plus the thermal and fluids PE background; band strong. (from
   issue #137, re: LiquidStack Product Line Manager – Liquid Cooling: "nice
   find")
+- calibration (owner, 2026-10-01): product management for energy or
+  physical AI-infrastructure products at hyperscalers and AI-infrastructure
+  companies bands top. "Senior Product Manager, Energy Projects, Google
+  Research" (first-of-a-kind energy projects, techno-economics, field
+  deployment) and "Group Product Manager - Spark" at Crusoe (a modular
+  power and data-center product line) were scored strong and should have
+  been top: "very strong fit, should be top 10". Program-manager roles and
+  director-of-transmission / interconnection roles were banding top and
+  should not: "I don't know why they rank so high." They band possible
+  (see profile.md, Score MID). (owner note 2026-10-01)
