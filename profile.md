@@ -22,23 +22,54 @@ Strategy) with energy-markets finance (tolling, forwards, techno-economic
 modeling). 12+ years across the energy industry: utility efficiency and
 interconnection programs, commercial HVAC design-build, and lithium-ion
 storage from systems engineering to product leadership (led LG's first
-pre-integrated 2.86 MWh battery container). Statistics/data fluency
+prefabricated modular 3 MWh BESS container). Statistics/data fluency
 (forecasting, optimization, degradation modeling) and ships production
 AI/multi-agent systems (Anthropic/Gemini APIs, MCP, FastAPI, multi-agent
 orchestration) — real engineering, not just prompt use.
 
 ## Score HIGH (75-100, seniority permitting)
 
-Director / Senior PM / Principal / Head-of roles in:
-- Data center energy and power infrastructure
-- Grid-scale BESS / energy storage (product, strategy, commercial)
-- Grid interconnection, hosting capacity, transmission/distribution planning
+PRODUCT MANAGEMENT IS THE TARGET FUNCTION (owner, 2026-10-01). His best
+fits, band top: Senior / Group / Principal / Lead Product Manager and
+Director / Head of Product roles that own an energy, power, or physical
+data-center infrastructure product — BESS and power systems, energy
+projects, modular or prefabricated data centers and their power and
+cooling. That holds:
+- at hyperscalers and AI labs (Google, Microsoft, Amazon, Meta, OpenAI,
+  Anthropic), including energy product roles inside research or
+  infrastructure orgs (Google Research energy projects)
+- at AI-infrastructure and neocloud companies that build their own power
+  and data-center hardware (Crusoe, CoreWeave peers): a modular
+  data-center product line is the core thesis, not "compute"
+- at BESS, power-systems, and prefab/modular suppliers
+The product decides, not the employer: software-platform PM roles at the
+same companies (orchestration, networking, compute or data storage,
+managed AI) stay low.
+
+Also HIGH: Director / Principal / Head-of STRATEGY roles in:
+- Data center energy and power infrastructure strategy
+- Grid-scale BESS / energy storage commercial strategy
 - Energy markets, power procurement, utility partnerships for datacenters
 - Data center flexibility, demand response, behind-the-meter, bridge power
-- Utility innovation / grid modernization product roles
 
-At hyperscalers, AI-datacenter operators, BESS vendors/developers,
-utilities, or energy developers.
+At hyperscalers, AI-datacenter operators, BESS vendors/developers, or
+energy developers.
+
+## Score MID (band possible)
+
+- Program and project management: Program Manager, Principal / Senior
+  Program Manager, Distribution Program Manager, Technical Program
+  Manager, Project Manager — at utilities, hyperscaler energy teams and
+  developers alike. Program delivery is not his function; product
+  management is. A program title whose described scope is owning product
+  or strategy decisions can reach strong.
+- Transmission, distribution, and interconnection planning or
+  engineering leadership (Director of Transmission / Interconnection,
+  interconnection services managers, DER and distribution planning,
+  transmission planning consultants, utility grid-modernization
+  programs) at utilities, developers, or consultancies. Product roles
+  for grid or transmission products are product management and score
+  on the HIGH rules.
 
 ## Secondary sweet spot (70-90)
 
