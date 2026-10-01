@@ -11,8 +11,9 @@ titles, dates and education: the newest file in resume/ (canonical).
 - Location: San Diego, CA, United States (state: California)
 
 ## Resume
-- Upload the newest resume/GabrielJew_YYYYMM.docx where Word is accepted
-  (parses best), otherwise the matching .pdf.
+- Upload the newest resume/GabrielJew_YYYYMM.pdf (owner, 2026-10-01: PDF
+  keeps the layout exactly; its text reads in order). Use the .docx only
+  where a site refuses PDF.
 
 ## Eligibility (owner, 2026-10-01)
 - Requires visa sponsorship now or in the future: No

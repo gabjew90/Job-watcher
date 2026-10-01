@@ -35,7 +35,7 @@ approval.
    Search only for the code from the site being applied to, sent in the
    last 15 minutes (e.g. Gmail search `from:<ats or company domain>
    newer_than:1h`), use it, and read nothing else.
-6. **CAPTCHA**: do not try to defeat one. Tell him and stop.
+6. **CAPTCHA or spam flag**: do not try to defeat one. Tell him and stop.
 7. Do not write a cover letter or free-text essay unless he asks; if one
    is required, draft it from the resume only and include it in the review.
 
@@ -69,6 +69,17 @@ approval.
    rule 5. Report the outcome plainly, including any error the site shows.
 8. **Log** it in `applications/log.md`: date, company, title, URL,
    submitted or not, and anything he should follow up on. Commit and push.
+
+## Where to run it
+Run the skill in Claude Code on Gabriel's own computer, so the browser uses
+his network. From the cloud container, the browser is an automated
+Chromium behind a proxy on a data-center address, and spam filters block
+the submission: Ashby rejected the 2026-10-01 Crusoe application as
+"flagged as possible spam" after the form was filled correctly. In the
+cloud, fill and review only; if a site flags the submission, stop, tell
+him, and do not retry around the filter (repeated attempts can get his
+email flagged). On his computer, start the browser with a visible window
+(`HEADLESS=0`) when a site is strict.
 
 ## Site notes
 - **Ashby** (Crusoe, many AI-infrastructure startups): no account. Yes/No
