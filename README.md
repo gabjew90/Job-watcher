@@ -175,4 +175,9 @@ of 2026-08 are noted there — e.g. Microsoft moved from
 - Resume drafting was retired on 2026-10-01 (owner decision): the
   owner's own resume is the canonical version. `drafts/` keeps the earlier
   drafts so links in old issue comments still resolve.
-- No LinkedIn scraping. No auto-applying. Discovery and scoring only.
+- Applying: the `apply-job` Claude Code skill (`.claude/skills/apply-job/`)
+  fills an employer's application form from `resume/` and the skill's
+  `answers.md`, sends a screenshot for review, and submits only after the
+  owner says "submit". Each application is logged in `applications/log.md`.
+  Nothing applies on a schedule.
+- No LinkedIn scraping.
