@@ -1,4 +1,4 @@
-"""Model-free tests for board-identity evidence and deferred draft delivery.
+"""Model-free tests for board-identity evidence.
 
 Run: python -m pytest -q tests
 """
@@ -6,7 +6,7 @@ import json
 
 import pytest
 
-from src import discovery, draft_requests
+from src import discovery
 
 
 # --- board identity ---------------------------------------------------
@@ -89,56 +89,3 @@ def test_title_evidence_scores_against_the_longer_title():
     n, exact, distinctive = discovery.title_evidence(
         ["Director, Power Infrastructure"], ["Director, Power Infrastructure"])
     assert (n, exact, distinctive) == (1, True, True)
-
-
-# --- deferred delivery ------------------------------------------------
-
-@pytest.fixture
-def queue(tmp_path, monkeypatch):
-    path = tmp_path / "pending_delivery.json"
-    monkeypatch.setattr(draft_requests, "DELIVERY_FILE", path)
-    monkeypatch.setenv("GITHUB_TOKEN", "t")
-    monkeypatch.setenv("GITHUB_REPOSITORY", "o/r")
-    return path
-
-
-def test_queued_delivery_is_not_posted_until_deliver_runs(queue, monkeypatch):
-    posted = []
-    monkeypatch.setattr(draft_requests, "_comment",
-                        lambda t, r, n, txt: posted.append(("comment", n)) or True)
-    monkeypatch.setattr(draft_requests, "_close",
-                        lambda t, r, n: posted.append(("close", n)) or True)
-
-    draft_requests.queue_delivery(88, "Draft ready: ...", close=True)
-    assert posted == [], "queuing must not touch GitHub"
-    assert json.loads(queue.read_text())[0]["number"] == 88
-
-    assert draft_requests.deliver_queued() == 1
-    assert posted == [("comment", 88), ("close", 88)]
-    assert not queue.exists(), "a delivered queue is cleared"
-
-
-def test_a_failed_comment_leaves_the_issue_open_and_queued(queue, monkeypatch):
-    monkeypatch.setattr(draft_requests, "_comment", lambda t, r, n, txt: False)
-    monkeypatch.setattr(draft_requests, "_close",
-                        lambda t, r, n: pytest.fail("closed despite a failed comment"))
-    draft_requests.queue_delivery(88, "Draft ready: ...", close=True)
-    assert draft_requests.deliver_queued() == 0
-    assert json.loads(queue.read_text())[0]["number"] == 88, "kept for the next run"
-
-
-def test_delivery_without_a_token_keeps_the_queue(queue, monkeypatch):
-    draft_requests.queue_delivery(88, "Draft ready: ...", close=True)
-    monkeypatch.delenv("GITHUB_TOKEN")
-    assert draft_requests.deliver_queued() == 0
-    assert json.loads(queue.read_text())
-
-
-def test_write_helpers_report_http_failure(monkeypatch):
-    monkeypatch.setattr(draft_requests.requests, "post",
-                        lambda *a, **k: FakeResp(403, text="forbidden"))
-    monkeypatch.setattr(draft_requests.requests, "patch",
-                        lambda *a, **k: FakeResp(500, text="boom"))
-    assert draft_requests._comment("t", "o/r", 1, "x") is False
-    assert draft_requests._label("t", "o/r", 1, "l") is False
-    assert draft_requests._close("t", "o/r", 1) is False

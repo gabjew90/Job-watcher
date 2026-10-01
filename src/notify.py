@@ -6,7 +6,6 @@ the digest is just printed.
 import logging
 import os
 from datetime import datetime, timezone
-from pathlib import Path
 
 import requests
 
@@ -21,7 +20,7 @@ def _esc(text: str, limit: int = 0) -> str:
     return text[:limit] + "…" if limit and len(text) > limit else text
 
 
-def build_digest(records: list[dict], drafts: list[Path],
+def build_digest(records: list[dict],
                  health_summary: list[dict] | None = None,
                  closed_recs: list[dict] | None = None,
                  digest_floor: int = 40,
@@ -44,13 +43,6 @@ def build_digest(records: list[dict], drafts: list[Path],
         return "".join(chr(255 - ord(c)) for c in (d or "0000-00-00"))
 
     lines = []
-    if drafts:
-        repo = os.environ.get("GITHUB_REPOSITORY", "gabjew90/Job-watcher")
-        branch = os.environ.get("GITHUB_REF_NAME", "main")
-        lines.append("## 📄 Resume drafts ready\n")
-        lines += [f"- [{p.name}](https://github.com/{repo}/blob/{branch}/{p})"
-                  for p in drafts]
-        lines.append("")
     # Digest floor: don't itemize clear misfits, just count them.
     visible = [r for r in records
                if r.get("score") is None or r["score"] >= digest_floor]
@@ -141,7 +133,6 @@ def build_digest(records: list[dict], drafts: list[Path],
 
 
 def post_issue(records: list[dict],
-               drafts: list[Path] | None = None,
                health_summary: list[dict] | None = None,
                closed_recs: list[dict] | None = None,
                digest_floor: int = 40,
@@ -150,7 +141,6 @@ def post_issue(records: list[dict],
                discovered: list[dict] | None = None,
                reject_audit: list[dict] | None = None,
                screen_stats: dict | None = None) -> None:
-    drafts = drafts or []
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -161,7 +151,7 @@ def post_issue(records: list[dict],
         title += f" (top: {best['band']})"
     if closed_recs:
         title += f", {len(closed_recs)} closed"
-    body = build_digest(records, drafts, health_summary, closed_recs,
+    body = build_digest(records, health_summary, closed_recs,
                         digest_floor, unresolved, audit_recs, discovered,
                         reject_audit, screen_stats)
 

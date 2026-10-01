@@ -28,7 +28,7 @@ hour, most of it answering questions about your career.
 Work through these steps in order. Steps 3 and 4 need the owner's input —
 stop and ask, don't guess. Everything else you can do alone.
 
-### Step 1 — Clone the source, drop the resume drafter
+### Step 1 — Clone the source
 
 ```bash
 git clone https://github.com/gabjew90/Job-watcher.git /tmp/source
@@ -40,27 +40,10 @@ drifts as the repo changes, and `config.json` in particular is needed in
 step 4. `profile.md` and `feedback.md` come across as templates and get
 replaced below.
 
-This setup covers the job board and digest only, not the resume drafter.
-Remove it:
+The source no longer drafts resumes. Delete the source owner's leftovers:
+`experience_library.md`, `experience_library_archive.md` and `drafts/`.
 
-- Delete `src/resume.py`, `src/draft_requests.py`, `src/deliver.py`,
-  `tests/test_resume.py`, `resume_style.md`, `experience_library.md`,
-  `experience_library_archive.md`, `drafts/`.
-- In `src/main.py`: drop the `draft_requests` import, the
-  `drafts = draft_requests.process(...)` call, `drafts` from the
-  `if new_jobs or closed_recs or drafts:` gate and from
-  `notify.post_issue(...)`. Pass an empty list where a `drafts` argument
-  is required.
-- In `src/dashboard.py`: remove the ✍️ draft-request button and the
-  `draft_url` / `draft_body` block that builds it.
-- In `.github/workflows/daily.yml`: remove the "Install LibreOffice
-  Writer" step and the "Deliver queued draft announcements" step.
-- In `.github/workflows/tests.yml`: remove the `src/resume.py`,
-  `src/draft_requests.py` and `resume_style.md` path filters and the
-  `python-docx` install.
-
-Run `python -m pytest -q tests` and fix anything that still imports the
-removed modules. Tests must pass before you continue.
+Run `python -m pytest -q tests`. Tests must pass before you continue.
 
 ### Step 2 — Wipe the previous owner's data
 
