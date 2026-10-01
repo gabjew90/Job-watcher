@@ -28,7 +28,8 @@ titles, dates and education: the newest file in resume/ (canonical).
 
 ## Defaults (change any time)
 - LinkedIn, GitHub, portfolio: none — leave blank (owner, 2026-10-01)
-- Text-message consent: No
+- Text-message consent: Yes (owner, 2026-10-01)
+- May we contact your current employer: No, always (owner, 2026-10-01)
 - Previously worked at the company: answer from the resume's employers
   (LG Energy Solution, Comfort Energy, Pacific Gas and Electric Company)
 
