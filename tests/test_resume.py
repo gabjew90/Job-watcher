@@ -44,9 +44,9 @@ def test_parse_object_tolerates_fences_and_prose():
 
 def test_header_from_real_library():
     h = resume.header_from_library(LIBRARY)
-    assert h["name"] == "Gabriel Jew, P.E."
+    assert h["name"] == "Gabriel Jew"
     assert h["email"] == "gabjew90@gmail.com"  # parenthetical note stripped
-    assert h["linkedin"].startswith("linkedin.com/")
+    assert h["location"] == "San Diego, CA | Open to remote & travel"
 
 
 def test_thesis_and_framing_parse():
@@ -106,11 +106,11 @@ def test_guard_numbers_library_only():
     c = content()
     c["experience"][0]["bullets"].append("Closed $40M of storage contracts.")
     c["experience"][0]["bullets"].append("Sized 500 MW campuses for hyperscalers.")  # posting-only
-    c["summary"] += " Managed 2.86 MWh of product."
+    c["summary"] += " Managed 3 MWh of product."
     removed = resume.fabrication_guard(c, LIBRARY)
     texts = " ".join(c["experience"][0]["bullets"]) + c["summary"]
     assert "$40M" not in texts and "500 MW" not in texts
-    assert "2.86 MWh" in texts and "2,500 kW" in resume.draft_text(c)
+    assert "3 MWh" in texts and "2,500 kW" in resume.draft_text(c)
     assert any("$40M" in r for r in removed) and any("500 MW" in r for r in removed)
 
 
@@ -206,7 +206,7 @@ def test_render_docx_layout(rendered):
     c, path, _ = rendered
     doc = Document(str(path))
     texts = [p.text for p in doc.paragraphs]
-    assert texts[0] == "Gabriel Jew, P.E."
+    assert texts[0] == "Gabriel Jew"
     assert "gabjew90@gmail.com" in texts[1]
     # Skills sit under the summary; education and credentials are one closing section.
     headings = [t for t in texts if t in ("SUMMARY", "SKILLS", "EXPERIENCE", "SELECTED PROJECTS",
@@ -372,11 +372,11 @@ def test_two_titles_under_one_employer(tmp_path):
     # Each position is a complete entry with its dates inline: application
     # parsers drop a title with no employer and detach right-tabbed dates.
     assert texts.count("LG Energy Solution") == 2
-    assert "Senior Systems Engineer, Energy Storage | Feb 2018 – Feb 2021" in texts
+    assert "Senior Systems Engineer, Grid-Scale BESS | Feb 2018 – Feb 2021" in texts
     assert not any("\t" in x for x in texts)
     md = resume.render_markdown(c, header)
     assert md.count("### LG Energy Solution\n") == 2
-    assert "**Senior Systems Engineer, Energy Storage** | *Feb 2018 – Feb 2021*" in md
+    assert "**Senior Systems Engineer, Grid-Scale BESS** | *Feb 2018 – Feb 2021*" in md
     # Trimming never drops a lead-employer title, only its extra bullets.
     for e in c["experience"]:
         e["bullets"] = (e["bullets"] * 4)[:5]
