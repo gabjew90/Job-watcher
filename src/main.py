@@ -4,7 +4,7 @@ import logging
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import (dashboard, discovery, draft_requests, expiry, feedback, filters,
+from . import (dashboard, discovery, expiry, feedback, filters,
                health, notify, screen, state as state_mod, triage)
 from .models import Job
 from .sources import (ats_boards, career_sites, hyperscalers, jobspy_source,
@@ -127,10 +127,6 @@ def main() -> None:
             log.info("Wired direct board: %s via %s/%s",
                      d["company"], d["provider"], d["board"])
 
-    # Drafting is on-demand only: the dashboard's ✍️ link files a
-    # draft-request issue; no auto-drafting by score.
-    drafts = draft_requests.process(raw, seen, config)
-
     dashboard.generate(seen, health.summary(),
                        config.get("dashboard_max_rows", 500))
 
@@ -146,7 +142,7 @@ def main() -> None:
               and (r["first_seen_at"] >= cutoff if r.get("first_seen_at")
                    else r.get("first_seen") == today)]
 
-    if new_jobs or closed_recs or drafts:
+    if new_jobs or closed_recs:
         # Digest floor never sits below the archive floor.
         digest_floor = max(config.get("digest_min_score", 40), archive_floor)
         # Weekly (Mondays): sample archived records for hand-grading — the
@@ -164,11 +160,11 @@ def main() -> None:
                             random.sample(rejected, min(10, len(rejected)))]
         log.info("Digest: %d postings in the last %dh (%d new this run)",
                  len(window), window_h, len(new_jobs))
-        notify.post_issue(window, drafts, health.summary(), closed_recs,
+        notify.post_issue(window, health.summary(), closed_recs,
                           digest_floor, unresolved, audit_recs, discovered,
                           reject_audit, screen_stats)
     else:
-        log.info("No new or closed postings and no drafts; skipping notification.")
+        log.info("No new or closed postings; skipping notification.")
 
 
 if __name__ == "__main__":

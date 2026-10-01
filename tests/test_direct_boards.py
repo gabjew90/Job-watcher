@@ -189,7 +189,7 @@ def test_apply_link_is_stored_and_backfilled():
 
 def test_digest_lists_unresolved_best_first():
     body = notify.build_digest(
-        [], [], health_summary=[],
+        [], health_summary=[],
         unresolved=[{"company": "SRP", "score": 75, "title": "Origination"},
                     {"company": "RWE", "score": 90, "title": "Project Dev Manager"}])
     assert "No direct board found" in body

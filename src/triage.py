@@ -6,8 +6,7 @@ subscription usage, no API key. Scoring uses Sonnet — the calibration
 rules in feedback.md (seniority from described scope, not title) are
 judgment calls a stronger model gets right more often, and the volume
 (~50 postings a run, batched) keeps it cheap. The title screen
-(screen.py) uses Haiku. Resume drafting lives in resume.py and is
-on-demand only (draft_requests.py); it shares _run_claude and _parse_json.
+(screen.py) uses Haiku.
 
 Cost hygiene: the whole step is skipped when there are no new postings and
 scoring is batched (CHUNK jobs per call).

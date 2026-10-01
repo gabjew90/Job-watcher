@@ -5,8 +5,7 @@ infrastructure, data center flexibility, and grid interconnection** —
 hyperscalers and the surrounding BESS / datacenter-power ecosystem.
 
 Scrapes job boards daily via GitHub Actions, filters and dedupes, scores
-each new posting for fit with Claude, drafts tailored resumes for top hits,
-posts a GitHub Issue digest, and renders a dashboard on GitHub Pages.
+each new posting for fit with Claude, posts a GitHub Issue digest, and renders a dashboard on GitHub Pages.
 
 ## How it works
 
@@ -25,9 +24,6 @@ static careers pages with no ATS (regex over the HTML — Flux Power)
     role-type signal (rescue_title_keywords); ≤600 titles/run (screen.py)
   → dedupe vs state/seen_jobs.json  (committed each run)
   → Claude triage: fit band vs profile.md + feedback (Sonnet, batched)
-  → resume drafts on demand (dashboard ✍️ → issue): one-page DOCX + PDF +
-    Markdown twin, from experience_library.md only, in the voice set by
-    resume_style.md, with an ATS keyword check and a fabrication guard
   → GitHub Issue digest (sorted by score) + docs/index.html dashboard
 ```
 
@@ -49,15 +45,7 @@ static careers pages with no ATS (regex over the HTML — Flux Power)
    named `CLAUDE_CODE_OAUTH_TOKEN` (Settings → Secrets and variables →
    Actions). No API key billing — triage runs on your subscription. Without
    the secret, runs still work; digests are just unscored.
-3. **Keep `experience_library.md` current** — it is the only source of
-   facts for resume drafts. To get a draft, tap ✍️ on a dashboard row: it
-   opens a pre-filled `draft-request` issue; add emphasis notes in the body
-   if you like. The next run answers on the issue with links to the PDF,
-   DOCX and Markdown in `drafts/`, the ATS keyword coverage, and the
-   posting requirements the library cannot evidence (gaps). Gaps never
-   enter the resume. `resume_style.md` sets the voice; edit it to tune the
-   writing.
-4. **Tune `config.json`**: search terms, keyword filter, title exclusions,
+3. **Tune `config.json`**: search terms, keyword filter, title exclusions,
    priority topics, ATS boards, retention. `profile.md`
    is what postings are scored against — keep it current.
 
@@ -171,10 +159,6 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   exactly, at least one carrying a non-generic word. (The name check is
   deliberately not `util.company_key`, which collapses a name to its first
   word — under it "Hive Systems" and "HIVE Digital" are the same company.)
-- A draft request is answered only after its files are pushed: the
-  pipeline queues the comment in `state/pending_delivery.json` and the
-  workflow runs `python -m src.deliver` after the commit lands, so a
-  failed push can no longer close a request whose links point at nothing.
 - Both model gates have regression evals (`python -m src.eval_runner`,
   CI on any change to the prompts, rubric or feedback). Scoring
   (`eval/cases.json`) grades the band production stores, since
@@ -188,17 +172,7 @@ of 2026-08 are noted there — e.g. Microsoft moved from
   instead on a case dropped in EVERY pass (reproducible, so real) or on
   the keep rate falling below 23/27. A case kept in some passes but not
   all prints as UNSTABLE — a prompt smell, not a build break.
-- Resume drafts: the model writes words only, as structured JSON; the
-  one-page layout is code (`src/resume.py`, python-docx), the PDF is that
-  DOCX converted by LibreOffice, and the page count is checked. A
-  fabrication guard drops any line whose numbers, dates or employers are
-  not in the library, and any skills term with a word the library never
-  uses (drop, never rewrite), and lists the removals on the issue. The
-  page estimate is in points from the theme's sizes and spacing,
-  calibrated on LibreOffice output; the PDF page count is still the
-  final judge, trimming the cheapest items first (a third project, older
-  roles' extra bullets, long skills lists) so lead-role bullets survive. `resume_style.md` rules marked ✔ are also checked in code; a
-  revision pass fixes violations and works in missing ATS terms only where
-  the library supports them. No auto-drafting by score.
-- No LinkedIn scraping. No auto-applying. Discovery, scoring, and drafting
-  only.
+- Resume drafting was retired on 2026-10-01 (owner decision): the
+  owner's own resume is the canonical version. `drafts/` keeps the earlier
+  drafts so links in old issue comments still resolve.
+- No LinkedIn scraping. No auto-applying. Discovery and scoring only.

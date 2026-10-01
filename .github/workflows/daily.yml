@@ -36,14 +36,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Resume drafts ship as PDF converted from the DOCX by LibreOffice;
-      # Carlito is metric-compatible with Calibri so the PDF paginates like
-      # Word. About a minute per run; only draft requests use it.
-      - name: Install LibreOffice Writer (resume PDFs)
-        run: |
-          sudo apt-get update -q
-          sudo apt-get install -y -q --no-install-recommends libreoffice-writer fonts-crosextra-carlito
-
       - name: Install Claude Code CLI (triage)
         run: npm install -g @anthropic-ai/claude-code
 
@@ -57,7 +49,7 @@ jobs:
         run: |
           git config user.name "job-watcher-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- state docs data drafts config.json
+          git add -A -- state docs data config.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: daily run $(date -u +%F)"
             # A concurrent run may have pushed since checkout; rebase our
@@ -68,12 +60,3 @@ jobs:
               git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
             done
           fi
-
-      # Only now are the draft files reachable at the links the comment
-      # uses, so a draft request is answered and closed here rather than
-      # in the pipeline. A failed push above exits before this step and
-      # the request stays open for the next run to redo.
-      - name: Deliver queued draft announcements
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python -m src.deliver
