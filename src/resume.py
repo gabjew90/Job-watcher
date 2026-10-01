@@ -786,8 +786,10 @@ def fabrication_guard(content: dict, library: str) -> list[str]:
         if not ok_numbers(line, "education"):
             continue
         # A structured entry names its institution outright; a one-line entry
-        # has it among the comma-separated parts.
-        fields = [name] if isinstance(entry, dict) else re.split(r",| — ", line)
+        # has it among the comma-separated parts. The year stays out: joined
+        # on, it made "UC Davis Graduate School of Management 2022", which no
+        # library line contains, and the MBA was dropped from every draft.
+        fields = [name] if isinstance(entry, dict) else re.split(r",| — ", f"{name}, {detail}")
         schools = [x.strip() for x in fields if SCHOOL_RE.search(x)]
         if any(re.sub(r"\s+", " ", s.lower()) not in lib_low for s in schools):
             removed.append(f"education '{line[:90]}': institution not in library")

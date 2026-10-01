@@ -132,6 +132,8 @@ def test_guard_education_institution():
     c["education"].append("MS Electrical Engineering, Stanford University, 2015")
     resume.fabrication_guard(c, LIBRARY)
     assert not any("Stanford" in x for x in c["education"])
+    # The school just before the year must survive, not only the BS line.
+    assert any(x.startswith("MBA") for x in c["education"])
     assert any("UC Davis" in x for x in c["education"])
 
 
