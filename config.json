@@ -608,6 +608,9 @@
   ],
   "state_retention_days": 180,
   "dashboard_max_rows": 500,
-  "rescore_scored_before": "2026-10-01T07:00Z",
-  "rescore_max_per_run": 60
+  "rescore_scored_before": "2026-10-01T23:45Z",
+  "rescore_max_per_run": 60,
+  "rescore_sources": [
+    "successfactors"
+  ]
 }
