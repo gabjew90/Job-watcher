@@ -210,10 +210,10 @@ def test_render_docx_layout(rendered):
     assert "gabjew90@gmail.com" in texts[1]
     # Skills sit under the summary; education and credentials are one closing section.
     headings = [t for t in texts if t in ("SUMMARY", "SKILLS", "EXPERIENCE", "SELECTED PROJECTS",
-                                          "EDUCATION & CREDENTIALS")]
+                                          "EDUCATION & LICENSES")]
     assert headings == ["SUMMARY", "SKILLS", "EXPERIENCE", "SELECTED PROJECTS",
-                        "EDUCATION & CREDENTIALS"]
-    creds = texts[texts.index("EDUCATION & CREDENTIALS") + 1:]
+                        "EDUCATION & LICENSES"]
+    creds = texts[texts.index("EDUCATION & LICENSES") + 1:]
     assert any("UC Davis" in x for x in creds) and any("M38303" in x for x in creds)
     assert len(doc.tables) == 0
     from docx.oxml.ns import qn
@@ -226,7 +226,10 @@ def test_render_docx_layout(rendered):
     for e in c["experience"]:
         for b in e["bullets"]:
             assert b in texts
-    assert any("\t" in t and "Feb 2018" in t for t in texts)  # dates on the right tab
+    # Dates inline after the title, never at a right tab: application
+    # parsers read right-tabbed PDF text detached from its line.
+    assert any(" | Feb 2018" in t for t in texts)
+    assert not any("\t" in t for t in texts)
 
 
 def test_markdown_matches_docx(rendered):
@@ -357,7 +360,6 @@ def test_two_titles_under_one_employer(tmp_path):
     c = content()
     gs = resume.groups(c["experience"])
     assert [len(g) for g in gs] == [2, 1, 1]
-    assert resume.span_dates(gs[0]) == "Feb 2018 – present"
     # Lead-role reorder keeps both LG entries together and first, newest first.
     raw = copy.deepcopy(FIXTURE)
     raw["experience"].reverse()
@@ -367,13 +369,29 @@ def test_two_titles_under_one_employer(tmp_path):
     header = resume.header_from_library(LIBRARY)
     doc = Document(str(resume.render_docx(c, header, None, tmp_path / "g.docx")))
     texts = [p.text for p in doc.paragraphs]
-    assert "LG Energy Solution\tFeb 2018 – present" in texts
-    assert "Senior Systems Engineer, Energy Storage\tFeb 2018 – Feb 2021" in texts
+    # Each position is a complete entry with its dates inline: application
+    # parsers drop a title with no employer and detach right-tabbed dates.
+    assert texts.count("LG Energy Solution") == 2
+    assert "Senior Systems Engineer, Energy Storage | Feb 2018 – Feb 2021" in texts
+    assert not any("\t" in x for x in texts)
     md = resume.render_markdown(c, header)
-    assert "### LG Energy Solution\n*Feb 2018 – present*" in md
-    assert "**Senior Systems Engineer, Energy Storage** *(Feb 2018 – Feb 2021)*" in md
+    assert md.count("### LG Energy Solution\n") == 2
+    assert "**Senior Systems Engineer, Energy Storage** | *Feb 2018 – Feb 2021*" in md
     # Trimming never drops a lead-employer title, only its extra bullets.
     for e in c["experience"]:
         e["bullets"] = (e["bullets"] * 4)[:5]
     resume.fit_to_page(c)
     assert len(resume.groups(c["experience"])[0]) == 2
+
+
+@pytest.mark.parametrize("line,parts", [
+    ("MBA, UC Davis Graduate School of Management, 2022",
+     ("MBA, UC Davis Graduate School of Management", "", "2022")),
+    ("BS Mechanical Engineering, UC Davis, 2013, Dean's Honor List",
+     ("BS Mechanical Engineering, UC Davis, Dean's Honor List", "", "2013")),
+    ("California Professional Engineer #M38303 (2016), Thermal and Fluid Systems",
+     ("California Professional Engineer #M38303 (2016), Thermal and Fluid Systems", "", "")),
+    ("Certificate, 2019, renewed 2023", ("Certificate, 2019, renewed", "", "2023")),
+])
+def test_credential_year_moves_to_the_date_slot(line, parts):
+    assert resume.credential_parts(line) == parts

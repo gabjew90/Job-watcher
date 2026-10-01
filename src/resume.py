@@ -69,6 +69,8 @@ BULLET_INDENT_CHARS = 5                              # fewer on an indented line
 MAX_PDF_ROUNDS = 8
 GROUP_INDENT = 0.14  # inches; title lines and bullets under a multi-title employer
 
+# heading_spacing stays 0: letter-spaced headings extract from the PDF as
+# "S U M M A R Y", which application parsers do not recognize as a section.
 THEMES = {
     # Ruled small-caps headings, employer first. Reads like a well-set
     # traditional resume.
@@ -77,18 +79,18 @@ THEMES = {
                     heading_color="333333", heading_spacing=0, heading_before=7,
                     rule=True, rule_color="999999", rule_size=6, role_order="employer",
                     dates_italic=True, dates_color=None, label_color=None),
-    # No rules: letter-spaced slate headings, Arial, title before employer,
+    # No rules: slate headings, Arial, title before employer,
     # grey dates. The quiet modern look.
     "modern": dict(font="Arial", body=10, name=18, name_color="1F2933", contact=9,
                    contact_color="5B6470", name_rule=True, heading_size=8.5,
-                   heading_color="2F4F6F", heading_spacing=30, heading_before=9,
+                   heading_color="2F4F6F", heading_spacing=0, heading_before=9,
                    rule=False, rule_color="D9DDE2", rule_size=4, role_order="title",
                    dates_italic=False, dates_color="5B6470", label_color="2F4F6F"),
     # One accent colour on the name, headings and their rules; otherwise
     # classic bones.
     "accent": dict(font="Calibri", body=10.5, name=16, name_color="1B4965", contact=9.5,
                    contact_color="5B6470", name_rule=False, heading_size=9,
-                   heading_color="1B4965", heading_spacing=20, heading_before=6,
+                   heading_color="1B4965", heading_spacing=0, heading_before=6,
                    rule=True, rule_color="1B4965", rule_size=8, role_order="employer",
                    dates_italic=True, dates_color="5B6470", label_color="1B4965"),
 }
@@ -405,16 +407,6 @@ def groups(experience: list[dict]) -> list[list[dict]]:
     return out
 
 
-def span_dates(group: list[dict]) -> str:
-    """'Feb 2018 – present' for a group whose newest entry ends 'present'
-    and whose oldest starts 'Feb 2018'."""
-    if len(group) == 1:
-        return group[0]["dates"]
-    start = group[-1]["dates"].split(" – ")[0]
-    end = group[0]["dates"].split(" – ")[-1]
-    return f"{start} – {end}"
-
-
 # ---------------------------------------------------------------- style
 
 BANNED_WORDS = (
@@ -499,6 +491,7 @@ COORDINATION_VERBS = {"coordinated", "coordinate", "aligned", "align", "supporte
 
 
 CRED_YEAR = re.compile(r"[,(]?\s*((?:19|20)\d{2})\)?\s*$")
+MID_YEAR = re.compile(r",?\s*\b((?:19|20)\d{2})\b(?=\s*(?:,|$))")
 
 
 def credential_parts(item) -> tuple[str, str, str]:
@@ -513,6 +506,13 @@ def credential_parts(item) -> tuple[str, str, str]:
     m = CRED_YEAR.search(text)
     if m:
         return (text[:m.start()].rstrip(" ,("), "", m.group(1))
+    # A lone year mid-line ("BS Mechanical Engineering, UC Davis, 2013,
+    # Dean's Honor List") moves to the date slot so every entry ends
+    # "| year"; with two years, which one is the date is unclear, so none.
+    years = list(MID_YEAR.finditer(text))
+    if len(years) == 1:
+        y = years[0]
+        return ((text[:y.start()] + text[y.end():]).strip(" ,"), "", y.group(1))
     return (text, "", "")
 
 
@@ -946,21 +946,23 @@ def estimate_height(content: dict, theme: str = DEFAULT_THEME) -> float:
     h += sections * (t["heading_before"] + extra + t["heading_size"] * lh + 2 + (3 if t["rule"] else 0))
     h += wrapped(content.get("summary", ""), cpl) * body
     for g in groups(content.get("experience", [])):
-        h += d["entry_before"] + body  # employer line above the title lines
-        for e in g:
-            h += (d["title_before"] if len(g) > 1 else d["block_after"]) + body \
+        for i, e in enumerate(g):
+            # employer line per position, then "title | dates" on one line
+            h += (d["entry_before"] if i == 0 else d["title_before"]) + body
+            h += d["block_after"] + wrapped(f"{e['title']} | {e['dates']}", cpl) * body \
                 + sum(wrapped(bullet_text(b), cpl_bullet) * body + d["bullet_after"]
                       for b in e["bullets"])
     for p in content.get("projects", []):
-        h += d["entry_before"] + body  # name line with the stack in the right column
+        name_line = p["name"] + (f" | {p['tech']}" if p.get("tech") else "")
+        h += d["entry_before"] + wrapped(name_line, cpl) * body  # stack inline after the name
         subtitle = p.get("title") or p.get("line")
         if subtitle:
             h += wrapped(subtitle, cpl) * body
         h += sum(wrapped(bullet_text(b), cpl_bullet) * body + d["bullet_after"]
                  for b in p.get("bullets", []))
     for item in list(content.get("education", [])) + list(content.get("certifications", [])):
-        name, detail, _ = credential_parts(item)
-        h += d["entry_before"] + wrapped(name, cpl) * body + (wrapped(detail, cpl) * body if detail else 0)
+        line = " | ".join(x for x in credential_parts(item) if x)
+        h += d["entry_before"] + wrapped(line, cpl) * body
     h += sum(wrapped(c["category"] + ", ".join(c["items"]), cpl - 2) for c in content.get("skills", [])) * body
     return round(h, 1)
 
@@ -1066,26 +1068,24 @@ def render_markdown(content: dict, header: dict, job: Job | None = None) -> str:
         lines += [f"**{c['category']}:** {', '.join(c['items'])}  " for c in content["skills"]]
     lines.append("\n## Experience")
     for g in groups(content.get("experience", [])):
-        lines.append(f"\n### {g[0]['employer']}\n*{span_dates(g)}*")
         for e in g:
-            lines.append(f"\n**{e['title']}**" + (f" *({e['dates']})*" if len(g) > 1 else ""))
+            lines.append(f"\n### {e['employer']}\n**{e['title']}** | *{e['dates']}*")
             lines += [_md_bullet(b) for b in e["bullets"]]
     if content.get("projects"):
         lines.append("\n## " + (content.get("projects_heading") or "Selected projects"))
         for p in content["projects"]:
-            lines.append(f"\n### {p['name']}" + (f"\n*{p['tech']}*" if p.get("tech") else ""))
+            lines.append(f"\n### {p['name']}" + (f" | *{p['tech']}*" if p.get("tech") else ""))
             subtitle = p.get("title") or p.get("line")
             if subtitle:
                 lines.append(f"\n**{subtitle}**")
             lines += [_md_bullet(b) for b in p.get("bullets", [])]
     credentials = list(content.get("education", [])) + list(content.get("certifications", []))
     if credentials:
-        lines.append("\n## " + (content.get("education_heading") or "Education & Credentials"))
+        lines.append("\n## " + (content.get("education_heading") or "Education & Licenses"))
         for item in credentials:
             name, detail, date = credential_parts(item)
-            lines.append(f"\n### {name}" + (f"\n*{date}*" if date else ""))
-            if detail:
-                lines.append(f"\n{detail}")
+            lines.append(f"\n**{name}**" + (f" | {detail}" if detail else "")
+                         + (f" | *{date}*" if date else ""))
     return "\n".join(lines) + "\n"
 
 
@@ -1107,7 +1107,6 @@ def _contact_line(header: dict) -> str:
 def render_docx(content: dict, header: dict, job: Job | None, path: Path,
                 theme: str = DEFAULT_THEME) -> Path:
     from docx import Document
-    from docx.enum.text import WD_TAB_ALIGNMENT
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
     from docx.shared import Inches, Pt, RGBColor
@@ -1188,6 +1187,11 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
         p.paragraph_format.keep_with_next = True
         if t["rule"]:
             _bottom_rule(p, t["rule_color"], t["rule_size"])
+        # Marked as a level-1 heading so application parsers find sections.
+        ppr = p._p.get_or_add_pPr()
+        lvl = OxmlElement("w:outlineLvl")
+        lvl.set(qn("w:val"), "0")
+        ppr.append(lvl)
 
     name = doc.add_paragraph()
     r = name.add_run(header.get("name", ""))
@@ -1221,28 +1225,30 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
     if content.get("skills"):
         skills_block()
 
-    def role_line(first: str, second: str | None, dates: str, before: int, bold: bool = True,
-                  indent: float = 0.0, color: str | None = None, italic_right: bool | None = None):
+    def role_line(first: str, rest: list[tuple[str, bool]], before: int, bold: bool = True,
+                  indent: float = 0.0, color: str | None = None):
+        """One line, text in reading order: `first`, then each (text, italic)
+        part after " | ". Dates sit inline rather than at a right tab stop:
+        a PDF stores right-aligned text as a separate run, and application
+        parsers then read every date detached from its job (Gabriel's
+        2026-10 resume parsed its education years as "2022 2016 2013")."""
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(before)
         p.paragraph_format.left_indent = Inches(indent)
         # An employer or title line stranded at the foot of a page reads as a
         # mistake, so it always carries the line under it to the next page.
         p.paragraph_format.keep_with_next = True
-        p.paragraph_format.tab_stops.add_tab_stop(Inches(8.5 - 2 * d["margin_x"]),
-                                                  WD_TAB_ALIGNMENT.RIGHT)
         r1 = p.add_run(first)
         r1.bold = bold
         if color:
             r1.font.color.rgb = _rgb(color)
-        if second:
-            r2 = p.add_run(f"  |  {second}")
+        for text, italic in rest:
+            if not text:
+                continue
+            r = p.add_run(f" | {text}")
+            r.italic = italic
             if t["dates_color"]:
-                r2.font.color.rgb = _rgb(t["dates_color"])
-        r3 = p.add_run(f"\t{dates}")
-        r3.italic = t["dates_italic"] if italic_right is None else italic_right
-        if t["dates_color"]:
-            r3.font.color.rgb = _rgb(t["dates_color"])
+                r.font.color.rgb = _rgb(t["dates_color"])
 
     def bullet_para(b):
         """A list bullet; a dict bullet gets its label in bold first."""
@@ -1265,15 +1271,14 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
 
     heading("Experience")
     for g in groups(content.get("experience", [])):
-        # Every employer reads the same way: an employer line (bold, accent
-        # colour) carrying the whole tenure, then an indented bold title line
-        # per position, newest first, with its bullets indented to match. A
-        # lone title does not repeat the dates the employer line already shows.
-        role_line(g[0]["employer"], None, span_dates(g), d["entry_before"],
-                  color=t["label_color"])
-        for e in g:
-            role_line(e["title"], None, e["dates"] if len(g) > 1 else "",
-                      d["title_before"] if len(g) > 1 else d["block_after"],
+        # Every position is a complete entry: employer line (bold, accent
+        # colour), then an indented "title | dates" line and its bullets.
+        # Two titles at one employer repeat the employer line; a title with
+        # no employer of its own is what application parsers drop or merge.
+        for i, e in enumerate(g):
+            role_line(e["employer"], [], d["entry_before"] if i == 0 else d["title_before"],
+                      color=t["label_color"])
+            role_line(e["title"], [(e["dates"], t["dates_italic"])], d["block_after"],
                       indent=GROUP_INDENT)
             for b in e["bullets"]:
                 bp = bullet_para(b)
@@ -1285,25 +1290,22 @@ def render_docx(content: dict, header: dict, job: Job | None, path: Path,
             # Exactly an employer entry: accent name line with the stack in
             # the right column (where dates sit), an indented bold line
             # playing the title's part, then indented bullets.
-            role_line(pj["name"], None, pj.get("tech", ""), d["entry_before"],
-                      color=t["label_color"], italic_right=False)
+            role_line(pj["name"], [(pj.get("tech", ""), False)], d["entry_before"],
+                      color=t["label_color"])
             subtitle = pj.get("title") or pj.get("line")
             if subtitle:
-                role_line(subtitle, None, "", d["block_after"], indent=GROUP_INDENT)
+                role_line(subtitle, [], d["block_after"], indent=GROUP_INDENT)
             for b in pj.get("bullets", []):
                 bp = bullet_para(b)
                 bp.paragraph_format.left_indent = Inches(0.22 + GROUP_INDENT)
 
     credentials = list(content.get("education", [])) + list(content.get("certifications", []))
     if credentials:
-        heading(content.get("education_heading") or "Education & Credentials")
+        heading(content.get("education_heading") or "Education & Licenses")
         for item in credentials:
             name, detail, date = credential_parts(item)
-            role_line(name, None, date, d["entry_before"], color=t["label_color"])
-            if detail:
-                dp = doc.add_paragraph(detail)
-                dp.paragraph_format.left_indent = Inches(GROUP_INDENT)
-                dp.paragraph_format.space_after = Pt(d["block_after"])
+            role_line(name, [(detail, False), (date, t["dates_italic"])], d["entry_before"],
+                      color=t["label_color"])
 
     doc.core_properties.author = header.get("name", "")
     doc.core_properties.title = (f"{header.get('name', '')} resume"
