@@ -119,10 +119,18 @@ def test_recent_finds_carry_the_new_badge(tmp_path, monkeypatch):
     from datetime import datetime, timedelta, timezone
     day = lambda n: (datetime.now(timezone.utc) - timedelta(days=n)).strftime("%Y-%m-%d")
     monkeypatch.setattr(dashboard, "OUT", tmp_path / "index.html")
-    dashboard.generate({"1": rec("Fresh", "top", day(1)), "2": rec("Older", "top", day(5)),
+    dashboard.generate({"1": rec("Fresh", "top", day(1)), "2": rec("Older", "top", day(2)),
                         "3": rec("Gone", "top", day(0), active=False, closed=day(0))}, [])
     page = (tmp_path / "index.html").read_text()
     classes = dict((t, c) for c, t in re.findall(
         r'<tr(?: class="([^"]*)")? data-id=[^>]*>.*?_blank">([^<]+)</a>', page, re.S))
     assert classes == {"Fresh": "new", "Older": "", "Gone": "closed"}
     assert '💵 ' in page and 'content: "NEW"' in page
+
+
+def test_every_theme_defines_the_money_colours():
+    from src import themes
+    for th in themes.THEMES.values():
+        for mode in ("light", "dark"):
+            assert {"money-bg", "money-ink"} <= set(th[mode])
+    assert "--money-bg:" in themes.css_vars(themes.get("gas"))

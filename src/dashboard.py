@@ -147,15 +147,13 @@ _PAGE = """<!DOCTYPE html>
      with no sideways scrolling: title and rating on top, then company and
      place, then pay and work mode as pills (pay first), then source and dates on one
      small line, with the buttons last. A stripe in the rating's colour runs
-     down the card's edge; roles found in the last two days carry a NEW
+     down the card's edge; roles first seen today or yesterday carry a NEW
      badge. Cells are targeted by class (set in _row), not position. Column
      sorting needs the header, so phones keep the grouped rating order (the
      script restores it when the screen narrows). */
-  :root {{ --money-bg: #dcfce7; --money-ink: #166534; }}
-  @media (prefers-color-scheme: dark) {{ :root {{ --money-bg: #14532d; --money-ink: #bbf7d0; }} }}
   @media (max-width: 640px) {{
     .hero {{ height: 12rem; }} .hero svg {{ opacity: .45; }}
-    .tablewrap {{ background: none; border: 0; box-shadow: none; }}
+    .boardwrap {{ background: none; border: 0; box-shadow: none; }}
     #t thead {{ display: none; }}
     #t, #t tbody {{ display: block; }}
     #t tr {{ display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .45rem;
@@ -177,22 +175,24 @@ _PAGE = """<!DOCTYPE html>
     #t tr.new td.c-title > a:first-child::after {{
       content: "NEW"; margin-left: .4rem; padding: .05rem .4rem; border-radius: .35rem;
       font-size: .65rem; font-weight: 800; letter-spacing: .06em; vertical-align: .15em;
-      background: var(--accent2); color: #fff; }}
+      background: var(--b-top); color: var(--b-top-ink); }}
     #t td.c-fit {{ order: 2; flex: 0 0 auto; text-align: right; }}
     #t td.c-fit .band {{ font-size: .85rem; padding: .25rem .65rem; }}
     #t td.c-co {{ order: 3; flex-basis: 100%; font-weight: 600; }}
-    #t td.c-co::before {{ content: "🏢 "; }}
+    #t td.c-co::before {{ content: "💼 "; }}
     #t td.c-loc {{ order: 4; flex-basis: 100%; color: var(--muted); }}
     #t td.c-loc::before {{ content: "📍 "; }}
-    #t td.c-pay {{ order: 5; padding: .2rem .6rem; border-radius: 999px; font-weight: 700;
-                   background: var(--money-bg); color: var(--money-ink); }}
+    #t td.c-pay {{ order: 5; padding: .2rem .6rem; border-radius: .7rem; font-weight: 700;
+                   overflow-wrap: break-word; background: var(--money-bg); color: var(--money-ink); }}
     #t td.c-pay::before {{ content: "💵 "; }}
     #t td.c-mode {{ order: 6; padding: .2rem .6rem; border-radius: 999px; font-size: .85rem;
                     background: var(--head); }}
     #t td.c-title > .src, #t td.c-posted, #t td.c-seen {{ order: 7; margin: 0; font-size: .78rem;
                                                          color: var(--muted); }}
     /* A zero-height break after the pills puts source and dates on their own line. */
-    #t tr:not(.grp)::after {{ content: ""; order: 6; flex-basis: 100%; height: 0; }}
+    /* It forms a line of its own; the negative margin cancels its extra row gap. */
+    #t tr:not(.grp)::after {{ content: ""; order: 6; flex-basis: 100%; height: 0;
+                              margin-top: -.35rem; }}
     #t td.c-posted::before {{ content: "📅 Posted "; }}
     #t td.c-seen::before {{ content: "👀 Seen "; }}
     #t td.c-title > .fb {{ order: 9; flex-basis: 100%; margin-top: .3rem; padding-top: .55rem;
@@ -210,7 +210,7 @@ _PAGE = """<!DOCTYPE html>
 <div class="chips"><span class="chip"><b>{active_count}</b>active{shown_note}</span><span class="chip"><b>{top_count}</b>top fits</span><span class="chip"><b>{new_count}</b>new this week</span><span class="chip"><b>{closed_count}</b>closed</span></div>
 <p class="legend">Each role is rated against the profile: top, strong, possible, weak or misfit, newest first within each rating. Weak and misfit roles are hidden unless you tick the box or search. The buttons under a role move it one rating up or down on the next run and teach future ratings.</p>
 <div class="controls"><input id="q" type="search" placeholder="Filter by title, company, place…" oninput="applyVis()"><label><input id="lo" type="checkbox" onchange="applyVis()"> show weak &amp; misfit</label><label><input id="sc" type="checkbox" onchange="applyVis()"> show closed</label><span class="meta">Updated <span id="upd" data-ts="{generated_iso}">{generated} UTC</span></span></div>
-<div class="tablewrap">
+<div class="tablewrap boardwrap">
 <table id="t">
 <thead><tr>
   <th onclick="sortBy(0)">Title</th><th onclick="sortBy(1)">Company</th>
@@ -352,11 +352,12 @@ def _band(rec: dict) -> str:
     return "misfit"
 
 
-def _row(rec: dict, theme: dict | None = None) -> str:
+def _row(rec: dict, theme: dict | None = None, fresh: str = "") -> str:
+    """One posting's table row. `fresh` is the first-seen date from which a
+    role counts as new (computed once per page by generate)."""
     theme = theme or themes.get(None)
-    fresh = (datetime.now(timezone.utc) - timedelta(days=2)).strftime("%Y-%m-%d")
     classes = ([] if rec.get("active", True) else ["closed"]) + (
-        ["new"] if rec.get("active", True) and rec.get("first_seen", "") >= fresh else [])
+        ["new"] if fresh and rec.get("active", True) and rec.get("first_seen", "") >= fresh else [])
     cls = f' class="{" ".join(classes)}"' if classes else ""
     e = lambda s: html.escape(str(s or ""))
     fp = rec.get("scoring_fingerprint") or {}
@@ -445,6 +446,7 @@ def generate(state: dict, health_summary: list[dict] | None = None,
     shown_active = sum(1 for r in records if r.get("active", True))
     now = datetime.now(timezone.utc)
     week_ago = (now - timedelta(days=7)).strftime("%Y-%m-%d")
+    fresh = (now - timedelta(days=1)).strftime("%Y-%m-%d")  # NEW: today or yesterday
     live = [r for r in state.values() if r.get("active", True)]
     # The banner the digest shows at its top, served from Pages next to the page.
     (OUT.parent / "banner.svg").write_text(themes.banner_svg(theme, html.escape(title)))
@@ -460,6 +462,6 @@ def generate(state: dict, health_summary: list[dict] | None = None,
         closed_count=closed,
         generated=now.strftime("%Y-%m-%d %H:%M"),
         generated_iso=now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        rows="\n".join(_row(r, theme) for r in records),
+        rows="\n".join(_row(r, theme, fresh) for r in records),
         health_rows="\n".join(_health_row(s) for s in health_summary or []),
     ))
