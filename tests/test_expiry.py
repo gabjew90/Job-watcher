@@ -160,3 +160,46 @@ def test_search_that_never_ends_is_unknown(monkeypatch):
     pages = [[str(1400000000 + n)] for n in range(100)]               # always a fresh page
     monkeypatch.setattr(expiry.requests, "get", _fake_site(SF_SHELL, pages))
     assert expiry._successfactors_alive(SF_URL, SF_TITLE) is None
+
+
+# --- Indeed copies whose employer page is gone ---------------------------
+
+NRG_LINK = ("https://career4.successfactors.com/career?company=C0004920031P"
+            "&career_ns=job_listing&career_job_req_id=45819&lang=en_US&source=Indeed")
+
+
+def test_indeed_copy_closes_when_the_employer_page_is_gone(monkeypatch):
+    """NRG, 2026-10-02: Indeed still listed the role; NRG's link said gone."""
+    pages = {NRG_LINK: _SFResp("<td>This job cannot be viewed at this time. It has "
+                               "either been deleted or is no longer available.</td>", NRG_LINK)}
+    monkeypatch.setattr(expiry.requests, "get", lambda url, **k: pages[url])
+    seen = {"nrg": rec("indeed", url="https://www.indeed.com/viewjob?jk=6287c832f6ff32fe",
+                       apply_url=NRG_LINK),
+            "other": rec("indeed", url="https://www.indeed.com/viewjob?jk=0000000000000001",
+                         apply_url="https://example.com/careers/1")}
+    monkeypatch.setattr(expiry, "_indeed_expired",
+                        lambda keys: {k: False for k in keys})   # Indeed: both live
+    closed = expiry.sweep(seen, [], {})
+    assert [r["apply_url"] for r in closed] == [NRG_LINK]
+    assert seen["other"]["active"]
+
+
+@pytest.mark.parametrize("url,expect_call", [
+    ("https://aes.wd1.myworkdayjobs.com/AES_US/job/US-Salt-Lake-City-UT/Engineer_R1?source=Indeed",
+     "https://aes.wd1.myworkdayjobs.com/AES_US/job/US-Salt-Lake-City-UT/Engineer_R1"),
+    ("https://aes.wd1.myworkdayjobs.com/AES_US/job/US-Salt-Lake-City-UT/Engineer_R1/apply",
+     "https://aes.wd1.myworkdayjobs.com/AES_US/job/US-Salt-Lake-City-UT/Engineer_R1"),
+])
+def test_workday_apply_links_are_probed_without_query_or_apply(monkeypatch, url, expect_call):
+    calls = []
+    monkeypatch.setattr(expiry, "_workday_alive", lambda u: calls.append(u) or True)
+    assert expiry._apply_link_dead({"apply_url": url}) is False
+    assert calls == [expect_call]
+
+
+def test_unknown_or_unread_employer_pages_never_close(monkeypatch):
+    monkeypatch.setattr(expiry.requests, "get",
+                        lambda url, **k: _SFResp("<title>Sign in</title>", url))
+    assert not expiry._apply_link_dead({"apply_url": NRG_LINK})
+    assert not expiry._apply_link_dead({"apply_url": "https://careers.google.com/jobs/results/1-x/"})
+    assert not expiry._apply_link_dead({"apply_url": ""})

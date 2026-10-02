@@ -14,6 +14,8 @@ Two tiers, by how each source can be checked:
 2. Keyword-search sources are probed one posting at a time:
    - indeed: the mobile GraphQL API answers jobData(jobKeys) for 500 keys
      per call with an `expired` flag; a key it no longer knows is gone.
+     An Indeed copy whose apply link is a Workday, Amazon or SuccessFactors
+     portal page also closes when that page says the posting is gone.
    - workday: the CxS job endpoint is 200 for a live posting, 404 for a
      removed one.
    - successfactors: a removed posting redirects to /errorpage/, or keeps
@@ -66,6 +68,7 @@ SF_TITLE_FIELD = 'data-careersite-propertyid="title"'
 SF_DETAILS_TITLE = re.compile(r"<title>[^<]*Job Details \|", re.I)
 SF_JOB_LINK = re.compile(r'href="/job/[^"]*?/(\d{6,})/"')
 SF_REQ_ID = re.compile(r"/(\d{6,})/?$")
+SF_LEGACY_GONE = "This job cannot be viewed at this time"
 # A probe that finds more than this share of a source dead in one run is
 # treated as broken (site change, block) and closes nothing for that source.
 SUSPECT_DEAD_SHARE = 0.5
@@ -206,6 +209,44 @@ def _sf_listed(url: str, title: str, max_pages: int = 20) -> bool | None:
     return None
 
 
+def _sf_legacy_alive(url: str) -> bool | None:
+    """The older SuccessFactors portal (career4.successfactors.com/career?
+    ...career_job_req_id=, which Indeed passes through as NRG's apply link)
+    answers 200 for a removed posting with an explicit notice. Only that
+    notice is read; any other page is unknown."""
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+    except Exception as e:  # noqa: BLE001
+        log.debug("successfactors portal check failed for %s: %s", url, e)
+        return None
+    if resp.status_code == 200 and SF_LEGACY_GONE in resp.text:
+        return False
+    return None
+
+
+# Indeed keeps showing some postings after the employer removes them
+# (NRG, 2026-10-02: Indeed live, NRG's own site and apply link gone). For an
+# Indeed copy whose apply link is an employer page one of these can read,
+# that page decides too. Google is left out: its check matches the title,
+# and Indeed's wording of a title can differ.
+APPLY_PROBES = (
+    (re.compile(r"\.myworkdayjobs\.com/"),
+     lambda rec, url: _workday_alive(url.split("?")[0].removesuffix("/apply"))),
+    (re.compile(r"amazon\.jobs/(?:[a-z-]+/)?jobs/\d+"), lambda rec, url: _status_alive(url)),
+    (re.compile(r"successfactors\.(?:com|eu)/career\?.*career_job_req_id="),
+     lambda rec, url: _sf_legacy_alive(url)),
+)
+
+
+def _apply_link_dead(rec: dict) -> bool:
+    url = rec.get("apply_url") or ""
+    for pattern, probe in APPLY_PROBES:
+        if pattern.search(url):
+            time.sleep(0.3)
+            return probe(rec, url) is False
+    return False
+
+
 def _status_alive(url: str, headers: dict | None = None) -> bool | None:
     """For sites whose removed postings answer 404 (amazon.jobs, the
     SmartRecruiters postings API)."""
@@ -305,6 +346,10 @@ def probe_dead(records: dict[str, dict]) -> dict[str, set[str]]:
         if verdict is not None:
             dead["indeed"] = {jid for jid, key in keyed.items()
                               if key not in verdict or verdict[key]}
+        # The employer's own page can know first (see APPLY_PROBES).
+        gone = dead.setdefault("indeed", set())
+        gone.update(jid for jid, rec in by_source["indeed"].items()
+                    if jid not in gone and _apply_link_dead(rec))
     for source, recs in by_source.items():
         probe = PROBES.get(source)
         if source == "indeed" or source in ATS_PROVIDERS:
