@@ -144,6 +144,33 @@ _PAGE = """<!DOCTYPE html>
   .band-weak {{ background: var(--b-weak); color: var(--b-weak-ink); }}
   .band-misfit {{ background: var(--b-misfit); color: var(--b-misfit-ink); }}
   h2 {{ font-size: 1.05rem; margin: 2rem 0 .6rem; }}
+  /* Phones: each posting becomes a card, so every detail fits the width
+     with no sideways scrolling. Title and rating on top, then company,
+     place and pay, then mode and dates on one small line. Column sorting
+     needs the header, so phones keep the grouped rating order. */
+  @media (max-width: 640px) {{
+    #t thead {{ display: none; }}
+    #t, #t tbody {{ display: block; }}
+    #t tr {{ display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .6rem;
+             padding: .8rem .9rem; border-bottom: 1px solid var(--border); }}
+    #t td {{ border: 0; padding: 0; }}
+    #t td:empty {{ display: none; }}
+    /* The title cell dissolves so its parts take their own places in the
+       card: title first, source on the small line, buttons at the bottom. */
+    #t td:nth-child(1) {{ display: contents; }}
+    #t td:nth-child(1) > a:first-child {{ order: 1; flex: 1 1 0; min-width: 0; }}
+    #t td:nth-child(1) > .src {{ order: 5; display: inline; margin: 0; font-size: .8rem; }}
+    #t td:nth-child(1) > .fb {{ order: 9; flex-basis: 100%; margin-top: .45rem; }}
+    #t td:nth-child(8) {{ order: 2; flex: 0 0 auto; text-align: right; }}
+    #t td:nth-child(2) {{ order: 3; flex-basis: 100%; font-weight: 600; margin-top: .1rem; }}
+    #t td:nth-child(3), #t td:nth-child(5) {{ order: 4; flex-basis: 100%; }}
+    #t td:nth-child(4), #t td:nth-child(6), #t td:nth-child(7) {{
+      order: 5; font-size: .8rem; color: var(--muted); }}
+    #t td:nth-child(6)::before {{ content: "Posted "; }}
+    #t td:nth-child(7)::before {{ content: "Seen "; }}
+    #t tr.grp {{ padding: 0; }}
+    #t tr.grp td {{ flex-basis: 100%; padding: .55rem .9rem; }}
+  }}
 </style>
 </head>
 <body>
