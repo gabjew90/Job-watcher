@@ -16,7 +16,8 @@ Two tiers, by how each source can be checked:
      per call with an `expired` flag; a key it no longer knows is gone.
    - workday: the CxS job endpoint is 200 for a live posting, 404 for a
      removed one.
-   - successfactors: a removed posting redirects to /errorpage/.
+   - successfactors: a removed posting redirects to /errorpage/, or keeps
+     the job-details page shell with no posting on it.
    - amazon: the job page is 404 once removed.
    - smartrecruiters: the public postings API is 404 once removed.
    - jibe: the site's own search by req_id returns the posting or nothing.
@@ -42,6 +43,7 @@ import requests
 
 from . import health
 from .models import Job
+from .sources import successfactors
 from .util import HEADERS, group_key
 
 log = logging.getLogger(__name__)
@@ -58,6 +60,8 @@ INDEED_QUERY = ("query JobKeys($keys: [ID!]!) { jobData(input: {jobKeys: $keys})
 WORKDAY_URL = re.compile(r"https://([^.]+)\.(wd\d+)\.myworkdayjobs\.com/"
                          r"(?:[a-z]{2}-[A-Z]{2}/)?([^/]+)/job/(.+)$")
 INDEED_KEY = re.compile(r"[?&]jk=([0-9a-f]{16})")
+SF_TITLE_FIELD = 'data-careersite-propertyid="title"'
+SF_DETAILS_TITLE = re.compile(r"<title>[^<]*Job Details \|", re.I)
 # A probe that finds more than this share of a source dead in one run is
 # treated as broken (site change, block) and closes nothing for that source.
 SUSPECT_DEAD_SHARE = 0.5
@@ -137,11 +141,23 @@ def _workday_alive(url: str) -> bool | None:
 
 
 def _successfactors_alive(url: str) -> bool | None:
+    """A removed posting either redirects to /errorpage/ or (PG&E and
+    NextEra, seen 2026-10-02) still answers 200 with the site's job-details
+    shell: the title tag, but no posting block, title field or apply button,
+    and the site's own search no longer lists it. A live page always has
+    the posting block or the title field. Anything else is unknown."""
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20, allow_redirects=True)
         if "/errorpage" in resp.url:
             return False
-        return True if resp.status_code == 200 else None
+        if resp.status_code != 200:
+            return None
+        if (successfactors.page_description(resp.text)
+                or SF_TITLE_FIELD in resp.text):
+            return True
+        if "/job/" in resp.url and SF_DETAILS_TITLE.search(resp.text):
+            return False
+        return None
     except Exception as e:  # noqa: BLE001
         log.debug("successfactors liveness check failed for %s: %s", url, e)
         return None

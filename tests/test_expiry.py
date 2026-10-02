@@ -93,3 +93,31 @@ def test_probe_url_parsers():
     assert expiry._workday_alive("https://example.com/not-workday") is None
     assert expiry._smartrecruiters_alive("https://example.com/x") is None
     assert expiry._jibe_alive("https://example.com/x") is None
+
+
+# --- SuccessFactors: removed postings that still answer 200 -------------
+
+class _SFResp:
+    def __init__(self, text, url, status=200):
+        self.text, self.url, self.status_code = text, url, status
+
+
+SF_URL = "https://careers.pge.com/job/Oakland-Principal-Electric-Program-Manager-CA-94612/1434989200/"
+SF_SHELL = ("<html><head><title>Principal Electric Program Manager Job Details | "
+            "Pacific Gas And Electric Company</title></head><body>"
+            "<nav>Search All Jobs</nav></body></html>")
+SF_LIVE = SF_SHELL.replace(
+    "<nav>", '<span data-careersite-propertyid="title">Principal</span>'
+    '<span itemprop="description">Requisition ID # 1 ...</span><nav>')
+
+
+@pytest.mark.parametrize("text,url,status,want", [
+    (SF_LIVE, SF_URL, 200, True),                       # posting on the page
+    (SF_SHELL, SF_URL, 200, False),                     # shell only: removed (2026-10-02)
+    ("<title>x</title>", SF_URL.replace("/job/", "/errorpage/"), 200, False),
+    ("<title>Access denied</title>", SF_URL, 200, None),  # not the site's job shell
+    (SF_SHELL, SF_URL, 503, None),
+])
+def test_successfactors_probe(monkeypatch, text, url, status, want):
+    monkeypatch.setattr(expiry.requests, "get", lambda *a, **k: _SFResp(text, url, status))
+    assert expiry._successfactors_alive(SF_URL) is want
