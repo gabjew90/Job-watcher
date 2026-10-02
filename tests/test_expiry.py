@@ -103,21 +103,60 @@ class _SFResp:
 
 
 SF_URL = "https://careers.pge.com/job/Oakland-Principal-Electric-Program-Manager-CA-94612/1434989200/"
-SF_SHELL = ("<html><head><title>Principal Electric Program Manager Job Details | "
+SF_TITLE = "Principal Electric Program Manager"
+SF_SHELL = (f"<html><head><title>{SF_TITLE} Job Details | "
             "Pacific Gas And Electric Company</title></head><body>"
             "<nav>Search All Jobs</nav></body></html>")
-SF_LIVE = SF_SHELL.replace(
-    "<nav>", '<span data-careersite-propertyid="title">Principal</span>'
-    '<span itemprop="description">Requisition ID # 1 ...</span><nav>')
+# PG&E's live pages carry the title field; NextEra's carry only the posting block.
+SF_LIVE_PGE = SF_SHELL.replace("<nav>", '<span data-careersite-propertyid="title">x</span><nav>')
+SF_LIVE_NEXTERA = SF_SHELL.replace(
+    "<nav>", '<div itemprop="description">Requisition ID # 1. Lead gas development.</div><nav>')
 
 
-@pytest.mark.parametrize("text,url,status,want", [
-    (SF_LIVE, SF_URL, 200, True),                       # posting on the page
-    (SF_SHELL, SF_URL, 200, False),                     # shell only: removed (2026-10-02)
-    ("<title>x</title>", SF_URL.replace("/job/", "/errorpage/"), 200, False),
-    ("<title>Access denied</title>", SF_URL, 200, None),  # not the site's job shell
-    (SF_SHELL, SF_URL, 503, None),
+def _search_page(*ids):
+    return "".join(f'<a class="jobTitle-link" href="/job/Oakland-Role/{i}/">Role</a>' for i in ids)
+
+
+def _fake_site(page, results):
+    """requests.get stand-in: the posting URL serves `page`; the search
+    serves `results`, a list of pages (lists of requisition ids) in request
+    order (the last repeating, as the real search does), or an int status
+    for a failing search."""
+    calls = []
+
+    def get(url, params=None, **kw):
+        if "/search/" not in url:
+            text, status = page if isinstance(page, tuple) else (page, 200)
+            return _SFResp(text, url if "errorpage" not in text else url + "errorpage/", status)
+        if isinstance(results, int):
+            return _SFResp("", url, results)
+        n = len(calls)
+        calls.append(params["startrow"])
+        return _SFResp(_search_page(*(results[n] if n < len(results) else results[-1])), url)
+    return get
+
+
+@pytest.mark.parametrize("page,results,want", [
+    (SF_LIVE_PGE, [], True),
+    (SF_LIVE_NEXTERA, [], True),                     # no title field: the block decides
+    (SF_SHELL, [["1400000001"], ["1400000002"]], False),             # shell, gone from search (2026-10-02)
+    (SF_SHELL, [["1400000001"], ["1434989200"]], True),         # shell, but listed on page 2: a bad load
+    (SF_SHELL, 503, None),                             # search unreadable
+    (SF_SHELL, [[]], None),                            # search returned no job links at all
+    (("<title>x</title>", 503), [], None),
+    ("<title>Access denied</title>", [], None),        # not the site's job shell
 ])
-def test_successfactors_probe(monkeypatch, text, url, status, want):
-    monkeypatch.setattr(expiry.requests, "get", lambda *a, **k: _SFResp(text, url, status))
-    assert expiry._successfactors_alive(SF_URL) is want
+def test_successfactors_probe(monkeypatch, page, results, want):
+    monkeypatch.setattr(expiry.requests, "get", _fake_site(page, results))
+    assert expiry._successfactors_alive(SF_URL, SF_TITLE) is want
+
+
+def test_successfactors_error_redirect(monkeypatch):
+    monkeypatch.setattr(expiry.requests, "get", lambda url, **k: _SFResp("", url + "errorpage/"))
+    assert expiry._successfactors_alive(SF_URL, SF_TITLE) is False
+
+
+def test_search_that_never_ends_is_unknown(monkeypatch):
+    pages = [[str(1400000000 + n)] for n in range(100)]               # always a fresh page
+    monkeypatch.setattr(expiry.requests, "get", _fake_site(SF_SHELL, pages))
+    assert expiry._successfactors_alive(SF_URL, SF_TITLE) is None
