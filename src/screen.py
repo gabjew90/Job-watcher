@@ -25,6 +25,7 @@ from pathlib import Path
 
 from . import filters, triage
 from .models import Job
+from .util import company_key, source_id
 
 log = logging.getLogger(__name__)
 
@@ -135,7 +136,8 @@ def judge(jobs: list[Job]) -> dict[str, bool]:
 def apply(raw: list[Job], kept: list[Job], seen: dict, config: dict
           ) -> tuple[list[Job], list[Job], dict]:
     """Reconcile the keyword filter's output with title-screen verdicts for
-    postings not yet tracked. Returns (kept, rejected, stats); `rejected`
+    postings not yet tracked; tracked postings pass through so split_new
+    refreshes their records. Returns (kept, rejected, stats); `rejected`
     is what was turned away before scoring this run (screen drops, or the
     keyword rejects when the screen is unavailable) for the weekly audit.
     """
@@ -149,8 +151,33 @@ def apply(raw: list[Job], kept: list[Job], seen: dict, config: dict
     held = [j for j in kept if j.job_id in screened]
     kept = [j for j in kept if j.job_id not in screened]
     kept_ids = {j.job_id for j in kept}
+    # A posting already tracked passed the gate the day it was stored, by
+    # keyword or by a rescue. Rescues fail the keyword filter again on every
+    # later run and the screen judges only untracked postings, so without
+    # this they never reached split_new again: their records kept the pay
+    # and links of the first day. Tracked postings are not re-scored.
+    # Matched by id, or by the employer's own posting id for a record stored
+    # under another copy (other location wording, source or metro).
+    by_sid = {(company_key(r.get("company", "")), sid): r for r in seen.values()
+              if (sid := source_id(r.get("url", "")))}
+
+    def tracked_rec(j):
+        if j.job_id in seen:
+            return seen[j.job_id]
+        sid = source_id(j.url)
+        return by_sid.get((company_key(j.company), sid)) if sid else None
+
+    unique_raw = list({j.job_id: j for j in raw}.values())
+    tracked = [j for j in unique_raw
+               if j.job_id not in kept_ids and j.job_id not in screened
+               and (rec := tracked_rec(j)) is not None and not rec.get("hidden")
+               and not filters.is_excluded(j, config["title_exclusions"])]
+    kept += tracked
+    kept_ids |= {j.job_id for j in tracked}
+    tracked_ids = {j.job_id for j in tracked}
     candidates = [j for j in raw
                   if j.job_id not in seen and j.job_id not in screened
+                  and j.job_id not in tracked_ids
                   and not filters.is_excluded(j, config["title_exclusions"])]
     # Dedupe by identity: the same req arrives from several sources.
     unseen = list({j.job_id: j for j in candidates}.values())
