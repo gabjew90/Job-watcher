@@ -129,14 +129,20 @@
  },
  "0020590436bae10d": {
   "active": true,
-  "band": "strong",
+  "band": "weak",
   "company": "Amazon",
   "date_posted": "2026-07-24",
   "first_seen": "2026-08-13",
   "location": "Herndon, Virginia, USA",
   "priority": true,
-  "rationale": "Excellent datacenter power infrastructure domain at AWS hyperscaler, but engineer-level title vs. senior PM/director target.",
-  "score": 70,
+  "rationale": "Individual-contributor power-generation design engineering role, below his product/strategy target scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": false,
   "source": "amazon",
   "title": "Power Generation Engineer, AWS Global Energy",
@@ -384,7 +390,8 @@
   "first_seen_at": "2026-09-22T18:17:16Z",
   "location": "Denver, CO, US",
   "locations": [
-   "Denver, CO, US"
+   "Denver, CO, US",
+   "Denver, CO, 80205"
   ],
   "pay": "$81,800\u2013$129,266/yr",
   "priority": true,
@@ -397,9 +404,9 @@
    "rubric": "abcdf1530a"
   },
   "seniority_match": false,
-  "source": "indeed",
+  "source": "workday",
   "title": "Transmission Planning Engineer, or Staff, or Senior Engineer",
-  "url": "https://www.indeed.com/viewjob?jk=c1a59b3df692b965",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Denver-CO-80205/Transmission-Planning-Engineer--or-Staff--or-Senior-Engineer_JR113290-1",
   "work_mode": "hybrid"
  },
  "00a72ca41094dec7": {
@@ -540,7 +547,7 @@
   "work_mode": "remote"
  },
  "00bae6756cd742e1": {
-  "band": "strong",
+  "band": "weak",
   "company": "NBCUniversal",
   "date_posted": "2026-09-11",
   "first_seen": "2026-09-13",
@@ -552,12 +559,13 @@
   ],
   "pay": "$235,000\u2013$300,000/yr",
   "priority": false,
-  "rationale": "VP-level executive ownership of data center critical power/cooling infrastructure reliability strategy is a close match to the candidate's data-center power-infrastructure target, even though framed around facilities uptime rather than commercial strategy.",
-  "score": 75,
+  "rationale": "VP facilities engineering for media-company critical infrastructure, an operations/reliability role outside his energy-product/strategy focus and industry.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-13T23:37Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "825fec1650"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "smartrecruiters",
@@ -3648,12 +3656,13 @@
   ],
   "pay": "$170,000 - $200,000 per year",
   "priority": false,
-  "rationale": "Principal PM owning product strategy for a datacenter power delivery system \u2014 direct integration-role fit at right seniority.",
+  "rationale": "Principal PM owning a data-center power-delivery product's strategy and roadmap at a power-systems supplier is the core thesis.",
   "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-09-04T00:00Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -3989,7 +3998,7 @@
   "work_mode": "remote"
  },
  "070d07366c2d5bc2": {
-  "band": "strong",
+  "band": "possible",
   "company": "Southern California Edison",
   "date_posted": "2026-06-25",
   "first_seen": "2026-09-03",
@@ -4000,12 +4009,13 @@
   ],
   "pay": "$182,800\u2013$274,100/yr",
   "priority": false,
-  "rationale": "Grid operations advisor driving ADMS/DERMS/AI deployment and executive-facing strategy \u2014 strong grid-modernization + data/AI hybrid fit.",
-  "score": 75,
+  "rationale": "Senior grid-operations advisory role with cross-functional tech coordination, adjacent but not product/strategy-centered.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-03T08:33Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "radancy",
@@ -5068,14 +5078,20 @@
  },
  "08c57dddfaa40da4": {
   "active": true,
-  "band": "strong",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-04-20",
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": false,
-  "rationale": "Manager Energy Portfolio Operations at Amazon managing datacenter energy supply and PPAs; excellent domain and seniority fit.",
-  "score": 73,
+  "rationale": "Energy agreement/PPA portfolio operations and contract management, more operations-finance than product/strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "amazon",
   "title": "Energy Operations Manager - AMER, Energy Portfolio Operations",
@@ -7642,7 +7658,7 @@
   "work_mode": ""
  },
  "0cc59b38bf1376d2": {
-  "band": "strong",
+  "band": "possible",
   "company": "CleanSpark",
   "date_posted": "2026-09-14",
   "first_seen": "2026-09-15",
@@ -7653,12 +7669,13 @@
   ],
   "pay": "$95,000\u2013$150,000/yr",
   "priority": true,
-  "rationale": "Power origination, PPA/tolling structuring and project economics for a Bitcoin-to-AI-compute power developer closely matches the core thesis and finance background.",
-  "score": 75,
+  "rationale": "Deal-execution-heavy power origination role for onsite generation, per calibration pure deal-execution bands mid rather than strong.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-16T22:11Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "825fec1650"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "lever",
@@ -7705,7 +7722,7 @@
  },
  "0cd638d77a46e8a0": {
   "apply_url": "",
-  "band": "strong",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-09-24",
   "first_seen": "2026-09-25",
@@ -7716,13 +7733,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "GenAI solutions architecture for energy-industry customers is a strong domain+AI hybrid, though it's a technical SA role rather than product/strategy.",
-  "score": 75,
+  "rationale": "Hands-on GenAI solutions architect for energy customers is a domain+AI hybrid but a technical SA role, not product/strategy.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-25T18:47Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
-   "rubric": "abcdf1530a"
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "amazon",
@@ -9148,15 +9165,24 @@
   "work_mode": "hybrid"
  },
  "0f628124863119de": {
-  "band": "strong",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-10-02",
   "company": "Crusoe",
   "date_posted": "2026-04-09",
   "first_seen": "2026-08-13",
   "location": "Dallas, TX - US",
+  "lowscore": true,
   "pay": "$136,000 -$165,000",
   "priority": false,
-  "rationale": "Staff Commissioning Engineer at Crusoe (vertically integrated AI + energy infrastructure company) has perfect domain fit but staff engineer IC not director/PM.",
-  "score": 72,
+  "rationale": "Staff electrical commissioning engineer is deep field/technical execution work outside his skillset and target function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": false,
   "source": "ashby",
   "title": "Staff Commissioning Engineer, Electrical",
@@ -9367,12 +9393,13 @@
   ],
   "pay": "",
   "priority": true,
-  "rationale": "Director-level ownership of power strategy, interconnection, PPAs and utility relationships for an AI datacenter portfolio \u2014 core thesis match.",
+  "rationale": "Owns power strategy, interconnection, and utility relationships across an AI datacenter operator's portfolio, matching the confirmed-top power-infrastructure-director pattern.",
   "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-09-03T08:33Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "hibob",
@@ -10141,15 +10168,21 @@
   "work_mode": ""
  },
  "112516e614e106b2": {
-  "band": "strong",
+  "band": "weak",
   "company": "Crusoe",
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
   "location": "San Francisco, CA - US",
   "pay": "$285,000 - $335,000",
   "priority": false,
-  "rationale": "Principal PM at Crusoe (energy-first vertically-integrated AI infrastructure); storage product leadership\u2014strong secondary fit as energy + AI/data product lead.",
-  "score": 72,
+  "rationale": "Principal PM for compute/data storage infrastructure, not energy storage \u2014 matches prior calibration that this exact Crusoe storage-PM pattern bands weak.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Principal Product Manager, AI Infrastructure (Storage)",
@@ -13414,7 +13447,9 @@
   "work_mode": ""
  },
  "1705f6e74893fcf8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-02",
   "company": "Venture Home",
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-29",
@@ -15055,15 +15090,21 @@
   "work_mode": "onsite"
  },
  "19f00ecb9de9cdfa": {
-  "band": "top",
+  "band": "weak",
   "company": "Emerald AI",
   "date_posted": "2026-07-27",
   "first_seen": "2026-08-28",
   "location": "Bay Area",
   "pay": "",
   "priority": false,
-  "rationale": "Perfect secondary-sweet-spot fit: Senior PM for AI infrastructure platform in energy-aware context; candidate's production AI credentials combined with energy/datacenter background make this a high-impact match.",
-  "score": 87,
+  "rationale": "Software-platform PM for compute orchestration, not an energy/power product despite power-awareness framing.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Senior Product Manager, Compute Platform",
@@ -19480,15 +19521,21 @@
   "work_mode": "remote"
  },
  "21b0e9058b00e78d": {
-  "band": "top",
+  "band": "weak",
   "company": "Crusoe",
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-25",
   "location": "Denver, CO - US",
   "pay": "$175,000 -$215,000",
   "priority": false,
-  "rationale": "Senior Project Manager, Power Infrastructure at Crusoe; senior PM in AI datacenter + energy infrastructure (candidate's exact hybrid domain).",
-  "score": 85,
+  "rationale": "Construction/commissioning delivery project management for power infrastructure, too execution-focused versus product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Senior Project Manager, Power Infrastructure",
@@ -19731,15 +19778,21 @@
   "work_mode": "hybrid"
  },
  "222e22e9cfbca8fc": {
-  "band": "strong",
+  "band": "top",
   "company": "Gridware",
   "date_posted": "2026-08-12",
   "first_seen": "2026-08-28",
   "location": "San Francisco, CA",
   "pay": "$260,000\u2013$290,000/yr",
   "priority": false,
-  "rationale": "Senior director of full-stack product in grid infrastructure and wildfire mitigation; excellent fit\u2014director PM in energy/utility domain, hardware+software+data+services integration.",
-  "score": 84,
+  "rationale": "Senior director owning full-stack product (hardware+software) for a grid-reliability monitoring platform \u2014 director-level product ownership of a grid product.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "lever",
   "title": "Senior Director, Full Stack Product",
@@ -21607,14 +21660,20 @@
  },
  "24c603549e57d62d": {
   "active": true,
-  "band": "top",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-05-06",
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": true,
-  "rationale": "Senior grid planning architect at AWS with interconnection/AI focus; exact domain and seniority match.",
-  "score": 85,
+  "rationale": "Technical SME/solutions-architect role for grid AI products is domain-adjacent but not a product or strategy function.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "amazon",
   "title": "Senior Solutions Architect, Electric Grid, AWS Energy & Utilities AI Products",
@@ -23970,7 +24029,7 @@
  },
  "2911c61e9ef805c0": {
   "apply_url": "",
-  "band": "strong",
+  "band": "weak",
   "company": "Southern California Edison",
   "date_posted": "2026-09-23",
   "first_seen": "2026-09-25",
@@ -23981,13 +24040,13 @@
   ],
   "pay": "$182,800\u2013$274,100/yr",
   "priority": false,
-  "rationale": "Senior AI product manager role within a utility \u2014 direct secondary sweet spot even though the surface area is customer experience.",
-  "score": 75,
+  "rationale": "AI product manager at a utility, but subject matter is customer-service conversational AI, not grid/power/market data.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-25T20:43Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
-   "rubric": "abcdf1530a"
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "radancy",
@@ -24668,14 +24727,20 @@
   "work_mode": "remote"
  },
  "2a123acc96f608df": {
-  "band": "strong",
+  "band": "possible",
   "company": "Base Power",
   "date_posted": "2026-06-24",
   "first_seen": "2026-08-13",
   "location": "Austin, TX",
   "priority": false,
-  "rationale": "Growth lead for BESS energy retail; direct product strategy fit in BESS/energy domain.",
-  "score": 78,
+  "rationale": "P&L growth/pricing ownership for a retail electricity business line is a commercial-operator role, adjacent but not his product/strategy bridging function.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Growth Lead, Base Energy",
@@ -25619,29 +25684,30 @@
  },
  "2b915a28e648ab1b": {
   "apply_url": "https://xcelenergy.wd1.myworkdayjobs.com/External/job/Denver-CO-80205/Power-Systems-Modeling-Engineer---Distribution--Staff-or-Senior-_JR114288-1",
-  "band": "strong",
+  "band": "possible",
   "company": "Xcel Energy",
   "date_posted": "2026-10-01",
   "first_seen": "2026-10-01",
   "first_seen_at": "2026-10-01T21:48:39Z",
   "location": "Denver, CO, US",
   "locations": [
-   "Denver, CO, US"
+   "Denver, CO, US",
+   "Denver, CO, 80205"
   ],
   "pay": "$70,000\u2013$156,600/yr",
   "priority": true,
-  "rationale": "Senior/Staff distribution modeling and hosting-capacity-analysis engineer with data/ETL (Databricks) component \u2014 closely mirrors his actual PG&E ICA platform work.",
-  "score": 75,
+  "rationale": "Distribution power-systems modeling and hosting-capacity analysis is deep technical IC work, similar to the interconnection-study calibration that caps around mid.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-10-01T21:50Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
    "rubric": "e338258705"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "workday",
   "title": "Power Systems Modeling Engineer - Distribution (Staff, Senior)",
-  "url": "https://www.indeed.com/viewjob?jk=11c34d8c39e05a27",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Denver-CO-80205/Power-Systems-Modeling-Engineer---Distribution--Staff-or-Senior-_JR114288-1",
   "work_mode": "hybrid"
  },
  "2b91f3b6589c9037": {
@@ -27919,14 +27985,20 @@
  },
  "2eff99d9a1d93567": {
   "active": true,
-  "band": "strong",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-06-29",
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": false,
-  "rationale": "Energy projects manager at AWS; strategic utility partnership and power infrastructure alignment.",
-  "score": 82,
+  "rationale": "Program/project management delivering utility power infrastructure for AWS data centers is program delivery, not his target product/strategy function.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "amazon",
   "title": "Energy Projects Manager, AWS Energy Team",
@@ -29994,8 +30066,10 @@
   "work_mode": "onsite"
  },
  "32424148af7b87e8": {
+  "active": false,
   "apply_url": "https://realign-llc.com/careers/job-details/IT430049DA-4",
   "band": "possible",
+  "closed": "2026-10-02",
   "company": "Realign",
   "date_posted": "2026-09-30",
   "first_seen": "2026-09-30",
@@ -31224,16 +31298,22 @@
   "work_mode": "onsite"
  },
  "344db462217f356a": {
-  "band": "strong",
+  "band": "weak",
   "company": "Crusoe",
   "date_posted": "2026-03-18",
   "first_seen": "2026-08-13",
   "location": "Arvada, CO - US",
   "pay": "$225,000 -$255,000",
   "priority": false,
-  "rationale": "Principal Electrical Engineer at Crusoe with power distribution authority is senior-level fit in energy+AI infrastructure domain.",
-  "score": 72,
-  "seniority_match": true,
+  "rationale": "Deep technical EE design/switchgear authority role is pure specialist IC engineering, not product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": false,
   "source": "ashby",
   "title": "Principal Electrical Engineer",
   "url": "https://jobs.ashbyhq.com/crusoe/d72502c5-20ff-4c6a-bf83-b8a2d694b73f"
@@ -32131,15 +32211,24 @@
   "work_mode": "remote"
  },
  "35dc308b6435a512": {
-  "band": "strong",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-10-02",
   "company": "Emerald AI",
   "date_posted": "2026-08-05",
   "first_seen": "2026-08-28",
   "location": "Bay Area",
+  "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Managed cloud infrastructure architect in energy-aware context; excellent domain fit (AI + energy) and strong technical scope, but individual contributor role despite architect seniority expectations.",
-  "score": 70,
+  "rationale": "Pure cloud/software infrastructure engineering IC role with no power, energy, or BESS product/strategy component.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": false,
   "source": "ashby",
   "title": "Member of Technical Staff - AI Cloud Infrastructure",
@@ -33422,12 +33511,13 @@
   ],
   "pay": "$233,100\u2013$349,600/yr",
   "priority": false,
-  "rationale": "Principal Manager shaping grid technology strategy and next-gen capabilities \u2014 strong utility innovation/product fit.",
+  "rationale": "Senior strategic leadership defining next-gen grid technology strategy closely mirrors his grid-innovation/ICA domain.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-03T08:33Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "radancy",
@@ -33913,7 +34003,9 @@
   "work_mode": "onsite"
  },
  "3904a91747d03b3c": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-02",
   "company": "Amazon.com",
   "date_posted": "2026-08-28",
   "first_seen": "2026-09-01",
@@ -35953,16 +36045,22 @@
   "work_mode": "onsite"
  },
  "3d02d3114eedb3f5": {
-  "band": "strong",
+  "band": "weak",
   "company": "Nebius",
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "Remote - United States",
   "pay": "$90,000-$220,000",
   "priority": false,
-  "rationale": "Data center design lead managing electrical/mechanical engineering teams; design leadership in datacenter power/cooling systems, relevant domain.",
-  "score": 74,
-  "seniority_match": false,
+  "rationale": "Hands-on technical design authority for DC electrical/mechanical engineering is engineering leadership, not product/strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Data Center Design Lead",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4774875101",
@@ -36501,7 +36599,7 @@
   "work_mode": "remote"
  },
  "3e1f1e36eb42a95a": {
-  "band": "top",
+  "band": "weak",
   "company": "PG&E",
   "date_posted": "2026-09-16",
   "first_seen": "2026-09-17",
@@ -36518,16 +36616,18 @@
    "Hayward, CA, US, 94545",
    "Fresno, CA, US, 93710",
    "Danville, CA, US, 94583",
-   "Morgan Hill, CA, US, 95037"
+   "Morgan Hill, CA, US, 95037",
+   "Rocklin, CA, US, 95765"
   ],
-  "pay": "$144,000",
+  "pay": "$144,000\u2013$244,000",
   "priority": true,
-  "rationale": "Principal PM owning PG&E's Rule 21 grid interconnection program \u2014 direct overlap with candidate's own ICA/interconnection domain.",
-  "score": 90,
+  "rationale": "Principal program manager role centered on community engagement/communications, not product or power strategy.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-17T15:29Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "abcdf1530a"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "successfactors",
@@ -37285,7 +37385,8 @@
   "first_seen_at": "2026-09-30T21:32:45Z",
   "location": "Denver, CO, US",
   "locations": [
-   "Denver, CO, US"
+   "Denver, CO, US",
+   "4 Locations"
   ],
   "lowscore": true,
   "pay": "$84,900\u2013$120,566/yr",
@@ -37299,9 +37400,9 @@
    "rubric": "de87144b89"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "workday",
   "title": "Enterprise Resilience Program Manager",
-  "url": "https://www.indeed.com/viewjob?jk=6fc0f22da7823269",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Denver-CO-80205/Enterprise-Resilience-Program-Manager_JR116676-1",
   "work_mode": "hybrid"
  },
  "3fb7a08ea0f06231": {
@@ -40075,6 +40176,36 @@
   "url": "https://jobs.lever.co/mainspringenergy/9fab32b3-06fc-4e57-9d97-6396b3134241",
   "work_mode": "onsite"
  },
+ "44975dbbff2a6397": {
+  "active": false,
+  "apply_url": "https://realign-llc.com/careers/job-details/IT427022PR-3",
+  "band": "misfit",
+  "closed": "2026-10-02",
+  "company": "Realign",
+  "date_posted": "2026-10-02",
+  "first_seen": "2026-10-02",
+  "first_seen_at": "2026-10-02T00:26:00Z",
+  "location": "IL, US",
+  "locations": [
+   "IL, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Generic IT/manufacturing program management with no energy or product-strategy connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Program Manager -3",
+  "url": "https://www.indeed.com/viewjob?jk=b76e48bff18377ea",
+  "work_mode": "remote"
+ },
  "449d1c726cf586c5": {
   "band": "possible",
   "company": "Crusoe",
@@ -40794,16 +40925,25 @@
   "work_mode": ""
  },
  "45ed1ec9978bbd07": {
-  "band": "strong",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-10-02",
   "company": "Plus Power",
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-21",
   "location": "Remote",
+  "lowscore": true,
   "pay": "$160,000",
   "priority": true,
-  "rationale": "Senior project engineer EPC/commissioning at Plus Power (grid-scale BESS); senior IC in target domain, project delivery scope.",
-  "score": 82,
-  "seniority_match": true,
+  "rationale": "Technical EPC/commissioning engineering support role reporting to a Senior Manager is IC engineering, not his product/strategy function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Senior Project Engineer, EPC and Commissioning - Battery Storage",
   "url": "https://job-boards.greenhouse.io/pluspower/jobs/4702330006",
@@ -42156,7 +42296,7 @@
   "work_mode": ""
  },
  "482323a8d5d2bdf0": {
-  "band": "strong",
+  "band": "weak",
   "company": "Teneo",
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-29",
@@ -42167,14 +42307,15 @@
   ],
   "pay": "$125,000\u2013$195,000/yr",
   "priority": false,
-  "rationale": "Senior consultant in energy and infrastructure strategy; strategy-focused at leading firm but consulting rather than direct industry PM role.",
-  "score": 75,
+  "rationale": "Energy-sector strategy consulting fits his finance/strategy profile, but Consultant/Senior Consultant level is below his director/principal target.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-08-29T17:50Z",
-   "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Energy & Infrastructure - Consultant / Senior Consultant",
   "url": "https://job-boards.greenhouse.io/teneo/jobs/7864188003",
@@ -43092,15 +43233,24 @@
   "work_mode": "onsite"
  },
  "4a1516c2f7b9e9cd": {
-  "band": "strong",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-10-02",
   "company": "Spearmint Energy",
   "date_posted": "2026-07-13",
   "first_seen": "2026-08-13",
   "location": "Miami, Florida",
+  "lowscore": true,
   "priority": true,
-  "rationale": "Power energy storage trader at Spearmint Energy (BESS operator); energy market optimization role in BESS domain.",
-  "score": 75,
-  "seniority_match": true,
+  "rationale": "Hands-on battery dispatch/trading desk role is a specialist trading function, not product/strategy or his skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Power Energy Storage Trader ",
   "url": "https://job-boards.greenhouse.io/spearmintenergy/jobs/4315201009"
@@ -44471,7 +44621,7 @@
   "work_mode": "hybrid"
  },
  "4c91ed3d603160b3": {
-  "band": "strong",
+  "band": "weak",
   "company": "Mainspring Energy",
   "date_posted": "2026-04-20",
   "first_seen": "2026-09-03",
@@ -44482,12 +44632,13 @@
   ],
   "pay": "$227,500\u2013$280,000/yr",
   "priority": false,
-  "rationale": "Principal-level AI strategy leadership embedded within an energy company matches the AI-within-energy secondary sweet spot.",
-  "score": 75,
+  "rationale": "Software architecture leadership for internal AI-driven engineering workflows is an engineering IC role, not product or energy strategy.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-03T08:33Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "lever",
@@ -44723,15 +44874,21 @@
   "work_mode": ""
  },
  "4d00769333e235e0": {
-  "band": "strong",
+  "band": "weak",
   "company": "Amperon",
   "date_posted": "2026-07-23",
   "first_seen": "2026-08-28",
   "location": "United States",
   "pay": "",
   "priority": false,
-  "rationale": "Senior product marketing for AI energy forecasting platform; energy and AI domain alignment but marketing role, not PM/director",
-  "score": 70,
+  "rationale": "Product marketing (positioning, sales enablement, launches) is a different function from product management despite the energy-data domain.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "greenhouse",
   "title": "Senior Product Marketing Manager",
@@ -46577,7 +46734,7 @@
   "work_mode": ""
  },
  "50381976fed16a6a": {
-  "band": "strong",
+  "band": "possible",
   "company": "NextEra Energy",
   "date_posted": "",
   "first_seen": "2026-08-28",
@@ -46591,8 +46748,14 @@
   ],
   "pay": "",
   "priority": true,
-  "rationale": "Manager of interconnection services; high fit for interconnection expertise, seniority-matched.",
-  "score": 80,
+  "rationale": "Deep technical interconnection-queue and power-system-study leadership is program/technical scope rather than product or strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "successfactors",
   "title": "Manager, Interconnection Services - Northeast (PJM/NYISO/ISO-NE/Ontario /NS/ NB)",
@@ -48444,7 +48607,7 @@
  },
  "5378406d9f53665a": {
   "apply_url": "",
-  "band": "strong",
+  "band": "weak",
   "company": "Base Power",
   "date_posted": "2026-09-25",
   "first_seen": "2026-09-25",
@@ -48455,15 +48618,15 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "New-market strategy role translating distributed battery storage expertise into business cases \u2014 strong storage/finance/strategy match.",
-  "score": 75,
+  "rationale": "Strategic market-expansion ownership at a distributed battery storage company is a strong domain match, but the stated 4+ years experience signals below his director-level target.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-25T20:43Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
-   "rubric": "abcdf1530a"
+   "rubric": "e338258705"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "ashby",
   "title": "New Markets Strategy ",
   "url": "https://jobs.ashbyhq.com/base-power/1f9888fc-de6c-425e-a6d5-7f463fbb3930",
@@ -50187,7 +50350,9 @@
   "work_mode": "remote"
  },
  "5703296a71499e41": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-02",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
@@ -51394,8 +51559,14 @@
   ],
   "pay": "$320,000",
   "priority": true,
-  "rationale": "Strategic energy scheduling and portfolio lead for non-cloud datacenters; directly relevant\u2014energy markets, utility coordination, electricity/gas scheduling, behind-the-meter plants align with candidate's grid and energy expertise.",
-  "score": 78,
+  "rationale": "First dedicated owner of energy availability/portfolio strategy for Anthropic's data center power is a strong strategic fit, though leans toward specialist scheduling/trading operations.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "greenhouse",
   "title": "Energy Scheduling & Portfolio Lead",
@@ -51906,7 +52077,7 @@
   "work_mode": ""
  },
  "59f4eeaf6c71a3ce": {
-  "band": "strong",
+  "band": "possible",
   "company": "NextEra Energy",
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-29",
@@ -51921,12 +52092,13 @@
   ],
   "pay": "",
   "priority": true,
-  "rationale": "PM for BESS at NextEra; PM role in core BESS domain at strong company, though SME framing suggests technical project management over product strategy.",
-  "score": 75,
+  "rationale": "Technical BESS/data-center electrical SME reviewing EOR deliverables is engineering-heavy scope under a PM title, not product/strategy.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-08-29T17:50Z",
-   "model": "claude-haiku-4-5-20251001",
-   "rubric": "1e4f7feb6e"
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "successfactors",
@@ -52723,7 +52895,7 @@
   "work_mode": "remote"
  },
  "5b48cb4ba661a06c": {
-  "band": "strong",
+  "band": "possible",
   "company": "OpenAI",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-28",
@@ -52734,8 +52906,14 @@
   ],
   "pay": "$185K \u2013 $285K \u00b7 Offers Equity",
   "priority": false,
-  "rationale": "Infrastructure strategy + delivery operations with PM title and cross-functional scope; strong fit but TPM role tends toward operational planning rather than product/market strategy.",
-  "score": 73,
+  "rationale": "Cross-functional infrastructure delivery program management (NPI, supply planning, construction) is program execution, not his product/strategy function.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Technical Program Manager, Infrastructure Strategy & Delivery Operations",
@@ -53353,7 +53531,7 @@
   "work_mode": "onsite"
  },
  "5c71b00d5279d3a8": {
-  "band": "strong",
+  "band": "possible",
   "company": "Southern California Edison",
   "date_posted": "2026-09-01",
   "first_seen": "2026-09-03",
@@ -53364,12 +53542,13 @@
   ],
   "pay": "$161,700\u2013$242,600/yr",
   "priority": false,
-  "rationale": "Senior strategic advisor setting reliability/resilience and regulatory strategy for wildfire risk is a strong grid-strategy fit at director-equivalent scope.",
-  "score": 75,
+  "rationale": "Senior utility strategic-planning role, but centered on wildfire/protection-asset risk strategy rather than power/BESS/datacenter product.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-03T08:33Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "radancy",
@@ -53567,7 +53746,7 @@
    "Stockton, CA, US, 95204",
    "Danville, CA, US, 94583"
   ],
-  "pay": "$161,520",
+  "pay": "$153,828\u2013$197,628",
   "priority": false,
   "rationale": "Senior PM for transmission substation/line construction projects at PG&E \u2014 project delivery execution, not product/strategy.",
   "score": 55,
@@ -53861,7 +54040,7 @@
   "work_mode": ""
  },
  "5d72d5f4ccd70c93": {
-  "band": "strong",
+  "band": "possible",
   "company": "Form Energy",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
@@ -53872,8 +54051,14 @@
   ],
   "pay": "$128,660\u2013$160,840/yr",
   "priority": false,
-  "rationale": "Staff Project Manager at Form Energy (thermal storage company) is principal IC level in energy storage domain; secondary sweet spot for senior IC strategy role.",
-  "score": 71,
+  "rationale": "Project/program delivery management for storage deployments is program delivery, not his target function, though it has strong BESS domain overlap.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Staff Project Manager",
@@ -54037,7 +54222,7 @@
   "url": "https://www.indeed.com/viewjob?jk=c654174c9acc1108"
  },
  "5dafa5e303e20b22": {
-  "band": "top",
+  "band": "possible",
   "company": "Form Energy",
   "date_posted": "2026-09-03",
   "first_seen": "2026-09-03",
@@ -54049,12 +54234,13 @@
   ],
   "pay": "$170,246 \u2013 $212,813",
   "priority": true,
-  "rationale": "BESS dispatch/revenue-optimization role bridging product engineering, commercial market strategy, and degradation modeling \u2014 a near-direct match to candidate's LG BESS PM and energy-markets finance background.",
-  "score": 90,
+  "rationale": "BESS dispatch/revenue-optimization engineering is deep technical operations, not product or strategy leadership.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-03T20:29Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "ashby",
@@ -56232,12 +56418,13 @@
   ],
   "pay": "$115,000\u2013$200,000/yr",
   "priority": false,
-  "rationale": "Senior PM owning a real-time energy-purchasing data platform combines energy-markets finance and data product skills directly.",
+  "rationale": "Product management for a data-rich energy-purchasing platform fits the AI/data-product-within-energy sweet spot, pairing his markets finance background with product ownership.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-16T22:38Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "abcdf1530a"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -57130,7 +57317,7 @@
   "work_mode": ""
  },
  "62e3f99fa01cf745": {
-  "band": "strong",
+  "band": "possible",
   "company": "Southern California Edison",
   "date_posted": "2026-08-05",
   "first_seen": "2026-09-03",
@@ -57141,12 +57328,13 @@
   ],
   "pay": "$161,700\u2013$242,600/yr",
   "priority": false,
-  "rationale": "Manager leading predictive analytics/GenAI for utility risk decisions \u2014 fits the AI-for-energy-data secondary sweet spot.",
-  "score": 75,
+  "rationale": "Manages a data-science team on utility risk analytics, adjacent AI/data-for-energy work, but team management rather than a product/strategy integration role.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-03T08:33Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "radancy",
@@ -57691,13 +57879,13 @@
   ],
   "pay": "",
   "priority": true,
-  "rationale": "Senior/VP data-center platform and liquid-cooling product strategy role, echoes prior strong-fit thermal/product precedent.",
+  "rationale": "Product and commercial strategy leadership for modular/liquid-cooled AI data-center platforms matches the core thesis closely, echoing past confirmed-strong thermal product roles; VP level stretches above his target band.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-25T18:47Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
-   "rubric": "abcdf1530a"
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -58938,16 +59126,24 @@
   "work_mode": "onsite"
  },
  "65bdf6e5ee0712f6": {
-  "active": true,
-  "band": "strong",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-10-02",
   "company": "Amazon",
   "date_posted": "2026-06-09",
   "first_seen": "2026-08-13",
   "location": "Columbus, Ohio, USA",
+  "lowscore": true,
   "priority": true,
-  "rationale": "Power generation infrastructure engineer at AWS; hyperscaler, full life-cycle authority on power systems, senior scope.",
-  "score": 76,
-  "seniority_match": true,
+  "rationale": "Full life-cycle field engineering/RCA role for power generation equipment is deep technical IC engineering, not product/strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": false,
   "source": "amazon",
   "title": "Power Generation Infrastructure Engineer, Field Engineering",
   "url": "https://www.amazon.jobs/en/jobs/10443895/power-generation-infrastructure-engineer-field-engineering",
@@ -59037,16 +59233,22 @@
   "work_mode": ""
  },
  "65ea9d1970938525": {
-  "band": "strong",
+  "band": "possible",
   "company": "Anthropic",
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-28",
   "location": "San Francisco, CA | New York City, NY | Seattle, WA",
   "pay": "$365,000",
   "priority": false,
-  "rationale": "Technical program manager for datacenter infrastructure; TPM manager-level, datacenter operations scope.",
-  "score": 70,
-  "seniority_match": false,
+  "rationale": "Construction-to-production program management for data center delivery is a program-delivery function, not product/strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Technical Program Manager, Data Center Infrastructure",
   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5013743008",
@@ -61954,15 +62156,21 @@
   "work_mode": "onsite"
  },
  "6b200bfdaf0b8411": {
-  "band": "strong",
+  "band": "top",
   "company": "Anthropic",
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
   "location": "London, UK",
   "pay": "",
   "priority": true,
-  "rationale": "Strategic energy lead for AI datacenter power across EMEA; aligns with energy procurement, utility relationships, and grid/regulatory expertise in multi-jurisdiction energy markets for datacenters.",
-  "score": 82,
+  "rationale": "Owns multi-country power procurement, utility/TSO/DSO relationships and energy-markets strategy for AI datacenter buildout, a direct match to the core data-center energy/power-infrastructure strategy thesis.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "greenhouse",
   "title": "Data Center Energy Lead, EMEA",
@@ -62140,16 +62348,22 @@
   "work_mode": "remote"
  },
  "6bcbe93823e9076a": {
-  "band": "strong",
+  "band": "weak",
   "company": "Anthropic",
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
   "location": "Remote-Friendly, United States",
   "pay": "$320,000",
   "priority": false,
-  "rationale": "Supply chain manager for datacenter power/cooling OFE; senior IC in highly relevant power/cooling domain but supply chain focus.",
-  "score": 70,
-  "seniority_match": false,
+  "rationale": "Equipment logistics/delivery tracking (explicitly not a sourcing/negotiation role) for DC power/cooling gear is supply-chain operations, not product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": true,
   "source": "greenhouse",
   "title": "Supply Chain Delivery Manager, Data Center Power & Cooling OFE",
   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5399225008",
@@ -63798,7 +64012,7 @@
  },
  "6f1a423af1c344e9": {
   "apply_url": "https://www.tesla.com/careers/search/job/285212?source=Indeed",
-  "band": "top",
+  "band": "strong",
   "company": "Tesla",
   "date_posted": "2026-09-30",
   "first_seen": "2026-10-01",
@@ -63809,10 +64023,10 @@
   ],
   "pay": "$136,000\u2013$264,000/yr",
   "priority": false,
-  "rationale": "Senior PM for Megapack (grid-scale BESS) software/firmware product \u2014 direct battery product-strategy match.",
-  "score": 90,
+  "rationale": "Product manager for Megapack battery storage software/firmware is a direct battery-product strategy fit.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-10-01T19:38Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
    "rubric": "e338258705"
@@ -64383,15 +64597,24 @@
   "work_mode": ""
  },
  "6ff3536561badefc": {
-  "band": "strong",
+  "active": false,
+  "band": "misfit",
+  "closed": "2026-10-02",
   "company": "Base Power",
   "date_posted": "2026-08-26",
   "first_seen": "2026-08-27",
   "location": "Austin, TX",
+  "lowscore": true,
   "pay": "",
   "priority": true,
-  "rationale": "Senior Manager at BESS company (Base Power); right seniority and domain, but operations/quality-focused not product/strategy.",
-  "score": 72,
+  "rationale": "Fleet hardware-quality/failure-analysis leadership is a quality-engineering function, not product/strategy or his skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Senior Manager, Field Quality",
@@ -65686,6 +65909,34 @@
   "url": "https://www.indeed.com/viewjob?jk=b5e22787e4dbe3e9",
   "work_mode": ""
  },
+ "71e1d86c93c6611d": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "PG&E",
+  "date_posted": "2026-10-01",
+  "first_seen": "2026-10-02",
+  "first_seen_at": "2026-10-02T00:26:00Z",
+  "location": "Newark, CA, US, 94538",
+  "locations": [
+   "Newark, CA, US, 94538",
+   "Cupertino, CA, US, 95014"
+  ],
+  "pay": "$155,000\u2013$265,000",
+  "priority": false,
+  "rationale": "Enterprise AI platform architecture for IT systems, not applied to grid/energy data or product management.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal AI Platforms Solution Architect",
+  "url": "https://careers.pge.com/job/Oakland-Principal-AI-Platforms-Solution-Architect-CA-94612/1436039400/",
+  "work_mode": "hybrid"
+ },
  "7205ca70c631dd20": {
   "band": "misfit",
   "company": "Spearmint Energy",
@@ -66744,7 +66995,7 @@
   "work_mode": ""
  },
  "73b5826e293bdd55": {
-  "band": "strong",
+  "band": "possible",
   "company": "Aon",
   "date_posted": "2026-09-11",
   "first_seen": "2026-09-12",
@@ -66756,12 +67007,13 @@
   ],
   "pay": "$225,000\u2013$275,000/yr",
   "priority": true,
-  "rationale": "Leadership role over digital infrastructure power strategy with strong stated pay corroborating senior scope.",
-  "score": 75,
+  "rationale": "Senior, well-paid power-infrastructure leadership title at an insurance/advisory firm, but limited description suggests client-advisory/BD-oriented scope rather than product or direct strategy ownership.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-09-12T16:42Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "825fec1650"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "jibe",
@@ -66948,7 +67200,7 @@
   "work_mode": "remote"
  },
  "740d6a79c1361565": {
-  "band": "strong",
+  "band": "weak",
   "company": "SB Energy",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -66958,14 +67210,15 @@
   ],
   "pay": "$140,000 - $165000",
   "priority": true,
-  "rationale": "Grid interconnection strategy and project development for ERCOT queue; direct domain expertise from Gabriel's ICA (Integration Capacity Analysis) platform role at PG&E.",
-  "score": 75,
+  "rationale": "Early-career interconnection/transmission support role (\"eager to grow into SME\") doing technical studies is below his seniority target and too deep-technical.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-02T20:16Z",
-   "model": "claude-haiku-4-5-20251001",
-   "rubric": "ec980ff9e1"
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "greenhouse",
   "title": "Manager, Grid Integration (ERCOT)",
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6105385004",
@@ -68338,13 +68591,13 @@
   ],
   "pay": "$92,400\u2013$160,000/yr",
   "priority": true,
-  "rationale": "Manages AWS's power infrastructure strategy across utilities, site evaluation, and capacity delivery with C-level reporting \u2014 core thesis role at a hyperscaler.",
+  "rationale": "Senior power-strategy role owning utility and procurement relationships for AWS datacenter energy supply, executive-facing scope despite flat title.",
   "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-09-21T19:34Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
-   "rubric": "abcdf1530a"
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "amazon",
@@ -70896,14 +71149,20 @@
  },
  "7ae3d8bae72f3398": {
   "active": true,
-  "band": "top",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-07-03",
   "first_seen": "2026-08-13",
   "location": "Houston, Texas, USA",
   "priority": false,
-  "rationale": "Director of Business Development for Energy & Utilities at Amazon; director seniority, multiple energy domains (grid, power, utilities, datacenters), agentic AI strategy focus. HIGH tier fit with candidate's AI + energy background.",
-  "score": 85,
+  "rationale": "Director-level role but primarily business-development/sales origination leadership, which bands possible per prior BD-role calibration.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "amazon",
   "title": "Director, Business Development, Energy and Utilities",
@@ -70924,12 +71183,13 @@
   ],
   "pay": "$155,400\u2013$210,200/yr",
   "priority": true,
-  "rationale": "Senior energy strategy manager owning AWS data center power procurement and utility strategy \u2014 direct core fit.",
+  "rationale": "Same AWS energy strategy manager scope as the other postings in this req family \u2014 executive-facing power strategy and utility ownership.",
   "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-09-09T17:35Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "amazon",
@@ -71250,6 +71510,36 @@
   "source": "indeed",
   "title": "Senior Project Engineer - Data Center Experience",
   "url": "https://www.indeed.com/viewjob?jk=0c83b0a02a213ec1",
+  "work_mode": ""
+ },
+ "7bb173ba609f7237": {
+  "active": false,
+  "apply_url": "",
+  "band": "misfit",
+  "closed": "2026-10-02",
+  "company": "Xcel Energy",
+  "date_posted": "2026-09-25",
+  "first_seen": "2026-10-02",
+  "first_seen_at": "2026-10-02T00:26:00Z",
+  "location": "Denver, CO, 80205",
+  "locations": [
+   "Denver, CO, 80205"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Civil engineering IC role, deep technical design work far from product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Major Project Civil Engineer (Staff, Senior, or Principal)",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Denver-CO-80205/Major-Project-Civil-Engineer--Staff--Senior--or-Principal-_JR114670-1",
   "work_mode": ""
  },
  "7bb1cbbbc8c3e88f": {
@@ -74034,14 +74324,20 @@
  },
  "803164aaa63ddb71": {
   "active": true,
-  "band": "top",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-07-13",
   "first_seen": "2026-08-13",
   "location": "Seattle, Washington, USA",
   "priority": true,
-  "rationale": "Senior category manager for AI datacenter energy infrastructure procurement at Amazon; directly hits secondary sweet spot (energy strategy for hyperscaler datacenters).",
-  "score": 85,
+  "rationale": "Capex procurement/sourcing leadership for energy infrastructure equipment, an equipment-procurement-lead role rather than product/strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "amazon",
   "title": "Sr DC Capex Procurement Manager - Energy infrastructure, Data Center Sourcing and Procurement",
@@ -82519,7 +82815,7 @@
  },
  "8ea9fa299a4fade6": {
   "apply_url": "",
-  "band": "top",
+  "band": "strong",
   "company": "PG&E",
   "date_posted": "2026-09-29",
   "first_seen": "2026-09-29",
@@ -82530,17 +82826,18 @@
    "Chico, CA, US, 95928",
    "Danville, CA, US, 94583",
    "West Sacramento, CA, US, 95605",
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "Alta, CA, US, 95701"
   ],
-  "pay": "",
+  "pay": "$122,000\u2013$194,000",
   "priority": false,
-  "rationale": "Matches the candidate's current concurrent role (Senior Grid Innovation Engineer, PG&E) almost exactly.",
-  "score": 90,
+  "rationale": "Bridges business stakeholders and technology for a grid risk-reduction platform using ML/data analytics, close to the AI/data-product-within-energy sweet spot.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-29T19:29Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
-   "rubric": "abcdf1530a"
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "successfactors",
@@ -84491,7 +84788,7 @@
   "work_mode": "remote"
  },
  "919162536056fe9f": {
-  "band": "top",
+  "band": "strong",
   "company": "VEIR",
   "date_posted": "2026-09-14",
   "first_seen": "2026-09-14",
@@ -84502,12 +84799,13 @@
   ],
   "pay": "$150,000 - $170,000 per year",
   "priority": false,
-  "rationale": "Single-threaded technical PM owning data center power delivery cable systems product strategy and NPI, closely mirrors the confirmed-top DC-power-hardware-PM thesis.",
-  "score": 90,
+  "rationale": "Single-threaded product owner for a data-center power-delivery hardware line, core product-management-for-power-hardware fit.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-14T19:15Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
-   "rubric": "825fec1650"
+   "policy": "139133cf50",
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -85460,9 +85758,10 @@
   "locations": [
    "Oakland, CA, US, 94612",
    "Morgan Hill, CA, US, 95037",
-   "Danville, CA, US, 94583"
+   "Danville, CA, US, 94583",
+   "Rocklin, CA, US, 95765"
   ],
-  "pay": "$126,000",
+  "pay": "$126,000\u2013$200,000",
   "priority": false,
   "rationale": "Senior hybrid program-management scope at PG&E but generic 'electric program' with no BESS/grid-tech specifics.",
   "score": 55,
@@ -86300,7 +86599,7 @@
  },
  "94dd948bb19cc59e": {
   "apply_url": "",
-  "band": "top",
+  "band": "strong",
   "company": "PG&E",
   "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
@@ -86311,17 +86610,18 @@
    "Oakland, CA, US, 94612",
    "Rocklin, CA, US, 95765",
    "Danville, CA, US, 94583",
-   "San Ramon, CA, US, 94583"
+   "San Ramon, CA, US, 94583",
+   "West Sacramento, CA, US, 95605"
   ],
-  "pay": "",
+  "pay": "$147,000\u2013$251,000",
   "priority": false,
-  "rationale": "Principal product owner defining strategy/roadmap/governance for a grid-modernization (AMI edge intelligence) platform at PG&E \u2014 direct overlap with candidate's own grid-platform product work.",
-  "score": 90,
+  "rationale": "Principal product owner defining strategy and roadmap for a utility's grid-edge AMI distributed-intelligence platform.",
+  "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-28T20:45Z",
+   "at": "2026-10-02T00:30Z",
    "model": "claude-sonnet-5",
    "policy": "139133cf50",
-   "rubric": "abcdf1530a"
+   "rubric": "e338258705"
   },
   "seniority_match": true,
   "source": "successfactors",
@@ -89380,8 +89680,14 @@
   ],
   "pay": "$155,400\u2013$210,200/yr",
   "priority": true,
-  "rationale": "Senior energy strategy manager for AWS datacenters; excellent fit combining energy procurement, utility partnerships, and AI datacenter power.",
-  "score": 92,
+  "rationale": "Same AWS Energy Strategy Manager power-strategy/utility-ownership scope as the other listings in this family.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "amazon",
   "title": "Sr. Energy Strategy Manager, AWS Energy Team",
@@ -90016,15 +90322,21 @@
   "work_mode": "remote"
  },
  "9c1c3c2f4cf1a2b5": {
-  "band": "top",
+  "band": "weak",
   "company": "Texture",
   "date_posted": "2026-05-20",
   "first_seen": "2026-08-28",
   "location": "New York Office",
   "pay": "",
   "priority": false,
-  "rationale": "Senior PM for utility grid operations and DER coordination; perfect strategic fit to his ICA/interconnection background and energy domain",
-  "score": 85,
+  "rationale": "Generic B2B SaaS product manager role with energy/utilities only as an optional nice-to-have, not core domain.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Senior Product Manager",
@@ -90141,15 +90453,21 @@
   "work_mode": "hybrid"
  },
  "9c40038160b3aaf0": {
-  "band": "top",
+  "band": "possible",
   "company": "CoreWeave",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-13",
   "location": "New York, NY",
   "pay": "$143,000 to $210,000.",
   "priority": true,
-  "rationale": "Power procurement manager at CoreWeave (AI/energy infrastructure); excellent fit for energy transactions and datacenter power strategy.",
-  "score": 85,
+  "rationale": "Transactional power-procurement execution role, not a product or strategy leadership position.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "greenhouse",
   "title": "Power Procurement Manager",
@@ -90935,6 +91253,33 @@
   "source": "breezy",
   "title": "Data Center Site Manager",
   "url": "https://bitdeer.breezy.hr/p/6f0af499d613-data-center-site-manager",
+  "work_mode": ""
+ },
+ "9d5a731d8af98702": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Xcel Energy",
+  "date_posted": "2026-09-29",
+  "first_seen": "2026-10-02",
+  "first_seen_at": "2026-10-02T00:26:00Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Plant operations director for hydro generation is specialist generation ops, not the product/strategy bridging role he targets.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Plant Director Renewable Generation (Hydro )",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Minneapolis-MN-55401/Plant-Director-Renewable-Generation--Hydro--_JR116741-1",
   "work_mode": ""
  },
  "9d691bbe551cec16": {
@@ -92548,7 +92893,9 @@
   "work_mode": "remote"
  },
  "a01bf751ead5e8b3": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-02",
   "company": "",
   "date_posted": "2026-09-17",
   "first_seen": "2026-09-18",
@@ -92716,6 +93063,33 @@
   "source": "indeed",
   "title": "Electrical Component Engineer",
   "url": "https://www.indeed.com/viewjob?jk=5a48e271c0ae606c",
+  "work_mode": ""
+ },
+ "a05d7f85cb60b34e": {
+  "apply_url": "",
+  "band": "possible",
+  "company": "Xcel Energy",
+  "date_posted": "2026-09-30",
+  "first_seen": "2026-10-02",
+  "first_seen_at": "2026-10-02T00:26:00Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director of integrated system planning fits the transmission/distribution planning leadership MID category.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Director Strategic Planning (Integrated System Planning)",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Amarillo-TX-79101/Director-Strategic-Planning--Integrated-System-Planning-_JR116766-1",
   "work_mode": ""
  },
  "a07a677e0b6d0130": {
@@ -97049,8 +97423,14 @@
   "first_seen": "2026-08-14",
   "location": "Herndon, Virginia, USA",
   "priority": true,
-  "rationale": "Senior PM for AWS datacenter power generation infrastructure (BESS, fuel cells, HV/MV) is direct premium fit with deep supplier/OEM and product development scope.",
-  "score": 92,
+  "rationale": "Senior PM owning power-generation technology strategy (BESS, gensets, fuel cells) for global datacenter infrastructure at a hyperscaler \u2014 core thesis.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "amazon",
   "title": "Sr. Product Manager - Tech, Global Energy, Power Generation Solutions",
@@ -99863,14 +100243,18 @@
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-21",
   "location": "Maple Grove, MN, US",
+  "locations": [
+   "Maple Grove, MN, US",
+   "Maple Grove, MN, 55369"
+  ],
   "pay": "$70,000\u2013$156,600/yr",
   "priority": true,
   "rationale": "Distribution planning engineer at Xcel Energy (major utility) fits strategy IC track if senior/principal level; entry/staff below candidate level.",
   "score": 68,
   "seniority_match": false,
-  "source": "indeed",
+  "source": "workday",
   "title": "Distribution Planning Engineer (Entry, Staff, Senior, or Principal)",
-  "url": "https://www.indeed.com/viewjob?jk=82e88b77fb09a230",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Maple-Grove-MN-55369/Distribution-Planning-Engineer--Entry--Staff--Senior--or-Principal-_JR115782",
   "work_mode": "hybrid"
  },
  "acd7cf2641e82807": {
@@ -99929,8 +100313,9 @@
   "work_mode": ""
  },
  "acdc9b96413fce82": {
-  "active": true,
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-02",
   "company": "Amazon.com",
   "date_posted": "2026-08-28",
   "duplicate": true,
@@ -101450,7 +101835,9 @@
   "work_mode": ""
  },
  "af0e1faf90740ffd": {
+  "active": false,
   "band": "strong",
+  "closed": "2026-10-02",
   "company": "Southern California Edison",
   "date_posted": "2026-08-05",
   "first_seen": "2026-09-03",
@@ -102854,6 +103241,33 @@
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4876640101",
   "work_mode": ""
  },
+ "b1679b479e1c1ff7": {
+  "apply_url": "",
+  "band": "weak",
+  "company": "Xcel Energy",
+  "date_posted": "",
+  "first_seen": "2026-10-02",
+  "first_seen_at": "2026-10-02T00:26:00Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Enterprise SAP planning/portfolio IT director role, not an energy or product-strategy function.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Director, Enterprise Planning & Portfolio Management (SAP SAC / SAP EPPM)",
+  "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Minneapolis-MN-55401/Director--Enterprise-Planning---Portfolio-Management--SAP-SAC---SAP-EPPM-_JR114571-1",
+  "work_mode": ""
+ },
  "b17dfebb17cfddcd": {
   "active": false,
   "band": "strong",
@@ -102957,8 +103371,9 @@
   "work_mode": ""
  },
  "b1c02f4e5a49922a": {
-  "active": true,
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-02",
   "company": "SOLV Energy",
   "date_posted": "2026-08-28",
   "duplicate": true,
@@ -108685,7 +109100,7 @@
   "work_mode": "onsite"
  },
  "bc3db7d8fd67b8b9": {
-  "band": "top",
+  "band": "strong",
   "company": "GridCare",
   "date_posted": "2026-07-31",
   "first_seen": "2026-08-13",
@@ -108696,8 +109111,14 @@
   ],
   "pay": "$185,000-$285,000",
   "priority": true,
-  "rationale": "Director-level utility partnerships role at venture-backed AI datacenter power company; exact fit for candidate's PG&E interconnection + LG datacenter BESS background.",
-  "score": 88,
+  "rationale": "Director role building utility strategic partnerships for AI datacenter capacity, aligned with the energy-markets/utility-partnerships HIGH category despite BD-leaning framing.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "ashby",
   "title": "Director, Utility Partnerships",
@@ -109131,7 +109552,8 @@
    "Willard, NM, US, 87063",
    "Denver, CO, US, 80234",
    "Juno Beach, FL, US, 33408",
-   "Seabrook, NH, US, 03874"
+   "Seabrook, NH, US, 03874",
+   "Palm Beach Gardens, FL, US, 33410"
   ],
   "pay": "",
   "priority": true,
@@ -109265,7 +109687,8 @@
   "location": "Denver, CO - US",
   "locations": [
    "Denver, CO - US",
-   "San Francisco, CA - US"
+   "San Francisco, CA - US",
+   "Dallas, TX - US"
   ],
   "pay": "$190,000 - $230,000",
   "priority": true,
@@ -119992,9 +120415,10 @@
   "first_seen_at": "2026-09-26T17:53:01Z",
   "location": "",
   "locations": [
-   ""
+   "",
+   "Danville, CA, US, 94583"
   ],
-  "pay": "$184,000",
+  "pay": "$122,000\u2013$194,000",
   "priority": false,
   "rationale": "Quality Management System/process liaison role for PG&E Electric T&D \u2014 process/compliance focus, not grid product/strategy/data integration.",
   "score": 35,
@@ -127628,15 +128052,21 @@
   "work_mode": "remote"
  },
  "ddf4f682291e494b": {
-  "band": "top",
+  "band": "strong",
   "company": "CoreWeave",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-13",
   "location": "New York, NY",
   "pay": "$161,000 to $237,000.",
   "priority": true,
-  "rationale": "Director, Energy Market Development at CoreWeave (AI datacenter company); director-level strategic role owning utility/grid/procurement strategy \u2014 perfect fit for BESS product + energy markets expertise.",
-  "score": 87,
+  "rationale": "Director-level utility engagement, power procurement, and interconnection strategy for an AI infrastructure company \u2014 direct HIGH-category fit.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
   "seniority_match": true,
   "source": "greenhouse",
   "title": "Director, Energy Market Development",
@@ -128031,7 +128461,8 @@
    "HASKELL, TX, US, 79521",
    "Ft Myers, FL, US, 33902",
    "Juno Beach, FL, US, 33408",
-   "Sanford, FL, US, 32713"
+   "Sanford, FL, US, 32713",
+   "Pompano Beach, FL, US, 33060"
   ],
   "lowscore": true,
   "pay": "",
@@ -128046,7 +128477,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Power Generation Technical Services Specialist",
-  "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Power-Generation-Technical-Services-Specialist-FL-33410/1429136200/",
+  "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Power-Generation-Technical-Services-Specialist-Asset-Management-FL-33410/1435916600/",
   "work_mode": "onsite"
  },
  "de833684bde5499c": {
@@ -131269,6 +131700,36 @@
   "title": "Senior Grid Connection Engineer",
   "url": "https://www.indeed.com/viewjob?jk=aa3918fbb13af191",
   "work_mode": "hybrid"
+ },
+ "e482a3020d3fc7e8": {
+  "active": false,
+  "apply_url": "https://www.tesla.com/careers/search/job/284702?source=Indeed",
+  "band": "misfit",
+  "closed": "2026-10-02",
+  "company": "Tesla",
+  "date_posted": "2026-09-24",
+  "first_seen": "2026-10-02",
+  "first_seen_at": "2026-10-02T00:26:00Z",
+  "location": "Brookshire, TX, US",
+  "locations": [
+   "Brookshire, TX, US"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Manufacturing production engineering management for vehicle body assembly, unrelated to product/strategy or energy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-02T00:30Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "e338258705"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Production Engineering Associate Manager, Body in White, Data Center Manufacturing",
+  "url": "https://www.indeed.com/viewjob?jk=09ccd52d3c58e4e9",
+  "work_mode": ""
  },
  "e48447abf85b30fe": {
   "active": false,
@@ -138073,9 +138534,10 @@
    "Sacramento, CA, US, 95826",
    "Concord, CA, US, 94518",
    "San Luis Obispo, CA, US, 93401",
-   "Fresno, CA, US, 93721"
+   "Fresno, CA, US, 93721",
+   "San Jose, CA, US, 95126"
   ],
-  "pay": "$173,856",
+  "pay": "$173,856\u2013$213,624",
   "priority": false,
   "rationale": "Senior transmission planning engineer developing complex load forecasting models, grid domain relevance and senior IC seniority, but deep technical engineering focus without product/commercial framing.",
   "score": 55,
@@ -138355,7 +138817,7 @@
   },
   "seniority_match": true,
   "source": "workday",
-  "title": "Director, Major Projects | NEW GENERATION (Construction Utility Projects)",
+  "title": "Director, Major Projects | NEW GENERATION (Construction Utility Projects) - Tulsa, OK",
   "url": "https://aep.wd1.myworkdayjobs.com/en-US/AEPCareerSite/job/Tulsa-OK/Director--Major-Projects---NEW-GENERATION--Construction-Utility-Projects----Tulsa--OK_R19046",
   "work_mode": "onsite"
  },
