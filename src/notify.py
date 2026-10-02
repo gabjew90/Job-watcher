@@ -5,7 +5,6 @@ the digest is just printed.
 """
 import logging
 import os
-from datetime import datetime, timezone
 
 import requests
 
@@ -176,6 +175,52 @@ def build_digest(records: list[dict],
 
 
 
+def _short(text: str, limit: int) -> str:
+    text = " ".join((text or "").split())
+    return text if len(text) <= limit else text[:limit - 1].rstrip(" ,-–") + "…"
+
+
+def digest_title(records: list[dict], closed_recs: list[dict] | None = None,
+                 digest_floor: int = 40, theme: str | None = None) -> str:
+    """The issue title, which is also the notification email's subject, so
+    it leads with the best role (owner, 2026-10-02): "⚡ Top fit: Senior
+    Product Manager at Google (+2 top, 5 strong)". The best rating wins and
+    the most recently found role within it, so each run's digest names its
+    newest find. GitHub adds the repo name and issue number around it."""
+    th = themes.get(theme)
+    visible = [r for r in records
+               if r.get("score") is None or r["score"] >= digest_floor]
+    counts = {b: sum(1 for r in visible if _band(r) == b) for b in GROUP_NAMES}
+    rated = [r for r in visible if _band(r)]
+    if not rated:
+        n = len(visible)
+        title = (f"⏳ {n} new posting{'s' if n != 1 else ''}, not yet rated" if n
+                 else "Job watch: no new fits")
+    else:
+        rank = list(GROUP_NAMES)
+        best = min(rated, key=lambda r: (rank.index(_band(r)),
+                                         _rev(r.get("first_seen_at") or r.get("first_seen", ""))))
+        band = _band(best)
+        role = _short(best.get("title"), 50)
+        if (best.get("company") or "").strip():
+            role += f" at {_short(best['company'], 30)}"
+        counts[band] -= 1
+        # Top and strong counts only: phone inboxes cut a subject near 70
+        # characters, and the body has the full tally.
+        more = ", ".join(f"{counts[b]} {b}" for b in ("top", "strong")
+                         if counts[b] and rank.index(b) >= rank.index(band))
+        label = {"top": "Top fit", "strong": "Strong fit"}.get(band, "New role")
+        title = f"{th['icons'][band]} {label}: {role}" + (f" (+{more})" if more else "")
+    if closed_recs:
+        title += f" · {len(closed_recs)} closed"
+    return title
+
+
+def _rev(text: str) -> str:
+    """Sorts a date or timestamp newest first under min()."""
+    return "".join(chr(255 - ord(c)) for c in (text or "0"))
+
+
 def post_issue(records: list[dict],
                health_summary: list[dict] | None = None,
                closed_recs: list[dict] | None = None,
@@ -188,14 +233,7 @@ def post_issue(records: list[dict],
                theme: str | None = None) -> None:
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
-    date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    title = f"Job watch {date}: {len(records)} posting{'s' if len(records) != 1 else ''} in 24h"
-    banded = [r for r in records if r.get("band")]
-    if banded:
-        best = max(banded, key=lambda r: r.get("score") or 0)
-        title += f" (top: {best['band']})"
-    if closed_recs:
-        title += f", {len(closed_recs)} closed"
+    title = digest_title(records, closed_recs, digest_floor, theme)
     body = build_digest(records, health_summary, closed_recs,
                         digest_floor, unresolved, audit_recs, discovered,
                         reject_audit, screen_stats, theme)

@@ -85,3 +85,24 @@ def test_phone_cards_target_named_cells(tmp_path, monkeypatch):
         "c-title", "c-co", "c-loc", "c-mode", "c-pay", "c-posted", "c-seen", "c-fit"]
     assert "#t td.c-title { display: contents; }" in page
     assert 'g.innerHTML = `<td colspan="8">' in page   # heading cell has no c- class
+
+
+# --- the digest's title, which is also the email subject ----------------
+
+def test_title_leads_with_the_newest_best_role():
+    recs = [rec("Older Top", "top", first_seen_at="2026-10-01T10:00:00Z"),
+            rec("Newest Top", "top", first_seen_at="2026-10-02T09:00:00Z", company="Google"),
+            rec("A Strong", "strong"), rec("A Possible", "possible")]
+    assert notify.digest_title(recs, [], 40, "battery") == \
+        "⚡ Top fit: Newest Top at Google (+1 top, 1 strong)"
+
+
+def test_title_for_lower_ratings_and_edge_cases():
+    assert notify.digest_title([rec("Analyst", "strong")], [{}], 40, "gas") == \
+        "🌸 Strong fit: Analyst at Acme · 1 closed"
+    assert notify.digest_title([rec("Ops", "possible", company="")], [], 40, "gas") == \
+        "💨 New role: Ops"
+    assert notify.digest_title([rec("Pending", None)], [], 40) == "⏳ 1 new posting, not yet rated"
+    assert notify.digest_title([rec("Low", "weak")], [], 40) == "Job watch: no new fits"
+    long = notify.digest_title([rec("X" * 80, "top")], [], 40)
+    assert long == "⚡ Top fit: " + "X" * 49 + "… at Acme"
