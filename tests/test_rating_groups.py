@@ -57,3 +57,17 @@ def test_board_rows_carry_rating_not_star(tmp_path, monkeypatch):
     assert groups["top"] == "🔥 Top fits" and groups["misfit"] == "· Misfits"
     assert "show weak &amp; misfit" in page
     assert (tmp_path / "banner.svg").exists()
+
+
+def test_rating_headings_cover_every_band():
+    from src import triage
+    assert set(dashboard.GROUP_NAMES) == set(triage.BAND_SCORE) == set(dashboard.BAND_SCORE)
+
+
+def test_gas_banner_matches_its_generator():
+    import subprocess
+    import sys
+    from src import themes
+    art = subprocess.run([sys.executable, "scripts/gas_banner.py"], check=True,
+                         capture_output=True, text=True).stdout
+    assert art.strip() == themes.GAS_ART.strip()

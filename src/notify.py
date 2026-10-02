@@ -52,8 +52,10 @@ def build_digest(records: list[dict],
 
     def newest(r: dict):
         # Newest posted first within a rating (first-seen when the posting
-        # gave no date), matching the dashboard; no sub-band precision implied.
-        return _rev_date(r.get("date_posted") or r.get("first_seen", ""))
+        # gave no date), then postings with pay, matching the dashboard; no
+        # sub-band precision implied.
+        return (_rev_date(r.get("date_posted") or r.get("first_seen", "")),
+                not r.get("pay"))
 
     th = themes.get(theme)
     lines = [f"[![{th['tagline']}]({dashboard_url()}banner.svg)]({dashboard_url()})",
@@ -72,8 +74,10 @@ def build_digest(records: list[dict],
     lines.append(f"{counts or 'Nothing above the floor'} in the last 24h. "
                  f"**[Open the full board]({dashboard_url()})** for every posting "
                  "and one-tap feedback.\n")
-    # Top and strong roles get a full row with the rationale; possible ones
-    # a line each; weak and misfit roles only count toward `omitted`.
+    # Top and strong roles get a full row with the rationale, lower ones a
+    # line each. Rated weak and misfit roles sit below the digest floor and
+    # only count toward `omitted`; their sections catch legacy records that
+    # carry just a number above the floor (40-44 reads as weak).
     for band in ("top", "strong"):
         if not groups.get(band):
             continue

@@ -18,7 +18,7 @@ Workday / SuccessFactors boards (NVIDIA, GE Vernova, Equinix, Micron,
 careers-site APIs (Radancy/HiBob/ADP/Jibe/SmartRecruiters/Breezy — SCE,
   IREN, Applied Digital, AMD, Aon, NBCUniversal, Bitdeer)
 static careers pages with no ATS (regex over the HTML — Flux Power)
-  → keyword filter + title exclusions + priority-topic ⭐
+  → keyword filter + title exclusions (+ a priority-topic flag, stored only)
   → title screen: Haiku judges new postings' title+company, dropping obvious
     misfits and rescuing keyword-rejected titles that carry a leadership or
     role-type signal (rescue_title_keywords); ≤600 titles/run (screen.py)
@@ -46,7 +46,7 @@ static careers pages with no ATS (regex over the HTML — Flux Power)
    Actions). No API key billing — triage runs on your subscription. Without
    the secret, runs still work; digests are just unscored.
 3. **Tune `config.json`**: search terms, keyword filter, title exclusions,
-   priority topics, ATS boards, retention. `profile.md`
+   ATS boards, retention. `profile.md`
    is what postings are scored against — keep it current.
 
 ## Running locally

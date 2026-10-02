@@ -150,7 +150,7 @@ _PAGE = """<!DOCTYPE html>
 <header class="hero">{art}<div class="txt"><h1>{mark} {title}</h1><p>{tagline}</p></div></header>
 <main>
 <div class="chips"><span class="chip"><b>{active_count}</b>active{shown_note}</span><span class="chip"><b>{top_count}</b>top fits</span><span class="chip"><b>{new_count}</b>new this week</span><span class="chip"><b>{closed_count}</b>closed</span></div>
-<p class="legend">Each role is rated against the profile: top, strong, possible, weak or misfit, newest first within each rating. Weak and misfit roles are hidden unless you tick the box. The buttons under a role move it one rating up or down on the next run and teach future ratings.</p>
+<p class="legend">Each role is rated against the profile: top, strong, possible, weak or misfit, newest first within each rating. Weak and misfit roles are hidden unless you tick the box or search. The buttons under a role move it one rating up or down on the next run and teach future ratings.</p>
 <div class="controls"><input id="q" type="search" placeholder="Filter by title, company, place…" oninput="applyVis()"><label><input id="lo" type="checkbox" onchange="applyVis()"> show weak &amp; misfit</label><label><input id="sc" type="checkbox" onchange="applyVis()"> show closed</label><span class="meta">Updated <span id="upd" data-ts="{generated_iso}">{generated} UTC</span></span></div>
 <div class="tablewrap">
 <table id="t">
@@ -177,9 +177,11 @@ _PAGE = """<!DOCTYPE html>
 <script>
 let dir = -1, col = 6;
 const GROUPS = {groups};
-const LOW = ["weak", "misfit", "?"];
+const LOW = ["weak", "misfit"];
 function sortBy(c, numeric) {{
-  if (c === 7) {{ bandSort(); applyVis(); return; }}  // Fit: back to the grouped rating order
+  // Fit toggles between the grouped order (best first) and a flat
+  // lowest-first list, e.g. to review misfits.
+  if (c === 7 && !(col === 7 && dir === -1)) {{ bandSort(); applyVis(); return; }}
   dir = (c === col) ? -dir : (numeric ? -1 : 1); col = c;
   const tb = document.querySelector("#t tbody");
   tb.querySelectorAll("tr.grp").forEach(g => g.remove());  // headings belong to the rating order
@@ -193,7 +195,8 @@ function sortBy(c, numeric) {{
 function applyVis() {{
   const q = document.getElementById("q").value.toLowerCase();
   const showClosed = document.getElementById("sc").checked;
-  const showLow = document.getElementById("lo").checked;
+  // A search looks through every rating; only browsing hides weak and misfit.
+  const showLow = document.getElementById("lo").checked || q !== "";
   for (const r of document.querySelectorAll("#t tbody tr:not(.grp)")) {{
     const hideClosed = (r.classList.contains("closed") && !showClosed)
       || (LOW.includes(r.dataset.band) && !showLow);
@@ -263,6 +266,8 @@ def _extra_locs(rec: dict) -> str:
     return f' <small>+{n} more</small>' if n > 0 else ""
 
 
+# Rating headings, best first. Keys match triage.BAND_SCORE (a test holds
+# them together).
 GROUP_NAMES = {"top": "Top fits", "strong": "Strong fits", "possible": "Possible fits",
                "weak": "Weak fits", "misfit": "Misfits"}
 BAND_SCORE = {"top": 90, "strong": 75, "possible": 55, "weak": 35, "misfit": 15}
