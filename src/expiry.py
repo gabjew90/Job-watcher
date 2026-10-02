@@ -212,39 +212,57 @@ def _sf_listed(url: str, title: str, max_pages: int = 20) -> bool | None:
 def _sf_legacy_alive(url: str) -> bool | None:
     """The older SuccessFactors portal (career4.successfactors.com/career?
     ...career_job_req_id=, which Indeed passes through as NRG's apply link)
-    answers 200 for a removed posting with an explicit notice. Only that
-    notice is read; any other page is unknown."""
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=30)
-    except Exception as e:  # noqa: BLE001
-        log.debug("successfactors portal check failed for %s: %s", url, e)
-        return None
-    if resp.status_code == 200 and SF_LEGACY_GONE in resp.text:
-        return False
-    return None
+    answers 200 for a removed posting with an explicit notice. A closure is
+    permanent, so the notice must come back on two separate loads; any
+    other page is unknown."""
+    for attempt in range(2):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30)
+        except Exception as e:  # noqa: BLE001
+            log.debug("successfactors portal check failed for %s: %s", url, e)
+            return None
+        if resp.status_code != 200 or SF_LEGACY_GONE not in resp.text:
+            return None
+        if attempt == 0:
+            time.sleep(2)
+    return False
+
+
+def _workday_job_url(url: str) -> str:
+    """A Workday posting link without the query or the apply-flow tail
+    (/apply, /apply/applyManually, ...), which the CxS job API would 404."""
+    return re.sub(r"/apply(?:/.*)?$", "", url.split("?")[0].split("#")[0]).rstrip("/")
 
 
 # Indeed keeps showing some postings after the employer removes them
 # (NRG, 2026-10-02: Indeed live, NRG's own site and apply link gone). For an
-# Indeed copy whose apply link is an employer page one of these can read,
-# that page decides too. Google is left out: its check matches the title,
-# and Indeed's wording of a title can differ.
-APPLY_PROBES = (
-    (re.compile(r"\.myworkdayjobs\.com/"),
-     lambda rec, url: _workday_alive(url.split("?")[0].removesuffix("/apply"))),
-    (re.compile(r"amazon\.jobs/(?:[a-z-]+/)?jobs/\d+"), lambda rec, url: _status_alive(url)),
+# Indeed copy whose own apply link is an employer page one of PROBES can
+# read, that page decides too: (pattern, PROBES source, link normalizer).
+# Google is left out: its check matches the title, which Indeed can word
+# differently.
+APPLY_LINKS = (
+    (re.compile(r"\.myworkdayjobs\.com/"), "workday", _workday_job_url),
+    (re.compile(r"amazon\.jobs/(?:[a-z-]+/)?jobs/\d+"), "amazon", lambda url: url),
     (re.compile(r"successfactors\.(?:com|eu)/career\?.*career_job_req_id="),
-     lambda rec, url: _sf_legacy_alive(url)),
+     "successfactors-portal", lambda url: url),
 )
+# Per employer type, apply-link closes get their own mass-closure guard,
+# with a lower floor than SUSPECT_MIN: these groups are small.
+APPLY_SUSPECT_MIN = 5
 
 
-def _apply_link_dead(rec: dict) -> bool:
+def _apply_target(rec: dict) -> tuple[str, str] | None:
+    """(PROBES source, link) for an Indeed record's own employer apply
+    link, or None. A link borrowed from a same-titled posting elsewhere
+    (state.split_new twins) is never probed: its removal says nothing
+    about this one."""
     url = rec.get("apply_url") or ""
-    for pattern, probe in APPLY_PROBES:
+    if not url or not rec.get("apply_url_own"):
+        return None
+    for pattern, source, normalize in APPLY_LINKS:
         if pattern.search(url):
-            time.sleep(0.3)
-            return probe(rec, url) is False
-    return False
+            return source, normalize(url)
+    return None
 
 
 def _status_alive(url: str, headers: dict | None = None) -> bool | None:
@@ -327,6 +345,8 @@ PROBES = {
     "amazon": lambda rec: _status_alive(rec.get("url", "")),
     "smartrecruiters": lambda rec: _smartrecruiters_alive(rec.get("url", "")),
     "jibe": lambda rec: _jibe_alive(rec.get("url", "")),
+    # No source of this name: it reads Indeed copies' NRG-style apply links.
+    "successfactors-portal": lambda rec: _sf_legacy_alive(rec.get("url", "")),
 }
 
 
@@ -346,10 +366,6 @@ def probe_dead(records: dict[str, dict]) -> dict[str, set[str]]:
         if verdict is not None:
             dead["indeed"] = {jid for jid, key in keyed.items()
                               if key not in verdict or verdict[key]}
-        # The employer's own page can know first (see APPLY_PROBES).
-        gone = dead.setdefault("indeed", set())
-        gone.update(jid for jid, rec in by_source["indeed"].items()
-                    if jid not in gone and _apply_link_dead(rec))
     for source, recs in by_source.items():
         probe = PROBES.get(source)
         if source == "indeed" or source in ATS_PROVIDERS:
@@ -365,9 +381,27 @@ def probe_dead(records: dict[str, dict]) -> dict[str, set[str]]:
                 found.add(jid)
         dead[source] = found
 
+    # Indeed copies whose employer page is gone (see APPLY_LINKS), grouped
+    # by employer type so each group has its own guard below.
+    totals = {source: (len(recs), SUSPECT_MIN) for source, recs in by_source.items()}
+    already = dead.get("indeed", set())
+    groups: dict[str, dict[str, str]] = {}
+    for jid, rec in by_source.get("indeed", {}).items():
+        target = _apply_target(rec) if jid not in already else None
+        if target:
+            groups.setdefault(target[0], {})[jid] = target[1]
+    for source, links in groups.items():
+        verdicts: dict[str, bool | None] = {}
+        for url in dict.fromkeys(links.values()):   # one probe per link
+            time.sleep(0.3)
+            verdicts[url] = PROBES[source]({"url": url})
+        key = f"indeed via {source}"
+        dead[key] = {jid for jid, url in links.items() if verdicts[url] is False}
+        totals[key] = (len(links), APPLY_SUSPECT_MIN)
+
     for source, found in list(dead.items()):
-        total = len(by_source[source])
-        if len(found) >= SUSPECT_MIN and len(found) / total > SUSPECT_DEAD_SHARE:
+        total, floor = totals[source]
+        if len(found) >= floor and len(found) / total > SUSPECT_DEAD_SHARE:
             log.warning("PROBE SUSPECT %s: %d of %d reported dead; closing none this run",
                         source, len(found), total)
             dead[source] = set()
