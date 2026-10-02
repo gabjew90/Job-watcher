@@ -10,7 +10,17 @@ from datetime import datetime, timezone
 import requests
 
 from .models import Job
+from . import themes
 from .util import best_link
+
+
+def dashboard_url() -> str:
+    """The GitHub Pages URL for this repo's dashboard, derived from the
+    repository so a fork points at its own board rather than the original."""
+    from .dashboard import REPO
+    repo = os.environ.get("GITHUB_REPOSITORY") or REPO
+    owner, _, name = repo.partition("/")
+    return f"https://{owner}.github.io/{name}/"
 
 log = logging.getLogger(__name__)
 
@@ -28,7 +38,8 @@ def build_digest(records: list[dict],
                  audit_recs: list[dict] | None = None,
                  discovered: list[dict] | None = None,
                  reject_audit: list[dict] | None = None,
-                 screen_stats: dict | None = None) -> str:
+                 screen_stats: dict | None = None,
+                 theme: str | None = None) -> str:
     """Render the digest from STATE RECORDS covering a rolling window, so a
     posting appears in every digest for 24h. Runs fire several times a day
     (GitHub's cron is erratic); a run-scoped digest meant anything found
@@ -42,7 +53,11 @@ def build_digest(records: list[dict],
     def _rev_date(d: str) -> str:
         return "".join(chr(255 - ord(c)) for c in (d or "0000-00-00"))
 
-    lines = []
+    th = themes.get(theme)
+    lines = [f"[![{th['tagline']}]({dashboard_url()}banner.svg)]({dashboard_url()})",
+             "",
+             f"{th['mark']} **[Open the full board]({dashboard_url()})**: every posting, "
+             "filterable, with one-tap feedback.\n"]
     # Digest floor: don't itemize clear misfits, just count them.
     visible = [r for r in records
                if r.get("score") is None or r["score"] >= digest_floor]
@@ -52,7 +67,8 @@ def build_digest(records: list[dict],
         lines.append("|--:|---|---|---|---|---|---|")
         for r in sorted(visible, key=sort_key):
             band = r.get("band") or r.get("score")
-            score = f"**{band}**" if band is not None else "–"
+            icon = th["icons"].get(r.get("band"), "")
+            score = f"{icon} **{band}**" if band is not None else "–"
             star = " ⭐" if r.get("priority") else ""
             rationale = (f"<br><sub>{_esc(r['rationale'], 160)}</sub>"
                          if r.get("rationale") else "")
@@ -126,7 +142,7 @@ def build_digest(records: list[dict],
             detail = s["error"] or "returned 0 results"
             lines.append(f"- `{s['source']}`: {s['status']} ({detail[:120]}) — "
                          f"last results {s['last_results'] or 'never'}")
-    lines.append("\n---\n_Dashboard: see the GitHub Pages site for full history._")
+    lines.append(f"\n---\n_Full board with every posting and its history: {dashboard_url()}_")
     return "\n".join(lines)
 
 
@@ -140,7 +156,8 @@ def post_issue(records: list[dict],
                audit_recs: list[dict] | None = None,
                discovered: list[dict] | None = None,
                reject_audit: list[dict] | None = None,
-               screen_stats: dict | None = None) -> None:
+               screen_stats: dict | None = None,
+               theme: str | None = None) -> None:
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -153,7 +170,7 @@ def post_issue(records: list[dict],
         title += f", {len(closed_recs)} closed"
     body = build_digest(records, health_summary, closed_recs,
                         digest_floor, unresolved, audit_recs, discovered,
-                        reject_audit, screen_stats)
+                        reject_audit, screen_stats, theme)
 
     if not token or not repo:
         log.info("No GITHUB_TOKEN/GITHUB_REPOSITORY; printing digest instead.\n\n%s\n%s", title, body)

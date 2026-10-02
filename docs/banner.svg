@@ -1,0 +1,47 @@
+<svg viewBox="0 0 1200 240" width="1200" height="240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1730"/><stop offset=".55" stop-color="#0f2a5c"/><stop offset="1" stop-color="#0a4b7a"/>
+    </linearGradient>
+    <linearGradient id="charge" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a3e635"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde047"/><stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#38bdf8" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="240" fill="url(#bg)"/>
+  <rect width="1200" height="240" fill="url(#grid)"/>
+  <g fill="none" stroke="#38bdf8" stroke-opacity=".35" stroke-width="2">
+    <path d="M560 200H640V150H720"/><path d="M600 40H680V90H760"/><path d="M1180 200H1120V170"/>
+    <circle cx="560" cy="200" r="4" fill="#38bdf8"/><circle cx="600" cy="40" r="4" fill="#38bdf8"/>
+  </g>
+  <path d="M520 120 C 560 70, 600 170, 640 120 S 720 70, 760 120" fill="none" stroke="#a3e635" stroke-opacity=".55" stroke-width="2.5"/>
+  <g transform="translate(790 52)">
+    <g>
+      <rect x="0" y="12" width="92" height="136" rx="12" fill="#0b1730" stroke="#7dd3fc" stroke-width="3"/>
+      <rect x="30" y="0" width="32" height="14" rx="4" fill="#7dd3fc"/>
+      <rect x="10" y="98" width="72" height="40" rx="6" fill="url(#charge)"/>
+      <rect x="10" y="74" width="72" height="18" rx="5" fill="url(#charge)" opacity=".75"/>
+    </g>
+    <g transform="translate(120 0)">
+      <rect x="0" y="12" width="92" height="136" rx="12" fill="#0b1730" stroke="#7dd3fc" stroke-width="3"/>
+      <rect x="30" y="0" width="32" height="14" rx="4" fill="#7dd3fc"/>
+      <rect x="10" y="98" width="72" height="40" rx="6" fill="url(#charge)"/>
+      <rect x="10" y="74" width="72" height="18" rx="5" fill="url(#charge)" opacity=".75"/>
+      <rect x="10" y="50" width="72" height="18" rx="5" fill="url(#charge)" opacity=".55"/>
+      <rect x="10" y="26" width="72" height="18" rx="5" fill="url(#charge)" opacity=".35"/>
+    </g>
+    <g transform="translate(240 0)">
+      <rect x="0" y="12" width="92" height="136" rx="12" fill="#0b1730" stroke="#7dd3fc" stroke-width="3"/>
+      <rect x="30" y="0" width="32" height="14" rx="4" fill="#7dd3fc"/>
+      <rect x="10" y="98" width="72" height="40" rx="6" fill="url(#charge)"/>
+      <rect x="10" y="74" width="72" height="18" rx="5" fill="url(#charge)" opacity=".75"/>
+      <rect x="10" y="50" width="72" height="18" rx="5" fill="url(#charge)" opacity=".55"/>
+    </g>
+    <path d="M196 30 L160 92 H186 L170 150 L222 78 H194 L214 30 Z" fill="url(#bolt)" stroke="#0b1730" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+<defs><linearGradient id="shade" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".45"/><stop offset=".6" stop-color="#000" stop-opacity="0"/></linearGradient></defs><rect width="1200" height="240" fill="url(#shade)"/><text x="48" y="112" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Gabriel&#x27;s Job Watch</text><text x="50" y="150" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" fill="#ffffff" fill-opacity=".85">Grid-scale storage · data center power · AI infrastructure</text></svg>
