@@ -144,33 +144,63 @@ _PAGE = """<!DOCTYPE html>
   .band-misfit {{ background: var(--b-misfit); color: var(--b-misfit-ink); }}
   h2 {{ font-size: 1.05rem; margin: 2rem 0 .6rem; }}
   /* Phones: each posting becomes a card, so every detail fits the width
-     with no sideways scrolling. Title and rating on top, then company,
-     place and pay, then source, mode and dates on one small line, with the
-     buttons last. Cells are targeted by class (set in _row), not position.
-     Column sorting needs the header, so phones keep the grouped rating
-     order (the script restores it when the screen narrows). */
+     with no sideways scrolling: title and rating on top, then company and
+     place, then pay and work mode as pills (pay first), then source and dates on one
+     small line, with the buttons last. A stripe in the rating's colour runs
+     down the card's edge; roles found in the last two days carry a NEW
+     badge. Cells are targeted by class (set in _row), not position. Column
+     sorting needs the header, so phones keep the grouped rating order (the
+     script restores it when the screen narrows). */
+  :root {{ --money-bg: #dcfce7; --money-ink: #166534; }}
+  @media (prefers-color-scheme: dark) {{ :root {{ --money-bg: #14532d; --money-ink: #bbf7d0; }} }}
   @media (max-width: 640px) {{
     .hero {{ height: 12rem; }} .hero svg {{ opacity: .45; }}
+    .tablewrap {{ background: none; border: 0; box-shadow: none; }}
     #t thead {{ display: none; }}
     #t, #t tbody {{ display: block; }}
-    #t tr {{ display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .45rem;
-             padding: .8rem .9rem; border-bottom: 1px solid var(--border); }}
+    #t tr {{ display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .45rem;
+             margin: 0 0 .75rem; padding: .85rem .95rem .9rem 1.05rem;
+             background: var(--card); border: 1px solid var(--border);
+             border-left: 5px solid var(--b-possible); border-radius: .9rem;
+             box-shadow: 0 2px 6px #0000000f; }}
+    #t tr[data-band="top"] {{ border-left-color: var(--b-top); }}
+    #t tr[data-band="strong"] {{ border-left-color: var(--b-strong); }}
+    #t tr[data-band="weak"], #t tr[data-band="misfit"], #t tr[data-band="?"] {{
+      border-left-color: var(--border); }}
+    #t tbody tr:hover {{ background: var(--card); }}
     #t td {{ border: 0; padding: 0; min-width: 0; overflow-wrap: anywhere; }}
     #t td:empty {{ display: none; }}
     /* The title cell dissolves so its parts take their own places in the card. */
     #t td.c-title {{ display: contents; }}
-    #t td.c-title > a:first-child {{ order: 1; flex: 1 1 0; min-width: 0; overflow-wrap: anywhere; }}
-    #t td.c-title > .src {{ order: 5; margin: 0; font-size: .8rem; }}
-    #t td.c-title > .fb {{ order: 9; flex-basis: 100%; margin-top: .45rem; }}
+    #t td.c-title > a:first-child {{ order: 1; flex: 1 1 0; min-width: 0; font-size: 1.05rem;
+                                     line-height: 1.3; overflow-wrap: anywhere; }}
+    #t tr.new td.c-title > a:first-child::after {{
+      content: "NEW"; margin-left: .4rem; padding: .05rem .4rem; border-radius: .35rem;
+      font-size: .65rem; font-weight: 800; letter-spacing: .06em; vertical-align: .15em;
+      background: var(--accent2); color: #fff; }}
     #t td.c-fit {{ order: 2; flex: 0 0 auto; text-align: right; }}
-    #t td.c-co {{ order: 3; flex-basis: 100%; font-weight: 600; margin-top: .1rem; }}
-    #t td.c-loc, #t td.c-pay {{ order: 4; flex-basis: 100%; }}
-    #t td.c-mode, #t td.c-posted, #t td.c-seen {{ order: 5; font-size: .8rem; color: var(--muted); }}
-    #t td.c-mode::before {{ content: "· "; }}
-    #t td.c-posted::before {{ content: "· Posted "; }}
-    #t td.c-seen::before {{ content: "· Seen "; }}
-    #t tr.grp {{ padding: 0; }}
-    #t tr.grp td {{ flex-basis: 100%; padding: .55rem .9rem; }}
+    #t td.c-fit .band {{ font-size: .85rem; padding: .25rem .65rem; }}
+    #t td.c-co {{ order: 3; flex-basis: 100%; font-weight: 600; }}
+    #t td.c-co::before {{ content: "🏢 "; }}
+    #t td.c-loc {{ order: 4; flex-basis: 100%; color: var(--muted); }}
+    #t td.c-loc::before {{ content: "📍 "; }}
+    #t td.c-pay {{ order: 5; padding: .2rem .6rem; border-radius: 999px; font-weight: 700;
+                   background: var(--money-bg); color: var(--money-ink); }}
+    #t td.c-pay::before {{ content: "💵 "; }}
+    #t td.c-mode {{ order: 6; padding: .2rem .6rem; border-radius: 999px; font-size: .85rem;
+                    background: var(--head); }}
+    #t td.c-title > .src, #t td.c-posted, #t td.c-seen {{ order: 7; margin: 0; font-size: .78rem;
+                                                         color: var(--muted); }}
+    /* A zero-height break after the pills puts source and dates on their own line. */
+    #t tr:not(.grp)::after {{ content: ""; order: 6; flex-basis: 100%; height: 0; }}
+    #t td.c-posted::before {{ content: "📅 Posted "; }}
+    #t td.c-seen::before {{ content: "👀 Seen "; }}
+    #t td.c-title > .fb {{ order: 9; flex-basis: 100%; margin-top: .3rem; padding-top: .55rem;
+                           border-top: 1px dashed var(--border); }}
+    #t tr.grp {{ display: block; margin: 1.1rem 0 .55rem; padding: 0; background: none;
+                 border: 0; box-shadow: none; }}
+    #t tr.grp td {{ display: block; padding: 0 .2rem; background: none; border: 0;
+                    font-size: 1.1rem; }}
   }}
 </style>
 </head>
@@ -324,7 +354,10 @@ def _band(rec: dict) -> str:
 
 def _row(rec: dict, theme: dict | None = None) -> str:
     theme = theme or themes.get(None)
-    cls = "" if rec.get("active", True) else ' class="closed"'
+    fresh = (datetime.now(timezone.utc) - timedelta(days=2)).strftime("%Y-%m-%d")
+    classes = ([] if rec.get("active", True) else ["closed"]) + (
+        ["new"] if rec.get("active", True) and rec.get("first_seen", "") >= fresh else [])
+    cls = f' class="{" ".join(classes)}"' if classes else ""
     e = lambda s: html.escape(str(s or ""))
     fp = rec.get("scoring_fingerprint") or {}
     tooltip = e(rec.get("rationale"))
