@@ -170,12 +170,15 @@ def _successfactors_alive(url: str, title: str = "") -> bool | None:
     return None
 
 
-def _sf_listed(url: str, title: str, max_pages: int = 10) -> bool | None:
+def _sf_listed(url: str, title: str, max_pages: int = 20) -> bool | None:
     """Whether the site's search for `title` lists this posting's
     requisition number, paging through the results. Only job links count:
     the search box echoes the query, and a query with no matches falls back
     to a default list. None when the search can't be read or runs past
-    `max_pages` without an answer."""
+    `max_pages` without an answer. A broad title can match a couple of
+    hundred postings (NextEra, 2026-10-02: 228, ten pages); a quoted search
+    would be narrower, but the site gives no sign when a phrase matches
+    nothing, so it could not prove a posting gone."""
     m = SF_REQ_ID.search(urlparse(url).path)
     if not m or not title.strip():
         return None
