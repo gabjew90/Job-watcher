@@ -74,6 +74,11 @@ approval.
    rule 5. Report the outcome plainly, including any error the site shows.
 8. **Log** it in `applications/log.md`: date, company, title, URL,
    submitted or not, and anything he should follow up on. Commit and push.
+   This is his running record of everything applied for (owner,
+   2026-10-03): log every attempt, including ones not submitted (he
+   declined, CAPTCHA, spam flag, account needed, posting closed), and add
+   a new row when the status changes rather than leaving it out. When he
+   asks what he has applied for, answer from this file.
 
 ## With Claude in Chrome (preferred)
 When Claude runs on Gabriel's computer with access to his Chrome (the
