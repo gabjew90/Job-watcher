@@ -24,7 +24,8 @@ titles, dates and education: the newest file in resume/ (canonical).
 - Veteran status: I am not a protected veteran
 - Disability: No, I do not have a disability
 - Gender: Male
-- Hispanic or Latino, when asked on its own: NOT YET GIVEN — ask
+- Hispanic or Latino, when asked on its own: No (owner, 2026-10-03)
+- Veteran, when the form splits it: "I am not a veteran" (owner, 2026-10-03)
 
 ## Defaults (change any time)
 - LinkedIn, GitHub, portfolio: none — leave blank (owner, 2026-10-01)
@@ -33,12 +34,15 @@ titles, dates and education: the newest file in resume/ (canonical).
 - Willing to relocate: Yes; when asked which office location(s), select all
   listed (owner, 2026-10-03)
 - How did you hear about us: Corporate Website (owner, 2026-10-03)
+- Notice period: 2 weeks (owner, 2026-10-03)
+- Desired salary: the top of the posted range; if no range is posted,
+  ask (owner, 2026-10-03)
 - WhatsApp opt-in: leave unchecked unless he says otherwise
 - Previously worked at the company: answer from the resume's employers
   (LG Energy Solution, Comfort Energy, Pacific Gas and Electric Company)
 
 ## Not yet given — ask per application
-- Salary expectation
 - On-site requirements
-- Earliest start date / notice period
+- Earliest start date (a specific date)
+- Terms of use / privacy acknowledgments (ask each site)
 - Cover letter (skip unless required)

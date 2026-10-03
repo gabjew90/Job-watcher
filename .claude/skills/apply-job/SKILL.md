@@ -147,3 +147,17 @@ email flagged). On his computer, start the browser with a visible window
   password himself) -> 7 steps: My Information, My Experience,
   Application Questions, Voluntary Disclosures, Review. The page has a
   hidden "for robots only" website field: never fill it.
+  Lessons (Vantage, 2026-10-03):
+  - Resume autofill truncates titles (drops ", Grid-Scale BESS"),
+    shortens schools ("University of California" for UC Davis) and can
+    glue the next resume section onto the last job's description. Fix
+    all of it on the first pass through My Experience.
+  - **Never go Back to My Experience after saving it.** On a revisit,
+    Workday keeps only the entries whose text changed in that visit and
+    drops the rest. If you must, delete every work entry and re-add all
+    of them fresh from the resume in one visit, then confirm the count
+    on Review.
+  - Dropdowns: open, then pick with arrow keys + Enter (a mouse click can
+    land on the wrong option), and read every dropdown back afterwards.
+  - Before asking for "submit", read the whole Review page back
+    (job count, titles, dates, answers), not just screenshots.
