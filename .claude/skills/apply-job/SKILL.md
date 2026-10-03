@@ -92,13 +92,20 @@ Lessons from 2026-10-03 (Meta):
   the Submit button. Before filling, check `innerWidth` with
   `javascript_tool`; if it is under about 1200, call `resize_window`
   (1400x900) and close chat or assistant panels.
-- **Screenshots time out when Chrome is covered.** On Windows, a Chrome
-  window hidden behind other windows (such as the Claude app) reports
-  `document.visibilityState == "hidden"` and stops painting, so screenshots
-  fail with a CDP timeout. That is not him minimizing anything. Retry at
-  `scale` 0.3-0.5; if it still fails, review by reading every field's value
-  with `javascript_tool` and ask him to put Chrome side by side with
-  Claude. Never zoom the page with CSS to fit a screenshot.
+- **Check the window is not minimized before starting** (diagnosed
+  2026-10-03). The extension works in its own tab group, which can sit in
+  a separate Chrome window from the one he uses. When that window is
+  minimized, `outerWidth`/`outerHeight` read 0 and `visibilityState` is
+  "hidden": Chrome stops painting, so screenshots time out (CDP
+  `Page.captureScreenshot`) and coordinate/ref clicks silently miss.
+  `resize_window` reports success but cannot restore a minimized window.
+  So, first thing: read `({outerWidth, outerHeight, vis:
+  document.visibilityState})` with `javascript_tool`; if the size is 0,
+  stop and ask him to restore that Chrome window (click it in the taskbar)
+  and keep it un-minimized while the application runs. Do not guess at
+  other causes. Until he does, element `.click()` via `javascript_tool` is
+  acceptable for non-committing controls (cookie banners, menus, "Apply"),
+  never for Submit. Never zoom the page with CSS to fit a screenshot.
 - **Before clicking Submit**, confirm the button is the topmost element at
   its center (`document.elementFromPoint` on its bounding box). If
   something covers it, close that first.
@@ -134,5 +141,9 @@ email flagged). On his computer, start the browser with a visible window
   dialog; confirm with the visible "Submit anyway".
 - **Greenhouse / Lever**: usually no account; demographic questions are
   dropdowns (`select`).
-- **Workday** (most utilities, Fluence, AEP, Talen): requires an account
-  and email verification; ask first (rule 4).
+- **Workday** (most utilities, Fluence, AEP, Talen, Vantage): requires an
+  account and email verification; ask first (rule 4). Flow: Apply ->
+  "Autofill with Resume" -> Create Account/Sign In (he enters the
+  password himself) -> 7 steps: My Information, My Experience,
+  Application Questions, Voluntary Disclosures, Review. The page has a
+  hidden "for robots only" website field: never fill it.
