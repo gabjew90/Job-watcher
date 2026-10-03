@@ -23,6 +23,10 @@ approval.
    screenshot of the filled form and a list of every answer given, then
    stop. Submit only after he replies "submit" (or clearly approves) for
    that application. Approval for one application never covers another.
+   His "submit" also covers the site's own confirm-before-submit dialog
+   (e.g. Meta's "Submit anyway" after its AI qualification pre-check), so
+   ask for approval of both in the same review: describe any such dialog
+   or pre-check warning you already see, and say "submit" will confirm it.
 2. **Never invent an answer.** If a question is not covered by
    `answers.md` or the resume, leave it, list it in the review, and ask.
    Add his answer to `answers.md` when he says it is a standing answer.
@@ -31,10 +35,11 @@ approval.
 4. **Accounts**: if the site needs an account (Workday, iCIMS, Taleo),
    ask before creating one. Never write a password into this repo or into
    a commit; ask him to enter it or to keep it in his password manager.
-5. **Verification codes**: he has allowed reading his Gmail for them.
-   Search only for the code from the site being applied to, sent in the
-   last 15 minutes (e.g. Gmail search `from:<ats or company domain>
-   newer_than:1h`), use it, and read nothing else.
+5. **Gmail**: he has allowed reading his Gmail for (a) verification codes
+   and (b) confirmation emails for applications just submitted (owner,
+   2026-10-03). Search only for mail from the site being applied to, in
+   the last hour (e.g. `(<company> OR <ats domain>) newer_than:1h
+   in:anywhere`), and read nothing else.
 6. **CAPTCHA or spam flag**: do not try to defeat one. Tell him and stop.
 7. Do not write a cover letter or free-text essay unless he asks; if one
    is required, draft it from the resume only and include it in the review.
@@ -81,6 +86,31 @@ only after his "submit", ask about anything `answers.md` does not cover,
 and stop at a CAPTCHA or spam flag for him to handle. Run `git pull` in the
 repo folder first so the answers and resume are current.
 
+Lessons from 2026-10-03 (Meta):
+- **Window size first.** A small Chrome window switches sites to their
+  mobile layout, where floating panels (Meta's AI recruiting chat) cover
+  the Submit button. Before filling, check `innerWidth` with
+  `javascript_tool`; if it is under about 1200, call `resize_window`
+  (1400x900) and close chat or assistant panels.
+- **Screenshots time out when Chrome is covered.** On Windows, a Chrome
+  window hidden behind other windows (such as the Claude app) reports
+  `document.visibilityState == "hidden"` and stops painting, so screenshots
+  fail with a CDP timeout. That is not him minimizing anything. Retry at
+  `scale` 0.3-0.5; if it still fails, review by reading every field's value
+  with `javascript_tool` and ask him to put Chrome side by side with
+  Claude. Never zoom the page with CSS to fit a screenshot.
+- **Before clicking Submit**, confirm the button is the topmost element at
+  its center (`document.elementFromPoint` on its bounding box). If
+  something covers it, close that first.
+- **Sites may add a confirm step after Submit** (Meta: a "Submit
+  application" dialog with "Submit anyway"; responsive pages render
+  duplicate buttons, so click the one that is visible and topmost).
+  Nothing is sent until that step is confirmed.
+- **Confirm the result two ways** before reporting or logging: the page's
+  thank-you text, and a confirmation email (rule 5). If neither appears,
+  find out why (covered button, confirm dialog, validation error) before
+  clicking Submit again, so nothing is sent twice.
+
 ## Where to run it
 Run the skill in Claude Code on Gabriel's own computer, so the browser uses
 his network. From the cloud container, the browser is an automated
@@ -97,6 +127,11 @@ email flagged). On his computer, start the browser with a visible window
   questions are buttons (`choose`); location questions are type-ahead
   (`type`). Has an "Autofill from resume" box; ignore it and use the
   Resume upload field.
+- **Meta** (metacareers.com): no account needed (the Career Profile
+  account is optional; leave its password fields empty). Resume upload
+  autofills name, email, phone and location; check them. Asks which office
+  locations (select all, per answers.md). Submit opens an AI pre-check
+  dialog; confirm with the visible "Submit anyway".
 - **Greenhouse / Lever**: usually no account; demographic questions are
   dropdowns (`select`).
 - **Workday** (most utilities, Fluence, AEP, Talen): requires an account
