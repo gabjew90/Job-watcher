@@ -7,7 +7,7 @@ titles, dates and education: the newest file in resume/ (canonical).
 ## Contact
 - Name: Gabriel Jew (first: Gabriel, last: Jew)
 - Email: gabjew90@gmail.com
-- Phone: (510) 388-0629
+- Phone: (510) 388-0629 (device type: Mobile)
 - Location: San Diego, CA, United States (state: California)
 
 ## Resume
@@ -32,6 +32,8 @@ titles, dates and education: the newest file in resume/ (canonical).
 - May we contact your current employer: No, always (owner, 2026-10-01)
 - Willing to relocate: Yes; when asked which office location(s), select all
   listed (owner, 2026-10-03)
+- How did you hear about us: Corporate Website (owner, 2026-10-03)
+- WhatsApp opt-in: leave unchecked unless he says otherwise
 - Previously worked at the company: answer from the resume's employers
   (LG Energy Solution, Comfort Energy, Pacific Gas and Electric Company)
 
@@ -39,5 +41,4 @@ titles, dates and education: the newest file in resume/ (canonical).
 - Salary expectation
 - On-site requirements
 - Earliest start date / notice period
-- How did you hear about us
 - Cover letter (skip unless required)
