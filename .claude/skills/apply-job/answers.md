@@ -30,12 +30,14 @@ titles, dates and education: the newest file in resume/ (canonical).
 - LinkedIn, GitHub, portfolio: none — leave blank (owner, 2026-10-01)
 - Text-message consent: Yes (owner, 2026-10-01)
 - May we contact your current employer: No, always (owner, 2026-10-01)
+- Willing to relocate: Yes; when asked which office location(s), select all
+  listed (owner, 2026-10-03)
 - Previously worked at the company: answer from the resume's employers
   (LG Energy Solution, Comfort Energy, Pacific Gas and Electric Company)
 
 ## Not yet given — ask per application
 - Salary expectation
-- Willing to relocate / on-site requirements
+- On-site requirements
 - Earliest start date / notice period
 - How did you hear about us
 - Cover letter (skip unless required)
