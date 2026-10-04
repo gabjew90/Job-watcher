@@ -63,7 +63,10 @@
     "ZutaCore",
     "Accelsius",
     "Apple",
-    "LiquidStack"
+    "LiquidStack",
+    "EDF power solutions",
+    "Terra-Gen",
+    "Solar Turbines"
   ],
   "hyperscalers": {
     "microsoft": true,
@@ -258,6 +261,16 @@
       "provider": "lever",
       "board": "intersect",
       "company": "Intersect"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "clearwayjobs",
+      "company": "Clearway Energy"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "sandiegocommunitypower",
+      "company": "San Diego Community Power"
     }
   ],
   "workday_boards": [
