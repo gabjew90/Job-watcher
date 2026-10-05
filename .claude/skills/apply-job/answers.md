@@ -24,7 +24,11 @@ titles, dates and education: the newest file in resume/ (canonical).
 - Race / ethnicity: Asian; where Asian is split into subgroups, East Asian
   (owner, 2026-10-04)
 - Veteran status: I am not a protected veteran
-- Disability: No, I do not have a disability
+- Disability: Prefer not to disclose / I do not wish to answer (owner,
+  2026-10-05; replaces "No")
+- Pronouns, when offered: He/him (owner, 2026-10-05)
+- Optional questions: answer every one he has an answer for (he expects
+  the whole form filled, 2026-10-05); ask about any left blank.
 - Gender: Male
 - Hispanic or Latino, when asked on its own: No (owner, 2026-10-03)
 - Veteran, when the form splits it: "I am not a veteran" (owner, 2026-10-03)

@@ -135,7 +135,12 @@ click on the suggestion for type-ahead boxes (Lever location); read every
 value back; `browser_take_screenshot` with `fullPage` into
 `.playwright-mcp/` (gitignored; the only folder it may write to) and send
 it. All rules above still apply. Sites that need his login (Workday)
-stay in his Chrome.
+stay in his Chrome. Limit (Intersect on Lever, 2026-10-05): Lever's
+hCaptcha challenged the Playwright browser on Submit, and even after he
+solved it Lever answered "There was an error verifying your application"
+(HTTP 400) and dropped the resume. So Playwright is for filling and
+review only on CAPTCHA-protected sites; the final Submit happens in his
+Chrome. Do not resubmit from Playwright after a verification error.
 
 ## Where to run it
 Run the skill in Claude Code on Gabriel's own computer, so the browser uses
