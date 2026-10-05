@@ -145,7 +145,11 @@ email flagged). On his computer, start the browser with a visible window
   locations (select all, per answers.md). Submit opens an AI pre-check
   dialog; confirm with the visible "Submit anyway".
 - **Greenhouse / Lever**: usually no account; demographic questions are
-  dropdowns (`select`).
+  dropdowns (`select`). Lever (Intersect): plain HTML form; custom
+  questions are `cards[<id>][fieldN]` and the DEI survey is
+  `surveysResponses[...]`; LinkedIn can be required (he says enter
+  "n/a"); fetch the posting page (URL without `/apply`) for the pay range
+  and requirements.
 - **Workday** (most utilities, Fluence, AEP, Talen, Vantage): requires an
   account and email verification; ask first (rule 4). Flow: Apply ->
   "Autofill with Resume" -> Create Account/Sign In (he enters the

@@ -31,8 +31,8 @@ titles, dates and education: the newest file in resume/ (canonical).
 
 ## Defaults (change any time)
 - LinkedIn, GitHub, portfolio: none — always leave blank (owner, 2026-10-01;
-  reconfirmed 2026-10-04). If a form makes LinkedIn required, tell him the
-  form cannot be submitted without one.
+  reconfirmed 2026-10-04). If a form makes LinkedIn required, enter
+  "n/a" (owner, 2026-10-04).
 - Technologies / experience summary (owner's framing, 2026-10-04): solar
   and grid-scale BESS; front-of-the-meter and behind-the-meter;
   grid-connected with ride-through and load smoothing; islanded with gas
