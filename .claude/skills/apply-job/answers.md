@@ -18,9 +18,11 @@ titles, dates and education: the newest file in resume/ (canonical).
 ## Eligibility (owner, 2026-10-01)
 - Requires visa sponsorship now or in the future: No
 - Authorized to work in the United States: Yes (follows from: no sponsorship needed)
+- Authorized to work in Canada: No (owner, 2026-10-04)
 
 ## Voluntary self-identification (owner, 2026-10-01)
-- Race / ethnicity: Asian
+- Race / ethnicity: Asian; where Asian is split into subgroups, East Asian
+  (owner, 2026-10-04)
 - Veteran status: I am not a protected veteran
 - Disability: No, I do not have a disability
 - Gender: Male
@@ -28,7 +30,14 @@ titles, dates and education: the newest file in resume/ (canonical).
 - Veteran, when the form splits it: "I am not a veteran" (owner, 2026-10-03)
 
 ## Defaults (change any time)
-- LinkedIn, GitHub, portfolio: none — leave blank (owner, 2026-10-01)
+- LinkedIn, GitHub, portfolio: none — always leave blank (owner, 2026-10-01;
+  reconfirmed 2026-10-04). If a form makes LinkedIn required, tell him the
+  form cannot be submitted without one.
+- Technologies / experience summary (owner's framing, 2026-10-04): solar
+  and grid-scale BESS; front-of-the-meter and behind-the-meter;
+  grid-connected with ride-through and load smoothing; islanded with gas
+  turbines or reciprocating engines plus BESS for smoothing. Combine with
+  resume facts only; name no specific markets unless he does.
 - Text-message consent: Yes (owner, 2026-10-01)
 - May we contact your current employer: No, always (owner, 2026-10-01)
 - Willing to relocate: Yes; when asked which office location(s), select all
