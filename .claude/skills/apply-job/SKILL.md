@@ -123,6 +123,20 @@ Lessons from 2026-10-03 (Meta):
   find out why (covered button, confirm dialog, validation error) before
   clicking Submit again, so nothing is sent twice.
 
+## Fallback: Playwright browser (2026-10-05)
+If the Chrome tab cannot be used (it reports a 0x0 size and `find`,
+`file_upload` or screenshots fail) and the site needs no login, use the
+Playwright plugin (`mcp__plugin_playwright_playwright__*`) instead of
+waiting on him. It runs its own visible Chromium on his computer and
+network. Flow: `browser_navigate` to the form; click the upload button
+(`browser_click`), then `browser_file_upload` with the resume path; set
+plain fields with `browser_evaluate`; use `browser_type` (slowly) plus a
+click on the suggestion for type-ahead boxes (Lever location); read every
+value back; `browser_take_screenshot` with `fullPage` into
+`.playwright-mcp/` (gitignored; the only folder it may write to) and send
+it. All rules above still apply. Sites that need his login (Workday)
+stay in his Chrome.
+
 ## Where to run it
 Run the skill in Claude Code on Gabriel's own computer, so the browser uses
 his network. From the cloud container, the browser is an automated
