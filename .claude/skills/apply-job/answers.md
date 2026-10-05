@@ -27,6 +27,7 @@ titles, dates and education: the newest file in resume/ (canonical).
 - Disability: Prefer not to disclose / I do not wish to answer (owner,
   2026-10-05; replaces "No")
 - Pronouns, when offered: He/him (owner, 2026-10-05)
+- Age: 36 as of 2026-10-05 (age range 30-39 until he turns 40)
 - Optional questions: answer every one he has an answer for (he expects
   the whole form filled, 2026-10-05); ask about any left blank.
 - Gender: Male
