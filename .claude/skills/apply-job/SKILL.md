@@ -123,6 +123,15 @@ Lessons from 2026-10-03 (Meta):
   find out why (covered button, confirm dialog, validation error) before
   clicking Submit again, so nothing is sent twice.
 
+## Uploading in a background Chrome tab (2026-10-05)
+`find` and `read_page` only list what is on screen, and sites hide the
+real `<input type=file>` behind a styled button, so `file_upload` gets no
+ref. Fix: with `javascript_tool`, give that input a visible style and an
+`aria-label`, `scrollIntoView` it, then `read_page` (interactive) shows
+it with a ref; call `file_upload` on that ref; afterwards remove the
+added style. This uses the normal upload tool. Background-tab
+screenshots are unreliable, so review by reading every field back.
+
 ## Fallback: Playwright browser (2026-10-05)
 If the Chrome tab cannot be used (it reports a 0x0 size and `find`,
 `file_upload` or screenshots fail) and the site needs no login, use the
