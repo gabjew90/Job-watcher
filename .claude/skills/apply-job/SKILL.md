@@ -177,7 +177,11 @@ email flagged). On his computer, start the browser with a visible window
   questions are `cards[<id>][fieldN]` and the DEI survey is
   `surveysResponses[...]`; LinkedIn can be required (he says enter
   "n/a"); fetch the posting page (URL without `/apply`) for the pay range
-  and requirements.
+  and requirements. After attaching the resume, wait until the hidden
+  `resumeStorageId` input has a value (that is the real upload; the
+  "Success!" label alone is not proof), then re-check every field: the
+  resume parser clears LinkedIn and pronouns and reformats the phone.
+  Submit opens an hCaptcha that he solves himself in that tab.
 - **Workday** (most utilities, Fluence, AEP, Talen, Vantage): requires an
   account and email verification; ask first (rule 4). Flow: Apply ->
   "Autofill with Resume" -> Create Account/Sign In (he enters the
