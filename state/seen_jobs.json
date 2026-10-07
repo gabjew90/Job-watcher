@@ -24111,6 +24111,34 @@
   "url": "https://www.indeed.com/viewjob?jk=4ea6bf9d61e8808b",
   "work_mode": ""
  },
+ "2714c4f1870858b4": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "strong",
+  "company": "AMD",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Santa Clara, California",
+  "locations": [
+   "Santa Clara, California"
+  ],
+  "pay": "$164,500\u2013$235,000/yr",
+  "priority": false,
+  "rationale": "Sr. Manager owning power/thermal partner ecosystem within AMD's Data Center Solutions product org fits the physical power/cooling product thesis at an AI-infrastructure company.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "jibe",
+  "title": "Sr. Manager, Data Center Power and Thermal , Partner Management \u2013 Data Center Solutions Product Management",
+  "url": "https://careers.amd.com/careers-home/jobs/92399?lang=en-us",
+  "work_mode": ""
+ },
  "2722e756a094e996": {
   "band": "weak",
   "company": "Bloom Energy",
@@ -24372,9 +24400,11 @@
   "work_mode": "remote"
  },
  "27802d6496975b4e": {
+  "active": false,
   "apply_url": "https://grnh.se/pkdu9cz98us",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-10-07",
   "company": "Keel Infrastructure",
   "date_posted": "2026-10-07",
   "first_seen": "2026-10-07",
@@ -27013,6 +27043,38 @@
   "url": "https://www.indeed.com/viewjob?jk=bca36bf005a96290",
   "work_mode": "onsite"
  },
+ "2b5a26a22b3373ee": {
+  "apply_url": "https://careers.google.com/jobs/results/124691202292228806-technical-program-manager/",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Google",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Sunnyvale, CA, US",
+  "locations": [
+   "Sunnyvale, CA, US",
+   "Papillion, NE, US",
+   "Boulder, CO, US",
+   "Kansas City, MO, US",
+   "Austin, TX, US"
+  ],
+  "pay": "$240,000\u2013$333,000/yr",
+  "priority": false,
+  "rationale": "Senior TPM role is datacenter design/construction program delivery, not product or strategy ownership, per the program-management mid-band rule.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Technical Program Manager, Data Center Design Execution Regional Management",
+  "url": "https://www.indeed.com/viewjob?jk=e41b8cee843793a0",
+  "work_mode": ""
+ },
  "2b656533611a62ae": {
   "active": false,
   "band": "misfit",
@@ -28768,7 +28830,8 @@
    "Sacramento, CA, US, 95826",
    "Redding, CA, US, 96002",
    "Stockton, CA, US, 95206",
-   "Rocklin, CA, US, 95765"
+   "Rocklin, CA, US, 95765",
+   "Bakersfield, CA, US, 93308"
   ],
   "pay": "$155,000\u2013$265,000",
   "priority": false,
@@ -34812,7 +34875,7 @@
  "36e33a403ec292d4": {
   "active": false,
   "band": "misfit",
-  "closed": "2026-09-09",
+  "closed": "2026-10-07",
   "company": "NextEra Energy",
   "date_posted": "2026-09-09",
   "first_seen": "2026-09-09",
@@ -34824,12 +34887,13 @@
   "lowscore": true,
   "pay": "",
   "priority": false,
-  "rationale": "Environmental compliance specialist, unrelated to product/strategy/AI/grid targets.",
+  "rationale": "Environmental permitting specialist work for site development is unrelated to his product/engineering/finance skillset.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-09T20:18Z",
+   "at": "2026-10-07T22:06Z",
    "model": "claude-sonnet-5",
-   "rubric": "8bc70b75c0"
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
   },
   "seniority_match": false,
   "source": "successfactors",
@@ -42358,7 +42422,8 @@
    "Oakland, CA, US, 94612",
    "Chico, CA, US, 95928",
    "Stockton, CA, US, 95206",
-   "Redding, CA, US, 96002"
+   "Redding, CA, US, 96002",
+   "San Jose, CA, US, 95119"
   ],
   "pay": "$140,000\u2013$238,000",
   "priority": false,
@@ -51346,7 +51411,9 @@
   "work_mode": "hybrid"
  },
  "539840ffc7853bec": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-07",
   "company": "Clarios",
   "date_posted": "2026-08-24",
   "first_seen": "2026-08-24",
@@ -52655,7 +52722,8 @@
   "locations": [
    "Roswell, NM, US, 88201",
    "Houston, TX, US, 77002",
-   "Cisco, TX, US, 76437"
+   "Cisco, TX, US, 76437",
+   "Jupiter, FL, US, 33478"
   ],
   "pay": "",
   "pay_checked": true,
@@ -57279,7 +57347,8 @@
   "first_seen_at": "2026-10-07T20:04:06Z",
   "location": "Austin, TX, US",
   "locations": [
-   "Austin, TX, US"
+   "Austin, TX, US",
+   "Remote - Texas"
   ],
   "pay": "",
   "priority": false,
@@ -57292,9 +57361,9 @@
    "rubric": "64f09306d6"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "workday",
   "title": "VP, Energy Strategy",
-  "url": "https://www.indeed.com/viewjob?jk=a1d1d9e959714290",
+  "url": "https://aligneddc.wd12.myworkdayjobs.com/en-US/aligneddc/job/Remote---Texas/VP--Energy-Strategy_JR101263",
   "work_mode": "onsite"
  },
  "5dae4365f28d6a04": {
@@ -58145,6 +58214,34 @@
   "source": "indeed",
   "title": "Sr. Product Launch Manager, Industrial Energy",
   "url": "https://www.indeed.com/viewjob?jk=6df3b42980b204b5",
+  "work_mode": ""
+ },
+ "5f11430192952f99": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "Hitachi",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "AI Program Manager at Hitachi has no stated energy/power tie and a generic program-management scope, landing in the mid band.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "AI Program Manager",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Vaesteras-Vastmanland-County-Sweden/AI-Program-Manager_R0113978",
   "work_mode": ""
  },
  "5f131ce96dee705c": {
@@ -66037,7 +66134,8 @@
    "Cupertino, CA, US, 95014",
    "Vacaville, CA, US, 95688",
    "Sacramento, CA, US, 95826",
-   "Stockton, CA, US, 95206"
+   "Stockton, CA, US, 95206",
+   "Bakersfield, CA, US, 93308"
   ],
   "pay": "$140,000\u2013$238,000",
   "priority": false,
@@ -67215,7 +67313,8 @@
    "Lodi, CA, US, 95240",
    "Redding, CA, US, 96003",
    "Chico, CA, US, 95928",
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "San Jose, CA, US, 95119"
   ],
   "pay": "$136,000\u2013$232,000",
   "priority": false,
@@ -71888,7 +71987,8 @@
   "first_seen_at": "2026-10-06T21:44:02Z",
   "location": "Bellevue, WA",
   "locations": [
-   "Bellevue, WA"
+   "Bellevue, WA",
+   "Livingston, NJ / New York City, NY / Sunnyvale, CA / Bellevue, WA"
   ],
   "pay": "$177,000 to $237,000.",
   "priority": false,
@@ -80521,7 +80621,7 @@
   },
   "seniority_match": true,
   "source": "indeed",
-  "title": "Principal Data Center Facilities Development Manager, Front End Planning",
+  "title": "Principal Data Center Facilities Development Manager",
   "url": "https://www.indeed.com/viewjob?jk=bb26e594fe8528b5",
   "work_mode": ""
  },
@@ -81100,7 +81200,9 @@
   "work_mode": ""
  },
  "84a4667b81433409": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-07",
   "company": "Southern California Edison",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-03",
@@ -81754,7 +81856,9 @@
   "work_mode": "remote"
  },
  "8590468af0fdd593": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-07",
   "company": "Anthropic",
   "date_posted": "2026-08-27",
   "first_seen": "2026-08-28",
@@ -86137,6 +86241,34 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8604308002",
   "work_mode": ""
  },
+ "8c99e4cc818fbb28": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "top",
+  "company": "Aligned Data Centers",
+  "date_posted": "",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Plano, TX",
+  "locations": [
+   "Plano, TX"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director/Manager, Energy Strategy & Economics at a datacenter developer is a direct hit on the data-center energy/power strategy HIGH category.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Director/Manager, Energy Strategy & Economics",
+  "url": "https://aligneddc.wd12.myworkdayjobs.com/en-US/aligneddc/job/Plano-TX/Director-Manager--Energy-Strategy---Economics_JR100699",
+  "work_mode": ""
+ },
  "8ca5f5f0ae7d0975": {
   "active": false,
   "band": "misfit",
@@ -86795,7 +86927,7 @@
  "8dac86dd23a7e584": {
   "active": false,
   "band": "misfit",
-  "closed": "2026-09-14",
+  "closed": "2026-10-07",
   "company": "PG&E",
   "date_posted": "2026-09-12",
   "first_seen": "2026-09-14",
@@ -86811,12 +86943,13 @@
   "lowscore": true,
   "pay": "$49.51\u2013$54.32/hr",
   "priority": false,
-  "rationale": "Entry-level 12-month rotational engineering trainee program at PG&E, paid hourly.",
+  "rationale": "Entry-level rotational engineering trainee program is far below his seniority and current scope.",
   "score": 15,
   "scoring_fingerprint": {
-   "at": "2026-09-14T21:21Z",
+   "at": "2026-10-07T22:06Z",
    "model": "claude-sonnet-5",
-   "rubric": "825fec1650"
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
   },
   "seniority_match": false,
   "source": "successfactors",
@@ -91921,7 +92054,8 @@
    "Concord, CA, US, 94518",
    "West Sacramento, CA, US, 95605",
    "Redding, CA, US, 96002",
-   "Redding, CA, US, 96003"
+   "Redding, CA, US, 96003",
+   "Lodi, CA, US, 95240"
   ],
   "pay": "$136,000\u2013$232,000",
   "priority": false,
@@ -93100,7 +93234,9 @@
   "work_mode": ""
  },
  "97f83eff59020671": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-07",
   "company": "Google",
   "date_posted": "2026-09-07",
   "first_seen": "2026-09-07",
@@ -94068,8 +94204,10 @@
   "work_mode": "hybrid"
  },
  "99faddbc5c31bf9b": {
+  "active": false,
   "apply_url": "",
   "band": "possible",
+  "closed": "2026-10-07",
   "company": "CoreWeave",
   "date_posted": "2026-09-25",
   "first_seen": "2026-09-25",
@@ -94091,7 +94229,7 @@
   },
   "seniority_match": true,
   "source": "greenhouse",
-  "title": "Senior Manager, Site Selection (Leasing Experience Preferred)",
+  "title": "Senior Manager, Site Selection (Data Center Leasing Experience Preferred)",
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4716771006",
   "work_mode": ""
  },
@@ -94622,6 +94760,34 @@
   "title": "Permitting Manager",
   "url": "https://www.indeed.com/viewjob?jk=3afb979a3901a683",
   "work_mode": "remote"
+ },
+ "9af0ac821bc052f6": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Brookfield",
+  "date_posted": "",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Toronto, Ontario",
+  "locations": [
+   "Toronto, Ontario"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "VP Investments at Brookfield is a deal-execution investment track, which the candidate's feedback caps at possible despite MBA finance background.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Vice President, Investments",
+  "url": "https://brookfield.wd5.myworkdayjobs.com/en-US/brookfield/job/Toronto-Ontario/Vice-President--Investments_R2053283",
+  "work_mode": ""
  },
  "9af1b68cddea34a1": {
   "active": false,
@@ -96636,6 +96802,34 @@
   "url": "https://www.indeed.com/viewjob?jk=9471fc3922c64672",
   "work_mode": ""
  },
+ "9e26978b277172da": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "strong",
+  "company": "Aligned Data Centers",
+  "date_posted": "",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director of Prefabrication & Modularization at a datacenter developer closely matches his modular/prefab BESS leadership experience, though it reads execution-heavy.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Director, Prefabrication & Modularization",
+  "url": "https://aligneddc.wd12.myworkdayjobs.com/en-US/aligneddc/job/DFW01_02/Director--Prefabrication---Modularization_JR100623",
+  "work_mode": ""
+ },
  "9e3a1999676eee85": {
   "active": false,
   "band": "misfit",
@@ -98026,12 +98220,13 @@
   "pay": "",
   "pay_checked": true,
   "priority": false,
-  "rationale": "Utility billing/tariff analytical specialist role for power generation economics, but an IC analyst function rather than product/strategy leadership.",
+  "rationale": "NERC CIP cybersecurity technical specialist role for power generation controls is deep technical IC work outside his product/strategy focus.",
   "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-09-11T20:18Z",
+   "at": "2026-10-07T22:06Z",
    "model": "claude-sonnet-5",
-   "rubric": "825fec1650"
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
   },
   "seniority_match": false,
   "source": "successfactors",
@@ -98677,7 +98872,9 @@
   "work_mode": ""
  },
  "a14c6066ff78093e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-07",
   "company": "Google",
   "date_posted": "2026-09-07",
   "first_seen": "2026-09-07",
@@ -106053,7 +106250,8 @@
   "first_seen_at": "2026-09-12T06:34:32Z",
   "location": "Plano, TX, US",
   "locations": [
-   "Plano, TX, US"
+   "Plano, TX, US",
+   "DFW01_02"
   ],
   "pay": "",
   "priority": true,
@@ -106065,9 +106263,9 @@
    "rubric": "825fec1650"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "workday",
   "title": "Director, Powered Land Development",
-  "url": "https://www.indeed.com/viewjob?jk=199f22ba2461d7c2",
+  "url": "https://aligneddc.wd12.myworkdayjobs.com/en-US/aligneddc/job/DFW01_02/Director--Powered-Land-Development_JR101179",
   "work_mode": ""
  },
  "ad27dbd6fdf3fcf6": {
@@ -110843,6 +111041,34 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8647939002",
   "work_mode": "hybrid"
  },
+ "b5999ef7fbd7acde": {
+  "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=1827fbab-35b1-45c9-8ea9-65fca03eb2a6&ccId=9200013295263_2&jobId=648227&source=IN&lang=en_US",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "Saber Power Services",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Houston, TX, US",
+  "locations": [
+   "Houston, TX, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep EOR/design-engineering leadership on EPC substation and BESS interconnection projects is too far from his product/strategy scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Lead Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=3256a9e7a4252f2d",
+  "work_mode": ""
+ },
  "b59e4d2a07c02369": {
   "active": false,
   "band": "possible",
@@ -114304,7 +114530,9 @@
   "locations": [
    "Redding, CA, US, 96002",
    "Lodi, CA, US, 95240",
-   "Vacaville, CA, US, 95688"
+   "Vacaville, CA, US, 95688",
+   "San Jose, CA, US, 95119",
+   "Oakland, CA, US, 94612"
   ],
   "pay": "$105,000\u2013$169,000",
   "priority": false,
@@ -115629,7 +115857,8 @@
   "locations": [
    "Redding, CA, US, 96002",
    "Oakland, CA, US, 94612",
-   "Redding, CA, US, 96003"
+   "Redding, CA, US, 96003",
+   "Chico, CA, US, 95928"
   ],
   "pay": "$122,000\u2013$194,000",
   "priority": false,
@@ -119171,6 +119400,7 @@
   "work_mode": "hybrid"
  },
  "c2b04ede36022076": {
+  "apply_url": "https://careers.gevernova.com/senior-product-manager-ai/job/R5055325",
   "band": "strong",
   "company": "GE Vernova",
   "date_posted": "2026-10-07",
@@ -119179,22 +119409,24 @@
   "location": "Bengaluru",
   "locations": [
    "Bengaluru",
-   "2 Locations"
+   "2 Locations",
+   "Niskayuna, NY, US"
   ],
-  "pay": "",
+  "pay": "$131,700\u2013$219,300/yr",
   "priority": false,
-  "rationale": "Senior Product Manager - AI at grid/power company GE Vernova is a direct match to the AI-product-at-an-energy-company sweet spot.",
+  "rationale": "Senior Product Manager AI at GE Vernova is an AI product role inside an energy company, a confirmed secondary sweet spot.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-09-16T22:11Z",
+   "at": "2026-10-07T22:06Z",
    "model": "claude-sonnet-5",
-   "rubric": "825fec1650"
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
   },
   "seniority_match": true,
   "source": "workday",
-  "title": "Senior Product Manager - AI",
+  "title": "Senior Product Manager AI",
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Niskayuna/Senior-Product-Manager-AI_R5055325-2",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "c2bbab2cb5b1f082": {
   "apply_url": "https://www.itic.org/about/careers-at-iti?gnk=job&gni=8a78859fa0f425c801a116da32cd4663&gns=Indeed+Free",
@@ -120773,6 +121005,34 @@
   "url": "https://www.indeed.com/viewjob?jk=439d94d043538707",
   "work_mode": ""
  },
+ "c5f6d1aa11fa5cb9": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Anthropic",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Boston, MA",
+  "locations": [
+   "Boston, MA"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior data center capacity delivery is construction/real-estate execution leadership, which the profile caps at possible even for a strong employer.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "greenhouse",
+  "title": "Data Center Capacity Delivery, Canada",
+  "url": "https://job-boards.greenhouse.io/anthropic/jobs/5446290008",
+  "work_mode": "hybrid"
+ },
  "c60a55a6054402b7": {
   "apply_url": "",
   "apply_url_own": false,
@@ -121910,7 +122170,8 @@
   "location": "Redding, CA, US, 96002",
   "locations": [
    "Redding, CA, US, 96002",
-   "Auburn, CA, US, 95602"
+   "Auburn, CA, US, 95602",
+   "Oakland, CA, US, 94612"
   ],
   "lowscore": true,
   "pay": "$129,000\u2013$207,000",
@@ -122478,6 +122739,8 @@
   "work_mode": "remote"
  },
  "c8b1a5bd4c2b91a3": {
+  "apply_url": "https://ferrovial.wd3.myworkdayjobs.com/en-US/Ferrovial_Career_Site/job/Austin-TX/Energy-Development-Analyst_JR19571",
+  "apply_url_own": true,
   "band": "weak",
   "company": "Ferrovial",
   "date_posted": "2026-08-28",
@@ -122501,7 +122764,8 @@
   "first_seen_at": "2026-09-08T23:52:33Z",
   "location": "Plano, TX, US",
   "locations": [
-   "Plano, TX, US"
+   "Plano, TX, US",
+   "DFW01_02"
   ],
   "pay": "",
   "priority": true,
@@ -122513,9 +122777,9 @@
    "rubric": "8bc70b75c0"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "workday",
   "title": "Senior Generation Program Manager",
-  "url": "https://www.indeed.com/viewjob?jk=ece5487c000296fa",
+  "url": "https://aligneddc.wd12.myworkdayjobs.com/en-US/aligneddc/job/DFW01_02/Senior-Generation-Program-Manager_JR100908",
   "work_mode": ""
  },
  "c8bd3bae2eea9300": {
@@ -127375,7 +127639,9 @@
   "work_mode": "remote"
  },
  "d004feec4815e1b6": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-07",
   "company": "Torus Inc",
   "date_posted": "2026-08-31",
   "first_seen": "2026-08-31",
@@ -127704,7 +127970,8 @@
    "Austin, TX, US",
    "St. Paul, MN, US, 55107",
    "Palm Beach Gardens, FL, US, 33410",
-   "Jupiter, FL, US, 33478"
+   "Jupiter, FL, US, 33478",
+   "Phoenix, AZ, US, 85001"
   ],
   "pay": "",
   "pay_checked": true,
@@ -129331,7 +129598,7 @@
   "locations": [
    "Remote"
   ],
-  "pay": "",
+  "pay": "$125,000\u2013$145,000/yr",
   "priority": false,
   "rationale": "Project controls (cost/schedule/risk) management for a data-center portfolio is construction-PMO focused rather than power strategy or product.",
   "score": 35,
@@ -130974,7 +131241,9 @@
   "work_mode": "hybrid"
  },
  "d5bb2ed0d95cd896": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-07",
   "company": "Google",
   "date_posted": "2026-09-07",
   "first_seen": "2026-09-07",
@@ -136930,7 +137199,8 @@
    "TONOPAH, AZ, US, 85354",
    "West Palm Beach, FL, US, 33407",
    "Florida City, FL, US, 33035",
-   "Houston, TX, US, 77002"
+   "Houston, TX, US, 77002",
+   "Palo, IA, US, 52324"
   ],
   "lowscore": true,
   "pay": "",
@@ -138053,8 +138323,9 @@
   "work_mode": "onsite"
  },
  "e2a2d791c25b0412": {
-  "active": true,
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-07",
   "company": "Amazon",
   "date_posted": "2026-07-28",
   "first_seen": "2026-09-03",
@@ -138846,6 +139117,7 @@
   "work_mode": "remote"
  },
  "e40eb6a60f34802b": {
+  "apply_url": "https://generac.wd5.myworkdayjobs.com/External/job/Sussex-WI---USA/Project-Manager-Data-Centers_JR15330",
   "band": "weak",
   "company": "Generac Power Systems",
   "date_posted": "2026-09-21",
@@ -138855,7 +139127,8 @@
   "locations": [
    "Waukesha, WI, US",
    "Waukesha, WI - USA",
-   "Sussex, WI - USA"
+   "Sussex, WI - USA",
+   "Sussex, WI, US"
   ],
   "pay": "",
   "priority": false,
@@ -140373,7 +140646,8 @@
    "Redding, CA, US, 96002",
    "Oakland, CA, US, 94612",
    "Chico, CA, US, 95928",
-   "Vacaville, CA, US, 95688"
+   "Vacaville, CA, US, 95688",
+   "Concord, CA, US, 94518"
   ],
   "pay": "$102,000\u2013$152,000",
   "priority": false,
@@ -140738,7 +141012,8 @@
    "West Sacramento, CA, US, 95605",
    "Redding, CA, US, 96003",
    "Redding, CA, US, 96002",
-   "Lodi, CA, US, 95240"
+   "Lodi, CA, US, 95240",
+   "Concord, CA, US, 94518"
   ],
   "pay": "$105,000\u2013$169,000",
   "pay_checked": true,
@@ -141509,6 +141784,34 @@
   "title": "Project Engineer - BESS",
   "url": "https://job-boards.greenhouse.io/onenergy/jobs/4214871009",
   "work_mode": "hybrid"
+ },
+ "e7f341f340667316": {
+  "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=dd7b682c-9b4e-4d2e-bc99-f32dbddf1ca5&ccId=19000101_000001&jobId=956416&source=IN&lang=en_US",
+  "apply_url_own": true,
+  "band": "strong",
+  "company": "",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Remote, US",
+  "locations": [
+   "Remote, US"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "VP-level asset management owning O&M, revenue optimization and commercial strategy for a renewable/battery storage portfolio matches the asset-management/operating-portfolio sweet spot.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Vice President, Head of Asset Management",
+  "url": "https://www.indeed.com/viewjob?jk=0aeb7dccf875506d",
+  "work_mode": "remote"
  },
  "e7fd32e5bfa28cb0": {
   "apply_url": "https://careers.se.com/jobs/135679/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
@@ -144041,7 +144344,9 @@
   "work_mode": "remote"
  },
  "ebbf8a70b1cfc437": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-07",
   "company": "AT&T",
   "date_posted": "2026-09-24",
   "first_seen": "2026-09-24",
@@ -149556,6 +149861,34 @@
   "title": "Principal Renewable and Storage Originator Analyst",
   "url": "https://careers.pge.com/job/Oakland-Principal-Renewable-and-Storage-Originator-Analyst-CA-94612/1426617300/",
   "work_mode": "hybrid"
+ },
+ "f4dd079e11ee25a0": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "strong",
+  "company": "NVIDIA",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "2 Locations",
+  "locations": [
+   "2 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Global energy partner/ecosystem management for NVIDIA's datacenter energy needs aligns with the utility-partnership/datacenter-energy strategy sweet spot, though description is sparse.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Global Energy Partner Ecosystem Manager",
+  "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-TX-Remote/Global-Energy-Partner-Ecosystem-Manager_JR2018029",
+  "work_mode": ""
  },
  "f4de72b0e7b2f426": {
   "apply_url": "https://jupiterpower.na.teamtailor.com/jobs/709227-director-development",
@@ -155480,6 +155813,34 @@
   "title": "Hardware Technical Program Manager",
   "url": "https://jobs.ashbyhq.com/base-power/f3318660-62b4-4157-b577-a8d9bcf2e978",
   "work_mode": "onsite"
+ },
+ "ff358ab79c04279a": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "GE Vernova",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-07",
+  "first_seen_at": "2026-10-07T22:04:51Z",
+  "location": "Brossard",
+  "locations": [
+   "Brossard"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Hydro Project Director is project/program delivery leadership in power, matching the mid program-management band rather than product/strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-07T22:06Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Directeur de projet Hydro/Hydro Project Director",
+  "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Brossard/Directeur-de-projet-Hydro-Hydro-Project-Director_R5055384",
+  "work_mode": ""
  },
  "ff3fb3793adcec39": {
   "active": false,
