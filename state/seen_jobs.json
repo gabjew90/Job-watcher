@@ -6773,7 +6773,7 @@
  },
  "0a37ae51f384d3f5": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002Fe5UAE&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2309543522914406%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dd5e90772-c1a2-11f1-a916-51ee4f905d1e%26rx_job%3Da1KiE0000002Fe5UAE%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002Fe5UAE&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2309543522914406%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dd5e90772-c1a2-11f1-a916-51ee4f905d1e%26rx_job%3Da1KiE0000002Fe5UAE%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -13799,7 +13799,7 @@
   "work_mode": ""
  },
  "1539e53caf160f38": {
-  "apply_url": "https://meppi.hrmdirect.com/employment/view.php?req=3793368&jbsrc=1014&location=8cb0f465-0844-71d7-959a-bc229cc38bc0",
+  "apply_url": "https://meppi.hrmdirect.com/employment/job-opening.php?req=3793368&req_loc=1439926#job",
   "apply_url_own": true,
   "band": "strong",
   "company": "Mitsubishi Electric Power Products Inc",
@@ -13824,7 +13824,7 @@
   "source": "indeed",
   "title": "Software Product Manager",
   "url": "https://www.indeed.com/viewjob?jk=412e9b19b9dcd252",
-  "work_mode": ""
+  "work_mode": "hybrid"
  },
  "154675aab21743df": {
   "active": false,
@@ -16235,7 +16235,8 @@
   "first_seen_at": "2026-10-08T20:00:19Z",
   "location": "Juno Beach, FL, US, 33408",
   "locations": [
-   "Juno Beach, FL, US, 33408"
+   "Juno Beach, FL, US, 33408",
+   "Houston, TX, US, 77002"
   ],
   "lowscore": true,
   "pay": "",
@@ -16902,6 +16903,34 @@
   "url": "https://www.indeed.com/viewjob?jk=b4be5b512ef04358",
   "work_mode": "remote"
  },
+ "1a5063286c5fcd61": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Fluence Energy",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "USA-TX-Houston",
+  "locations": [
+   "USA-TX-Houston"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "VP title but scope is global sourcing/procurement for power equipment, matching the equipment-procurement-lead calibration cap.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "VP Power & Systems - Global Sourcing & Procurement",
+  "url": "https://fluenceenergy.wd12.myworkdayjobs.com/en-US/fluenceenergy-jobs/job/USA-TX-Houston/VP-of-Global-Sourcing--Power-and-Systems_JR101679",
+  "work_mode": ""
+ },
  "1a53d9edb4047ba4": {
   "active": false,
   "band": "misfit",
@@ -17244,6 +17273,34 @@
   "title": "Systems Support Operations Engineer, Energy",
   "url": "https://www.indeed.com/viewjob?jk=019b656bf4a18a75",
   "work_mode": "remote"
+ },
+ "1adafd9742e3eaf5": {
+  "apply_url": "https://stackinfra.wd108.myworkdayjobs.com/STACK_AMER/job/Sterling-VA/Director--Technical-Operations_JR00407",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "STACK Infrastructure US",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Sterling, VA, USA",
+  "locations": [
+   "Sterling, VA, USA"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director of data center critical operations \u2014 mission-critical infrastructure domain fit, but the function is operations leadership, not product or strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Technical Operations",
+  "url": "https://www.indeed.com/viewjob?jk=08b2edd35bef4a65",
+  "work_mode": ""
  },
  "1adbbeb4e1ae8ef1": {
   "active": false,
@@ -27693,7 +27750,8 @@
   "first_seen_at": "2026-10-08T20:00:19Z",
   "location": "Concord, CA, US, 94518",
   "locations": [
-   "Concord, CA, US, 94518"
+   "Concord, CA, US, 94518",
+   "Rocklin, CA, US, 95765"
   ],
   "pay": "$161,520\u2013$207,504",
   "priority": true,
@@ -31001,6 +31059,37 @@
   "url": "https://www.indeed.com/viewjob?jk=864acb93e1a32953",
   "work_mode": "onsite"
  },
+ "303b648d04c7c9b3": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-10-08",
+  "company": "Crusoe",
+  "date_posted": "2026-10-07",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "San Francisco, CA - US",
+  "locations": [
+   "San Francisco, CA - US"
+  ],
+  "lowscore": true,
+  "pay": "$250,000 -$300,000",
+  "priority": false,
+  "rationale": "Pure software engineering management (developer tooling/AI agent platform) with no energy or power connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Senior Manager, Engineering",
+  "url": "https://jobs.ashbyhq.com/crusoe/2b1c55f2-0c03-4d01-8814-f19ead2d4ad6",
+  "work_mode": "remote"
+ },
  "303c5abd64e95c69": {
   "active": false,
   "band": "misfit",
@@ -32678,7 +32767,7 @@
  "324e2e22472663a6": {
   "band": "weak",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-10-08",
   "first_seen": "2026-08-28",
   "location": "Greenville",
   "pay": "",
@@ -33316,7 +33405,7 @@
  },
  "335192cd112efbe7": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000027jlUAA_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2634351267000810%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dd5e8a863-c1a2-11f1-8484-51ee4f905d1e%26rx_job%3Da1KiE00000027jlUAA_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000027jlUAA_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2634351267000810%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dd5e8a863-c1a2-11f1-8484-51ee4f905d1e%26rx_job%3Da1KiE00000027jlUAA_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -35241,7 +35330,7 @@
  },
  "363ba7335b0339ae": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000028ntUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1086884784057067%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D53ec91e7-c0fb-11f1-a9d0-c96755386cf7%26rx_job%3Da1KiE00000028ntUAA%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000028ntUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1086884784057067%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D53ec91e7-c0fb-11f1-a9d0-c96755386cf7%26rx_job%3Da1KiE00000028ntUAA%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -35759,7 +35848,8 @@
   "first_seen_at": "2026-09-09T20:17:17Z",
   "location": "WADLEY, GA, US, 30477",
   "locations": [
-   "WADLEY, GA, US, 30477"
+   "WADLEY, GA, US, 30477",
+   "Palm Beach Gardens, FL, US, 33410"
   ],
   "lowscore": true,
   "pay": "",
@@ -35775,7 +35865,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Senior Environmental Specialist",
-  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Senior-Environmental-Specialist-FL-33408/1427943400/",
+  "url": "https://jobs.nexteraenergy.com/job/Phoenix-Senior-Environmental-Specialist-AZ-85001/1438002300/",
   "work_mode": "remote"
  },
  "36f14680735dd99b": {
@@ -43579,7 +43669,7 @@
   "work_mode": ""
  },
  "443f31f8e2544ae9": {
-  "apply_url": "",
+  "apply_url": "https://jobs.pge.com/job/-/-/29673/101629393984",
   "apply_url_own": false,
   "band": "possible",
   "company": "PG&E",
@@ -43592,7 +43682,8 @@
    "Chico, CA, US, 95928",
    "Stockton, CA, US, 95206",
    "Redding, CA, US, 96002",
-   "San Jose, CA, US, 95119"
+   "San Jose, CA, US, 95119",
+   "Oakland, CA, USA"
   ],
   "pay": "$140,000\u2013$238,000",
   "priority": false,
@@ -46238,6 +46329,34 @@
   "title": "Principal Compliance &amp; Risk Consultant - Location Flexible",
   "url": "https://careers.pge.com/job/Oakland-Principal-Compliance-&amp;-Risk-Consultant-Location-Flexible-CA-94612/1429177700/",
   "work_mode": "hybrid"
+ },
+ "48a7ce0c31918820": {
+  "apply_url": "https://www.rwe.com/en/rwe-careers-portal/job-offers/details/?id=93735-en_GB",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "RWE",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Austin, TX, USA",
+  "locations": [
+   "Austin, TX, USA"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Business-development/origination role in renewables; BD-lead roles cap at possible per standing feedback.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Sr Business Development Manager",
+  "url": "https://www.indeed.com/viewjob?jk=5d40e79b6294690e",
+  "work_mode": ""
  },
  "48b00f18b35910c8": {
   "apply_url": "",
@@ -49834,7 +49953,7 @@
  },
  "4f1dde7fbe537cd8": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002GgbUAE_1006&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1456262156566062%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D75432e83-c28d-11f1-8ecf-4f582e749049%26rx_job%3Da1KiE0000002GgbUAE_1006%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002GgbUAE_1006&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1456262156566062%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D75432e83-c28d-11f1-8ecf-4f582e749049%26rx_job%3Da1KiE0000002GgbUAE_1006%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -55795,7 +55914,7 @@
  },
  "589a255de7322dc8": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000026FpUAI&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1630663895428889%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D25ee3451-bec1-11f1-81c1-6dac84d649d5%26rx_job%3Da1KiE00000026FpUAI%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000026FpUAI&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1630663895428889%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D25ee3451-bec1-11f1-81c1-6dac84d649d5%26rx_job%3Da1KiE00000026FpUAI%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -60421,6 +60540,34 @@
   "url": "https://jobs.lever.co/mainspringenergy/6505c241-3d3f-4f69-a792-8fcfbf5f39ff",
   "work_mode": "onsite"
  },
+ "601de1e5c98a7a3f": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "NVIDIA",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "6 Locations",
+  "locations": [
+   "6 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Technical program manager for a datacenter at NVIDIA \u2014 program delivery, not his target product/strategy function.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Senior Technical Project Manager, Datacenter",
+  "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Project-Manager--Datacenter_JR2026715-1",
+  "work_mode": ""
+ },
  "6039f9d816fcdc8f": {
   "active": false,
   "band": "misfit",
@@ -61685,7 +61832,8 @@
    "Auburn, CA, USA",
    "Concord, CA, US, 94518",
    "Oakland, CA, US, 94612",
-   "San Jose, CA, US, 95119"
+   "San Jose, CA, US, 95119",
+   "Rocklin, CA, US, 95765"
   ],
   "lowscore": true,
   "pay": "$104,316\u2013$139,044",
@@ -68013,7 +68161,8 @@
    "Vacaville, CA, US, 95688",
    "Sacramento, CA, US, 95826",
    "Stockton, CA, US, 95206",
-   "Bakersfield, CA, US, 93308"
+   "Bakersfield, CA, US, 93308",
+   "Chico, CA, US, 95928"
   ],
   "pay": "$140,000\u2013$238,000",
   "priority": false,
@@ -71551,6 +71700,34 @@
   "title": "Senior Manager, Data Center Facilities Engineering",
   "url": "https://www.indeed.com/viewjob?jk=a3cfe5f87b9d5e53",
   "work_mode": ""
+ },
+ "71a1c68f00b7f0e4": {
+  "apply_url": "https://recruiting.adp.com/srccsh/public/RTI.home?r=5001230817400&c=2166501&d=WWTExternalCareerSite&rb=INDEED&idUnique=5001230817400",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "World Wide Technology",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Remote, USA",
+  "locations": [
+   "Remote, USA"
+  ],
+  "pay": "$132,400\u2013$165,500/yr",
+  "priority": false,
+  "rationale": "Senior strategic program manager for data center/AI at an IT integrator \u2014 program-management function, no clear energy/power angle.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Strategic Program Manager, Data Center and AI",
+  "url": "https://www.indeed.com/viewjob?jk=79ea87692e3902cc",
+  "work_mode": "remote"
  },
  "71a27a95eb2d1778": {
   "band": "weak",
@@ -78153,7 +78330,8 @@
   "first_seen_at": "2026-10-08T20:00:19Z",
   "location": "Beachwood, OH, USA",
   "locations": [
-   "Beachwood, OH, USA"
+   "Beachwood, OH, USA",
+   "Raleigh, NC, USA"
   ],
   "pay": "$182,000\u2013$266,000/yr",
   "priority": false,
@@ -78168,7 +78346,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Director IT ESS Group Business Relationship Manager",
-  "url": "https://www.indeed.com/viewjob?jk=5733ef827dde9436",
+  "url": "https://www.indeed.com/viewjob?jk=41dc967ea1d36910",
   "work_mode": ""
  },
  "7ce919838a06a5b8": {
@@ -78795,7 +78973,8 @@
    "Plantation, FL, US, 33317",
    "Juno Beach, FL, US, 33408",
    "Palm Beach Gardens, FL, US, 33410",
-   "Jupiter, FL, US, 33478"
+   "Jupiter, FL, US, 33478",
+   "Austin, TX, US, 73301"
   ],
   "lowscore": false,
   "pay": "",
@@ -80392,7 +80571,7 @@
  },
  "7fb04e10f42e6e33": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029gjUAA_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1095542206195257%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D25eed08f-bec1-11f1-b491-6dac84d649d5%26rx_job%3Da1KiE00000029gjUAA_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029gjUAA_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1095542206195257%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D25eed08f-bec1-11f1-b491-6dac84d649d5%26rx_job%3Da1KiE00000029gjUAA_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -80868,6 +81047,34 @@
   "title": "Principal Platform Software Engineer, OCI Planning & Capacity",
   "url": "https://www.indeed.com/viewjob?jk=072cf104373de8ed",
   "work_mode": ""
+ },
+ "80291c01da1deebf": {
+  "apply_url": "https://nextracker.wd5.myworkdayjobs.com/en-US/nextpower_careers/job/US-Remote-USA/Sr-Category-Manager-in-Battery-Storage--Global-Supply-Chain_NX-4855-1",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "NextPower",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Remote, USA",
+  "locations": [
+   "Remote, USA"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Procurement/category-management lead for battery storage components \u2014 equipment-procurement lead roles cap in the possible band.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Sr. Category Manager in Battery Storage, Global Supply Chain",
+  "url": "https://www.indeed.com/viewjob?jk=df5f26355c3cb952",
+  "work_mode": "remote"
  },
  "8030172fe4f45eee": {
   "band": "strong",
@@ -82013,7 +82220,7 @@
  "81d8ec665b9ba29c": {
   "band": "possible",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-08",
   "first_seen": "2026-09-01",
   "location": "2 Locations",
   "locations": [
@@ -82898,7 +83105,7 @@
  },
  "838ecb1719755ab3": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE000000292PUAQ&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1643131417152491%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De199444a-be9f-11f1-ad26-51c6232ca6ca%26rx_job%3Da1KiE000000292PUAQ%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE000000292PUAQ&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1643131417152491%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De199444a-be9f-11f1-ad26-51c6232ca6ca%26rx_job%3Da1KiE000000292PUAQ%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -84072,6 +84279,34 @@
   "source": "indeed",
   "title": "Head of Manufacturing",
   "url": "https://www.indeed.com/viewjob?jk=78d2be09baa7b93e",
+  "work_mode": ""
+ },
+ "853d17f793a24f86": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Fluence Energy",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "11 Locations",
+  "locations": [
+   "11 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Director of network/systems design at a BESS company (Fluence) is engineering-design leadership, not product or commercial strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Director, Global Network & Systems Design - NSD",
+  "url": "https://fluenceenergy.wd12.myworkdayjobs.com/en-US/fluenceenergy-jobs/job/USA-VA-Remote/Director--Global-Network---Systems-Design---NSD_JR101765",
   "work_mode": ""
  },
  "85438aeac3c0160f": {
@@ -89547,7 +89782,7 @@
  "8dbafec31972c30b": {
   "band": "weak",
   "company": "GE Vernova",
-  "date_posted": "",
+  "date_posted": "2026-10-08",
   "first_seen": "2026-09-02",
   "location": "Niskayuna",
   "locations": [
@@ -89755,7 +89990,7 @@
  },
  "8e3589c44fcd66bc": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029iLUAQ_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F966396852519991%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5cde144-c0d9-11f1-aed4-a509bc7af78c%26rx_job%3Da1KiE00000029iLUAQ_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029iLUAQ_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F966396852519991%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5cde144-c0d9-11f1-aed4-a509bc7af78c%26rx_job%3Da1KiE00000029iLUAQ_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -92980,6 +93215,34 @@
   "title": "Director, Mechanical Engineering",
   "url": "https://www.indeed.com/viewjob?jk=848d681814c19003",
   "work_mode": ""
+ },
+ "927feabd13fceebd": {
+  "apply_url": "https://solvenergy.wd1.myworkdayjobs.com/SOLV_External_Career/job/Remote---CA/HV-Preconstruction-Project-Manager--Remote-_J13999",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "SOLV Energy",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Springfield, IL, USA",
+  "locations": [
+   "Springfield, IL, USA"
+  ],
+  "pay": "$110,837\u2013$138,547/yr",
+  "priority": true,
+  "rationale": "High-voltage preconstruction/estimating leadership is construction-delivery execution, not product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "HV Preconstruction Project Manager (Remote)",
+  "url": "https://www.indeed.com/viewjob?jk=fe4ce1e611c48332",
+  "work_mode": "remote"
  },
  "92831fdb696ac4f0": {
   "band": "possible",
@@ -98909,7 +99172,7 @@
  },
  "9c9590bbaec1cd6c": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001tyXUAQ_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1883085086000017%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5cdab6a-c0d9-11f1-b139-a509bc7af78c%26rx_job%3Da1KiE0000001tyXUAQ_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001tyXUAQ_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1883085086000017%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5cdab6a-c0d9-11f1-b139-a509bc7af78c%26rx_job%3Da1KiE0000001tyXUAQ_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -98940,7 +99203,7 @@
  },
  "9c9597e1683d8c36": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029qPUAQ&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F4384466011807153%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5ce1794-c0d9-11f1-818b-a509bc7af78c%26rx_job%3Da1KiE00000029qPUAQ%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029qPUAQ&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F4384466011807153%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5ce1794-c0d9-11f1-818b-a509bc7af78c%26rx_job%3Da1KiE00000029qPUAQ%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -99628,6 +99891,34 @@
   "url": "https://www.indeed.com/viewjob?jk=b1c2660b8ed8180a",
   "work_mode": ""
  },
+ "9d7db075e4514ffe": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "ABB",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "5 Locations",
+  "locations": [
+   "5 Locations"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Deep technical IC systems-engineering role for BESS, too far from the product/strategy target scope.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Electrical Systems Engineer (BESS)",
+  "url": "https://abb.wd3.myworkdayjobs.com/en-US/External_Career_Page/job/Napier-Hawkes-Bay-New-Zealand/Senior-Electrical-Systems-Engineer--BESS-_JR00049385",
+  "work_mode": ""
+ },
  "9d82f6d423c3e698": {
   "active": false,
   "band": "strong",
@@ -99678,6 +99969,35 @@
   "source": "workday",
   "title": "Technical Solutions Engineer - Data Centers",
   "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Remote---North-Carolina-United-States/Solutions-Engineer---Data-Centers_R0123029",
+  "work_mode": ""
+ },
+ "9d9521e4eee8d8e1": {
+  "apply_url": "https://solvenergy.wd1.myworkdayjobs.com/SOLV_External_Career/job/Yerington-NV/Senior-Project-Manager--Yerington--NV-_J14024",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "SOLV Energy",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Bend, OR, USA",
+  "locations": [
+   "Bend, OR, USA",
+   "Luning, NV, USA"
+  ],
+  "pay": "$141,590\u2013$176,987/yr",
+  "priority": false,
+  "rationale": "Pure field construction project management (GMP contracts, subcontractor buyout, superintendent oversight) with no product/strategy framing.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Project Manager (Yerington, NV)",
+  "url": "https://www.indeed.com/viewjob?jk=451d550ea6e89b8e",
   "work_mode": ""
  },
  "9da004d1c58219de": {
@@ -103762,7 +104082,8 @@
   "location": "Jupiter, FL, US, 33478",
   "locations": [
    "Jupiter, FL, US, 33478",
-   "Houston, TX, US, 77002"
+   "Houston, TX, US, 77002",
+   "Florida City, FL, US, 33035"
   ],
   "lowscore": true,
   "pay": "",
@@ -113771,7 +114092,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Gigawatt Site Project Director, Data Centers",
-  "url": "https://www.indeed.com/viewjob?jk=fa329af4220c6a64",
+  "url": "https://www.indeed.com/viewjob?jk=3831f893164b5902",
   "work_mode": "onsite"
  },
  "b3c326cd912e5226": {
@@ -116687,6 +117008,34 @@
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4953622101",
   "work_mode": "remote"
  },
+ "b80b81be0d73e6e9": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Hitachi",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "4 Locations",
+  "locations": [
+   "4 Locations"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Global PM for 'Automation' at Hitachi \u2014 plausible grid/industrial-automation product fit but no description confirms energy scope, so kept cautious.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Global Product Manager - Automation (m/f/d)",
+  "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Genoa-Ligura-Italy/Global-Product-Manager---Automation--m-f-d-_R0147123-1",
+  "work_mode": ""
+ },
  "b82483d67823fe41": {
   "active": false,
   "band": "misfit",
@@ -116942,6 +117291,34 @@
   "title": "Lead Mechanical Engineer (Starship)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8627660002",
   "work_mode": "remote"
+ },
+ "b87c1e9e23f880b7": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "American Electric Power",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "New Albany, OH",
+  "locations": [
+   "New Albany, OH"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Transmission development leadership at a utility fits the transmission-planning MID category, not a product or strategy role.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "workday",
+  "title": "Transmission Development Manager",
+  "url": "https://aep.wd1.myworkdayjobs.com/en-US/AEPCareerSite/job/New-Albany-OH/Transmission-Development-Manager_R19526",
+  "work_mode": ""
  },
  "b896f5d334ac3a34": {
   "active": false,
@@ -119500,7 +119877,8 @@
    "Juno Beach, FL, US, 33408",
    "Seabrook, NH, US, 03874",
    "Palm Beach Gardens, FL, US, 33410",
-   "Jupiter, FL, US, 33478"
+   "Jupiter, FL, US, 33478",
+   "Austin, TX, US, 73301"
   ],
   "pay": "",
   "pay_checked": true,
@@ -119532,7 +119910,8 @@
    "Redding, CA, US, 96002",
    "Oakland, CA, US, 94612",
    "Redding, CA, US, 96003",
-   "Chico, CA, US, 95928"
+   "Chico, CA, US, 95928",
+   "Auburn, CA, US, 95602"
   ],
   "pay": "$122,000\u2013$194,000",
   "priority": false,
@@ -130992,6 +131371,34 @@
   "url": "https://jobs.ashbyhq.com/neara/5c43fa99-2672-4195-a98a-c75a0cf91290",
   "work_mode": "remote"
  },
+ "cef351202dc14df7": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "strong",
+  "company": "Southern California Edison",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Irvine, CA",
+  "locations": [
+   "Irvine, CA"
+  ],
+  "pay": "$161,700\u2013$242,600/yr",
+  "priority": false,
+  "rationale": "Predictive analytics/AI applied directly to grid operations data at a utility \u2014 a strong domain+AI hybrid per the secondary sweet spot.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "radancy",
+  "title": "Grid Operations Data Scientist and Predictive Analytics Advisor",
+  "url": "https://www.edisoncareers.com/job/23656010/grid-operations-data-scientist-and-predictive-analytics-advisor-irvine-ca/",
+  "work_mode": "hybrid"
+ },
  "cef4c647752e0dc3": {
   "active": false,
   "band": "weak",
@@ -131538,7 +131945,7 @@
  },
  "cffaccefc609738d": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002CmfUAE_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2030143354344439%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D53ed30ad-c0fb-11f1-82a1-c96755386cf7%26rx_job%3Da1KiE0000002CmfUAE_1002%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002CmfUAE_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2030143354344439%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D53ed30ad-c0fb-11f1-82a1-c96755386cf7%26rx_job%3Da1KiE0000002CmfUAE_1002%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -131955,7 +132362,8 @@
    "Palm Beach Gardens, FL, US, 33410",
    "Jupiter, FL, US, 33478",
    "Phoenix, AZ, US, 85001",
-   "PALO, IA, US, 52324"
+   "PALO, IA, US, 52324",
+   "Juno Beach, FL, US, 33408"
   ],
   "pay": "",
   "pay_checked": true,
@@ -137542,7 +137950,8 @@
    "Buckeye, AZ, US, 85326",
    "Waynesboro, GA, US, 30830",
    "Ozona, TX, US, 76943",
-   "Palm Beach Gardens, FL, US, 33410"
+   "Palm Beach Gardens, FL, US, 33410",
+   "PALO, IA, US, 52324"
   ],
   "lowscore": true,
   "pay": "",
@@ -138760,7 +139169,7 @@
  },
  "dc938736daf7c85b": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000027tRUAQ&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F967592342369492%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dd5e8b7b0-c1a2-11f1-a80e-51ee4f905d1e%26rx_job%3Da1KiE00000027tRUAQ%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000027tRUAQ&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F967592342369492%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dd5e8b7b0-c1a2-11f1-a80e-51ee4f905d1e%26rx_job%3Da1KiE00000027tRUAQ%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -141128,7 +141537,9 @@
    "STERLING CITY, TX, US, 76951",
    "Duncan, OK, US, 73533",
    "Miami, FL, US, 33186",
-   "West Palm Beach, FL, US, 33407"
+   "West Palm Beach, FL, US, 33407",
+   "Houston, TX, US, 77002",
+   "PALO, IA, US, 52324"
   ],
   "lowscore": true,
   "pay": "",
@@ -141177,7 +141588,7 @@
  },
  "e073eaecd4a506bd": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000021T3UAI_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F944334121595970%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D85b58597-c2af-11f1-a80b-a7ccdf8d6140%26rx_job%3Da1KiE00000021T3UAI_1005%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000021T3UAI_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F944334121595970%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D85b58597-c2af-11f1-a80b-a7ccdf8d6140%26rx_job%3Da1KiE00000021T3UAI_1005%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -144495,7 +144906,7 @@
  },
  "e578ae6ea8ec2661": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029jxUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1469752631642156%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5cdf22f-c0d9-11f1-a8c1-a509bc7af78c%26rx_job%3Da1KiE00000029jxUAA%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T180448Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000029jxUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1469752631642156%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Df5cdf22f-c0d9-11f1-a8c1-a509bc7af78c%26rx_job%3Da1KiE00000029jxUAA%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261008T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-08",
@@ -145341,7 +145752,8 @@
    "Redding, CA, US, 96003",
    "Redding, CA, US, 96002",
    "Lodi, CA, US, 95240",
-   "Concord, CA, US, 94518"
+   "Concord, CA, US, 94518",
+   "San Jose, CA, US, 95119"
   ],
   "pay": "$105,000\u2013$169,000",
   "pay_checked": true,
@@ -146999,7 +147411,9 @@
   "work_mode": "remote"
  },
  "e95cd77c16cf0b04": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-08",
   "company": "NextEra Energy",
   "date_posted": "2026-09-15",
   "first_seen": "2026-09-15",
@@ -153282,7 +153696,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Power Generation Mechanical Project Engineer, Senior",
-  "url": "https://careers.pge.com/job/Chico-Power-Generation-Mechanical-Project-Engineer%2C-Senior-CA-95928/1405016200/",
+  "url": "https://careers.pge.com/job/Chico-Power-Generation-Mechanical-Project-Engineer%2C-Associate-CA-95928/1422183000/",
   "work_mode": "onsite"
  },
  "f3293b8c32c1aa88": {
@@ -153971,6 +154385,37 @@
   "source": "workday",
   "title": "Energy Consultant: Steubenville - Cambridge - Saint Clairsville",
   "url": "https://aep.wd1.myworkdayjobs.com/en-US/AEPCareerSite/job/Columbus-OH/Energy-Consultant--Steubenville---Cambridge---Saint-Clairsville_R17668",
+  "work_mode": ""
+ },
+ "f41dc317c4a1ecf1": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "NextEra Energy",
+  "date_posted": "2026-10-08",
+  "first_seen": "2026-10-08",
+  "first_seen_at": "2026-10-08T22:03:59Z",
+  "location": "Palm Beach Gardens, FL, US, 33410",
+  "locations": [
+   "Palm Beach Gardens, FL, US, 33410",
+   "Houston, TX, US, 77002",
+   "PALO, IA, US, 52324"
+  ],
+  "pay": "",
+  "pay_checked": true,
+  "priority": true,
+  "rationale": "Hub development-execution director (BESS/transmission/generation integration) \u2014 matches the standing calibration that site/project development leadership bands possible, not top.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-08T22:05Z",
+   "model": "claude-sonnet-5",
+   "policy": "139133cf50",
+   "rubric": "64f09306d6"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Project Director Development",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Project-Director-Development-FL-33408/1438426600/",
   "work_mode": ""
  },
  "f427e6ab9fd2b0d1": {
@@ -156071,7 +156516,9 @@
   "locations": [
    "United States, Wyoming, Cheyenne",
    "United States, Texas, Pecos",
-   "United States, Georgia, Palmetto (+1 more)"
+   "United States, Georgia, Palmetto (+1 more)",
+   "United States, Ohio, Columbus",
+   "United States, Indiana, La Porte (+1 more)"
   ],
   "pay": "USD $132,200 - $258,000 per year",
   "priority": false,
@@ -156080,7 +156527,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Regional Managing Director, Data Center Community, Pecos, TX",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393556994504",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557022509",
   "work_mode": "onsite"
  },
  "f7a60405ff42b3c0": {
