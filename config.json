@@ -32,7 +32,6 @@
     "esVolta",
     "Key Capture Energy",
     "Lancium",
-    "Switch",
     "Stonepeak",
     "Energy Capital Partners",
     "ArcLight Capital",
@@ -280,6 +279,11 @@
       "provider": "ashby",
       "board": "rowan",
       "company": "Rowan Digital Infrastructure"
+    },
+    {
+      "provider": "greenhouse",
+      "board": "switch-data-centers",
+      "company": "Switch Data Centers"
     }
   ],
   "workday_boards": [
@@ -480,6 +484,12 @@
       "tenant": "munters",
       "site": "External_Careers",
       "company": "Munters"
+    },
+    {
+      "host": "hp.wd5.myworkdayjobs.com",
+      "tenant": "hp",
+      "site": "ExternalCareerSite",
+      "company": "HP"
     }
   ],
   "successfactors_boards": [
