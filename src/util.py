@@ -128,18 +128,59 @@ def extract_pay(text: str) -> str:
     return re.sub(r"\s+", " ", m.group(0)).strip() if m else ""
 
 
+# Work-arrangement phrasing only. A bare word misfires in this field:
+# "remote diagnostics", "remote monitoring", "hybrid inverter", "hybrid
+# solar + storage", "on-site generation" describe products and plants, not
+# where the job is done (Tesla Staff PM, 2026-10-23: "remote diagnostics"
+# made a Palo Alto role read remote; 449 of 624 remote labels had no remote
+# location).
+_REMOTE = re.compile(
+    r"\b(?:fully|100%|completely|entirely)\s+remote\b"
+    r"|\bremote[- ](?:first|eligible|friendly|based|position|role|job|work(?:er|ing|force)?"
+    r"|opportunit\w*|option|employee|candidates?|from)\b"
+    r"|\bwork(?:ing)?\s+(?:fully\s+|100%\s+)?remote(?:ly)?\b"
+    r"|\b(?:can|may|will)\s+be\s+(?:performed\s+|done\s+|based\s+)?remote(?:ly)?\b"
+    r"|\b(?:is|as)\s+an?\s+(?:fully\s+)?remote\s+(?:role|position|job|opportunity)\b"
+    r"|\bthis\s+(?:role|position|job)\s+is\s+(?:fully\s+)?remote\b"
+    r"|\bwork\s+from\s+(?:home|anywhere)\b|\bwfh\b"
+    r"|\bremote\s*(?:\(|-|,|/)\s*(?:us|usa|u\.s\.|united states|north america)\b"
+    r"|\bopen\s+to\s+remote\b", re.I)
+_NOT_REMOTE = re.compile(
+    r"\b(?:not|non)[- ](?:a\s+)?remote\b|\bremote\s+work\s+is\s+not\b"
+    r"|\bno\s+remote\b|\bnot\s+eligible\s+for\s+remote\b", re.I)
+_HYBRID = re.compile(
+    r"\bhybrid\s+(?:work(?:ing|place)?|schedule|role|position|model|arrangement|environment"
+    r"|opportunity|setting|policy|basis|in-office)\b"
+    r"|\b(?:is|as)\s+an?\s+hybrid\s+(?:role|position|job)\b"
+    r"|\b(?:\d|one|two|three|four)\s*(?:\+\s*)?days?\s+(?:per|a|each)\s+week\s+(?:in|on)[- ]"
+    r"(?:the\s+)?(?:office|site)\b"
+    r"|\b(?:\d|one|two|three|four)\s*(?:\+\s*)?days?\s+(?:in|on)[- ](?:the\s+)?(?:office|site)\b"
+    r"|\b(?:role|position|job|schedule)\s+is\s+(?:a\s+)?hybrid\b|\bhybrid\s+mobility\b"
+    r"|\bwork\s+(?:location|arrangement|type)\s*:\s*hybrid\b"
+    r"|\bhybrid\s*\(|\(\s*hybrid\s*\)", re.I)
+_ONSITE = re.compile(
+    r"\b(?:fully|100%|5\s+days)\s+(?:on-?\s?site|in[- ](?:the[- ])?office|in[- ]person)\b"
+    r"|\b(?:on-?\s?site|in[- ]office|in[- ]person)\s+(?:role|position|job|work(?:er)?|requirement"
+    r"|presence|attendance|schedule|basis|5\s+days)\b"
+    r"|\b(?:work(?:ing)?|report(?:ing)?|be\s+based|located)\s+(?:on-?\s?site|in[- ](?:the[- ])?office)\b"
+    r"|\bthis\s+(?:role|position|job)\s+is\s+(?:fully\s+)?(?:on-?\s?site|in[- ]office|in[- ]person)\b"
+    r"|\bon-?\s?site\s*(?:\(|-|,)\s*(?:no remote|not remote)", re.I)
+
+
 def infer_work_mode(title: str, location: str, description: str) -> str:
     """Best-effort onsite/hybrid/remote from text; structured fields win
-    over this in the fetchers that have them."""
+    over this in the fetchers that have them. Title and location are short
+    and literal ("Remote - Texas", "(Hybrid)"), so a bare word counts there;
+    the description must use work-arrangement phrasing (see _REMOTE)."""
     strong = f"{title} {location}".lower()
-    desc = (description or "").lower()
-    if "hybrid" in strong or "hybrid" in desc:
+    desc = description or ""
+    if "hybrid" in strong or _HYBRID.search(desc):
         return "hybrid"
     if "remote" in strong:
         return "remote"
-    if re.search(r"\b(?:fully|100%)?\s?remote\b", desc) and "not remote" not in desc:
+    if _REMOTE.search(desc) and not _NOT_REMOTE.search(desc):
         return "remote"
-    if re.search(r"\bon-?\s?site\b", desc):
+    if _ONSITE.search(desc):
         return "onsite"
     return ""
 

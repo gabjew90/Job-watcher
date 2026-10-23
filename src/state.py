@@ -129,6 +129,15 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
                                   or not rec.get("apply_url_own")):
                 rec.update(apply_url=job.apply_url, apply_url_own=True)
                 updated += 1
+            # A work mode read from the posting by its fetcher is recomputed
+            # each time the posting is seen (the text rules tightened on
+            # 2026-10-23); one the scorer read from the posting is kept.
+            # Records from before work_mode_by count as fetched.
+            if (rec.get("work_mode_by") != "triage"
+                    and rec.get("work_mode", "") != job.work_mode):
+                rec.update(work_mode=job.work_mode,
+                           work_mode_by="fetch" if job.work_mode else "")
+                updated += 1
             # Backfill fields added after this record was first stored.
             updated += _merge_fields(rec, job)
             continue
@@ -144,6 +153,7 @@ def split_new(jobs: list[Job], state: dict) -> list[Job]:
             "date_posted": job.date_posted,
             "pay": job.pay,
             "work_mode": job.work_mode,
+            "work_mode_by": "fetch" if job.work_mode else "",
             "apply_url": job.apply_url,
             "apply_url_own": bool(job.apply_url),
             "locations": [job.location],
