@@ -156,6 +156,15 @@ def test_every_theme_defines_the_money_colours():
     ("Manager", "Houston", "This role is on-site in Houston.", "onsite"),
     ("Engineer (Hybrid)", "Denver", "", "hybrid"),
     ("Engineer", "Remote - Texas", "", "remote"),
+    ("Engineer", "Houston, TX", "Must work 5 days per week in the office.", "onsite"),
+    ("Engineer", "US", "Batteries can be remotely monitored and dispatched.", ""),
+    ("Engineer", "US", "Operate fully remote-controlled substations.", ""),
+    ("Remote Sensing Scientist", "Houston, TX", "", ""),
+    ("Hybrid Inverter Engineer", "Austin, TX", "", ""),
+    ("Analyst", "Remote", "Hybrid work schedule available at our offices.", "remote"),
+    ("Analyst", "US", "This role is on-site in Houston; occasional work from home is allowed.", "onsite"),
+    ("Engineer", "US", "Design hybrid (PV + BESS) plants.", ""),
+    ("Engineer", "US", "Storage located onsite at customer facilities.", ""),
 ])
 def test_work_mode_reads_arrangements_not_products(title, location, desc, want):
     from src.util import infer_work_mode
@@ -164,14 +173,31 @@ def test_work_mode_reads_arrangements_not_products(title, location, desc, want):
 
 def test_fetched_work_mode_is_recomputed_but_the_scorers_is_kept():
     from src import state
-    job = Job("Staff PM", "Tesla", "Palo Alto, CA", "https://www.indeed.com/viewjob?jk=1", "indeed")
-    seen = {job.job_id: {"title": "Staff PM", "company": "Tesla", "location": "Palo Alto, CA",
-                         "source": "indeed", "work_mode": "remote"}}      # old misread
+    job = Job("Staff PM", "Tesla", "Palo Alto, CA", "https://www.indeed.com/viewjob?jk=1", "indeed",
+              description="voltage ride-through, and remote diagnostics")
+    rec = {"title": "Staff PM", "company": "Tesla", "location": "Palo Alto, CA",
+           "source": "indeed", "work_mode": "remote"}          # old misread, no provenance
+    seen = {job.job_id: rec}
     state.split_new([job], seen)
-    assert seen[job.job_id]["work_mode"] == ""
-    seen[job.job_id].update(work_mode="hybrid", work_mode_by="triage")
+    assert rec["work_mode"] == "" and rec["work_mode_by"] == ""
+
+    # A legacy mode the old bare-word rules can't explain came from the scorer.
+    rec.update(work_mode="hybrid"); rec.pop("work_mode_by")
     state.split_new([job], seen)
-    assert seen[job.job_id]["work_mode"] == "hybrid"
+    assert (rec["work_mode"], rec["work_mode_by"]) == ("hybrid", "triage")
+
+    # A tag reading holds until the source itself finds a mode.
+    rec.update(work_mode="hybrid", work_mode_by="tag")
+    state.split_new([job], seen)
+    assert rec["work_mode"] == "hybrid"
+    state.split_new([Job("Staff PM", "Tesla", "Palo Alto, CA", job.url, "indeed",
+                         description="This role is on-site in Palo Alto.", work_mode="onsite")], seen)
+    assert (rec["work_mode"], rec["work_mode_by"]) == ("onsite", "fetch")
+
+    # Another source's copy never rewrites it.
+    state.split_new([Job("Staff PM", "Tesla", "Palo Alto, CA", "https://x/1", "greenhouse",
+                         work_mode="remote")], seen)
+    assert rec["work_mode"] == "onsite"
 
 
 @pytest.mark.parametrize("desc", [
