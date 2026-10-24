@@ -60,9 +60,10 @@ hide: Solution Engineer - Structural Design @ Neara
 - calibration: technical interconnection STUDY/consulting roles at
   engineering firms (performing power-system studies, load flow, short
   circuit) should score 50-60 — too deep-technical. Interconnection
-  strategy, product and hosting-capacity-platform roles remain high fits;
-  interconnection PROGRAM roles follow the program-management rule in
-  profile.md (possible). (from issue #23, re: Sargent & Lundy Senior Grid
+  strategy roles at the employers profile.md's HIGH strategy rule names,
+  and interconnection product roles, remain high fits; interconnection
+  PROGRAM roles follow the program-management rule in profile.md
+  (possible). (from issue #23, re: Sargent & Lundy Senior Grid
   Interconnection Consultant)
 - calibration: real-estate / site DEVELOPMENT execution leadership — owning
   the land-to-commissioning lifecycle (site selection, entitlements,
