@@ -14,13 +14,12 @@ someone who bridges domains?" — integration roles outrank specialist roles
 at equal seniority.
 
 Gabriel Jew — Senior Product Manager for grid-scale battery energy storage
-(BESS) targeting AI datacenter power customers at LG Energy Solution;
-concurrently Senior Grid Innovation Engineer at PG&E managing the
-Integration Capacity Analysis (ICA) interconnection/hosting-capacity
-platform. Licensed Professional Engineer, MBA (Product Management/
+(BESS) targeting AI datacenter power customers at LG Energy Solution
+Vertech. Licensed Professional Engineer, MBA (Product Management/
 Strategy) with energy-markets finance (tolling, forwards, techno-economic
-modeling). 12+ years across the energy industry: utility efficiency and
-interconnection programs, commercial HVAC design-build, and lithium-ion
+modeling). 12+ years across the energy industry: utility energy-efficiency
+and demand-response engineering for data centers (PG&E), commercial HVAC
+design-build, and lithium-ion
 storage from systems engineering to product leadership (led LG's first
 prefabricated modular 3 MWh BESS container). Statistics/data fluency
 (forecasting, optimization, degradation modeling) and ships production
@@ -46,14 +45,19 @@ The product decides, not the employer: software-platform PM roles at the
 same companies (orchestration, networking, compute or data storage,
 managed AI) stay low.
 
-Also HIGH: Director / Principal / Head-of STRATEGY roles in:
-- Data center energy and power infrastructure strategy
+Also HIGH: Director / Principal / Head-of STRATEGY roles on the energy
+team of a hyperscaler, AI lab, AI-datacenter operator, or BESS company,
+the side that buys or builds the power (owner review, 2026-10-24):
+- Data center energy and power infrastructure strategy, planning and
+  economics (supply options, cost models, capacity planning)
 - Grid-scale BESS / energy storage commercial strategy
-- Energy markets, power procurement, utility partnerships for datacenters
-- Data center flexibility, demand response, behind-the-meter, bridge power
+- On-site and behind-the-meter generation strategy for data centers
+- Power supply and utility partnerships for datacenters, as part of an
+  energy strategy role
+- Data center flexibility, demand response, bridge power
 
-At hyperscalers, AI-datacenter operators, BESS vendors/developers, or
-energy developers.
+The same strategy titles at utilities, renewable developers, IPPs and
+consultancies follow the MID rules below.
 
 ## Score MID (band possible)
 
@@ -70,6 +74,17 @@ energy developers.
   programs) at utilities, developers, or consultancies. Product roles
   for grid or transmission products are product management and score
   on the HIGH rules.
+- Specialist roles, even at data center companies (owner review,
+  2026-10-24): energy regulatory, policy and market-design roles; power
+  procurement or origination specialists (C&I procurement desks,
+  hedging, mark-to-market); natural gas supply; and owner-side
+  construction or project-delivery leadership (directors who plan, build
+  and commission a campus's generation, substations and other energy
+  infrastructure, measured by capital projects delivered). Possible at
+  most.
+- Engineering and consulting leadership: VP / Head of Systems
+  Engineering, and practice leaders or business-development directors
+  at engineering and consulting firms. Possible at most.
 
 ## Secondary sweet spot (70-90)
 
@@ -80,7 +95,10 @@ energy developers.
   excellent fits and should NOT be penalized for being "software" roles.
 - Senior/principal individual-contributor STRATEGY roles in energy
   (interconnection strategy lead, energy market principal, techno-economic
-  analysis lead) — strong fits even without a PM title.
+  analysis lead) at the companies the HIGH strategy rule names — strong
+  fits even without a PM title. At utilities, developers, IPPs and
+  consultancies, and for regulatory or market-design work, the MID rules
+  apply.
 - Energy/infrastructure INVESTORS (Brookfield, Blackstone, Generate,
   DigitalBridge...): technical diligence, asset management, operating/
   portfolio roles for power/storage/datacenter assets are strong fits
@@ -106,10 +124,17 @@ energy developers.
   of domain: below 40, seniority_match=false.
 - Quota-carrying sales, recruiting, HR, finance, unrelated corporate
   functions: below 25.
+- Roles based outside the US that require local market experience (UK
+  or EU electricity markets, the Australian grid): weak.
 
 ## Seniority calibration
 
 Target scope is director / senior-PM / principal. A plain "Program
-Manager" or "Product Manager" title without senior signals scores mid
-(45-60) unless the described scope is clearly senior. Roles far above
-(VP/C-level) score mid-70s at most unless the scope reads attainable.
+Manager" title without senior signals scores mid (45-60) unless the
+described scope is clearly senior. A plain "Product Manager" title for a
+hardware product in his core domain (BESS, power electronics, data
+center power) bands strong: he would apply (owner review, 2026-10-24);
+elsewhere it scores mid. Roles far above (VP/C-level) score mid-70s at
+most unless the scope reads attainable. A role that asks for 15+ years
+in a specialty he has not worked in (power procurement, transmission,
+gas, large construction delivery) bands strong at most.
