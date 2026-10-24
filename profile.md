@@ -43,7 +43,11 @@ cooling. That holds:
 - at BESS, power-systems, and prefab/modular suppliers
 The product decides, not the employer: software-platform PM roles at the
 same companies (orchestration, networking, compute or data storage,
-managed AI) stay low.
+managed AI) stay low. Products that sense or inspect the grid rather
+than carry power (line sensors, hazard and outage detection hardware,
+field inspection) band possible, even at grid-technology companies
+(owner review, 2026-10-24). Monitoring and control software that ships
+with a power product (EMS, BMS, SCADA) is part of that product.
 
 Also HIGH: Director / Principal / Head-of STRATEGY roles on the energy
 team of a hyperscaler, AI lab, AI-datacenter operator, or BESS company,
@@ -73,11 +77,15 @@ consultancies follow the MID rules below.
   transmission planning consultants, utility grid-modernization
   programs) at utilities, developers, or consultancies. Product roles
   for grid or transmission products are product management and score
-  on the HIGH rules.
+  on the HIGH rules, except grid sensing and inspection products (see
+  the HIGH rules).
 - Specialist roles, even at data center companies (owner review,
   2026-10-24): energy regulatory, policy and market-design roles; power
   procurement or origination specialists (C&I procurement desks,
-  hedging, mark-to-market); natural gas supply; and owner-side
+  hedging, mark-to-market); finance-led strategy roles whose core is
+  capital allocation and investment governance rather than the energy
+  systems themselves (energy economics roles that model and compare
+  power supply options stay HIGH); natural gas supply; and owner-side
   construction or project-delivery leadership (directors who plan, build
   and commission a campus's generation, substations and other energy
   infrastructure, measured by capital projects delivered). Possible at
