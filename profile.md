@@ -85,10 +85,7 @@ consultancies follow the MID rules below.
   hedging, mark-to-market); finance-led strategy roles whose core is
   capital allocation and investment governance rather than the energy
   systems themselves (energy economics roles that model and compare
-  power supply options stay HIGH); natural gas supply; and owner-side
-  construction or project-delivery leadership (directors who plan, build
-  and commission a campus's generation, substations and other energy
-  infrastructure, measured by capital projects delivered). Possible at
+  power supply options stay HIGH); and natural gas supply. Possible at
   most.
 - Engineering and consulting leadership: VP / Head of Systems
   Engineering, and practice leaders or business-development directors
@@ -145,4 +142,4 @@ center power) bands strong: he would apply (owner review, 2026-10-24);
 elsewhere it scores mid. Roles far above (VP/C-level) score mid-70s at
 most unless the scope reads attainable. A role that asks for 15+ years
 in a specialty he has not worked in (power procurement, transmission,
-gas, large construction delivery) bands strong at most.
+gas) bands strong at most.
