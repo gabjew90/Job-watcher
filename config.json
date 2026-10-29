@@ -62,8 +62,7 @@
     "Apple",
     "LiquidStack",
     "EDF power solutions",
-    "Terra-Gen",
-    "Solar Turbines"
+    "Terra-Gen"
   ],
   "hyperscalers": {
     "microsoft": true,
@@ -523,6 +522,12 @@
       "tenant": "canadiansolar",
       "site": "eStorage",
       "company": "Canadian Solar"
+    },
+    {
+      "host": "cat.wd5.myworkdayjobs.com",
+      "tenant": "cat",
+      "site": "SolarTurbines",
+      "company": "Solar Turbines"
     }
   ],
   "successfactors_boards": [
