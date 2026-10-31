@@ -2297,7 +2297,9 @@
   "work_mode": ""
  },
  "02794155f6258e0a": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "MasTec Inc",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
@@ -7335,6 +7337,35 @@
   "url": "https://www.edisoncareers.com/job/23596039/customer-energy-programs-senior-advisor-irwindale-ca/",
   "work_mode": "hybrid"
  },
+ "08317e296295b5e2": {
+  "apply_url": "https://www.amazon.jobs/jobs/10593441/sr-energy-tech-program-manager-?cmpid=DA_INAD200785B",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Amazon.com",
+  "date_posted": "2026-10-30",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "Seattle, WA, USA",
+  "locations": [
+   "Seattle, WA, USA"
+  ],
+  "pay": "$148,700\u2013$201,200/yr",
+  "priority": true,
+  "rationale": "Program manager owning AWS's global data center power reliability program, engaging utilities on transmission and distribution design; program delivery, not product ownership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Sr. Energy Tech Program Manager",
+  "url": "https://www.indeed.com/viewjob?jk=a80a527ceb641c95",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "08390eea1802b8a0": {
   "active": false,
   "band": "misfit",
@@ -9688,7 +9719,9 @@
   "work_mode": ""
  },
  "0ad98a42b3945e43": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Oracle",
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-21",
@@ -13951,8 +13984,9 @@
   "work_mode": "remote"
  },
  "0f942ffd15d6bc2e": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "IEA Infrastructure and Energy Alternatives",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
@@ -14138,7 +14172,7 @@
   "band": "misfit",
   "closed": "2026-09-03",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "2 Locations",
@@ -16950,7 +16984,9 @@
   "work_mode": ""
  },
  "13135586a2ac93b3": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-22",
@@ -17288,7 +17324,7 @@
  "136228cca68ead39": {
   "band": "weak",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "2 Locations",
   "pay": "",
@@ -18490,7 +18526,9 @@
   "work_mode": "remote"
  },
  "15170fd4d8c9670f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Bi-Con Services",
   "date_posted": "2026-09-04",
   "first_seen": "2026-09-05",
@@ -18962,7 +19000,7 @@
   "band": "misfit",
   "closed": "2026-09-03",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "3 Locations",
@@ -20164,6 +20202,38 @@
   "url": "https://www.indeed.com/viewjob?jk=849d4296b1ae058a",
   "work_mode": ""
  },
+ "177e392991f1d5df": {
+  "active": false,
+  "apply_url": "https://www.amazon.jobs/jobs/10587176/data-center-chief-engineer-night-role?cmpid=DA_INAD200785B",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-10-31",
+  "company": "Amazon.com",
+  "date_posted": "2026-10-29",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "Andrews, TX, USA",
+  "locations": [
+   "Andrews, TX, USA"
+  ],
+  "lowscore": true,
+  "pay": "$111,300\u2013$186,100/yr",
+  "priority": false,
+  "rationale": "Night-shift facilities role overseeing data center mechanical and electrical equipment operations and maintenance; a hands-on technician supervisory job.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Data Center Chief Engineer Night Role",
+  "url": "https://www.indeed.com/viewjob?jk=af86ddaddd693773",
+  "work_mode": "onsite",
+  "work_mode_by": "triage"
+ },
  "17917a786c6a6989": {
   "apply_url": "",
   "apply_url_own": false,
@@ -20785,8 +20855,9 @@
   "work_mode": ""
  },
  "185b0a8aa04be56a": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "IEA Infrastructure and Energy Alternatives",
   "first_seen": "2026-08-15",
   "location": "Indianapolis, IN, US",
@@ -21105,8 +21176,9 @@
   "work_mode_by": ""
  },
  "1896d6966c2d2d1c": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
@@ -24485,7 +24557,9 @@
   "work_mode_by": "triage"
  },
  "1c6686eaae37994e": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
@@ -27831,7 +27905,9 @@
   "work_mode_by": "fetch"
  },
  "20c8af17f7dfa501": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "Anthropic",
   "date_posted": "2026-08-28",
   "first_seen": "2026-08-28",
@@ -28267,7 +28343,7 @@
  },
  "213de29d5b861e9e": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003t81UAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1106171345544959%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D9bf9b784-d17b-11f1-b33c-ff578445aa6d%26rx_job%3Da1KiE0000003t81UAA%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003t81UAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1106171345544959%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D9bf9b784-d17b-11f1-b33c-ff578445aa6d%26rx_job%3Da1KiE0000003t81UAA%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261031T160405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-27",
@@ -36341,7 +36417,9 @@
   "work_mode": "onsite"
  },
  "2a83c9b308620d01": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "Southern California Edison",
   "date_posted": "2026-08-13",
   "first_seen": "2026-09-03",
@@ -39279,7 +39357,8 @@
    "Redding, CA, US, 96002",
    "Stockton, CA, US, 95206",
    "Rocklin, CA, US, 95765",
-   "Bakersfield, CA, US, 93308"
+   "Bakersfield, CA, US, 93308",
+   "Fresno, CA, US, 93725"
   ],
   "pay": "$155,000\u2013$265,000",
   "priority": false,
@@ -39962,7 +40041,9 @@
   "work_mode": ""
  },
  "2e8a89f87408a8a7": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "CEI Services",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
@@ -44920,6 +45001,35 @@
   "url": "https://www.indeed.com/viewjob?jk=56b53f08064b043b",
   "work_mode": "hybrid"
  },
+ "342ce92bb230ac55": {
+  "apply_url": "https://grnh.se/a9ojktah5us",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "NineDot Energy",
+  "date_posted": "2026-10-31",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "New York, NY, USA",
+  "locations": [
+   "New York, NY, USA"
+  ],
+  "pay": "$120,000\u2013$140,000/yr",
+  "priority": true,
+  "rationale": "Engineering role carrying battery storage projects from design through construction, reviewing drawings and coordinating suppliers; a hands-on technical design job.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=d51d8e8793cbc94d",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "343eefacca0a6300": {
   "band": "weak",
   "company": "Irby Construction Company",
@@ -45441,8 +45551,9 @@
   "work_mode": "onsite"
  },
  "34d348512e2c58f8": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
@@ -45746,7 +45857,9 @@
   "work_mode": ""
  },
  "353f2d796badbbd9": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "CEI Services",
   "date_posted": "2026-09-15",
   "first_seen": "2026-09-16",
@@ -48398,9 +48511,11 @@
   "work_mode": ""
  },
  "384396cb924ce506": {
+  "active": false,
   "apply_url": "https://careers.caterpillar.com/en/jobs/r0000396173/energy-manager/",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "Caterpillar",
   "date_posted": "2026-10-09",
   "first_seen": "2026-10-09",
@@ -53182,6 +53297,35 @@
   "url": "https://www.indeed.com/viewjob?jk=eb080b51b52e23fd",
   "work_mode": "onsite"
  },
+ "3eca4572bc4b53df": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Rowan Digital Infrastructure",
+  "date_posted": "2026-10-30",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "Denver, CO Office",
+  "locations": [
+   "Denver, CO Office"
+  ],
+  "pay": "$170K \u2013 $205K \u00b7 Offers Bonus",
+  "priority": false,
+  "rationale": "Manages a data center site development pipeline, screening, due diligence, and land negotiations supporting senior deal leads; development execution, not product or strategy ownership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Senior Manager, Site Development",
+  "url": "https://jobs.ashbyhq.com/rowan/29b7031f-0611-4ca4-9668-ac7afda95fae",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
+ },
  "3ecb04e55eb6fab8": {
   "active": false,
   "band": "misfit",
@@ -54783,7 +54927,8 @@
   "source": "ashby",
   "title": "Senior Supplier Engineer, Structural Components",
   "url": "https://jobs.ashbyhq.com/formenergy/2fccc099-49a0-4a36-b649-99f878146b5d",
-  "work_mode": "hybrid"
+  "work_mode": "hybrid",
+  "work_mode_by": "triage"
  },
  "40b1da822c6355a6": {
   "active": true,
@@ -55243,7 +55388,7 @@
   "band": "misfit",
   "closed": "2026-08-28",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, TX, Austin",
   "lowscore": true,
@@ -55278,8 +55423,10 @@
   "work_mode_by": "triage"
  },
  "412bfbd3bb15a3ca": {
+  "active": false,
   "apply_url": "https://aep.wd1.myworkdayjobs.com/AEPCareerSite/job/Columbus-OH/Project-Manager--Sr---Principal---Staff----NEW-GENERATION-----multiple-opportunities_R19665",
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "American Electric Power",
   "date_posted": "2026-09-28",
   "first_seen": "2026-09-28",
@@ -55578,9 +55725,11 @@
   "work_mode": "remote"
  },
  "41802032334a9e2f": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "PG&E",
   "date_posted": "2026-10-26",
   "first_seen": "2026-10-26",
@@ -56544,7 +56693,9 @@
   "work_mode": "hybrid"
  },
  "42c4285e0a476871": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "MasTec Inc",
   "date_posted": "2026-09-11",
   "first_seen": "2026-09-12",
@@ -56687,7 +56838,9 @@
   "work_mode": ""
  },
  "42ebf4b83aed282f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "CEI Services",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
@@ -60776,7 +60929,7 @@
   "band": "misfit",
   "closed": "2026-09-03",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "US, CA, Santa Clara",
@@ -60845,7 +60998,9 @@
   "url": "https://www.google.com/about/careers/applications/jobs/results/93915327980544710-senior-thermal-test-engineer-platforms-infrastructure"
  },
  "47a8c878b08fea06": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "MasTec Inc",
   "date_posted": "2026-09-16",
   "first_seen": "2026-09-17",
@@ -63668,7 +63823,7 @@
   "work_mode": "remote"
  },
  "4bf8c08d7e17236e": {
-  "apply_url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/346799",
+  "apply_url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/346800",
   "apply_url_own": true,
   "band": "weak",
   "company": "Oracle",
@@ -63728,8 +63883,10 @@
   "work_mode_by": ""
  },
  "4c13416c24642155": {
+  "active": false,
   "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000000gSHUAY_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2305921066606207%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D4e4c26dd-d266-11f1-99c8-4fe8f0ecb21a%26rx_job%3Da1KiE0000000gSHUAY_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261028T180427Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Meta",
   "date_posted": "2026-08-25",
   "first_seen": "2026-09-03",
@@ -65532,7 +65689,8 @@
    "Oakland, CA, US, 94601",
    "Cottonwood, CA, US, 96022",
    "Danville, CA, US, 94583",
-   "Davis, CA, US, 95616"
+   "Davis, CA, US, 95616",
+   "Moss Landing, CA, US, 95039"
   ],
   "lowscore": true,
   "pay": "$140,000\u2013$238,000",
@@ -69692,7 +69850,8 @@
   "source": "successfactors",
   "title": "Storage Platform Engineer",
   "url": "https://careers.pge.com/job/Oakland-Storage-Platform-Engineer-CA-94612/1425577200/",
-  "work_mode": "hybrid"
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
  },
  "539840ffc7853bec": {
   "active": false,
@@ -69789,7 +69948,8 @@
    "PALO, IA, US, 52324",
    "GUYMON, OK, US, 73942",
    "Mt Calm, TX, US, 76673",
-   "Buckeye, AZ, US, 85326"
+   "Buckeye, AZ, US, 85326",
+   "Plantation, FL, US, 33317"
   ],
   "pay": "",
   "pay_checked": true,
@@ -70490,7 +70650,7 @@
  },
  "548bdb2a7c7e7352": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003wInUAI&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2229851370925442%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D4cb6fe2e-d266-11f1-a161-4fe8f0ecb21a%26rx_job%3Da1KiE0000003wInUAI%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003wInUAI&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2229851370925442%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D4cb6fe2e-d266-11f1-a161-4fe8f0ecb21a%26rx_job%3Da1KiE0000003wInUAI%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261031T160405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-17",
@@ -73672,7 +73832,9 @@
   "work_mode": ""
  },
  "587e4d720049c1d1": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "GE Vernova",
   "date_posted": "2026-09-01",
   "first_seen": "2026-08-28",
@@ -80769,9 +80931,11 @@
   "work_mode": "onsite"
  },
  "61c7c455dced0e6a": {
+  "active": false,
   "apply_url": "https://jobs.mastec.com/jobs/70911/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "MasTec Utility Services",
   "date_posted": "2026-10-21",
   "first_seen": "2026-10-21",
@@ -82050,9 +82214,11 @@
   "work_mode": ""
  },
  "62d043669d0c8fc2": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "Microsoft",
   "date_posted": "2026-10-12",
   "first_seen": "2026-10-13",
@@ -83436,7 +83602,7 @@
  "6459fd74e3241d0c": {
   "band": "possible",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "4 Locations",
@@ -89732,7 +89898,8 @@
    "Bakersfield, CA, US, 93308",
    "Chico, CA, US, 95928",
    "Rocklin, CA, US, 95765",
-   "Fresno, CA, US, 93720"
+   "Fresno, CA, US, 93720",
+   "Danville, CA, US, 94583"
   ],
   "pay": "$140,000\u2013$238,000",
   "priority": false,
@@ -94728,7 +94895,9 @@
   "work_mode_by": "triage"
  },
  "71a27a95eb2d1778": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Eni Spa",
   "date_posted": "2026-09-07",
   "first_seen": "2026-09-07",
@@ -94782,7 +94951,7 @@
   "work_mode_by": "triage"
  },
  "71d7784b4c5a7931": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp000000BBJaMAO_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1440221957844026%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Ddccce81f-d3f8-11f1-a097-35c429db160b%26rx_job%3Da1KDp000000BBJaMAO_1005%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp000000BBJaMAO_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1440221957844026%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Ddccce81f-d3f8-11f1-a097-35c429db160b%26rx_job%3Da1KDp000000BBJaMAO_1005%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261031T160405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -97637,7 +97806,9 @@
   "work_mode": "remote"
  },
  "754dba296ee8cbbe": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Mainspring Energy",
   "date_posted": "2026-09-17",
   "first_seen": "2026-09-19",
@@ -101353,7 +101524,9 @@
   "work_mode": ""
  },
  "79d44dd3abfc285d": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "ServiceTitan",
   "date_posted": "",
   "first_seen": "2026-08-28",
@@ -101930,8 +102103,9 @@
   "work_mode_by": ""
  },
  "7aa58e6683625bd5": {
-  "active": true,
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "MasTec Inc",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
@@ -102947,8 +103121,10 @@
   "work_mode": "remote"
  },
  "7c60778b8f1c1ef7": {
+  "active": false,
   "apply_url": "https://jobs.worley.com/careers/job/1133915992299",
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Worley",
   "date_posted": "2026-09-30",
   "first_seen": "2026-09-30",
@@ -103225,7 +103401,9 @@
   "work_mode": ""
  },
  "7ce919838a06a5b8": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Hitachi",
   "date_posted": "",
   "first_seen": "2026-09-23",
@@ -103452,7 +103630,9 @@
   "first_seen_at": "2026-10-30T21:33:33Z",
   "location": "Danville, CA, US, 94583",
   "locations": [
-   "Danville, CA, US, 94583"
+   "Danville, CA, US, 94583",
+   "Dublin, CA, US, 94568",
+   "Newark, CA, US, 94538"
   ],
   "pay": "$144,000\u2013$244,000",
   "priority": false,
@@ -107595,7 +107775,9 @@
    "Dublin, CA, US, 94568",
    "Fulton, CA, US, 95439",
    "Danville, CA, US, 94583",
-   "Oakland, CA, US, 94612"
+   "Oakland, CA, US, 94612",
+   "Newark, CA, US, 94538",
+   "Fresno, CA, US, 93710"
   ],
   "pay": "$129,000\u2013$207,000",
   "priority": false,
@@ -108123,9 +108305,11 @@
   "work_mode": ""
  },
  "818e61d10a1b09e2": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Microsoft",
   "date_posted": "2026-10-14",
   "first_seen": "2026-10-14",
@@ -109513,7 +109697,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Principal Data Center Facilities Development Manager",
-  "url": "https://www.indeed.com/viewjob?jk=b14521c5e0ffcfcf",
+  "url": "https://www.indeed.com/viewjob?jk=1df371aecdbba154",
   "work_mode": ""
  },
  "83a9d7c200f6b1b3": {
@@ -114148,7 +114332,9 @@
   "work_mode": ""
  },
  "890c4c5685eb521e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "MasTec Inc",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
@@ -116550,7 +116736,9 @@
   "work_mode_by": ""
  },
  "8bf8350707355b13": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "CEI Services",
   "date_posted": "2026-09-16",
   "first_seen": "2026-09-17",
@@ -116808,7 +116996,9 @@
   "work_mode": ""
  },
  "8c4f8be87151a07e": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Amazon.com",
   "date_posted": "2026-09-10",
   "first_seen": "2026-09-14",
@@ -117668,8 +117858,9 @@
   "work_mode": ""
  },
  "8cfcfd8da7200886": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "IEA Infrastructure and Energy Alternatives",
   "first_seen": "2026-08-15",
   "location": "Indianapolis, IN, US",
@@ -118904,7 +119095,7 @@
   "work_mode_by": "triage"
  },
  "8e9114a26f430927": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp00000CZNvqMAH_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1276926793901855%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D4e3ae3f8-d266-11f1-8636-4fe8f0ecb21a%26rx_job%3Da1KDp00000CZNvqMAH_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp00000CZNvqMAH_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1276926793901855%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D4e3ae3f8-d266-11f1-8636-4fe8f0ecb21a%26rx_job%3Da1KDp00000CZNvqMAH_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261031T160405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -124426,7 +124617,7 @@
   "band": "misfit",
   "closed": "2026-09-03",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "US, CA, Santa Clara",
@@ -125096,7 +125287,7 @@
  "95bace7189eb49eb": {
   "band": "misfit",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, OR, Hillsboro",
   "pay": "",
@@ -128104,7 +128295,9 @@
   "work_mode": "remote"
  },
  "997e6d055cf24ac0": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "Jabil",
   "date_posted": "2026-09-03",
   "first_seen": "2026-09-04",
@@ -134460,9 +134653,11 @@
   "work_mode": "remote"
  },
  "a0c76278a0bdefe8": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "AES Corporation",
   "date_posted": "2026-10-16",
   "first_seen": "2026-10-22",
@@ -138838,9 +139033,11 @@
   "work_mode": ""
  },
  "a63868f324f14801": {
+  "active": false,
   "apply_url": "https://jobs.doosan.com/job/South-Windsor-Electrical-Engineer%2C-Site-Solutions-CT-06074/1437406300/",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Bobcat",
   "date_posted": "2026-10-06",
   "first_seen": "2026-10-08",
@@ -141332,7 +141529,9 @@
   "work_mode": "onsite"
  },
  "a8b99dc09e0fbf78": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-20",
@@ -143214,7 +143413,7 @@
  "ab26c7327a5f5f13": {
   "band": "possible",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
   "pay": "",
@@ -143286,7 +143485,9 @@
   "work_mode": ""
  },
  "ab495e918a8961e4": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-09-16",
   "first_seen": "2026-09-17",
@@ -144306,7 +144507,7 @@
  "ac67a020ae6f0df4": {
   "band": "possible",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
   "pay": "",
@@ -145142,7 +145343,7 @@
   "work_mode": "hybrid"
  },
  "ad2976f853a9b423": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000021xhUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1531892228645100%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0341eafb-d30e-11f1-8130-2bd201c7881b%26rx_job%3Da1KiE00000021xhUAA%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE00000021xhUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1531892228645100%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0341eafb-d30e-11f1-8130-2bd201c7881b%26rx_job%3Da1KiE00000021xhUAA%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261031T160405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -147166,7 +147367,8 @@
   "location": "Boardman, OR, US",
   "locations": [
    "Boardman, OR, US",
-   "Jeffersonville, OH, USA"
+   "Jeffersonville, OH, USA",
+   "Andrews, TX, USA"
   ],
   "lowscore": true,
   "pay": "$96,000\u2013$166,300/yr",
@@ -147181,7 +147383,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Data Center Chief Engineer",
-  "url": "https://www.indeed.com/viewjob?jk=103514c1fb916605",
+  "url": "https://www.indeed.com/viewjob?jk=6ab13ee97e771f3d",
   "work_mode": "onsite"
  },
  "af9542aaf1754c90": {
@@ -147440,7 +147642,9 @@
   "work_mode_by": "fetch"
  },
  "afd1533a35e5b0cd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "GridSME",
   "date_posted": "2026-09-04",
   "first_seen": "2026-09-05",
@@ -149606,7 +149810,9 @@
   "work_mode": ""
  },
  "b322afb14f92e09f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "MasTec Inc",
   "date_posted": "2026-09-15",
   "first_seen": "2026-09-16",
@@ -149680,7 +149886,9 @@
   "work_mode": ""
  },
  "b331b83cda49aedd": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Oracle",
   "date_posted": "2026-08-26",
   "first_seen": "2026-09-21",
@@ -151232,7 +151440,9 @@
   "work_mode": "hybrid"
  },
  "b526ddcc94e68fc4": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-09-11",
   "first_seen": "2026-09-12",
@@ -151712,9 +151922,11 @@
   "work_mode": ""
  },
  "b5d4e4ac5c9f2539": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "NextEra Energy",
   "date_posted": "2026-10-23",
   "first_seen": "2026-10-23",
@@ -153078,7 +153290,9 @@
   "work_mode": ""
  },
  "b73add46682c2f5c": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-10-31",
   "company": "MasTec Inc",
   "date_posted": "2026-08-21",
   "first_seen": "2026-08-22",
@@ -153469,9 +153683,11 @@
   "work_mode": ""
  },
  "b7ad066d9d5e075b": {
+  "active": false,
   "apply_url": "https://careers.google.com/jobs/results/134967585857774278-principal/",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "Google",
   "date_posted": "2026-10-16",
   "first_seen": "2026-10-19",
@@ -160419,9 +160635,11 @@
   "work_mode_by": ""
  },
  "c023cd06b9731064": {
+  "active": false,
   "apply_url": "https://career4.successfactors.com/career?career%5fns=job%5flisting&company=exxonmobilP&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=109610&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=America/Chicago&_s.crb=X11T9JPfbIAKZ7Atia9%2fZIvbo1SXnz6qfhFL2q2rBjU%3d",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "ExxonMobil",
   "date_posted": "2026-10-15",
   "first_seen": "2026-10-15",
@@ -160859,6 +161077,35 @@
   "title": "Nuclear Electrical Engineer - Senior",
   "url": "https://jobs.nexteraenergy.com/job/Palo-Nuclear-Electrical-Engineer-Senior-IA-52324/1391729000/",
   "work_mode": ""
+ },
+ "c0c46a34ceec1d33": {
+  "apply_url": "https://www.paycomonline.net/v4/ats/web.php/portal/C88EDB0209C1D96ACD176CCAFB6C74BD/jobs/268692?source=Indeed",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "GRIDWORKS",
+  "date_posted": "2026-10-31",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "Remote, USA",
+  "locations": [
+   "Remote, USA"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Project manager delivering high voltage substations and interconnection facilities for utility-scale solar and battery storage projects; program delivery, not product leadership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Project Manager HV",
+  "url": "https://www.indeed.com/viewjob?jk=561b94a8821c2946",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
  },
  "c0cadfc1b1fdac82": {
   "active": false,
@@ -164954,8 +165201,9 @@
   "work_mode": "onsite"
  },
  "c6706e7731e48df9": {
-  "active": true,
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "CEI Services",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-15",
@@ -166004,7 +166252,8 @@
    "Plantation, FL, US, 33317",
    "Miami, FL, US, 33155",
    "Pratt, KS, US, 67124",
-   "Butler, AL, US, 36904"
+   "Butler, AL, US, 36904",
+   "Story City, IA, US, 50248"
   ],
   "pay": "",
   "pay_checked": true,
@@ -168074,9 +168323,11 @@
   "work_mode": "hybrid"
  },
  "ca40ecc74ef5280c": {
+  "active": false,
   "apply_url": "https://portlandgeneral.wd5.myworkdayjobs.com/en-US/pgn/job/Portland-Oregon/Interconnection-Coordinator_R8595-1",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Portland General Electric",
   "date_posted": "2026-10-27",
   "first_seen": "2026-10-27",
@@ -169268,7 +169519,9 @@
   "work_mode": "onsite"
  },
  "cb805532c644a7db": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "TotalEnergies",
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-20",
@@ -170897,7 +171150,9 @@
   "work_mode_by": "triage"
  },
  "cce6ee8eded71a1f": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "CEI Services",
   "date_posted": "2026-09-11",
   "first_seen": "2026-09-12",
@@ -171101,7 +171356,7 @@
   "band": "misfit",
   "closed": "2026-08-28",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, TX, Remote",
   "locations": [
@@ -173255,7 +173510,9 @@
   "work_mode_by": "fetch"
  },
  "cf778da970533724": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Oracle",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -175032,9 +175289,11 @@
   "work_mode": "remote"
  },
  "d186274f510608a0": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Intersect",
   "date_posted": "2026-09-18",
   "first_seen": "2026-10-04",
@@ -179398,7 +179657,7 @@
  },
  "d6f47396ac65c53a": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690575-2459&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690575-2459%2Fclean-energy-expert-global-energy-and-sustainability%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D7b891f86-d02c-11f1-a774-e53697c35b9b%26rx_job%3D200690575-2459%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T200408Z%26rx_vp%3Dcpc%26team%3DCORSV",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690575-3749&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690575-3749%2Fclean-energy-expert-global-energy-and-sustainability%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D7b894210-d02c-11f1-a2e5-e53697c35b9b%26rx_job%3D200690575-3749%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261031T160407Z%26rx_vp%3Dcpc%26team%3DCORSV",
   "apply_url_own": true,
   "band": "possible",
   "closed": "2026-10-30",
@@ -180383,7 +180642,9 @@
   "work_mode": ""
  },
  "d88d4633855ca0c7": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "Wanzek Construction",
   "date_posted": "2026-09-15",
   "first_seen": "2026-09-16",
@@ -180650,8 +180911,9 @@
   "work_mode": ""
  },
  "d8ddcccd9588c69e": {
-  "active": true,
+  "active": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "National Grid",
   "first_seen": "2026-08-14",
   "location": "Northboro, IA, US",
@@ -184286,7 +184548,7 @@
  },
  "dd75d5aa0d3eafb9": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690976-3401&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690976-3401%2Fsenior-network-engineer-infrastructure-services%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcb06ad74-d1be-11f1-8323-8da839d49dfb%26rx_job%3D200690976-3401%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T180410Z%26rx_vp%3Dcpc%26team%3DSFTWR",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690976-3401&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690976-3401%2Fsenior-network-engineer-infrastructure-services%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcb06ad74-d1be-11f1-8323-8da839d49dfb%26rx_job%3D200690976-3401%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261031T160407Z%26rx_vp%3Dcpc%26team%3DSFTWR",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-27",
@@ -186597,7 +186859,7 @@
   "band": "misfit",
   "closed": "2026-08-28",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
   "lowscore": true,
@@ -186641,7 +186903,7 @@
  "dfe20e66e7edabb0": {
   "band": "misfit",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
   "pay": "",
@@ -192134,9 +192396,11 @@
   "work_mode": "hybrid"
  },
  "e6324ff4ed218c0d": {
+  "active": false,
   "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=6aa53fb4-1331-497b-a171-ccc1ec34f16b&ccId=9200748634220_2&jobId=576950&source=IN&lang=en_US",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "KULR Technology Corporation",
   "date_posted": "2026-10-27",
   "first_seen": "2026-10-27",
@@ -192239,9 +192503,11 @@
   "work_mode_by": ""
  },
  "e648582b8ebf876d": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "possible",
+  "closed": "2026-10-31",
   "company": "Microsoft",
   "date_posted": "2026-10-14",
   "first_seen": "2026-10-14",
@@ -195042,6 +195308,38 @@
   "title": "Senior Solutions Engineer \u2013 Systems Integration (BESS)",
   "url": "https://www.indeed.com/viewjob?jk=ab2832d4acb7943e",
   "work_mode": "remote"
+ },
+ "e95694db63e1cf79": {
+  "active": false,
+  "apply_url": "https://sheakleyworkforcestaffing.isolvedhire.com/jobs/1895522-402370.html",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-10-31",
+  "company": "Sheakley",
+  "date_posted": "2026-10-30",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "Conesville, OH, USA",
+  "locations": [
+   "Conesville, OH, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Field authority role approving electrical energization readiness on a data center construction site; a trade and safety-compliance job, not product or strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Energy Marshal",
+  "url": "https://www.indeed.com/viewjob?jk=2ccd0424573b0be7",
+  "work_mode": "onsite",
+  "work_mode_by": "triage"
  },
  "e95cd77c16cf0b04": {
   "active": false,
@@ -203494,6 +203792,35 @@
   "url": "https://www.indeed.com/viewjob?jk=3ddb40f227b7032d",
   "work_mode": "remote"
  },
+ "f335e52b1b47f379": {
+  "apply_url": "https://www.tesla.com/careers/search/job/288089?source=Indeed",
+  "apply_url_own": true,
+  "band": "top",
+  "company": "Tesla",
+  "date_posted": "2026-10-29",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "Palo Alto, CA, USA",
+  "locations": [
+   "Palo Alto, CA, USA"
+  ],
+  "pay": "$136,000\u2013$240,000/yr",
+  "priority": true,
+  "rationale": "Product manager owning roadmap and requirements for medium voltage transformers and switchgear powering the Megablock energy storage platform.",
+  "score": 90,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Sr. Product Manager, Medium Voltage Hardware",
+  "url": "https://www.indeed.com/viewjob?jk=2c1d40724e7116bf",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "f33cf062e1195bb1": {
   "active": false,
   "band": "weak",
@@ -203875,7 +204202,7 @@
   "band": "misfit",
   "closed": "2026-09-03",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-09-03",
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "US, CA, Santa Clara",
@@ -206230,6 +206557,38 @@
   "title": "Senior Project Engineer - BESS",
   "url": "https://job-boards.greenhouse.io/onenergy/jobs/4209817009",
   "work_mode": "hybrid"
+ },
+ "f6b6c00c13d313c5": {
+  "active": false,
+  "apply_url": "https://ehpv.fa.em2.oraclecloud.com:443/hcmUI/CandidateExperience/en/job/27819",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-10-31",
+  "company": "DP World",
+  "date_posted": "2026-10-30",
+  "first_seen": "2026-10-31",
+  "first_seen_at": "2026-10-31T18:23:05Z",
+  "location": "Fairburn, GA, USA",
+  "locations": [
+   "Fairburn, GA, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Operations leadership for a data center logistics and materials-handling business, owning P&L and staffing; no energy, power, or product scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-10-31T18:23Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Data Center Excellence",
+  "url": "https://www.indeed.com/viewjob?jk=b3676295466ccdbe",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "f6bd85fb7af9a972": {
   "band": "weak",
@@ -210437,8 +210796,10 @@
   "work_mode": ""
  },
  "fc19c9b8331d68b6": {
+  "active": false,
   "apply_url": "https://aep.wd1.myworkdayjobs.com/AEPCareerSite/job/Rockport-IN/Engineer-Senior-Principal_R18937",
   "band": "weak",
+  "closed": "2026-10-31",
   "company": "American Electric Power",
   "date_posted": "2026-10-01",
   "first_seen": "2026-10-01",
@@ -211280,7 +211641,7 @@
  "fd3c8ef16ee12844": {
   "band": "misfit",
   "company": "NVIDIA",
-  "date_posted": "",
+  "date_posted": "2026-10-30",
   "first_seen": "2026-08-28",
   "location": "US, CA, Santa Clara",
   "pay": "",
