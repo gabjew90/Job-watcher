@@ -10248,6 +10248,7 @@
  },
  "0ad98a42b3945e43": {
   "active": false,
+  "apply_url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/349731",
   "band": "weak",
   "closed": "2026-10-31",
   "company": "Oracle",
@@ -10256,7 +10257,8 @@
   "first_seen_at": "2026-09-21T19:31:39Z",
   "location": "Nashville, TN, US",
   "locations": [
-   "Nashville, TN, US"
+   "Nashville, TN, US",
+   "Seattle, WA, USA"
   ],
   "pay": "",
   "priority": false,
@@ -10271,7 +10273,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Principal Data Hall Designer",
-  "url": "https://www.indeed.com/viewjob?jk=c3300da567842fe4",
+  "url": "https://www.indeed.com/viewjob?jk=1e9edfb48f3ad101",
   "work_mode": ""
  },
  "0adc7dc062a9892a": {
@@ -17297,7 +17299,7 @@
   },
   "seniority_match": false,
   "source": "successfactors",
-  "title": "General Construction Transmission, Supervisor (Central Valley)",
+  "title": "General Construction Transmission, Supervisor (North Coast)",
   "url": "https://careers.pge.com/job/Oakland-General-Construction-Transmission%2C-Supervisor-%28North-Coast%29-CA-94612/1448171200/",
   "work_mode": "onsite",
   "work_mode_by": "fetch"
@@ -17331,7 +17333,9 @@
   "work_mode": "hybrid"
  },
  "1264dc42a55fedfb": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-11-05",
   "company": "Base Power",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-14",
@@ -20960,6 +20964,8 @@
  },
  "16b9ad8ca84521b7": {
   "active": false,
+  "apply_url": "https://careers.google.com/jobs/results/84899911648060102-data-center-plant-engineer/",
+  "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-09-09",
   "company": "Google",
@@ -24544,7 +24550,7 @@
  },
  "1abf1b9a14526515": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200684376-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200684376-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51b878ec-d7fe-11f1-9326-0328b4b5feb8%26rx_job%3D200684376-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261104T220410Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200684376-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200684376-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51b878ec-d7fe-11f1-9326-0328b4b5feb8%26rx_job%3D200684376-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -29029,6 +29035,35 @@
   "url": "https://jobs.ashbyhq.com/crusoe/0932c95c-e8db-437c-9333-fcc37c659961",
   "work_mode": "onsite",
   "work_mode_by": "triage"
+ },
+ "205d825336306aff": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "Southern California Edison",
+  "date_posted": "2026-11-04",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Pomona, CA",
+  "locations": [
+   "Pomona, CA"
+  ],
+  "pay": "$143,900\u2013$215,800/yr",
+  "priority": true,
+  "rationale": "Senior advisor developing cost estimates for substation and transmission capital programs at a utility; technical project-controls specialist scope, not product or strategy leadership.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "radancy",
+  "title": "Project Controls Cost Estimating, Advisor",
+  "url": "https://www.edisoncareers.com/job/24115278/project-controls-cost-estimating-advisor-pomona-ca/",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
  },
  "20655460fb4ad2ce": {
   "active": false,
@@ -34013,9 +34048,11 @@
   "work_mode": "hybrid"
  },
  "25cb9a8ff8737587": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-05",
   "company": "Johnson Controls",
   "date_posted": "2026-10-27",
   "first_seen": "2026-10-27",
@@ -37726,7 +37763,8 @@
    "Goleta, CA",
    "Wildomar, CA",
    "Torrance, CA",
-   "Torrance, CA, USA"
+   "Torrance, CA, USA",
+   "Monterey Park, CA, USA"
   ],
   "pay": "$111,600\u2013$167,400/yr",
   "priority": true,
@@ -44345,7 +44383,7 @@
  },
  "310a8ac0982e33b2": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690906-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690906-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d7a56cb-d7fe-11f1-9ac0-0328b4b5feb8%26rx_job%3D200690906-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261104T220410Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690907-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690907-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d7a7862-d7fe-11f1-ac3a-0328b4b5feb8%26rx_job%3D200690907-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -52066,6 +52104,38 @@
   "url": "https://hp.wd5.myworkdayjobs.com/en-US/ExternalCareerSite/job/Corvallis-Oregon-United-States-of-America/Director--Data-Center-Cooling-Strategy---Partnerships_3169660-1",
   "work_mode": ""
  },
+ "393caa7493607921": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-11-05",
+  "company": "OpenAI",
+  "date_posted": "2026-11-05",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "San Francisco",
+  "locations": [
+   "San Francisco"
+  ],
+  "lowscore": true,
+  "pay": "$207K \u2013 $285K \u00b7 Offers Equity",
+  "priority": false,
+  "rationale": "Product-manages OpenAI's capacity planning and forecasting tools across CPU, storage, network and GPU resources; compute capacity tooling with no power or energy-storage connection.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Technical Program Manager, Capacity Analytics & Tooling",
+  "url": "https://jobs.ashbyhq.com/openai/5cc72bc7-e6a0-40e0-9f60-23474cd9acdb",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
+ },
  "393cca1af270eac3": {
   "active": false,
   "apply_url": "https://www.tesla.com/careers/search/job/285310?source=Indeed",
@@ -52700,7 +52770,7 @@
  },
  "39f84c086245ff58": {
   "active": false,
-  "apply_url": "",
+  "apply_url": "https://careers.tranetechnologies.com/global/fr/job/JR-19274",
   "apply_url_own": false,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -52710,10 +52780,11 @@
   "first_seen_at": "2026-11-04T21:07:35Z",
   "location": "Fort Smith, Arkansas",
   "locations": [
-   "Fort Smith, Arkansas"
+   "Fort Smith, Arkansas",
+   "Fort Smith, AR, USA"
   ],
   "lowscore": true,
-  "pay": "",
+  "pay": "$60,000.00 - $86,169.99",
   "priority": false,
   "rationale": "Product design engineer developing data center cooling or power hardware for Trane, a hands-on HVAC design engineering role.",
   "score": 15,
@@ -53697,7 +53768,9 @@
   "work_mode": "remote"
  },
  "3b1fb839c0a50fd7": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-11-05",
   "company": "Tesla",
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-29",
@@ -60453,6 +60526,35 @@
   "source": "indeed",
   "title": "Supplier Quality and Reliability Engineer",
   "url": "https://www.indeed.com/viewjob?jk=54dc15935ce742be",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
+ "433f0ff37f1ff785": {
+  "apply_url": "https://careers.bv.com/job/Ann-Arbor-Senior-Geothermal-Consultant-MI-48103/1454919633/",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "Black & Veatch",
+  "date_posted": "2026-11-05",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Ann Arbor, MI, USA",
+  "locations": [
+   "Ann Arbor, MI, USA"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Senior technical consulting on geothermal surface facilities, feasibility studies and FEED engineering; deep specialist engineering IC work outside the storage and data center domain.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Geothermal Consultant",
+  "url": "https://www.indeed.com/viewjob?jk=b0fd549059071f42",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -71107,7 +71209,7 @@
  },
  "5025c9327b1aee7c": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200662735-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200662735-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ed7a7fd-d7fe-11f1-83da-0328b4b5feb8%26rx_job%3D200662735-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T200433Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200662735-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200662735-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ed7a7fd-d7fe-11f1-83da-0328b4b5feb8%26rx_job%3D200662735-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-05",
@@ -76495,7 +76597,7 @@
   "work_mode": "remote"
  },
  "56fe5a768ca428a4": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004HIPUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1657750192469340%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D9eccfaa8-d7e6-11f1-9529-95d4e94ee7f6%26rx_job%3Da1KiE0000004HIPUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T200417Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004HIPUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1657750192469340%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D9eccfaa8-d7e6-11f1-9529-95d4e94ee7f6%26rx_job%3Da1KiE0000004HIPUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220411Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -77477,7 +77579,7 @@
  },
  "57f6a7221e2308f5": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200688522-3956&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200688522-3956%2Fcellular-power-systems-engineer%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D767085ae-cb75-11f1-b122-8be16b6d009b%26rx_job%3D200688522-3956%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261025T180411Z%26rx_vp%3Dcpc%26team%3DHRDWR",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200689311-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200689311-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d67d771-d7fe-11f1-9800-0328b4b5feb8%26rx_job%3D200689311-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-19",
@@ -79307,7 +79409,7 @@
  },
  "5a42887845179289": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690905-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690905-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d7a359f-d7fe-11f1-b797-0328b4b5feb8%26rx_job%3D200690905-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261104T220410Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690905-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690905-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d7a359f-d7fe-11f1-b797-0328b4b5feb8%26rx_job%3D200690905-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -93750,6 +93852,35 @@
   "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Senior-Attorney%2C-Electric-Transmission-Transactions-FL-33408/1424879400/",
   "work_mode": ""
  },
+ "6a617b9043785ca6": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Pivot Energy",
+  "date_posted": "2026-11-05",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Denver, Colorado",
+  "locations": [
+   "Denver, Colorado"
+  ],
+  "pay": "$220,000\u2013$275,000/yr",
+  "priority": true,
+  "rationale": "VP sets market strategy and leads teams bidding solar, utility-scale and BESS procurements at a renewable developer; developer-side market leadership, not BESS product strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "lever",
+  "title": "Vice President of Market Strategy",
+  "url": "https://jobs.lever.co/pivotenergy/5f4c9f94-abab-4e7d-a759-d8e523b2cdbd",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
+ },
  "6a68039582b5b751": {
   "active": false,
   "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=75676&lang=en_US&source=Indeed",
@@ -100139,7 +100270,7 @@
   "work_mode_by": "triage"
  },
  "71d7784b4c5a7931": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp000000BBJaMAO_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1440221957844026%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Ddccce81f-d3f8-11f1-a097-35c429db160b%26rx_job%3Da1KDp000000BBJaMAO_1005%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T200417Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp000000BBJaMAO_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1440221957844026%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Ddccce81f-d3f8-11f1-a097-35c429db160b%26rx_job%3Da1KDp000000BBJaMAO_1005%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220411Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -106260,7 +106391,7 @@
  },
  "7917f2ff9028c956": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657076-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657076-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecd4476-d7fe-11f1-be6a-0328b4b5feb8%26rx_job%3D200657076-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261104T220410Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657076-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657076-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecd4476-d7fe-11f1-be6a-0328b4b5feb8%26rx_job%3D200657076-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -107955,8 +108086,39 @@
   "url": "https://www.indeed.com/viewjob?jk=9d8ad73e47946ae7",
   "work_mode": "onsite"
  },
- "7b39aa109216061f": {
+ "7b38ac7dc7b2ff20": {
+  "apply_url": "",
+  "apply_url_own": false,
   "band": "weak",
+  "company": "American Electric Power",
+  "date_posted": "2026-11-05",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Columbus, OH",
+  "locations": [
+   "Columbus, OH"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior analyst on a utility's commercial energy supply desk; individual-analyst scope below the target product or strategy leadership level.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Commercial Energy Supply Analyst Sr. | Commercial Operations",
+  "url": "https://aep.wd1.myworkdayjobs.com/en-US/AEPCareerSite/job/Columbus-OH/Commercial-Energy-Supply-Analyst-Sr---Commercial-Operations_R20729",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
+ "7b39aa109216061f": {
+  "active": false,
+  "band": "weak",
+  "closed": "2026-11-05",
   "company": "Wood Mackenzie",
   "date_posted": "2026-09-18",
   "first_seen": "2026-09-18",
@@ -108017,7 +108179,7 @@
  },
  "7b462cbca81583b8": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004MTNUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1125933666493700%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dbb6da76d-d8af-11f1-8537-75b03a4a5dc9%26rx_job%3Da1KiE0000004MTNUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T200417Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004MTNUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1125933666493700%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dbb6da76d-d8af-11f1-8537-75b03a4a5dc9%26rx_job%3Da1KiE0000004MTNUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220411Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-05",
@@ -108653,6 +108815,35 @@
   "url": "https://jobs.ashbyhq.com/crusoe/c08a297f-2be4-467f-85c0-24f9ad0bec8e",
   "work_mode": ""
  },
+ "7c4cc25f4116972b": {
+  "apply_url": "https://ats.rippling.com/netrality-careers/jobs/d7da88d8-d332-4d28-8e8f-bee267ae2ffc?jobSite=Indeed",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Netrality Data Centers",
+  "date_posted": "2026-11-05",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Chicago, IL, USA",
+  "locations": [
+   "Chicago, IL, USA"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Directs site due diligence, entitlements and utility power strategy for data center development; site-development execution outweighs the power-strategy slice.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Data Center Development",
+  "url": "https://www.indeed.com/viewjob?jk=57fdea3b50d2a4f3",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "7c5da7ef62b74342": {
   "active": false,
   "band": "weak",
@@ -108672,7 +108863,7 @@
   "work_mode": "remote"
  },
  "7c5ebb604ea2580a": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200653810-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200653810-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d8e6054-d7fe-11f1-b9cc-0328b4b5feb8%26rx_job%3D200653810-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261104T220410Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200674135-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200674135-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51458c66-d7fe-11f1-acc4-0328b4b5feb8%26rx_job%3D200674135-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "weak",
   "company": "Apple",
@@ -109476,7 +109667,7 @@
  },
  "7d324687fe8eda9e": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690708-0836&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690708-0836%2Fsoc-power-flow-methodology-engineer%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D7b85fa00-d02c-11f1-83b2-e53697c35b9b%26rx_job%3D200690708-0836%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261030T200408Z%26rx_vp%3Dcpc%26team%3DHRDWR",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657085-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657085-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ece2856-d7fe-11f1-b1d1-0328b4b5feb8%26rx_job%3D200657085-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-27",
@@ -113420,9 +113611,8 @@
   "work_mode_by": "tag"
  },
  "80cbac0ad88f42d0": {
-  "active": false,
+  "active": true,
   "band": "weak",
-  "closed": "2026-09-03",
   "company": "Hut 8",
   "date_posted": "2026-08-14",
   "first_seen": "2026-08-28",
@@ -113433,6 +113623,7 @@
   "pay": "",
   "priority": true,
   "rationale": "Associate-level interconnection study support at relevant company in adjacent domain but junior analyst role, not director/PM/strategy level.",
+  "reopened": "2026-11-05",
   "score": 35,
   "scoring_fingerprint": {
    "at": "2026-08-28T23:42Z",
@@ -113443,7 +113634,7 @@
   "source": "greenhouse",
   "title": "Transmission & Interconnection, Principal",
   "url": "https://job-boards.greenhouse.io/hut8/jobs/5365181008",
-  "work_mode": ""
+  "work_mode": "onsite"
  },
  "80ddea7987ddb398": {
   "active": false,
@@ -121165,7 +121356,8 @@
   "first_seen_at": "2026-10-08T20:00:19Z",
   "location": "Canton, MS, USA",
   "locations": [
-   "Canton, MS, USA"
+   "Canton, MS, USA",
+   "Seattle, WA, USA"
   ],
   "pay": "$114,400\u2013$171,900/yr",
   "priority": false,
@@ -121180,7 +121372,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Tech Infra Program Manager, Data Center Delivery",
-  "url": "https://www.indeed.com/viewjob?jk=85504282206be36d",
+  "url": "https://www.indeed.com/viewjob?jk=52a5cf5d0c315c17",
   "work_mode": ""
  },
  "89c3e664b08d9b58": {
@@ -124860,9 +125052,11 @@
   "work_mode": ""
  },
  "8e250da15bde7ee7": {
+  "active": false,
   "apply_url": "https://jobs.ashbyhq.com/Crusoe/24b70045-49de-4605-9466-ccd82cb3bcba?utm_source=4MqBxxdA0Q",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-05",
   "company": "Crusoe",
   "date_posted": "2026-10-16",
   "first_seen": "2026-10-17",
@@ -126802,7 +126996,7 @@
  },
  "900b8376a157bbdf": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657081-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657081-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecdcd98-d7fe-11f1-a6d0-0328b4b5feb8%26rx_job%3D200657081-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261104T220410Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657082-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657082-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecdfe43-d7fe-11f1-b59b-0328b4b5feb8%26rx_job%3D200657082-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -133500,6 +133694,35 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8787749002",
   "work_mode": ""
  },
+ "97aa1cb8043cd139": {
+  "apply_url": "https://pjm.wd5.myworkdayjobs.com/en-US/pjmcareers/job/Audubon-PA/XMLNAME--Sr---Lead---Principal--Analyst-Engineer--II-_REQ-2026-4289-1",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "PJM Interconnection, LLC",
+  "date_posted": "2026-11-04",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Audubon, PA, USA",
+  "locations": [
+   "Audubon, PA, USA"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Analyzes wholesale market data and shapes demand-response market rules at the grid operator PJM; a market-design and policy analyst role, not product or strategy leadership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "(Sr.) (Lead) (Principal) Analyst/Engineer (II)",
+  "url": "https://www.indeed.com/viewjob?jk=67785c3bd6a50dbe",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
+ },
  "97aa615ff116036f": {
   "band": "misfit",
   "company": "SpaceX",
@@ -134026,8 +134249,9 @@
   "work_mode": "hybrid"
  },
  "983313230c5f815f": {
-  "active": true,
+  "active": false,
   "band": "possible",
+  "closed": "2026-11-05",
   "company": "Base Power",
   "date_posted": "2026-08-07",
   "first_seen": "2026-08-13",
@@ -136824,7 +137048,7 @@
   "work_mode": ""
  },
  "9bfe67e4028b56c1": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004JDlUAM_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1667236961501633%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc260c5b0-d86c-11f1-acb7-8f09744010b5%26rx_job%3Da1KiE0000004JDlUAM_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T200417Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004JDlUAM_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1667236961501633%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc260c5b0-d86c-11f1-acb7-8f09744010b5%26rx_job%3Da1KiE0000004JDlUAM_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220411Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "strong",
   "company": "Meta",
@@ -141318,7 +141542,7 @@
   },
   "seniority_match": false,
   "source": "successfactors",
-  "title": "Sr Power Generation Technical Services Specialist - Energy Cost",
+  "title": "Sr Power Generation Technical Services Specialist",
   "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Sr-Power-Generation-Technical-Services-Specialist-FL-33410/1438025300/",
   "work_mode": "onsite"
  },
@@ -149519,6 +149743,35 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "a99fbecf016566ea": {
+  "apply_url": "https://jobs.ashbyhq.com/blue-energy/c92d2a02-b8b8-4659-ada5-a24d6f0636c5?utm_source=jwBaAnBBBG",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Blue Energy",
+  "date_posted": "2026-11-05",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Chevy Chase, MD, USA",
+  "locations": [
+   "Chevy Chase, MD, USA"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "Builds commercial decks, deal models and pipeline tracking for data center power customers at a developer; origination and deal-support work, not product or strategy ownership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Principal of Origination & Customer Products",
+  "url": "https://www.indeed.com/viewjob?jk=3960beae16ea9ff8",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "a9a66a1eda7b23ea": {
   "active": false,
   "band": "misfit",
@@ -150326,7 +150579,7 @@
  },
  "aaae5e228d3e03ba": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200675775-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200675775-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D514e0211-d7fe-11f1-a91a-0328b4b5feb8%26rx_job%3D200675775-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261104T220410Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200675775-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200675775-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D514e0211-d7fe-11f1-a91a-0328b4b5feb8%26rx_job%3D200675775-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -155782,7 +156035,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Data Center Capacity Planner, Infrastructure Services",
-  "url": "https://www.indeed.com/viewjob?jk=37028cd12f13e0b1",
+  "url": "https://www.indeed.com/viewjob?jk=c6b854ed98da46f5",
   "work_mode": "remote"
  },
  "b089646766a4f728": {
@@ -157443,6 +157696,7 @@
  },
  "b331b83cda49aedd": {
   "active": false,
+  "apply_url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/349735",
   "band": "weak",
   "closed": "2026-10-31",
   "company": "Oracle",
@@ -157451,7 +157705,8 @@
   "first_seen_at": "2026-09-21T19:31:39Z",
   "location": "Nashville, TN, US",
   "locations": [
-   "Nashville, TN, US"
+   "Nashville, TN, US",
+   "Seattle, WA, USA"
   ],
   "pay": "",
   "priority": false,
@@ -157466,7 +157721,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Lead Principal Data Hall Designer",
-  "url": "https://www.indeed.com/viewjob?jk=c5ee5bc6896ab718",
+  "url": "https://www.indeed.com/viewjob?jk=a16543a888ea1420",
   "work_mode": ""
  },
  "b33380e2e08f9d68": {
@@ -164325,7 +164580,9 @@
   "work_mode": ""
  },
  "bb493949fee1af10": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-05",
   "company": "Base Power",
   "date_posted": "2026-08-13",
   "first_seen": "2026-08-14",
@@ -165123,7 +165380,9 @@
   "work_mode_by": "fetch"
  },
  "bc51dda56c623abf": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-05",
   "company": "OpenAI",
   "date_posted": "2026-08-31",
   "first_seen": "2026-09-01",
@@ -174516,7 +174775,8 @@
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "Remote - US",
   "locations": [
-   "Remote - US"
+   "Remote - US",
+   "Salt Lake City, UT"
   ],
   "lowscore": true,
   "pay": "",
@@ -178456,7 +178716,7 @@
  },
  "cb96a7baab83db50": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200683641-6709-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200683641-6709%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51b32b75-d7fe-11f1-ab81-0328b4b5feb8%26rx_job%3D200683641-6709-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T200433Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200683641-6709-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200683641-6709%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51b32b75-d7fe-11f1-ab81-0328b4b5feb8%26rx_job%3D200683641-6709-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-05",
@@ -182941,8 +183201,9 @@
   "work_mode": "hybrid"
  },
  "d01f2983094522eb": {
-  "active": true,
+  "active": false,
   "band": "possible",
+  "closed": "2026-11-05",
   "company": "Base Power",
   "date_posted": "2026-06-29",
   "first_seen": "2026-08-13",
@@ -189039,7 +189300,7 @@
  },
  "d744cb9a7cfabcf4": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004D8LUAU&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1111221755150271%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D72bae738-d71d-11f1-878a-ef81fa0af279%26rx_job%3Da1KiE0000004D8LUAU%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T200417Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004D8LUAU&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1111221755150271%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D72bae738-d71d-11f1-878a-ef81fa0af279%26rx_job%3Da1KiE0000004D8LUAU%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220411Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-03",
@@ -193819,6 +194080,35 @@
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556952671",
   "work_mode": "onsite"
  },
+ "dd09b700c5c0d39a": {
+  "apply_url": "https://jobs.ashbyhq.com/cerebras/6379f864-d499-4838-bb76-b7e5ec571afa",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Cerebras Systems",
+  "date_posted": "2026-11-04",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Sunnyvale, CA, USA",
+  "locations": [
+   "Sunnyvale, CA, USA"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Program manages equipment and supplier readiness for data center expansion at an AI chip company; supply-chain program delivery, not product or energy strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Staff Technical Program Manager, Data Center Supply Chain",
+  "url": "https://www.indeed.com/viewjob?jk=f9aa84742ea5e987",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "dd1964bd80b78100": {
   "band": "weak",
   "company": "Tetra Tech",
@@ -198230,8 +198520,9 @@
   "work_mode_by": ""
  },
  "e18ad31b97a92f6a": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-11-05",
   "company": "Quanta Infrastructure Solutions Group",
   "first_seen": "2026-08-13",
   "location": "Colorado City, TX, US",
@@ -198536,6 +198827,7 @@
  },
  "e210d09fef611451": {
   "active": false,
+  "apply_url": "https://apply.careers.microsoft.com/careers/job/1970393557050315?utm_source=indeed&domain=microsoft.com",
   "band": "weak",
   "closed": "2026-08-22",
   "company": "Microsoft",
@@ -198544,7 +198836,8 @@
   "location": "United States, Georgia, Atlanta (+2 more)",
   "locations": [
    "United States, Georgia, Atlanta (+2 more)",
-   "United States, Illinois, Chicago"
+   "United States, Illinois, Chicago",
+   "Chicago, IL, USA"
   ],
   "pay": "USD $84,400 - $168,800 per year",
   "priority": false,
@@ -208354,6 +208647,35 @@
   "url": "https://www.indeed.com/viewjob?jk=4dc24b28f7baad70",
   "work_mode": ""
  },
+ "ec93c6a9260d58aa": {
+  "apply_url": "https://careers.google.com/jobs/results/95752881688191686-strategic-negotiator/",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Google",
+  "date_posted": "2026-11-05",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "New York, NY, USA",
+  "locations": [
+   "New York, NY, USA"
+  ],
+  "pay": "$150,000\u2013$217,000/yr",
+  "priority": false,
+  "rationale": "Negotiates utility and site agreements to secure power and water for Google's data centers; a deal-lead negotiation role, not strategy ownership.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Strategic Negotiator, Data Center Site Acquisition and Development",
+  "url": "https://www.indeed.com/viewjob?jk=59a1bc0fb8d8b550",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "ec9f7c3f81cc9a59": {
   "band": "weak",
   "company": "OpenAI",
@@ -216909,6 +217231,35 @@
   "url": "https://www.indeed.com/viewjob?jk=82e5734f0e98ff7d",
   "work_mode": ""
  },
+ "f6803184239f6b73": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "Southern California Edison",
+  "date_posted": "2026-11-04",
+  "first_seen": "2026-11-05",
+  "first_seen_at": "2026-11-05T22:49:23Z",
+  "location": "Pomona, CA",
+  "locations": [
+   "Pomona, CA"
+  ],
+  "pay": "$114,400\u2013$171,600/yr",
+  "priority": false,
+  "rationale": "Builds capital cost estimates for substation and transmission line projects at a utility; deep technical project-controls specialist work, not product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-05T22:50Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "c790374d89"
+  },
+  "seniority_match": false,
+  "source": "radancy",
+  "title": "Project Controls Cost Estimating, Senior Specialist",
+  "url": "https://www.edisoncareers.com/job/24115279/project-controls-cost-estimating-senior-specialist-pomona-ca/",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
+ },
  "f695e5877a5a20d6": {
   "active": false,
   "band": "misfit",
@@ -221196,9 +221547,11 @@
   "work_mode": ""
  },
  "fbc83f0f49ac2b70": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "possible",
+  "closed": "2026-11-05",
   "company": "Rowan Digital Infrastructure",
   "date_posted": "2026-09-16",
   "first_seen": "2026-10-15",
