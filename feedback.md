@@ -135,3 +135,12 @@ hide: Solution Engineer - Structural Design @ Neara
   director-of-transmission / interconnection roles were banding top and
   should not: "I don't know why they rank so high." They band possible
   (see profile.md, Score MID). (owner note 2026-10-01)
+- calibration (owner: "a little too much interconnection focus"): on a
+  power-buying company's real-estate or site team, a manager-level
+  power-development role whose day-to-day is utility service requests,
+  load letters, substation capacity and interconnection feasibility
+  feeding site selection bands strong, one below top. A director owning a
+  data center operator's power strategy stays top (issue #99), and
+  utility or developer interconnection roles stay possible (profile.md,
+  Score MID). (from issue #303, re: Amazon Senior Power Development
+  Manager (TIPM), warehouse real-estate power team; was top)
