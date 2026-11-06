@@ -347,7 +347,49 @@
       "host": "flextronics.wd1.myworkdayjobs.com",
       "tenant": "flextronics",
       "site": "Careers",
-      "company": "Flex"
+      "company": "Flex",
+      "facet_sets": [
+        {
+          "company": "Flex (Axiom)",
+          "facets": {
+            "Job_Posting_Company_Extended": [
+              "a003e28fa3d81037c00f6520352a0003"
+            ],
+            "Location_Country": [
+              "bc33aa3152ec42d4995f4791a106ed09"
+            ]
+          }
+        },
+        {
+          "company": "Flex (Crown Technical Systems)",
+          "facets": {
+            "Job_Posting_Company_Extended": [
+              "a003e28fa3d81037c00f6520352a0001"
+            ],
+            "Location_Country": [
+              "bc33aa3152ec42d4995f4791a106ed09"
+            ]
+          }
+        },
+        {
+          "company": "Flex (Anord Mardix)",
+          "facets": {
+            "Job_Posting_Company_Extended": [
+              "a003e28fa3d81037c00f6520352a0002"
+            ],
+            "Location_Country": [
+              "bc33aa3152ec42d4995f4791a106ed09"
+            ]
+          }
+        },
+        {
+          "facets": {
+            "Location_Country": [
+              "bc33aa3152ec42d4995f4791a106ed09"
+            ]
+          }
+        }
+      ]
     },
     {
       "host": "bloomenergy.wd1.myworkdayjobs.com",
@@ -591,6 +633,11 @@
       "provider": "breezy",
       "company": "Bitdeer Technologies Group",
       "slug": "bitdeer"
+    },
+    {
+      "provider": "paylocity",
+      "company": "EPC Power",
+      "guid": "c1f3b7e2-3b9f-4552-ae5e-972d37009918"
     }
   ],
   "location": "United States",
