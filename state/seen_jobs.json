@@ -5820,6 +5820,35 @@
   "url": "https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Birmingham-England-United-Kingdom/Business-Development-Sales-Manager--Europe---Power-Consulting_R0113175-1",
   "work_mode": ""
  },
+ "065e83ddf62bbdaf": {
+  "apply_url": "https://hdr.taleo.net/careersection/ex/jobdetail.ftl?job=197784&tz=GMT-06%3A00&tzname=America%2FChicago",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "HDR",
+  "date_posted": "2026-11-06",
+  "first_seen": "2026-11-08",
+  "first_seen_at": "2026-11-08T18:55:39Z",
+  "location": "Chicago, IL, USA",
+  "locations": [
+   "Chicago, IL, USA"
+  ],
+  "pay": "$119\u2013$170,060/yr",
+  "priority": false,
+  "rationale": "Administers construction contracts and subcontractor compliance for data center projects; contract-administration role, not product or energy-strategy work.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-08T18:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Data Center Commercial Manager",
+  "url": "https://www.indeed.com/viewjob?jk=3b45f4c54dfd0671",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "066032ccfd422d0b": {
   "band": "weak",
   "company": "GE Vernova",
@@ -17814,9 +17843,11 @@
   "work_mode": ""
  },
  "129eb0e7d0042217": {
+  "active": false,
   "apply_url": "https://talent.qualuscorp.com/jobs/5841/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-08",
   "company": "Qualus",
   "date_posted": "2026-11-05",
   "first_seen": "2026-11-06",
@@ -21474,9 +21505,11 @@
   "work_mode_by": "triage"
  },
  "16faf115b403ca67": {
+  "active": false,
   "apply_url": "https://careers.usbank.com/global/en/job/UBNAGLOBAL20260034242EXTERNALENGLOBAL/Infrastructure-Project-Finance-Underwriter-Project-Manager?utm_source=indeed&utm_medium=phenom-feeds",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-08",
   "company": "U.S. Bank",
   "date_posted": "2026-11-02",
   "first_seen": "2026-11-03",
@@ -25038,7 +25071,7 @@
  },
  "1abf1b9a14526515": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200684376-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200684376-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51b878ec-d7fe-11f1-9326-0328b4b5feb8%26rx_job%3D200684376-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200684376-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200684376-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51b878ec-d7fe-11f1-9326-0328b4b5feb8%26rx_job%3D200684376-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -27451,7 +27484,9 @@
   "locations": [
    "Pleasanton, CA, US, 94588",
    "Rocklin, CA, US, 95765",
-   "Cupertino, CA, US, 95014"
+   "Cupertino, CA, US, 95014",
+   "San Jose, CA, US, 95113",
+   "Sacramento, CA, US, 95833"
   ],
   "pay": "$143,000\u2013$244,000",
   "priority": true,
@@ -28624,7 +28659,8 @@
    "Brinkley, AR, US, 72021",
    "Story City, IA, US, 50248",
    "Miami, FL, US, 33134",
-   "North Palm Beach, FL, US, 33408"
+   "North Palm Beach, FL, US, 33408",
+   "Florida City, FL, US, 33035"
   ],
   "pay": "",
   "priority": true,
@@ -28638,7 +28674,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Sr Project Management Consultant - E&amp;C",
-  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Sr-Project-Management-Consultant-E&amp;C-FL-33408/1444605000/",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Sr-Project-Management-Consultant-E&amp;C-FL-33408/1448074600/",
   "work_mode": ""
  },
  "1f351cf0fc1d33f4": {
@@ -32841,6 +32877,35 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "23aed9fc0f4402d1": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "PG&E",
+  "date_posted": "2026-10-31",
+  "first_seen": "2026-11-08",
+  "first_seen_at": "2026-11-08T18:55:39Z",
+  "location": "Sacramento, CA, US, 95833",
+  "locations": [
+   "Sacramento, CA, US, 95833"
+  ],
+  "pay": "$105,000\u2013$169,000",
+  "priority": false,
+  "rationale": "Analyzes operational data and builds reporting pipelines supporting PG&E's grid reliability strategy; individual analyst scope, not senior strategy or product leadership.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-08T18:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "successfactors",
+  "title": "Senior, Operations Data Analyst - Reliability Strategy",
+  "url": "https://careers.pge.com/job/Oakland-Senior%2C-Operations-Data-Analyst-Reliability-Strategy-CA-94612/1394092800/",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
+ },
  "23b4bbf298bd06e3": {
   "active": false,
   "band": "misfit",
@@ -34403,6 +34468,35 @@
   "title": "Power Protection and Automation Engineering Development Program (January Cohort)",
   "url": "https://www.indeed.com/viewjob?jk=feab602c1759b845",
   "work_mode": ""
+ },
+ "2598f1b5419fb187": {
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200679252-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200679252-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D514a2bed-d7fe-11f1-ace9-0328b4b5feb8%26rx_job%3D200679252-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Apple",
+  "date_posted": "2026-11-04",
+  "first_seen": "2026-11-08",
+  "first_seen_at": "2026-11-08T18:55:39Z",
+  "location": "Cupertino, CA, USA",
+  "locations": [
+   "Cupertino, CA, USA"
+  ],
+  "pay": "$163,500\u2013$246,200/yr",
+  "priority": false,
+  "rationale": "Manages renewable energy and carbon credit transactions and portfolio for Apple's supply chain decarbonization; finance-led procurement scope, plausible but adjacent fit.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-08T18:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Environmental Markets Program Manager",
+  "url": "https://www.indeed.com/viewjob?jk=ed2ec52b7d0b326b",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "25a10c04a56722a9": {
   "active": false,
@@ -40195,7 +40289,7 @@
   "work_mode": ""
  },
  "2b8417b11be97149": {
-  "apply_url": "https://career8.successfactors.com/career?career%5fns=job%5flisting&company=C0003043182P&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=8669&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=America/Chicago&_s.crb=yOKtO7QhJZCyTgDq3y2W2NvGE4ktSgggs%2btqW%2fFOy1k%3d",
+  "apply_url": "https://career8.successfactors.com/career?career%5fns=job%5flisting&company=C0003043182P&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=8669&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=America/Chicago&_s.crb=VyIBK3HNcFodA2EV%2bxKoF0lpy50EN3JaLtzPShBxNNo%3d",
   "apply_url_own": true,
   "band": "possible",
   "company": "Southern California Edison",
@@ -45230,8 +45324,9 @@
   "work_mode": "onsite"
  },
  "30fa81ac4857c483": {
-  "active": true,
+  "active": false,
   "band": "top",
+  "closed": "2026-11-08",
   "company": "Meta",
   "date_posted": "2026-07-13",
   "first_seen": "2026-08-31",
@@ -51317,7 +51412,8 @@
   "location": "WADLEY, GA, US, 30477",
   "locations": [
    "WADLEY, GA, US, 30477",
-   "Palm Beach Gardens, FL, US, 33410"
+   "Palm Beach Gardens, FL, US, 33410",
+   "Palo, IA, US, 52324"
   ],
   "lowscore": true,
   "pay": "",
@@ -51333,7 +51429,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Senior Environmental Specialist",
-  "url": "https://jobs.nexteraenergy.com/job/Phoenix-Senior-Environmental-Specialist-AZ-85001/1438002300/",
+  "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Senior-Environmental-Specialist-FL-33408/1427943400/",
   "work_mode": "remote"
  },
  "36e6366f0f3556c0": {
@@ -56136,7 +56232,8 @@
    "Chico, CA, US, 95928",
    "Eureka, CA, US, 95501",
    "Santa Cruz, CA, US, 95062",
-   "Moss Landing, CA, US, 95039"
+   "Moss Landing, CA, US, 95039",
+   "Dublin, CA, US, 94568"
   ],
   "pay": "$140,000\u2013$238,000",
   "pay_checked": true,
@@ -57073,9 +57170,11 @@
   "work_mode_by": ""
  },
  "3dd75a0851b6a448": {
+  "active": false,
   "apply_url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/349450",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-08",
   "company": "Oracle",
   "date_posted": "2026-10-07",
   "first_seen": "2026-10-08",
@@ -57364,9 +57463,11 @@
   "work_mode_by": "fetch"
  },
  "3e2021e171952e76": {
+  "active": false,
   "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b34897c3-f54f-413d-912c-329f0596ac76&ccId=19000101_000001&jobId=970793&source=IN&lang=en_US",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-08",
   "company": "KFI Engineers",
   "date_posted": "2026-11-06",
   "first_seen": "2026-11-06",
@@ -64900,6 +65001,10 @@
   "duplicate": true,
   "first_seen": "2026-09-01",
   "location": "Danville, CA, US, 94583",
+  "locations": [
+   "Danville, CA, US, 94583",
+   "Fresno, CA, US, 93725"
+  ],
   "pay": "$46.94 to $78.14,",
   "priority": false,
   "rationale": "Design Engineer for substations; deep technical CAD/design engineering IC role; guidance scores design engineering roles below 45.",
@@ -68964,7 +69069,7 @@
  },
  "4b8c6364d80a6d76": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200691597-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200691597-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D9f94d064-d936-11f1-b9fc-1f47e5aa7884%26rx_job%3D200691597-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200691597-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200691597-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D9f94d064-d936-11f1-b9fc-1f47e5aa7884%26rx_job%3D200691597-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-06",
@@ -76917,7 +77022,7 @@
  },
  "548bdb2a7c7e7352": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003wInUAI_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2229851370925442%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D96056bcc-d989-11f1-bbd8-ad424654a875%26rx_job%3Da1KiE0000003wInUAI_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003wInUAI_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2229851370925442%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D96056bcc-d989-11f1-bbd8-ad424654a875%26rx_job%3Da1KiE0000003wInUAI_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-17",
@@ -78079,7 +78184,8 @@
    "Jensen Beach, FL, US, 34957",
    "Maryland Heights, MO, US, 63043",
    "North Palm Beach, FL, US, 33408",
-   "Florida City, FL, US, 33035"
+   "Florida City, FL, US, 33035",
+   "Miami, FL, US, 33134"
   ],
   "pay": "",
   "pay_checked": true,
@@ -81690,7 +81796,7 @@
  },
  "5a42887845179289": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690905-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690905-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d7a359f-d7fe-11f1-b797-0328b4b5feb8%26rx_job%3D200690905-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200690905-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200690905-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4d7a359f-d7fe-11f1-b797-0328b4b5feb8%26rx_job%3D200690905-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -86004,7 +86110,8 @@
    "Redding, CA, US, 96003",
    "Redding, CA, US, 96002",
    "Chico, CA, US, 95928",
-   "San Jose, CA, US, 95113"
+   "San Jose, CA, US, 95113",
+   "Angels Camp, CA, US, 95222"
   ],
   "pay": "$120,888\u2013$188,840",
   "priority": false,
@@ -93427,7 +93534,7 @@
  },
  "6726f0de2d9cac2a": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003wp3UAA_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1007889151685275%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D020fc891-d9ff-11f1-873f-eb2537aff612%26rx_job%3Da1KiE0000003wp3UAA_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003wp3UAA_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1007889151685275%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D020fc891-d9ff-11f1-873f-eb2537aff612%26rx_job%3Da1KiE0000003wp3UAA_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-07",
@@ -98039,11 +98146,10 @@
   "work_mode": ""
  },
  "6ca2d5120cddedb4": {
-  "active": false,
+  "active": true,
   "apply_url": "",
   "apply_url_own": false,
   "band": "top",
-  "closed": "2026-11-07",
   "company": "ONENERGY",
   "date_posted": "2026-10-30",
   "first_seen": "2026-10-30",
@@ -98055,6 +98161,7 @@
   "pay": "",
   "priority": true,
   "rationale": "Owns the product roadmap and business case for data center power infrastructure hardware, reporting to the SVP of Engineering, a core power-product leadership role.",
+  "reopened": "2026-11-08",
   "score": 90,
   "scoring_fingerprint": {
    "at": "2026-10-30T19:30Z",
@@ -98479,8 +98586,9 @@
   "work_mode_by": "triage"
  },
  "6d375582cc6a62b6": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-11-08",
   "company": "PG&E",
   "date_posted": "2026-08-25",
   "duplicate": true,
@@ -102918,7 +103026,7 @@
  },
  "71bc720484b3d61f": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004CVdUAM&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1139887762235474%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D6acc6d97-d95a-11f1-a517-4b0449688579%26rx_job%3Da1KiE0000004CVdUAM%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004CVdUAM&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1139887762235474%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D6acc6d97-d95a-11f1-a517-4b0449688579%26rx_job%3Da1KiE0000004CVdUAM%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-06",
@@ -107248,7 +107356,8 @@
    "DUNCAN, OK, US, 73533",
    "MILL CREEK, OK, US, 74856",
    "HOLLANDALE, MS, US, 38748",
-   "Town of Dix, NY, US, 14891"
+   "Town of Dix, NY, US, 14891",
+   "Amsterdam, NY, US, 12010"
   ],
   "pay": "",
   "pay_checked": true,
@@ -108944,9 +109053,11 @@
   "work_mode": "hybrid"
  },
  "7883115fcc26aa50": {
+  "active": false,
   "apply_url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/346923",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-08",
   "company": "Oracle",
   "date_posted": "2026-10-06",
   "first_seen": "2026-10-07",
@@ -109288,7 +109399,7 @@
  },
  "7917f2ff9028c956": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657076-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657076-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecd4476-d7fe-11f1-be6a-0328b4b5feb8%26rx_job%3D200657076-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261105T220412Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657076-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657076-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecd4476-d7fe-11f1-be6a-0328b4b5feb8%26rx_job%3D200657076-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -111824,7 +111935,7 @@
   "work_mode": "remote"
  },
  "7c5ebb604ea2580a": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200674135-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200674135-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51458c66-d7fe-11f1-acc4-0328b4b5feb8%26rx_job%3D200674135-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200674135-1902-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200674135-1902%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D51458c66-d7fe-11f1-acc4-0328b4b5feb8%26rx_job%3D200674135-1902-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "weak",
   "company": "Apple",
@@ -112628,7 +112739,7 @@
  },
  "7d324687fe8eda9e": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657085-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657085-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ece2856-d7fe-11f1-b1d1-0328b4b5feb8%26rx_job%3D200657085-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657085-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657085-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ece2856-d7fe-11f1-b1d1-0328b4b5feb8%26rx_job%3D200657085-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-27",
@@ -114476,9 +114587,11 @@
   "work_mode": "remote"
  },
  "7ef3c392774009d3": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-08",
   "company": "Shell",
   "date_posted": "2026-10-29",
   "first_seen": "2026-10-29",
@@ -129745,7 +129858,8 @@
    "West Sacramento, CA, US, 95605",
    "Oakland, CA, US, 94612",
    "Fresno, CA, US, 93721",
-   "Brentwood, CA, US, 94513"
+   "Brentwood, CA, US, 94513",
+   "Santa Maria, CA, US, 93455"
   ],
   "pay": "$161,520\u2013$207,504",
   "pay_checked": true,
@@ -129754,8 +129868,8 @@
   "score": 66,
   "seniority_match": false,
   "source": "successfactors",
-  "title": "Senior Electric Distribution Engineer, Asset Strategy Engineering - Oakland",
-  "url": "https://careers.pge.com/job/Oakland-Senior-Electric-Distribution-Engineer%2C-Asset-Strategy-Engineering-Oakland-CA-94612/1419315900/",
+  "title": "Senior, Electric Distribution Engineer, Asset Strategy Engineering - Oakland",
+  "url": "https://careers.pge.com/job/Oakland-Senior%2C-Electric-Distribution-Engineer%2C-Asset-Strategy-Engineering-Oakland-CA-94612/1419315900/",
   "work_mode": "hybrid"
  },
  "8f953b088cf2fd9c": {
@@ -130193,7 +130307,7 @@
  },
  "900b8376a157bbdf": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657082-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657082-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecdfe43-d7fe-11f1-b59b-0328b4b5feb8%26rx_job%3D200657082-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200657081-3543-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200657081-3543%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D4ecdcd98-d7fe-11f1-a6d0-0328b4b5feb8%26rx_job%3D200657081-3543-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -133862,7 +133976,7 @@
   "seniority_match": true,
   "source": "successfactors",
   "title": "Program Manager, Expert",
-  "url": "https://careers.pge.com/job/San-Jose-Program-Manager%2C-Expert-CA-95113/1448231700/",
+  "url": "https://careers.pge.com/job/Oakland-Program-Manager%2C-Expert-CA-94612/1428858700/",
   "work_mode": "hybrid"
  },
  "9409d107f4ba0642": {
@@ -144900,7 +145014,8 @@
    "Miami, FL, US, 33134",
    "Cisco, TX, US, 76437",
    "Maryland Heights, MO, US, 63043",
-   "North Palm Beach, FL, US, 33408"
+   "North Palm Beach, FL, US, 33408",
+   "Melbourne, FL, US, 32904"
   ],
   "pay": "",
   "pay_checked": true,
@@ -144916,7 +145031,7 @@
   "seniority_match": false,
   "source": "successfactors",
   "title": "Sr Power Generation Technical Services Specialist",
-  "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Sr-Power-Generation-Technical-Services-Specialist-FL-33410/1438025300/",
+  "url": "https://jobs.nexteraenergy.com/job/Palm-Beach-Gardens-Sr-Power-Generation-Technical-Services-Specialist-Energy-Cost-FL-33410/1409147300/",
   "work_mode": "onsite"
  },
  "a0328c506d2c6455": {
@@ -149969,9 +150084,11 @@
   "work_mode": "remote"
  },
  "a634b74cb038a300": {
+  "active": false,
   "apply_url": "https://www.applicantpro.com/openings/heberpower/jobs/4237192-419254",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-08",
   "company": "Heber Light and Power Company",
   "date_posted": "2026-10-08",
   "first_seen": "2026-10-08",
@@ -151661,6 +151778,38 @@
   "source": "indeed",
   "title": "HVAC & Electrical Applications Instructor - B2B",
   "url": "https://www.indeed.com/viewjob?jk=d5c9b3ee96baeec4",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
+ "a7ce858ad25fe90d": {
+  "active": false,
+  "apply_url": "https://recruiting.adp.com/srccsh/public/RTI.home?r=5001236578300&c=2166501&d=WWTExternalCareerSite&rb=INDEED&idUnique=5001236578300",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-08",
+  "company": "World Wide Technology",
+  "date_posted": "2026-11-06",
+  "first_seen": "2026-11-08",
+  "first_seen_at": "2026-11-08T18:55:39Z",
+  "location": "Arlington, VA, USA",
+  "locations": [
+   "Arlington, VA, USA"
+  ],
+  "lowscore": true,
+  "pay": "$160,000\u2013$180,000/yr",
+  "priority": false,
+  "rationale": "Pre-sales and post-sales technical sales role for federal data center programs at an IT reseller; quota-carrying sales, not product or strategy work.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-08T18:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Federal Data Center Programs and Infrastructure Executive",
+  "url": "https://www.indeed.com/viewjob?jk=1a257d074ca109f2",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -154238,7 +154387,7 @@
  },
  "aaae5e228d3e03ba": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200675775-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200675775-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D514e0211-d7fe-11f1-a91a-0328b4b5feb8%26rx_job%3D200675775-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200675775-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200675775-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D514e0211-d7fe-11f1-a91a-0328b4b5feb8%26rx_job%3D200675775-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180406Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-04",
@@ -170441,7 +170590,8 @@
   "locations": [
    "Oakland, CA, USA",
    "Fresno, CA, US, 93710",
-   "West Sacramento, CA, US, 95605"
+   "West Sacramento, CA, US, 95605",
+   "Fresno, CA, US, 93725"
   ],
   "pay": "$140,000\u2013$238,000/yr",
   "priority": true,
@@ -173466,7 +173616,8 @@
   "locations": [
    "Juno Beach, FL, US, 33408",
    "Palm Beach Gardens, FL, US, 33410",
-   "St. Paul, MN, US, 55107"
+   "St. Paul, MN, US, 55107",
+   "Melbourne, FL, US, 32904"
   ],
   "lowscore": true,
   "pay": "",
@@ -176209,7 +176360,8 @@
    "Antioch, CA, US, 94509",
    "Oakland, CA, US, 94612",
    "Fresno, CA, US, 93710",
-   "West Sacramento, CA, US, 95605"
+   "West Sacramento, CA, US, 95605",
+   "Oakland, CA, US, 94601"
   ],
   "pay": "$140,000\u2013$238,000",
   "priority": false,
@@ -176702,7 +176854,7 @@
   "work_mode": ""
  },
  "c4a0875ee8d528ac": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003nQnUAI_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1671011604365053%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc5726e73-d935-11f1-9e33-61e283b91e40%26rx_job%3Da1KiE0000003nQnUAI_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003nQnUAI_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1671011604365053%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc5726e73-d935-11f1-9e33-61e283b91e40%26rx_job%3Da1KiE0000003nQnUAI_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -181964,7 +182116,9 @@
   "work_mode": "onsite"
  },
  "ca94c3c94ebdd3db": {
+  "active": false,
   "band": "misfit",
+  "closed": "2026-11-08",
   "company": "OpenAI",
   "date_posted": "2026-07-22",
   "first_seen": "2026-08-28",
@@ -193130,9 +193284,11 @@
   "work_mode_by": "fetch"
  },
  "d637f22cef9780a1": {
+  "active": false,
   "apply_url": "https://jobs2.smartsearchonline.com/tworoads/jobs_mc/jobdetails.asp?da=&refid=575_86980&job_number=86980&sourcename=Indeed",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-08",
   "company": "Motive Companies",
   "date_posted": "2026-10-09",
   "first_seen": "2026-10-09",
@@ -193372,7 +193528,8 @@
    "Oakland, CA, US, 94612",
    "Fresno, CA, US, 93710",
    "San Jose, CA, US, 95113",
-   "Angels Camp, CA, US, 95222"
+   "Angels Camp, CA, US, 95222",
+   "Antioch, CA, US, 94509"
   ],
   "pay": "$161,520\u2013$207,504/yr",
   "priority": true,
@@ -193672,7 +193829,7 @@
  },
  "d744cb9a7cfabcf4": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004D8LUAU&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1111221755150271%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D72bae738-d71d-11f1-878a-ef81fa0af279%26rx_job%3Da1KiE0000004D8LUAU%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004D8LUAU&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1111221755150271%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D72bae738-d71d-11f1-878a-ef81fa0af279%26rx_job%3Da1KiE0000004D8LUAU%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-03",
@@ -194179,9 +194336,8 @@
   "work_mode": ""
  },
  "d7f20c6a990b957c": {
-  "active": false,
+  "active": true,
   "band": "weak",
-  "closed": "2026-11-06",
   "company": "OpenAI",
   "date_posted": "2026-04-20",
   "first_seen": "2026-08-28",
@@ -194192,11 +194348,11 @@
   "pay": "$226K \u2013 $285K \u00b7 Offers Equity",
   "priority": false,
   "rationale": "Engineering program manager for data center network and whitespace infrastructure without energy/power focus.",
-  "reopened": "2026-11-02",
+  "reopened": "2026-11-08",
   "score": 52,
   "seniority_match": true,
   "source": "ashby",
-  "title": "White Space Manager",
+  "title": "White Space Manager, Network & Data Halls",
   "url": "https://jobs.ashbyhq.com/openai/0ed12b35-0115-4ad3-81f5-ea1bb05c9f6b",
   "work_mode": "remote",
   "work_mode_by": "triage"
@@ -194980,7 +195136,8 @@
   "location": "Tracy, CA, US, 95377",
   "locations": [
    "Tracy, CA, US, 95377",
-   "San Jose, CA, US, 95113"
+   "San Jose, CA, US, 95113",
+   "Angels Camp, CA, US, 95222"
   ],
   "pay": "$153,828\u2013$197,628",
   "priority": false,
@@ -195208,7 +195365,10 @@
    "Oakland, CA, US, 94612",
    "Sacramento, CA, US, 95833",
    "San Jose, CA, US, 95113",
-   "Redding, CA, US, 96003"
+   "Redding, CA, US, 96003",
+   "Fresno, CA, US, 93710",
+   "Antioch, CA, US, 94509",
+   "Angels Camp, CA, US, 95222"
   ],
   "lowscore": true,
   "pay": "$99,936\u2013$150,108",
@@ -202384,7 +202544,8 @@
    "Palo, IA, US, 52324",
    "Jupiter, FL, US, 33478",
    "Pensacola, FL, US, 32514",
-   "Miami, FL, US, 33134"
+   "Miami, FL, US, 33134",
+   "North Palm Beach, FL, US, 33408"
   ],
   "lowscore": true,
   "pay": "",
@@ -209137,7 +209298,8 @@
    "Green Cove Springs, FL, US, 32043",
    "Jupiter, FL, US, 33478",
    "Maryland Heights, MO, US, 63043",
-   "North Palm Beach, FL, US, 33408"
+   "North Palm Beach, FL, US, 33408",
+   "Miami, FL, US, 33134"
   ],
   "lowscore": true,
   "pay": "",
@@ -213416,7 +213578,7 @@
   "work_mode": "remote"
  },
  "ec90876d2108abfb": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RuTUAU_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1656970702686685%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D00d2a344-d9ff-11f1-9148-eb2537aff612%26rx_job%3Da1KiE0000004RuTUAU_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261107T200407Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RuTUAU_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1656970702686685%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D00d2a344-d9ff-11f1-9148-eb2537aff612%26rx_job%3Da1KiE0000004RuTUAU_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261108T180405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -216994,7 +217156,8 @@
    "MILL CREEK, OK, US, 74856",
    "HOLLANDALE, MS, US, 38748",
    "ROSELAND, LA, US, 70456",
-   "Town of Dix, NY, US, 14891"
+   "Town of Dix, NY, US, 14891",
+   "Amsterdam, NY, US, 12010"
   ],
   "pay": "",
   "priority": true,
@@ -228630,7 +228793,8 @@
    "San Jose, CA, US, 95119",
    "Fresno, CA, US, 93710",
    "Redding, CA, US, 96002",
-   "Angels Camp, CA, US, 95222"
+   "Angels Camp, CA, US, 95222",
+   "Antioch, CA, US, 94509"
   ],
   "pay": "$115,128\u2013$175,080",
   "priority": false,
