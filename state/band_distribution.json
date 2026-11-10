@@ -1,15 +1,6 @@
 [
  {
   "date": "2026-09-15",
-  "scored": 21,
-  "bands": {
-   "weak": 9,
-   "possible": 2,
-   "misfit": 10
-  }
- },
- {
-  "date": "2026-09-15",
   "scored": 0,
   "bands": {}
  },
@@ -1123,6 +1114,15 @@
    "weak": 19,
    "misfit": 26,
    "possible": 6
+  }
+ },
+ {
+  "date": "2026-11-10",
+  "scored": 5,
+  "bands": {
+   "misfit": 2,
+   "weak": 2,
+   "strong": 1
   }
  }
 ]
