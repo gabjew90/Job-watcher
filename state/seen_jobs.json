@@ -26162,7 +26162,7 @@
   "work_mode_by": "fetch"
  },
  "1ae2df24c2de1a79": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T220410Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -84795,6 +84795,38 @@
   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Strategic-Sourcing-Manager---Real-Estate-and-Data-Center-Construction_JR2025302",
   "work_mode": ""
  },
+ "5a8cabdd67efdfa1": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-11-12",
+  "company": "QTS",
+  "date_posted": "2026-11-12",
+  "first_seen": "2026-11-12",
+  "first_seen_at": "2026-11-12T22:56:26Z",
+  "location": "US VA Ashburn 1 DC1",
+  "locations": [
+   "US VA Ashburn 1 DC1"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Top executive leading external and government affairs for a data center operator, a policy and communications function outside the energy-strategy focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-12T22:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Senior Vice President, National External Affairs",
+  "url": "https://qtsdatacenters.wd5.myworkdayjobs.com/en-US/qts/job/US-VA-Ashburn-1-DC1/Senior-Vice-President--National-External-Affairs_R2026-2471",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "5a8f8c6445559a83": {
   "active": true,
   "band": "misfit",
@@ -88710,7 +88742,9 @@
   "work_mode": ""
  },
  "5f099911721a9d2b": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-12",
   "company": "Tesla",
   "date_posted": "2026-08-29",
   "first_seen": "2026-08-31",
@@ -89447,6 +89481,35 @@
   "title": "Electrical And Electronics Engineering AI Evaluator",
   "url": "https://www.indeed.com/viewjob?jk=96e739b03625ac9e",
   "work_mode": "remote"
+ },
+ "6022b9032b4fbfef": {
+  "apply_url": "https://careers.jacobs.com/en_US/careers/JobDetail/Senior-Consultant-Transmission-Advisory/48270",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Jacobs",
+  "date_posted": "2026-11-12",
+  "first_seen": "2026-11-12",
+  "first_seen_at": "2026-11-12T22:56:26Z",
+  "location": "Chicago, IL, USA",
+  "locations": [
+   "Chicago, IL, USA"
+  ],
+  "pay": "$162,900\u2013$213,825/yr",
+  "priority": true,
+  "rationale": "Senior consultant leading transmission planning and interconnection advisory studies, blending power-systems engineering with market economics; a deep technical consulting role.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-12T22:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Consultant, Transmission Advisory",
+  "url": "https://www.indeed.com/viewjob?jk=1a496785583e5690",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
  },
  "602db5f98161f140": {
   "active": false,
@@ -103218,7 +103281,8 @@
    "Rochester, MI, US",
    "Burlington, VT, US",
    "Washington, DC, US",
-   "Mechanicsville, VA, US"
+   "Mechanicsville, VA, US",
+   "Richmond, Virginia, United States of America"
   ],
   "pay": "$100,500\u2013$160,800/yr",
   "priority": true,
@@ -103231,9 +103295,9 @@
    "rubric": "abcdf1530a"
   },
   "seniority_match": false,
-  "source": "indeed",
+  "source": "workday",
   "title": "Product Manager",
-  "url": "https://www.indeed.com/viewjob?jk=ceae0929c403adf9",
+  "url": "https://abb.wd3.myworkdayjobs.com/en-US/External_Career_Page/job/Richmond-Virginia-United-States-of-America/Product-Manager_JR00050962",
   "work_mode": "remote"
  },
  "6edd98aedc2a3953": {
@@ -103988,6 +104052,35 @@
   "title": "Reliability Engineer, Electrical Systems, APAC",
   "url": "https://vantagedc.wd1.myworkdayjobs.com/en-US/Vantage/job/Osaka-Japan/Reliability-Engineer--Electrical-Systems--APAC_R22886",
   "work_mode": ""
+ },
+ "6fa9f01733330071": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "Johnson Controls",
+  "date_posted": "2026-11-12",
+  "first_seen": "2026-11-12",
+  "first_seen_at": "2026-11-12T22:56:26Z",
+  "location": "Durango-Durango-Mexico",
+  "locations": [
+   "Durango-Durango-Mexico"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Plain program manager title based in Mexico with no stated scope, duties, or seniority signal to evaluate fit against.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-12T22:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Program Manager",
+  "url": "https://jci.wd5.myworkdayjobs.com/en-US/JCI/job/Durango-Durango-Mexico/System-Program-Mgr--SAP---MES-_WD30283153",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "6fb4cd88702bf8e2": {
   "active": false,
@@ -106415,7 +106508,7 @@
  },
  "71bc720484b3d61f": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004CVdUAM&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1139887762235474%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D6acc6d97-d95a-11f1-a517-4b0449688579%26rx_job%3Da1KiE0000004CVdUAM%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004CVdUAM&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1139887762235474%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D6acc6d97-d95a-11f1-a517-4b0449688579%26rx_job%3Da1KiE0000004CVdUAM%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T220410Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-06",
@@ -108749,6 +108842,38 @@
   "title": "Senior Planner",
   "url": "https://gevernova.wd5.myworkdayjobs.com/en-US/Vernova_ExternalSite/job/Remote/Senior-Planner_R5048624-2",
   "work_mode": ""
+ },
+ "743c897eeb46dacf": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-11-12",
+  "company": "QTS",
+  "date_posted": "2026-11-10",
+  "first_seen": "2026-11-12",
+  "first_seen_at": "2026-11-12T22:56:26Z",
+  "location": "US VA Ashburn 1 DC1",
+  "locations": [
+   "US VA Ashburn 1 DC1"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Senior executive leading external and government affairs for a data center operator, a policy and communications function outside the energy-strategy focus.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-12T22:56Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "workday",
+  "title": "Executive Vice President, External Affairs",
+  "url": "https://qtsdatacenters.wd5.myworkdayjobs.com/en-US/qts/job/US-VA-Ashburn-1-DC1/Executive-Vice-President--External-Affairs_R2026-2457",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "74438e6bc3462115": {
   "apply_url": "https://nttglobaldatacenters.wd501.myworkdayjobs.com/en-US/External/job/Remote-USA/Director--Engineering-Standards---Safety_JR102197",
@@ -115858,7 +115983,9 @@
   "work_mode": ""
  },
  "7c65f2ccf33190ce": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-12",
   "company": "NextEra Energy",
   "date_posted": "2026-09-02",
   "first_seen": "2026-09-02",
@@ -117136,7 +117263,8 @@
    "PALO, IA, US, 52324",
    "Mt Calm, TX, US, 76673",
    "Buckeye, AZ, US, 85326",
-   "CLIMAX, GA, US, 39834"
+   "CLIMAX, GA, US, 39834",
+   "WAYNESBORO, GA, US, 30830"
   ],
   "lowscore": false,
   "pay": "",
@@ -140511,7 +140639,8 @@
   "location": "Palm Beach Gardens, FL, US, 33410",
   "locations": [
    "Palm Beach Gardens, FL, US, 33410",
-   "Juno Beach, FL, US, 33408"
+   "Juno Beach, FL, US, 33408",
+   "Ozona, TX, US, 76943"
   ],
   "lowscore": true,
   "pay": "",
@@ -143263,7 +143392,8 @@
   "source": "jibe",
   "title": "Claims Advocate \u2013 Construction & Infrastructure",
   "url": "https://jobs.aon.com/careers-home/jobs/101901?lang=en-us",
-  "work_mode": "hybrid"
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
  },
  "9935a6a1ac56f1e9": {
   "active": false,
@@ -159362,7 +159492,7 @@
   },
   "seniority_match": true,
   "source": "lever",
-  "title": "Senior Director, Data Center Design & Engineering",
+  "title": "Senior Director, Data Center Design & Engineering \u2013 AI Data Centers",
   "url": "https://jobs.lever.co/cleanspark/9a6b1036-bd0c-4b53-9738-4636085950ed",
   "work_mode": "hybrid",
   "work_mode_by": "fetch"
@@ -181178,7 +181308,9 @@
   "work_mode": "onsite"
  },
  "c20bf2a69ef92507": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-12",
   "company": "Anthropic",
   "date_posted": "2026-09-03",
   "first_seen": "2026-09-03",
@@ -183398,7 +183530,7 @@
   "work_mode": ""
  },
  "c4a0875ee8d528ac": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003nQnUAI_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1671011604365053%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc5726e73-d935-11f1-9e33-61e283b91e40%26rx_job%3Da1KiE0000003nQnUAI_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000003nQnUAI_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1671011604365053%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc5726e73-d935-11f1-9e33-61e283b91e40%26rx_job%3Da1KiE0000003nQnUAI_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T220410Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -189542,7 +189674,9 @@
   "work_mode": ""
  },
  "cb5dfd3ae861aed9": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-11-12",
   "company": "Micron Technology",
   "date_posted": "2026-09-10",
   "first_seen": "2026-09-13",
@@ -202018,7 +202152,8 @@
   "source": "microsoft",
   "title": "Data Center Technicians Manager",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393556982122",
-  "work_mode": "onsite"
+  "work_mode": "onsite",
+  "work_mode_by": "fetch"
  },
  "d8b080e9a10c45d1": {
   "band": "misfit",
@@ -210943,7 +211078,7 @@
   "seniority_match": false,
   "source": "microsoft",
   "title": "Energy Resource Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393557072842",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557050315",
   "work_mode": "onsite"
  },
  "e2114e24432a9988": {
@@ -221116,7 +221251,7 @@
   "work_mode": "remote"
  },
  "ec90876d2108abfb": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RuTUAU_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1656970702686685%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D00d2a344-d9ff-11f1-9148-eb2537aff612%26rx_job%3Da1KiE0000004RuTUAU_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T200405Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RuTUAU_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1656970702686685%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D00d2a344-d9ff-11f1-9148-eb2537aff612%26rx_job%3Da1KiE0000004RuTUAU_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261112T220410Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -233903,7 +234038,8 @@
   "source": "ashby",
   "title": "Mechanical Engineer II, Advanced Product Development",
   "url": "https://jobs.ashbyhq.com/formenergy/e13679dc-6c3f-4fc5-8f52-2d4f553fa8ef",
-  "work_mode": "onsite"
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "faa1ac578fb945bf": {
   "active": false,
