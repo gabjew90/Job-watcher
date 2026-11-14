@@ -10179,6 +10179,38 @@
   "url": "https://www.indeed.com/viewjob?jk=1b56df577a02ea73",
   "work_mode": "onsite"
  },
+ "0a35326fc0785d12": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-11-14",
+  "company": "Bitdeer Technologies Group",
+  "date_posted": "2026-07-06",
+  "first_seen": "2026-11-14",
+  "first_seen_at": "2026-11-14T21:25:02Z",
+  "location": "Singapore, SG",
+  "locations": [
+   "Singapore, SG"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Procurement manager sourcing AI compute hardware in Singapore, a corporate supply-chain function with no energy or power scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-14T21:25Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "breezy",
+  "title": "Procurement Manager (AI Compute)",
+  "url": "https://bitdeer.breezy.hr/p/306224aea68c-procurement-manager-ai-compute",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "0a37ae51f384d3f5": {
   "active": false,
   "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002Fe5UAE&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2309543522914406%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dd5e90772-c1a2-11f1-a916-51ee4f905d1e%26rx_job%3Da1KiE0000002Fe5UAE%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261013T200403Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
@@ -26277,7 +26309,7 @@
   "work_mode_by": "fetch"
  },
  "1ae2df24c2de1a79": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261114T180513Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261114T200440Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -42277,7 +42309,7 @@
  "2bce4ce8ccff3605": {
   "band": "possible",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-10-27",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T19:11:24Z",
   "location": "Lilydale, Victoria, Australia",
@@ -45908,7 +45940,7 @@
   "band": "misfit",
   "closed": "2026-09-14",
   "company": "Hitachi",
-  "date_posted": "",
+  "date_posted": "2026-11-03",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T21:19:23Z",
   "location": "Madrid, Spain",
@@ -48531,7 +48563,8 @@
   "source": "breezy",
   "title": "Electrical Engineer",
   "url": "https://bitdeer.breezy.hr/p/07e73302c474-electrical-engineer",
-  "work_mode": "onsite"
+  "work_mode": "onsite",
+  "work_mode_by": "triage"
  },
  "3290ab5cbee11a1a": {
   "apply_url": "https://ulse.wd5.myworkdayjobs.com/en-US/ulricareers/job/Rockville-MD/Post-Doctoral-Researcher--Energy---AI---Electrochemical-Safety-Research-Institute_JR1595-1",
@@ -53854,7 +53887,8 @@
   "source": "greenhouse",
   "title": "Structural Engineer (Starship Infrastructure)",
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8790404002",
-  "work_mode": "onsite"
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "37d188ad442c05cb": {
   "active": false,
@@ -59149,7 +59183,7 @@
   "work_mode": ""
  },
  "3dc4ddd7a230c36a": {
-  "apply_url": "",
+  "apply_url": "https://jobs.xcelenergy.com/senior-director-architecture/job/3B620B0505322ECE79D58E269DDC1E42",
   "apply_url_own": false,
   "band": "possible",
   "company": "Xcel Energy",
@@ -59158,9 +59192,10 @@
   "first_seen_at": "2026-11-12T21:41:03Z",
   "location": "2 Locations",
   "locations": [
-   "2 Locations"
+   "2 Locations",
+   "Minneapolis, MN, USA"
   ],
-  "pay": "",
+  "pay": "$200,000\u2013$250,000/yr",
   "priority": false,
   "rationale": "A senior director of architecture role at utility Xcel Energy with no posted description clarifying whether the scope is grid or IT architecture.",
   "score": 55,
@@ -59174,7 +59209,7 @@
   "source": "workday",
   "title": "Senior Director, Architecture",
   "url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Minneapolis-MN-55401/Senior-Director--Architecture_JR117576",
-  "work_mode": "",
+  "work_mode": "hybrid",
   "work_mode_by": ""
  },
  "3dc8a5c2bf9ef831": {
@@ -63835,7 +63870,8 @@
   "source": "breezy",
   "title": "Account Manager - Mining Datacenter / Seal Miner",
   "url": "https://bitdeer.breezy.hr/p/6a9e745f68c0-account-manager-mining-datacenter-seal-miner",
-  "work_mode": "hybrid"
+  "work_mode": "hybrid",
+  "work_mode_by": "triage"
  },
  "42c4285e0a476871": {
   "active": false,
@@ -80567,7 +80603,7 @@
   "band": "misfit",
   "closed": "2026-09-14",
   "company": "Micron Technology",
-  "date_posted": "",
+  "date_posted": "2026-10-24",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T19:11:24Z",
   "location": "Fab 10N/X, Singapore",
@@ -85075,7 +85111,8 @@
   "source": "breezy",
   "title": "Low Voltage Systems Engineer",
   "url": "https://bitdeer.breezy.hr/p/208780fd8006-low-voltage-systems-engineer",
-  "work_mode": "onsite"
+  "work_mode": "onsite",
+  "work_mode_by": "triage"
  },
  "5a6ea44f38cb8642": {
   "active": false,
@@ -86346,7 +86383,8 @@
   "source": "greenhouse",
   "title": "Sr Due Diligence Design Engineer",
   "url": "https://job-boards.greenhouse.io/coreweave/jobs/4712580006",
-  "work_mode": "onsite"
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "5bdd833789fe8018": {
   "active": false,
@@ -87686,20 +87724,23 @@
   "work_mode_by": "fetch"
  },
  "5d4f57f224c34ad2": {
-  "active": false,
+  "active": true,
   "band": "misfit",
-  "closed": "2026-09-14",
   "company": "Nebius",
   "date_posted": "2026-08-20",
   "first_seen": "2026-08-28",
   "location": "United States",
+  "locations": [
+   "United States"
+  ],
   "pay": "$179,500",
   "priority": false,
   "rationale": "Network SRE for AI infrastructure; pure platform/reliability engineering with no energy or datacenter infrastructure strategy.",
+  "reopened": "2026-11-14",
   "score": 25,
   "seniority_match": false,
   "source": "greenhouse",
-  "title": "Infrastructure Site Reliability Engineer",
+  "title": "Staff Network Site Reliability Engineer ",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4906462101",
   "work_mode": ""
  },
@@ -87869,7 +87910,7 @@
   "band": "misfit",
   "closed": "2026-09-14",
   "company": "Equinix",
-  "date_posted": "",
+  "date_posted": "2026-11-04",
   "first_seen": "2026-09-14",
   "first_seen_at": "2026-09-14T19:11:24Z",
   "location": "Singapore",
@@ -105852,6 +105893,35 @@
   "url": "https://www.indeed.com/viewjob?jk=319bf1f219c302c7",
   "work_mode": "",
   "work_mode_by": ""
+ },
+ "708bb413fe987f26": {
+  "apply_url": "https://grnh.se/drmpe0z39us",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "MGAC",
+  "date_posted": "2026-11-11",
+  "first_seen": "2026-11-14",
+  "first_seen_at": "2026-11-14T21:25:02Z",
+  "location": "Worthington, IN, USA",
+  "locations": [
+   "Worthington, IN, USA"
+  ],
+  "pay": "$135,000\u2013$160,000/yr",
+  "priority": false,
+  "rationale": "Construction project manager for data-center build-outs at a project-management consultancy, running schedule, budget and client relationships on site.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-14T21:25Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Template Data Center Construction- Mid to Senior Project Manager",
+  "url": "https://www.indeed.com/viewjob?jk=9c9de97b4c9c4a48",
+  "work_mode": "onsite",
+  "work_mode_by": "fetch"
  },
  "70906deca4aa64f2": {
   "apply_url": "",
@@ -146594,7 +146664,7 @@
   "work_mode": ""
  },
  "9bfe67e4028b56c1": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RZVUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2034556683904635%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb227fe-ddec-11f1-aa41-e9d61973004f%26rx_job%3Da1KiE0000004RZVUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261114T180513Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RZVUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2034556683904635%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb227fe-ddec-11f1-aa41-e9d61973004f%26rx_job%3Da1KiE0000004RZVUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261114T200440Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "strong",
   "company": "Meta",
@@ -175491,6 +175561,35 @@
   "url": "https://www.indeed.com/viewjob?jk=abcd0815e4bc040b",
   "work_mode": ""
  },
+ "ba6c6d6e2840ebac": {
+  "apply_url": "https://eversource.wd1.myworkdayjobs.com/ExternalSite/job/Hartford-CT/Lead-Engineer--Transmission-Technical-Engineering--Hybrid-Schedule-_R-032195",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "Eversource Energy",
+  "date_posted": "2026-11-13",
+  "first_seen": "2026-11-14",
+  "first_seen_at": "2026-11-14T21:25:02Z",
+  "location": "Hartford, CT, USA",
+  "locations": [
+   "Hartford, CT, USA"
+  ],
+  "pay": "$145,670\u2013$161,860/yr",
+  "priority": true,
+  "rationale": "Lead engineer owning transmission system design, planning, maintenance and failure resolution at a utility, a deep technical design role rather than product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-14T21:25Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Lead Engineer, Transmission Technical Engineering (Hybrid Schedule)",
+  "url": "https://www.indeed.com/viewjob?jk=edbc91442aeb151e",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
+ },
  "ba7b667dc9e80ab4": {
   "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Grid-Technologies-Industrial-Sales-Account-Manager-East-Coast-US-/306635",
@@ -177068,7 +177167,8 @@
   "source": "radancy",
   "title": "Sourcing Specialist",
   "url": "https://www.edisoncareers.com/job/23862575/sourcing-specialist-rosemead-ca/",
-  "work_mode": "hybrid"
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
  },
  "bc79d5986e2ee2df": {
   "active": false,
@@ -185442,7 +185542,8 @@
   "source": "breezy",
   "title": "Business Development Manager (Crypto Mining Equipment, Energy, Digital Infrastructure)",
   "url": "https://bitdeer.breezy.hr/p/36799ab314b6-business-development-manager-crypto-mining-equipment-energy-digital-infrastructure",
-  "work_mode": "hybrid"
+  "work_mode": "hybrid",
+  "work_mode_by": "triage"
  },
  "c5bfd4f147a53d53": {
   "active": false,
@@ -191516,7 +191617,7 @@
  },
  "cbf1045fb0826bb3": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261114T180513Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261114T200440Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-17",
@@ -192658,6 +192759,38 @@
   "source": "indeed",
   "title": "Senior Energy Engineer",
   "url": "https://www.indeed.com/viewjob?jk=c027025a9842be26",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
+ "cd0d9eb7499b696f": {
+  "active": false,
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001sWDUAY_1002&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1073659205651442%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0adbb07b-def9-11f1-9443-95b359edb48f%26rx_job%3Da1KiE0000001sWDUAY_1002%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261114T200440Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-14",
+  "company": "Meta",
+  "date_posted": "2026-11-07",
+  "first_seen": "2026-11-14",
+  "first_seen_at": "2026-11-14T21:25:02Z",
+  "location": "Washington, DC, USA",
+  "locations": [
+   "Washington, DC, USA"
+  ],
+  "lowscore": true,
+  "pay": "$249,000\u2013$323,000/yr",
+  "priority": false,
+  "rationale": "Director of product management for AI verification and evals tooling across Meta's product suite, with no energy, power or data-center infrastructure component.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-14T21:25Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director, Product Management - Verification",
+  "url": "https://www.indeed.com/viewjob?jk=e992700fc6f56157",
   "work_mode": "",
   "work_mode_by": ""
  },
