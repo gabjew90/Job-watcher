@@ -1,611 +1,6 @@
 {
  "runs": [
   {
-   "date": "2026-09-18 17:22",
-   "sources": {
-    "indeed-watch:Meta": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "indeed-watch:Tesla": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "indeed-watch:Vertiv": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "indeed-watch:Oracle": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "indeed-watch:LS Power": {
-     "ok": true,
-     "count": 1,
-     "error": null
-    },
-    "indeed-watch:GridStor": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Bitfarms": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Core Scientific": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Cipher Mining": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:TeraWulf": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Riot Platforms": {
-     "ok": true,
-     "count": 11,
-     "error": null
-    },
-    "indeed-watch:Marathon Digital": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Soluna": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Hive Digital": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:San Diego Gas & Electric": {
-     "ok": true,
-     "count": 1,
-     "error": null
-    },
-    "indeed-watch:Sempra": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Fluence": {
-     "ok": true,
-     "count": 6,
-     "error": null
-    },
-    "indeed-watch:Jupiter Power": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:esVolta": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Key Capture Energy": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Lancium": {
-     "ok": true,
-     "count": 1,
-     "error": null
-    },
-    "indeed-watch:Aligned Data Centers": {
-     "ok": true,
-     "count": 14,
-     "error": null
-    },
-    "indeed-watch:QTS Data Centers": {
-     "ok": true,
-     "count": 39,
-     "error": null
-    },
-    "indeed-watch:Switch": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Stonepeak": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Energy Capital Partners": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:ArcLight Capital": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Excelsior Energy Capital": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:KKR": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Solaris Energy Infrastructure": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Kevala": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Utilidata": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Camus Energy": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:WeaveGrid": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Verrus": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Pearl Street Technologies": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Station A": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Schneider Electric": {
-     "ok": true,
-     "count": 35,
-     "error": null
-    },
-    "indeed-watch:Eaton": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "indeed-watch:ABB": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "indeed-watch:Siemens Energy": {
-     "ok": true,
-     "count": 41,
-     "error": null
-    },
-    "indeed-watch:Powell Industries": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:VoltaGrid": {
-     "ok": true,
-     "count": 2,
-     "error": null
-    },
-    "indeed-watch:Enchanted Rock": {
-     "ok": true,
-     "count": 7,
-     "error": null
-    },
-    "indeed-watch:PowerSecure": {
-     "ok": true,
-     "count": 5,
-     "error": null
-    },
-    "indeed-watch:Compass Datacenters": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:nVent": {
-     "ok": true,
-     "count": 27,
-     "error": null
-    },
-    "indeed-watch:Prometheus Hyperscale": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Delta Electronics": {
-     "ok": true,
-     "count": 1,
-     "error": null
-    },
-    "indeed-watch:Mitsubishi Electric Power Products": {
-     "ok": true,
-     "count": 5,
-     "error": null
-    },
-    "indeed-watch:Modine": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "indeed-watch:ZutaCore": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Accelsius": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "indeed-watch:Apple": {
-     "ok": true,
-     "count": 50,
-     "error": null
-    },
-    "jobspy:indeed": {
-     "ok": true,
-     "count": 350,
-     "error": null
-    },
-    "microsoft": {
-     "ok": true,
-     "count": 40,
-     "error": "429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=data+center+flexibility&location=United+States&num=20"
-    },
-    "amazon": {
-     "ok": true,
-     "count": 67,
-     "error": null
-    },
-    "google": {
-     "ok": true,
-     "count": 63,
-     "error": null
-    },
-    "greenhouse:coreweave": {
-     "ok": true,
-     "count": 293,
-     "error": null
-    },
-    "greenhouse:pluspower": {
-     "ok": true,
-     "count": 6,
-     "error": null
-    },
-    "greenhouse:spearmintenergy": {
-     "ok": true,
-     "count": 4,
-     "error": null
-    },
-    "greenhouse:energyhub": {
-     "ok": true,
-     "count": 18,
-     "error": null
-    },
-    "lever:terawattinfrastructure": {
-     "ok": true,
-     "count": 4,
-     "error": null
-    },
-    "ashby:crusoe": {
-     "ok": true,
-     "count": 360,
-     "error": null
-    },
-    "ashby:base-power": {
-     "ok": true,
-     "count": 193,
-     "error": null
-    },
-    "ashby:gridcare": {
-     "ok": true,
-     "count": 6,
-     "error": null
-    },
-    "greenhouse:spacex": {
-     "ok": true,
-     "count": 2497,
-     "error": null
-    },
-    "greenhouse:anthropic": {
-     "ok": true,
-     "count": 609,
-     "error": null
-    },
-    "greenhouse:nebius": {
-     "ok": true,
-     "count": 384,
-     "error": null
-    },
-    "ashby:openai": {
-     "ok": true,
-     "count": 816,
-     "error": null
-    },
-    "ashby:emerald-ai": {
-     "ok": true,
-     "count": 11,
-     "error": null
-    },
-    "greenhouse:niraenergy": {
-     "ok": true,
-     "count": 3,
-     "error": null
-    },
-    "ashby:neara": {
-     "ok": true,
-     "count": 39,
-     "error": null
-    },
-    "lever:gridware": {
-     "ok": true,
-     "count": 20,
-     "error": null
-    },
-    "lever:exowatt": {
-     "ok": true,
-     "count": 18,
-     "error": null
-    },
-    "ashby:tyba": {
-     "ok": true,
-     "count": 6,
-     "error": null
-    },
-    "ashby:texture": {
-     "ok": true,
-     "count": 7,
-     "error": null
-    },
-    "greenhouse:amperon": {
-     "ok": true,
-     "count": 2,
-     "error": null
-    },
-    "ashby:generate": {
-     "ok": true,
-     "count": 15,
-     "error": null
-    },
-    "greenhouse:digitalbridge": {
-     "ok": true,
-     "count": 5,
-     "error": null
-    },
-    "greenhouse:hut8": {
-     "ok": true,
-     "count": 58,
-     "error": null
-    },
-    "lever:cleanspark": {
-     "ok": true,
-     "count": 8,
-     "error": null
-    },
-    "greenhouse:sbenergy": {
-     "ok": true,
-     "count": 51,
-     "error": null
-    },
-    "greenhouse:liquidstack": {
-     "ok": true,
-     "count": 0,
-     "error": null
-    },
-    "edged:all": {
-     "ok": true,
-     "count": 71,
-     "error": null
-    },
-    "lever:mainspringenergy": {
-     "ok": true,
-     "count": 88,
-     "error": null
-    },
-    "greenhouse:submer": {
-     "ok": true,
-     "count": 8,
-     "error": null
-    },
-    "ashby:formenergy": {
-     "ok": true,
-     "count": 199,
-     "error": null
-    },
-    "greenhouse:veir": {
-     "ok": true,
-     "count": 13,
-     "error": null
-    },
-    "greenhouse:teneo": {
-     "ok": true,
-     "count": 40,
-     "error": null
-    },
-    "greenhouse:onenergy": {
-     "ok": true,
-     "count": 54,
-     "error": null
-    },
-    "greenhouse:energycx": {
-     "ok": true,
-     "count": 5,
-     "error": null
-    },
-    "workday:nvidia": {
-     "ok": true,
-     "count": 94,
-     "error": null
-    },
-    "workday:gevernova": {
-     "ok": true,
-     "count": 84,
-     "error": null
-    },
-    "workday:nextracker": {
-     "ok": true,
-     "count": 51,
-     "error": null
-    },
-    "workday:brookfield": {
-     "ok": true,
-     "count": 20,
-     "error": null
-    },
-    "workday:blackstone": {
-     "ok": true,
-     "count": 1,
-     "error": null
-    },
-    "workday:servicetitan": {
-     "ok": true,
-     "count": 27,
-     "error": null
-    },
-    "workday:vantagedc": {
-     "ok": true,
-     "count": 57,
-     "error": null
-    },
-    "workday:flextronics": {
-     "ok": true,
-     "count": 57,
-     "error": null
-    },
-    "workday:bloomenergy": {
-     "ok": true,
-     "count": 57,
-     "error": null
-    },
-    "workday:tranetechnologies": {
-     "ok": true,
-     "count": 67,
-     "error": null
-    },
-    "workday:jci": {
-     "ok": true,
-     "count": 90,
-     "error": null
-    },
-    "workday:hitachi": {
-     "ok": true,
-     "count": 113,
-     "error": null
-    },
-    "workday:equinix": {
-     "ok": true,
-     "count": 71,
-     "error": null
-    },
-    "workday:micron": {
-     "ok": true,
-     "count": 67,
-     "error": null
-    },
-    "workday:nisource": {
-     "ok": true,
-     "count": 9,
-     "error": null
-    },
-    "workday:wgl": {
-     "ok": true,
-     "count": 22,
-     "error": null
-    },
-    "workday:solvenergy": {
-     "ok": true,
-     "count": 35,
-     "error": null
-    },
-    "workday:woodmac": {
-     "ok": true,
-     "count": 34,
-     "error": null
-    },
-    "successfactors:PG&E": {
-     "ok": true,
-     "count": 85,
-     "error": null
-    },
-    "successfactors:NextEra Energy": {
-     "ok": true,
-     "count": 71,
-     "error": null
-    },
-    "radancy:Southern California Edison": {
-     "ok": true,
-     "count": 217,
-     "error": null
-    },
-    "hibob:IREN": {
-     "ok": true,
-     "count": 268,
-     "error": null
-    },
-    "adp:Applied Digital": {
-     "ok": true,
-     "count": 6,
-     "error": null
-    },
-    "jibe:AMD": {
-     "ok": true,
-     "count": 155,
-     "error": null
-    },
-    "jibe:Aon": {
-     "ok": true,
-     "count": 78,
-     "error": null
-    },
-    "page:Flux Power": {
-     "ok": true,
-     "count": 2,
-     "error": null
-    },
-    "smartrecruiters:NBCUniversal": {
-     "ok": true,
-     "count": 107,
-     "error": null
-    },
-    "breezy:Bitdeer Technologies Group": {
-     "ok": true,
-     "count": 141,
-     "error": null
-    }
-   }
-  },
-  {
    "date": "2026-09-18 19:21",
    "sources": {
     "indeed-watch:Meta": {
@@ -82781,6 +82176,751 @@
     "paylocity:EPC Power": {
      "ok": true,
      "count": 27,
+     "error": null
+    }
+   }
+  },
+  {
+   "date": "2026-11-17 22:01",
+   "sources": {
+    "indeed-watch:Meta": {
+     "ok": true,
+     "count": 47,
+     "error": null
+    },
+    "indeed-watch:Tesla": {
+     "ok": true,
+     "count": 50,
+     "error": null
+    },
+    "indeed-watch:Vertiv": {
+     "ok": true,
+     "count": 50,
+     "error": null
+    },
+    "indeed-watch:Oracle": {
+     "ok": true,
+     "count": 50,
+     "error": null
+    },
+    "indeed-watch:LS Power": {
+     "ok": true,
+     "count": 2,
+     "error": null
+    },
+    "indeed-watch:GridStor": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Bitfarms": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Core Scientific": {
+     "ok": true,
+     "count": 5,
+     "error": null
+    },
+    "indeed-watch:Cipher Mining": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:TeraWulf": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Riot Platforms": {
+     "ok": true,
+     "count": 10,
+     "error": null
+    },
+    "indeed-watch:Marathon Digital": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Soluna": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Hive Digital": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:San Diego Gas & Electric": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Sempra": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Jupiter Power": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:esVolta": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Key Capture Energy": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Lancium": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Stonepeak": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Energy Capital Partners": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:ArcLight Capital": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Excelsior Energy Capital": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:KKR": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Solaris Energy Infrastructure": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Kevala": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Utilidata": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Camus Energy": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:WeaveGrid": {
+     "ok": true,
+     "count": 1,
+     "error": null
+    },
+    "indeed-watch:Verrus": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Pearl Street Technologies": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Station A": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Schneider Electric": {
+     "ok": true,
+     "count": 50,
+     "error": null
+    },
+    "indeed-watch:Eaton": {
+     "ok": true,
+     "count": 50,
+     "error": null
+    },
+    "indeed-watch:Siemens Energy": {
+     "ok": true,
+     "count": 42,
+     "error": null
+    },
+    "indeed-watch:Powell Industries": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:VoltaGrid": {
+     "ok": true,
+     "count": 3,
+     "error": null
+    },
+    "indeed-watch:Enchanted Rock": {
+     "ok": true,
+     "count": 10,
+     "error": null
+    },
+    "indeed-watch:PowerSecure": {
+     "ok": true,
+     "count": 4,
+     "error": null
+    },
+    "indeed-watch:Compass Datacenters": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Prometheus Hyperscale": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Delta Electronics": {
+     "ok": true,
+     "count": 5,
+     "error": null
+    },
+    "indeed-watch:Mitsubishi Electric Power Products": {
+     "ok": true,
+     "count": 5,
+     "error": null
+    },
+    "indeed-watch:Modine": {
+     "ok": true,
+     "count": 50,
+     "error": null
+    },
+    "indeed-watch:ZutaCore": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Accelsius": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:Apple": {
+     "ok": true,
+     "count": 50,
+     "error": null
+    },
+    "indeed-watch:LiquidStack": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "indeed-watch:EDF power solutions": {
+     "ok": true,
+     "count": 3,
+     "error": null
+    },
+    "indeed-watch:Terra-Gen": {
+     "ok": true,
+     "count": 1,
+     "error": null
+    },
+    "indeed-watch:AIB Data Centers": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "jobspy:indeed": {
+     "ok": true,
+     "count": 330,
+     "error": null
+    },
+    "microsoft": {
+     "ok": true,
+     "count": 58,
+     "error": null
+    },
+    "amazon": {
+     "ok": true,
+     "count": 109,
+     "error": null
+    },
+    "google": {
+     "ok": true,
+     "count": 62,
+     "error": null
+    },
+    "greenhouse:coreweave": {
+     "ok": true,
+     "count": 308,
+     "error": null
+    },
+    "greenhouse:pluspower": {
+     "ok": true,
+     "count": 1,
+     "error": null
+    },
+    "greenhouse:spearmintenergy": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "greenhouse:energyhub": {
+     "ok": true,
+     "count": 15,
+     "error": null
+    },
+    "lever:terawattinfrastructure": {
+     "ok": true,
+     "count": 12,
+     "error": null
+    },
+    "ashby:crusoe": {
+     "ok": true,
+     "count": 322,
+     "error": null
+    },
+    "ashby:base-power": {
+     "ok": true,
+     "count": 195,
+     "error": null
+    },
+    "ashby:gridcare": {
+     "ok": true,
+     "count": 8,
+     "error": null
+    },
+    "greenhouse:spacex": {
+     "ok": true,
+     "count": 2798,
+     "error": null
+    },
+    "greenhouse:anthropic": {
+     "ok": true,
+     "count": 658,
+     "error": null
+    },
+    "greenhouse:nebius": {
+     "ok": true,
+     "count": 371,
+     "error": null
+    },
+    "ashby:openai": {
+     "ok": true,
+     "count": 840,
+     "error": null
+    },
+    "ashby:emerald-ai": {
+     "ok": true,
+     "count": 8,
+     "error": null
+    },
+    "greenhouse:niraenergy": {
+     "ok": true,
+     "count": 4,
+     "error": null
+    },
+    "ashby:neara": {
+     "ok": true,
+     "count": 38,
+     "error": null
+    },
+    "lever:gridware": {
+     "ok": true,
+     "count": 18,
+     "error": null
+    },
+    "lever:exowatt": {
+     "ok": true,
+     "count": 16,
+     "error": null
+    },
+    "ashby:tyba": {
+     "ok": true,
+     "count": 5,
+     "error": null
+    },
+    "ashby:texture": {
+     "ok": true,
+     "count": 4,
+     "error": null
+    },
+    "greenhouse:amperon": {
+     "ok": true,
+     "count": 1,
+     "error": null
+    },
+    "ashby:generate": {
+     "ok": true,
+     "count": 14,
+     "error": null
+    },
+    "greenhouse:digitalbridge": {
+     "ok": true,
+     "count": 7,
+     "error": null
+    },
+    "greenhouse:hut8": {
+     "ok": true,
+     "count": 45,
+     "error": null
+    },
+    "lever:cleanspark": {
+     "ok": true,
+     "count": 16,
+     "error": null
+    },
+    "greenhouse:sbenergy": {
+     "ok": true,
+     "count": 69,
+     "error": null
+    },
+    "edged:all": {
+     "ok": true,
+     "count": 53,
+     "error": null
+    },
+    "lever:mainspringenergy": {
+     "ok": true,
+     "count": 95,
+     "error": null
+    },
+    "greenhouse:submer": {
+     "ok": true,
+     "count": 7,
+     "error": null
+    },
+    "ashby:formenergy": {
+     "ok": true,
+     "count": 207,
+     "error": null
+    },
+    "greenhouse:veir": {
+     "ok": true,
+     "count": 11,
+     "error": null
+    },
+    "greenhouse:teneo": {
+     "ok": true,
+     "count": 58,
+     "error": null
+    },
+    "greenhouse:onenergy": {
+     "ok": true,
+     "count": 31,
+     "error": null
+    },
+    "greenhouse:energycx": {
+     "ok": true,
+     "count": 9,
+     "error": null
+    },
+    "lever:pivotenergy": {
+     "ok": true,
+     "count": 10,
+     "error": null
+    },
+    "lever:intersect": {
+     "ok": true,
+     "count": 31,
+     "error": null
+    },
+    "greenhouse:clearwayjobs": {
+     "ok": true,
+     "count": 60,
+     "error": null
+    },
+    "greenhouse:sandiegocommunitypower": {
+     "ok": true,
+     "count": 2,
+     "error": null
+    },
+    "greenhouse:madisonenergyinfrastructure": {
+     "ok": true,
+     "count": 10,
+     "error": null
+    },
+    "ashby:rowan": {
+     "ok": true,
+     "count": 48,
+     "error": null
+    },
+    "greenhouse:switch-data-centers": {
+     "ok": true,
+     "count": 89,
+     "error": null
+    },
+    "ashby:bidgely-inc": {
+     "ok": true,
+     "count": 18,
+     "error": null
+    },
+    "lever:ana-corp": {
+     "ok": true,
+     "count": 16,
+     "error": null
+    },
+    "workday:nvidia": {
+     "ok": true,
+     "count": 97,
+     "error": null
+    },
+    "workday:gevernova": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://gevernova.wd5.myworkdayjobs.com/wday/cxs/gevernova/Vernova_ExternalSite/jobs"
+    },
+    "workday:nextracker": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://nextracker.wd5.myworkdayjobs.com/wday/cxs/nextracker/nextpower_careers/jobs"
+    },
+    "workday:brookfield": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://brookfield.wd5.myworkdayjobs.com/wday/cxs/brookfield/brookfield/jobs"
+    },
+    "workday:blackstone": {
+     "ok": true,
+     "count": 0,
+     "error": null
+    },
+    "workday:servicetitan": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://servicetitan.wd1.myworkdayjobs.com/wday/cxs/servicetitan/ServiceTitan/jobs"
+    },
+    "workday:vantagedc": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://vantagedc.wd1.myworkdayjobs.com/wday/cxs/vantagedc/Vantage/jobs"
+    },
+    "workday:flextronics": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://flextronics.wd1.myworkdayjobs.com/wday/cxs/flextronics/Careers/jobs"
+    },
+    "workday:bloomenergy": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://bloomenergy.wd1.myworkdayjobs.com/wday/cxs/bloomenergy/BloomEnergyCareers/jobs"
+    },
+    "workday:tranetechnologies": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://tranetechnologies.wd12.myworkdayjobs.com/wday/cxs/tranetechnologies/Trane_Technologies_Careers/jobs"
+    },
+    "workday:jci": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://jci.wd5.myworkdayjobs.com/wday/cxs/jci/JCI/jobs"
+    },
+    "workday:hitachi": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://hitachi.wd1.myworkdayjobs.com/wday/cxs/hitachi/hitachi/jobs"
+    },
+    "workday:equinix": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://equinix.wd1.myworkdayjobs.com/wday/cxs/equinix/External/jobs"
+    },
+    "workday:micron": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs"
+    },
+    "workday:nisource": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://nisource.wd1.myworkdayjobs.com/wday/cxs/nisource/NiSource/jobs"
+    },
+    "workday:wgl": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://wgl.wd5.myworkdayjobs.com/wday/cxs/wgl/AltaGas/jobs"
+    },
+    "workday:solvenergy": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://solvenergy.wd1.myworkdayjobs.com/wday/cxs/solvenergy/SOLV_External_Career/jobs"
+    },
+    "workday:woodmac": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://woodmac.wd3.myworkdayjobs.com/wday/cxs/woodmac/woodmaccareers/jobs"
+    },
+    "workday:talenenergy": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://talenenergy.wd1.myworkdayjobs.com/wday/cxs/talenenergy/TalenCareers/jobs"
+    },
+    "workday:aep": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://aep.wd1.myworkdayjobs.com/wday/cxs/aep/AEPCareerSite/jobs"
+    },
+    "workday:fluenceenergy": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://fluenceenergy.wd12.myworkdayjobs.com/wday/cxs/fluenceenergy/fluenceenergy-jobs/jobs"
+    },
+    "workday:eversource": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://eversource.wd1.myworkdayjobs.com/wday/cxs/eversource/ExternalSite/jobs"
+    },
+    "workday:qtsdatacenters": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://qtsdatacenters.wd5.myworkdayjobs.com/wday/cxs/qtsdatacenters/qts/jobs"
+    },
+    "workday:abb": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://abb.wd3.myworkdayjobs.com/wday/cxs/abb/External_Career_Page/jobs"
+    },
+    "workday:shell": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/shellcareers/jobs"
+    },
+    "workday:generac": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://generac.wd5.myworkdayjobs.com/wday/cxs/generac/External/jobs"
+    },
+    "workday:xcelenergy": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://xcelenergy.wd1.myworkdayjobs.com/wday/cxs/xcelenergy/External/jobs"
+    },
+    "workday:ferrovial": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://ferrovial.wd3.myworkdayjobs.com/wday/cxs/ferrovial/Ferrovial_Career_Site/jobs"
+    },
+    "workday:aligneddc": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://aligneddc.wd12.myworkdayjobs.com/wday/cxs/aligneddc/aligneddc/jobs"
+    },
+    "workday:daikinapplied": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://daikinapplied.wd1.myworkdayjobs.com/wday/cxs/daikinapplied/Daikin-Careers/jobs"
+    },
+    "workday:linklogistics": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://linklogistics.wd5.myworkdayjobs.com/wday/cxs/linklogistics/Link/jobs"
+    },
+    "workday:munters": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://munters.wd3.myworkdayjobs.com/wday/cxs/munters/External_Careers/jobs"
+    },
+    "workday:hp": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs"
+    },
+    "workday:nvent": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://nvent.wd5.myworkdayjobs.com/wday/cxs/nvent/nVent/jobs"
+    },
+    "workday:aes": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://aes.wd1.myworkdayjobs.com/wday/cxs/aes/AES_US/jobs"
+    },
+    "workday:prologis": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://prologis.wd5.myworkdayjobs.com/wday/cxs/prologis/Prologis_External_Careers/jobs"
+    },
+    "workday:canadiansolar": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/eStorage/jobs"
+    },
+    "workday:cat": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://cat.wd5.myworkdayjobs.com/wday/cxs/cat/SolarTurbines/jobs"
+    },
+    "workday:invenergyllc": {
+     "ok": false,
+     "count": 0,
+     "error": "429 Client Error: Too Many Requests for url: https://invenergyllc.wd1.myworkdayjobs.com/wday/cxs/invenergyllc/invenergycareers/jobs"
+    },
+    "successfactors:PG&E": {
+     "ok": true,
+     "count": 69,
+     "error": null
+    },
+    "successfactors:NextEra Energy": {
+     "ok": true,
+     "count": 72,
+     "error": null
+    },
+    "radancy:Southern California Edison": {
+     "ok": true,
+     "count": 193,
+     "error": null
+    },
+    "hibob:IREN": {
+     "ok": true,
+     "count": 285,
+     "error": null
+    },
+    "adp:Applied Digital": {
+     "ok": true,
+     "count": 2,
+     "error": null
+    },
+    "jibe:AMD": {
+     "ok": true,
+     "count": 147,
+     "error": null
+    },
+    "jibe:Aon": {
+     "ok": true,
+     "count": 91,
+     "error": null
+    },
+    "page:Flux Power": {
+     "ok": true,
+     "count": 3,
+     "error": null
+    },
+    "smartrecruiters:NBCUniversal": {
+     "ok": true,
+     "count": 137,
+     "error": null
+    },
+    "breezy:Bitdeer Technologies Group": {
+     "ok": true,
+     "count": 162,
+     "error": null
+    },
+    "paylocity:EPC Power": {
+     "ok": true,
+     "count": 26,
      "error": null
     }
    }
