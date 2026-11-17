@@ -298,9 +298,11 @@
   "work_mode": "remote"
  },
  "003b6739dd3c0e13": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-17",
   "company": "Form Energy",
   "date_posted": "2026-10-23",
   "first_seen": "2026-10-23",
@@ -11021,6 +11023,35 @@
   "title": "Product Management Principal (AI UPS)",
   "url": "https://job-boards.greenhouse.io/onenergy/jobs/4279747009",
   "work_mode": "remote"
+ },
+ "0aedb1de3a691295": {
+  "apply_url": "https://www.amazon.jobs/jobs/10604943/manager-iii-battery-manufacturing-engineering?cmpid=DA_INAD200785B",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Amazon.com",
+  "date_posted": "2026-11-14",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Austin, TX, USA",
+  "locations": [
+   "Austin, TX, USA"
+  ],
+  "pay": "$151,000\u2013$204,300/yr",
+  "priority": false,
+  "rationale": "Manager leading Amazon's battery manufacturing engineering team, owning line design, equipment technology, and DFM for cell and pack production; manufacturing engineering leadership rather than product or strategy caps the fit.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager III, Battery Manufacturing Engineering",
+  "url": "https://www.indeed.com/viewjob?jk=16d63fec5c34f3f0",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "0af62337b9c81050": {
   "active": false,
@@ -25186,7 +25217,7 @@
   "work_mode_by": "triage"
  },
  "19bc627ae764819a": {
-  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77805&lang=en_US&source=Indeed",
+  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77805&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "possible",
   "company": "Eaton",
@@ -26559,7 +26590,7 @@
   "work_mode_by": "fetch"
  },
  "1ae2df24c2de1a79": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261116T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261117T000445Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -28123,6 +28154,38 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "1cacbbd3303860af": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-11-17",
+  "company": "PG&E",
+  "date_posted": "2026-11-14",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Sacramento, CA, US, 95826",
+  "locations": [
+   "Sacramento, CA, US, 95826"
+  ],
+  "lowscore": true,
+  "pay": "$144,000\u2013$244,000",
+  "priority": false,
+  "rationale": "Principal program manager embedding customer-experience journey management practices across PG&E's business units; a customer-experience function unrelated to power systems, product, or energy strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal Customer Journey Program Manager",
+  "url": "https://careers.pge.com/job/Oakland-Principal-Customer-Journey-Program-Manager-CA-94612/1450762100/",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
+ },
  "1cb5ca5ec6c4451d": {
   "active": false,
   "band": "weak",
@@ -28312,6 +28375,35 @@
   "title": "Sr. Systems Engineer, Data Centers",
   "url": "https://www.indeed.com/viewjob?jk=2d2328495838ed09",
   "work_mode": ""
+ },
+ "1cfed980c71c99e5": {
+  "apply_url": "https://grnh.se/lk727ccl8us",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Adapture Renewables",
+  "date_posted": "2026-11-14",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Oakland, CA, USA",
+  "locations": [
+   "Oakland, CA, USA"
+  ],
+  "pay": "",
+  "priority": true,
+  "rationale": "VP leading Adapture's power marketing and origination team, pricing and negotiating PPAs and offtake deals with utilities and data centers; a deal-lead sales and origination role rather than product or strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "VP, Power Marketing & Origination",
+  "url": "https://www.indeed.com/viewjob?jk=3d35580b1be0305f",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
  },
  "1d003a0f67944072": {
   "active": false,
@@ -30407,7 +30499,7 @@
   "work_mode": "hybrid"
  },
  "1f581e50967b43db": {
-  "apply_url": "",
+  "apply_url": "https://www.amazon.jobs/jobs/10603816/energy-strategy--carbon-free-energy-procurement?cmpid=DA_INAD200785B",
   "apply_url_own": false,
   "band": "possible",
   "company": "Amazon",
@@ -30416,9 +30508,10 @@
   "first_seen_at": "2026-11-14T19:24:19Z",
   "location": "Seattle, Washington, USA",
   "locations": [
-   "Seattle, Washington, USA"
+   "Seattle, Washington, USA",
+   "Seattle, WA, USA"
   ],
-  "pay": "",
+  "pay": "$155,400\u2013$210,200/yr",
   "priority": false,
   "rationale": "Negotiates power purchase and energy sale agreements for AWS data centers, a procurement and deal execution specialist role.",
   "score": 55,
@@ -58596,7 +58689,8 @@
   "first_seen_at": "2026-10-12T22:22:05Z",
   "location": "Herndon, VA, USA",
   "locations": [
-   "Herndon, VA, USA"
+   "Herndon, VA, USA",
+   "Arlington, VA, USA"
   ],
   "pay": "$127,100\u2013$171,900/yr",
   "priority": false,
@@ -58611,7 +58705,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Infrastructure TPM, Infra Capacity Delivery",
-  "url": "https://www.indeed.com/viewjob?jk=0a1763c2d8fb201e",
+  "url": "https://www.indeed.com/viewjob?jk=217c6fb9b9facd48",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -61018,6 +61112,38 @@
   "title": "Solar Sales Consultant",
   "url": "https://www.indeed.com/viewjob?jk=4e154eb765153950",
   "work_mode": ""
+ },
+ "3f24e737639e093b": {
+  "active": false,
+  "apply_url": "https://apply.workable.com/j/A15CF6B266",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-17",
+  "company": "TechFlow, Inc",
+  "date_posted": "2026-11-16",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Chicago, IL, USA",
+  "locations": [
+   "Chicago, IL, USA"
+  ],
+  "lowscore": true,
+  "pay": "$115,000\u2013$125,000/yr",
+  "priority": false,
+  "rationale": "Project manager overseeing electrical construction projects for energy and mobility infrastructure clients; entry-level requirements and construction-delivery scope place it well below target seniority and function.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Project Manager - Energy and Mobility Solutions",
+  "url": "https://www.indeed.com/viewjob?jk=4a97a5a6876be10a",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "3f30ec9efda4ac98": {
   "active": false,
@@ -64977,6 +65103,38 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "432b8991fc856b7a": {
+  "active": false,
+  "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Lead-Gas-Turbine-Engineer-5000F-Fleet-Operations-Product-Development/306829",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-17",
+  "company": "Siemens Energy",
+  "date_posted": "2026-11-16",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Orlando, FL, USA",
+  "locations": [
+   "Orlando, FL, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Lead engineer serving as technical authority for Siemens' SGT6-5000F gas turbine fleet, resolving field issues and driving engine product development; a deep gas-turbine engineering specialty outside the target scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Lead Gas Turbine Engineer \u2013 5000F Fleet Operations & Product Development",
+  "url": "https://www.indeed.com/viewjob?jk=368da34d7e9a1756",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "43377dc49301dcd0": {
   "active": false,
   "band": "weak",
@@ -66933,7 +67091,7 @@
   "work_mode": "onsite"
  },
  "4575948270f210dd": {
-  "apply_url": "https://career4.successfactors.com/career?company=C0004920031P&career_ns=job_listing&career_job_req_id=46116&lang=en_US&source=Indeed",
+  "apply_url": "https://career4.successfactors.com/career?company=C0004920031P&career_ns=job_listing&career_job_req_id=46116&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "strong",
   "company": "NRG Energy",
@@ -72707,6 +72865,38 @@
   "title": "Executive Director, Gas Development",
   "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Executive-Director%2C-Gas-Development-FL-33408/1435350300/",
   "work_mode": ""
+ },
+ "4be88fe6e51c3bee": {
+  "active": false,
+  "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Procurement-Demand-Planning-Professional/307386",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-17",
+  "company": "Siemens Energy",
+  "date_posted": "2026-11-16",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Deer Park, TX, USA",
+  "locations": [
+   "Deer Park, TX, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Buyer managing purchase orders, inventory, and warehouse coordination for Siemens Energy's supply chain, a procurement function unrelated to product, power strategy, or engineering leadership.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Procurement Demand Planning Professional",
+  "url": "https://www.indeed.com/viewjob?jk=d8b08a6ded14c3c3",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "4bf39765ef5d3d7d": {
   "active": false,
@@ -79343,6 +79533,38 @@
   "url": "https://www.indeed.com/viewjob?jk=58de34cb1e4b776e",
   "work_mode": "remote"
  },
+ "52c92911146d5b71": {
+  "active": false,
+  "apply_url": "https://apply.workable.com/j/5E157CA2C4",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-17",
+  "company": "Nautilus Solar Energy",
+  "date_posted": "2026-11-16",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Chicago, IL, USA",
+  "locations": [
+   "Chicago, IL, USA"
+  ],
+  "lowscore": true,
+  "pay": "$130,000\u2013$150,000/yr",
+  "priority": true,
+  "rationale": "Senior manager closing solar project acquisitions for Nautilus, coordinating permitting, legal, and lender requirements through deal handoff; solar M&A and development execution sit outside the target power and storage domain.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Manager, Acquisitions",
+  "url": "https://www.indeed.com/viewjob?jk=36b7039e11e4750e",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
+ },
  "52cbd0105bb7b80f": {
   "active": false,
   "band": "misfit",
@@ -83761,6 +83983,35 @@
   "url": "https://www.indeed.com/viewjob?jk=a4f7fa9f9ecb2e2e",
   "work_mode": "onsite"
  },
+ "579ebfabd302f98c": {
+  "apply_url": "https://cw.wd1.myworkdayjobs.com/External/job/Washington-District-of-Columbia-USA/Senior-Development-Project-Manager--Mission-Critical--Project---Development-Services_R341686",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Cushman & Wakefield",
+  "date_posted": "2026-11-16",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Washington, DC, USA",
+  "locations": [
+   "Washington, DC, USA"
+  ],
+  "pay": "$148,750\u2013$175,000/yr",
+  "priority": false,
+  "rationale": "Senior project manager handling power and MEP due diligence for mission-critical and data-center real estate deals at Cushman & Wakefield, a site-development execution role rather than product or strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Senior Development Project Manager, Mission Critical, Project & Development Services",
+  "url": "https://www.indeed.com/viewjob?jk=9791dbac01ef4086",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "57a122db3dd33315": {
   "band": "weak",
   "company": "Nebius",
@@ -85256,6 +85507,35 @@
   "url": "https://jobs.ashbyhq.com/base-power/1bca5a4f-47a9-49d9-a06d-09f78a2d7469",
   "work_mode": ""
  },
+ "59557feab020984f": {
+  "apply_url": "https://www.careers.ford.com/en/job/united-states/principal-product-and-field-safety-engineer-ford-energy/48560/103267142736",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "Ford Motor Company",
+  "date_posted": "2026-11-14",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Remote, USA",
+  "locations": [
+   "Remote, USA"
+  ],
+  "pay": "$141,700\u2013$268,300/yr",
+  "priority": true,
+  "rationale": "Principal engineer defining BESS lockout/tagout, hazard, and field safety procedures for Ford's energy business, a hands-on technical safety specialty rather than product or strategy work.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Principal Product & Field Safety Engineer, Ford Energy",
+  "url": "https://www.indeed.com/viewjob?jk=ec6ea60d6869207b",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
+ },
  "5959350823a7e79e": {
   "active": false,
   "band": "misfit",
@@ -85940,6 +86220,38 @@
   "url": "https://www.indeed.com/viewjob?jk=e450a7dfc0698aea",
   "work_mode": "remote",
   "work_mode_by": "fetch"
+ },
+ "5a2561634faa1dbf": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-11-17",
+  "company": "Axial Energy Services",
+  "date_posted": "2026-11-16",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Fresno, CA, USA",
+  "locations": [
+   "Fresno, CA, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Owner's-representative QA/QC manager overseeing solar construction quality and inspections on-site, requiring temporary relocation near the project; a construction-quality field role outside the target scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "QA/QC Manager - Owner's Representative - Utility-Scale Renewable Energy",
+  "url": "https://www.indeed.com/viewjob?jk=1bb9f2ce40c41731",
+  "work_mode": "onsite",
+  "work_mode_by": "triage"
  },
  "5a27ed33e0ca9f49": {
   "active": false,
@@ -101487,7 +101799,7 @@
  },
  "6a5cdd0901bbe833": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004f6DUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F971086452342966%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Db565d825-e1da-11f1-b88f-91ea2103c36e%26rx_job%3Da1KiE0000004f6DUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261116T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004f6DUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F971086452342966%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Db565d825-e1da-11f1-b88f-91ea2103c36e%26rx_job%3Da1KiE0000004f6DUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261117T000445Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -101962,7 +102274,7 @@
   "work_mode_by": ""
  },
  "6ab31390668c6576": {
-  "apply_url": "https://ir-jobs.dzconnex.com/job-details/engineering-director-%E2%80%93-chiller-cooling-systems-in-engineering-jobs-1799179",
+  "apply_url": "https://ir-jobs.dzconnex.com/job-details/engineering-director-%E2%80%93-chiller-cooling-systems-in-engineering-jobs-1799180",
   "apply_url_own": true,
   "band": "possible",
   "company": "Ingersoll-Rand",
@@ -105183,7 +105495,9 @@
   "work_mode": "hybrid"
  },
  "6ecd1c0053d1742e": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-11-17",
   "company": "Generate Capital",
   "date_posted": "2026-09-09",
   "first_seen": "2026-09-09",
@@ -109974,7 +110288,8 @@
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
   "locations": [
-   "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA"
+   "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA",
+   "Sunnyvale, CA"
   ],
   "lowscore": true,
   "pay": "$139,000 to $204,000.",
@@ -129313,7 +129628,7 @@
   "work_mode": "hybrid"
  },
  "87134b1f05fc6766": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004CvRUAU_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1863525258169409%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Db56c70fb-dd23-11f1-8d72-3f645cb78099%26rx_job%3Da1KiE0000004CvRUAU_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261116T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004CvRUAU_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1863525258169409%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Db56c70fb-dd23-11f1-8d72-3f645cb78099%26rx_job%3Da1KiE0000004CvRUAU_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261117T000445Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -137199,9 +137514,8 @@
   "work_mode_by": ""
  },
  "8f781dacfe0ced70": {
-  "active": false,
+  "active": true,
   "band": "misfit",
-  "closed": "2026-09-04",
   "company": "SB Energy",
   "date_posted": "2026-08-23",
   "first_seen": "2026-08-28",
@@ -137213,6 +137527,7 @@
   "pay": "$190,000-$230,000",
   "priority": false,
   "rationale": "Controls engineering management; deep technical design role outside strategy scope.",
+  "reopened": "2026-11-17",
   "score": 37,
   "seniority_match": true,
   "source": "greenhouse",
@@ -138470,8 +138785,9 @@
   "work_mode": ""
  },
  "9096efff2ccb225e": {
-  "active": true,
+  "active": false,
   "band": "misfit",
+  "closed": "2026-11-17",
   "company": "Crusoe",
   "date_posted": "2026-04-30",
   "first_seen": "2026-08-13",
@@ -146024,7 +146340,7 @@
   },
   "seniority_match": false,
   "source": "indeed",
-  "title": "Civil Engineer, Prin.",
+  "title": "Civil Engineer, Prin",
   "url": "https://www.indeed.com/viewjob?jk=44f1e30cb52436bb",
   "work_mode": ""
  },
@@ -146748,7 +147064,7 @@
  },
  "99a7f1162d6615d9": {
   "active": false,
-  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77222&lang=en_US&source=Indeed",
+  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77222&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -150934,7 +151250,7 @@
  },
  "9dc6342470454056": {
   "active": false,
-  "apply_url": "https://career8.successfactors.com/career?company=wecbusines&career_ns=job_listing&career_job_req_id=7228&lang=en_US&source=Indeed",
+  "apply_url": "https://career8.successfactors.com/career?company=wecbusines&career_ns=job_listing&career_job_req_id=7228&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -168669,7 +168985,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Data Center Chief Engineer",
-  "url": "https://www.indeed.com/viewjob?jk=6fd0d0d5bfda5f3b",
+  "url": "https://www.indeed.com/viewjob?jk=ffb54e5c8b71ef52",
   "work_mode": "onsite"
  },
  "af7f45f53ceed4b8": {
@@ -178243,6 +178559,35 @@
   "url": "https://www.indeed.com/viewjob?jk=ed27c15cd8913e2e",
   "work_mode": "",
   "work_mode_by": ""
+ },
+ "ba84d042105ef7cf": {
+  "apply_url": "https://www.governmentjobs.com/careers/3cenergy/jobs/5549710/manager-of-project-delivery-operations",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "Central Coast Community Energy",
+  "date_posted": "2026-11-14",
+  "first_seen": "2026-11-17",
+  "first_seen_at": "2026-11-17T00:52:13Z",
+  "location": "Monterey, CA, USA",
+  "locations": [
+   "Monterey, CA, USA"
+  ],
+  "pay": "$152,941\u2013$236,852/yr",
+  "priority": true,
+  "rationale": "Manager building and running project delivery and operations for a community energy agency's local energy assets, from feasibility through commissioning; a program-delivery role rather than product or strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-17T00:53Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Manager of Project Delivery & Operations",
+  "url": "https://www.indeed.com/viewjob?jk=1e39398dec3ee7f9",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
  },
  "ba8c1675bc7bfe46": {
   "active": false,
@@ -188075,7 +188420,7 @@
  },
  "c5682b9456dd478c": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200694618-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200694618-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D9d881740-de30-11f1-b106-c536e0ecccc4%26rx_job%3D200694618-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261116T220408Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200694618-0836-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200694618-0836%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D9d881740-de30-11f1-b106-c536e0ecccc4%26rx_job%3D200694618-0836-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261117T000502Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -194460,7 +194805,7 @@
  },
  "cbf1045fb0826bb3": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261116T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261117T000445Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-17",
@@ -198248,7 +198593,9 @@
   "work_mode": ""
  },
  "cf99986ce74beae5": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-17",
   "company": "Southern California Edison",
   "date_posted": "2026-06-08",
   "first_seen": "2026-09-03",
@@ -201364,7 +201711,7 @@
  },
  "d2c268b939b8d3fc": {
   "active": false,
-  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77737&lang=en_US&source=Indeed",
+  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77737&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -207660,7 +208007,7 @@
  },
  "d9a24b68e47eaa4e": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200693603-0505-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200693603-0505%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcbaa2050-def9-11f1-b1b6-95b359edb48f%26rx_job%3D200693603-0505-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261116T220408Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200693603-0505-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200693603-0505%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcbaa2050-def9-11f1-b1b6-95b359edb48f%26rx_job%3D200693603-0505-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261117T000502Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -214031,7 +214378,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Fleet Operations Manager, Data Center Infrastructure",
-  "url": "https://www.indeed.com/viewjob?jk=a203975034ae3b2a",
+  "url": "https://www.indeed.com/viewjob?jk=f8773e5f17ab066c",
   "work_mode": ""
  },
  "e0782ed6d97432f3": {
@@ -219281,7 +219628,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Data Center Program Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393557053796",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557072527",
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
@@ -224733,7 +225080,8 @@
    "Oakland, CA, US, 94612",
    "Dublin, CA, US, 94568",
    "Sacramento, CA, US, 95826",
-   "Concord, CA, US, 94518"
+   "Concord, CA, US, 94518",
+   "San Jose, CA, US, 95113"
   ],
   "pay": "$126,000\u2013$194,000",
   "priority": false,
@@ -235052,7 +235400,7 @@
  },
  "f62ed097d7353673": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200694567-0505-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200694567-0505%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcbab336c-def9-11f1-9183-95b359edb48f%26rx_job%3D200694567-0505-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261116T220408Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200694567-0505-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200694567-0505%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcbab336c-def9-11f1-9183-95b359edb48f%26rx_job%3D200694567-0505-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261117T000502Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
