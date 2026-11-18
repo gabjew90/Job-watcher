@@ -9869,9 +9869,11 @@
   "work_mode": ""
  },
  "09bce53e8221d6e0": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "SB Energy",
   "date_posted": "2026-10-02",
   "first_seen": "2026-10-03",
@@ -10652,9 +10654,11 @@
   "work_mode": ""
  },
  "0a6a9ed932c82934": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Strategic-Project-Manager/307280",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-11-12",
   "first_seen": "2026-11-12",
@@ -25572,7 +25576,7 @@
   "work_mode_by": "triage"
  },
  "19bc627ae764819a": {
-  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77805&lang=en_US&source=Indeed",
+  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77805&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "possible",
   "company": "Eaton",
@@ -26977,7 +26981,7 @@
   "work_mode_by": "fetch"
  },
  "1ae2df24c2de1a79": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T200415Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004PZJUA2_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1467640208651964%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb20f0b-ddec-11f1-984a-e9d61973004f%26rx_job%3Da1KiE0000004PZJUA2_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T220416Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -31465,8 +31469,9 @@
   "work_mode": ""
  },
  "200830a0c05d2993": {
-  "active": true,
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "SpaceX",
   "date_posted": "2026-08-06",
   "first_seen": "2026-08-28",
@@ -37620,9 +37625,11 @@
   "work_mode_by": ""
  },
  "25f0a5180e3b351e": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Large-Gas-Turbine-Product-Manager/305303",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-10-21",
   "first_seen": "2026-10-21",
@@ -64954,6 +64961,38 @@
   "url": "https://www.indeed.com/viewjob?jk=a3410d42e3a117f0",
   "work_mode": "onsite"
  },
+ "42078b068f7c652e": {
+  "active": false,
+  "apply_url": "https://recruiting2.ultipro.com/ATL1007ATSC/JobBoard/6eb447b8-e4eb-4c77-8c5c-5c6dc1f7a616/OpportunityDetail?opportunityId=07eb49d0-d15e-4a19-9bcf-e06f293f4c08&postingId=f3effc1c-17d2-463d-8827-0339de1bb481",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-18",
+  "company": "Atlas Sand Employee Company, LLC.",
+  "date_posted": "2026-11-18",
+  "first_seen": "2026-11-18",
+  "first_seen_at": "2026-11-18T23:23:57Z",
+  "location": "Austin, TX, USA",
+  "locations": [
+   "Austin, TX, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": true,
+  "rationale": "Leads SCADA and historian systems engineering and controls buildout across a power plant fleet, a controls engineering leadership role outside this skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-18T23:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Director of Power SCADA",
+  "url": "https://www.indeed.com/viewjob?jk=2b8b272236ffb5b5",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "420ad43bca55c687": {
   "active": false,
   "band": "misfit",
@@ -65188,9 +65227,11 @@
   "work_mode_by": "triage"
  },
  "42567d4786873280": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Quality-Manager-in-Projects/305669",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-11-05",
   "first_seen": "2026-11-05",
@@ -68131,7 +68172,7 @@
   "work_mode": "onsite"
  },
  "4575948270f210dd": {
-  "apply_url": "https://career4.successfactors.com/career?company=C0004920031P&career_ns=job_listing&career_job_req_id=46116&lang=en_US&source=Indeed",
+  "apply_url": "https://career4.successfactors.com/career?company=C0004920031P&career_ns=job_listing&career_job_req_id=46116&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "strong",
   "company": "NRG Energy",
@@ -72935,6 +72976,38 @@
   "work_mode": "remote",
   "work_mode_by": "triage"
  },
+ "4a1b7e80a32a3542": {
+  "active": false,
+  "apply_url": "https://careers.qcells.com/jobs/18491587-procurement-specialist-qdd-sourcing-and-procurement?tm_job=2908&tm_event=view&tm_company=92338",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-18",
+  "company": "Qcells",
+  "date_posted": "2026-11-18",
+  "first_seen": "2026-11-18",
+  "first_seen_at": "2026-11-18T23:23:57Z",
+  "location": "San Francisco, CA, USA",
+  "locations": [
+   "San Francisco, CA, USA"
+  ],
+  "lowscore": true,
+  "pay": "$100,300\u2013$168,500/yr",
+  "priority": true,
+  "rationale": "Handles day-to-day purchasing, vendor management and PO issuance for solar modules and storage equipment, an operational procurement specialist role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-18T23:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Procurement Specialist - QDD Sourcing & Procurement",
+  "url": "https://www.indeed.com/viewjob?jk=99ff4ce9c7ceb86e",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "4a23bf2abc6a2894": {
   "apply_url": "",
   "apply_url_own": false,
@@ -77601,9 +77674,11 @@
   "work_mode": "onsite"
  },
  "4f8248fd2fa3e19a": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Project-Offer-Manager-for-Substation-Services-Long-Term-Programs-Americas-/305654",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-10-30",
   "first_seen": "2026-10-30",
@@ -80608,7 +80683,9 @@
   "work_mode": ""
  },
  "52b4cfa36d380c40": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-09-23",
   "first_seen": "2026-09-23",
@@ -85785,9 +85862,11 @@
   "work_mode_by": "fetch"
  },
  "58565d109018597a": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/OKR-Implementation-Strategy-manager/306886",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-11-05",
   "first_seen": "2026-11-05",
@@ -89423,6 +89502,35 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "5c2aeb917916d516": {
+  "apply_url": "https://jobs.smartrecruiters.com/AECOM2/744000162150686-environmental-consulting-energy-market-sector-leader",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "AECOM",
+  "date_posted": "2026-11-17",
+  "first_seen": "2026-11-18",
+  "first_seen_at": "2026-11-18T23:23:57Z",
+  "location": "Chelmsford, MA, USA",
+  "locations": [
+   "Chelmsford, MA, USA"
+  ],
+  "pay": "$200,000\u2013$300,000/yr",
+  "priority": false,
+  "rationale": "Business-development and sales-pursuit leader growing AECOM's environmental consulting revenue in the energy market, a client-growth and sales role, not energy systems work.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-18T23:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Environmental Consulting/Energy Market Sector Leader",
+  "url": "https://www.indeed.com/viewjob?jk=8da52e867418bbda",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
+ },
  "5c2e127ad330c97b": {
   "apply_url": "https://beacontechnologies.betterteam.com/program-and-project-manager?utm_source=indeed&utm_medium=web_xmlfeed&utm_campaign=indeed_organic",
   "apply_url_own": true,
@@ -92710,6 +92818,35 @@
   "url": "https://jobs.lever.co/mainspringenergy/5921ae79-2c77-4757-a229-20ab788d99c1",
   "work_mode": "onsite",
   "work_mode_by": "triage"
+ },
+ "6016071c60b8e30a": {
+  "apply_url": "https://jobs.ashbyhq.com/dcblox/a77d47ac-aa27-4dc0-b393-9378d2008b66?utm_source=vZW8nZop3D",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "DC BLOX",
+  "date_posted": "2026-11-18",
+  "first_seen": "2026-11-18",
+  "first_seen_at": "2026-11-18T23:23:57Z",
+  "location": "Atlanta, GA, USA",
+  "locations": [
+   "Atlanta, GA, USA"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Manages hyperscale data center design programs, coordinating MEP and consultants from site diligence through construction turnover, construction-design execution rather than product or strategy.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-18T23:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Data Center Design Manager",
+  "url": "https://www.indeed.com/viewjob?jk=5246e153666447c0",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "601dafd4395b9bd5": {
   "active": false,
@@ -103966,9 +104103,11 @@
   "work_mode": ""
  },
  "6af43fe656cf1c6d": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Senior-Project-Finance-Manager-Senior-Commercial-Project-Manager/306249",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-10-27",
   "first_seen": "2026-10-27",
@@ -113205,7 +113344,7 @@
   "work_mode": ""
  },
  "747127594a2994fc": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004yIXUAY_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1664082508590840%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De693656c-e2e6-11f1-8030-df760aded207%26rx_job%3Da1KiE0000004yIXUAY_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T200415Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004yIXUAY_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1664082508590840%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De693656c-e2e6-11f1-8030-df760aded207%26rx_job%3Da1KiE0000004yIXUAY_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T220416Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -121081,7 +121220,8 @@
    "Newark, CA, US, 94538",
    "Fulton, CA, US, 95439",
    "Fresno, CA, US, 93710",
-   "Pleasanton, CA, US, 94588"
+   "Pleasanton, CA, US, 94588",
+   "Pismo Beach, CA, US, 93449"
   ],
   "pay": "$144,000\u2013$244,000",
   "priority": false,
@@ -125780,9 +125920,11 @@
   "work_mode": "onsite"
  },
  "80f505b6c72fb719": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Head-of-Engineering/307055",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-11-13",
   "first_seen": "2026-11-13",
@@ -138717,7 +138859,7 @@
   "work_mode_by": ""
  },
  "8e9114a26f430927": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp00000CZNvqMAH_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1276926793901855%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D002d49db-deb6-11f1-bdc7-c15fb8ef967e%26rx_job%3Da1KDp00000CZNvqMAH_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261113T220408Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp00000CZNvqMAH_1005&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1276926793901855%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a1f0fbf-df7f-11f1-a2ef-6da42459029c%26rx_job%3Da1KDp00000CZNvqMAH_1005%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T220416Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -144629,9 +144771,11 @@
   "work_mode_by": "triage"
  },
  "946620efb3b52ed6": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "CoreWeave",
   "date_posted": "2026-10-30",
   "first_seen": "2026-11-03",
@@ -147450,6 +147594,38 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "9791f851f674a343": {
+  "active": false,
+  "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Procurement-Professional/301112",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-18",
+  "company": "Siemens Energy",
+  "date_posted": "2026-11-18",
+  "first_seen": "2026-11-18",
+  "first_seen_at": "2026-11-18T23:23:57Z",
+  "location": "Charlotte, NC, USA",
+  "locations": [
+   "Charlotte, NC, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Runs day-to-day purchasing, RFQs and supplier negotiations plus procurement analytics at a Siemens Energy campus, an operational procurement role unrelated to product or strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-18T23:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Procurement Professional",
+  "url": "https://www.indeed.com/viewjob?jk=ac1417548371b0c7",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "979a4de87faf31a0": {
   "active": true,
   "band": "possible",
@@ -149197,7 +149373,7 @@
  },
  "99a7f1162d6615d9": {
   "active": false,
-  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77222&lang=en_US&source=Indeed",
+  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77222&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -151220,7 +151396,7 @@
   "work_mode": ""
  },
  "9bfe67e4028b56c1": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RZVUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2034556683904635%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb227fe-ddec-11f1-aa41-e9d61973004f%26rx_job%3Da1KiE0000004RZVUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T200415Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004RZVUA2_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2034556683904635%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dceb227fe-ddec-11f1-aa41-e9d61973004f%26rx_job%3Da1KiE0000004RZVUA2_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T220416Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "strong",
   "company": "Meta",
@@ -153384,7 +153560,7 @@
  },
  "9dc6342470454056": {
   "active": false,
-  "apply_url": "https://career8.successfactors.com/career?company=wecbusines&career_ns=job_listing&career_job_req_id=7228&lang=en_US&source=Indeed",
+  "apply_url": "https://career8.successfactors.com/career?company=wecbusines&career_ns=job_listing&career_job_req_id=7228&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -163936,9 +164112,11 @@
   "work_mode": ""
  },
  "a81e3e6901a821ae": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Global-Lifecycle-Services-FACTS-HVDC-Operations-Manager-US-/306531",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-11-04",
   "first_seen": "2026-11-04",
@@ -166379,7 +166557,8 @@
   "first_seen_at": "2026-09-03T07:59:05Z",
   "location": "Sunnyvale, CA / Washington, DC/ Livingston, NJ/ New York, NY",
   "locations": [
-   "Sunnyvale, CA / Washington, DC/ Livingston, NJ/ New York, NY"
+   "Sunnyvale, CA / Washington, DC/ Livingston, NJ/ New York, NY",
+   "Washington, DC / Livingston, NJ"
   ],
   "lowscore": true,
   "pay": "$143,000 to $191,000.",
@@ -177569,7 +177748,7 @@
   "work_mode": "remote"
  },
  "b71aac84b05b2236": {
-  "apply_url": "",
+  "apply_url": "https://jobs.lever.co/terawattinfrastructure/ef145955-9ba5-4f38-bfbc-e776ed9fe475?lever-source=Indeed",
   "band": "weak",
   "company": "Terawatt Infrastructure",
   "date_posted": "2026-09-28",
@@ -177578,7 +177757,8 @@
   "location": "San Francisco, California",
   "locations": [
    "San Francisco, California",
-   "San Francisco, CA (Hybrid)"
+   "San Francisco, CA (Hybrid)",
+   "Remote, USA"
   ],
   "pay": "$145,000\u2013$180,000/yr",
   "priority": false,
@@ -190464,9 +190644,11 @@
   "work_mode_by": "fetch"
  },
  "c5058b4a31f8e03a": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Trane Technologies",
   "date_posted": "2026-09-14",
   "first_seen": "2026-10-13",
@@ -196376,9 +196558,11 @@
   "work_mode": "hybrid"
  },
  "cb2c7b7774bda63f": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Technical-Program-Manager/303859",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-09-30",
   "first_seen": "2026-09-30",
@@ -197379,7 +197563,7 @@
  },
  "cbf1045fb0826bb3": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T200415Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T220416Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-17",
@@ -204382,7 +204566,7 @@
  },
  "d2c268b939b8d3fc": {
   "active": false,
-  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77737&lang=en_US&source=Indeed",
+  "apply_url": "https://career41.sapsf.com/career?company=eatoncorpo&career_ns=job_listing&career_job_req_id=77737&lang=en_US&jobPipeline=Indeed",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -204489,7 +204673,7 @@
  },
  "d2cffa7452eb757c": {
   "active": false,
-  "apply_url": "https://candidateportal.ceipal.com/job-details/1PEWJRiOzYtgnW76I_Sod3Yd3tqIt104R28fnwyAq_o#.job_boards.Indeed",
+  "apply_url": "https://candidateportal.ceipal.com/job-details/_okA8HG-8NBdpMsMlNW5Eg0Kn0HH6bS53VGAsKXklVU#.job_boards.Indeed",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-17",
@@ -210751,7 +210935,7 @@
  },
  "d9a24b68e47eaa4e": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200693603-0505-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200693603-0505%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcbaa2050-def9-11f1-b1b6-95b359edb48f%26rx_job%3D200693603-0505-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T200423Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200693603-0505-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200693603-0505%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3Dcbaa2050-def9-11f1-b1b6-95b359edb48f%26rx_job%3D200693603-0505-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261118T220418Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -215652,9 +215836,11 @@
   "work_mode_by": "tag"
  },
  "ded174ed68ff4748": {
+  "active": false,
   "apply_url": "https://jobs.siemens-energy.com/en_US/CareersMarketplace/FolderDetail/Project-Manager-Substations/307065",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-18",
   "company": "Siemens Energy",
   "date_posted": "2026-11-10",
   "first_seen": "2026-11-10",
@@ -221109,6 +221295,35 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "e4bd27ac2d6a8648": {
+  "apply_url": "https://worldbankgroup.csod.com/ux/ats/careersite/1/home/requisition/39444?c=worldbankgroup",
+  "apply_url_own": true,
+  "band": "possible",
+  "company": "World Bank Group",
+  "date_posted": "2026-11-17",
+  "first_seen": "2026-11-18",
+  "first_seen_at": "2026-11-18T23:23:57Z",
+  "location": "Washington, DC, USA",
+  "locations": [
+   "Washington, DC, USA"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Investment officer structuring World Bank energy investments and advisory deals across client countries, a finance-first deal role rather than an operating or product one.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-18T23:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Investment Officer, Energy Investments, Solutions & Impact",
+  "url": "https://www.indeed.com/viewjob?jk=3c0e3d3cfb21e70e",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "e4c16fb3f337082e": {
   "active": false,
   "band": "misfit",
@@ -223306,6 +223521,35 @@
   "url": "https://jobs.lever.co/mainspringenergy/c959cce7-f95f-49b9-8b85-f768e4583d8a",
   "work_mode": "onsite",
   "work_mode_by": "triage"
+ },
+ "e6e0bcc121a6281d": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "strong",
+  "company": "Pivot Energy",
+  "date_posted": "2026-11-18",
+  "first_seen": "2026-11-18",
+  "first_seen_at": "2026-11-18T23:23:57Z",
+  "location": "Denver, Colorado",
+  "locations": [
+   "Denver, Colorado"
+  ],
+  "pay": "$160,000\u2013$190,000/yr",
+  "priority": true,
+  "rationale": "Directs technical and financial modeling, sizing and vendor evaluation for a solar-plus-storage and standalone battery project pipeline, bridging engineering and finance teams.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-11-18T23:24Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "lever",
+  "title": "Director of Energy Storage Modeling and Design",
+  "url": "https://jobs.lever.co/pivotenergy/605b09b6-c362-4f5d-9391-275ce3e55e79",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
  },
  "e6f0efed69a14890": {
   "active": false,
@@ -227918,7 +228162,7 @@
   "seniority_match": true,
   "source": "successfactors",
   "title": "Expert, Electric Program Manager | Hybrid (Oakland)",
-  "url": "https://careers.pge.com/job/Dublin-Expert%2C-Electric-Program-Manager-Hybrid-%28Oakland%29-CA-94568/1450768000/",
+  "url": "https://careers.pge.com/job/Dublin-Expert%2C-Electric-Program-Manager-Hybrid-%28Oakland%29-CA-94568/1450768700/",
   "work_mode": "hybrid",
   "work_mode_by": "fetch"
  },
@@ -239962,7 +240206,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Regional Managing Director, Data Center Community, Columbus, OH",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393557022516",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556994504",
   "work_mode": "onsite"
  },
  "f7a1ba3c97f72453": {
