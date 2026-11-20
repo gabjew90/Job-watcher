@@ -10289,7 +10289,8 @@
   "first_seen_at": "2026-11-20T21:56:42Z",
   "location": "Redwood City, CA, USA",
   "locations": [
-   "Redwood City, CA, USA"
+   "Redwood City, CA, USA",
+   "Redwood City"
   ],
   "pay": "$150,000\u2013$180,000/yr",
   "priority": false,
@@ -10302,9 +10303,9 @@
    "rubric": "4f002b3bf4"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "ashby",
   "title": "Data Scientist",
-  "url": "https://www.indeed.com/viewjob?jk=c04a1e47077f0867",
+  "url": "https://jobs.ashbyhq.com/hammerhead-ai/b71956ba-1ede-41ae-9a63-0ae7aa9c4d3f",
   "work_mode": "onsite",
   "work_mode_by": "fetch"
  },
@@ -37598,6 +37599,38 @@
   "work_mode": "",
   "work_mode_by": ""
  },
+ "24f044656aaa7293": {
+  "active": false,
+  "apply_url": "https://sbasite.wd5.myworkdayjobs.com/SBA_Communications_Careers/job/Boca-Raton-FL-Corporate-Office/Infrastructure-Engineer-II_JR102635",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-20",
+  "company": "SBA Communications",
+  "date_posted": "2026-11-20",
+  "first_seen": "2026-11-20",
+  "first_seen_at": "2026-11-20T23:10:22Z",
+  "location": "Boca Raton, FL, USA",
+  "locations": [
+   "Boca Raton, FL, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "IT infrastructure engineer role at a telecom tower company; a junior-to-mid technical post with no energy, power, or product/strategy scope.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-20T23:11Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Infrastructure Engineer II",
+  "url": "https://www.indeed.com/viewjob?jk=abc55df5f9027b56",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "24f213392cac58c5": {
   "apply_url": "https://jobs.ashbyhq.com/neuralwatt/61193650-e1c3-419d-87e3-1bfb4e644d47?utm_source=2dGpJkXMJK",
   "apply_url_own": true,
@@ -39158,7 +39191,7 @@
   "seniority_match": true,
   "source": "greenhouse",
   "title": "Manager, Supply Chain (Network Infrastructure)",
-  "url": "https://job-boards.greenhouse.io/spacex/jobs/8950942002",
+  "url": "https://job-boards.greenhouse.io/spacex/jobs/8952123002",
   "work_mode": "remote",
   "work_mode_by": "fetch"
  },
@@ -56321,7 +56354,8 @@
    "Herndon, VA, US",
    "Arlington, VA, US",
    "Seattle, WA, US",
-   "Bellevue, WA, US"
+   "Bellevue, WA, US",
+   "Arlington, VA, USA"
   ],
   "lowscore": true,
   "pay": "$148,700\u2013$201,200/yr",
@@ -56337,7 +56371,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Senior Technical Infrastructure Program Manager, Network Engineering",
-  "url": "https://www.indeed.com/viewjob?jk=e5fe459c8a1272cc",
+  "url": "https://www.indeed.com/viewjob?jk=ec52e042d8942829",
   "work_mode": ""
  },
  "3704a051c641bc50": {
@@ -63002,7 +63036,7 @@
   "work_mode_by": ""
  },
  "3eb62541ef0d3cd0": {
-  "apply_url": "https://www.calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=539364",
+  "apply_url": "https://www.calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=539394",
   "apply_url_own": true,
   "band": "weak",
   "company": "PUBLIC UTILITIES COMMISSION",
@@ -65136,6 +65170,35 @@
   "title": "Vice President, Special Projects and Emerging Technologies",
   "url": "https://www.indeed.com/viewjob?jk=c016eb037a8d89d0",
   "work_mode": ""
+ },
+ "40c01251763fe295": {
+  "apply_url": "https://www.amazon.jobs/jobs/10610322/tech-infra-program-manager-ii?cmpid=DA_INAD200785B",
+  "apply_url_own": true,
+  "band": "weak",
+  "company": "Amazon.com",
+  "date_posted": "2026-11-20",
+  "first_seen": "2026-11-20",
+  "first_seen_at": "2026-11-20T23:10:22Z",
+  "location": "Arlington, VA, USA",
+  "locations": [
+   "Arlington, VA, USA"
+  ],
+  "pay": "$127,100\u2013$171,900/yr",
+  "priority": false,
+  "rationale": "Program manager driving cross-functional data center infrastructure deployment from design through implementation; tactical program delivery, not product or strategy ownership.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-20T23:11Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Tech Infra Program Manager II",
+  "url": "https://www.indeed.com/viewjob?jk=63ae29429e456f32",
+  "work_mode": "",
+  "work_mode_by": ""
  },
  "40c370921b90abf1": {
   "active": false,
@@ -68162,9 +68225,11 @@
   "work_mode": ""
  },
  "4396096d5f196f3b": {
+  "active": false,
   "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=6f741ead-693c-4f61-b0cc-d14276a5631b&ccId=19000101_000001&jobId=621231&source=IN&lang=en_US",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-20",
   "company": "Welty Enterprises",
   "date_posted": "2026-11-20",
   "first_seen": "2026-11-20",
@@ -91720,6 +91785,38 @@
   "url": "https://www.indeed.com/viewjob?jk=f84cf26cf2ea785b",
   "work_mode": "hybrid"
  },
+ "5c359336bb3f2dc9": {
+  "active": false,
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "misfit",
+  "closed": "2026-11-20",
+  "company": "AMD",
+  "date_posted": "2026-07-24",
+  "first_seen": "2026-11-20",
+  "first_seen_at": "2026-11-20T23:10:22Z",
+  "location": "Santa Clara, California",
+  "locations": [
+   "Santa Clara, California"
+  ],
+  "lowscore": true,
+  "pay": "$203,000\u2013$290,000/yr",
+  "priority": false,
+  "rationale": "Senior signal and power integrity engineer modeling high-speed channels and PCB systems for networking silicon; deep specialist hardware engineering outside this skillset.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-20T23:11Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "jibe",
+  "title": "Sr. Signal Integrity/Power Integrity Engineer",
+  "url": "https://careers.amd.com/careers-home/jobs/86736?lang=en-us",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "5c3d2ebf0252a5cf": {
   "active": false,
   "apply_url": "",
@@ -105711,7 +105808,7 @@
  },
  "6a5cdd0901bbe833": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004f6DUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F971086452342966%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Db565d825-e1da-11f1-b88f-91ea2103c36e%26rx_job%3Da1KiE0000004f6DUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004f6DUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F971086452342966%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Db565d825-e1da-11f1-b88f-91ea2103c36e%26rx_job%3Da1KiE0000004f6DUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-16",
@@ -108922,6 +109019,35 @@
   "url": "https://www.indeed.com/viewjob?jk=c000fd28bbb9afec",
   "work_mode": "remote"
  },
+ "6dfb6cf2277ae443": {
+  "apply_url": "https://fa-essf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/10006112",
+  "apply_url_own": true,
+  "band": "strong",
+  "company": "MidAmerican Energy",
+  "date_posted": "2026-11-20",
+  "first_seen": "2026-11-20",
+  "first_seen_at": "2026-11-20T23:10:22Z",
+  "location": "Des Moines, IA, USA",
+  "locations": [
+   "Des Moines, IA, USA"
+  ],
+  "pay": "",
+  "priority": false,
+  "rationale": "Builds and leads a utility's data science team, setting enterprise AI strategy across forecasting, optimization, and generative AI; an energy plus AI leadership hybrid.",
+  "score": 75,
+  "scoring_fingerprint": {
+   "at": "2026-11-20T23:11Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Mgr, Data Science",
+  "url": "https://www.indeed.com/viewjob?jk=b83cc8b6c237f0b0",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "6dff52442314336c": {
   "active": false,
   "band": "misfit",
@@ -109375,7 +109501,7 @@
   "work_mode_by": "fetch"
  },
  "6e7eabe1eee049cd": {
-  "apply_url": "",
+  "apply_url": "https://career8.successfactors.com/career?career%5fns=job%5flisting&company=C0003043182P&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=8286&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=America/Chicago&_s.crb=yvw8ttSZtMljb%2fazeCVnWYt%2bAChVuXCrTRlJWUWG6ck%3d",
   "apply_url_own": false,
   "band": "possible",
   "company": "Southern California Edison",
@@ -109384,7 +109510,8 @@
   "first_seen_at": "2026-11-20T21:56:42Z",
   "location": "Westminster, CA",
   "locations": [
-   "Westminster, CA"
+   "Westminster, CA",
+   "Westminster, CA, USA"
   ],
   "pay": "$143,900\u2013$215,800/yr",
   "priority": false,
@@ -115883,7 +116010,7 @@
   "work_mode": ""
  },
  "747127594a2994fc": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004yIXUAY_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1664082508590840%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De693656c-e2e6-11f1-8030-df760aded207%26rx_job%3Da1KiE0000004yIXUAY_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004yIXUAY_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1664082508590840%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De693656c-e2e6-11f1-8030-df760aded207%26rx_job%3Da1KiE0000004yIXUAY_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
   "company": "Meta",
@@ -121193,7 +121320,7 @@
   "work_mode": "remote"
  },
  "79a377d989046dc1": {
-  "apply_url": "https://aes.wd1.myworkdayjobs.com/AES_US/job/US-Louisville-CO/Portfolio-Asset-Manager_R1065553",
+  "apply_url": "https://aes.wd1.myworkdayjobs.com/aes_clean_energy/job/US-Louisville-CO/Portfolio-Asset-Manager_R1065552",
   "apply_url_own": true,
   "band": "weak",
   "company": "AES Corporation",
@@ -121907,7 +122034,9 @@
   "work_mode": ""
  },
  "7a8b3284ca757d78": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-20",
   "company": "SpaceX",
   "date_posted": "2026-08-19",
   "first_seen": "2026-08-28",
@@ -140483,7 +140612,7 @@
   },
   "seniority_match": false,
   "source": "greenhouse",
-  "title": "Community Engagement Manager - Power Generation",
+  "title": "Community Engagement Manager",
   "url": "https://job-boards.greenhouse.io/sbenergy/jobs/6209018004",
   "work_mode": "",
   "work_mode_by": ""
@@ -142057,7 +142186,7 @@
   "work_mode_by": ""
  },
  "8e9114a26f430927": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp00000CZNvqMAH_1004&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1276926793901855%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0a55f359-e38f-11f1-b78a-83d8d89f06b5%26rx_job%3Da1KDp00000CZNvqMAH_1004%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KDp00000CZNvqMAH_1004&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1276926793901855%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0a55f359-e38f-11f1-b78a-83d8d89f06b5%26rx_job%3Da1KDp00000CZNvqMAH_1004%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -145699,9 +145828,11 @@
   "work_mode_by": ""
  },
  "91e2419e5d123fa3": {
+  "active": false,
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
+  "closed": "2026-11-20",
   "company": "Crusoe",
   "date_posted": "2026-11-10",
   "first_seen": "2026-11-10",
@@ -150430,7 +150561,9 @@
   "work_mode": "hybrid"
  },
  "96ed6abdefa764de": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-20",
   "company": "Base Power",
   "date_posted": "2026-07-30",
   "first_seen": "2026-09-03",
@@ -155994,7 +156127,7 @@
  },
  "9ccfe3a6ee1de773": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004ybtUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2019143672089456%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0309f990-e36d-11f1-9483-7540b0d1b8d0%26rx_job%3Da1KiE0000004ybtUAA%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004ybtUAA&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2019143672089456%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0309f990-e36d-11f1-9483-7540b0d1b8d0%26rx_job%3Da1KiE0000004ybtUAA%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-19",
@@ -178060,6 +178193,35 @@
   "source": "indeed",
   "title": "BESS Field Technician",
   "url": "https://www.indeed.com/viewjob?jk=f97d38c71046da1b",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
+ "b2631d1fd5165afe": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "AMD",
+  "date_posted": "2026-11-20",
+  "first_seen": "2026-11-20",
+  "first_seen_at": "2026-11-20T23:10:22Z",
+  "location": "San Jose, California",
+  "locations": [
+   "San Jose, California"
+  ],
+  "pay": "$215,880\u2013$308,400/yr",
+  "priority": false,
+  "rationale": "Leads field build assurance across design, construction, and commissioning of AI data centers; construction-delivery engineering focus, not product or strategy ownership.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-20T23:11Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "jibe",
+  "title": "Lead, Data Center Build Assurance",
+  "url": "https://careers.amd.com/careers-home/jobs/97989?lang=en-us",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -202427,7 +202589,7 @@
  },
  "cbf1045fb0826bb3": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000001h9NUAQ_1003&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2068897733740737%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D3a25d444-df7f-11f1-8c91-6da42459029c%26rx_job%3Da1KiE0000001h9NUAQ_1003%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-10-17",
@@ -227974,7 +228136,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Data Center Program Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393557051504",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557044796",
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
@@ -229723,7 +229885,7 @@
  },
  "e78eff9fcb4db23b": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004wOnUAI&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1440039554993527%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0308f640-e36d-11f1-9429-7540b0d1b8d0%26rx_job%3Da1KiE0000004wOnUAI%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T200406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004wOnUAI&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1440039554993527%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0308f640-e36d-11f1-9429-7540b0d1b8d0%26rx_job%3Da1KiE0000004wOnUAI%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261120T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-19",
@@ -238616,6 +238778,37 @@
   "url": "https://www.indeed.com/viewjob?jk=ea2d51e518f9434f",
   "work_mode": "remote"
  },
+ "efbba7c066fee58d": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "PG&E",
+  "date_posted": "2026-11-19",
+  "first_seen": "2026-11-20",
+  "first_seen_at": "2026-11-20T23:10:22Z",
+  "location": "Salinas, CA, US, 93901",
+  "locations": [
+   "Salinas, CA, US, 93901",
+   "Oakland, CA, US, 94612",
+   "Danville, CA, US, 94583"
+  ],
+  "pay": "$144,000\u2013$244,000",
+  "priority": false,
+  "rationale": "Principal leading PG&E's corporate GHG accounting, reporting, and sustainability strategy and external partnerships; a sustainability specialist role, not energy or power strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-20T23:11Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": true,
+  "source": "successfactors",
+  "title": "Principal Corporate Sustainability Representative",
+  "url": "https://careers.pge.com/job/Oakland-Principal-Corporate-Sustainability-Representative-CA-94612/1452369900/",
+  "work_mode": "hybrid",
+  "work_mode_by": "fetch"
+ },
  "efceff98b96fec95": {
   "active": false,
   "band": "weak",
@@ -241267,6 +241460,38 @@
   "title": "People Operations Manager",
   "url": "https://jobs.ashbyhq.com/tyba/211c8576-b8d8-463b-8d8b-84e21c6b32f7",
   "work_mode": ""
+ },
+ "f2ef8dc5fc6af52b": {
+  "active": false,
+  "apply_url": "https://ats.rippling.com/en-US/avicado-join-our-team/jobs/7a99029a-9f36-4c11-a291-0ed910816f58",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-20",
+  "company": "Avicado Construction Technology Services",
+  "date_posted": "2026-11-20",
+  "first_seen": "2026-11-20",
+  "first_seen_at": "2026-11-20T23:10:22Z",
+  "location": "Remote, USA",
+  "locations": [
+   "Remote, USA"
+  ],
+  "lowscore": true,
+  "pay": "",
+  "priority": false,
+  "rationale": "Quota-carrying strategic account manager selling to data center and hyperscale clients for a construction technology firm, a sales-origination role.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-20T23:11Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "4f002b3bf4"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Strategic Account Manager \u2013 Data Center Infrastructure",
+  "url": "https://www.indeed.com/viewjob?jk=a19615cf111eb66f",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
  },
  "f2f0608d767246a6": {
   "active": false,
@@ -246075,7 +246300,7 @@
   "score": 58,
   "seniority_match": true,
   "source": "microsoft",
-  "title": "Regional Managing Director, Data Center Community, Pecos, TX",
+  "title": "Regional Managing Director, Data Center Community, Phoenix Metro",
   "url": "https://apply.careers.microsoft.com/careers/job/1970393557076006",
   "work_mode": "onsite"
  },
