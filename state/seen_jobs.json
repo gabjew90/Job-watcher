@@ -32158,7 +32158,9 @@
   "work_mode_by": "triage"
  },
  "1f38e734f9e74a9e": {
+  "active": false,
   "band": "possible",
+  "closed": "2026-11-22",
   "company": "Tyba",
   "date_posted": "2026-08-25",
   "first_seen": "2026-08-28",
@@ -32612,7 +32614,8 @@
   "location": "Jonesville, SC, USA",
   "locations": [
    "Jonesville, SC, USA",
-   "Broomfield, CO, USA"
+   "Broomfield, CO, USA",
+   "Olean, NY, USA"
   ],
   "lowscore": true,
   "pay": "$165,000\u2013$242,000/yr",
@@ -32628,7 +32631,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Senior Manager - Business Operations & CI",
-  "url": "https://www.indeed.com/viewjob?jk=3837b411f05a81a3",
+  "url": "https://www.indeed.com/viewjob?jk=fd62f3297f234575",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -55814,6 +55817,38 @@
   "work_mode": "hybrid",
   "work_mode_by": "fetch"
  },
+ "35a56555a81fe107": {
+  "active": false,
+  "apply_url": "https://careers.google.com/jobs/results/90992754401649350-data-center-server-operations-manager/",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-22",
+  "company": "Google",
+  "date_posted": "2026-11-20",
+  "first_seen": "2026-11-22",
+  "first_seen_at": "2026-11-22T22:16:20Z",
+  "location": "Henderson, NV, USA",
+  "locations": [
+   "Henderson, NV, USA"
+  ],
+  "lowscore": true,
+  "pay": "$138,000\u2013$200,000/yr",
+  "priority": false,
+  "rationale": "Manages data center technicians installing and troubleshooting server hardware and networking gear, hands-on IT infrastructure operations unrelated to power or storage.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-22T22:19Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
+  },
+  "seniority_match": true,
+  "source": "indeed",
+  "title": "Data Center Server Operations Manager, Global Server Operations",
+  "url": "https://www.indeed.com/viewjob?jk=2cb345178aa01672",
+  "work_mode": "",
+  "work_mode_by": ""
+ },
  "35a8542bb84d88a2": {
   "apply_url": "https://grnh.se/jfw7wg92teu",
   "apply_url_own": true,
@@ -75440,7 +75475,9 @@
   "work_mode": "onsite"
  },
  "49b07d192db36904": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-22",
   "company": "NVIDIA",
   "date_posted": "2026-09-01",
   "first_seen": "2026-08-28",
@@ -78563,7 +78600,8 @@
   "locations": [
    "Burbank, CA, USA",
    "Orlando, FL, USA",
-   "Norristown, PA, USA"
+   "Norristown, PA, USA",
+   "Manheim, PA, USA"
   ],
   "lowscore": true,
   "pay": "$20\u2013$53/hr",
@@ -85664,7 +85702,8 @@
   "locations": [
    "Menlo Park, CA, US",
    "Menlo Park, CA, USA",
-   "Seattle, WA, USA"
+   "Seattle, WA, USA",
+   "Bellevue, WA, USA"
   ],
   "pay": "$103,000\u2013$156,000/yr",
   "priority": false,
@@ -85679,7 +85718,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Technical Program Manager, Infrastructure Data Centers",
-  "url": "https://www.indeed.com/viewjob?jk=59ff3a7ed66ebfa4",
+  "url": "https://www.indeed.com/viewjob?jk=bba4519a99af94d2",
   "work_mode": ""
  },
  "547e39866a05a1b4": {
@@ -123072,7 +123111,7 @@
   "work_mode": "remote"
  },
  "79a377d989046dc1": {
-  "apply_url": "https://aes.wd1.myworkdayjobs.com/aes_clean_energy/job/US-Louisville-CO/Portfolio-Asset-Manager_R1065552",
+  "apply_url": "https://aes.wd1.myworkdayjobs.com/AES_US/job/US-Louisville-CO/Portfolio-Asset-Manager_R1065553",
   "apply_url_own": true,
   "band": "weak",
   "company": "AES Corporation",
@@ -127872,7 +127911,8 @@
   "first_seen_at": "2026-11-22T20:44:48Z",
   "location": "Mesa, AZ, USA",
   "locations": [
-   "Mesa, AZ, USA"
+   "Mesa, AZ, USA",
+   "Austin, TX, USA"
   ],
   "lowscore": true,
   "pay": "",
@@ -127888,7 +127928,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Supply Demand Planner, Infrastructure Services",
-  "url": "https://www.indeed.com/viewjob?jk=9672d32c1a9c56cd",
+  "url": "https://www.indeed.com/viewjob?jk=b99a8d3eee1c4313",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -137921,21 +137961,24 @@
   "work_mode_by": ""
  },
  "87ed89ee10b13d1a": {
-  "active": false,
+  "active": true,
   "band": "misfit",
-  "closed": "2026-08-25",
   "company": "Crusoe",
   "date_posted": "2026-01-30",
   "first_seen": "2026-08-13",
   "location": "Denver, CO - US",
+  "locations": [
+   "Denver, CO - US"
+  ],
   "pay": "$148,740 - $170,000",
   "priority": false,
   "rationale": "Systems engineer in modular data center design; IC role not director/PM level.",
+  "reopened": "2026-11-22",
   "score": 20,
   "seniority_match": false,
   "source": "ashby",
-  "title": "Modular Data Center Systems Engineer \u2013 Spark",
-  "url": "https://jobs.ashbyhq.com/crusoe/9aa892be-71db-455e-9980-ffff4badfee3"
+  "title": "Senior Staff Mechanical Systems Engineer - Spark",
+  "url": "https://jobs.ashbyhq.com/Crusoe/9aa892be-71db-455e-9980-ffff4badfee3"
  },
  "87ee05d56f89d67b": {
   "active": false,
@@ -147058,7 +147101,7 @@
  "911fb375de0054a4": {
   "apply_url": "https://jobs.totalenergies.com/fr_FR/careers/JobDetail/Senior-Portfolio-Planning-Manager/84982",
   "apply_url_own": true,
-  "band": "strong",
+  "band": "possible",
   "company": "TotalEnergies",
   "date_posted": "2026-10-09",
   "first_seen": "2026-10-09",
@@ -147069,13 +147112,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Senior power-asset portfolio valuation/economics role in ERCOT/PJM \u2014 energy-economics modeling matches the HIGH strategy exception.",
-  "score": 75,
+  "rationale": "Economic valuation and portfolio planning for ERCOT and PJM generation assets feeding investment decisions, finance-heavy asset valuation rather than product or strategy ownership.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-10-25T17:47Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -147560,14 +147603,14 @@
   ],
   "pay": "$150,000 - $170,000 per year",
   "priority": false,
-  "rationale": "Single-threaded product owner for data center power delivery cable systems, driving strategy, requirements and launch for low- and medium-voltage hardware.",
+  "rationale": "Single-threaded owner for VEIR's low and medium voltage cable systems, translating data center power delivery requirements into certified hardware products.",
   "reopened": "2026-11-10",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-10T22:32Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -154775,13 +154818,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Senior TPM role with explicit cross-cutting strategy and controllership scope for AWS power generation \u2014 reaches strong per the program-to-strategy exception.",
+  "rationale": "Senior technical program manager for AWS power generation assets who also drives cross-cutting strategy and controllership for the global energy organization.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-10-25T17:47Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "amazon",
@@ -154911,10 +154954,9 @@
   "work_mode": ""
  },
  "994f19d6c727429a": {
-  "active": false,
+  "active": true,
   "apply_url": "",
   "band": "possible",
-  "closed": "2026-10-01",
   "company": "Nebius",
   "date_posted": "2026-10-01",
   "first_seen": "2026-10-01",
@@ -154926,6 +154968,7 @@
   "pay": "$170,000-$220,000",
   "priority": false,
   "rationale": "Critical facilities operations leadership (power/cooling) at AI datacenter \u2014 steady-state O&M focus, not product/strategy.",
+  "reopened": "2026-11-22",
   "score": 55,
   "scoring_fingerprint": {
    "at": "2026-10-01T19:38Z",
@@ -154935,7 +154978,7 @@
   },
   "seniority_match": true,
   "source": "greenhouse",
-  "title": "DC Operations Site Lead - Critical Infrastructure",
+  "title": "DC Operations Manager -  Critical Infrastructure",
   "url": "https://job-boards.greenhouse.io/nebius/jobs/4705231101",
   "work_mode": "remote"
  },
@@ -157333,13 +157376,13 @@
   ],
   "pay": "$170,000\u2013$238,000/yr",
   "priority": false,
-  "rationale": "Individual-contributor strategist shaping Meta's global data center roadmap and multibillion-dollar capacity investment decisions across engineering, construction and finance teams.",
+  "rationale": "Individual contributor driving multi-billion dollar data center capacity and power utilization strategy, evaluating trade-offs for executive leadership.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-05T21:31Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "c790374d89"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -159001,13 +159044,13 @@
   "location": "Remote - USA",
   "pay": "",
   "priority": true,
-  "rationale": "C-level product/engineering leadership over a transmission-planning data product at a small startup \u2014 attainable scope despite exec title.",
+  "rationale": "Chief Product and Technology Officer for a 17-person transmission planning software startup, turning the co-founder's roadmap vision into shipped products.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-10-25T17:47Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -166139,7 +166182,8 @@
   "first_seen_at": "2026-11-22T20:44:48Z",
   "location": "Colorado City, TX, USA",
   "locations": [
-   "Colorado City, TX, USA"
+   "Colorado City, TX, USA",
+   "Chicago, IL, USA"
   ],
   "pay": "$100,000\u2013$155,000/yr",
   "priority": false,
@@ -166154,7 +166198,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Technical Manager - Data Center (Central Time Zone)",
-  "url": "https://www.indeed.com/viewjob?jk=6127951d2e71964a",
+  "url": "https://www.indeed.com/viewjob?jk=a53c7e772071ea2e",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -168302,13 +168346,13 @@
   ],
   "pay": "$125,500\u2013$261,600/yr",
   "priority": false,
-  "rationale": "Builds AI and ML systems for utility clients' grid, outage, and capital planning data as a consulting manager; an AI plus energy domain hybrid.",
+  "rationale": "Consulting manager building AI and ML models for utility clients across grid reliability, outage prediction and capital planning engagements.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-01T21:13Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "c790374d89"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -170365,7 +170409,7 @@
  "a7d952ef4acb2de6": {
   "apply_url": "",
   "apply_url_own": false,
-  "band": "strong",
+  "band": "possible",
   "company": "Amazon",
   "date_posted": "2026-11-10",
   "first_seen": "2026-11-10",
@@ -170376,13 +170420,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Leads utility relationships and delivers medium and high voltage power infrastructure projects for AWS data centers across a region, hyperscaler energy work.",
-  "score": 75,
+  "rationale": "Manages utility interactions and EPC vendors to deliver medium and high voltage infrastructure for AWS data centers across the AMER East region.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-11-10T21:22Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "amazon",
@@ -170818,13 +170862,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Owns end-to-end product line lifecycle for inverter-based power conversion solutions at a BESS power-electronics supplier, a direct product-management domain match.",
+  "rationale": "Owns the end-to-end product line for EPC Power's grid-tied inverter hardware, a plain product manager title squarely in power electronics.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-07T20:58Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "paylocity",
@@ -172152,7 +172196,7 @@
  "a96f8e8e5b713598": {
   "apply_url": "https://nvent.wd5.myworkdayjobs.com/en-US/nVent/job/Raleigh-NC-US/Product-Manager-III---DC-Power_R23106",
   "apply_url_own": true,
-  "band": "strong",
+  "band": "top",
   "company": "nVent",
   "date_posted": "2026-10-21",
   "first_seen": "2026-10-21",
@@ -172163,13 +172207,13 @@
   ],
   "pay": "$105,000\u2013$195,000/yr",
   "priority": false,
-  "rationale": "Product manager owning global DC power portfolio strategy and GTM \u2014 core-domain hardware PM role that bands strong per seniority calibration even under a flatter title.",
-  "score": 75,
+  "rationale": "Owns strategy and multi-year roadmap for nVent's global DC power product portfolio serving data centers, hybrid in Raleigh or Anoka.",
+  "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-10-24T17:41Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -177316,13 +177360,13 @@
   ],
   "pay": "",
   "priority": true,
-  "rationale": "Leads Bitdeer's utility interconnection and power development pipeline for Texas data center sites, negotiating agreements with ERCOT and utilities.",
+  "rationale": "Leads utility and ERCOT interconnection for Bitdeer's compute sites, building the power pipeline and negotiating agreements that keep construction on schedule.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-10T21:22Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "breezy",
@@ -187887,13 +187931,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Director owning data platform, analytics and ML roadmap and delivery at a residential solar and clean-energy company, a data and AI leadership role inside the energy industry.",
+  "rationale": "Director leading data platform, analytics, data science and ML teams at a residential solar company, owning roadmap and delivery.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-19T22:14Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -187964,7 +188008,8 @@
   "location": "El Paso, TX, USA",
   "locations": [
    "El Paso, TX, USA",
-   "Rayville, LA, USA"
+   "Rayville, LA, USA",
+   "Eagle Mountain, UT, USA"
   ],
   "pay": "$178,000\u2013$245,000/yr",
   "priority": false,
@@ -187979,7 +188024,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Construction Manager, Data Center",
-  "url": "https://www.indeed.com/viewjob?jk=649f0b4b129c4ccf",
+  "url": "https://www.indeed.com/viewjob?jk=03e6673b7ab40209",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -190402,13 +190447,13 @@
   ],
   "pay": "$150,000\u2013$180,000/yr",
   "priority": true,
-  "rationale": "Leads AI/ML development of battery state estimation algorithms for BESS fleets, a deep domain plus applied-AI hybrid role at his own company's peer function.",
+  "rationale": "Leads AI-driven battery state estimation algorithm development for the company's own BESS fleet, acting as the team's AI/ML subject matter expert.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-03T21:00Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "c790374d89"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -191756,7 +191801,8 @@
   "location": "Mesa, AZ, USA",
   "locations": [
    "Mesa, AZ, USA",
-   "Montgomery, AL, USA"
+   "Montgomery, AL, USA",
+   "DeKalb, IL, USA"
   ],
   "pay": "$118,000\u2013$170,000/yr",
   "priority": false,
@@ -195314,6 +195360,7 @@
   "work_mode_by": "fetch"
  },
  "c1656cc5f85d5241": {
+  "applied": "2026-11-11",
   "apply_url": "",
   "apply_url_own": false,
   "band": "weak",
@@ -196948,13 +196995,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Principal data scientist building AI proofs-of-concept for energy, buildings and data-center problems at an electrical-equipment maker; strong domain-plus-AI hybrid.",
+  "rationale": "Principal data scientist building AI proofs of concept across energy, buildings and data center problems at an electrification and automation company.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-20T22:09Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -210769,7 +210816,7 @@
  "d0d7a9ec0b7f8f83": {
   "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=dd7b682c-9b4e-4d2e-bc99-f32dbddf1ca5&ccId=19000101_000001&jobId=956521&source=IN&lang=en_US",
   "apply_url_own": true,
-  "band": "strong",
+  "band": "possible",
   "company": "LYDIAN ENERGY LLC",
   "date_posted": "2026-10-10",
   "first_seen": "2026-10-10",
@@ -210780,13 +210827,13 @@
   ],
   "pay": "",
   "priority": true,
-  "rationale": "Director-level asset-management/O&M oversight for a utility-scale BESS and solar portfolio matches the storage-asset operating/portfolio sweet spot.",
-  "score": 75,
+  "rationale": "Director overseeing O&M performance, SCADA monitoring and contractor management for a national portfolio of utility-scale BESS and solar assets.",
+  "score": 55,
   "scoring_fingerprint": {
-   "at": "2026-10-25T17:47Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -215484,7 +215531,7 @@
  "d54b88e14933f795": {
   "apply_url": "https://careers.qcells.com/jobs/18328315-sr-product-manager-controls?tm_job=2861&tm_event=view&tm_company=92338",
   "apply_url_own": true,
-  "band": "strong",
+  "band": "top",
   "company": "Qcells",
   "date_posted": "2026-10-09",
   "first_seen": "2026-10-09",
@@ -215495,13 +215542,13 @@
   ],
   "pay": "$154,100\u2013$226,100/yr",
   "priority": true,
-  "rationale": "Senior product manager owning strategy and roadmap for BESS controllers, EMS, and grid-integration products \u2014 direct BESS product-line match.",
-  "score": 75,
+  "rationale": "Senior product manager owning strategy and requirements for Qcells' BESS controllers, EMS, SCADA and grid communication interfaces.",
+  "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-10-25T17:47Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -231900,7 +231947,7 @@
   "seniority_match": true,
   "source": "microsoft",
   "title": "Data Center Program Manager",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393557051504",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557044796",
   "work_mode": "onsite"
  },
  "e5f36916c1ab7af0": {
@@ -232819,13 +232866,13 @@
   ],
   "pay": "$160,000\u2013$190,000/yr",
   "priority": true,
-  "rationale": "Directs technical and financial modeling, sizing and vendor evaluation for a solar-plus-storage and standalone battery project pipeline, bridging engineering and finance teams.",
+  "rationale": "Director leading market analysis, vendor evaluation and techno-economic sizing for a solar developer's standalone and DC-coupled storage pipeline.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-18T23:24Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "lever",
@@ -234657,13 +234704,13 @@
   ],
   "pay": "$124,000\u2013$170,000/yr",
   "priority": true,
-  "rationale": "Techno-economic analysis of site power/grid conditions for data center customer energy needs, matching the energy-economics strategy carve-out.",
+  "rationale": "Manager analyzing customer energy needs, site electrical infrastructure and early project economics to qualify data center and logistics power opportunities.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-10-25T19:41Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -237753,14 +237800,14 @@
   ],
   "pay": "$132,700",
   "priority": false,
-  "rationale": "Lead Product Manager for utility-facing DR/VPP integration software, a core energy-industry data/software product role.",
+  "rationale": "Senior lead product manager owning how a demand-response platform integrates with utility CIS and OT systems end to end.",
   "reopened": "2026-10-29",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-10-25T19:41Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "greenhouse",
@@ -238482,13 +238529,13 @@
   ],
   "pay": "$196,000\u2013$231,000/yr",
   "priority": false,
-  "rationale": "Senior Staff strategy IC role at an on-site/behind-the-meter generation company serving data centers, matching the HIGH strategy thesis.",
+  "rationale": "Senior staff strategist at a maker of fuel-flexible on-site generators for data centers and utilities; posting gives little detail on actual duties.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-10-25T19:41Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
-   "policy": "139133cf50",
-   "rubric": "d8052b3b9c"
+   "policy": "4fea3023de",
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "lever",
@@ -242329,13 +242376,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Owns the global lifecycle services roadmap and commercialization for Vertiv's liquid cooling and fluid network products in data centers, product management in his thermal adjacency.",
+  "rationale": "Product manager owning global lifecycle services strategy and pricing for Vertiv's liquid cooling and fluid network infrastructure.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-03T21:00Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "c790374d89"
+   "rubric": "92bb5e3acf"
   },
   "seniority_match": true,
   "source": "indeed",
@@ -248295,7 +248342,7 @@
  "f5d2c964953cde2a": {
   "apply_url": "https://careers.qcells.com/jobs/18491585-vice-president-bess-business-north-america?tm_job=2879&tm_event=view&tm_company=92338",
   "apply_url_own": true,
-  "band": "strong",
+  "band": "weak",
   "company": "Qcells",
   "date_posted": "2026-11-18",
   "first_seen": "2026-11-20",
@@ -248306,15 +248353,15 @@
   ],
   "pay": "$219,400\u2013$331,900/yr",
   "priority": true,
-  "rationale": "VP owning the North American BESS P&L, commercial strategy and product roadmap across integrated storage platforms; strong product and commercial scope.",
-  "score": 75,
+  "rationale": "Runs Qcells' entire North American battery storage business, owning its P&L, commercial strategy, product, engineering and supply chain; scope is general-management, well above target seniority.",
+  "score": 35,
   "scoring_fingerprint": {
-   "at": "2026-11-20T22:09Z",
+   "at": "2026-11-22T22:19Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "92bb5e3acf"
   },
-  "seniority_match": true,
+  "seniority_match": false,
   "source": "indeed",
   "title": "Vice President, BESS Business (North America)",
   "url": "https://www.indeed.com/viewjob?jk=df0b0407e019b9c7",
@@ -249034,7 +249081,8 @@
    "Burbank, CA, US",
    "Martinez, CA, USA",
    "Tampa, FL, USA",
-   "Mililani Town, HI, USA"
+   "Mililani Town, HI, USA",
+   "East Granby, CT, USA"
   ],
   "lowscore": true,
   "pay": "$26\u2013$26/hr",
@@ -249049,7 +249097,7 @@
   "seniority_match": false,
   "source": "indeed",
   "title": "Material Handler, Energy",
-  "url": "https://www.indeed.com/viewjob?jk=82e5734f0e98ff7d",
+  "url": "https://www.indeed.com/viewjob?jk=2e57c5d221909caf",
   "work_mode": ""
  },
  "f675f221774b49d5": {
