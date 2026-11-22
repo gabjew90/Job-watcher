@@ -98,6 +98,11 @@ consultancies follow the MID rules below.
   analytics or AI-tooling lead, AI applied to grid/energy/market data.
   The candidate has production AI credentials — domain + AI hybrids are
   excellent fits and should NOT be penalized for being "software" roles.
+  Individual-contributor data science and analytics roles (Data
+  Scientist, Senior Data Scientist, analyst, ML engineer, consultant)
+  with no lead, manager or principal scope band possible at most: they
+  sit below his level (owner, 2026-11-22). Leading a data science or AI
+  team inside the industry stays strong.
 - Senior/principal individual-contributor STRATEGY roles in energy
   (interconnection strategy lead, energy market principal, techno-economic
   analysis lead) at the companies the HIGH strategy rule names — strong
