@@ -144,3 +144,14 @@ hide: Solution Engineer - Structural Design @ Neara
   utility or developer interconnection roles stay possible (profile.md,
   Score MID). (from issue #303, re: Amazon Senior Power Development
   Manager (TIPM), warehouse real-estate power team; was top)
+- calibration (owner, 2026-11-26: the Crusoe Spark role is "really good",
+  rank these and similar at the top): hardware product management for AI
+  data center physical infrastructure bands top. That covers modular,
+  prefab or containerized data center modules (Crusoe Spark, Vertiv
+  modular, Delta containerization), the integrated power and electrical
+  packages built into them (containerized power, skids, e-houses), and
+  data center mechanical or electrical infrastructure product roles at
+  hyperscalers and AI infrastructure operators, including principal and
+  plain "Product Manager" titles. A standalone liquid-cooling product line
+  at a thermal vendor stays strong (issue #137), and product roles for a
+  single component (pumps, fans, valves) stay strong.

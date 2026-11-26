@@ -783,7 +783,7 @@
   ],
   "state_retention_days": 180,
   "dashboard_max_rows": 500,
-  "rescore_scored_before": "2026-11-22T01:55Z",
+  "rescore_scored_before": "2026-11-26T00:17Z",
   "rescore_max_per_run": 60,
   "theme": "battery",
   "board_title": "Gabriel's Job Watch",
@@ -821,5 +821,6 @@
   "rescore_bands": [
     "top",
     "strong"
-  ]
+  ],
+  "spotlight": "(?=.*\\b(product (manager|management|line|lead|owner|director)s?|head of product|(director|vp|vice president)\\b.*\\bproducts?)\\b)(?=.*(modular|prefab|pre-fab|containeri[sz]|\\bspark\\b|ai factor|e-house|\\bskid\\b|power module|data ?cent(er|re)\\b.*\\b(power|electrical|mechanical|infrastructure|engineering)))"
 }
