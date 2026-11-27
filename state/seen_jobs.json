@@ -723,9 +723,11 @@
   "work_mode": ""
  },
  "009660e1b737e570": {
+  "active": false,
   "apply_url": "https://jobs.aecon.com/job/Port-Huron-Project-Manager-%28BESS%29-MI/607606717/",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-27",
   "company": "Aecon Group Inc.",
   "date_posted": "2026-11-02",
   "first_seen": "2026-11-02",
@@ -10391,6 +10393,35 @@
   "title": "Consultant, Engineer",
   "url": "https://www.indeed.com/viewjob?jk=a541e3f74c3e1f70",
   "work_mode": "remote"
+ },
+ "092bbd3c6845ff5c": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "Lambda",
+  "date_posted": "2026-11-18",
+  "first_seen": "2026-11-27",
+  "first_seen_at": "2026-11-27T01:07:14Z",
+  "location": "Bellevue Office",
+  "locations": [
+   "Bellevue Office"
+  ],
+  "pay": "$338K \u2013 $438K \u00b7 Multiple Ranges",
+  "priority": false,
+  "rationale": "Manages Lambda's GPU fleet lifecycle and NVIDIA roadmap as a product, compute hardware rather than power, energy or cooling infrastructure.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-27T01:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "7cf20dd9e2"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Principal Product Manager - Hardware",
+  "url": "https://jobs.ashbyhq.com/Lambda/bb47e828-8b60-42dd-8d4e-d2692c87cdc8",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
  },
  "0934647dfbbc3ef5": {
   "active": false,
@@ -32813,7 +32844,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Strategic Cost Management Lead, Infrastructure Data Centers",
-  "url": "https://www.indeed.com/viewjob?jk=d0788f883e524298",
+  "url": "https://www.indeed.com/viewjob?jk=f0ffbd3b931e6359",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -43649,7 +43680,9 @@
   "work_mode_by": "fetch"
  },
  "28dbfe5af337353a": {
+  "active": false,
   "band": "weak",
+  "closed": "2026-11-27",
   "company": "Aecon Group Inc.",
   "date_posted": "2026-09-15",
   "first_seen": "2026-09-16",
@@ -45730,7 +45763,7 @@
   "work_mode_by": "triage"
  },
  "2a97498dbdfa8de4": {
-  "apply_url": "https://careers-geosyntec.icims.com/jobs/5369/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
+  "apply_url": "https://careers.geosyntec.com/jobs/5369/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f",
   "apply_url_own": true,
   "band": "weak",
   "company": "Geosyntec Consultants, Inc.",
@@ -62867,7 +62900,7 @@
   "work_mode": "hybrid"
  },
  "3b0a997d69c2df4e": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000005BajUAE&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1971792060871050%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De0614218-e79d-11f1-bdce-f70a2955a4dc%26rx_job%3Da1KiE0000005BajUAE%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261126T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000005BajUAE&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1971792060871050%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De0614218-e79d-11f1-bdce-f70a2955a4dc%26rx_job%3Da1KiE0000005BajUAE%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261127T000436Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -78063,7 +78096,8 @@
   "first_seen_at": "2026-11-24T23:43:40Z",
   "location": "Greenwood, SC, USA",
   "locations": [
-   "Greenwood, SC, USA"
+   "Greenwood, SC, USA",
+   "Peachtree City, GA, USA"
   ],
   "pay": "$165,000\u2013$242,000/yr",
   "priority": false,
@@ -78078,7 +78112,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Senior Manager - Product Engineering",
-  "url": "https://www.indeed.com/viewjob?jk=0e0325994ebdc265",
+  "url": "https://www.indeed.com/viewjob?jk=7562aaef51c1dbfb",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -79166,7 +79200,7 @@
  },
  "4acd2929bb7ea3ca": {
   "active": false,
-  "apply_url": "https://grnh.se/fvyr7fp38us",
+  "apply_url": "https://grnh.se/qal4ou5i8us",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-24",
@@ -110717,7 +110751,7 @@
  },
  "69d1614c8d3def21": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200694762-3401-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200694762-3401%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D739c4a48-e458-11f1-a1be-9d702fe06d74%26rx_job%3D200694762-3401-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261126T220407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200694762-3401-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200694762-3401%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D739c4a48-e458-11f1-a1be-9d702fe06d74%26rx_job%3D200694762-3401-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261127T000446Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-26",
@@ -111795,7 +111829,8 @@
   "first_seen_at": "2026-11-26T22:54:45Z",
   "location": "USA",
   "locations": [
-   "USA"
+   "USA",
+   "Remote, USA"
   ],
   "pay": "$400,000\u2013$500,000/yr",
   "priority": true,
@@ -111808,10 +111843,10 @@
    "rubric": "7cf20dd9e2"
   },
   "seniority_match": true,
-  "source": "indeed",
+  "source": "ashby",
   "title": "VP, Data Center Power & Site Development",
-  "url": "https://www.indeed.com/viewjob?jk=c745e2d04f308930",
-  "work_mode": "",
+  "url": "https://jobs.ashbyhq.com/Lambda/a55429d0-baeb-4ce2-af9f-22cc6bd52318",
+  "work_mode": "remote",
   "work_mode_by": ""
  },
  "6ad72cc29f679fdc": {
@@ -116141,6 +116176,35 @@
   "url": "https://job-boards.greenhouse.io/spacex/jobs/8807795002",
   "work_mode": ""
  },
+ "6f7500c8f9af53ff": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Lambda",
+  "date_posted": "2026-11-26",
+  "first_seen": "2026-11-27",
+  "first_seen_at": "2026-11-27T01:07:14Z",
+  "location": "Remote, USA",
+  "locations": [
+   "Remote, USA"
+  ],
+  "pay": "$400K \u2013 $500K",
+  "priority": false,
+  "rationale": "Leads data center design standards, electrical topology and cooling reference designs for Lambda's AI facilities, a deep engineering leadership role.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-27T01:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "7cf20dd9e2"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "VP, Engineering - Data Center Design",
+  "url": "https://jobs.ashbyhq.com/Lambda/8d9e41af-f726-43dc-adec-8b29f8074202",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
+ },
  "6f80e3a117405086": {
   "apply_url": "",
   "apply_url_own": false,
@@ -120309,7 +120373,7 @@
  "72e45e77d851aeb7": {
   "apply_url": "",
   "apply_url_own": false,
-  "band": "strong",
+  "band": "top",
   "company": "Equinix",
   "date_posted": "2026-11-06",
   "first_seen": "2026-11-06",
@@ -120320,13 +120384,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Leads energy innovation strategy for Equinix's global data center portfolio at the vice president level; posting gives no further detail.",
-  "score": 75,
+  "rationale": "Leads Equinix's global energy team, structuring onsite, co-siting and clean power deals for data centers, a senior energy strategy role.",
+  "score": 90,
   "scoring_fingerprint": {
-   "at": "2026-11-06T20:45Z",
+   "at": "2026-11-27T01:08Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "7cf20dd9e2"
   },
   "seniority_match": true,
   "source": "workday",
@@ -121962,9 +122026,11 @@
   "work_mode_by": "fetch"
  },
  "747127594a2994fc": {
+  "active": false,
   "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004yIXUAY_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1664082508590840%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3De693656c-e2e6-11f1-8030-df760aded207%26rx_job%3Da1KiE0000004yIXUAY_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261125T000406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "possible",
+  "closed": "2026-11-27",
   "company": "Meta",
   "date_posted": "2026-11-18",
   "first_seen": "2026-11-18",
@@ -129549,7 +129615,7 @@
  },
  "7be919bb4a95688a": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200696405-0157-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200696405-0157%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D20b5c8a4-e586-11f1-8c23-ffa3e513bdd8%26rx_job%3D200696405-0157-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261126T220407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200696405-0157-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200696405-0157%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D20b5c8a4-e586-11f1-8c23-ffa3e513bdd8%26rx_job%3D200696405-0157-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261127T000446Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-22",
@@ -156411,6 +156477,35 @@
   "title": "Senior Project Manager, Data Center Delivery",
   "url": "https://iren.careers.hibob.com/jobs/481f3b88-6c60-4e99-9b32-8e55c85fb916",
   "work_mode": "hybrid"
+ },
+ "94e0d7461a3b010e": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "weak",
+  "company": "Lambda",
+  "date_posted": "2026-11-18",
+  "first_seen": "2026-11-27",
+  "first_seen_at": "2026-11-27T01:07:14Z",
+  "location": "Remote, USA",
+  "locations": [
+   "Remote, USA"
+  ],
+  "pay": "$214K \u2013 $284K",
+  "priority": true,
+  "rationale": "Owns construction, commissioning and turnover schedules for Lambda's GPU data center builds, a construction-delivery program role, not product or strategy.",
+  "score": 35,
+  "scoring_fingerprint": {
+   "at": "2026-11-27T01:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "7cf20dd9e2"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Senior Technical Program Manager - Data Center Infrastructure Delivery",
+  "url": "https://jobs.ashbyhq.com/Lambda/9a8b0df2-63e0-4641-9503-59f56fbe195e",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
  },
  "94e8ff5903b26b6a": {
   "active": false,
@@ -184252,7 +184347,7 @@
  },
  "af3b9b56c08d01c4": {
   "active": false,
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200696046-0157-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200696046-0157%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D1e5cf69b-e49c-11f1-a434-370a5e7448b4%26rx_job%3D200696046-0157-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261126T220407Z%26rx_vp%3Dcpc",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3427&rx_jobId=200696046-0157-en-US&rx_url=https%3A%2F%2Fjobs.apple.com%2Fen-us%2Fdetails%2F200696046-0157%3Fboard_id%3DJB001%26rx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D122365%26rx_id%3D1e5cf69b-e49c-11f1-a434-370a5e7448b4%26rx_job%3D200696046-0157-en-US%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261127T000446Z%26rx_vp%3Dcpc",
   "apply_url_own": true,
   "band": "misfit",
   "closed": "2026-11-26",
@@ -194522,7 +194617,7 @@
   "work_mode_by": ""
  },
  "b9d7e9727e06903c": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004uwTUAQ_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1479650870757468%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D1a441d96-e8ed-11f1-b10b-77c66a094aba%26rx_job%3Da1KiE0000004uwTUAQ_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261126T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000004uwTUAQ_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F1479650870757468%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D1a441d96-e8ed-11f1-b10b-77c66a094aba%26rx_job%3Da1KiE0000004uwTUAQ_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261127T000436Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -198441,7 +198536,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Data Center Operations Global Program Manager",
-  "url": "https://www.indeed.com/viewjob?jk=8e883e96e3e98a12",
+  "url": "https://www.indeed.com/viewjob?jk=4fd51d6782f06294",
   "work_mode": "",
   "work_mode_by": ""
  },
@@ -203178,6 +203273,35 @@
   "url": "https://www.indeed.com/viewjob?jk=fac9c576fc0df66f",
   "work_mode": ""
  },
+ "c27f81ec4d7ab06e": {
+  "apply_url": "",
+  "apply_url_own": false,
+  "band": "possible",
+  "company": "Lambda",
+  "date_posted": "2026-11-25",
+  "first_seen": "2026-11-27",
+  "first_seen_at": "2026-11-27T01:07:14Z",
+  "location": "Bellevue Office",
+  "locations": [
+   "Bellevue Office"
+  ],
+  "pay": "$226K \u2013 $335K \u00b7 Multiple Ranges",
+  "priority": false,
+  "rationale": "Runs GPU cluster deployment programs across colocation data centers for Lambda, a program-delivery role rather than a product or strategy function.",
+  "score": 55,
+  "scoring_fingerprint": {
+   "at": "2026-11-27T01:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "7cf20dd9e2"
+  },
+  "seniority_match": true,
+  "source": "ashby",
+  "title": "Technical Program Manager - Data Center Deployments",
+  "url": "https://jobs.ashbyhq.com/Lambda/63b55e26-311f-45da-81fd-50b649da6305",
+  "work_mode": "remote",
+  "work_mode_by": "fetch"
+ },
  "c2808c1e37f48ce2": {
   "apply_url": "https://careers.jacobs.com/en_US/careers/JobDetail/Commercial-Manager-Data-Centers/48891",
   "apply_url_own": true,
@@ -203434,7 +203558,7 @@
   "work_mode": "hybrid"
  },
  "c2c1c8b9da1b25cb": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000005GDpUAM_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F4276370712655722%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0d401405-e867-11f1-9c6b-41439f024194%26rx_job%3Da1KiE0000005GDpUAM_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261126T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000005GDpUAM_1001&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F4276370712655722%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3D0d401405-e867-11f1-9c6b-41439f024194%26rx_job%3Da1KiE0000005GDpUAM_1001%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261127T000436Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -220259,7 +220383,7 @@
   "work_mode": "hybrid"
  },
  "d2b6c0562e2da003": {
-  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002JkvUAE&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2083447629043799%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc337d309-e4ff-11f1-9505-1fb2f02dbbfd%26rx_job%3Da1KiE0000002JkvUAE%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261126T220406Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
+  "apply_url": "https://jsv3.recruitics.com/redirect?rx_cid=3239&rx_jobId=a1KiE0000002JkvUAE&rx_url=https%3A%2F%2Fwww.metacareers.com%2Fjobs%2F2083447629043799%2F%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D187943%26rx_id%3Dc337d309-e4ff-11f1-9505-1fb2f02dbbfd%26rx_job%3Da1KiE0000002JkvUAE%26rx_medium%3Dcpc%26rx_product%3Dprogrammatic-ppc%252Ccore%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20261127T000436Z%26rx_vp%3Dcpc%26utm_campaign%3DJob%252Bboard%26utm_medium%3Djobs%26utm_source%3Dindeedorganic",
   "apply_url_own": true,
   "band": "weak",
   "company": "Meta",
@@ -236392,9 +236516,11 @@
   "work_mode": "remote"
  },
  "e2acc6b98b68dfb5": {
+  "active": false,
   "apply_url": "https://jobs.boisestate.edu/jobs/energy-manager-or-energy-manager-senior-boise-idaho-united-states",
   "apply_url_own": true,
   "band": "weak",
+  "closed": "2026-11-27",
   "company": "Boise State University",
   "date_posted": "2026-11-19",
   "first_seen": "2026-11-20",
@@ -238784,7 +238910,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Product Management & Marketing Director",
-  "url": "https://www.indeed.com/viewjob?jk=46c4913866eaf59d",
+  "url": "https://www.indeed.com/viewjob?jk=9e5f6c5aeae4ef66",
   "work_mode": "onsite"
  },
  "e4f1aa8d5d57f514": {
@@ -245477,13 +245603,13 @@
   ],
   "pay": "",
   "priority": false,
-  "rationale": "Product manager owning Trane's fan coil wall cooling product line for data centers, cooling product management squarely in his thermal adjacency.",
+  "rationale": "Owns the data center fan coil wall cooling product line lifecycle and roadmap at Trane, a thermal product in the cooling domain.",
   "score": 75,
   "scoring_fingerprint": {
-   "at": "2026-11-15T19:56Z",
+   "at": "2026-11-27T01:08Z",
    "model": "claude-sonnet-5",
    "policy": "4fea3023de",
-   "rubric": "4f002b3bf4"
+   "rubric": "7cf20dd9e2"
   },
   "seniority_match": true,
   "source": "workday",
@@ -253411,6 +253537,38 @@
   "url": "https://jobs.dayforcehcm.com/en-US/edc/CandidatePortalEDC/jobs/917",
   "work_mode": ""
  },
+ "f2783dda679bc146": {
+  "active": false,
+  "apply_url": "https://www.tesla.com/careers/search/job/291157?source=Indeed",
+  "apply_url_own": true,
+  "band": "misfit",
+  "closed": "2026-11-27",
+  "company": "Tesla",
+  "date_posted": "2026-11-25",
+  "first_seen": "2026-11-27",
+  "first_seen_at": "2026-11-27T01:07:14Z",
+  "location": "Palo Alto, CA, USA",
+  "locations": [
+   "Palo Alto, CA, USA"
+  ],
+  "lowscore": true,
+  "pay": "$112,000\u2013$228,000/yr",
+  "priority": false,
+  "rationale": "Analyzes battery pack electrical failures and designs safety mitigations at Tesla, an early-career hands-on engineering role, not product or strategy.",
+  "score": 15,
+  "scoring_fingerprint": {
+   "at": "2026-11-27T01:08Z",
+   "model": "claude-sonnet-5",
+   "policy": "4fea3023de",
+   "rubric": "7cf20dd9e2"
+  },
+  "seniority_match": false,
+  "source": "indeed",
+  "title": "Sr. Systems Design Architecture Engineer",
+  "url": "https://www.indeed.com/viewjob?jk=7cc3d445123e01ba",
+  "work_mode": "onsite",
+  "work_mode_by": "triage"
+ },
  "f278a2c965df872b": {
   "apply_url": "https://careers.ey.com/ey/job/New-York-Financial-Services-Data-Center-Development-&-Modernization-Technology-Consulting-Manager-NYC-NY-10001-8604/1445826933/",
   "apply_url_own": true,
@@ -259055,8 +259213,8 @@
   "score": 58,
   "seniority_match": true,
   "source": "microsoft",
-  "title": "Regional Managing Director, Data Center Community, NW Indiana",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393557076006",
+  "title": "Regional Managing Director, Data Center Community, Phoenix Metro",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557022516",
   "work_mode": "onsite"
  },
  "f7a1ba3c97f72453": {
@@ -266649,7 +266807,8 @@
   "location": "New Florence, MO, US",
   "locations": [
    "New Florence, MO, US",
-   "Hampton, GA, USA"
+   "Hampton, GA, USA",
+   "Atlanta, GA, USA"
   ],
   "lowscore": true,
   "pay": "$153,200\u2013$254,500/yr",
@@ -266664,7 +266823,7 @@
   "seniority_match": true,
   "source": "indeed",
   "title": "Data Center Engineering Operations Cluster Manager, DCC Communities",
-  "url": "https://www.indeed.com/viewjob?jk=35b78d5c0473b3b8",
+  "url": "https://www.indeed.com/viewjob?jk=097122bac4ac6fc9",
   "work_mode": ""
  }
 }
